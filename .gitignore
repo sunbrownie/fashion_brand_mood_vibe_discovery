@@ -1,0 +1,49 @@
+.DS_Store
+.matplotlib_cache/
+
+# Secrets and local environments
+.env
+**/.env
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Excluded thesis feasibility work
+brand_vibe_milestone_feasibility/
+
+# Large local files
+tmp/
+ios/
+inspiration/
+thesis_text/
+thesis_text/tmp/
+step_1_curate_dataset/*.csv
+step_2_text_embeddings/*.csv
+step_3_moodboards/moodboards/
+step_5_recommender/hosting_bundle/
+*.csv
+requirements.txt
+*.sh
+*.pdf
+*.tex
+*.bib
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.npz
+
+# Moodboard image collections
+moodboards_creation/moodboards/
+moodboards_creation/moodboards_corrected/
+recommender/hosting_bundle/
+recommender/hosting_bundle/data/moodboards/
+recommender/hosting_bundle/data/moodboards.zip
