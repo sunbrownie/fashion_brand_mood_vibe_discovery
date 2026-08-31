@@ -1,0 +1,92 @@
+[
+  {
+    "category": "Clothes",
+    "validation_family": "Minimal quiet",
+    "brands_included": ["The Row", "Toteme", "Jil Sander"]
+  },
+  {
+    "category": "Clothes",
+    "validation_family": "Romantic feminine",
+    "brands_included": ["LoveShackFancy", "Cecilie Bahnsen", "Simone Rocha", "Sister Jane"]
+  },
+  {
+    "category": "Clothes",
+    "validation_family": "Graphic streetwear",
+    "brands_included": ["Supreme", "Stussy", "Denim Tears", "Awake NY"]
+  },
+  {
+    "category": "Clothes",
+    "validation_family": "Playful colour",
+    "brands_included": ["Farm Rio", "Ganni", "Damson Madder"]
+  },
+  {
+    "category": "Shoes",
+    "validation_family": "Minimal quiet",
+    "brands_included": ["The Row", "Toteme", "Jil Sander"]
+  },
+  {
+    "category": "Shoes",
+    "validation_family": "Outdoor technical",
+    "brands_included": ["Salomon", "Merrell", "Sorel", "Inuikii"]
+  },
+  {
+    "category": "Shoes",
+    "validation_family": "Feminine polished",
+    "brands_included": ["Aeyde", "Dear Frances", "Manolo Blahnik", "Aquazzura"]
+  },
+  {
+    "category": "Shoes",
+    "validation_family": "Casual everyday",
+    "brands_included": ["Veja", "Cariuma", "Camper"]
+  },
+  {
+    "category": "Shoes",
+    "validation_family": "Heritage luxury",
+    "brands_included": ["Brunello Cucinelli", "Tod's"]
+  },
+  {
+    "category": "Bags",
+    "validation_family": "Sculptural contemporary",
+    "brands_included": ["Mansur Gavriel", "Staud", "Cult Gaia", "Jacquemus"]
+  },
+  {
+    "category": "Bags",
+    "validation_family": "Woven craft",
+    "brands_included": ["Anna Sui", "Chan Luu", "Beatrice Valenzuela", "Caralarga", "Okhai"]
+  },
+  {
+    "category": "Bags",
+    "validation_family": "Practical carry",
+    "brands_included": ["Dagne Dover", "Herschel", "Bellroy"]
+  },
+  {
+    "category": "Bags",
+    "validation_family": "Evening glam",
+    "brands_included": ["Valentino", "Miu Miu", "JIMMY CHOO", "The Attico", "Bernadette"]
+  },
+  {
+    "category": "Jewellery",
+    "validation_family": "Minimal quiet",
+    "brands_included": ["The Row", "Toteme", "Jil Sander"]
+  },
+  {
+    "category": "Jewellery",
+    "validation_family": "Fine luxury",
+    "brands_included": ["TIFFANY & CO", "Cartier", "David Morris", "Maria Tash"]
+  },
+  {
+    "category": "Jewellery",
+    "validation_family": "Playful colour",
+    "brands_included": ["Anni Lu", "Swarovski", "Irene Neuwirth", "Alice Cicolini"]
+  },
+  {
+    "category": "Jewellery",
+    "validation_family": "Sculptural contemporary",
+    "brands_included": ["Completedworks", "Jenny Bird", "Alighieri", "Sophie Buhai"]
+  },
+  {
+    "category": "Jewellery",
+    "validation_family": "Romantic ornamental",
+    "brands_included": ["Simone Rocha", "Sezane", "Anna Sui", "Bernadette"]
+  }
+]
