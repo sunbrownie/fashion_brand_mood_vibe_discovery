@@ -1,5 +1,7 @@
 # Helper code for the moodboard notebook.
 
+import hashlib
+import json
 import os
 import time
 from io import BytesIO
@@ -37,7 +39,9 @@ ensure_final_dataset(
 
 NOTEBOOK_DIR = ROOT / 'step_3_moodboards'
 OUTPUT_DIR = ROOT / 'moodboards_creation' / 'moodboards'
+CORRECTED_OUTPUT_DIR = ROOT / 'moodboards_creation' / 'moodboards_corrected' / 'v2'
 FINAL_DIR = ROOT / 'final_dataset'
+OVERRIDES_PATH = NOTEBOOK_DIR / 'config' / 'brand_moodboard_overrides.json'
 
 
 def _mask_secret(value: str) -> str:
@@ -154,7 +158,7 @@ _BRAND_SIGNATURE_NOTES = {
 _QUALITY_SUFFIX = (
     'Approachable magazine collage style, high-resolution but not over-polished; it can feel slightly artsy, playful, or lightly cartoonish while keeping products readable. '
     'Natural professional lighting, crisp product detail, tactile textures, rich but believable colour. '
-    'No text, no logos, no readable typography, vertical portrait format.'
+    'No accidental text, captions, labels, watermarks, or unrelated logos. Vertical portrait format.'
 )
 
 _AVOID_GENERIC = (
@@ -167,10 +171,53 @@ _MODEL_AND_CONTEXT = (
     'Use model casting that matches the brand range: female-only brands should show only female models; '
     'male-only brands should show only male models; brands that read as unisex or both menswear and womenswear '
     'should show both male and female models, not only one gender. '
-    'The background can use the general mood colour of the brand. '
-    'Context fragments may include interiors, plants, flowers, props, street details, landscape, or other spaces/objects '
-    'when they support the brand atmosphere.'
+    'The background can use the general mood colour of the brand. Context is optional. '
+    'Use an interior, plant, prop, street detail, landscape, or other space only when it clearly supports the brand atmosphere.'
 )
+
+
+def load_moodboard_overrides(path: Path = OVERRIDES_PATH) -> dict:
+    """Load global and brand-specific art direction used by correction runs."""
+    if not path.exists():
+        return {'global': {}, 'brands': {}}
+    return json.loads(path.read_text(encoding='utf-8'))
+
+
+MOODBOARD_OVERRIDES = load_moodboard_overrides()
+
+
+def _override_for(name: str, category: str) -> dict:
+    """Return a correction override for one category/brand pair."""
+    key = f'{category}/{slugify(name)}'
+    return MOODBOARD_OVERRIDES.get('brands', {}).get(key, {})
+
+
+def _correction_direction(name: str, category: str, reviewer_note: str = '') -> str:
+    """Turn global policy, an Ellina note, and any brand override into prompt text."""
+    global_rules = MOODBOARD_OVERRIDES.get('global', {})
+    override = _override_for(name, category)
+    parts = []
+    if reviewer_note:
+        parts.append(f'Reviewer correction brief: {reviewer_note}')
+    for label, key in (
+        ('Must include', 'must_include'),
+        ('Must avoid', 'must_avoid'),
+    ):
+        values = override.get(key, [])
+        if values:
+            parts.append(f'{label}: {"; ".join(values)}.')
+    for label, key in (
+        ('Composition', 'layout'),
+        ('Context', 'context'),
+        ('Casting', 'casting'),
+        ('Duplicate policy', 'duplicate_policy'),
+        ('Text policy', 'text_policy'),
+        ('Brand-mark policy', 'logo_policy'),
+    ):
+        value = override.get(key) or global_rules.get(key)
+        if value:
+            parts.append(f'{label}: {value}')
+    return ' '.join(parts)
 
 
 def _product_diversity_instruction(cat: str, silhouettes: str) -> str:
@@ -201,7 +248,7 @@ def _brand_signature_note(name: str) -> str:
     return _BRAND_SIGNATURE_NOTES.get(name, '')
 
 
-def moodboard_prompt(row: pd.Series) -> str:
+def moodboard_prompt(row: pd.Series, reviewer_note: str = '') -> str:
     """Takes a brand row and returns an image prompt by combining its vibe fields."""
     name = _clean_field(row['brand_name'])
     cat = _clean_field(row['category'])
@@ -210,6 +257,7 @@ def moodboard_prompt(row: pd.Series) -> str:
     mat = _clean_field(row.get('materials', ''))
     pal = _clean_field(row.get('palette', ''))
     signature_note = _brand_signature_note(name)
+    correction_direction = _correction_direction(name, cat, reviewer_note)
     has_data = bool(kw or sil or mat or pal or signature_note)
 
     base = (
@@ -237,9 +285,10 @@ def moodboard_prompt(row: pd.Series) -> str:
             f'Use these concrete cues as visual evidence: {evidence}. '
             f'{product_mix}'
             f'Build the board from 6-9 distinct fragments: {_SIGNATURE_FOCUS[cat]}, '
-            f'one lived-in setting, room, street, landscape, or space that matches the vibe, '
-            f'a few close crops of the most characteristic details, and playful cut-paper collage elements such as organic bean shapes, torn edges, irregular frames, or simple hand-drawn accents. '
+            f'optional context only when it matches the brand, a few close crops of characteristic details, '
+            f'and brand-specific cut-paper devices such as angular crops, torn edges, irregular frames, textile echoes, or simple hand-drawn accents. '
             f'{_MODEL_AND_CONTEXT} '
+            f'{correction_direction} '
             f'Before finalizing the collage, check that no product appears twice. '
             f'Keep the composition editorial and cohesive, with varied crop sizes and negative space. '
             f'{_AVOID_GENERIC} {_QUALITY_SUFFIX}'
@@ -251,8 +300,9 @@ def moodboard_prompt(row: pd.Series) -> str:
         f'Infer recognizable brand codes and show {_ITEM_LABEL[cat]} rather than abstract vibes. '
         f'{product_mix}'
         f'Build the board from 6-9 distinct fragments: {_SIGNATURE_FOCUS[cat]}, '
-        f'one lived-in setting, room, street, landscape, or space that matches the vibe, plus playful cut-paper collage elements such as organic bean shapes, torn edges, irregular frames, or simple hand-drawn accents. '
+        f'optional context only when it matches the brand, plus brand-specific cut-paper devices such as angular crops, torn edges, irregular frames, textile echoes, or simple hand-drawn accents. '
         f'{_MODEL_AND_CONTEXT} '
+        f'{correction_direction} '
         f'Before finalizing the collage, check that no product appears twice. '
         f'{_AVOID_GENERIC} {_QUALITY_SUFFIX}'
     )
@@ -321,6 +371,46 @@ def save_moodboard(raw_bytes: bytes, mime_type: str,
     path = root / category / (slugify(brand_name) + ext)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(raw_bytes)
+    return path
+
+
+def save_corrected_moodboard(
+    raw_bytes: bytes,
+    mime_type: str,
+    category: str,
+    brand_name: str,
+    *,
+    candidate: int,
+    prompt: str,
+    review_id: str,
+    root: Path = CORRECTED_OUTPUT_DIR,
+) -> Path:
+    """Save a non-destructive correction candidate plus its provenance sidecar."""
+    ext = _MIME_TO_EXT.get(mime_type, '.png')
+    stem = f'{slugify(brand_name)}__candidate_{candidate:02d}'
+    path = root / category / f'{stem}{ext}'
+    if path.exists():
+        raise FileExistsError(f'Correction candidate already exists: {path}')
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(raw_bytes)
+    sidecar = path.with_suffix(path.suffix + '.json')
+    sidecar.write_text(
+        json.dumps(
+            {
+                'review_id': review_id,
+                'brand_name': brand_name,
+                'category': category,
+                'candidate': candidate,
+                'model': GEMINI_IMAGE_MODEL,
+                'prompt': prompt,
+                'sha256': hashlib.sha256(raw_bytes).hexdigest(),
+                'status': 'candidate_generated',
+            },
+            ensure_ascii=False,
+            indent=2,
+        ) + '\n',
+        encoding='utf-8',
+    )
     return path
 
 

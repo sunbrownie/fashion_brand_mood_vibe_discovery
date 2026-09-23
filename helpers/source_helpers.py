@@ -36,10 +36,24 @@ def slugify_brand_name(name: str) -> str:
     return text.removeprefix("and_")
 
 
+def _corrected_moodboard_roots(moodboard_root: Path) -> list[Path]:
+    """Return approved correction roots, newest first, for a source moodboard folder."""
+    if moodboard_root.name != "moodboards":
+        return []
+    corrected = moodboard_root.parent / "moodboards_corrected"
+    return [corrected / "v2", corrected]
+
+
 def find_moodboard_file(moodboard_root: Path, category: str, name: str, filename: str | float = "") -> Path | None:
-    """Find a local moodboard image for a brand, if one exists."""
+    """Find an approved corrected moodboard first, then fall back to the original."""
     if not moodboard_root.exists():
         return None
+    slug = slugify_brand_name(name)
+    for corrected_root in _corrected_moodboard_roots(moodboard_root):
+        for extension in (".jpg", ".png", ".webp"):
+            path = corrected_root / category / f"{slug}{extension}"
+            if path.exists():
+                return path
     if filename and not pd.isna(filename):
         for part in str(filename).split(","):
             part = part.strip()
@@ -51,7 +65,6 @@ def find_moodboard_file(moodboard_root: Path, category: str, name: str, filename
             matches = list(moodboard_root.glob(f"*/{part}"))
             if matches:
                 return matches[0]
-    slug = slugify_brand_name(name)
     matches = list((moodboard_root / category).glob(f"*{slug}*.jpg"))
     matches += list((moodboard_root / category).glob(f"*{slug}*.png"))
     matches += list((moodboard_root / category).glob(f"*{slug}*.webp"))

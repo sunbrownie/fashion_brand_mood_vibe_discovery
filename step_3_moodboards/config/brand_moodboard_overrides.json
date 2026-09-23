@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "global": {
+    "fragment_count": "6-9 distinct fragments",
+    "layout": "Editorial cut-paper collage with varied crop sizes, deliberate negative space, and brand-specific shapes. Do not default to repeated bean shapes or a rigid product grid.",
+    "context": "Use an interior, street, landscape, or prop only when it supports the brand. A setting is optional, not mandatory.",
+    "casting": "Use no more than two images of the same person. Match the brand's womenswear, menswear, or unisex range.",
+    "duplicate_policy": "Every hero product, detail crop, person, pose, colourway, and setting must be visibly distinct.",
+    "text_policy": "No accidental words, labels, captions, watermarks, or unrelated logos.",
+    "logo_policy": "Use a distinctive brand mark only when the brand override explicitly asks for it. Keep it secondary to the products."
+  },
+  "brands": {
+    "clothes/acne_studios": {
+      "must_include": ["sharp tailoring", "skinny-versus-layered styling contrast", "one recognisable branded long sleeve or scarf", "cool Scandinavian proportions"],
+      "must_avoid": ["generic boho styling", "soft romantic florals", "repeating the same outfit"],
+      "context": "Sparse urban or studio fragments with cool light and restrained texture.",
+      "layout": "Angular cropped panels and narrow strips rather than rounded bean shapes.",
+      "logo_policy": "One subtle Acne Studios identifier may appear on a garment. No large wordmark."
+    },
+    "clothes/celine": {
+      "must_include": ["very slim or deliberately oversized tailoring", "layered styling", "sharp accessories", "current silhouettes"],
+      "must_avoid": ["dated occasionwear", "generic romantic dresses", "unbranded knit close-ups"],
+      "context": "Parisian night, polished stone, mirrored studio, or stark backstage fragments.",
+      "layout": "High-contrast editorial crops with vertical rhythm and clean rectangular cuts."
+    },
+    "clothes/ganni": {
+      "must_include": ["playful print", "leopard accent", "rounded shoulders or ruffles", "complicated fashion-forward shoes"],
+      "must_avoid": ["plain black blouse as a hero", "generic floral dress", "anonymous beige setting"],
+      "context": "Colourful Copenhagen street or playful studio fragments.",
+      "layout": "Irregular sticker-like cutouts and bold colour blocking."
+    },
+    "clothes/praying": {
+      "must_include": ["Y2K styling", "pop-culture reference energy", "cheeky meme-like graphic fashion", "body-conscious separates"],
+      "must_avoid": ["quiet luxury", "boho", "generic minimalist tailoring"],
+      "context": "Flash-lit bedroom, internet-culture, or paparazzi-style fragments without readable text.",
+      "layout": "Messy-digital scrapbook rhythm with sharp cutouts; no repeated bean shapes.",
+      "logo_policy": "Graphic treatments may suggest the brand's cheeky language, but no readable slogans or accidental text."
+    },
+    "bags/ami_paris": {
+      "must_include": ["at least one bag with the heart-shaped clasp", "clean Parisian leather shapes", "recognisable current bag proportions"],
+      "must_avoid": ["bags that look sourced from another brand", "generic woven beach totes"],
+      "context": "Polished Paris street or clean studio with warm neutral stone.",
+      "layout": "Structured rectangular and heart-echo cutouts, with one on-body scale reference.",
+      "logo_policy": "The heart clasp is an approved product identifier; no extra wordmark."
+    },
+    "bags/arizona_love": {
+      "must_include": ["signature bandana pattern", "cowboy-desert character", "eclectic straps or textile details"],
+      "must_avoid": ["generic beach-straw mood", "anonymous beige resort styling"],
+      "context": "Sun-bleached desert roadside, worn denim, and bandana-textile fragments.",
+      "layout": "Bandana-edge cutouts, stitched patches, and angular desert-colour panels."
+    },
+    "bags/chopova_lowena": {
+      "must_include": ["plaid", "studs", "edgy hardware", "subcultural styling"],
+      "must_avoid": ["straw", "boho resort imagery", "soft beige minimalism"],
+      "context": "Backstage, punk club, or rough urban texture fragments.",
+      "layout": "Plaid-edged shards, hardware details, and energetic asymmetry."
+    },
+    "bags/miu_miu": {
+      "must_include": ["perforated leather", "visible but controlled brand identifier", "playful colour", "current feminine bag shapes"],
+      "must_avoid": ["paisley", "velvet as the dominant material", "random key-chain imagery"],
+      "context": "Glossy youth-culture editorial or playful dressing-room fragments.",
+      "layout": "Small polished panels, perforation-inspired dots, and one strong on-body image.",
+      "logo_policy": "One authentic product logo detail is allowed; no repeated wordmarks."
+    },
+    "shoes/atoms": {
+      "must_include": ["signature textile lace-up shoe", "knit upper detail", "comfort-led minimal profile", "multiple genuinely different views"],
+      "must_avoid": ["shoes from other brands", "fashion pumps", "sandals"],
+      "context": "Minimal city walking and clean material-detail fragments.",
+      "layout": "Soft geometric textile-inspired panels, not a rigid grid."
+    },
+    "shoes/chanel": {
+      "must_include": ["signature ballet flats", "tweed pumps", "slingbacks", "black-and-cream contrast"],
+      "must_avoid": ["geometric product grid", "repeated shoe image", "generic trainers"],
+      "context": "Tweed, polished salon, monochrome floor, or Paris street fragments used sparingly.",
+      "layout": "Elegant layered cutouts with fine lines and textile edges.",
+      "logo_policy": "A single authentic product mark may appear, but silhouette and material must do most of the recognition."
+    },
+    "shoes/coperni": {
+      "must_include": ["fashion-forward sculptural footwear", "sleek modern shapes", "one recognisable current model"],
+      "must_avoid": ["sporty running-shoe mood", "generic athletic styling"],
+      "context": "Futurist runway, reflective studio, or clean architectural fragments.",
+      "layout": "Curved architectural slices and sharp reflective details."
+    },
+    "jewellery/tory_burch": {
+      "must_include": ["polished preppy jewellery", "recognisable double-T motif", "clean gold hardware", "day-to-evening styling"],
+      "must_avoid": ["bohemian overload", "ethnic-market styling", "too many charms"],
+      "context": "Polished lacquer, tailored fabric, and clean lifestyle fragments.",
+      "layout": "Symmetrical-but-lively panels with circular hardware echoes.",
+      "logo_policy": "The double-T motif is an approved product identifier; use once or twice only."
+    },
+    "jewellery/valentino": {
+      "must_include": ["clean V-logo hardware", "refined gold jewellery", "modern restrained styling"],
+      "must_avoid": ["overly opulent baroque mood", "crowded gemstone fantasy", "repeated jewellery image"],
+      "context": "Red lacquer, tailored eveningwear, or polished stone fragments used with restraint.",
+      "layout": "Crisp high-fashion crops with one strong red accent.",
+      "logo_policy": "A single V-logo product element is approved; no extra text."
+    }
+  }
+}

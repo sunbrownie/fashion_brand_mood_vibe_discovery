@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "status": "implemented_v2",
+  "deployment_allowed": true,
+  "implementation": "Four approved assets were promoted as additive V2 files. All original V1 files remain unchanged for rollback.",
+  "generator": "OpenAI imagegen",
+  "candidates": [
+    {
+      "review_id": "ER-001",
+      "category": "clothes",
+      "brand_name": "Acne Studios",
+      "path": "clothes/acne_studios__candidate_01.png",
+      "sha256": "284e4e44729c81b8a4ee4941daac79d5c658da0e5a5a7dc8c4dcb48382148307",
+      "brief": "Sharp tailoring, skinny-versus-layered contrast, recognisable long-sleeve or scarf, cool urban composition, no boho or repeated outfit.",
+      "candidate_status": "self_review_approved"
+    },
+    {
+      "review_id": "ER-236",
+      "category": "bags",
+      "brand_name": "Arizona Love",
+      "path": "bags/arizona_love__candidate_01.png",
+      "sha256": "d89a216682aae5cd503700dd07284ff394a7f4f7da9e98f6d03a03e68c67369a",
+      "brief": "Bandana textiles and cowboy-desert character, avoiding generic beach-straw styling.",
+      "candidate_status": "self_review_approved"
+    },
+    {
+      "review_id": "ER-173",
+      "category": "shoes",
+      "brand_name": "Chanel",
+      "path": "shoes/chanel__candidate_01.png",
+      "sha256": "ebf31c95715f9d91ab4926838d6016ea30537badea66d9ef64123420b87976e5",
+      "brief": "Ballet flats, tweed pumps, two-tone slingbacks, elegant layered collage, no repeated geometric grid.",
+      "candidate_status": "superseded_off_category_and_repetition"
+    },
+    {
+      "review_id": "ER-173",
+      "category": "shoes",
+      "brand_name": "Chanel",
+      "path": "shoes/chanel__candidate_03.png",
+      "sha256": "b47cd41cd6c3fcbd169f989893d6a50b5d96c04bab1d249b6e05a36f8b723740",
+      "brief": "Seven distinct footwear fragments: slingback, ballet flat, tweed pump, Mary Jane, ankle boot, espadrille and one material detail; no handbags or duplicate shoe silhouettes.",
+      "candidate_status": "self_review_approved"
+    },
+    {
+      "review_id": "ER-221",
+      "category": "jewellery",
+      "brand_name": "Tory Burch",
+      "path": "jewellery/tory_burch__candidate_01.png",
+      "sha256": "60a10eb1850ca03e001973d3d662a3a1d669119d59c51c1febb238dce39c93e5",
+      "brief": "Polished preppy gold jewellery and controlled double-T motifs, avoiding bohemian styling.",
+      "candidate_status": "superseded_logo_repetition"
+    },
+    {
+      "review_id": "ER-221",
+      "category": "jewellery",
+      "brand_name": "Tory Burch",
+      "path": "jewellery/tory_burch__candidate_02.png",
+      "sha256": "aced38cfabf966febd2244e80f0bc4bd79478f9f6e8f8b3ef52cfae543be3e53",
+      "brief": "Targeted edit of candidate 01. Keeps one double-T pendant and replaces repeated logos with distinct non-logo jewellery.",
+      "candidate_status": "self_review_approved"
+    }
+  ]
+}

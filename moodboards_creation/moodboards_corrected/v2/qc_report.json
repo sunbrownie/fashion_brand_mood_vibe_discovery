@@ -1,0 +1,61 @@
+{
+  "note": "Automated duplicate detection is a coarse screen. Human brand-vibe and category review is mandatory.",
+  "results": [
+    {
+      "path": "moodboards_creation/moodboards_corrected/v2/clothes/acne_studios.png",
+      "width": 1024,
+      "height": 1536,
+      "aspect_ratio": 0.6667,
+      "ocr": {
+        "status": "not_available",
+        "text": ""
+      },
+      "duplicate_screen": [],
+      "automated_status": "pass",
+      "failures": [],
+      "human_review_required": true
+    },
+    {
+      "path": "moodboards_creation/moodboards_corrected/v2/bags/arizona_love.png",
+      "width": 1024,
+      "height": 1536,
+      "aspect_ratio": 0.6667,
+      "ocr": {
+        "status": "not_available",
+        "text": ""
+      },
+      "duplicate_screen": [],
+      "automated_status": "pass",
+      "failures": [],
+      "human_review_required": true
+    },
+    {
+      "path": "moodboards_creation/moodboards_corrected/v2/shoes/chanel.png",
+      "width": 1024,
+      "height": 1536,
+      "aspect_ratio": 0.6667,
+      "ocr": {
+        "status": "not_available",
+        "text": ""
+      },
+      "duplicate_screen": [],
+      "automated_status": "pass",
+      "failures": [],
+      "human_review_required": true
+    },
+    {
+      "path": "moodboards_creation/moodboards_corrected/v2/jewellery/tory_burch.png",
+      "width": 1024,
+      "height": 1536,
+      "aspect_ratio": 0.6667,
+      "ocr": {
+        "status": "not_available",
+        "text": ""
+      },
+      "duplicate_screen": [],
+      "automated_status": "pass",
+      "failures": [],
+      "human_review_required": true
+    }
+  ]
+}
