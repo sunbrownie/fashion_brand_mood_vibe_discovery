@@ -8,7 +8,6 @@ import hashlib
 import json
 import re
 import unicodedata
-from collections import Counter
 from pathlib import Path
 
 from PIL import Image as PILImage
@@ -191,104 +190,6 @@ def badge(pdf: canvas.Canvas, text: str, x: float, y: float, width: float, color
     pdf.drawCentredString(x + width / 2, y + 5.3, clean_text(text).upper())
 
 
-def cover_page(pdf: canvas.Canvas, total_pages: int) -> None:
-    pdf.setFillColor(CREAM)
-    pdf.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
-    pdf.setFillColor(PINK)
-    pdf.circle(PAGE_W - 105, PAGE_H - 82, 120, fill=1, stroke=0)
-    badge(pdf, "complete review pack", 52, PAGE_H - 145, 126, ACCENT)
-    pdf.setFillColor(INK)
-    pdf.setFont("Helvetica-Bold", 30)
-    pdf.drawString(52, PAGE_H - 202, "Ellina moodboard corrections")
-    pdf.setFont("Helvetica", 20)
-    pdf.drawString(52, PAGE_H - 236, "Every fixture - feedback, implementation and V2 result")
-
-    stats = [("360", "fixtures resolved"), ("318", "V2 moodboards"), ("42", "catalog decisions"), ("111", "rejected drafts kept")]
-    for index, (number, label) in enumerate(stats):
-        x = 52 + index * 186
-        pdf.setFillColor(PAPER)
-        pdf.roundRect(x, 222, 164, 96, 12, fill=1, stroke=0)
-        pdf.setFillColor(ACCENT if index < 2 else BLUE)
-        pdf.setFont("Helvetica-Bold", 27)
-        pdf.drawString(x + 16, 267, number)
-        pdf.setFillColor(INK)
-        pdf.setFont("Helvetica-Bold", 9)
-        pdf.drawString(x + 16, 244, label.upper())
-
-    pdf.setFillColor(PAPER)
-    pdf.roundRect(52, 62, 536, 126, 12, fill=1, stroke=0)
-    pdf.setFillColor(INK)
-    pdf.setFont("Helvetica-Bold", 11)
-    pdf.drawString(70, 162, "What this pack proves")
-    lines = [
-        "All 360 review fixtures are shown - no sampling.",
-        "Regenerated boards show original V1 beside approved V2.",
-        "Catalog-only fixes show the original beside the implemented decision.",
-        "New brands show the add request beside the new V2 moodboard.",
-        "V1 boards and every rejected candidate remain available for rollback and audit.",
-    ]
-    for index, line in enumerate(lines):
-        pdf.setFillColor(ACCENT)
-        pdf.circle(73, 140 - index * 18, 2, fill=1, stroke=0)
-        pdf.setFillColor(INK)
-        pdf.setFont("Helvetica", 8.8)
-        pdf.drawString(84, 137 - index * 18, line)
-    footer(pdf, 1, total_pages)
-    pdf.showPage()
-
-
-def overview_page(pdf: canvas.Canvas, records: list[dict], total_pages: int) -> None:
-    pdf.setFillColor(CREAM)
-    pdf.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
-    pdf.setFillColor(INK)
-    pdf.setFont("Helvetica-Bold", 25)
-    pdf.drawString(42, PAGE_H - 52, "Implementation overview")
-    pdf.setFillColor(MUTED)
-    pdf.setFont("Helvetica", 9.5)
-    pdf.drawString(42, PAGE_H - 73, "The order follows Ellina's source review, then the requested brand additions.")
-
-    by_category = Counter(record["category"] for record in records)
-    by_action = Counter(record["recommended_action"] for record in records)
-    cards = [
-        (42, 308, "BY CATEGORY", [
-            f"Clothes: {by_category['clothes']}", f"Shoes: {by_category['shoes']}",
-            f"Bags: {by_category['bags']}", f"Jewellery: {by_category['jewellery']}",
-        ]),
-        (421, 308, "BY IMPLEMENTATION", [
-            f"Targeted regeneration: {by_action['targeted_regenerate']}",
-            f"Full regeneration: {by_action['full_regenerate']}",
-            f"Catalog add + moodboard: {by_action['catalog_add_and_generate']}",
-            "Catalog-only decision: 42",
-            "Catalog verification + regeneration: 2",
-        ]),
-        (42, 98, "HOW TO READ EACH PAGE", [
-            "Top: Ellina's original feedback, source file and fixture ID.",
-            "Middle: original V1 / no V1 on the left; final V2 or catalog decision on the right.",
-            "Bottom: exact implemented outcome and self-review evidence.",
-            "Two-image V2 panels indicate one fixture intentionally produced two catalog variants.",
-        ]),
-        (421, 98, "ROLLBACK MODEL", [
-            "V2 assets use additive v2__ filenames; originals were not overwritten.",
-            "Catalog additions live in one bundled JSON overlay.",
-            "Category removals are runtime filters, leaving source datasets untouched.",
-            "Candidate history preserves approved and rejected generation attempts.",
-        ]),
-    ]
-    for x, y, title, items in cards:
-        pdf.setFillColor(PAPER)
-        pdf.roundRect(x, y, 360, 174, 12, fill=1, stroke=0)
-        pdf.setFillColor(ACCENT)
-        pdf.setFont("Helvetica-Bold", 10)
-        pdf.drawString(x + 18, y + 146, title)
-        cursor = y + 120
-        for item in items:
-            pdf.setFillColor(ACCENT)
-            pdf.circle(x + 21, cursor + 3, 2, fill=1, stroke=0)
-            cursor = draw_wrapped(pdf, item, x + 32, cursor, 308, size=8.5, leading=11, max_lines=2) - 5
-    footer(pdf, 2, total_pages)
-    pdf.showPage()
-
-
 def implementation_copy(record: dict) -> tuple[str, str, str]:
     action = record["recommended_action"]
     if action == "catalog_add_and_generate":
@@ -350,7 +251,7 @@ def fixture_page(pdf: canvas.Canvas, root: Path, cache_dir: Path, record: dict, 
     original = None if record["request_type"] == "new_brand" else original_moodboard(root, record)
     updated = updated_moodboards(root, record)
     visual_change = record.get("implementation_status") == "implemented_v2"
-    title, detail, review = implementation_copy(record)
+    title, detail, _ = implementation_copy(record)
 
     pdf.setFillColor(CREAM)
     pdf.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
@@ -370,7 +271,7 @@ def fixture_page(pdf: canvas.Canvas, root: Path, cache_dir: Path, record: dict, 
     draw_wrapped(pdf, record["reviewer_note"], 146, PAGE_H - 82, PAGE_W - 193, size=8.6, leading=10.5, max_lines=3)
 
     left_x, right_x = 48, 543
-    image_y, image_w, image_h = 135, 250, 320
+    image_y, image_w, image_h = 52, 250, 403
     pdf.setFillColor(INK)
     pdf.setFont("Helvetica-Bold", 9)
     pdf.drawCentredString(left_x + image_w / 2, 467, "ORIGINAL - V1" if original else "REQUEST - NO V1")
@@ -394,54 +295,7 @@ def fixture_page(pdf: canvas.Canvas, root: Path, cache_dir: Path, record: dict, 
     pdf.setFont("Helvetica", 7.5)
     pdf.drawCentredString(PAGE_W / 2, 296, "IMPLEMENTED")
 
-    pdf.setFillColor(PAPER)
-    pdf.roundRect(34, 43, 382, 72, 9, fill=1, stroke=0)
-    pdf.roundRect(426, 43, 382, 72, 9, fill=1, stroke=0)
-    pdf.setFillColor(INK)
-    pdf.setFont("Helvetica-Bold", 8.5)
-    pdf.drawString(48, 97, title)
-    draw_wrapped(pdf, detail, 48, 80, 350, size=7.8, leading=9.5, max_lines=4)
-    pdf.setFont("Helvetica-Bold", 8.5)
-    pdf.drawString(440, 97, "SELF-REVIEW")
-    badge(pdf, "approved", 730, 92, 58, GREEN)
-    draw_wrapped(pdf, review, 440, 80, 348, size=7.8, leading=9.5, max_lines=4)
     footer(pdf, page_number, total_pages)
-    pdf.showPage()
-
-
-def verification_page(pdf: canvas.Canvas, total_pages: int) -> None:
-    pdf.setFillColor(CREAM)
-    pdf.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
-    pdf.setFillColor(INK)
-    pdf.setFont("Helvetica-Bold", 25)
-    pdf.drawString(44, PAGE_H - 56, "Final verification and rollback")
-    badge(pdf, "360 / 360 resolved", PAGE_W - 186, PAGE_H - 63, 142, GREEN)
-    checks = [
-        "318 approved V2 moodboards are present and decode successfully.",
-        "86 new-brand overlay records resolve to 86 bundled V2 assets.",
-        "Every new brand has a valid same-category cluster and embedding proxy.",
-        "42 catalog-only corrections are implemented through reversible runtime rules.",
-        "All 111 rejected image candidates remain preserved for audit.",
-        "V1 source boards remain separate from additive V2 assets.",
-        "15 automated regression tests pass; Swift device-SDK type-check passes.",
-        "Full Xcode packaging is blocked only by this host's missing iOS 26.5 platform runtime.",
-    ]
-    for index, text in enumerate(checks):
-        y = PAGE_H - 112 - index * 47
-        pdf.setFillColor(PAPER)
-        pdf.roundRect(44, y - 20, PAGE_W - 88, 34, 8, fill=1, stroke=0)
-        pdf.setFillColor(GREEN)
-        pdf.circle(63, y - 3, 7, fill=1, stroke=0)
-        pdf.setFillColor(PAPER)
-        pdf.setFont("Helvetica-Bold", 8)
-        pdf.drawCentredString(63, y - 5.5, "OK")
-        pdf.setFillColor(INK)
-        pdf.setFont("Helvetica", 9)
-        pdf.drawString(82, y - 6, text)
-    pdf.setFillColor(MUTED)
-    pdf.setFont("Helvetica", 8.5)
-    pdf.drawString(44, 67, "Rollback: disable the V2 overlay / v2__ asset preference to return to the untouched V1 catalog and images.")
-    footer(pdf, total_pages, total_pages)
     pdf.showPage()
 
 
@@ -465,16 +319,13 @@ def build(root: Path, output: Path, cache_dir: Path) -> None:
     records = json.loads(manifest_path.read_text(encoding="utf-8"))["records"]
     validate_inputs(root, records)
     output.parent.mkdir(parents=True, exist_ok=True)
-    total_pages = len(records) + 3
+    total_pages = len(records)
     pdf = canvas.Canvas(str(output), pagesize=landscape(A4), pageCompression=1)
     pdf.setTitle("Ellina Moodboard Corrections - Complete V2 Review")
     pdf.setAuthor("Brand Vibe project")
     pdf.setSubject("All 360 review fixtures with original feedback and implemented outcomes")
-    cover_page(pdf, total_pages)
-    overview_page(pdf, records, total_pages)
-
     last_group = None
-    for index, record in enumerate(records, start=3):
+    for index, record in enumerate(records, start=1):
         group = (record["source_pdf"], record["category"])
         if group != last_group:
             key = f"section-{record['review_id']}"
@@ -482,7 +333,6 @@ def build(root: Path, output: Path, cache_dir: Path) -> None:
             pdf.addOutlineEntry(f"{clean_text(group[0])} - {group[1].title()}", key, level=0, closed=False)
             last_group = group
         fixture_page(pdf, root, cache_dir, record, index, total_pages)
-    verification_page(pdf, total_pages)
     pdf.save()
     print(f"Created {output} with {total_pages} pages for {len(records)} fixtures.")
 
