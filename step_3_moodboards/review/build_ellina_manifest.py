@@ -241,23 +241,78 @@ def issue_tags(note: str) -> list[str]:
 
 def classify(note: str) -> tuple[str, str, str]:
     text = note.lower()
-    if "merge into" in text:
+    compact = squash(note)
+    if "mergeinto" in compact:
         return "catalog_merge", "P0", "needs_catalog_verification"
-    if "remove" in text or "don’t make" in text or "dont make" in text:
-        return "catalog_retire_or_move", "P0", "needs_catalog_verification"
-    if any(term in text for term in ("worth keeping", "could not verify", "can’t find", "cant find", "hard to find", "barely any")):
+    catalog_verify_signals = (
+        "worthkeeping",
+        "worthremoving",
+        "couldnotverify",
+        "cantfind",
+        "hardtofind",
+        "barelyanybags",
+        "rarelyhavebags",
+        "notenoughbagstolookat",
+        "mainlyfordogs",
+    )
+    if any(term in compact for term in catalog_verify_signals):
         return "catalog_verify", "P0", "needs_catalog_verification"
+    catalog_retire_signals = (
+        "doesntdoclothes",
+        "noclothesremove",
+        "onlybagsremove",
+        "onlyjewelrynoclothes",
+        "onlyjewellerynoclothes",
+        "onlyjewerlynoclothes",
+        "removefromclothes",
+        "removefromhereandkeepforshoes",
+        "removefromshoes",
+        "barelydoanyshoes",
+        "onlyjewelryandclothes",
+        "onlyjewelleryandclothes",
+        "rarelydoesshoes",
+        "dontdoshoes",
+        "dontmakeshoes",
+        "noshoes",
+        "dontmakejewelry",
+        "dontmakejewellery",
+        "mostlyresellnotmake",
+        "mostlykeychains",
+        "clothingbranddoesntdojewelry",
+        "clothingbranddoesntdojewellery",
+        "closetonojewelry",
+        "closetonojewellery",
+    )
+    removal_justifications = (
+        "nojewelry",
+        "nojewellery",
+        "onlyjewelry",
+        "onlyjewellery",
+        "onlyjewerly",
+        "limitedjewelry",
+        "limitedjewellery",
+        "limitedtonojewelry",
+        "limitedtonojewellery",
+        "mostlyresell",
+        "mostlykeychains",
+    )
+    explicit_removal = compact == "remove" or (
+        compact.startswith("remove")
+        and any(term in compact for term in removal_justifications)
+    )
+    if explicit_removal or any(term in compact for term in catalog_retire_signals):
+        return "catalog_retire_or_move", "P0", "needs_catalog_verification"
     full_redo = (
-        text.startswith("off vibe")
-        or text.startswith("wrong vibe")
-        or text.startswith("different vibe")
-        or "completely off" in text
-        or "all images off" in text
-        or "none of the images" in text
-        or "redo fully" in text
-        or "wrong brand shoes" in text
-        or "collage is from the shoe section" in text
-        or "bad collage" in text
+        compact.startswith("offvibe")
+        or compact.startswith("wrongvibe")
+        or compact.startswith("differentvibe")
+        or "completelyoff" in compact
+        or "allimagesoff" in compact
+        or "noneoftheimages" in compact
+        or "redofully" in compact
+        or "wrongbrandshoes" in compact
+        or "collageisfromtheshoesection" in compact
+        or "badcollage" in compact
     )
     if full_redo:
         return "full_regenerate", "P1", "approved_for_pilot"

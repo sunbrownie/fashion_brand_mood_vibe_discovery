@@ -1,0 +1,3015 @@
+{
+  "schema_version": 1,
+  "reviews": [
+    {
+      "review_id": "ER-001",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/acne_studios__candidate_01.png",
+      "status": "approved",
+      "notes": "Brand-specific tailoring, scarf, and distinct layered versus slim looks.",
+      "reviewed_at": "2026-09-29T18:29:06.773630+00:00"
+    },
+    {
+      "review_id": "ER-002",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/alo_yoga__candidate_01.jpg",
+      "status": "pending",
+      "notes": "Duplicate olive patch removed; final pass still needed for small pseudo-logo detail.",
+      "reviewed_at": "2026-09-29T18:29:06.897716+00:00"
+    },
+    {
+      "review_id": "ER-002",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/alo_yoga__candidate_02.png",
+      "status": "approved",
+      "notes": "Candidate 02 removes pseudo-logo artifacts and repeated olive patches while keeping six distinct athletic and lounge garments.",
+      "reviewed_at": "2026-10-02T08:30:42.844402+00:00"
+    },
+    {
+      "review_id": "ER-003",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/altuzarra__candidate_01.png",
+      "status": "approved",
+      "notes": "More elegant and body-aware while keeping distinct garments and crops.",
+      "reviewed_at": "2026-09-29T18:29:07.028988+00:00"
+    },
+    {
+      "review_id": "ER-004",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/amazuin__candidate_01.png",
+      "status": "rejected",
+      "notes": "The moderation-safe output is distinct and elegant, but it omits the swimwear-plus-clothes mix Ellina requested, so it needs a more precise product-only retry.",
+      "reviewed_at": "2026-09-29T22:48:23.620777+00:00"
+    },
+    {
+      "review_id": "ER-004",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/amazuin__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: distinct black, khaki, off-white and cocoa clothing silhouettes; elegant body-aware styling; a separate swim product is safely shown on a dress form; no duplicated pair or category leakage.",
+      "reviewed_at": "2026-09-30T08:35:38.912175+00:00"
+    },
+    {
+      "review_id": "ER-005",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/amy_lynn__candidate_01.png",
+      "status": "rejected",
+      "notes": "Large generated brand-name typography violates the no-text rule.",
+      "reviewed_at": "2026-09-29T18:29:07.156087+00:00"
+    },
+    {
+      "review_id": "ER-005",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/amy_lynn__candidate_02.png",
+      "status": "approved",
+      "notes": "Candidate 02 removes the generated brand text and delivers a younger mix of polka-dot dress, halter, cropped co-ord and voluminous casual trousers.",
+      "reviewed_at": "2026-09-29T22:38:21.746964+00:00"
+    },
+    {
+      "review_id": "ER-006",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/arizona_love__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct bandana-led western and beachwear styling with no repeated fragments.",
+      "reviewed_at": "2026-09-29T18:29:07.285011+00:00"
+    },
+    {
+      "review_id": "ER-007",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/atlein__candidate_01.png",
+      "status": "approved",
+      "notes": "Draped contemporary silhouettes replace the repetitive source board.",
+      "reviewed_at": "2026-09-29T18:29:07.413134+00:00"
+    },
+    {
+      "review_id": "ER-009",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/baukjen__candidate_01.png",
+      "status": "approved",
+      "notes": "Clear sustainable-classic clothing story with distinct garments.",
+      "reviewed_at": "2026-09-29T18:29:07.537915+00:00"
+    },
+    {
+      "review_id": "ER-010",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/blank_nyc__candidate_01.png",
+      "status": "approved",
+      "notes": "Denim and leather direction is coherent and category-correct.",
+      "reviewed_at": "2026-09-29T18:29:07.673276+00:00"
+    },
+    {
+      "review_id": "ER-011",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/blaze_milano__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct tailoring story with appropriate blazer focus.",
+      "reviewed_at": "2026-09-29T18:29:07.799240+00:00"
+    },
+    {
+      "review_id": "ER-012",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/bottega_veneta__candidate_01.png",
+      "status": "rejected",
+      "notes": "Prominent handbag makes this unsuitable for the clothes category.",
+      "reviewed_at": "2026-09-29T18:29:07.949894+00:00"
+    },
+    {
+      "review_id": "ER-012",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/bottega_veneta__candidate_02.png",
+      "status": "approved",
+      "notes": "Candidate 02 is clothing-only, contains no typography, and uses distinct sculptural tailoring, leather clothing, knitwear and fluid separates.",
+      "reviewed_at": "2026-09-29T22:38:21.865882+00:00"
+    },
+    {
+      "review_id": "ER-013",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/brandon_maxwell__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct polished tailoring and evening silhouettes.",
+      "reviewed_at": "2026-09-29T18:29:08.091807+00:00"
+    },
+    {
+      "review_id": "ER-014",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/brixton__candidate_01.png",
+      "status": "approved",
+      "notes": "Street and outdoor styling is coherent and varied.",
+      "reviewed_at": "2026-09-29T18:29:08.262416+00:00"
+    },
+    {
+      "review_id": "ER-015",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/c_p_company__candidate_01.png",
+      "status": "approved",
+      "notes": "Signature goggle hood and technical sportswear are clearly represented.",
+      "reviewed_at": "2026-09-29T18:29:08.415563+00:00"
+    },
+    {
+      "review_id": "ER-017",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/camiel_fortgens__candidate_01.png",
+      "status": "approved",
+      "notes": "Raw modern tailoring and mixed casting correct the source-board repetition.",
+      "reviewed_at": "2026-09-29T18:29:08.559738+00:00"
+    },
+    {
+      "review_id": "ER-018",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/carne_bollente__candidate_01.png",
+      "status": "approved",
+      "notes": "The people-inclusive safe candidate passed moderation and replaces abstract filler with cheeky figurative knit and embroidered graphics across distinct fully clothed looks.",
+      "reviewed_at": "2026-09-29T22:59:46.983113+00:00"
+    },
+    {
+      "review_id": "ER-019",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/celine__candidate_01.png",
+      "status": "rejected",
+      "notes": "Prominent bag and footwear fragments dilute the clothes-only board.",
+      "reviewed_at": "2026-09-29T18:29:08.711228+00:00"
+    },
+    {
+      "review_id": "ER-019",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/celine__candidate_02.png",
+      "status": "approved",
+      "notes": "Candidate 02 removes bag and footwear panels and gives Celine current tight-versus-oversized tailoring with clear layering.",
+      "reviewed_at": "2026-09-29T22:38:21.991803+00:00"
+    },
+    {
+      "review_id": "ER-021",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/chan_luu__candidate_01.png",
+      "status": "rejected",
+      "notes": "Jewellery dominates parts of the board and the result remains too bohemian.",
+      "reviewed_at": "2026-09-29T18:29:08.855957+00:00"
+    },
+    {
+      "review_id": "ER-021",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/chan_luu__candidate_02.png",
+      "status": "rejected",
+      "notes": "Jewellery leakage is fixed, but the gauzy scarves and soft earthy styling still read bohemian rather than the eclectic minimal-contemporary direction Ellina requested.",
+      "reviewed_at": "2026-09-29T22:38:22.132965+00:00"
+    },
+    {
+      "review_id": "ER-021",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/chan_luu__candidate_03.png",
+      "status": "approved",
+      "notes": "Candidate 03 replaces gauzy bohemian styling with eclectic minimal-contemporary tailoring, knitwear and clean dresses.",
+      "reviewed_at": "2026-10-02T08:30:42.925326+00:00"
+    },
+    {
+      "review_id": "ER-022",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/chanel__candidate_01.png",
+      "status": "rejected",
+      "notes": "Prominent handbag prevents a clothes-only approval.",
+      "reviewed_at": "2026-09-29T18:29:08.987400+00:00"
+    },
+    {
+      "review_id": "ER-022",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/chanel__candidate_02.png",
+      "status": "approved",
+      "notes": "Candidate 02 removes the handbag and repeated photos, adds striped co-ords, skirts, tweed and quilted textures, and keeps the board clothing-only.",
+      "reviewed_at": "2026-09-29T22:38:22.293087+00:00"
+    },
+    {
+      "review_id": "ER-023",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/chopova_lowena__candidate_01.png",
+      "status": "approved",
+      "notes": "High-contrast eclectic garments replace the traditional lower-half direction.",
+      "reviewed_at": "2026-09-29T18:29:09.125336+00:00"
+    },
+    {
+      "review_id": "ER-024",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/christian_wijnants__candidate_01.png",
+      "status": "approved",
+      "notes": "Modern silhouettes and expressive prints correct the repetition and dated tone.",
+      "reviewed_at": "2026-09-29T18:29:09.269306+00:00"
+    },
+    {
+      "review_id": "ER-025",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/chrome_hearts__candidate_01.png",
+      "status": "approved",
+      "notes": "Rebuilt around clothing rather than a jewellery-only collage.",
+      "reviewed_at": "2026-09-29T18:29:09.411910+00:00"
+    },
+    {
+      "review_id": "ER-027",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/cordera__candidate_01.png",
+      "status": "approved",
+      "notes": "Tailoring is prominent and every garment fragment is distinct.",
+      "reviewed_at": "2026-09-29T18:29:09.537853+00:00"
+    },
+    {
+      "review_id": "ER-028",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/day_birger_et_mikkelsen__candidate_01.png",
+      "status": "approved",
+      "notes": "No embedded words and no repeated sweater image.",
+      "reviewed_at": "2026-09-29T18:29:09.665551+00:00"
+    },
+    {
+      "review_id": "ER-029",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/deiji_studios__candidate_01.png",
+      "status": "approved",
+      "notes": "Added black, green, and texture contrast while preserving the relaxed brand mood.",
+      "reviewed_at": "2026-09-29T18:29:09.792863+00:00"
+    },
+    {
+      "review_id": "ER-030",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/demylee__candidate_01.png",
+      "status": "approved",
+      "notes": "Typography removed; knitwear remains clear and varied.",
+      "reviewed_at": "2026-09-29T18:29:09.918077+00:00"
+    },
+    {
+      "review_id": "ER-031",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/derek_lam__candidate_01.png",
+      "status": "approved",
+      "notes": "Close brand direction retained without repeated pairs.",
+      "reviewed_at": "2026-09-29T18:29:10.045194+00:00"
+    },
+    {
+      "review_id": "ER-032",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/destree__candidate_01.png",
+      "status": "rejected",
+      "notes": "A handbag remains a prominent hero in the clothes board.",
+      "reviewed_at": "2026-09-29T18:29:10.171827+00:00"
+    },
+    {
+      "review_id": "ER-032",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/destree__candidate_02.png",
+      "status": "approved",
+      "notes": "Candidate 02 removes the Loewe-like handbag and focuses on Destree-style geometric tailoring, sculptural coats and pleated clothing.",
+      "reviewed_at": "2026-09-29T22:38:22.439864+00:00"
+    },
+    {
+      "review_id": "ER-033",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/dickies__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct workwear products and people replace repeated source images.",
+      "reviewed_at": "2026-09-29T18:29:10.300675+00:00"
+    },
+    {
+      "review_id": "ER-034",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/dime__candidate_01.png",
+      "status": "approved",
+      "notes": "Solid streetwear, hoodies, and printed tees now carry the board.",
+      "reviewed_at": "2026-09-29T18:29:10.425630+00:00"
+    },
+    {
+      "review_id": "ER-035",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/djerf_avenue__candidate_01.png",
+      "status": "approved",
+      "notes": "Multiple distinct adult models replace the single repeated woman.",
+      "reviewed_at": "2026-09-29T18:29:10.551128+00:00"
+    },
+    {
+      "review_id": "ER-036",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/everlane__candidate_01.png",
+      "status": "approved",
+      "notes": "Core basics remain on-brand and the repeated source crop is removed.",
+      "reviewed_at": "2026-09-29T18:29:10.681371+00:00"
+    },
+    {
+      "review_id": "ER-037",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/farah__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct models and product details remove both repeated pairs.",
+      "reviewed_at": "2026-09-29T18:29:10.808729+00:00"
+    },
+    {
+      "review_id": "ER-038",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/ferragamo__candidate_01.png",
+      "status": "rejected",
+      "notes": "Handbag and shoe heroes dilute a clothes-category moodboard.",
+      "reviewed_at": "2026-09-29T18:29:10.936490+00:00"
+    },
+    {
+      "review_id": "ER-038",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/ferragamo__candidate_02.png",
+      "status": "approved",
+      "notes": "Candidate 02 removes bag and shoe heroes and retains the close Ferragamo vibe with distinct red satin, leather, cream tailoring and camel layers.",
+      "reviewed_at": "2026-09-29T22:38:22.588002+00:00"
+    },
+    {
+      "review_id": "ER-039",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/french_connection__candidate_01.png",
+      "status": "rejected",
+      "notes": "Still women-only despite Ellina asking to add men.",
+      "reviewed_at": "2026-09-29T18:29:11.064424+00:00"
+    },
+    {
+      "review_id": "ER-039",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/french_connection__candidate_02.png",
+      "status": "approved",
+      "notes": "Candidate 02 directly corrects the women-only issue with balanced male and female looks and no repeated image.",
+      "reviewed_at": "2026-09-29T22:38:22.779237+00:00"
+    },
+    {
+      "review_id": "ER-040",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gabriela_hearst__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct coat, sculpted knit, tailoring, and evening dress replace repeated cardigan details.",
+      "reviewed_at": "2026-09-29T18:40:04.416951+00:00"
+    },
+    {
+      "review_id": "ER-041",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/ganni__candidate_01.png",
+      "status": "approved",
+      "notes": "Leopard, ruffles, rounded shoulders, prints, and complex shoes directly answer the note.",
+      "reviewed_at": "2026-09-29T18:29:11.191871+00:00"
+    },
+    {
+      "review_id": "ER-042",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gestuz__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct party, tailoring, print, and knit fragments remove the repeated source image.",
+      "reviewed_at": "2026-09-29T18:40:04.535822+00:00"
+    },
+    {
+      "review_id": "ER-043",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/girlfriend_collective__candidate_01.png",
+      "status": "approved",
+      "notes": "Typography is absent and a broader bright colour range replaces earthy monotony.",
+      "reviewed_at": "2026-09-29T18:40:04.664463+00:00"
+    },
+    {
+      "review_id": "ER-044",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gravel_and_gold__candidate_01.png",
+      "status": "rejected",
+      "notes": "Not applicable: Ellina requested catalog removal from clothes because this entry is jewellery-only.",
+      "reviewed_at": "2026-09-29T18:40:04.798217+00:00"
+    },
+    {
+      "review_id": "ER-045",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/hermes__candidate_01.png",
+      "status": "rejected",
+      "notes": "Prominent bags and boots make this unsuitable for the clothes category.",
+      "reviewed_at": "2026-09-29T18:40:04.936727+00:00"
+    },
+    {
+      "review_id": "ER-045",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/hermes__candidate_02.png",
+      "status": "approved",
+      "notes": "Apparel-led quiet-luxury range with distinct coats, knitwear, shirting, dress and tailoring; no bag or boot hero tiles.",
+      "reviewed_at": "2026-10-02T08:30:43.014134+00:00"
+    },
+    {
+      "review_id": "ER-046",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/herschel__candidate_01.png",
+      "status": "approved",
+      "notes": "Current apparel range retained: six distinct shell, fleece, sweatshirt, tee, trouser and quilted-overshirt panels, with no bag or accessory hero.",
+      "reviewed_at": "2026-10-02T09:39:37.838950+00:00"
+    },
+    {
+      "review_id": "ER-047",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/hodakova__candidate_01.png",
+      "status": "rejected",
+      "notes": "Two large bag heroes dilute the clothes-category board.",
+      "reviewed_at": "2026-09-29T18:40:05.196336+00:00"
+    },
+    {
+      "review_id": "ER-047",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/hodakova__candidate_02.png",
+      "status": "approved",
+      "notes": "Strong garment reconstruction across six distinct outfits and fabric constructions; bag heroes eliminated.",
+      "reviewed_at": "2026-10-02T08:30:43.106269+00:00"
+    },
+    {
+      "review_id": "ER-048",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/homecore__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct shirts, knitwear, trousers, and tailoring replace the two-item repetition.",
+      "reviewed_at": "2026-09-29T18:40:05.325182+00:00"
+    },
+    {
+      "review_id": "ER-049",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/hope_stockholm__candidate_01.png",
+      "status": "approved",
+      "notes": "Androgynous utility tailoring is varied across distinct people and products.",
+      "reviewed_at": "2026-09-29T18:40:05.463898+00:00"
+    },
+    {
+      "review_id": "ER-050",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/house_of_sunny__candidate_01.png",
+      "status": "rejected",
+      "notes": "The blue swirl and brown-green knit patterns still repeat across multiple fragments.",
+      "reviewed_at": "2026-09-29T19:08:17.812736+00:00"
+    },
+    {
+      "review_id": "ER-050",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/house_of_sunny__candidate_02.png",
+      "status": "approved",
+      "notes": "Six clearly different knit and print languages with no repeated swirl or brown-green motif.",
+      "reviewed_at": "2026-10-02T08:30:43.197040+00:00"
+    },
+    {
+      "review_id": "ER-051",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/iris_von_arnim__candidate_01.png",
+      "status": "approved",
+      "notes": "Cashmere silhouettes and details are distinct with no repeated source image.",
+      "reviewed_at": "2026-09-29T19:08:17.947636+00:00"
+    },
+    {
+      "review_id": "ER-052",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jacquemus__candidate_01.png",
+      "status": "rejected",
+      "notes": "A handbag remains a prominent hero in the clothes board.",
+      "reviewed_at": "2026-09-29T19:08:18.092588+00:00"
+    },
+    {
+      "review_id": "ER-052",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jacquemus__candidate_02.png",
+      "status": "approved",
+      "notes": "Garment-only asymmetric linen tailoring and relaxed South-of-France dressing; handbag leakage removed.",
+      "reviewed_at": "2026-10-02T08:30:43.288742+00:00"
+    },
+    {
+      "review_id": "ER-053",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jil_sander__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct minimalist tailoring, knitwear, leather, and shirting remove both repeated pairs.",
+      "reviewed_at": "2026-09-29T19:08:18.338069+00:00"
+    },
+    {
+      "review_id": "ER-055",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/johnny_was__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct embroidered dresses, jacket, trousers, and fabric details replace the repeated shirt.",
+      "reviewed_at": "2026-09-29T19:15:56.954232+00:00"
+    },
+    {
+      "review_id": "ER-056",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jonathan_simkhai__candidate_01.png",
+      "status": "approved",
+      "notes": "The safe candidate removes all repeated pairs and replaces the off middle close-up with coherent cutout knit, tailoring, lace and dress details.",
+      "reviewed_at": "2026-09-29T22:48:23.726341+00:00"
+    },
+    {
+      "review_id": "ER-057",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jude_connally__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct silhouettes and prints remove both repeated source pairs.",
+      "reviewed_at": "2026-09-29T19:15:57.099282+00:00"
+    },
+    {
+      "review_id": "ER-058",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/karoline_vitto__candidate_01.png",
+      "status": "rejected",
+      "notes": "The candidate safely adds burgundy, olive and blue and avoids repeats, but it has drifted into generic tailoring and knitwear rather than Karoline Vitto's close body-conscious cutout direction.",
+      "reviewed_at": "2026-09-29T22:59:47.091669+00:00"
+    },
+    {
+      "review_id": "ER-058",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/karoline_vitto__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: unmistakable curve-inclusive metal-ring cutout construction, body-contouring silhouettes, and burgundy, olive and cobalt added to black; products and crops are distinct.",
+      "reviewed_at": "2026-09-30T08:35:38.984363+00:00"
+    },
+    {
+      "review_id": "ER-059",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/khaite__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct tailoring, knitwear, leather coat, dress, and fabric details remove both repeated pairs.",
+      "reviewed_at": "2026-09-29T19:24:12.909829+00:00"
+    },
+    {
+      "review_id": "ER-060",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/kowtow__candidate_01.png",
+      "status": "approved",
+      "notes": "No typography; organic cotton textures, relaxed silhouettes, and natural palette replace the generic source.",
+      "reviewed_at": "2026-09-29T19:24:13.031786+00:00"
+    },
+    {
+      "review_id": "ER-061",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/laagam__candidate_01.png",
+      "status": "approved",
+      "notes": "The safe candidate removes the repeated image and replaces the old-fashioned collage with contemporary asymmetric partywear, tailoring, metallics and denim.",
+      "reviewed_at": "2026-09-29T22:48:23.861300+00:00"
+    },
+    {
+      "review_id": "ER-063",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/le_bon_shoppe__candidate_01.png",
+      "status": "rejected",
+      "notes": "Socks still dominate several large fragments despite Ellina asking for more clothes.",
+      "reviewed_at": "2026-09-29T19:24:13.176733+00:00"
+    },
+    {
+      "review_id": "ER-063",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/le_bon_shoppe__candidate_02.png",
+      "status": "approved",
+      "notes": "Clothing-led board expands to knitwear, shirting, trousers, dress and outerwear; socks no longer dominate.",
+      "reviewed_at": "2026-10-02T08:35:12.090893+00:00"
+    },
+    {
+      "review_id": "ER-064",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/liberowe__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct black, ivory, brown, and navy tailoring replaces three views of the same item.",
+      "reviewed_at": "2026-09-29T20:28:41.844631+00:00"
+    },
+    {
+      "review_id": "ER-065",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lioness__candidate_01.png",
+      "status": "approved",
+      "notes": "The safe candidate removes the three-item repetition and irrelevant building while preserving the close confident evening-and-tailoring vibe.",
+      "reviewed_at": "2026-09-29T22:48:23.992378+00:00"
+    },
+    {
+      "review_id": "ER-066",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lisa_says_gah__candidate_01.png",
+      "status": "approved",
+      "notes": "Romantic cottage-core shapes, florals, checks, and playful knits replace repeated retro-only imagery.",
+      "reviewed_at": "2026-09-29T20:28:41.957413+00:00"
+    },
+    {
+      "review_id": "ER-067",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/derek_lam__candidate_01.png",
+      "status": "approved",
+      "notes": "This second fixture reviews the same Derek Lam asset; the approved board includes luxury tailoring and layered knitwear.",
+      "reviewed_at": "2026-09-29T20:28:42.084141+00:00"
+    },
+    {
+      "review_id": "ER-068",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lisou__candidate_01.png",
+      "status": "approved",
+      "notes": "Animal, celestial, floral, tropical, and abstract prints provide clear variation without repeated photos.",
+      "reviewed_at": "2026-09-29T20:28:42.212780+00:00"
+    },
+    {
+      "review_id": "ER-069",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/loci__candidate_01.png",
+      "status": "rejected",
+      "notes": "Shoes recur across several fragments and still dominate a clothes-category board.",
+      "reviewed_at": "2026-09-29T20:28:42.342391+00:00"
+    },
+    {
+      "review_id": "ER-069",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/loci__candidate_02.png",
+      "status": "rejected",
+      "notes": "Shoe leakage is gone, but the tailored coat and generic knit remain outside Ellina's narrow LOCI apparel note; retry using only hoodies, sweatpants, sweatshirts and fleece.",
+      "reviewed_at": "2026-10-02T08:35:12.187736+00:00"
+    },
+    {
+      "review_id": "ER-069",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/loci__candidate_03.png",
+      "status": "approved",
+      "notes": "Candidate 03 is a narrow apparel capsule of hoodies, sweatshirts, sweatpants and fleece with no tailoring or shoe imagery.",
+      "reviewed_at": "2026-10-02T08:40:01.225026+00:00"
+    },
+    {
+      "review_id": "ER-070",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/longchamp__candidate_01.png",
+      "status": "rejected",
+      "notes": "Bag and loafer heroes dilute the clothes board and do not solve the off-vibe note.",
+      "reviewed_at": "2026-09-29T20:28:42.468665+00:00"
+    },
+    {
+      "review_id": "ER-070",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/longchamp__candidate_02.png",
+      "status": "approved",
+      "notes": "Distinct apparel-led trench, knit, navy separates, green dress and tailoring replace the prior bag and loafer heroes.",
+      "reviewed_at": "2026-10-02T08:35:12.274636+00:00"
+    },
+    {
+      "review_id": "ER-071",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lucy_and_yak__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct colourful dungarees, workwear, and prints replace both repeated image pairs.",
+      "reviewed_at": "2026-09-29T20:28:42.593543+00:00"
+    },
+    {
+      "review_id": "ER-072",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lutz_huelle__candidate_01.png",
+      "status": "approved",
+      "notes": "Red, blue, denim, asymmetric tailoring, shirting, and draped dresses add the requested variation.",
+      "reviewed_at": "2026-09-29T20:28:42.720293+00:00"
+    },
+    {
+      "review_id": "ER-073",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mackage__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct down, leather, wool, and technical outerwear removes the repeated source image.",
+      "reviewed_at": "2026-09-29T20:38:38.074839+00:00"
+    },
+    {
+      "review_id": "ER-074",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/made_by_minga__candidate_01.png",
+      "status": "approved",
+      "notes": "Handmade crochet sweaters, cardigan, skirt, and hats replace generic printed T-shirts.",
+      "reviewed_at": "2026-09-29T20:38:38.165086+00:00"
+    },
+    {
+      "review_id": "ER-075",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/madeworn__candidate_01.png",
+      "status": "rejected",
+      "notes": "Denim remains a major hero even though Ellina explicitly said jeans are not on-brand.",
+      "reviewed_at": "2026-09-29T20:38:38.255584+00:00"
+    },
+    {
+      "review_id": "ER-075",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/madeworn__candidate_02.png",
+      "status": "approved",
+      "notes": "Distressed tees, sweatshirts, work jackets and cargo styling restore the brand's worn-in rock language without a jeans hero.",
+      "reviewed_at": "2026-10-02T08:35:12.363298+00:00"
+    },
+    {
+      "review_id": "ER-076",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/maison_margiela__candidate_01.png",
+      "status": "approved",
+      "notes": "The safe candidate removes the boho bag and focuses entirely on deconstructed, raw-edge Margiela clothing with distinct pieces.",
+      "reviewed_at": "2026-09-29T22:48:24.124862+00:00"
+    },
+    {
+      "review_id": "ER-077",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/maje__candidate_01.png",
+      "status": "rejected",
+      "notes": "Handbags and repeated boot styling dilute the clothes-only correction.",
+      "reviewed_at": "2026-09-29T20:38:38.344122+00:00"
+    },
+    {
+      "review_id": "ER-077",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/maje__candidate_02.png",
+      "status": "approved",
+      "notes": "Six distinct polished Parisian garments with no handbag or dedicated boot styling.",
+      "reviewed_at": "2026-10-02T08:35:12.476620+00:00"
+    },
+    {
+      "review_id": "ER-078",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/margaret_howell__candidate_01.png",
+      "status": "approved",
+      "notes": "Typography is absent and distinct understated shirting, knitwear, and tailoring retain the close vibe.",
+      "reviewed_at": "2026-09-29T20:38:38.437880+00:00"
+    },
+    {
+      "review_id": "ER-079",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/maria_cher__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct dresses, blouse, tailoring, and prints replace repeated items; no leather jacket remains.",
+      "reviewed_at": "2026-09-29T20:38:38.533205+00:00"
+    },
+    {
+      "review_id": "ER-080",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/maria_de_la_orden__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct preppy dresses, knitwear, blouse, and skirt remove the repeated source image.",
+      "reviewed_at": "2026-09-29T20:38:38.623131+00:00"
+    },
+    {
+      "review_id": "ER-081",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/marine_layer__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct tee, knit, cardigan, dress, trousers, and shirt remove both repeated items.",
+      "reviewed_at": "2026-09-29T20:48:15.524831+00:00"
+    },
+    {
+      "review_id": "ER-082",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/marine_serre__candidate_01.png",
+      "status": "approved",
+      "notes": "The safe candidate removes the triple repeat and presents distinct crescent, regenerated-denim, patchwork and draped garment directions.",
+      "reviewed_at": "2026-09-29T22:48:24.259607+00:00"
+    },
+    {
+      "review_id": "ER-083",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mary_katrantzou__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct maximal prints appear in a geometric architectural setting rather than an ethnic interior.",
+      "reviewed_at": "2026-09-29T20:48:15.625389+00:00"
+    },
+    {
+      "review_id": "ER-084",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/masscob__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct dress, blouse, trousers, top, and knitwear remove the repeated item groups.",
+      "reviewed_at": "2026-09-29T20:48:15.747590+00:00"
+    },
+    {
+      "review_id": "ER-086",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/miaou__candidate_01.png",
+      "status": "rejected",
+      "notes": "The repeated image is gone, but this safe candidate is generic tailoring and knitwear rather than Miaou's close Y2K corset and fitted-separate vibe.",
+      "reviewed_at": "2026-09-29T22:59:47.219120+00:00"
+    },
+    {
+      "review_id": "ER-086",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/miaou__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: recognisable Y2K corset construction, printed mesh, ruched separates, denim and fitted trousers; the garments and crops are distinct and the board no longer reads as generic tailoring or knitwear.",
+      "reviewed_at": "2026-09-30T17:28:30.253006+00:00"
+    },
+    {
+      "review_id": "ER-087",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mirror_palais__candidate_01.png",
+      "status": "approved",
+      "notes": "The people-inclusive safe candidate removes the repeat and adds a strong, varied gown and eveningwear selection.",
+      "reviewed_at": "2026-09-29T22:59:47.352641+00:00"
+    },
+    {
+      "review_id": "ER-088",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/miu_miu__candidate_01.png",
+      "status": "rejected",
+      "notes": "A prominent brown handbag remains, directly repeating Ellina's off-brand bag concern.",
+      "reviewed_at": "2026-09-29T20:48:15.839263+00:00"
+    },
+    {
+      "review_id": "ER-088",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/miu_miu__candidate_02.png",
+      "status": "approved",
+      "notes": "Youthful preppy tailoring, pleats, cropped jackets and soft texture; the off-brand brown handbag is removed.",
+      "reviewed_at": "2026-10-02T08:35:12.602358+00:00"
+    },
+    {
+      "review_id": "ER-089",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/molly_goddard__candidate_01.png",
+      "status": "approved",
+      "notes": "Playful saturated tulle, ruffles, and chunky knit replace the off-vibe interior and garments.",
+      "reviewed_at": "2026-09-29T20:48:15.935918+00:00"
+    },
+    {
+      "review_id": "ER-090",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/monki__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct dresses, knits, denim, and models remove the repeated source image.",
+      "reviewed_at": "2026-09-29T20:56:47.576735+00:00"
+    },
+    {
+      "review_id": "ER-091",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/montane__candidate_01.png",
+      "status": "rejected",
+      "notes": "The same technical shell is still shown in multiple colourways, echoing the exact repeated-zip issue.",
+      "reviewed_at": "2026-09-29T20:56:47.662927+00:00"
+    },
+    {
+      "review_id": "ER-091",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/montane__candidate_02.png",
+      "status": "approved",
+      "notes": "Distinct shell, fleece, base layer, hiking trouser and material constructions replace repeated colorways of one zipper shell.",
+      "reviewed_at": "2026-10-02T08:40:01.304330+00:00"
+    },
+    {
+      "review_id": "ER-092",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mowalola__candidate_01.png",
+      "status": "approved",
+      "notes": "The repeated leather zip is removed and the candidate combines leather, sculptural corseted tailoring, distressed cargo pieces and street styling without duplicates.",
+      "reviewed_at": "2026-09-29T22:59:47.487643+00:00"
+    },
+    {
+      "review_id": "ER-093",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/msgm__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct tailoring, dress, knit, skirt, and graphic pieces remove the repeated source photo.",
+      "reviewed_at": "2026-09-29T20:56:47.756135+00:00"
+    },
+    {
+      "review_id": "ER-094",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/natasha_zinko__candidate_01.png",
+      "status": "rejected",
+      "notes": "A large novelty rabbit bag dominates a clothes-category board.",
+      "reviewed_at": "2026-09-29T20:56:47.850644+00:00"
+    },
+    {
+      "review_id": "ER-094",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/natasha_zinko__candidate_02.png",
+      "status": "approved",
+      "notes": "Playful deconstruction and rabbit imagery remain clothing-led; the novelty rabbit bag is eliminated.",
+      "reviewed_at": "2026-10-02T08:40:01.381073+00:00"
+    },
+    {
+      "review_id": "ER-095",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/nili_lotan__candidate_01.png",
+      "status": "approved",
+      "notes": "Tailoring, western hat, horse context, utility layers, and distinct garments answer the requested cowboy-tailoring mix.",
+      "reviewed_at": "2026-09-29T20:56:47.944285+00:00"
+    },
+    {
+      "review_id": "ER-096",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/norma_kamali__candidate_01.png",
+      "status": "approved",
+      "notes": "Both repeated pairs are removed while retaining the close Norma Kamali draping, ruching, jumpsuit and monochrome evening direction.",
+      "reviewed_at": "2026-09-29T22:59:47.613761+00:00"
+    },
+    {
+      "review_id": "ER-097",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/norse_projects__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct outerwear, shirting, knitwear, and details remove the repeated close-up pairs.",
+      "reviewed_at": "2026-09-29T20:56:48.037204+00:00"
+    },
+    {
+      "review_id": "ER-098",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/nour_hammour__candidate_01.png",
+      "status": "approved",
+      "notes": "The candidate removes repetition and clearly covers leather, silk, fur and cashmere in distinct confident outfits.",
+      "reviewed_at": "2026-09-29T22:59:47.747797+00:00"
+    },
+    {
+      "review_id": "ER-099",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/nude_lucy__candidate_01.png",
+      "status": "rejected",
+      "notes": "The neutral tank, knit, and lounge silhouettes still read too much like homewear.",
+      "reviewed_at": "2026-09-29T21:05:57.658012+00:00"
+    },
+    {
+      "review_id": "ER-099",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/nude_lucy__candidate_02.png",
+      "status": "approved",
+      "notes": "Tailoring, crisp shirting, day skirt and belted coat shift the board decisively away from homewear.",
+      "reviewed_at": "2026-10-02T08:40:01.467000+00:00"
+    },
+    {
+      "review_id": "ER-100",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/obey__candidate_01.png",
+      "status": "approved",
+      "notes": "Obey-style graffiti, skate context, workwear, graphic knits, and tees deliver the requested arthouse-skater energy.",
+      "reviewed_at": "2026-09-29T21:05:57.747160+00:00"
+    },
+    {
+      "review_id": "ER-101",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/olivia_rubin__candidate_01.png",
+      "status": "rejected",
+      "notes": "The rainbow cardigan still appears on two models and its close-up repeats the same item.",
+      "reviewed_at": "2026-09-29T21:05:57.837601+00:00"
+    },
+    {
+      "review_id": "ER-101",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/olivia_rubin__candidate_02.png",
+      "status": "approved",
+      "notes": "Six different colorful garments and print languages; the rainbow cardigan appears once with no detail repetition.",
+      "reviewed_at": "2026-10-02T08:40:01.541583+00:00"
+    },
+    {
+      "review_id": "ER-102",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/olivia_von_halle__candidate_01.png",
+      "status": "approved",
+      "notes": "The candidate removes the repeated pairs and replaces the interior with a coherent vacation setting across distinct silk lounge and robe looks.",
+      "reviewed_at": "2026-09-29T22:59:47.874568+00:00"
+    },
+    {
+      "review_id": "ER-103",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/opera_sport__candidate_01.png",
+      "status": "approved",
+      "notes": "Asymmetric shirting, sporty trousers, tailoring, knitwear, and elegant layers correct the off-vibe board.",
+      "reviewed_at": "2026-09-29T21:05:57.931514+00:00"
+    },
+    {
+      "review_id": "ER-104",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/organic_basics__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: the board retains the close sustainable-basics vibe with fully clothed people, tees, sweatshirts, joggers and leggings, while the previous two duplicated image pairs are eliminated.",
+      "reviewed_at": "2026-10-01T14:10:14.126548+00:00"
+    },
+    {
+      "review_id": "ER-105",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/oscar_de_la_renta__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct gowns and floral details replace the repeated interior image while retaining the close brand mood.",
+      "reviewed_at": "2026-09-29T21:05:58.024247+00:00"
+    },
+    {
+      "review_id": "ER-107",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/ovna_ovich__candidate_01.png",
+      "status": "approved",
+      "notes": "Relaxed draping, wide trousers, soft tailoring, and distinct textures replace repeated images.",
+      "reviewed_at": "2026-09-29T21:15:38.693715+00:00"
+    },
+    {
+      "review_id": "ER-108",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/pangaia__candidate_01.png",
+      "status": "approved",
+      "notes": "Sage, lilac, black, and cream co-ordinated sportswear adds colour and a greener earth-focused mood.",
+      "reviewed_at": "2026-09-29T21:15:38.785503+00:00"
+    },
+    {
+      "review_id": "ER-109",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/patou__candidate_01.png",
+      "status": "approved",
+      "notes": "Clean French tailoring, bright pink, floral print, and structured silhouettes replace the off-brand boho direction.",
+      "reviewed_at": "2026-09-29T21:15:38.878749+00:00"
+    },
+    {
+      "review_id": "ER-110",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/patta__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct streetwear silhouettes and casting remove the repeated source photo while retaining the close vibe.",
+      "reviewed_at": "2026-09-29T21:15:38.976215+00:00"
+    },
+    {
+      "review_id": "ER-111",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/pendleton__candidate_01.png",
+      "status": "approved",
+      "notes": "Poncho, blanket, plaid overshirt, printed fleece, and textile details directly add the requested print range.",
+      "reviewed_at": "2026-09-29T21:15:39.075149+00:00"
+    },
+    {
+      "review_id": "ER-112",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/perle_by_lola__candidate_01.png",
+      "status": "rejected",
+      "notes": "Jewellery and a pearl bag dominate what must remain a clothing-led board.",
+      "reviewed_at": "2026-09-29T21:15:39.170145+00:00"
+    },
+    {
+      "review_id": "ER-112",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/perle_by_lola__candidate_02.png",
+      "status": "approved",
+      "notes": "Six clothing-led linen, embroidery, crochet and romantic silhouettes; jewellery and pearl bag heroes removed.",
+      "reviewed_at": "2026-10-02T08:40:01.616664+00:00"
+    },
+    {
+      "review_id": "ER-113",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/pleasures__candidate_01.png",
+      "status": "approved",
+      "notes": "Punk graphics, live-music context, skate cues, and streetwear correct the medium-vibe source.",
+      "reviewed_at": "2026-09-29T21:15:39.269649+00:00"
+    },
+    {
+      "review_id": "ER-114",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/prada__candidate_01.png",
+      "status": "approved",
+      "notes": "Uniform-like tailoring, red colour, technical outerwear, and distinct nylon bags directly answer the note.",
+      "reviewed_at": "2026-09-29T21:15:39.364836+00:00"
+    },
+    {
+      "review_id": "ER-115",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/praying__candidate_01.png",
+      "status": "approved",
+      "notes": "Y2K styling, pop-culture iconography, meme-like graphics, and playful bedroom context replace the fully off-brand source.",
+      "reviewed_at": "2026-09-29T21:25:48.515496+00:00"
+    },
+    {
+      "review_id": "ER-116",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/pucci__candidate_01.png",
+      "status": "rejected",
+      "notes": "The same pink-orange print and garment recur as a hero, back detail, fabric crop, and hanging piece.",
+      "reviewed_at": "2026-09-29T21:25:48.611035+00:00"
+    },
+    {
+      "review_id": "ER-116",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/pucci__candidate_02.png",
+      "status": "approved",
+      "notes": "Six distinct Pucci print and color applications with no repeated hero, back detail, fabric crop or hanging duplicate.",
+      "reviewed_at": "2026-10-02T08:44:35.822424+00:00"
+    },
+    {
+      "review_id": "ER-117",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/rag_and_bone__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct denim, tailoring, leather, outerwear, and knitwear remove both repeated pairs.",
+      "reviewed_at": "2026-09-29T21:25:48.703412+00:00"
+    },
+    {
+      "review_id": "ER-118",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/rich_mnisi__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct sculptural gown, co-ordinates, knit set, printed dress, and tailoring remove the tripled source image.",
+      "reviewed_at": "2026-09-29T21:25:48.891198+00:00"
+    },
+    {
+      "review_id": "ER-119",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/rotate_birger_christensen__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: the board is more confident and party-focused, with short shorts under an oversized jacket, rounded statement sleeves, distinct evening silhouettes, saturated jewel colours and no product repetition.",
+      "reviewed_at": "2026-09-30T22:16:54.801785+00:00"
+    },
+    {
+      "review_id": "ER-120",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/saman_amel__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct refined tailoring and knitwear remove the repeated source image.",
+      "reviewed_at": "2026-09-29T21:25:48.985467+00:00"
+    },
+    {
+      "review_id": "ER-121",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/samantha_pleet__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct romantic silhouettes, floral prints, lace, velvet, and ruffles replace both repeated pairs.",
+      "reviewed_at": "2026-09-29T21:25:49.079128+00:00"
+    },
+    {
+      "review_id": "ER-122",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sancia__candidate_01.png",
+      "status": "approved",
+      "notes": "Flowing dresses, linen separates, relaxed tailoring, and coastal styling directly answer the requested beachy direction.",
+      "reviewed_at": "2026-09-29T21:25:49.170498+00:00"
+    },
+    {
+      "review_id": "ER-123",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sandro__candidate_01.png",
+      "status": "rejected",
+      "notes": "Duplicate problem is fixed, but the large handbag panel makes this clothes board category-inaccurate; regenerate without accessories.",
+      "reviewed_at": "2026-09-29T21:36:20.821036+00:00"
+    },
+    {
+      "review_id": "ER-123",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sandro__candidate_02.png",
+      "status": "approved",
+      "notes": "Distinct Parisian jackets, knit, suede, shirting and tailoring with the handbag panel fully removed.",
+      "reviewed_at": "2026-10-02T08:44:35.901664+00:00"
+    },
+    {
+      "review_id": "ER-124",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sandy_liang__candidate_01.png",
+      "status": "rejected",
+      "notes": "The girly playful direction is corrected, but two handbag panels create category leakage; retry as clothing-only.",
+      "reviewed_at": "2026-09-29T21:36:20.924898+00:00"
+    },
+    {
+      "review_id": "ER-124",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sandy_liang__candidate_02.png",
+      "status": "approved",
+      "notes": "Girly bows, lace, florals, knit and denim remain strong while both handbag panels are removed.",
+      "reviewed_at": "2026-10-02T08:44:35.980373+00:00"
+    },
+    {
+      "review_id": "ER-125",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/shangri_la_heritage__candidate_01.png",
+      "status": "approved",
+      "notes": "Strong motorcycle-meets-ethnic-mountain direction with varied garments and no repeated image.",
+      "reviewed_at": "2026-09-29T21:36:21.037524+00:00"
+    },
+    {
+      "review_id": "ER-126",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/shoshanna__candidate_01.png",
+      "status": "approved",
+      "notes": "Repeated image is removed; the board is coherent, polished, and shows varied silhouettes.",
+      "reviewed_at": "2026-09-29T21:36:21.143233+00:00"
+    },
+    {
+      "review_id": "ER-127",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/shrimps__candidate_01.png",
+      "status": "approved",
+      "notes": "Repeated pink coat is removed and the whimsical faux-fur, embellished knit, swan and floral language is cohesive.",
+      "reviewed_at": "2026-09-29T21:36:21.247647+00:00"
+    },
+    {
+      "review_id": "ER-128",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/siedres__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: vivid Mediterranean colour and print remain, while the asymmetric dress, printed shirt, wide-leg separate, sculptural knit and draped dress are visibly different silhouettes with no repeated image.",
+      "reviewed_at": "2026-09-30T23:18:28.136826+00:00"
+    },
+    {
+      "review_id": "ER-129",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/significant_other__candidate_01.png",
+      "status": "approved",
+      "notes": "No accidental words remain; the board keeps the close elegant draped-and-tailored vibe with varied looks.",
+      "reviewed_at": "2026-09-29T21:36:21.349504+00:00"
+    },
+    {
+      "review_id": "ER-130",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sister_jane__candidate_01.png",
+      "status": "rejected",
+      "notes": "Repeated-item issue is fixed and the romantic direction is strong, but the prominent handbag panel makes this clothes board category-inaccurate.",
+      "reviewed_at": "2026-09-29T21:36:21.450751+00:00"
+    },
+    {
+      "review_id": "ER-130",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sister_jane__candidate_02.png",
+      "status": "approved",
+      "notes": "Romantic collars, bows, tweed, florals and puff silhouettes remain category-correct with no handbag tile.",
+      "reviewed_at": "2026-10-02T08:44:36.058350+00:00"
+    },
+    {
+      "review_id": "ER-131",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/slowear__candidate_01.png",
+      "status": "approved",
+      "notes": "Accidental text is removed; the refined knit, tailoring, and trouser mix remains close to the reviewed vibe without duplicate imagery.",
+      "reviewed_at": "2026-09-29T21:47:21.598584+00:00"
+    },
+    {
+      "review_id": "ER-132",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/soaked_in_luxury__candidate_01.png",
+      "status": "approved",
+      "notes": "The three-image item repetition is removed; the board now uses distinct dress, knit, blouse, skirt, and wardrobe views.",
+      "reviewed_at": "2026-09-29T21:47:21.680236+00:00"
+    },
+    {
+      "review_id": "ER-133",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/soia_and_kyo__candidate_01.png",
+      "status": "approved",
+      "notes": "Repeated imagery is removed and the outerwear board presents distinct coat and puffer silhouettes.",
+      "reviewed_at": "2026-09-29T21:47:21.778221+00:00"
+    },
+    {
+      "review_id": "ER-134",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/spiritual_gangster__candidate_01.png",
+      "status": "approved",
+      "notes": "Accidental words are removed; the relaxed yoga, lounge, and activewear direction stays coherent and varied.",
+      "reviewed_at": "2026-09-29T21:47:21.879283+00:00"
+    },
+    {
+      "review_id": "ER-135",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/st_agni__candidate_01.png",
+      "status": "rejected",
+      "notes": "Texture and layered basics are much stronger, but the large handbag in the lower-right creates category leakage in a clothes board.",
+      "reviewed_at": "2026-09-29T21:47:21.986994+00:00"
+    },
+    {
+      "review_id": "ER-135",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/st_agni__candidate_02.png",
+      "status": "approved",
+      "notes": "Layered quiet-minimal knitwear, tailoring, shirting and linen dress with the lower-right bag removed.",
+      "reviewed_at": "2026-10-02T08:44:36.133928+00:00"
+    },
+    {
+      "review_id": "ER-137",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/stussy__candidate_01.png",
+      "status": "rejected",
+      "notes": "The surf-street context is useful, but the lower-right chore jacket still reads like the off-brand Carhartt reference Ellina specifically flagged.",
+      "reviewed_at": "2026-09-29T21:47:22.084916+00:00"
+    },
+    {
+      "review_id": "ER-137",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/stussy__candidate_02.png",
+      "status": "approved",
+      "notes": "Surf/skate knit, fleece, loose denim and graphic shirt replace the Carhartt-like chore jacket cue.",
+      "reviewed_at": "2026-10-02T08:44:36.209679+00:00"
+    },
+    {
+      "review_id": "ER-138",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sugarlips__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: every dress, top, skirt, blazer, trouser and knit fragment is distinct; the previously repeated image is gone and the board remains coherent contemporary feminine clothing.",
+      "reviewed_at": "2026-10-01T16:11:15.872552+00:00"
+    },
+    {
+      "review_id": "ER-139",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/supreme__candidate_01.png",
+      "status": "rejected",
+      "notes": "Repeated imagery is fixed, but plain red rectangles imitate rather than accurately communicate Supreme's iconic red-and-white box-logo cue; retry without fake logo treatment.",
+      "reviewed_at": "2026-09-29T21:47:22.184160+00:00"
+    },
+    {
+      "review_id": "ER-139",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/supreme__candidate_02.png",
+      "status": "approved",
+      "notes": "Six distinct streetwear garments with no fake box-logo rectangles or generated brand text.",
+      "reviewed_at": "2026-10-02T08:51:54.744476+00:00"
+    },
+    {
+      "review_id": "ER-141",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/the_attico__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: stronger evening glamour, fitted dresses, sharp oversized tailoring and shoulders replace the off-brand interior and jumper closeup; all hero garments are distinct and footwear remains incidental.",
+      "reviewed_at": "2026-10-01T19:04:44.252138+00:00"
+    },
+    {
+      "review_id": "ER-142",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/the_couture_club__candidate_01.png",
+      "status": "rejected",
+      "notes": "Signature print jumpers are stronger, but the crop top and bright corset suit keep too much of the structured sexy direction Ellina asked to reduce.",
+      "reviewed_at": "2026-09-29T21:56:24.349471+00:00"
+    },
+    {
+      "review_id": "ER-142",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/the_couture_club__candidate_02.png",
+      "status": "approved",
+      "notes": "Relaxed knitwear, hoodies, trousers and coats replace the crop-top/corset structured-sexy direction.",
+      "reviewed_at": "2026-10-02T08:51:54.862994+00:00"
+    },
+    {
+      "review_id": "ER-143",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/the_frankie_shop__candidate_01.png",
+      "status": "rejected",
+      "notes": "The power-office co-ords and suits are on brief, but multiple large handbags dominate a clothes-only board.",
+      "reviewed_at": "2026-09-29T21:56:24.421293+00:00"
+    },
+    {
+      "review_id": "ER-143",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/the_frankie_shop__candidate_02.png",
+      "status": "approved",
+      "notes": "Power-office co-ords and oversized tailoring remain strong with all handbag heroes removed.",
+      "reviewed_at": "2026-10-02T08:51:54.996489+00:00"
+    },
+    {
+      "review_id": "ER-144",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/the_kooples__candidate_01.png",
+      "status": "approved",
+      "notes": "The repeated image is removed while retaining the close rock-chic mix of sharp tailoring, leather, and a fluid dress.",
+      "reviewed_at": "2026-09-29T21:56:24.516995+00:00"
+    },
+    {
+      "review_id": "ER-145",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/thebe_magugu__candidate_01.png",
+      "status": "approved",
+      "notes": "The board replaces the repeated three-item loop with genuinely distinct tailoring, dress, vest, and sculptural garment silhouettes.",
+      "reviewed_at": "2026-09-29T21:56:24.612894+00:00"
+    },
+    {
+      "review_id": "ER-146",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/third_form__candidate_01.png",
+      "status": "approved",
+      "notes": "Accidental words are removed and olive, cream, black, and chocolate add controlled colour while preserving the close fluid-tailoring vibe.",
+      "reviewed_at": "2026-09-29T21:56:24.710579+00:00"
+    },
+    {
+      "review_id": "ER-147",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/tkees__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: this is now a clothing-only Tkees apparel board with distinct joggers, sweatshirts, tanks, tees and lounge sets; people remain, while footwear, sandals and accessory tiles are absent.",
+      "reviewed_at": "2026-10-01T10:05:56.075833+00:00"
+    },
+    {
+      "review_id": "ER-148",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/tory_burch__candidate_01.png",
+      "status": "rejected",
+      "notes": "The preppy direction is clear, but bags, loafers, and scarf panels occupy too much of this clothes-only moodboard.",
+      "reviewed_at": "2026-09-29T21:56:24.815739+00:00"
+    },
+    {
+      "review_id": "ER-148",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/tory_burch__candidate_02.png",
+      "status": "approved",
+      "notes": "Preppy blazer, shirting, dress, cable knit and houndstooth range stays apparel-only; bag, loafer and scarf tiles removed.",
+      "reviewed_at": "2026-10-02T08:51:55.134004+00:00"
+    },
+    {
+      "review_id": "ER-149",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/toteme__candidate_01.png",
+      "status": "rejected",
+      "notes": "The board is more elegant and reduces sleeve close-ups, but the large handbag panel introduces avoidable category leakage.",
+      "reviewed_at": "2026-09-29T21:56:24.912414+00:00"
+    },
+    {
+      "review_id": "ER-149",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/toteme__candidate_02.png",
+      "status": "approved",
+      "notes": "Elegant Stockholm minimalism across distinct coat, knit, shirting, trouser, blazer and column dress; handbag removed.",
+      "reviewed_at": "2026-10-02T08:51:55.275396+00:00"
+    },
+    {
+      "review_id": "ER-150",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/twinset__candidate_01.png",
+      "status": "rejected",
+      "notes": "The repeated-image issue is fixed and the romantic direction is close, but the lower-right handbag is a prominent accessory tile in a clothes-only board.",
+      "reviewed_at": "2026-09-29T22:05:06.436074+00:00"
+    },
+    {
+      "review_id": "ER-150",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/twinset__candidate_02.png",
+      "status": "approved",
+      "notes": "Romantic lace, knit, tweed, bow blouse and tailoring without a handbag tile.",
+      "reviewed_at": "2026-10-02T08:51:55.413360+00:00"
+    },
+    {
+      "review_id": "ER-151",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/universal_works__candidate_01.png",
+      "status": "approved",
+      "notes": "The three-image repetition is removed; distinct chore jacket, knit, overshirt, trouser, and fabric views preserve the close workwear vibe.",
+      "reviewed_at": "2026-09-29T22:05:06.519423+00:00"
+    },
+    {
+      "review_id": "ER-152",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/veronica_beard__candidate_01.png",
+      "status": "approved",
+      "notes": "Repeated imagery is removed and the board expands to distinct blazer, shirting, dress, knit, tweed, and trouser outfits.",
+      "reviewed_at": "2026-09-29T22:05:06.615530+00:00"
+    },
+    {
+      "review_id": "ER-153",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/wales_bonner__candidate_01.png",
+      "status": "rejected",
+      "notes": "The repeated-image issue is fixed and the clothes direction is close, but the dedicated shoe tile creates category leakage.",
+      "reviewed_at": "2026-09-29T22:05:06.722870+00:00"
+    },
+    {
+      "review_id": "ER-153",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/wales_bonner__candidate_02.png",
+      "status": "approved",
+      "notes": "Distinct Wales Bonner tailoring, track-stripe jacket, polo, knit and coat; dedicated shoe tile removed.",
+      "reviewed_at": "2026-10-02T08:51:55.551356+00:00"
+    },
+    {
+      "review_id": "ER-154",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/weekday__candidate_01.png",
+      "status": "approved",
+      "notes": "The board now prioritizes varied casualwear and denim looks with only supporting material details, directly addressing the excessive close-ups.",
+      "reviewed_at": "2026-09-29T22:05:06.829703+00:00"
+    },
+    {
+      "review_id": "ER-155",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/whistles__candidate_01.png",
+      "status": "approved",
+      "notes": "Accidental words are removed and the close polished everyday vibe is retained across distinct outfits.",
+      "reviewed_at": "2026-09-29T22:05:06.929968+00:00"
+    },
+    {
+      "review_id": "ER-156",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/yigal_azrouel__candidate_01.png",
+      "status": "approved",
+      "notes": "Both repeated-image pairs are removed; the board now uses distinct draped, tailored, knit, and evening silhouettes.",
+      "reviewed_at": "2026-09-29T22:05:07.028616+00:00"
+    },
+    {
+      "review_id": "ER-157",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/yohji_yamamoto__candidate_01.png",
+      "status": "approved",
+      "notes": "Repeated imagery is removed while preserving the close asymmetric, layered, monochrome Yohji direction.",
+      "reviewed_at": "2026-09-29T22:05:07.127721+00:00"
+    },
+    {
+      "review_id": "ER-158",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/acne_studios__candidate_01.png",
+      "status": "rejected",
+      "notes": "Boots and chunky trainers are present, but the board still spends hero space on off-vibe sandals and generic mules/loafers. Retry around Acne current trainers and directional boots only, with each shoe unique.",
+      "reviewed_at": "2026-10-01T19:13:55.691365+00:00"
+    },
+    {
+      "review_id": "ER-158",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/acne_studios__candidate_02.png",
+      "status": "rejected",
+      "notes": "Brand direction is closer, but the grey trainer is repeated as worn hero, product closeup and construction detail. Candidate 03 must use one panel per unique shoe with no worn/detail companion view.",
+      "reviewed_at": "2026-10-01T19:37:31.979581+00:00"
+    },
+    {
+      "review_id": "ER-158",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/acne_studios__candidate_03.png",
+      "status": "rejected",
+      "notes": "Duplication is solved and current trainers/boots are strong, but one dedicated sandal panel remains despite Ellina calling the sandal direction off-vibe. Final retry: no sandals at all.",
+      "reviewed_at": "2026-10-01T19:57:21.912478+00:00"
+    },
+    {
+      "review_id": "ER-158",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/acne_studios__candidate_04.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: current chunky trainers and directional boots/closed mules lead the board; the off-vibe sandal is gone and all six shoe designs are distinct.",
+      "reviewed_at": "2026-10-01T20:02:57.736909+00:00"
+    },
+    {
+      "review_id": "ER-160",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/ami_paris__candidate_01.png",
+      "status": "rejected",
+      "notes": "The clasp loafer problem is removed and classic shapes improve, but sandals still appear in two hero panels despite Ellina flagging them as off-brand. Retry with loafers, boots and refined classic shoes only.",
+      "reviewed_at": "2026-10-01T19:13:55.769950+00:00"
+    },
+    {
+      "review_id": "ER-160",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/ami_paris__candidate_02.png",
+      "status": "rejected",
+      "notes": "Sandals are gone, but the loafer, pump, ankle boot and tall boot are each repeated in product and worn views. Candidate 03 must show distinct classic AMI shapes exactly once each.",
+      "reviewed_at": "2026-10-01T19:37:32.061461+00:00"
+    },
+    {
+      "review_id": "ER-160",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/ami_paris__candidate_03.png",
+      "status": "rejected",
+      "notes": "Duplication is solved and classic shapes are cleaner, but the bottom sandal remains explicitly off-brief. Final retry: loafers, pumps and boots only, with no sandals.",
+      "reviewed_at": "2026-10-01T19:57:21.998127+00:00"
+    },
+    {
+      "review_id": "ER-160",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/ami_paris__candidate_04.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: six distinct classic loafers, pumps and boots replace the clasp-loafer and sandal direction; there are no repeated products or off-brief sandals.",
+      "reviewed_at": "2026-10-01T20:02:57.815421+00:00"
+    },
+    {
+      "review_id": "ER-161",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/amina_muaddi__candidate_01.png",
+      "status": "rejected",
+      "notes": "The blurry image is fixed and rendering is crisp, but the same crystal sandal is repeated across product and worn views. Retry with distinct Amina Muaddi silhouettes and no alternate view of the same pair.",
+      "reviewed_at": "2026-10-01T19:13:55.851352+00:00"
+    },
+    {
+      "review_id": "ER-161",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/amina_muaddi__candidate_02.png",
+      "status": "rejected",
+      "notes": "Rendering is crisp, but the black pump, crystal sandal and burgundy mule are each repeated in worn, product and heel/detail panels. Candidate 03 must use unique silhouettes with no companion detail panels.",
+      "reviewed_at": "2026-10-01T19:37:32.142816+00:00"
+    },
+    {
+      "review_id": "ER-161",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/amina_muaddi__candidate_03.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: all seven Amina Muaddi silhouettes are crisp and distinct, spanning sculptural pumps, crystal sandals, mules and platforms without repeated products or blurry panels.",
+      "reviewed_at": "2026-10-01T19:57:22.071187+00:00"
+    },
+    {
+      "review_id": "ER-162",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/arizona_love__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: the board is now unmistakably eclectic, with beads, fringe, embroidered and bandana-like fabric treatments across distinct sandals, loafers, flats, boots and trainers.",
+      "reviewed_at": "2026-10-01T19:13:55.937308+00:00"
+    },
+    {
+      "review_id": "ER-163",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/atoms__candidate_01.png",
+      "status": "rejected",
+      "notes": "The signature textile construction is now correct, but the same black knit trainer is repeated in product and worn panels. Retry with each Atoms shoe silhouette and colour appearing exactly once.",
+      "reviewed_at": "2026-10-01T19:16:57.843135+00:00"
+    },
+    {
+      "review_id": "ER-163",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/atoms__candidate_02.png",
+      "status": "rejected",
+      "notes": "Correct textile direction, but the knit trainers, loafer and boot are all repeated as product and worn views. Candidate 03 must be product-only with one unique Atoms shoe per panel.",
+      "reviewed_at": "2026-10-01T19:37:32.216820+00:00"
+    },
+    {
+      "review_id": "ER-163",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/atoms__candidate_03.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: seven distinct product-only shoes foreground the signature textile construction across trainers, slip-ons, a loafer, flat and boot, with no repeated or wrong-brand footwear.",
+      "reviewed_at": "2026-10-01T19:57:22.142993+00:00"
+    },
+    {
+      "review_id": "ER-164",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/atp_atelier__candidate_01.png",
+      "status": "rejected",
+      "notes": "Boots are now included, but sandals, mules, loafers and boots are each repeated between product and worn views. Retry with one unique view per shoe and a less summery balance led by distinct boots and closed shoes.",
+      "reviewed_at": "2026-10-01T19:16:57.928088+00:00"
+    },
+    {
+      "review_id": "ER-164",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/atp_atelier__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: seven distinct ATP Atelier shoes now include two boots and a closed-shoe majority, correcting the overly summery balance without repeating products.",
+      "reviewed_at": "2026-10-01T19:59:55.176941+00:00"
+    },
+    {
+      "review_id": "ER-165",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/base_london__candidate_01.png",
+      "status": "rejected",
+      "notes": "The brand vibe is close, but each main brogue, boot, derby and loafer is repeated as both a product and worn view. Retry with six to nine completely different Base London shoes, one panel per shoe.",
+      "reviewed_at": "2026-10-01T19:16:58.007825+00:00"
+    },
+    {
+      "review_id": "ER-165",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/base_london__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: six distinct Base London brogues, derbies, boots and loafers appear exactly once, eliminating the repeated-image issue while retaining the close brand vibe.",
+      "reviewed_at": "2026-10-01T19:59:55.255040+00:00"
+    },
+    {
+      "review_id": "ER-166",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/billini__candidate_01.png",
+      "status": "rejected",
+      "notes": "Shapes are trendier, but the nude ankle-strap sandal is repeated as a product and buckle closeup, recreating the duplicate problem. Retry with entirely distinct trend-led shoes and no material/detail crop from a hero pair.",
+      "reviewed_at": "2026-10-01T19:16:58.089438+00:00"
+    },
+    {
+      "review_id": "ER-166",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/billini__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: eight unique trend-led heels, boots, mules, slingbacks and platforms replace the repeated pairs; there are no detail crops or alternate views.",
+      "reviewed_at": "2026-10-01T19:59:55.335233+00:00"
+    },
+    {
+      "review_id": "ER-167",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/birdies__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: no words appear and seven distinct flats, loafers and slip-ons replace the three repeated images while retaining the close Birdies vibe.",
+      "reviewed_at": "2026-10-01T20:09:56.811640+00:00"
+    },
+    {
+      "review_id": "ER-168",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/cariuma__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: eight distinct full-shoe panels replace the excessive closeups, retaining the close sustainable-canvas trainer direction with varied colours and high/low-top forms.",
+      "reviewed_at": "2026-10-01T20:09:56.888991+00:00"
+    },
+    {
+      "review_id": "ER-169",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/celine__candidate_01.png",
+      "status": "rejected",
+      "notes": "Loafers and sandals still occupy multiple hero panels, only one trainer appears, and several products repeat as worn, product and detail views. Retry product-only with trainers leading and no loafers or sandals.",
+      "reviewed_at": "2026-10-01T20:09:56.977477+00:00"
+    },
+    {
+      "review_id": "ER-169",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/celine__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: three distinct trainers now lead, supported by two boots and one pump; the off-vibe loafers and sandals are gone and no product repeats.",
+      "reviewed_at": "2026-10-01T20:18:22.536606+00:00"
+    },
+    {
+      "review_id": "ER-171",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/chaco__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: eight unique Chaco constructions and colourways replace the repeated sandal, spanning multicolour, neutral, closed-toe and varied strap configurations.",
+      "reviewed_at": "2026-10-01T20:09:57.073596+00:00"
+    },
+    {
+      "review_id": "ER-173",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/chanel__candidate_03.png",
+      "status": "approved",
+      "notes": "Distinct signature footwear in a non-grid collage with no handbags.",
+      "reviewed_at": "2026-09-29T18:29:11.319240+00:00"
+    },
+    {
+      "review_id": "ER-174",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/charles_and_keith__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: six distinct loafers, flats, sandals, boots, trainers and slingbacks replace all three repeated image pairs while retaining the close brand vibe.",
+      "reviewed_at": "2026-10-01T20:14:11.479783+00:00"
+    },
+    {
+      "review_id": "ER-176",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/chopova_lowena__candidate_01.png",
+      "status": "rejected",
+      "notes": "Still off-brand: the board reads as bohemian espadrilles, woven slides and soft suede boots. Retry around Chopova Lowena punk/subcultural footwear, tartan or mixed textiles, Mary Jane or rugged forms, dense metal hardware and carabiner energy.",
+      "reviewed_at": "2026-10-01T20:14:11.560522+00:00"
+    },
+    {
+      "review_id": "ER-176",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/chopova_lowena__candidate_02.png",
+      "status": "rejected",
+      "notes": "Tartan, Mary Jane shape and dense hardware are much closer, but an espadrille, folk clog and woven slide keep half the board bohemian. Final retry must use only punk/subcultural boots, Mary Janes and rugged hardware-heavy forms; no espadrilles, clogs or woven slides.",
+      "reviewed_at": "2026-10-01T20:18:22.616770+00:00"
+    },
+    {
+      "review_id": "ER-176",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/chopova_lowena__candidate_03.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: seven unique punk/subcultural boots, Mary Janes and rugged cutout forms use tartan, heavy buckles, rings and dense hardware; the bohemian espadrille, clog and woven-slide direction is gone.",
+      "reviewed_at": "2026-10-01T20:27:08.464429+00:00"
+    },
+    {
+      "review_id": "ER-177",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/chrome_hearts__candidate_01.png",
+      "status": "rejected",
+      "notes": "Branded boots and slippers are now present, but trainers, boots, loafers and slides are repeated as worn, product and detail views. Retry product-only with distinct cross-hardware styles exactly once each.",
+      "reviewed_at": "2026-10-01T20:14:11.649894+00:00"
+    },
+    {
+      "review_id": "ER-177",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/chrome_hearts__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: seven unique cross-hardware shoes appear once each, including multiple branded boots and two slipper/slide forms, with no repeated product or detail panel.",
+      "reviewed_at": "2026-10-01T20:18:22.696294+00:00"
+    },
+    {
+      "review_id": "ER-178",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/claris_virot__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: no bag image remains, only one of eight shoes uses snake print, and the rest use vivid suede, leather and hardware across distinct silhouettes.",
+      "reviewed_at": "2026-10-01T20:14:11.741548+00:00"
+    },
+    {
+      "review_id": "ER-180",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/comme_des_garcons_split__candidate_01.png",
+      "status": "approved",
+      "notes": "Implemented Ellina's requested catalogue split: separate PLAY heart-Converse board and main-line avant-garde footwear board, both preserved as independent V2 assets; original unified board remains available as V1 fallback.",
+      "reviewed_at": "2026-10-02T08:21:07.137057+00:00"
+    },
+    {
+      "review_id": "ER-181",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/coperni__candidate_01.png",
+      "status": "rejected",
+      "notes": "Still off-brief: futuristic performance trainers, hiking sandals and rugged technical boots dominate, while Ellina explicitly requested non-sporty, fashion-led and trendy footwear. Retry with sculptural fashion shoes only and no athletic or hiking forms.",
+      "reviewed_at": "2026-10-01T20:40:03.592091+00:00"
+    },
+    {
+      "review_id": "ER-181",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/coperni__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: eight distinct sculptural fashion shoes use arched, hollow, flared and metallic forms; athletic trainers and hiking footwear are completely absent.",
+      "reviewed_at": "2026-10-01T20:56:41.108048+00:00"
+    },
+    {
+      "review_id": "ER-182",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/cordani__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: all words are removed and seven distinct sandals, flats, boots, loafers and slingbacks preserve the close Cordani vibe without repetition.",
+      "reviewed_at": "2026-10-01T20:40:03.673272+00:00"
+    },
+    {
+      "review_id": "ER-183",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/cult_gaia__candidate_01.png",
+      "status": "rejected",
+      "notes": "Still too soft and bohemian: raffia espadrilles, braided slides and simple leather sandals dominate. Retry with architectural heels, sculptural geometry and eclectic hard materials such as metal, resin, acrylic or wood, with each shoe unique.",
+      "reviewed_at": "2026-10-01T20:40:03.755230+00:00"
+    },
+    {
+      "review_id": "ER-183",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/cult_gaia__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: seven distinct shoes now use orb, acrylic, metal-ring, wood, angular and sculptural heel structures with eclectic materials, while retaining a small amount of natural texture.",
+      "reviewed_at": "2026-10-01T20:56:41.190312+00:00"
+    },
+    {
+      "review_id": "ER-184",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/cydwoq__candidate_01.png",
+      "status": "rejected",
+      "notes": "Words are removed and the handmade leather direction is close, but three sandal/open forms remain despite Ellina asking to swap the sandals. Retry with closed boots, flats and asymmetric shoes only; no sandals.",
+      "reviewed_at": "2026-10-01T20:40:03.832458+00:00"
+    },
+    {
+      "review_id": "ER-184",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/cydwoq__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: six unique closed boots, flats and asymmetric shoes retain the handmade leather character; words and sandals are entirely absent.",
+      "reviewed_at": "2026-10-01T20:56:41.282414+00:00"
+    },
+    {
+      "review_id": "ER-185",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/davi__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: eight distinct pumps, flats, sandals and slingbacks replace both repeated image pairs with no alternate crops or duplicate products.",
+      "reviewed_at": "2026-10-01T20:48:26.375887+00:00"
+    },
+    {
+      "review_id": "ER-186",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/gabriela_hearst__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: six unique refined leather loafers, flats, boots and sandals eliminate both repeated image pairs and retain the understated luxury direction.",
+      "reviewed_at": "2026-10-01T20:48:26.457529+00:00"
+    },
+    {
+      "review_id": "ER-187",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/ganni__candidate_01.png",
+      "status": "rejected",
+      "notes": "Words and unrelated branding are gone, but the board stays generic and only two of six styles use laces. Retry with a stronger Ganni mix led by laced boots/shoes, chunky soles, buckles and subcultural contrast; no plain generic classics.",
+      "reviewed_at": "2026-10-01T20:48:26.539129+00:00"
+    },
+    {
+      "review_id": "ER-187",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/ganni__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: three laced styles, chunky soles, buckles, leopard, red and silver create the requested stronger Ganni contrast; words and unrelated branding remain absent.",
+      "reviewed_at": "2026-10-01T20:56:41.370333+00:00"
+    },
+    {
+      "review_id": "ER-188",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/gray_matters__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: eight distinct designs eliminate the repeated image, while orb, cone and flared sculptural heels plus burgundy and powder blue add the requested fun.",
+      "reviewed_at": "2026-10-01T20:48:26.626225+00:00"
+    },
+    {
+      "review_id": "ER-189",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/henrik_vibskov__candidate_01.png",
+      "status": "rejected",
+      "notes": "Print is reduced and sculptural shapes improve, but the same white sneaker, black boot and orange sandal recur as worn, product and detail views. Retry product-only with six to nine distinct shapes.",
+      "reviewed_at": "2026-10-01T21:08:17.890949+00:00"
+    },
+    {
+      "review_id": "ER-189",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/henrik_vibskov__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: eight distinct sculptural silhouettes lead, while print is limited to two accent shoes; shapes, soles and volumes now carry the board.",
+      "reviewed_at": "2026-10-01T21:18:19.939140+00:00"
+    },
+    {
+      "review_id": "ER-191",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/twinset__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: five distinct loafer, pump, ankle boot, tall boot and sandal styles replace the repeated image while retaining the close Twinset vibe.",
+      "reviewed_at": "2026-10-01T21:08:17.968904+00:00"
+    },
+    {
+      "review_id": "ER-193",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/ines_de_la_fressange__candidate_01.png",
+      "status": "rejected",
+      "notes": "Nearly every loafer, flat, sandal, boot and trainer repeats in product and worn panels, and the result remains generic for a limited collection. Retry product-only with a small, disciplined set of distinct Parisian classics.",
+      "reviewed_at": "2026-10-01T21:08:18.049440+00:00"
+    },
+    {
+      "review_id": "ER-193",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/ines_de_la_fressange__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: a disciplined five-style Parisian capsule of loafer, red flat, sandal, ankle boot and white trainer suits the limited collection with no repeats.",
+      "reviewed_at": "2026-10-01T21:18:20.018021+00:00"
+    },
+    {
+      "review_id": "ER-194",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/j_w_anderson__candidate_01.png",
+      "status": "rejected",
+      "notes": "Every hero style repeats across worn, product and detail panels. Retry product-only with distinct J.W. Anderson shoes, stronger signature hardware and sculptural forms, and no alternate views.",
+      "reviewed_at": "2026-10-01T21:08:18.128945+00:00"
+    },
+    {
+      "review_id": "ER-194",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/j_w_anderson__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: seven unique flats, sandals, mules, boots and Mary Janes use orb and oversized sculptural hardware, replacing the repeated and weaker styles.",
+      "reviewed_at": "2026-10-01T21:18:20.100022+00:00"
+    },
+    {
+      "review_id": "ER-195",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/jacquemus__candidate_01.png",
+      "status": "rejected",
+      "notes": "Still too plain: generic neutral loafers, ballet flats and ankle boots dominate, and each appears again as a worn or detail view. Retry product-only with bolder sculptural Jacquemus heels, asymmetric straps, rounded geometry and sun-washed colour.",
+      "reviewed_at": "2026-10-01T21:12:36.728586+00:00"
+    },
+    {
+      "review_id": "ER-195",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/jacquemus__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: six distinct rounded, asymmetric and sculptural shoes use orb heels, curved forms and sun-washed cream, brown and tan; the plain repeated board is gone.",
+      "reviewed_at": "2026-10-01T21:18:20.182480+00:00"
+    },
+    {
+      "review_id": "ER-197",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/jeffrey_campbell__candidate_01.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: seven unique iconic platform boots, Mary Janes, sandals and mules appear once each across black, pink, leopard, silver, white, orange and lime.",
+      "reviewed_at": "2026-10-01T21:12:36.809908+00:00"
+    },
+    {
+      "review_id": "ER-198",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/jil_sander__candidate_01.png",
+      "status": "rejected",
+      "notes": "Minimal direction is present, but every loafer, flat, boot and sandal repeats in worn/product views and the shapes remain too conventional. Retry product-only with distinct minimalist forms and a restrained avant-garde edge.",
+      "reviewed_at": "2026-10-01T21:12:36.887970+00:00"
+    },
+    {
+      "review_id": "ER-198",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/jil_sander__candidate_02.png",
+      "status": "approved",
+      "notes": "Passes Ellina correction: six unique minimalist shoes use restrained asymmetry, toe-ring and crossed straps, ruched leather and clean boots for a subtle avant-garde edge.",
+      "reviewed_at": "2026-10-01T21:18:20.257252+00:00"
+    },
+    {
+      "review_id": "ER-203",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/sandy_liang__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct bow, heart, flower, pearl, and charm pieces; no repeated image and the youthful Sandy Liang styling is coherent.",
+      "reviewed_at": "2026-10-01T21:30:21.808124+00:00"
+    },
+    {
+      "review_id": "ER-205",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/shrimps__candidate_01.png",
+      "status": "rejected",
+      "notes": "The same shell-and-pink-charm necklace appears twice; retry with earrings clearly dominant, no rings, and every product shown once.",
+      "reviewed_at": "2026-10-01T21:30:21.926633+00:00"
+    },
+    {
+      "review_id": "ER-205",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/shrimps__candidate_02.png",
+      "status": "rejected",
+      "notes": "Still repeats the same charm necklace as worn and flat lay, includes forbidden blue, and does not keep earrings dominant.",
+      "reviewed_at": "2026-10-01T21:34:39.480241+00:00"
+    },
+    {
+      "review_id": "ER-205",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/shrimps__candidate_03.png",
+      "status": "rejected",
+      "notes": "Brand language improved, but shrimp, bee and green floral earrings repeat as worn views and product views; next retry must be product-only with each pair once.",
+      "reviewed_at": "2026-10-01T21:40:29.453433+00:00"
+    },
+    {
+      "review_id": "ER-205",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/shrimps__candidate_04.png",
+      "status": "approved",
+      "notes": "Six distinct earring pairs, earrings clearly dominate, no rings or blue, and no repeated product views.",
+      "reviewed_at": "2026-10-01T21:44:15.485789+00:00"
+    },
+    {
+      "review_id": "ER-206",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/simon_miller__candidate_01.png",
+      "status": "rejected",
+      "notes": "Clean category but too generic and minimal to establish a specific Simon Miller jewellery identity; retry with recognizable sculptural statement forms and no repeated product.",
+      "reviewed_at": "2026-10-01T21:30:22.057151+00:00"
+    },
+    {
+      "review_id": "ER-206",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/simon_miller__candidate_02.png",
+      "status": "rejected",
+      "notes": "Brand-specific statement-earring direction was not applied; result remains generic plain hoops, rings, chains and cuffs.",
+      "reviewed_at": "2026-10-01T21:34:39.589815+00:00"
+    },
+    {
+      "review_id": "ER-206",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/simon_miller__candidate_03.png",
+      "status": "rejected",
+      "notes": "Correct brand assortment, but every statement earring is repeated as both worn and product-only; next retry must show each pair once in product-only panels.",
+      "reviewed_at": "2026-10-01T21:40:29.594275+00:00"
+    },
+    {
+      "review_id": "ER-206",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/simon_miller__candidate_04.png",
+      "status": "approved",
+      "notes": "Six unique current statement-earring directions\u2014palm, starfish, banana and three raffia treatments\u2014each shown once.",
+      "reviewed_at": "2026-10-01T21:44:15.596744+00:00"
+    },
+    {
+      "review_id": "ER-207",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/sofie_schnoor__candidate_01.png",
+      "status": "rejected",
+      "notes": "Whimsical charm language is generic and does not convincingly address the limited jewellery offer; retry with a tighter verified-style capsule and greater product distinction.",
+      "reviewed_at": "2026-10-01T21:30:31.422028+00:00"
+    },
+    {
+      "review_id": "ER-207",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/sofie_schnoor__candidate_02.png",
+      "status": "rejected",
+      "notes": "Invents rings, charm stacks, pearls and pastel enamel, and repeats the necklace; this contradicts the intentionally limited three-product capsule.",
+      "reviewed_at": "2026-10-01T21:34:39.729434+00:00"
+    },
+    {
+      "review_id": "ER-207",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/sofie_schnoor__candidate_03.png",
+      "status": "rejected",
+      "notes": "Correct restrained capsule, but both earrings and necklace repeat as worn and product views; next retry must use three product panels plus three non-product context panels and no people.",
+      "reviewed_at": "2026-10-01T21:40:29.789838+00:00"
+    },
+    {
+      "review_id": "ER-207",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/sofie_schnoor__candidate_04.png",
+      "status": "approved",
+      "notes": "Honest limited capsule: two distinct gold earring pairs and one necklace, each once, balanced by leather, stone and architectural context.",
+      "reviewed_at": "2026-10-01T21:44:15.726118+00:00"
+    },
+    {
+      "review_id": "ER-212",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/suzanne_kalan__candidate_01.png",
+      "status": "approved",
+      "notes": "Iconic asymmetrical baguette-cut language is clear across distinct rings, earrings, bracelets and necklaces with no duplicate hero product.",
+      "reviewed_at": "2026-10-01T21:49:58.608800+00:00"
+    },
+    {
+      "review_id": "ER-213",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/tabayer__candidate_01.png",
+      "status": "rejected",
+      "notes": "The same green-stone teardrop earrings appear worn twice and as a product still; retry with each sculptural design once.",
+      "reviewed_at": "2026-10-01T21:49:58.725289+00:00"
+    },
+    {
+      "review_id": "ER-213",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/tabayer__candidate_02.png",
+      "status": "rejected",
+      "notes": "Five panels are clean, but the first panel contains two identical hoop pairs; retry with exactly two earrings in each pair panel.",
+      "reviewed_at": "2026-10-01T21:55:28.644997+00:00"
+    },
+    {
+      "review_id": "ER-213",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/tabayer__candidate_03.png",
+      "status": "approved",
+      "notes": "Six distinct Oera-family products, including exactly one two-earring pair per earring panel, with no worn or repeated views.",
+      "reviewed_at": "2026-10-01T21:57:59.240688+00:00"
+    },
+    {
+      "review_id": "ER-214",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/tecovas__candidate_01.png",
+      "status": "rejected",
+      "notes": "Western hoop, signet ring and pearl-drop earrings each repeat as worn and product views; retry product-only with unique designs.",
+      "reviewed_at": "2026-10-01T21:49:58.869288+00:00"
+    },
+    {
+      "review_id": "ER-214",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/tecovas__candidate_02.png",
+      "status": "approved",
+      "notes": "Six distinct Western jewellery products, each shown once, with consistent rugged leather-and-stone presentation.",
+      "reviewed_at": "2026-10-01T21:55:28.762577+00:00"
+    },
+    {
+      "review_id": "ER-219",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/thomas_sabo__candidate_01.png",
+      "status": "rejected",
+      "notes": "Text is removed, but the charm bracelet and moon/star medallions recur across several worn and still-life panels; retry with every item once.",
+      "reviewed_at": "2026-10-01T21:49:58.999064+00:00"
+    },
+    {
+      "review_id": "ER-219",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/thomas_sabo__candidate_02.png",
+      "status": "approved",
+      "notes": "Six distinct product categories and symbolic vocabularies, no duplicated charm or worn view, and no typography.",
+      "reviewed_at": "2026-10-01T21:55:28.905522+00:00"
+    },
+    {
+      "review_id": "ER-221",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/tory_burch__candidate_02.png",
+      "status": "approved",
+      "notes": "Polished preppy jewellery direction with one controlled logo element.",
+      "reviewed_at": "2026-09-29T18:29:11.446942+00:00"
+    },
+    {
+      "review_id": "ER-222",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/toteme__candidate_01.png",
+      "status": "rejected",
+      "notes": "Typography is gone, but hoops, ring, chain and cuff repeat across worn and still-life views; retry with each minimal product once.",
+      "reviewed_at": "2026-10-01T22:03:47.634262+00:00"
+    },
+    {
+      "review_id": "ER-222",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/toteme__candidate_02.png",
+      "status": "approved",
+      "notes": "Six distinct minimal TOTEME product directions, each once, with no typography or worn/product duplication.",
+      "reviewed_at": "2026-10-01T22:15:14.189826+00:00"
+    },
+    {
+      "review_id": "ER-223",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/valentino__candidate_01.png",
+      "status": "rejected",
+      "notes": "Still too opulent: oversized crystals, pearls and bridal drops dominate; retry with restrained V-logo and Rockstud pieces, each once.",
+      "reviewed_at": "2026-10-01T22:03:47.762867+00:00"
+    },
+    {
+      "review_id": "ER-223",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/valentino__candidate_02.png",
+      "status": "approved",
+      "notes": "Restrained VLogo, Coeur Royal and Rockstud mix with wearable scale, controlled red, no oversized opulence and no repeated item.",
+      "reviewed_at": "2026-10-01T22:15:14.552028+00:00"
+    },
+    {
+      "review_id": "ER-224",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/vera_wang__candidate_01.png",
+      "status": "rejected",
+      "notes": "Remains highly ornate and bridal, with too few distinct rings and repeated ring imagery; retry as a ring-led restrained fine-jewellery capsule.",
+      "reviewed_at": "2026-10-01T22:03:47.929735+00:00"
+    },
+    {
+      "review_id": "ER-224",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/vera_wang__candidate_02.png",
+      "status": "approved",
+      "notes": "Six visibly distinct ring-led LOVE designs, subtle blue-sapphire accents, clean styling and no repeated or unrelated jewellery.",
+      "reviewed_at": "2026-10-01T22:15:15.347570+00:00"
+    },
+    {
+      "review_id": "ER-225",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/veronica_beard__candidate_01.png",
+      "status": "rejected",
+      "notes": "Colour improves, but hoops, pearl drops and green ring are each repeated as worn and product views; retry with unique colourful products once each.",
+      "reviewed_at": "2026-10-01T22:03:48.272112+00:00"
+    },
+    {
+      "review_id": "ER-225",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/veronica_beard__candidate_02.png",
+      "status": "approved",
+      "notes": "Six colourful distinct products aligned to the current collection, each shown once with no worn duplication.",
+      "reviewed_at": "2026-10-01T22:15:16.060264+00:00"
+    },
+    {
+      "review_id": "ER-228",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yumi_kim__candidate_01.png",
+      "status": "rejected",
+      "notes": "Larger pieces are present, but the same charm necklace repeats as worn and product views; retry with distinct scale-balanced products once each.",
+      "reviewed_at": "2026-10-01T22:33:49.284454+00:00"
+    },
+    {
+      "review_id": "ER-228",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yumi_kim__candidate_02.png",
+      "status": "approved",
+      "notes": "Six distinct colourful pieces with a large charm necklace and stacked bangles balancing smaller earrings, hoops and ring.",
+      "reviewed_at": "2026-10-01T22:45:32.331236+00:00"
+    },
+    {
+      "review_id": "ER-231",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/acne_studios__candidate_01.png",
+      "status": "rejected",
+      "notes": "Bags read as generic invented shapes rather than recognizable popular Acne Studios models; retry with named signature silhouettes and no duplicate detail views.",
+      "reviewed_at": "2026-10-01T22:33:49.395606+00:00"
+    },
+    {
+      "review_id": "ER-231",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/acne_studios__candidate_02.png",
+      "status": "approved",
+      "notes": "Six recognizable popular Acne bag directions led by Musubi and Multipocket, with varied shapes and no off-brand beige filler.",
+      "reviewed_at": "2026-10-01T22:45:32.440498+00:00"
+    },
+    {
+      "review_id": "ER-232",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/alo_yoga__candidate_01.png",
+      "status": "rejected",
+      "notes": "Still a gym-accessory board with backpack, belt bag and tote; it does not deliver the elegant high-priced ALO Atelier leather-bag brief.",
+      "reviewed_at": "2026-10-01T22:33:49.532879+00:00"
+    },
+    {
+      "review_id": "ER-232",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/alo_yoga__candidate_02.png",
+      "status": "approved",
+      "notes": "Luxury Atelier brief is clear across six leather, suede and leather-mesh families with refined hardware and intention crystals.",
+      "reviewed_at": "2026-10-01T22:45:32.582160+00:00"
+    },
+    {
+      "review_id": "ER-233",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/ami_paris__candidate_01.png",
+      "status": "rejected",
+      "notes": "Uses an invented plain-heart lock on every bag rather than credible AMI Paris shapes and an Ami de Coeur heart-A clasp; retry with verified silhouettes.",
+      "reviewed_at": "2026-10-01T22:33:49.664046+00:00"
+    },
+    {
+      "review_id": "ER-233",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/ami_paris__candidate_02.png",
+      "status": "approved",
+      "notes": "Six distinct current AMI silhouettes with correct heart-over-A Ami de Coeur hardware on the Paris Paris bags and no invented lock repetition.",
+      "reviewed_at": "2026-10-01T22:45:32.724947+00:00"
+    },
+    {
+      "review_id": "ER-235",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/anya_hindmarch__candidate_01.png",
+      "status": "rejected",
+      "notes": "Cheeky direction is strong, but the eye tote and red bow bag repeat through close detail crops; retry with each playful bag once.",
+      "reviewed_at": "2026-10-01T22:52:39.666259+00:00"
+    },
+    {
+      "review_id": "ER-235",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/anya_hindmarch__candidate_02.png",
+      "status": "approved",
+      "notes": "Six complete and distinct playful bags\u2014Eyes, Bow, embellished clutch, dog, cloud and multi-pocket\u2014with no repeated detail crop.",
+      "reviewed_at": "2026-10-01T22:59:45.811099+00:00"
+    },
+    {
+      "review_id": "ER-236",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/arizona_love__candidate_01.png",
+      "status": "approved",
+      "notes": "Bandana construction and desert-western cues replace generic straw styling.",
+      "reviewed_at": "2026-09-29T18:29:11.575445+00:00"
+    },
+    {
+      "review_id": "ER-237",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/brunello_cucinelli__candidate_01.png",
+      "status": "rejected",
+      "notes": "Material direction improves, but the suede bucket and hobo recur as whole bags and detail crops; retry with six distinct complete suede or leather bags.",
+      "reviewed_at": "2026-10-01T22:52:39.787766+00:00"
+    },
+    {
+      "review_id": "ER-237",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/brunello_cucinelli__candidate_02.png",
+      "status": "approved",
+      "notes": "Six distinct complete quiet-luxury bags in woven leather, suede and grained leather; no straw, canvas or duplicate detail views.",
+      "reviewed_at": "2026-10-01T22:59:45.921542+00:00"
+    },
+    {
+      "review_id": "ER-238",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/casablanca__candidate_01.png",
+      "status": "rejected",
+      "notes": "Still dominated by metallic sparkle, crystal mesh and resort-boho shells; retry with modern graphic humour and no glitter.",
+      "reviewed_at": "2026-10-01T22:52:39.921794+00:00"
+    },
+    {
+      "review_id": "ER-238",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/casablanca__candidate_02.png",
+      "status": "approved",
+      "notes": "Modern witty luxury-sport direction is clear across six unique graphic bags, with bright geometry and no glitter or boho styling.",
+      "reviewed_at": "2026-10-01T22:59:46.058314+00:00"
+    },
+    {
+      "review_id": "ER-239",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/celine__candidate_01.png",
+      "status": "rejected",
+      "notes": "Several silhouettes and hardware details look generic; retry with six named popular Celine hero families, each shown once.",
+      "reviewed_at": "2026-10-01T22:52:40.056300+00:00"
+    },
+    {
+      "review_id": "ER-239",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/celine__candidate_02.png",
+      "status": "approved",
+      "notes": "Six recognizable hero families\u2014Luggage, Classique Triomphe, Ava, 16, Belt and Victoire\u2014each shown once with appropriate hardware.",
+      "reviewed_at": "2026-10-01T22:59:46.185973+00:00"
+    },
+    {
+      "review_id": "ER-240",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chan_luu__candidate_01.png",
+      "status": "rejected",
+      "notes": "Still dominated by raffia, shells and boho styling; retry as a cool-girl leather-and-textile set led by sequins and ribbons.",
+      "reviewed_at": "2026-10-01T23:08:31.979602+00:00"
+    },
+    {
+      "review_id": "ER-240",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chan_luu__candidate_02.png",
+      "status": "approved",
+      "notes": "Cool-girl evening bag direction now matches Ellina: sequins, paillettes, satin ribbons, rich leather, six distinct products; no raffia, shells, or repeated hero views.",
+      "reviewed_at": "2026-10-01T23:16:04.577527+00:00"
+    },
+    {
+      "review_id": "ER-241",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chanel__candidate_01.png",
+      "status": "rejected",
+      "notes": "Adds chains and tweed, but still includes the specifically rejected brown suede bag and repeats black quilted bags through detail views.",
+      "reviewed_at": "2026-10-01T23:08:32.089437+00:00"
+    },
+    {
+      "review_id": "ER-241",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chanel__candidate_02.png",
+      "status": "approved",
+      "notes": "Six distinct Chanel bag archetypes with black, red, tweed, teal, and pink variety; rejected brown suede removed and no repeated detail crops.",
+      "reviewed_at": "2026-10-01T23:16:04.653246+00:00"
+    },
+    {
+      "review_id": "ER-242",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chopova_lowena__candidate_01.png",
+      "status": "rejected",
+      "notes": "Correct plaid-and-stud direction, but multiple bucket and tartan bags repeat as worn, product and detail views; retry one bag per panel.",
+      "reviewed_at": "2026-10-01T23:08:32.223165+00:00"
+    },
+    {
+      "review_id": "ER-242",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chopova_lowena__candidate_02.png",
+      "status": "approved",
+      "notes": "Six distinct plaid, grommet, stud, buckle, and chain-heavy bag silhouettes; no repeated worn/product/detail depiction.",
+      "reviewed_at": "2026-10-01T23:16:04.725060+00:00"
+    },
+    {
+      "review_id": "ER-243",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chrome_hearts__candidate_01.png",
+      "status": "rejected",
+      "notes": "Silver dagger and cross direction is present, but tote, messenger and hardware recur across worn and close-detail panels; retry six unique full bags.",
+      "reviewed_at": "2026-10-01T23:08:32.351325+00:00"
+    },
+    {
+      "review_id": "ER-243",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chrome_hearts__candidate_02.png",
+      "status": "approved",
+      "notes": "Six distinct black-leather bag silhouettes with controlled silver gothic hardware; no repeated tote/messenger/detail views.",
+      "reviewed_at": "2026-10-01T23:16:04.801482+00:00"
+    },
+    {
+      "review_id": "ER-244",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/collina_strada__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct bags now express the playful climate-aware maximalism; the off-vibe black-chain and generic beige-tote imagery is removed.",
+      "reviewed_at": "2026-10-02T09:39:51.405507+00:00"
+    },
+    {
+      "review_id": "ER-245",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/comme_des_garcons__candidate_01.png",
+      "status": "approved",
+      "notes": "Graphic CDG tote plus five distinct cerebral avant-garde silhouettes; rejected rope and conventional luxury styling removed.",
+      "reviewed_at": "2026-10-02T04:20:32.089353+00:00"
+    },
+    {
+      "review_id": "ER-246",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/coperni__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct futuristic Coperni icons including Swipe, Heart, transparent, Origami and Air directions; no generic duplicate tote.",
+      "reviewed_at": "2026-10-02T04:20:32.163748+00:00"
+    },
+    {
+      "review_id": "ER-247",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/cult_gaia__candidate_01.png",
+      "status": "approved",
+      "notes": "Distinct bamboo, black openwork, acrylic, spherical, fan and irregular sculptural bags; materially varied rather than beige-straw dominated.",
+      "reviewed_at": "2026-10-02T04:20:32.235528+00:00"
+    },
+    {
+      "review_id": "ER-248",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/cuyana__candidate_01.png",
+      "status": "approved",
+      "notes": "Polished angular leather silhouettes in deep green, burgundy, black, oxblood, camel and navy; fixes the prior soft and pale off-vibe.",
+      "reviewed_at": "2026-10-02T04:20:32.307635+00:00"
+    },
+    {
+      "review_id": "ER-249",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/demellier__candidate_01.png",
+      "status": "approved",
+      "notes": "Chic silhouette range with restrained hardware and only two prominent clasps; no repeated clasp-heavy flap treatment.",
+      "reviewed_at": "2026-10-02T04:20:32.377772+00:00"
+    },
+    {
+      "review_id": "ER-250",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/deux_mains__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct complete shapes with woven, embossed, braided, pebbled, suede and patchworked leather textures.",
+      "reviewed_at": "2026-10-02T04:20:32.450784+00:00"
+    },
+    {
+      "review_id": "ER-251",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/dkny__candidate_01.png",
+      "status": "approved",
+      "notes": "Women's six-bag metropolitan range with intentional monogram, color and no backpacks or male-centric casting.",
+      "reviewed_at": "2026-10-02T07:22:54.317650+00:00"
+    },
+    {
+      "review_id": "ER-252",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/filippa_k__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct restrained Scandinavian bags on neutral studio backgrounds; duplicated chairs and all furniture removed.",
+      "reviewed_at": "2026-10-02T07:22:54.399869+00:00"
+    },
+    {
+      "review_id": "ER-255",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/gabriela_hearst__candidate_01.png",
+      "status": "approved",
+      "notes": "Balances classic leather craft with bracelet, woven, accordion and gold sculptural forms; wrong generic beige tote removed.",
+      "reviewed_at": "2026-10-02T07:22:54.489281+00:00"
+    },
+    {
+      "review_id": "ER-256",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/ganni__candidate_01.png",
+      "status": "approved",
+      "notes": "Cool-girl Copenhagen casting and six distinct colorful bags, with exactly one leopard piece and no beige minimalism.",
+      "reviewed_at": "2026-10-02T07:22:54.578098+00:00"
+    },
+    {
+      "review_id": "ER-257",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/gimaguas__candidate_01.png",
+      "status": "approved",
+      "notes": "Six materially distinct colorful Mediterranean bags with exactly one straw tote; playful texture and shape restored.",
+      "reviewed_at": "2026-10-02T07:22:54.679661+00:00"
+    },
+    {
+      "review_id": "ER-258",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/j_crew__candidate_01.png",
+      "status": "approved",
+      "notes": "Colorful preppy range across striped tote, bucket, suede hobo, satchel, woven clutch and color-block crossbody.",
+      "reviewed_at": "2026-10-02T07:22:54.771347+00:00"
+    },
+    {
+      "review_id": "ER-259",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/j_w_anderson__candidate_01.png",
+      "status": "approved",
+      "notes": "Pigeon and frog novelty clutches restored alongside four distinct leather/metal silhouettes; no paired duplicates.",
+      "reviewed_at": "2026-10-02T07:38:53.811086+00:00"
+    },
+    {
+      "review_id": "ER-260",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jacquemus__candidate_01.png",
+      "status": "rejected",
+      "notes": "Color and Mediterranean direction are correct, but the two upper-row horizontal flap bags read as repeat views of the same family; retry with six unmistakably different constructions.",
+      "reviewed_at": "2026-10-02T07:38:53.892140+00:00"
+    },
+    {
+      "review_id": "ER-260",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jacquemus__candidate_02.png",
+      "status": "approved",
+      "notes": "Candidate 02 fixes the duplicate-family issue: one Chiquito mini, curved shoulder, bowling bag, hard clutch, woven shopper and oval metal clutch in vivid Mediterranean color.",
+      "reviewed_at": "2026-10-02T07:58:25.641330+00:00"
+    },
+    {
+      "review_id": "ER-261",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jil_sander__candidate_01.png",
+      "status": "approved",
+      "notes": "Six quiet modernist signatures including bamboo handle, Tangle, folded geometry and frame clutch; generic tote removed.",
+      "reviewed_at": "2026-10-02T07:38:53.972908+00:00"
+    },
+    {
+      "review_id": "ER-262",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jonathan_simkhai__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct evening constructions across crystal, satin, pearl, gold frame, pleating and red embellishment.",
+      "reviewed_at": "2026-10-02T07:38:54.061681+00:00"
+    },
+    {
+      "review_id": "ER-263",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jw_pei__candidate_01.png",
+      "status": "approved",
+      "notes": "Six popular silhouettes are shown once each with distinct colors and constructions; previous paired-image duplicates removed.",
+      "reviewed_at": "2026-10-02T07:38:54.148918+00:00"
+    },
+    {
+      "review_id": "ER-265",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/lindsay_nicholas_new_york__candidate_01.png",
+      "status": "approved",
+      "notes": "Six varied clean-lined shapes in richer colors with all incorrect lock hardware removed.",
+      "reviewed_at": "2026-10-02T07:38:54.235505+00:00"
+    },
+    {
+      "review_id": "ER-266",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/maison_kitsune__candidate_01.png",
+      "status": "approved",
+      "notes": "Signature fox appears clearly across six distinct Paris-Tokyo bag types without duplicate product views.",
+      "reviewed_at": "2026-10-02T07:58:25.722884+00:00"
+    },
+    {
+      "review_id": "ER-267",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/maje__candidate_01.png",
+      "status": "approved",
+      "notes": "Popular long-fringe shoulder bag restored as one hero among five different polished silhouettes.",
+      "reviewed_at": "2026-10-02T07:58:25.804981+00:00"
+    },
+    {
+      "review_id": "ER-268",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/mar_y_sol__candidate_01.png",
+      "status": "approved",
+      "notes": "Colorful raffia range adds turquoise, coral, yellow, cobalt and pink-orange while retaining one natural straw piece.",
+      "reviewed_at": "2026-10-02T07:58:25.880274+00:00"
+    },
+    {
+      "review_id": "ER-269",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/marc_jacobs__candidate_01.png",
+      "status": "approved",
+      "notes": "Large canvas tote and visibly different small leather tote restored alongside four hero shapes; straw and double-red-zipper distractions removed.",
+      "reviewed_at": "2026-10-02T07:58:25.956897+00:00"
+    },
+    {
+      "review_id": "ER-270",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/marge_sherwood__candidate_01.png",
+      "status": "approved",
+      "notes": "Six hip colorful Seoul silhouettes with controlled charm use and no generic luxury-flap repetition.",
+      "reviewed_at": "2026-10-02T07:58:26.030223+00:00"
+    },
+    {
+      "review_id": "ER-271",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/marine_serre__candidate_01.png",
+      "status": "approved",
+      "notes": "Moon buckle and moon print signatures are explicit across six distinct bag constructions.",
+      "reviewed_at": "2026-10-02T08:18:23.664910+00:00"
+    },
+    {
+      "review_id": "ER-273",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/marni__candidate_01.png",
+      "status": "approved",
+      "notes": "Six different silhouettes and six nonrepeating surface treatments replace the prior three repeated prints.",
+      "reviewed_at": "2026-10-02T08:18:23.746973+00:00"
+    },
+    {
+      "review_id": "ER-274",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/miu_miu__candidate_01.png",
+      "status": "approved",
+      "notes": "Perforated and matelass\u00e9 leather, bright color and clean visible branding restore Miu Miu identity; paisley, velvet and key chains removed.",
+      "reviewed_at": "2026-10-02T08:18:23.825378+00:00"
+    },
+    {
+      "review_id": "ER-275",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/a_bathing_ape__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct Tokyo streetwear looks with shark hoodie, camo, varsity, graphic fleece, cargo and colour-block shell; no category leakage or text.",
+      "reviewed_at": "2026-10-02T09:48:29.722396+00:00"
+    },
+    {
+      "review_id": "ER-276",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/abercrombie_and_fitch__candidate_01.png",
+      "status": "approved",
+      "notes": "Current relaxed American wardrobe direction across six distinct denim, tailoring, linen, knit, bomber and slip-dress looks; no legacy logo treatment.",
+      "reviewed_at": "2026-10-02T09:48:29.919253+00:00"
+    },
+    {
+      "review_id": "ER-277",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/adidas__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct heritage and performance apparel looks with clear stripe language and no footwear or accessory panel.",
+      "reviewed_at": "2026-10-02T09:48:30.122016+00:00"
+    },
+    {
+      "review_id": "ER-278",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/arket__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct Nordic wardrobe looks spanning coat, knit, poplin, denim, utility overshirt and soft tailoring; no accessory leakage.",
+      "reviewed_at": "2026-10-02T09:48:30.322239+00:00"
+    },
+    {
+      "review_id": "ER-279",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/avavav__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct satirical runway silhouettes with exaggerated tailoring, distressed streetwear, trompe loeil print, crumpling, sculptural puffer and deconstruction.",
+      "reviewed_at": "2026-10-02T09:48:44.871324+00:00"
+    },
+    {
+      "review_id": "ER-280",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/barbour__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct British country-utility garments with wax, quilt, corduroy, tartan, lambswool and cotton overshirt; no accessory hero.",
+      "reviewed_at": "2026-10-02T09:48:45.067663+00:00"
+    },
+    {
+      "review_id": "ER-281",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/balmain__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct Balmain silhouettes cover gold-button tailoring, sculpted dress, embroidered evening jacket, military coat, leather and jewel-tone suiting.",
+      "reviewed_at": "2026-10-02T09:53:39.937577+00:00"
+    },
+    {
+      "review_id": "ER-282",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/bandit_running__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct Brooklyn running apparel looks span compression, micromesh, singlet, shell and recovery wear with no accessory hero.",
+      "reviewed_at": "2026-10-02T09:53:40.389431+00:00"
+    },
+    {
+      "review_id": "ER-283",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/billabong__candidate_01.png",
+      "status": "rejected",
+      "notes": "The surf direction and product range are strong, but the boardshort panel uses a bare-torso model and violates the fully clothed brief; retry product-only.",
+      "reviewed_at": "2026-10-02T09:53:40.783595+00:00"
+    },
+    {
+      "review_id": "ER-283",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/billabong__candidate_02.png",
+      "status": "approved",
+      "notes": "Exactly six distinct surf garments in product-only presentation; the failed bare-torso panel is removed and category focus is clean.",
+      "reviewed_at": "2026-10-02T09:54:45.475911+00:00"
+    },
+    {
+      "review_id": "ER-284",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/bimba_y_lola__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct colourful Bimba y Lola apparel directions with puffer, print dress, knit, sculptural denim, tailoring and mesh layering.",
+      "reviewed_at": "2026-10-02T09:53:41.076041+00:00"
+    },
+    {
+      "review_id": "ER-285",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/burton__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct snowboard-apparel functions cover shell, bib, anorak, fleece, base layer and apres hoodie without equipment tiles.",
+      "reviewed_at": "2026-10-02T09:53:41.297980+00:00"
+    },
+    {
+      "review_id": "ER-286",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/burberry__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct British heritage looks balance honey trench, check-lined rainwear, tailoring, tartan, cavalry coat and modern knit.",
+      "reviewed_at": "2026-10-02T09:53:41.599224+00:00"
+    },
+    {
+      "review_id": "ER-287",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/calvin_klein_calvin_klein_jeans__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct current minimalist looks cover relaxed denim, trucker styling, white essentials, black tailoring and technical outerwear with no category leakage or visible typography.",
+      "reviewed_at": "2026-10-02T10:01:48.925897+00:00"
+    },
+    {
+      "review_id": "ER-288",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/canada_goose__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct outerwear functions cover expedition parka, lightweight down, rain shell, hybrid knit, fleece and anorak with no repeated product or accessory tile.",
+      "reviewed_at": "2026-10-02T10:01:49.052970+00:00"
+    },
+    {
+      "review_id": "ER-289",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/carhartt_wip__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct workwear directions cover Detroit, Michigan, Active, reinforced double-knee, cargo and overshirt silhouettes with convincing canvas, denim and street styling.",
+      "reviewed_at": "2026-10-02T10:01:49.186574+00:00"
+    },
+    {
+      "review_id": "ER-290",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/charles_jeffrey_loverboy__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct punk-club apparel directions cover tartan tailoring, patchwork denim, collage knit, knitted puffer, exaggerated shirting and polka-dot cardigan without category leakage or text.",
+      "reviewed_at": "2026-10-02T10:04:25.152181+00:00"
+    },
+    {
+      "review_id": "ER-291",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/comme_des_garcons_play__candidate_01.png",
+      "status": "rejected",
+      "notes": "The six garments are clear, but the heart emblem repeats at the same chest position in every panel, making the board too mechanically repetitive and violating the prompt restraint.",
+      "reviewed_at": "2026-10-02T10:04:25.262148+00:00"
+    },
+    {
+      "review_id": "ER-291",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/comme_des_garcons_play__candidate_02.png",
+      "status": "approved",
+      "notes": "Retry resolves the emblem repetition: exactly two restrained heart motifs appear in different placements while four garments stay unmarked; all six requested apparel types are distinct and text-free.",
+      "reviewed_at": "2026-10-02T10:06:02.216901+00:00"
+    },
+    {
+      "review_id": "ER-292",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/conner_ives__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct upcycled-glamour looks clearly cover shirred jersey, bias dress, shell paillettes, sequinned polo, scarf construction and reconstructed baseball styling without visible text.",
+      "reviewed_at": "2026-10-02T10:04:25.353244+00:00"
+    },
+    {
+      "review_id": "ER-293",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/diesel__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct denim innovations cover extra-wide and barrel shapes, cropped trucker, devore dress, cable-knit-effect jacket and black moto styling with no text or accessory leakage.",
+      "reviewed_at": "2026-10-02T10:09:37.626208+00:00"
+    },
+    {
+      "review_id": "ER-294",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/desigual__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct Barcelona-arty clothing directions clearly cover scrap denim, kaleidoscopic dress, hybrid jacket, tapestry knit, mixed-print trousers and asymmetrical shirtdress without licensed characters or text.",
+      "reviewed_at": "2026-10-02T10:09:37.706495+00:00"
+    },
+    {
+      "review_id": "ER-295",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/duran_lantink__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct fully covered sculptural runway looks communicate reconstruction through oversized suede, inflated tartan, leather volume, padded jersey, double-waist tailoring and tapered animal print without body-print or nudity.",
+      "reviewed_at": "2026-10-02T10:09:37.779805+00:00"
+    },
+    {
+      "review_id": "ER-296",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/erdem__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct romantic-modern looks cover rose drape, embroidered tailoring, textured evening satin, jacquard knit, cropped threadwork jacket and crisp floral shirtdress with varied botanical treatments.",
+      "reviewed_at": "2026-10-02T10:12:06.041613+00:00"
+    },
+    {
+      "review_id": "ER-297",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gap__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct approachable American classics cover loose jeans, Oxford with khakis, soft hoodie, denim utility overshirt, cable knit and wool car coat with inclusive casting and no visible branding.",
+      "reviewed_at": "2026-10-02T10:12:06.116693+00:00"
+    },
+    {
+      "review_id": "ER-298",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gant__candidate_01.png",
+      "status": "rejected",
+      "notes": "The final chinos panel repeats nearly the same blue-striped Oxford shirt used in the first panel, so only five apparel directions are visually distinct and the prompt explicitly forbids a repeated shirt.",
+      "reviewed_at": "2026-10-02T10:12:06.191098+00:00"
+    },
+    {
+      "review_id": "ER-298",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gant__candidate_02.png",
+      "status": "approved",
+      "notes": "Retry cleanly separates all six sportswear directions: one Oxford, cable knit, varsity jacket, chinos with plain tee, rugby shirt and club blazer; the prior repeated shirt is removed.",
+      "reviewed_at": "2026-10-02T10:13:16.687569+00:00"
+    },
+    {
+      "review_id": "ER-299",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/good_american__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct inclusive denim directions cover straight, palazzo, skinny, vintage wide, bootcut and blazer styling across varied adult body shapes with different washes and no text.",
+      "reviewed_at": "2026-10-02T10:18:18.942477+00:00"
+    },
+    {
+      "review_id": "ER-300",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gymshark__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct functional training looks cover seamless, lifting, layered mens training, running shell, rest-day set and studio outer layer with full torso coverage and no equipment tiles or visible branding.",
+      "reviewed_at": "2026-10-02T10:18:19.022494+00:00"
+    },
+    {
+      "review_id": "ER-301",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gucci__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct ready-to-wear directions clearly balance Horsebit silk, controlled GG canvas, printed silk, checked wool, velvet tailoring and restrained Web knit without bags, jewellery tiles or text.",
+      "reviewed_at": "2026-10-02T10:18:19.099308+00:00"
+    },
+    {
+      "review_id": "ER-302",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/hollister__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct current California-casual looks cover super-baggy denim, washed hoodie, thermal Henley, flannel overshirt, weather shell and low-rise wide trousers without graphics or branding.",
+      "reviewed_at": "2026-10-02T10:20:54.167242+00:00"
+    },
+    {
+      "review_id": "ER-303",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jaded_london__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct reworked Y2K directions cover mirror denim, balloon parachutes, satin bootcut cargos, opaque-layered cargo corset, covered mesh skirt and faux-fur cardigan with no category leakage or text.",
+      "reviewed_at": "2026-10-02T10:20:54.246720+00:00"
+    },
+    {
+      "review_id": "ER-304",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jean_paul_gaultier__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct fully covered Gaultier codes read clearly: crystal Breton, sculptural cone jacket, lined tattoo mesh, corset-seamed dress, pinstripe kilt-suit and sliced trench, with no nudity or text.",
+      "reviewed_at": "2026-10-02T10:20:54.325038+00:00"
+    },
+    {
+      "review_id": "ER-305",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/karl_lagerfeld__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct monochrome directions cover double-breasted tailoring, dramatic white shirt, boucle set, zip-detail blazer, biker leather and transformable sequins with no text or accessory tiles.",
+      "reviewed_at": "2026-10-02T10:24:59.078478+00:00"
+    },
+    {
+      "review_id": "ER-306",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lacoste__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct French sport directions cover pique polo, piped tracksuit, cable tennis knit, rainproof set, hybrid track jacket and pleated trench-skirt; crocodile marks remain small garment details rather than graphic tiles.",
+      "reviewed_at": "2026-10-02T10:24:59.156670+00:00"
+    },
+    {
+      "review_id": "ER-307",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/levi_s__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct denim icons cover rigid 501, Ribcage wide leg, black XL baggy, 90s Trucker, Western bootcut and dark workshirt styling with varied washes and no visible text or logo closeups.",
+      "reviewed_at": "2026-10-02T10:24:59.229798+00:00"
+    },
+    {
+      "review_id": "ER-308",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/loro_piana__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct fibre-led quiet-luxury looks cover Storm System coat, camel cashmere, elongated car coat, CashDenim, calfskin bomber and green wool cardigan with varied colour and no accessories.",
+      "reviewed_at": "2026-10-02T10:27:44.338222+00:00"
+    },
+    {
+      "review_id": "ER-309",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lululemon__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct movement franchises cover Align, Define, Wunder Train, Scuba, Pace Breaker and ABC styling with full tops, varied use cases and no equipment, bags or visible branding.",
+      "reviewed_at": "2026-10-02T10:27:44.421030+00:00"
+    },
+    {
+      "review_id": "ER-310",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mango__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct Barcelona high-street looks cover linen tailoring, A-line linen dress, cotton jacket set, gathered satin, mom denim with poplin and lyocell bomber styling without accessory tiles or text.",
+      "reviewed_at": "2026-10-02T10:27:44.500470+00:00"
+    },
+    {
+      "review_id": "ER-311",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/martine_rose__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct London-subculture directions cover panelled football, lace-trim jersey, shrunken tailoring, twisted sports top, lime oversized polo and cut overshirt with no sponsor text or accessory tiles.",
+      "reviewed_at": "2026-10-02T10:32:24.351164+00:00"
+    },
+    {
+      "review_id": "ER-312",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/missoni__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct knitwear directions use visibly varied zigzag scales and constructions across maxi dress, white raschel, pink-rust cardigan set, mens macro cardigan, striped trousers and polo mini dress.",
+      "reviewed_at": "2026-10-02T10:32:24.433248+00:00"
+    },
+    {
+      "review_id": "ER-313",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/michael_kors__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct New York jet-set looks cover camel coat, sequined knit, white suit, printed satin, striped polo dress and olive utility tailoring with no handbags, watches or visible text.",
+      "reviewed_at": "2026-10-02T10:32:24.508246+00:00"
+    },
+    {
+      "review_id": "ER-314",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/missguided__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct trend-led looks cover oversized tailoring, baggy denim, satin midi, utility cargos, biker leather and bright knit co-ord with no text, bags or exposed-torso styling.",
+      "reviewed_at": "2026-10-02T10:35:16.315824+00:00"
+    },
+    {
+      "review_id": "ER-315",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mcqueen__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct sculptural-tailoring directions cover folded lapel, opaque corset dress, flecked pinstripe, metallic high-low coat, floral evening embroidery and ivory bow blouse with no skull graphics or text.",
+      "reviewed_at": "2026-10-02T10:35:16.393489+00:00"
+    },
+    {
+      "review_id": "ER-316",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mki_miyuki_zoku__candidate_01.png",
+      "status": "approved",
+      "notes": "Six distinct fabric-led menswear looks cover leather racer, textured box shirt, relaxed linen suit, dyed nylon set, hyperlight shell and mohair with wide joggers, all cleanly separated and text-free.",
+      "reviewed_at": "2026-10-02T10:35:16.468918+00:00"
+    },
+    {
+      "review_id": "ER-317",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/moncler__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six distinct Moncler apparel directions; city down and Grenoble technical layers are balanced, with no category leakage, text, logos, repetition or unsafe styling.",
+      "reviewed_at": "2026-10-02T10:41:11.205990+00:00"
+    },
+    {
+      "review_id": "ER-318",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/moschino__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six distinct playful Moschino clothing looks; controlled surreal motifs, adult casting, no text/logo leakage, no repeated garment and no accessory-led panel.",
+      "reviewed_at": "2026-10-02T10:41:11.280908+00:00"
+    },
+    {
+      "review_id": "ER-319",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mugler__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six distinct sculptural Mugler clothing looks; mesh is dark-lined and styling remains fully covered, with no nudity, text, logo, accessory leakage or repeats.",
+      "reviewed_at": "2026-10-02T10:41:11.356633+00:00"
+    },
+    {
+      "review_id": "ER-320",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/napapijri__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six distinct expedition-apparel directions; two anoraks are visibly differentiated and the fleece, puffer, overshirt and knit panels are unique, with no text/logo leakage or accessory-led tile.",
+      "reviewed_at": "2026-10-02T10:43:39.373915+00:00"
+    },
+    {
+      "review_id": "ER-321",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/needles__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six distinct Needles directions spanning track, H.D. trousers, mohair, reconstructed flannel, Western shirt and paisley tailoring; one restrained butterfly context motif, no text/logo or repetition.",
+      "reviewed_at": "2026-10-02T10:43:39.466215+00:00"
+    },
+    {
+      "review_id": "ER-322",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/never_fully_dressed__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six distinct print-led and tailored looks across varied adult body types; each print and silhouette is unique, with no text/logo leakage, repetition or category drift.",
+      "reviewed_at": "2026-10-02T10:43:39.538897+00:00"
+    },
+    {
+      "review_id": "ER-323",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/neighbourhood__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six distinct heavy-duty Tokyo streetwear directions spanning souvenir, denim, field, duck, cargo and reflective technical clothing; no text/logo leakage, repeat or accessory-led tile.",
+      "reviewed_at": "2026-10-02T10:47:34.827448+00:00"
+    },
+    {
+      "review_id": "ER-324",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/new_balance__candidate_01.png",
+      "status": "rejected",
+      "notes": "Six garments are distinct, but the padded-vest panel includes a basketball prop; regenerate with empty hands and no sports equipment anywhere.",
+      "reviewed_at": "2026-10-02T10:47:34.907183+00:00"
+    },
+    {
+      "review_id": "ER-324",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/new_balance__candidate_02.png",
+      "status": "approved",
+      "notes": "Corrected six-panel apparel board with empty hands and no sports equipment, text or logos; running, track, fleece, bomber, vest and cargo directions remain distinct.",
+      "reviewed_at": "2026-10-02T10:49:19.625102+00:00"
+    },
+    {
+      "review_id": "ER-325",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/nike__candidate_01.png",
+      "status": "rejected",
+      "notes": "Six apparel directions are distinct, but the tennis dress contains a visible swoosh-like chest logo; regenerate all surfaces completely blank and unbranded.",
+      "reviewed_at": "2026-10-02T10:47:34.982007+00:00"
+    },
+    {
+      "review_id": "ER-325",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/nike__candidate_02.png",
+      "status": "approved",
+      "notes": "Corrected six-panel performance-apparel board with completely blank unbranded garment surfaces; all six sport/lifestyle directions are distinct with no equipment or category leakage.",
+      "reviewed_at": "2026-10-02T10:49:19.707549+00:00"
+    },
+    {
+      "review_id": "ER-326",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/no_problemo__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six distinct retro-sci-fi streetwear garments with one restrained alien patch and atmospheric UFO context; no lettering, slogan, category drift or repeated garment.",
+      "reviewed_at": "2026-10-02T10:51:49.054221+00:00"
+    },
+    {
+      "review_id": "ER-327",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/oner_active__candidate_01.png",
+      "status": "rejected",
+      "notes": "Six activewear directions and varied adult casting are present, but tiny white marks on the layered-shorts panel read as accidental branding; regenerate with completely blank shorts and more silhouette separation.",
+      "reviewed_at": "2026-10-02T10:51:49.135561+00:00"
+    },
+    {
+      "review_id": "ER-327",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/oner_active__candidate_02.png",
+      "status": "rejected",
+      "notes": "Hem marks are corrected and casting improves, but the image introduces a large brand-title strip plus multiple slogans, violating no-text and exactly-six-panel requirements.",
+      "reviewed_at": "2026-10-02T10:52:55.536669+00:00"
+    },
+    {
+      "review_id": "ER-327",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/oner_active__candidate_03.png",
+      "status": "approved",
+      "notes": "Corrected pure six-photo board with no typography, logos, marks or extra bands; six distinct silhouettes and varied adult body types are clearly represented.",
+      "reviewed_at": "2026-10-02T10:53:54.498869+00:00"
+    },
+    {
+      "review_id": "ER-328",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/open_yy__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six distinct Seoul casual-chic directions; pointelle knit is layered over opaque coverage, garments are differentiated and there is no text/logo or accessory-led panel.",
+      "reviewed_at": "2026-10-02T10:51:49.211599+00:00"
+    },
+    {
+      "review_id": "ER-329",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/palm_angels__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six distinct luxury-streetwear directions with track, velour, palm print, flame knit, denim and varsity separation; no text/logo leakage or repeated garment.",
+      "reviewed_at": "2026-10-02T12:16:06.264320+00:00"
+    },
+    {
+      "review_id": "ER-330",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/paul_smith__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six distinct British-tailoring directions with controlled colour, check, floral, stripe, panelled blazer and herringbone variation; no text/logo or repeated motif.",
+      "reviewed_at": "2026-10-02T12:16:06.365433+00:00"
+    },
+    {
+      "review_id": "ER-331",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/polo_ralph_lauren__candidate_01.png",
+      "status": "rejected",
+      "notes": "The six prep directions are accurate, but the Oxford-shirt and suede-field-jacket panels appear to reuse the same male model; regenerate with unmistakably different adults.",
+      "reviewed_at": "2026-10-02T12:16:06.463718+00:00"
+    },
+    {
+      "review_id": "ER-331",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/polo_ralph_lauren__candidate_02.png",
+      "status": "rejected",
+      "notes": "Casting is now unmistakably distinct, but the rugby-striped shirt includes a small chest emblem; regenerate that garment with a completely blank chest.",
+      "reviewed_at": "2026-10-02T12:17:18.883926+00:00"
+    },
+    {
+      "review_id": "ER-331",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/polo_ralph_lauren__candidate_03.png",
+      "status": "approved",
+      "notes": "Corrected six-photo prep board with unmistakably different adults and completely blank garment surfaces; rugby stripes are uninterrupted and no crest, mark, text or duplicate remains.",
+      "reviewed_at": "2026-10-02T12:19:35.102496+00:00"
+    },
+    {
+      "review_id": "ER-332",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/puma__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six distinct T7, running, basketball and utility apparel directions with blank surfaces, no text/logo, sports equipment or repeated garment.",
+      "reviewed_at": "2026-10-02T12:41:27.183626+00:00"
+    },
+    {
+      "review_id": "ER-333",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/p_e_nation__candidate_01.png",
+      "status": "rejected",
+      "notes": "Six directions and varied adult casting are present, but tiny white marks on the black top and leggings read as unintended branding; regenerate every surface completely blank.",
+      "reviewed_at": "2026-10-02T12:41:27.266977+00:00"
+    },
+    {
+      "review_id": "ER-333",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/p_e_nation__candidate_02.png",
+      "status": "approved",
+      "notes": "Corrected six-photo activewear board with completely blank surfaces, no text/logo marks, six differentiated silhouettes and varied fully covered adult casting.",
+      "reviewed_at": "2026-10-02T12:44:24.064372+00:00"
+    },
+    {
+      "review_id": "ER-334",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/pull_bear__candidate_01.png",
+      "status": "rejected",
+      "notes": "The six high-street looks are distinct, but the dark-haired model appears reused in the jeans and denim-jacket panels; regenerate with unmistakably different casting.",
+      "reviewed_at": "2026-10-02T12:41:27.348477+00:00"
+    },
+    {
+      "review_id": "ER-334",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/pull_bear__candidate_02.png",
+      "status": "approved",
+      "notes": "Corrected six-photo high-street board with unmistakably different adults and distinct jeans, bomber, preppy, tailoring, denim-jacket and sweats directions; no text/logo leakage.",
+      "reviewed_at": "2026-10-02T12:44:24.144933+00:00"
+    },
+    {
+      "review_id": "ER-335",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/abra__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six product-only single shoes with clearly distinct boot, tall boot, spike ballerina, duck loafer, sneaker-ballerina and XXL flip-flop silhouettes; no people, pairs, text or repeats.",
+      "reviewed_at": "2026-10-02T12:56:23.155103+00:00"
+    },
+    {
+      "review_id": "ER-336",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/air_jordan__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six product-only single hero shoes with distinct Jordan 1, 3, 4, 6, 11 and modern performance constructions; no pairs, people, extra products or text leakage.",
+      "reviewed_at": "2026-10-02T12:56:23.237032+00:00"
+    },
+    {
+      "review_id": "ER-337",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/asics__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six product-only single shoes; color, sole geometry and upper construction distinguish the six SportStyle/trail families, with no pairs, people, text or alternate views.",
+      "reviewed_at": "2026-10-02T12:56:23.320177+00:00"
+    },
+    {
+      "review_id": "ER-338",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/adidas__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six single product shoes with distinct Samba, Gazelle, Superstar, SL 72, Spezial and performance-runner constructions; no people, pairs, text or extra products.",
+      "reviewed_at": "2026-10-02T12:59:04.644476+00:00"
+    },
+    {
+      "review_id": "ER-339",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/golden_goose__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six single sneakers spanning distressed low-top, basketball low-top, silver high-top, chunky runner, black high-top and violet retro runner; no pairs, people, text or repeat views.",
+      "reviewed_at": "2026-10-02T12:59:04.724684+00:00"
+    },
+    {
+      "review_id": "ER-340",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/birkenstock__candidate_01.png",
+      "status": "approved",
+      "notes": "Exactly six single products with unmistakably distinct Arizona, Boston, Gizeh, Madrid, Tokio and Bend constructions; anatomical cork language is clear and there are no people, pairs or text.",
+      "reviewed_at": "2026-10-02T12:59:04.802617+00:00"
+    },
+    {
+      "review_id": "ER-341",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/eytys__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean product-only panels; six single complete shoes; distinctive slip-on, plimsoll, dress sneaker, technical runner and two differentiated boots; no text, pairs, people or duplicate views.",
+      "reviewed_at": "2026-10-02T13:47:13.618237+00:00"
+    },
+    {
+      "review_id": "ER-342",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/geox__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean product-only panels; breathable technical sneaker, waterproof boot, pump, slip-on, runner and sandal are distinct; no text, pairs, people or duplicate views.",
+      "reviewed_at": "2026-10-02T13:47:13.696417+00:00"
+    },
+    {
+      "review_id": "ER-343",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/gia_borghini__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean product-only panels; sculptural sandal, slide, platform boot, thong, wedge and heel are distinct and brand-appropriate; no text, pairs, people or duplicate views.",
+      "reviewed_at": "2026-10-02T13:47:13.773031+00:00"
+    },
+    {
+      "review_id": "ER-344",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/churchs__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean product-only panels; plain Oxford, wholecut Derby, half-brogue, full-brogue, suede loafer and Chelsea boot have distinct constructions; no text, pairs, people or duplicate views.",
+      "reviewed_at": "2026-10-02T13:49:26.461213+00:00"
+    },
+    {
+      "review_id": "ER-345",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/gucci__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean product-only panels; loafer, backless slipper, two differentiated sneakers, slingback pump and ankle boot use controlled house codes; no text, pairs, people or duplicate views.",
+      "reviewed_at": "2026-10-02T13:49:26.543429+00:00"
+    },
+    {
+      "review_id": "ER-346",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/crocs__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean product-only panels; Classic, sculptural Echo, platform clog, recovery slide, wedge sandal and work slip-on are visibly distinct; no charms, text, pairs, people or duplicate views.",
+      "reviewed_at": "2026-10-02T13:49:26.627520+00:00"
+    },
+    {
+      "review_id": "ER-347",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/clarks__candidate_01.png",
+      "status": "rejected",
+      "notes": "Rejected: navy bottom-left shoe repeats the low moc-toe Wallabee construction rather than a distinct apron-free Nalle lace-up, reducing the board to a near colourway repeat.",
+      "reviewed_at": "2026-10-02T13:53:29.743634+00:00"
+    },
+    {
+      "review_id": "ER-347",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/clarks__candidate_02.png",
+      "status": "approved",
+      "notes": "Retry passes: six clean product-only panels; Wallabee, Desert Boot, Desert Trek, Torhill Hi, apron-free navy lace-up and backless mule are now structurally distinct; no text, pairs or duplicate views.",
+      "reviewed_at": "2026-10-02T13:56:03.900288+00:00"
+    },
+    {
+      "review_id": "ER-348",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/ecco__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean product-only panels; two differentiated trainers, BIOM technical runner, loafer, sandal and waterproof outdoor shoe are distinct; no text, pairs, people or duplicate views.",
+      "reviewed_at": "2026-10-02T13:53:29.823232+00:00"
+    },
+    {
+      "review_id": "ER-349",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/converse__candidate_01.png",
+      "status": "rejected",
+      "notes": "Rejected: bottom-left ankle badge contains small generated lettering, violating the no-text/no-malformed-lettering gate; all other panel and product-count checks pass.",
+      "reviewed_at": "2026-10-02T13:53:29.898176+00:00"
+    },
+    {
+      "review_id": "ER-349",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/converse__candidate_02.png",
+      "status": "approved",
+      "notes": "Retry passes: six clean product-only panels with classic high, low, One Star, Weapon, jagged platform high and skate low; clean star shapes only, no generated lettering, pairs, people or duplicate views.",
+      "reviewed_at": "2026-10-02T13:56:03.987890+00:00"
+    },
+    {
+      "review_id": "ER-350",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/carvela__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean product-only panels; zip trainer, suede loafer, lace slingback, metallic mule, Chelsea and slouch knee boot are distinct; no text, pairs, people or duplicate views.",
+      "reviewed_at": "2026-10-02T13:58:09.999528+00:00"
+    },
+    {
+      "review_id": "ER-351",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/diemme__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean product-only panels; alpine boot, suede ankle boot, low hiker, technical hiker, leisure shoe and crackled loafer are materially and structurally distinct; no text, pairs, people or duplicate views.",
+      "reviewed_at": "2026-10-02T13:58:10.077347+00:00"
+    },
+    {
+      "review_id": "ER-352",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/hunter__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean product-only panels; tall, short, Chelsea, insulated duck boot, rubber mule and webbing sandal clearly span Hunter categories; no text, pairs, people or duplicate views.",
+      "reviewed_at": "2026-10-02T13:58:10.151698+00:00"
+    },
+    {
+      "review_id": "ER-353",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/vivienne_westwood__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean panels and six unique hero products; orb, pearl and punk codes vary across pendant, earrings, choker, ring, bracelet and ear cuff; worn crops do not duplicate still lifes; no text or extra jewellery.",
+      "reviewed_at": "2026-10-02T14:22:29.319306+00:00"
+    },
+    {
+      "review_id": "ER-354",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/roxanne_assoulin__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean panels and six unique hero products; enamel, tiny beads, puffy heart, crystal cord, agate and drop earrings create joyful brand-specific variety; no repeats, text or extra jewellery.",
+      "reviewed_at": "2026-10-02T14:22:29.367342+00:00"
+    },
+    {
+      "review_id": "ER-355",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/roxanne_first__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean panels and six unique hero products; rainbow tennis, hoops, bracelet, star pendant, heart ring and mushroom-pearl necklace read as delicate stackable fine jewellery; no repeats, text or extra jewellery.",
+      "reviewed_at": "2026-10-02T14:22:29.415490+00:00"
+    },
+    {
+      "review_id": "ER-356",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/sonia_petroff__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean panels and six unique hero products; lobster, parrot, eye, swan, turquoise ring and green floral earrings carry the bold vintage nature language; no repeats, text or extra jewellery.",
+      "reviewed_at": "2026-10-02T14:25:11.185947+00:00"
+    },
+    {
+      "review_id": "ER-357",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/zoe_mohm__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean panels and six unique hand-built talismans; mermaid, bull, woven cuff, eye, hand and abstract horn forms use visibly cast, hammered, twisted and woven surfaces; no repeats, text or extra jewellery.",
+      "reviewed_at": "2026-10-02T14:25:11.236089+00:00"
+    },
+    {
+      "review_id": "ER-358",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/william_welstead__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean panels and six unique fine-jewellery pieces; pink spinel, ruby, antique-cut diamond, briolette drops, pearl pendant and emerald each use differentiated restrained settings; no repeats, text or extra jewellery.",
+      "reviewed_at": "2026-10-02T14:25:11.286011+00:00"
+    },
+    {
+      "review_id": "ER-359",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yvmin__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean panels and six unique surreal products; strawberry, apple core, split cat, pearl bow, heart-skirt and shell-coin forms are distinct; no repeats, text or extra jewellery.",
+      "reviewed_at": "2026-10-02T14:27:21.559477+00:00"
+    },
+    {
+      "review_id": "ER-360",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yellow_swallow__candidate_01.png",
+      "status": "approved",
+      "notes": "Six clean panels and six unique constructions; blue crystal bracelet, pearl-flower necklace, black flower brooch, ribbon cuff, lily necklace and dark floral brooch express the intended pearl/crystal/black-metal duality; no repeats, text or extra jewellery.",
+      "reviewed_at": "2026-10-02T14:27:21.610091+00:00"
+    }
+  ]
+}
