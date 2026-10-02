@@ -1,0 +1,2887 @@
+{
+  "schema_version": 1,
+  "source_csv": "step_2_text_embeddings/brand_metadata_today.csv",
+  "capture_policy": "Official URL from catalog; visual reference captured from one focused Google Images query per brand/category.",
+  "records": [
+    {
+      "review_id": "ER-001",
+      "brand_name": "Acne Studios",
+      "category": "clothes",
+      "official_url": "https://acnestudios.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Acne+Studios+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__acne_studios.jpg"
+    },
+    {
+      "review_id": "ER-002",
+      "brand_name": "ALO YOGA",
+      "category": "clothes",
+      "official_url": "https://aloyoga.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=ALO+YOGA+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__alo_yoga.jpg"
+    },
+    {
+      "review_id": "ER-003",
+      "brand_name": "Altuzarra",
+      "category": "clothes",
+      "official_url": "https://altuzarra.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Altuzarra+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__altuzarra.jpg"
+    },
+    {
+      "review_id": "ER-004",
+      "brand_name": "Amazuìn",
+      "category": "clothes",
+      "official_url": "https://amazuin.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Amazu%C3%ACn+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__amazuin.jpg"
+    },
+    {
+      "review_id": "ER-005",
+      "brand_name": "AMY LYNN",
+      "category": "clothes",
+      "official_url": "https://amylynn.co.uk",
+      "google_images_url": "https://www.google.com/search?udm=2&q=AMY+LYNN+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__amy_lynn.jpg"
+    },
+    {
+      "review_id": "ER-006",
+      "brand_name": "Arizona Love",
+      "category": "clothes",
+      "official_url": "https://arizonalove.store",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Arizona+Love+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__arizona_love.jpg"
+    },
+    {
+      "review_id": "ER-007",
+      "brand_name": "Atlein",
+      "category": "clothes",
+      "official_url": "https://atlein.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Atlein+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__atlein.jpg"
+    },
+    {
+      "review_id": "ER-008",
+      "brand_name": "Barc London",
+      "category": "clothes",
+      "official_url": "https://barclondon.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Barc+London+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__barc_london.jpg"
+    },
+    {
+      "review_id": "ER-009",
+      "brand_name": "Baukjen",
+      "category": "clothes",
+      "official_url": "https://baukjen.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Baukjen+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__baukjen.jpg"
+    },
+    {
+      "review_id": "ER-010",
+      "brand_name": "BLANK NYC",
+      "category": "clothes",
+      "official_url": "https://blanknyc.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=BLANK+NYC+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__blank_nyc.jpg"
+    },
+    {
+      "review_id": "ER-011",
+      "brand_name": "Blaze Milano",
+      "category": "clothes",
+      "official_url": "https://blaze-milano.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Blaze+Milano+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__blaze_milano.jpg"
+    },
+    {
+      "review_id": "ER-012",
+      "brand_name": "Bottega Veneta",
+      "category": "clothes",
+      "official_url": "https://bottegaveneta.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Bottega+Veneta+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__bottega_veneta.jpg"
+    },
+    {
+      "review_id": "ER-013",
+      "brand_name": "Brandon Maxwell",
+      "category": "clothes",
+      "official_url": "https://brandonmaxwellonline.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Brandon+Maxwell+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__brandon_maxwell.jpg"
+    },
+    {
+      "review_id": "ER-014",
+      "brand_name": "Brixton",
+      "category": "clothes",
+      "official_url": "https://brixton.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Brixton+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__brixton.jpg"
+    },
+    {
+      "review_id": "ER-015",
+      "brand_name": "C.P. Company",
+      "category": "clothes",
+      "official_url": "https://cpcompany.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=C.P.+Company+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__c_p_company.jpg"
+    },
+    {
+      "review_id": "ER-016",
+      "brand_name": "Calleen Cordero",
+      "category": "clothes",
+      "official_url": "https://calleencordero.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Calleen+Cordero+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__calleen_cordero.jpg"
+    },
+    {
+      "review_id": "ER-017",
+      "brand_name": "Camiel Fortgens",
+      "category": "clothes",
+      "official_url": "https://camielfortgens.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Camiel+Fortgens+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__camiel_fortgens.jpg"
+    },
+    {
+      "review_id": "ER-018",
+      "brand_name": "Carne Bollente",
+      "category": "clothes",
+      "official_url": "https://carnebollente.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Carne+Bollente+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__carne_bollente.jpg"
+    },
+    {
+      "review_id": "ER-019",
+      "brand_name": "Celine",
+      "category": "clothes",
+      "official_url": "https://celine.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Celine+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__celine.jpg"
+    },
+    {
+      "review_id": "ER-020",
+      "brand_name": "Cernucci",
+      "category": "clothes",
+      "official_url": "https://cernucci.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Cernucci+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__cernucci.jpg"
+    },
+    {
+      "review_id": "ER-021",
+      "brand_name": "Chan Luu",
+      "category": "clothes",
+      "official_url": "https://chanluu.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Chan+Luu+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__chan_luu.jpg"
+    },
+    {
+      "review_id": "ER-022",
+      "brand_name": "Chanel",
+      "category": "clothes",
+      "official_url": "https://www.chanel.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Chanel+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__chanel.jpg"
+    },
+    {
+      "review_id": "ER-023",
+      "brand_name": "Chopova Lowena",
+      "category": "clothes",
+      "official_url": "https://chopovalowena.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Chopova+Lowena+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__chopova_lowena.jpg"
+    },
+    {
+      "review_id": "ER-024",
+      "brand_name": "Christian Wijnants",
+      "category": "clothes",
+      "official_url": "https://christianwijnants.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Christian+Wijnants+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__christian_wijnants.jpg"
+    },
+    {
+      "review_id": "ER-025",
+      "brand_name": "chrome hearts",
+      "category": "clothes",
+      "official_url": "https://chromehearts.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=chrome+hearts+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__chrome_hearts.jpg"
+    },
+    {
+      "review_id": "ER-026",
+      "brand_name": "Claris Virot",
+      "category": "clothes",
+      "official_url": "https://clarisvirot.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Claris+Virot+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__claris_virot.jpg"
+    },
+    {
+      "review_id": "ER-027",
+      "brand_name": "Cordera",
+      "category": "clothes",
+      "official_url": "https://cordera.es",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Cordera+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__cordera.jpg"
+    },
+    {
+      "review_id": "ER-028",
+      "brand_name": "Day Birger et Mikkelsen",
+      "category": "clothes",
+      "official_url": "https://day.dk",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Day+Birger+et+Mikkelsen+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__day_birger_et_mikkelsen.jpg"
+    },
+    {
+      "review_id": "ER-029",
+      "brand_name": "Deiji Studios",
+      "category": "clothes",
+      "official_url": "https://deijistudios.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Deiji+Studios+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__deiji_studios.jpg"
+    },
+    {
+      "review_id": "ER-030",
+      "brand_name": "demylee",
+      "category": "clothes",
+      "official_url": "https://demylee.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=demylee+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__demylee.jpg"
+    },
+    {
+      "review_id": "ER-031",
+      "brand_name": "Derek Lam",
+      "category": "clothes",
+      "official_url": "https://dereklam.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Derek+Lam+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__derek_lam.jpg"
+    },
+    {
+      "review_id": "ER-032",
+      "brand_name": "Destree",
+      "category": "clothes",
+      "official_url": "https://destree.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Destree+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__destree.jpg"
+    },
+    {
+      "review_id": "ER-033",
+      "brand_name": "Dickies",
+      "category": "clothes",
+      "official_url": "https://dickies.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Dickies+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__dickies.jpg"
+    },
+    {
+      "review_id": "ER-034",
+      "brand_name": "Dime",
+      "category": "clothes",
+      "official_url": "https://www.dimemtl.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Dime+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__dime.jpg"
+    },
+    {
+      "review_id": "ER-035",
+      "brand_name": "Djerf Avenue",
+      "category": "clothes",
+      "official_url": "https://djerfavenue.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Djerf+Avenue+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__djerf_avenue.jpg"
+    },
+    {
+      "review_id": "ER-036",
+      "brand_name": "Everlane",
+      "category": "clothes",
+      "official_url": "https://everlane.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Everlane+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__everlane.jpg"
+    },
+    {
+      "review_id": "ER-037",
+      "brand_name": "Farah",
+      "category": "clothes",
+      "official_url": "https://farah.co.uk",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Farah+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__farah.jpg"
+    },
+    {
+      "review_id": "ER-038",
+      "brand_name": "Ferragamo",
+      "category": "clothes",
+      "official_url": "https://www.ferragamo.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Ferragamo+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__ferragamo.jpg"
+    },
+    {
+      "review_id": "ER-039",
+      "brand_name": "French Connection",
+      "category": "clothes",
+      "official_url": "https://frenchconnection.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=French+Connection+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__french_connection.jpg"
+    },
+    {
+      "review_id": "ER-040",
+      "brand_name": "Gabriela Hearst",
+      "category": "clothes",
+      "official_url": "https://gabrielahearst.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Gabriela+Hearst+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__gabriela_hearst.jpg"
+    },
+    {
+      "review_id": "ER-041",
+      "brand_name": "Ganni",
+      "category": "clothes",
+      "official_url": "https://www.ganni.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Ganni+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__ganni.jpg"
+    },
+    {
+      "review_id": "ER-042",
+      "brand_name": "Gestuz",
+      "category": "clothes",
+      "official_url": "https://gestuz.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Gestuz+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__gestuz.jpg"
+    },
+    {
+      "review_id": "ER-043",
+      "brand_name": "Girlfriend Collective",
+      "category": "clothes",
+      "official_url": "https://girlfriend.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Girlfriend+Collective+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__girlfriend_collective.jpg"
+    },
+    {
+      "review_id": "ER-044",
+      "brand_name": "Gravel & Gold",
+      "category": "clothes",
+      "official_url": "https://gravelandgold.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Gravel+%26+Gold+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__gravel_and_gold.jpg"
+    },
+    {
+      "review_id": "ER-045",
+      "brand_name": "Hermès",
+      "category": "clothes",
+      "official_url": "https://www.hermes.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Herm%C3%A8s+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__hermes.jpg"
+    },
+    {
+      "review_id": "ER-046",
+      "brand_name": "Herschel",
+      "category": "clothes",
+      "official_url": "https://herschel.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Herschel+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__herschel.jpg"
+    },
+    {
+      "review_id": "ER-047",
+      "brand_name": "Hodakova",
+      "category": "clothes",
+      "official_url": "https://hodakova.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Hodakova+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__hodakova.jpg"
+    },
+    {
+      "review_id": "ER-048",
+      "brand_name": "Homecore",
+      "category": "clothes",
+      "official_url": "https://homecore.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Homecore+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__homecore.jpg"
+    },
+    {
+      "review_id": "ER-049",
+      "brand_name": "HOPE Stockholm",
+      "category": "clothes",
+      "official_url": "https://hope-sthlm.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=HOPE+Stockholm+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__hope_stockholm.jpg"
+    },
+    {
+      "review_id": "ER-050",
+      "brand_name": "House Of Sunny",
+      "category": "clothes",
+      "official_url": "https://houseofsunny.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=House+Of+Sunny+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__house_of_sunny.jpg"
+    },
+    {
+      "review_id": "ER-051",
+      "brand_name": "Iris Von Arnim",
+      "category": "clothes",
+      "official_url": "https://irisvonarnim.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Iris+Von+Arnim+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__iris_von_arnim.jpg"
+    },
+    {
+      "review_id": "ER-052",
+      "brand_name": "Jacquemus",
+      "category": "clothes",
+      "official_url": "https://www.jacquemus.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Jacquemus+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__jacquemus.jpg"
+    },
+    {
+      "review_id": "ER-053",
+      "brand_name": "Jil Sander",
+      "category": "clothes",
+      "official_url": "https://jilsander.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Jil+Sander+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__jil_sander.jpg"
+    },
+    {
+      "review_id": "ER-054",
+      "brand_name": "JIMMY CHOO",
+      "category": "clothes",
+      "official_url": "https://jimmychoo.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=JIMMY+CHOO+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__jimmy_choo.jpg"
+    },
+    {
+      "review_id": "ER-055",
+      "brand_name": "Johnny Was",
+      "category": "clothes",
+      "official_url": "https://johnnywas.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Johnny+Was+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__johnny_was.jpg"
+    },
+    {
+      "review_id": "ER-056",
+      "brand_name": "Jonathan Simkhai",
+      "category": "clothes",
+      "official_url": "https://simkhai.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Jonathan+Simkhai+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__jonathan_simkhai.jpg"
+    },
+    {
+      "review_id": "ER-057",
+      "brand_name": "Jude Connally",
+      "category": "clothes",
+      "official_url": "https://www.judeconnally.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Jude+Connally+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__jude_connally.jpg"
+    },
+    {
+      "review_id": "ER-058",
+      "brand_name": "Karoline Vitto",
+      "category": "clothes",
+      "official_url": "https://karolinevitto.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Karoline+Vitto+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__karoline_vitto.jpg"
+    },
+    {
+      "review_id": "ER-059",
+      "brand_name": "Khaite",
+      "category": "clothes",
+      "official_url": "https://khaite.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Khaite+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__khaite.jpg"
+    },
+    {
+      "review_id": "ER-060",
+      "brand_name": "Kowtow",
+      "category": "clothes",
+      "official_url": "https://kowtowclothing.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Kowtow+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__kowtow.jpg"
+    },
+    {
+      "review_id": "ER-061",
+      "brand_name": "Laagam",
+      "category": "clothes",
+      "official_url": "https://laagam.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Laagam+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__laagam.jpg"
+    },
+    {
+      "review_id": "ER-062",
+      "brand_name": "Labante London",
+      "category": "clothes",
+      "official_url": "https://labante.co.uk",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Labante+London+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__labante_london.jpg"
+    },
+    {
+      "review_id": "ER-063",
+      "brand_name": "Le Bon Shoppe",
+      "category": "clothes",
+      "official_url": "https://lebonshoppe.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Le+Bon+Shoppe+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__le_bon_shoppe.jpg"
+    },
+    {
+      "review_id": "ER-064",
+      "brand_name": "Liberowe",
+      "category": "clothes",
+      "official_url": "https://liberowe.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Liberowe+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__liberowe.jpg"
+    },
+    {
+      "review_id": "ER-065",
+      "brand_name": "Lioness",
+      "category": "clothes",
+      "official_url": "https://lionessfashion.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Lioness+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__lioness.jpg"
+    },
+    {
+      "review_id": "ER-066",
+      "brand_name": "Lisa Says Gah",
+      "category": "clothes",
+      "official_url": "https://lisasaysgah.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Lisa+Says+Gah+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__lisa_says_gah.jpg"
+    },
+    {
+      "review_id": "ER-067",
+      "brand_name": "Derek Lam",
+      "category": "clothes",
+      "official_url": "https://dereklam.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Derek+Lam+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__derek_lam.jpg"
+    },
+    {
+      "review_id": "ER-068",
+      "brand_name": "Lisou",
+      "category": "clothes",
+      "official_url": "https://lisou.co.uk",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Lisou+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__lisou.jpg"
+    },
+    {
+      "review_id": "ER-069",
+      "brand_name": "LOCI",
+      "category": "clothes",
+      "official_url": "https://lociwear.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=LOCI+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__loci.jpg"
+    },
+    {
+      "review_id": "ER-070",
+      "brand_name": "Longchamp",
+      "category": "clothes",
+      "official_url": "https://longchamp.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Longchamp+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__longchamp.jpg"
+    },
+    {
+      "review_id": "ER-071",
+      "brand_name": "Lucy & Yak",
+      "category": "clothes",
+      "official_url": "https://lucyandyak.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Lucy+%26+Yak+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__lucy_and_yak.jpg"
+    },
+    {
+      "review_id": "ER-072",
+      "brand_name": "Lutz Huelle",
+      "category": "clothes",
+      "official_url": "https://lutzhuelle.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Lutz+Huelle+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__lutz_huelle.jpg"
+    },
+    {
+      "review_id": "ER-073",
+      "brand_name": "Mackage",
+      "category": "clothes",
+      "official_url": "https://mackage.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Mackage+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__mackage.jpg"
+    },
+    {
+      "review_id": "ER-074",
+      "brand_name": "Made By Minga",
+      "category": "clothes",
+      "official_url": "https://madebyminga.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Made+By+Minga+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__made_by_minga.jpg"
+    },
+    {
+      "review_id": "ER-075",
+      "brand_name": "MadeWorn",
+      "category": "clothes",
+      "official_url": "https://madeworn.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=MadeWorn+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__madeworn.jpg"
+    },
+    {
+      "review_id": "ER-076",
+      "brand_name": "Maison Margiela",
+      "category": "clothes",
+      "official_url": "https://maisonmargiela.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Maison+Margiela+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__maison_margiela.jpg"
+    },
+    {
+      "review_id": "ER-077",
+      "brand_name": "Maje",
+      "category": "clothes",
+      "official_url": "https://www.maje.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Maje+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__maje.jpg"
+    },
+    {
+      "review_id": "ER-078",
+      "brand_name": "Margaret Howell",
+      "category": "clothes",
+      "official_url": "https://margarethowell.co.uk",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Margaret+Howell+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__margaret_howell.jpg"
+    },
+    {
+      "review_id": "ER-079",
+      "brand_name": "Maria Cher",
+      "category": "clothes",
+      "official_url": "https://maria-cher.com.ar",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Maria+Cher+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__maria_cher.jpg"
+    },
+    {
+      "review_id": "ER-080",
+      "brand_name": "Maria de la Orden",
+      "category": "clothes",
+      "official_url": "https://mariadelaorden.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Maria+de+la+Orden+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__maria_de_la_orden.jpg"
+    },
+    {
+      "review_id": "ER-081",
+      "brand_name": "Marine Layer",
+      "category": "clothes",
+      "official_url": "https://marinelayer.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Marine+Layer+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__marine_layer.jpg"
+    },
+    {
+      "review_id": "ER-082",
+      "brand_name": "Marine Serre",
+      "category": "clothes",
+      "official_url": "https://marineserre.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Marine+Serre+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__marine_serre.jpg"
+    },
+    {
+      "review_id": "ER-083",
+      "brand_name": "Mary Katrantzou",
+      "category": "clothes",
+      "official_url": "https://marykatrantzou.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Mary+Katrantzou+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__mary_katrantzou.jpg"
+    },
+    {
+      "review_id": "ER-084",
+      "brand_name": "Masscob",
+      "category": "clothes",
+      "official_url": "https://masscob.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Masscob+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__masscob.jpg"
+    },
+    {
+      "review_id": "ER-085",
+      "brand_name": "Melie Bianco",
+      "category": "clothes",
+      "official_url": "https://meliebianco.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Melie+Bianco+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__melie_bianco.jpg"
+    },
+    {
+      "review_id": "ER-086",
+      "brand_name": "Miaou",
+      "category": "clothes",
+      "official_url": "https://miaou.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Miaou+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__miaou.jpg"
+    },
+    {
+      "review_id": "ER-087",
+      "brand_name": "Mirror Palais",
+      "category": "clothes",
+      "official_url": "https://mirrorpalais.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Mirror+Palais+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__mirror_palais.jpg"
+    },
+    {
+      "review_id": "ER-088",
+      "brand_name": "Miu Miu",
+      "category": "clothes",
+      "official_url": "https://miumiu.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Miu+Miu+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__miu_miu.jpg"
+    },
+    {
+      "review_id": "ER-089",
+      "brand_name": "Molly Goddard",
+      "category": "clothes",
+      "official_url": "https://mollygoddard.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Molly+Goddard+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__molly_goddard.jpg"
+    },
+    {
+      "review_id": "ER-090",
+      "brand_name": "Monki",
+      "category": "clothes",
+      "official_url": "https://monki.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Monki+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__monki.jpg"
+    },
+    {
+      "review_id": "ER-091",
+      "brand_name": "Montane",
+      "category": "clothes",
+      "official_url": "https://montane.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Montane+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__montane.jpg"
+    },
+    {
+      "review_id": "ER-092",
+      "brand_name": "MOWALOLA",
+      "category": "clothes",
+      "official_url": "https://mowalola.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=MOWALOLA+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__mowalola.jpg"
+    },
+    {
+      "review_id": "ER-093",
+      "brand_name": "MSGM",
+      "category": "clothes",
+      "official_url": "https://shop-msgm.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=MSGM+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__msgm.jpg"
+    },
+    {
+      "review_id": "ER-094",
+      "brand_name": "Natasha Zinko",
+      "category": "clothes",
+      "official_url": "https://natashazinko.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Natasha+Zinko+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__natasha_zinko.jpg"
+    },
+    {
+      "review_id": "ER-095",
+      "brand_name": "NILI LOTAN",
+      "category": "clothes",
+      "official_url": "https://nililotan.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=NILI+LOTAN+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__nili_lotan.jpg"
+    },
+    {
+      "review_id": "ER-096",
+      "brand_name": "Norma Kamali",
+      "category": "clothes",
+      "official_url": "https://normakamali.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Norma+Kamali+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__norma_kamali.jpg"
+    },
+    {
+      "review_id": "ER-097",
+      "brand_name": "Norse Projects",
+      "category": "clothes",
+      "official_url": "https://norseprojects.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Norse+Projects+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__norse_projects.jpg"
+    },
+    {
+      "review_id": "ER-098",
+      "brand_name": "Nour Hammour",
+      "category": "clothes",
+      "official_url": "https://nour-hammour.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Nour+Hammour+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__nour_hammour.jpg"
+    },
+    {
+      "review_id": "ER-099",
+      "brand_name": "Nude Lucy",
+      "category": "clothes",
+      "official_url": "https://nudelucy.com.au",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Nude+Lucy+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__nude_lucy.jpg"
+    },
+    {
+      "review_id": "ER-100",
+      "brand_name": "Obey",
+      "category": "clothes",
+      "official_url": "https://obeyclothing.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Obey+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__obey.jpg"
+    },
+    {
+      "review_id": "ER-101",
+      "brand_name": "Olivia Rubin",
+      "category": "clothes",
+      "official_url": "https://oliviarubinlondon.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Olivia+Rubin+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__olivia_rubin.jpg"
+    },
+    {
+      "review_id": "ER-102",
+      "brand_name": "Olivia Von Halle",
+      "category": "clothes",
+      "official_url": "https://oliviavonhalle.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Olivia+Von+Halle+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__olivia_von_halle.jpg"
+    },
+    {
+      "review_id": "ER-103",
+      "brand_name": "Opera Sport",
+      "category": "clothes",
+      "official_url": "https://operasport.net",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Opera+Sport+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__opera_sport.jpg"
+    },
+    {
+      "review_id": "ER-104",
+      "brand_name": "Organic Basics",
+      "category": "clothes",
+      "official_url": "https://organicbasics.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Organic+Basics+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__organic_basics.jpg"
+    },
+    {
+      "review_id": "ER-105",
+      "brand_name": "oscar de la renta",
+      "category": "clothes",
+      "official_url": "https://oscardelarenta.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=oscar+de+la+renta+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__oscar_de_la_renta.jpg"
+    },
+    {
+      "review_id": "ER-106",
+      "brand_name": "Outland",
+      "category": "clothes",
+      "official_url": "https://outlandusa.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Outland+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__outland.jpg"
+    },
+    {
+      "review_id": "ER-107",
+      "brand_name": "OVNA OVICH",
+      "category": "clothes",
+      "official_url": "https://ovnaovich.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=OVNA+OVICH+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__ovna_ovich.jpg"
+    },
+    {
+      "review_id": "ER-108",
+      "brand_name": "PANGAIA",
+      "category": "clothes",
+      "official_url": "https://pangaia.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=PANGAIA+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__pangaia.jpg"
+    },
+    {
+      "review_id": "ER-109",
+      "brand_name": "Patou",
+      "category": "clothes",
+      "official_url": "https://patou.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Patou+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__patou.jpg"
+    },
+    {
+      "review_id": "ER-110",
+      "brand_name": "Patta",
+      "category": "clothes",
+      "official_url": "https://patta.nl",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Patta+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__patta.jpg"
+    },
+    {
+      "review_id": "ER-111",
+      "brand_name": "Pendleton",
+      "category": "clothes",
+      "official_url": "https://pendleton-usa.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Pendleton+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__pendleton.jpg"
+    },
+    {
+      "review_id": "ER-112",
+      "brand_name": "Perle by Lola",
+      "category": "clothes",
+      "official_url": "https://perlebylola.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Perle+by+Lola+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__perle_by_lola.jpg"
+    },
+    {
+      "review_id": "ER-113",
+      "brand_name": "Pleasures",
+      "category": "clothes",
+      "official_url": "https://pleasuresnow.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Pleasures+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__pleasures.jpg"
+    },
+    {
+      "review_id": "ER-114",
+      "brand_name": "Prada",
+      "category": "clothes",
+      "official_url": "https://prada.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Prada+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__prada.jpg"
+    },
+    {
+      "review_id": "ER-115",
+      "brand_name": "Praying",
+      "category": "clothes",
+      "official_url": "https://prayingg.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Praying+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__praying.jpg"
+    },
+    {
+      "review_id": "ER-116",
+      "brand_name": "Pucci",
+      "category": "clothes",
+      "official_url": "https://pucci.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Pucci+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__pucci.jpg"
+    },
+    {
+      "review_id": "ER-117",
+      "brand_name": "rag&bone",
+      "category": "clothes",
+      "official_url": "https://rag-bone.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=rag%26bone+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__rag_and_bone.jpg"
+    },
+    {
+      "review_id": "ER-118",
+      "brand_name": "Rich Mnisi",
+      "category": "clothes",
+      "official_url": "https://richmnisi.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Rich+Mnisi+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__rich_mnisi.jpg"
+    },
+    {
+      "review_id": "ER-119",
+      "brand_name": "ROTATE Birger Christensen",
+      "category": "clothes",
+      "official_url": "https://rotatebirgerchristensen.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=ROTATE+Birger+Christensen+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__rotate_birger_christensen.jpg"
+    },
+    {
+      "review_id": "ER-120",
+      "brand_name": "Saman Amel",
+      "category": "clothes",
+      "official_url": "https://samanamel.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Saman+Amel+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__saman_amel.jpg"
+    },
+    {
+      "review_id": "ER-121",
+      "brand_name": "Samantha Pleet",
+      "category": "clothes",
+      "official_url": "https://samanthapleet.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Samantha+Pleet+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__samantha_pleet.jpg"
+    },
+    {
+      "review_id": "ER-122",
+      "brand_name": "Sancia",
+      "category": "clothes",
+      "official_url": "https://sancia.com.au",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Sancia+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__sancia.jpg"
+    },
+    {
+      "review_id": "ER-123",
+      "brand_name": "Sandro",
+      "category": "clothes",
+      "official_url": "https://sandro-paris.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Sandro+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__sandro.jpg"
+    },
+    {
+      "review_id": "ER-124",
+      "brand_name": "Sandy Liang",
+      "category": "clothes",
+      "official_url": "https://sandyliang.info",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Sandy+Liang+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__sandy_liang.jpg"
+    },
+    {
+      "review_id": "ER-125",
+      "brand_name": "Shangri-la Heritage",
+      "category": "clothes",
+      "official_url": "https://shangrilaheritage.it",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Shangri-la+Heritage+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__shangri_la_heritage.jpg"
+    },
+    {
+      "review_id": "ER-126",
+      "brand_name": "Shoshanna",
+      "category": "clothes",
+      "official_url": "https://shoshanna.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Shoshanna+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__shoshanna.jpg"
+    },
+    {
+      "review_id": "ER-127",
+      "brand_name": "Shrimps",
+      "category": "clothes",
+      "official_url": "https://shrimps.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Shrimps+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__shrimps.jpg"
+    },
+    {
+      "review_id": "ER-128",
+      "brand_name": "Siedrés",
+      "category": "clothes",
+      "official_url": "https://siedres.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Siedr%C3%A9s+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__siedres.jpg"
+    },
+    {
+      "review_id": "ER-129",
+      "brand_name": "Significant Other",
+      "category": "clothes",
+      "official_url": "https://shopsignificantother.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Significant+Other+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__significant_other.jpg"
+    },
+    {
+      "review_id": "ER-130",
+      "brand_name": "Sister Jane",
+      "category": "clothes",
+      "official_url": "https://sisterjane.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Sister+Jane+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__sister_jane.jpg"
+    },
+    {
+      "review_id": "ER-131",
+      "brand_name": "Slowear",
+      "category": "clothes",
+      "official_url": "https://slowear.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Slowear+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__slowear.jpg"
+    },
+    {
+      "review_id": "ER-132",
+      "brand_name": "Soaked in Luxury",
+      "category": "clothes",
+      "official_url": "https://soakedinluxury.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Soaked+in+Luxury+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__soaked_in_luxury.jpg"
+    },
+    {
+      "review_id": "ER-133",
+      "brand_name": "SOIA & KYO",
+      "category": "clothes",
+      "official_url": "https://soiakyo.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=SOIA+%26+KYO+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__soia_and_kyo.jpg"
+    },
+    {
+      "review_id": "ER-134",
+      "brand_name": "Spiritual Gangster",
+      "category": "clothes",
+      "official_url": "https://spiritualgangster.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Spiritual+Gangster+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__spiritual_gangster.jpg"
+    },
+    {
+      "review_id": "ER-135",
+      "brand_name": "ST.AGNI",
+      "category": "clothes",
+      "official_url": "https://st-agni.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=ST.AGNI+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__st_agni.jpg"
+    },
+    {
+      "review_id": "ER-136",
+      "brand_name": "Steve Madden",
+      "category": "clothes",
+      "official_url": "https://stevemadden.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Steve+Madden+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__steve_madden.jpg"
+    },
+    {
+      "review_id": "ER-137",
+      "brand_name": "Stussy",
+      "category": "clothes",
+      "official_url": "https://stussy.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Stussy+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__stussy.jpg"
+    },
+    {
+      "review_id": "ER-138",
+      "brand_name": "Sugarlips",
+      "category": "clothes",
+      "official_url": "https://sugarlips.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Sugarlips+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__sugarlips.jpg"
+    },
+    {
+      "review_id": "ER-139",
+      "brand_name": "Supreme",
+      "category": "clothes",
+      "official_url": "https://supreme.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Supreme+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__supreme.jpg"
+    },
+    {
+      "review_id": "ER-140",
+      "brand_name": "Tecovas",
+      "category": "clothes",
+      "official_url": "https://tecovas.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Tecovas+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__tecovas.jpg"
+    },
+    {
+      "review_id": "ER-141",
+      "brand_name": "The Attico",
+      "category": "clothes",
+      "official_url": "https://theattico.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=The+Attico+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__the_attico.jpg"
+    },
+    {
+      "review_id": "ER-142",
+      "brand_name": "The Couture Club",
+      "category": "clothes",
+      "official_url": "https://thecoutureclub.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=The+Couture+Club+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__the_couture_club.jpg"
+    },
+    {
+      "review_id": "ER-143",
+      "brand_name": "The Frankie Shop",
+      "category": "clothes",
+      "official_url": "https://thefrankieshop.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=The+Frankie+Shop+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__the_frankie_shop.jpg"
+    },
+    {
+      "review_id": "ER-144",
+      "brand_name": "The Kooples",
+      "category": "clothes",
+      "official_url": "https://www.thekooples.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=The+Kooples+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__the_kooples.jpg"
+    },
+    {
+      "review_id": "ER-145",
+      "brand_name": "Thebe Magugu",
+      "category": "clothes",
+      "official_url": "https://thebemagugu.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Thebe+Magugu+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__thebe_magugu.jpg"
+    },
+    {
+      "review_id": "ER-146",
+      "brand_name": "Third Form",
+      "category": "clothes",
+      "official_url": "https://thirdform.com.au",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Third+Form+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__third_form.jpg"
+    },
+    {
+      "review_id": "ER-147",
+      "brand_name": "Tkees",
+      "category": "clothes",
+      "official_url": "https://tkees.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Tkees+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__tkees.jpg"
+    },
+    {
+      "review_id": "ER-148",
+      "brand_name": "Tory Burch",
+      "category": "clothes",
+      "official_url": "https://toryburch.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Tory+Burch+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__tory_burch.jpg"
+    },
+    {
+      "review_id": "ER-149",
+      "brand_name": "Toteme",
+      "category": "clothes",
+      "official_url": "https://toteme-studio.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Toteme+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__toteme.jpg"
+    },
+    {
+      "review_id": "ER-150",
+      "brand_name": "Twinset",
+      "category": "clothes",
+      "official_url": "https://twinset.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Twinset+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__twinset.jpg"
+    },
+    {
+      "review_id": "ER-151",
+      "brand_name": "Universal Works",
+      "category": "clothes",
+      "official_url": "https://universalworks.co.uk",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Universal+Works+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__universal_works.jpg"
+    },
+    {
+      "review_id": "ER-152",
+      "brand_name": "Veronica Beard",
+      "category": "clothes",
+      "official_url": "https://veronicabeard.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Veronica+Beard+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__veronica_beard.jpg"
+    },
+    {
+      "review_id": "ER-153",
+      "brand_name": "Wales Bonner",
+      "category": "clothes",
+      "official_url": "https://walesbonner.net",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Wales+Bonner+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__wales_bonner.jpg"
+    },
+    {
+      "review_id": "ER-154",
+      "brand_name": "Weekday",
+      "category": "clothes",
+      "official_url": "https://weekday.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Weekday+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__weekday.jpg"
+    },
+    {
+      "review_id": "ER-155",
+      "brand_name": "Whistles",
+      "category": "clothes",
+      "official_url": "https://whistles.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Whistles+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__whistles.jpg"
+    },
+    {
+      "review_id": "ER-156",
+      "brand_name": "Yigal Azrouel",
+      "category": "clothes",
+      "official_url": "https://yigal-azrouel.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Yigal+Azrouel+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__yigal_azrouel.jpg"
+    },
+    {
+      "review_id": "ER-157",
+      "brand_name": "Yohji Yamamoto",
+      "category": "clothes",
+      "official_url": "https://www.yohjiyamamoto.co.jp",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Yohji+Yamamoto+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__yohji_yamamoto.jpg"
+    },
+    {
+      "review_id": "ER-158",
+      "brand_name": "Acne Studios",
+      "category": "shoes",
+      "official_url": "https://acnestudios.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Acne+Studios+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__acne_studios.jpg"
+    },
+    {
+      "review_id": "ER-159",
+      "brand_name": "ALO YOGA",
+      "category": "shoes",
+      "official_url": "https://aloyoga.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=ALO+YOGA+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__alo_yoga.jpg"
+    },
+    {
+      "review_id": "ER-160",
+      "brand_name": "AMI Paris",
+      "category": "shoes",
+      "official_url": "https://amiparis.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=AMI+Paris+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__ami_paris.jpg"
+    },
+    {
+      "review_id": "ER-161",
+      "brand_name": "Amina Muaddi",
+      "category": "shoes",
+      "official_url": "https://aminamuaddi.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Amina+Muaddi+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__amina_muaddi.jpg"
+    },
+    {
+      "review_id": "ER-162",
+      "brand_name": "Arizona Love",
+      "category": "shoes",
+      "official_url": "https://arizonalove.store",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Arizona+Love+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__arizona_love.jpg"
+    },
+    {
+      "review_id": "ER-163",
+      "brand_name": "Atoms",
+      "category": "shoes",
+      "official_url": "https://www.atoms.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Atoms+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__atoms.jpg"
+    },
+    {
+      "review_id": "ER-164",
+      "brand_name": "ATP Atelier",
+      "category": "shoes",
+      "official_url": "https://atpatelier.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=ATP+Atelier+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__atp_atelier.jpg"
+    },
+    {
+      "review_id": "ER-165",
+      "brand_name": "Base London",
+      "category": "shoes",
+      "official_url": "https://baselondon.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Base+London+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__base_london.jpg"
+    },
+    {
+      "review_id": "ER-166",
+      "brand_name": "BILLINI",
+      "category": "shoes",
+      "official_url": "https://billini.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=BILLINI+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__billini.jpg"
+    },
+    {
+      "review_id": "ER-167",
+      "brand_name": "Birdies",
+      "category": "shoes",
+      "official_url": "https://birdies.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Birdies+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__birdies.jpg"
+    },
+    {
+      "review_id": "ER-168",
+      "brand_name": "Cariuma",
+      "category": "shoes",
+      "official_url": "https://cariuma.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Cariuma+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__cariuma.jpg"
+    },
+    {
+      "review_id": "ER-169",
+      "brand_name": "Celine",
+      "category": "shoes",
+      "official_url": "https://celine.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Celine+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__celine.jpg"
+    },
+    {
+      "review_id": "ER-170",
+      "brand_name": "Cernucci",
+      "category": "shoes",
+      "official_url": "https://cernucci.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Cernucci+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__cernucci.jpg"
+    },
+    {
+      "review_id": "ER-171",
+      "brand_name": "Chaco",
+      "category": "shoes",
+      "official_url": "https://chacos.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Chaco+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__chaco.jpg"
+    },
+    {
+      "review_id": "ER-172",
+      "brand_name": "Chan Luu",
+      "category": "shoes",
+      "official_url": "https://chanluu.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Chan+Luu+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__chan_luu.jpg"
+    },
+    {
+      "review_id": "ER-173",
+      "brand_name": "Chanel",
+      "category": "shoes",
+      "official_url": "https://www.chanel.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Chanel+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__chanel.jpg"
+    },
+    {
+      "review_id": "ER-174",
+      "brand_name": "Charles & Keith",
+      "category": "shoes",
+      "official_url": "https://charleskeith.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Charles+%26+Keith+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__charles_and_keith.jpg"
+    },
+    {
+      "review_id": "ER-175",
+      "brand_name": "Childs",
+      "category": "shoes",
+      "official_url": "https://childsplayclothing.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Childs+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__childs.jpg"
+    },
+    {
+      "review_id": "ER-176",
+      "brand_name": "Chopova Lowena",
+      "category": "shoes",
+      "official_url": "https://chopovalowena.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Chopova+Lowena+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__chopova_lowena.jpg"
+    },
+    {
+      "review_id": "ER-177",
+      "brand_name": "chrome hearts",
+      "category": "shoes",
+      "official_url": "https://chromehearts.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=chrome+hearts+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__chrome_hearts.jpg"
+    },
+    {
+      "review_id": "ER-178",
+      "brand_name": "Claris Virot",
+      "category": "shoes",
+      "official_url": "https://clarisvirot.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Claris+Virot+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__claris_virot.jpg"
+    },
+    {
+      "review_id": "ER-179",
+      "brand_name": "Collina Strada",
+      "category": "shoes",
+      "official_url": "https://collinastrada.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Collina+Strada+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__collina_strada.jpg"
+    },
+    {
+      "review_id": "ER-180",
+      "brand_name": "Comme des Garçons",
+      "category": "shoes",
+      "official_url": "https://comme-des-garcons.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Comme+des+Gar%C3%A7ons+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__comme_des_garcons.jpg"
+    },
+    {
+      "review_id": "ER-181",
+      "brand_name": "Coperni",
+      "category": "shoes",
+      "official_url": "https://coperni.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Coperni+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__coperni.jpg"
+    },
+    {
+      "review_id": "ER-182",
+      "brand_name": "Cordani",
+      "category": "shoes",
+      "official_url": "https://cordani.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Cordani+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__cordani.jpg"
+    },
+    {
+      "review_id": "ER-183",
+      "brand_name": "Cult Gaia",
+      "category": "shoes",
+      "official_url": "https://cultgaia.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Cult+Gaia+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__cult_gaia.jpg"
+    },
+    {
+      "review_id": "ER-184",
+      "brand_name": "Cydwoq",
+      "category": "shoes",
+      "official_url": "https://cydwoq.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Cydwoq+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__cydwoq.jpg"
+    },
+    {
+      "review_id": "ER-185",
+      "brand_name": "Davi",
+      "category": "shoes",
+      "official_url": "https://davidsbridal.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Davi+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__davi.jpg"
+    },
+    {
+      "review_id": "ER-186",
+      "brand_name": "Gabriela Hearst",
+      "category": "shoes",
+      "official_url": "https://gabrielahearst.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Gabriela+Hearst+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__gabriela_hearst.jpg"
+    },
+    {
+      "review_id": "ER-187",
+      "brand_name": "Ganni",
+      "category": "shoes",
+      "official_url": "https://www.ganni.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Ganni+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__ganni.jpg"
+    },
+    {
+      "review_id": "ER-188",
+      "brand_name": "Gray Matters",
+      "category": "shoes",
+      "official_url": "https://graymattersnyc.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Gray+Matters+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__gray_matters.jpg"
+    },
+    {
+      "review_id": "ER-189",
+      "brand_name": "Henrik Vibskov",
+      "category": "shoes",
+      "official_url": "https://henrikvibskovboutique.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Henrik+Vibskov+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__henrik_vibskov.jpg"
+    },
+    {
+      "review_id": "ER-190",
+      "brand_name": "Herschel",
+      "category": "shoes",
+      "official_url": "https://herschel.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Herschel+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__herschel.jpg"
+    },
+    {
+      "review_id": "ER-191",
+      "brand_name": "Twinset",
+      "category": "shoes",
+      "official_url": "https://twinset.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Twinset+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__twinset.jpg"
+    },
+    {
+      "review_id": "ER-192",
+      "brand_name": "HHPLIFT",
+      "category": "shoes",
+      "official_url": "https://hhplift.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=HHPLIFT+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__hhplift.jpg"
+    },
+    {
+      "review_id": "ER-193",
+      "brand_name": "Ines de la Fressange",
+      "category": "shoes",
+      "official_url": "https://inesdelafressange.fr",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Ines+de+la+Fressange+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__ines_de_la_fressange.jpg"
+    },
+    {
+      "review_id": "ER-194",
+      "brand_name": "J.W. Anderson",
+      "category": "shoes",
+      "official_url": "https://jwanderson.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=J.W.+Anderson+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__j_w_anderson.jpg"
+    },
+    {
+      "review_id": "ER-195",
+      "brand_name": "Jacquemus",
+      "category": "shoes",
+      "official_url": "https://www.jacquemus.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Jacquemus+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__jacquemus.jpg"
+    },
+    {
+      "review_id": "ER-196",
+      "brand_name": "Jason Markk",
+      "category": "shoes",
+      "official_url": "https://jasonmarkk.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Jason+Markk+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__jason_markk.jpg"
+    },
+    {
+      "review_id": "ER-197",
+      "brand_name": "Jeffrey Campbell",
+      "category": "shoes",
+      "official_url": "https://jeffreycampbellshoes.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Jeffrey+Campbell+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__jeffrey_campbell.jpg"
+    },
+    {
+      "review_id": "ER-198",
+      "brand_name": "Jil Sander",
+      "category": "shoes",
+      "official_url": "https://jilsander.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Jil+Sander+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__jil_sander.jpg"
+    },
+    {
+      "review_id": "ER-199",
+      "brand_name": "Juicy Couture",
+      "category": "shoes",
+      "official_url": "https://juicycouture.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Juicy+Couture+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__juicy_couture.jpg"
+    },
+    {
+      "review_id": "ER-200",
+      "brand_name": "rag&bone",
+      "category": "jewellery",
+      "official_url": "https://rag-bone.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=rag%26bone+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__rag_and_bone.jpg"
+    },
+    {
+      "review_id": "ER-201",
+      "brand_name": "Salewa",
+      "category": "jewellery",
+      "official_url": "https://salewa.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Salewa+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__salewa.jpg"
+    },
+    {
+      "review_id": "ER-202",
+      "brand_name": "Sandro",
+      "category": "jewellery",
+      "official_url": "https://sandro-paris.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Sandro+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__sandro.jpg"
+    },
+    {
+      "review_id": "ER-203",
+      "brand_name": "Sandy Liang",
+      "category": "jewellery",
+      "official_url": "https://sandyliang.info",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Sandy+Liang+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__sandy_liang.jpg"
+    },
+    {
+      "review_id": "ER-204",
+      "brand_name": "Selected Homme",
+      "category": "jewellery",
+      "official_url": "https://selectedhomme.in",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Selected+Homme+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__selected_homme.jpg"
+    },
+    {
+      "review_id": "ER-205",
+      "brand_name": "Shrimps",
+      "category": "jewellery",
+      "official_url": "https://shrimps.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Shrimps+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__shrimps.jpg"
+    },
+    {
+      "review_id": "ER-206",
+      "brand_name": "Simon Miller",
+      "category": "jewellery",
+      "official_url": "https://simonmillerusa.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Simon+Miller+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__simon_miller.jpg"
+    },
+    {
+      "review_id": "ER-207",
+      "brand_name": "Sofie Schnoor",
+      "category": "jewellery",
+      "official_url": "https://sofieschnoor.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Sofie+Schnoor+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__sofie_schnoor.jpg"
+    },
+    {
+      "review_id": "ER-208",
+      "brand_name": "Staud",
+      "category": "jewellery",
+      "official_url": "https://staud.clothing",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Staud+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__staud.jpg"
+    },
+    {
+      "review_id": "ER-209",
+      "brand_name": "Studio Nicholson",
+      "category": "jewellery",
+      "official_url": "https://studionicholson.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Studio+Nicholson+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__studio_nicholson.jpg"
+    },
+    {
+      "review_id": "ER-210",
+      "brand_name": "Stutterheim",
+      "category": "jewellery",
+      "official_url": "https://stutterheim.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Stutterheim+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__stutterheim.jpg"
+    },
+    {
+      "review_id": "ER-211",
+      "brand_name": "Summer Away",
+      "category": "jewellery",
+      "official_url": "https://summeraway.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Summer+Away+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__summer_away.jpg"
+    },
+    {
+      "review_id": "ER-212",
+      "brand_name": "Suzanne Kalan",
+      "category": "jewellery",
+      "official_url": "https://suzannekalan.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Suzanne+Kalan+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__suzanne_kalan.jpg"
+    },
+    {
+      "review_id": "ER-213",
+      "brand_name": "Tabayer",
+      "category": "jewellery",
+      "official_url": "https://tabayer.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Tabayer+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__tabayer.jpg"
+    },
+    {
+      "review_id": "ER-214",
+      "brand_name": "Tecovas",
+      "category": "jewellery",
+      "official_url": "https://tecovas.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Tecovas+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__tecovas.jpg"
+    },
+    {
+      "review_id": "ER-215",
+      "brand_name": "The Attico",
+      "category": "jewellery",
+      "official_url": "https://theattico.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=The+Attico+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__the_attico.jpg"
+    },
+    {
+      "review_id": "ER-216",
+      "brand_name": "The Frankie Shop",
+      "category": "jewellery",
+      "official_url": "https://thefrankieshop.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=The+Frankie+Shop+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__the_frankie_shop.jpg"
+    },
+    {
+      "review_id": "ER-217",
+      "brand_name": "The Row",
+      "category": "jewellery",
+      "official_url": "https://www.therow.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=The+Row+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__the_row.jpg"
+    },
+    {
+      "review_id": "ER-218",
+      "brand_name": "Thom Browne",
+      "category": "jewellery",
+      "official_url": "https://thombrowne.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Thom+Browne+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__thom_browne.jpg"
+    },
+    {
+      "review_id": "ER-219",
+      "brand_name": "THOMAS SABO",
+      "category": "jewellery",
+      "official_url": "https://thomassabo.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=THOMAS+SABO+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__thomas_sabo.jpg"
+    },
+    {
+      "review_id": "ER-220",
+      "brand_name": "Tod's",
+      "category": "jewellery",
+      "official_url": "https://tods.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Tod%27s+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__tod_s.jpg"
+    },
+    {
+      "review_id": "ER-221",
+      "brand_name": "Tory Burch",
+      "category": "jewellery",
+      "official_url": "https://toryburch.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Tory+Burch+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__tory_burch.jpg"
+    },
+    {
+      "review_id": "ER-222",
+      "brand_name": "Toteme",
+      "category": "jewellery",
+      "official_url": "https://toteme-studio.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Toteme+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__toteme.jpg"
+    },
+    {
+      "review_id": "ER-223",
+      "brand_name": "Valentino",
+      "category": "jewellery",
+      "official_url": "https://valentino.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Valentino+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__valentino.jpg"
+    },
+    {
+      "review_id": "ER-224",
+      "brand_name": "Vera Wang",
+      "category": "jewellery",
+      "official_url": "https://verawangbride.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Vera+Wang+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__vera_wang.jpg"
+    },
+    {
+      "review_id": "ER-225",
+      "brand_name": "Veronica Beard",
+      "category": "jewellery",
+      "official_url": "https://veronicabeard.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Veronica+Beard+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__veronica_beard.jpg"
+    },
+    {
+      "review_id": "ER-226",
+      "brand_name": "vince",
+      "category": "jewellery",
+      "official_url": "https://vince.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=vince+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__vince.jpg"
+    },
+    {
+      "review_id": "ER-227",
+      "brand_name": "Von Dutch",
+      "category": "jewellery",
+      "official_url": "https://vondutch.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Von+Dutch+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__von_dutch.jpg"
+    },
+    {
+      "review_id": "ER-228",
+      "brand_name": "Yumi Kim",
+      "category": "jewellery",
+      "official_url": "https://yumikim.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Yumi+Kim+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__yumi_kim.jpg"
+    },
+    {
+      "review_id": "ER-229",
+      "brand_name": "Zegna",
+      "category": "jewellery",
+      "official_url": "https://www.zegna.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Zegna+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__zegna.jpg"
+    },
+    {
+      "review_id": "ER-230",
+      "brand_name": "zero + maria cornejo",
+      "category": "jewellery",
+      "official_url": "https://zeromariacornejo.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=zero+%2B+maria+cornejo+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__zero_maria_cornejo.jpg"
+    },
+    {
+      "review_id": "ER-231",
+      "brand_name": "Acne Studios",
+      "category": "bags",
+      "official_url": "https://acnestudios.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Acne+Studios+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__acne_studios.jpg"
+    },
+    {
+      "review_id": "ER-232",
+      "brand_name": "ALO YOGA",
+      "category": "bags",
+      "official_url": "https://aloyoga.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=ALO+YOGA+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__alo_yoga.jpg"
+    },
+    {
+      "review_id": "ER-233",
+      "brand_name": "AMI Paris",
+      "category": "bags",
+      "official_url": "https://amiparis.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=AMI+Paris+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__ami_paris.jpg"
+    },
+    {
+      "review_id": "ER-234",
+      "brand_name": "Anonymous Ism",
+      "category": "bags",
+      "official_url": "https://anonymousism.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Anonymous+Ism+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__anonymous_ism.jpg"
+    },
+    {
+      "review_id": "ER-235",
+      "brand_name": "Anya Hindmarch",
+      "category": "bags",
+      "official_url": "https://anyahindmarch.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Anya+Hindmarch+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__anya_hindmarch.jpg"
+    },
+    {
+      "review_id": "ER-236",
+      "brand_name": "Arizona Love",
+      "category": "bags",
+      "official_url": "https://arizonalove.store",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Arizona+Love+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__arizona_love.jpg"
+    },
+    {
+      "review_id": "ER-237",
+      "brand_name": "Brunello Cucinelli",
+      "category": "bags",
+      "official_url": "https://www.brunellocucinelli.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Brunello+Cucinelli+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__brunello_cucinelli.jpg"
+    },
+    {
+      "review_id": "ER-238",
+      "brand_name": "CASABLANCA",
+      "category": "bags",
+      "official_url": "https://casablancaparis.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=CASABLANCA+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__casablanca.jpg"
+    },
+    {
+      "review_id": "ER-239",
+      "brand_name": "Celine",
+      "category": "bags",
+      "official_url": "https://celine.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Celine+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__celine.jpg"
+    },
+    {
+      "review_id": "ER-240",
+      "brand_name": "Chan Luu",
+      "category": "bags",
+      "official_url": "https://chanluu.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Chan+Luu+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__chan_luu.jpg"
+    },
+    {
+      "review_id": "ER-241",
+      "brand_name": "Chanel",
+      "category": "bags",
+      "official_url": "https://www.chanel.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Chanel+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__chanel.jpg"
+    },
+    {
+      "review_id": "ER-242",
+      "brand_name": "Chopova Lowena",
+      "category": "bags",
+      "official_url": "https://chopovalowena.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Chopova+Lowena+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__chopova_lowena.jpg"
+    },
+    {
+      "review_id": "ER-243",
+      "brand_name": "chrome hearts",
+      "category": "bags",
+      "official_url": "https://chromehearts.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=chrome+hearts+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__chrome_hearts.jpg"
+    },
+    {
+      "review_id": "ER-244",
+      "brand_name": "Collina Strada",
+      "category": "bags",
+      "official_url": "https://collinastrada.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Collina+Strada+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__collina_strada.jpg"
+    },
+    {
+      "review_id": "ER-245",
+      "brand_name": "Comme des Garçons",
+      "category": "bags",
+      "official_url": "https://comme-des-garcons.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Comme+des+Gar%C3%A7ons+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__comme_des_garcons.jpg"
+    },
+    {
+      "review_id": "ER-246",
+      "brand_name": "Coperni",
+      "category": "bags",
+      "official_url": "https://coperni.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Coperni+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__coperni.jpg"
+    },
+    {
+      "review_id": "ER-247",
+      "brand_name": "Cult Gaia",
+      "category": "bags",
+      "official_url": "https://cultgaia.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Cult+Gaia+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__cult_gaia.jpg"
+    },
+    {
+      "review_id": "ER-248",
+      "brand_name": "Cuyana",
+      "category": "bags",
+      "official_url": "https://cuyana.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Cuyana+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__cuyana.jpg"
+    },
+    {
+      "review_id": "ER-249",
+      "brand_name": "DeMellier",
+      "category": "bags",
+      "official_url": "https://demellierlondon.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=DeMellier+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__demellier.jpg"
+    },
+    {
+      "review_id": "ER-250",
+      "brand_name": "Deux Mains",
+      "category": "bags",
+      "official_url": "https://deuxmains.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Deux+Mains+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__deux_mains.jpg"
+    },
+    {
+      "review_id": "ER-251",
+      "brand_name": "DKNY",
+      "category": "bags",
+      "official_url": "https://dkny.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=DKNY+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__dkny.jpg"
+    },
+    {
+      "review_id": "ER-252",
+      "brand_name": "Filippa K",
+      "category": "bags",
+      "official_url": "https://filippa-k.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Filippa+K+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__filippa_k.jpg"
+    },
+    {
+      "review_id": "ER-253",
+      "brand_name": "Filling Pieces",
+      "category": "bags",
+      "official_url": "https://fillingpieces.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Filling+Pieces+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__filling_pieces.jpg"
+    },
+    {
+      "review_id": "ER-254",
+      "brand_name": "Free Society",
+      "category": "bags",
+      "official_url": "https://freesociety.in",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Free+Society+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__free_society.jpg"
+    },
+    {
+      "review_id": "ER-255",
+      "brand_name": "Gabriela Hearst",
+      "category": "bags",
+      "official_url": "https://gabrielahearst.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Gabriela+Hearst+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__gabriela_hearst.jpg"
+    },
+    {
+      "review_id": "ER-256",
+      "brand_name": "Ganni",
+      "category": "bags",
+      "official_url": "https://www.ganni.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Ganni+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__ganni.jpg"
+    },
+    {
+      "review_id": "ER-257",
+      "brand_name": "Gimaguas",
+      "category": "bags",
+      "official_url": "https://gimaguas.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Gimaguas+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__gimaguas.jpg"
+    },
+    {
+      "review_id": "ER-258",
+      "brand_name": "J.Crew",
+      "category": "bags",
+      "official_url": "https://www.jcrew.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=J.Crew+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__j_crew.jpg"
+    },
+    {
+      "review_id": "ER-259",
+      "brand_name": "J.W. Anderson",
+      "category": "bags",
+      "official_url": "https://jwanderson.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=J.W.+Anderson+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__j_w_anderson.jpg"
+    },
+    {
+      "review_id": "ER-260",
+      "brand_name": "Jacquemus",
+      "category": "bags",
+      "official_url": "https://www.jacquemus.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Jacquemus+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__jacquemus.jpg"
+    },
+    {
+      "review_id": "ER-261",
+      "brand_name": "Jil Sander",
+      "category": "bags",
+      "official_url": "https://jilsander.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Jil+Sander+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__jil_sander.jpg"
+    },
+    {
+      "review_id": "ER-262",
+      "brand_name": "Jonathan Simkhai",
+      "category": "bags",
+      "official_url": "https://simkhai.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Jonathan+Simkhai+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__jonathan_simkhai.jpg"
+    },
+    {
+      "review_id": "ER-263",
+      "brand_name": "JW Pei",
+      "category": "bags",
+      "official_url": "https://jwpei.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=JW+Pei+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__jw_pei.jpg"
+    },
+    {
+      "review_id": "ER-264",
+      "brand_name": "L'agence",
+      "category": "bags",
+      "official_url": "https://lagence.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=L%27agence+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__l_agence.jpg"
+    },
+    {
+      "review_id": "ER-265",
+      "brand_name": "Lindsay Nicholas New York",
+      "category": "bags",
+      "official_url": "https://lindsaynicholasnewyork.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Lindsay+Nicholas+New+York+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__lindsay_nicholas_new_york.jpg"
+    },
+    {
+      "review_id": "ER-266",
+      "brand_name": "Maison Kitsuné",
+      "category": "bags",
+      "official_url": "https://maisonkitsune.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Maison+Kitsun%C3%A9+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__maison_kitsune.jpg"
+    },
+    {
+      "review_id": "ER-267",
+      "brand_name": "Maje",
+      "category": "bags",
+      "official_url": "https://www.maje.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Maje+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__maje.jpg"
+    },
+    {
+      "review_id": "ER-268",
+      "brand_name": "Mar Y Sol",
+      "category": "bags",
+      "official_url": "https://shopmarysol.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Mar+Y+Sol+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__mar_y_sol.jpg"
+    },
+    {
+      "review_id": "ER-269",
+      "brand_name": "Marc Jacobs",
+      "category": "bags",
+      "official_url": "https://www.marcjacobs.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Marc+Jacobs+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__marc_jacobs.jpg"
+    },
+    {
+      "review_id": "ER-270",
+      "brand_name": "Marge Sherwood",
+      "category": "bags",
+      "official_url": "https://margesherwood.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Marge+Sherwood+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__marge_sherwood.jpg"
+    },
+    {
+      "review_id": "ER-271",
+      "brand_name": "Marine Serre",
+      "category": "bags",
+      "official_url": "https://marineserre.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Marine+Serre+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__marine_serre.jpg"
+    },
+    {
+      "review_id": "ER-272",
+      "brand_name": "Mark. S",
+      "category": "bags",
+      "official_url": "https://marksandspencer.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Mark.+S+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__mark_s.jpg"
+    },
+    {
+      "review_id": "ER-273",
+      "brand_name": "Marni",
+      "category": "bags",
+      "official_url": "https://marni.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Marni+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__marni.jpg"
+    },
+    {
+      "review_id": "ER-274",
+      "brand_name": "Miu Miu",
+      "category": "bags",
+      "official_url": "https://miumiu.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Miu+Miu+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__miu_miu.jpg"
+    },
+    {
+      "review_id": "ER-275",
+      "brand_name": "A Bathing Ape",
+      "category": "clothes",
+      "official_url": "https://bape.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=A+Bathing+Ape+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__a_bathing_ape.jpg"
+    },
+    {
+      "review_id": "ER-276",
+      "brand_name": "Abercrombie & Fitch",
+      "category": "clothes",
+      "official_url": "https://www.abercrombie.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Abercrombie+%26+Fitch+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__abercrombie_and_fitch.jpg"
+    },
+    {
+      "review_id": "ER-277",
+      "brand_name": "Adidas",
+      "category": "clothes",
+      "official_url": "https://www.adidas.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Adidas+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__adidas.jpg"
+    },
+    {
+      "review_id": "ER-278",
+      "brand_name": "Arket",
+      "category": "clothes",
+      "official_url": "https://www.arket.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Arket+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__arket.jpg"
+    },
+    {
+      "review_id": "ER-279",
+      "brand_name": "AVAVAV",
+      "category": "clothes",
+      "official_url": "https://avavav.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=AVAVAV+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__avavav.jpg"
+    },
+    {
+      "review_id": "ER-280",
+      "brand_name": "Barbour",
+      "category": "clothes",
+      "official_url": "https://www.barbour.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Barbour+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__barbour.jpg"
+    },
+    {
+      "review_id": "ER-281",
+      "brand_name": "Balmain",
+      "category": "clothes",
+      "official_url": "https://www.balmain.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Balmain+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__balmain.jpg"
+    },
+    {
+      "review_id": "ER-282",
+      "brand_name": "Bandit Running",
+      "category": "clothes",
+      "official_url": "https://banditrunning.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Bandit+Running+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__bandit_running.jpg"
+    },
+    {
+      "review_id": "ER-283",
+      "brand_name": "Billabong",
+      "category": "clothes",
+      "official_url": "https://www.billabong.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Billabong+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__billabong.jpg"
+    },
+    {
+      "review_id": "ER-284",
+      "brand_name": "Bimba Y Lola",
+      "category": "clothes",
+      "official_url": "https://www.bimbaylola.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Bimba+Y+Lola+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__bimba_y_lola.jpg"
+    },
+    {
+      "review_id": "ER-285",
+      "brand_name": "Burton",
+      "category": "clothes",
+      "official_url": "https://www.burton.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Burton+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__burton.jpg"
+    },
+    {
+      "review_id": "ER-286",
+      "brand_name": "Burberry",
+      "category": "clothes",
+      "official_url": "https://www.burberry.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Burberry+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__burberry.jpg"
+    },
+    {
+      "review_id": "ER-287",
+      "brand_name": "Calvin Klein / Calvin Klein Jeans",
+      "category": "clothes",
+      "official_url": "https://www.calvinklein.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Calvin+Klein+%2F+Calvin+Klein+Jeans+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__calvin_klein_calvin_klein_jeans.jpg"
+    },
+    {
+      "review_id": "ER-288",
+      "brand_name": "Canada Goose",
+      "category": "clothes",
+      "official_url": "https://www.canadagoose.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Canada+Goose+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__canada_goose.jpg"
+    },
+    {
+      "review_id": "ER-289",
+      "brand_name": "Carhartt WIP",
+      "category": "clothes",
+      "official_url": "https://www.carhartt-wip.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Carhartt+WIP+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__carhartt_wip.jpg"
+    },
+    {
+      "review_id": "ER-290",
+      "brand_name": "Charles Jeffrey Loverboy",
+      "category": "clothes",
+      "official_url": "https://charlesjeffreyloverboy.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Charles+Jeffrey+Loverboy+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__charles_jeffrey_loverboy.jpg"
+    },
+    {
+      "review_id": "ER-291",
+      "brand_name": "Comme des Garcons Play",
+      "category": "clothes",
+      "official_url": "https://www.comme-des-garcons.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Comme+des+Garcons+Play+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__comme_des_garcons_play.jpg"
+    },
+    {
+      "review_id": "ER-292",
+      "brand_name": "Conner Ives",
+      "category": "clothes",
+      "official_url": "https://connerives.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Conner+Ives+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__conner_ives.jpg"
+    },
+    {
+      "review_id": "ER-293",
+      "brand_name": "Diesel",
+      "category": "clothes",
+      "official_url": "https://www.diesel.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Diesel+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__diesel.jpg"
+    },
+    {
+      "review_id": "ER-294",
+      "brand_name": "Desigual",
+      "category": "clothes",
+      "official_url": "https://www.desigual.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Desigual+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__desigual.jpg"
+    },
+    {
+      "review_id": "ER-295",
+      "brand_name": "Duran Lantink",
+      "category": "clothes",
+      "official_url": "https://duranlantink.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Duran+Lantink+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__duran_lantink.jpg"
+    },
+    {
+      "review_id": "ER-296",
+      "brand_name": "Erdem",
+      "category": "clothes",
+      "official_url": "https://erdem.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Erdem+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__erdem.jpg"
+    },
+    {
+      "review_id": "ER-297",
+      "brand_name": "GAP",
+      "category": "clothes",
+      "official_url": "https://www.gap.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=GAP+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__gap.jpg"
+    },
+    {
+      "review_id": "ER-298",
+      "brand_name": "Gant",
+      "category": "clothes",
+      "official_url": "https://www.gant.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Gant+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__gant.jpg"
+    },
+    {
+      "review_id": "ER-299",
+      "brand_name": "Good American",
+      "category": "clothes",
+      "official_url": "https://www.goodamerican.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Good+American+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__good_american.jpg"
+    },
+    {
+      "review_id": "ER-300",
+      "brand_name": "Gymshark",
+      "category": "clothes",
+      "official_url": "https://www.gymshark.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Gymshark+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__gymshark.jpg"
+    },
+    {
+      "review_id": "ER-301",
+      "brand_name": "Gucci",
+      "category": "clothes",
+      "official_url": "https://www.gucci.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Gucci+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__gucci.jpg"
+    },
+    {
+      "review_id": "ER-302",
+      "brand_name": "Hollister",
+      "category": "clothes",
+      "official_url": "https://www.hollisterco.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Hollister+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__hollister.jpg"
+    },
+    {
+      "review_id": "ER-303",
+      "brand_name": "Jaded London",
+      "category": "clothes",
+      "official_url": "https://jadedldn.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Jaded+London+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__jaded_london.jpg"
+    },
+    {
+      "review_id": "ER-304",
+      "brand_name": "Jean Paul Gaultier",
+      "category": "clothes",
+      "official_url": "https://www.jeanpaulgaultier.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Jean+Paul+Gaultier+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__jean_paul_gaultier.jpg"
+    },
+    {
+      "review_id": "ER-305",
+      "brand_name": "Karl Lagerfeld",
+      "category": "clothes",
+      "official_url": "https://www.karllagerfeld.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Karl+Lagerfeld+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__karl_lagerfeld.jpg"
+    },
+    {
+      "review_id": "ER-306",
+      "brand_name": "Lacoste",
+      "category": "clothes",
+      "official_url": "https://www.lacoste.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Lacoste+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__lacoste.jpg"
+    },
+    {
+      "review_id": "ER-307",
+      "brand_name": "Levi's",
+      "category": "clothes",
+      "official_url": "https://www.levi.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Levi%27s+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__levi_s.jpg"
+    },
+    {
+      "review_id": "ER-308",
+      "brand_name": "Loro Piana",
+      "category": "clothes",
+      "official_url": "https://www.loropiana.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Loro+Piana+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__loro_piana.jpg"
+    },
+    {
+      "review_id": "ER-309",
+      "brand_name": "Lululemon",
+      "category": "clothes",
+      "official_url": "https://www.lululemon.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Lululemon+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__lululemon.jpg"
+    },
+    {
+      "review_id": "ER-310",
+      "brand_name": "Mango",
+      "category": "clothes",
+      "official_url": "https://shop.mango.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Mango+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__mango.jpg"
+    },
+    {
+      "review_id": "ER-311",
+      "brand_name": "Martine Rose",
+      "category": "clothes",
+      "official_url": "https://martine-rose.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Martine+Rose+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__martine_rose.jpg"
+    },
+    {
+      "review_id": "ER-312",
+      "brand_name": "Missoni",
+      "category": "clothes",
+      "official_url": "https://www.missoni.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Missoni+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__missoni.jpg"
+    },
+    {
+      "review_id": "ER-313",
+      "brand_name": "Michael Kors",
+      "category": "clothes",
+      "official_url": "https://www.michaelkors.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Michael+Kors+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__michael_kors.jpg"
+    },
+    {
+      "review_id": "ER-314",
+      "brand_name": "Missguided",
+      "category": "clothes",
+      "official_url": "https://www.missguided.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Missguided+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__missguided.jpg"
+    },
+    {
+      "review_id": "ER-315",
+      "brand_name": "McQueen",
+      "category": "clothes",
+      "official_url": "https://www.alexandermcqueen.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=McQueen+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__mcqueen.jpg"
+    },
+    {
+      "review_id": "ER-316",
+      "brand_name": "MKI MIYUKI ZOKU",
+      "category": "clothes",
+      "official_url": "https://mkistore.co.uk",
+      "google_images_url": "https://www.google.com/search?udm=2&q=MKI+MIYUKI+ZOKU+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__mki_miyuki_zoku.jpg"
+    },
+    {
+      "review_id": "ER-317",
+      "brand_name": "Moncler",
+      "category": "clothes",
+      "official_url": "https://www.moncler.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Moncler+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__moncler.jpg"
+    },
+    {
+      "review_id": "ER-318",
+      "brand_name": "Moschino",
+      "category": "clothes",
+      "official_url": "https://www.moschino.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Moschino+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__moschino.jpg"
+    },
+    {
+      "review_id": "ER-319",
+      "brand_name": "Mugler",
+      "category": "clothes",
+      "official_url": "https://fashion.mugler.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Mugler+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__mugler.jpg"
+    },
+    {
+      "review_id": "ER-320",
+      "brand_name": "Napapijri",
+      "category": "clothes",
+      "official_url": "https://www.napapijri.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Napapijri+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__napapijri.jpg"
+    },
+    {
+      "review_id": "ER-321",
+      "brand_name": "Needles",
+      "category": "clothes",
+      "official_url": "https://www.nepentheslondon.com/collections/needles",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Needles+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__needles.jpg"
+    },
+    {
+      "review_id": "ER-322",
+      "brand_name": "Never Fully Dressed",
+      "category": "clothes",
+      "official_url": "https://www.neverfullydressed.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Never+Fully+Dressed+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__never_fully_dressed.jpg"
+    },
+    {
+      "review_id": "ER-323",
+      "brand_name": "Neighbourhood",
+      "category": "clothes",
+      "official_url": "https://www.neighborhood.jp",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Neighbourhood+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__neighbourhood.jpg"
+    },
+    {
+      "review_id": "ER-324",
+      "brand_name": "New Balance",
+      "category": "clothes",
+      "official_url": "https://www.newbalance.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=New+Balance+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__new_balance.jpg"
+    },
+    {
+      "review_id": "ER-325",
+      "brand_name": "Nike",
+      "category": "clothes",
+      "official_url": "https://www.nike.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Nike+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__nike.jpg"
+    },
+    {
+      "review_id": "ER-326",
+      "brand_name": "No Problemo",
+      "category": "clothes",
+      "official_url": "https://www.noproblemo.world",
+      "google_images_url": "https://www.google.com/search?udm=2&q=No+Problemo+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__no_problemo.jpg"
+    },
+    {
+      "review_id": "ER-327",
+      "brand_name": "Oner Active",
+      "category": "clothes",
+      "official_url": "https://www.oneractive.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Oner+Active+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__oner_active.jpg"
+    },
+    {
+      "review_id": "ER-328",
+      "brand_name": "Open YY",
+      "category": "clothes",
+      "official_url": "https://open-yy.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Open+YY+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__open_yy.jpg"
+    },
+    {
+      "review_id": "ER-329",
+      "brand_name": "Palm Angels",
+      "category": "clothes",
+      "official_url": "https://www.palmangels.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Palm+Angels+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__palm_angels.jpg"
+    },
+    {
+      "review_id": "ER-330",
+      "brand_name": "Paul Smith",
+      "category": "clothes",
+      "official_url": "https://www.paulsmith.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Paul+Smith+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__paul_smith.jpg"
+    },
+    {
+      "review_id": "ER-331",
+      "brand_name": "Polo Ralph Lauren",
+      "category": "clothes",
+      "official_url": "https://www.ralphlauren.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Polo+Ralph+Lauren+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__polo_ralph_lauren.jpg"
+    },
+    {
+      "review_id": "ER-332",
+      "brand_name": "Puma",
+      "category": "clothes",
+      "official_url": "https://www.puma.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Puma+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__puma.jpg"
+    },
+    {
+      "review_id": "ER-333",
+      "brand_name": "P.E Nation",
+      "category": "clothes",
+      "official_url": "https://www.pe-nation.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=P.E+Nation+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__p_e_nation.jpg"
+    },
+    {
+      "review_id": "ER-334",
+      "brand_name": "Pull & Bear",
+      "category": "clothes",
+      "official_url": "https://www.pullandbear.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Pull+%26+Bear+official+clothes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/clothes__pull_and_bear.jpg"
+    },
+    {
+      "review_id": "ER-335",
+      "brand_name": "ABRA",
+      "category": "shoes",
+      "official_url": "https://abra.world",
+      "google_images_url": "https://www.google.com/search?udm=2&q=ABRA+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__abra.jpg"
+    },
+    {
+      "review_id": "ER-336",
+      "brand_name": "Air Jordan",
+      "category": "shoes",
+      "official_url": "https://www.nike.com/jordan",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Air+Jordan+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__air_jordan.jpg"
+    },
+    {
+      "review_id": "ER-337",
+      "brand_name": "Asics",
+      "category": "shoes",
+      "official_url": "https://www.asics.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Asics+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__asics.jpg"
+    },
+    {
+      "review_id": "ER-338",
+      "brand_name": "Adidas",
+      "category": "shoes",
+      "official_url": "https://www.adidas.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Adidas+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__adidas.jpg"
+    },
+    {
+      "review_id": "ER-339",
+      "brand_name": "Golden Goose",
+      "category": "shoes",
+      "official_url": "https://www.goldengoose.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Golden+Goose+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__golden_goose.jpg"
+    },
+    {
+      "review_id": "ER-340",
+      "brand_name": "Birkenstock",
+      "category": "shoes",
+      "official_url": "https://www.birkenstock.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Birkenstock+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__birkenstock.jpg"
+    },
+    {
+      "review_id": "ER-341",
+      "brand_name": "EYTYS",
+      "category": "shoes",
+      "official_url": "https://eytys.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=EYTYS+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__eytys.jpg"
+    },
+    {
+      "review_id": "ER-342",
+      "brand_name": "Geox",
+      "category": "shoes",
+      "official_url": "https://www.geox.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Geox+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__geox.jpg"
+    },
+    {
+      "review_id": "ER-343",
+      "brand_name": "Gia Borghini",
+      "category": "shoes",
+      "official_url": "https://giaborghini.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Gia+Borghini+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__gia_borghini.jpg"
+    },
+    {
+      "review_id": "ER-344",
+      "brand_name": "Church's",
+      "category": "shoes",
+      "official_url": "https://www.church-footwear.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Church%27s+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__church_s.jpg"
+    },
+    {
+      "review_id": "ER-345",
+      "brand_name": "Gucci",
+      "category": "shoes",
+      "official_url": "https://www.gucci.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Gucci+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__gucci.jpg"
+    },
+    {
+      "review_id": "ER-346",
+      "brand_name": "Crocs",
+      "category": "shoes",
+      "official_url": "https://www.crocs.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Crocs+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__crocs.jpg"
+    },
+    {
+      "review_id": "ER-347",
+      "brand_name": "Clarks",
+      "category": "shoes",
+      "official_url": "https://www.clarks.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Clarks+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__clarks.jpg"
+    },
+    {
+      "review_id": "ER-348",
+      "brand_name": "Ecco",
+      "category": "shoes",
+      "official_url": "https://www.ecco.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Ecco+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__ecco.jpg"
+    },
+    {
+      "review_id": "ER-349",
+      "brand_name": "Converse",
+      "category": "shoes",
+      "official_url": "https://www.converse.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Converse+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__converse.jpg"
+    },
+    {
+      "review_id": "ER-350",
+      "brand_name": "Carvela",
+      "category": "shoes",
+      "official_url": "https://www.carvela.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Carvela+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__carvela.jpg"
+    },
+    {
+      "review_id": "ER-351",
+      "brand_name": "Diemme",
+      "category": "shoes",
+      "official_url": "https://diemme.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Diemme+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__diemme.jpg"
+    },
+    {
+      "review_id": "ER-352",
+      "brand_name": "Hunter",
+      "category": "shoes",
+      "official_url": "https://hunterboots.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Hunter+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__hunter.jpg"
+    },
+    {
+      "review_id": "ER-353",
+      "brand_name": "Vivienne Westwood",
+      "category": "jewellery",
+      "official_url": "https://www.viviennewestwood.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Vivienne+Westwood+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__vivienne_westwood.jpg"
+    },
+    {
+      "review_id": "ER-354",
+      "brand_name": "Roxanne Assoulin",
+      "category": "jewellery",
+      "official_url": "https://roxanneassoulin.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Roxanne+Assoulin+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__roxanne_assoulin.jpg"
+    },
+    {
+      "review_id": "ER-355",
+      "brand_name": "Roxanne First",
+      "category": "jewellery",
+      "official_url": "https://roxannefirst.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Roxanne+First+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__roxanne_first.jpg"
+    },
+    {
+      "review_id": "ER-356",
+      "brand_name": "Sonia Petroff",
+      "category": "jewellery",
+      "official_url": "https://soniapetroff.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Sonia+Petroff+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__sonia_petroff.jpg"
+    },
+    {
+      "review_id": "ER-357",
+      "brand_name": "Zoe Mohm",
+      "category": "jewellery",
+      "official_url": "https://zoemohm.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Zoe+Mohm+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__zoe_mohm.jpg"
+    },
+    {
+      "review_id": "ER-358",
+      "brand_name": "William Welstead",
+      "category": "jewellery",
+      "official_url": "https://williamwelstead.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=William+Welstead+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__william_welstead.jpg"
+    },
+    {
+      "review_id": "ER-359",
+      "brand_name": "YVMIN",
+      "category": "jewellery",
+      "official_url": "https://yvmin.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=YVMIN+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__yvmin.jpg"
+    },
+    {
+      "review_id": "ER-360",
+      "brand_name": "Yellow Swallow",
+      "category": "jewellery",
+      "official_url": "https://yellowswallow.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Yellow+Swallow+official+jewellery",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__yellow_swallow.jpg"
+    }
+  ]
+}

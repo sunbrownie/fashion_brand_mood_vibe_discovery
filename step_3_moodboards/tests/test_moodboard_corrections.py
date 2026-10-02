@@ -10,6 +10,7 @@ import unittest
 from pathlib import Path
 
 import pandas as pd
+from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -235,6 +236,22 @@ class MoodboardCorrectionTests(unittest.TestCase):
             self.assertEqual(Path(entry["ios_v2_path"]).name, expected_name, entry["review_id"])
             self.assertTrue((ROOT / "ios" / "BrandMoodboardFinder" / entry["ios_v2_path"]).exists())
             self.assertIn("V1 asset is unchanged", entry["rollback"])
+
+    def test_review_reference_links_and_screenshots_cover_every_fixture(self) -> None:
+        payload = json.loads((REVIEW_DIR / "reference_sources.json").read_text(encoding="utf-8"))
+        records = payload["records"]
+        self.assertEqual(len(records), 360)
+        self.assertEqual(len({record["review_id"] for record in records}), 360)
+        unique_screenshots = {record["screenshot_path"] for record in records}
+        self.assertEqual(len(unique_screenshots), 359)
+        for record in records:
+            self.assertTrue(record["official_url"].startswith("https://"), record["review_id"])
+            self.assertIn("google.com/search?", record["google_images_url"], record["review_id"])
+        for relative_path in unique_screenshots:
+            screenshot = ROOT / relative_path
+            self.assertTrue(screenshot.exists(), relative_path)
+            with Image.open(screenshot) as image:
+                self.assertEqual(image.size, (600, 900), relative_path)
 
 
 if __name__ == "__main__":

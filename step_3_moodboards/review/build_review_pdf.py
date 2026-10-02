@@ -88,6 +88,12 @@ def updated_moodboards(root: Path, record: dict) -> list[Path]:
     return [ios_root / value for value in record.get("ios_v2_paths", [])]
 
 
+def reference_sources(root: Path) -> dict[str, dict]:
+    path = root / "step_3_moodboards" / "review" / "reference_sources.json"
+    records = json.loads(path.read_text(encoding="utf-8"))["records"]
+    return {record["review_id"]: record for record in records}
+
+
 def wrap_lines(text: str, font: str, size: float, width: float) -> list[str]:
     words = clean_text(text).split()
     lines: list[str] = []
@@ -133,8 +139,8 @@ def draw_wrapped(
     return y
 
 
-def cached_review_image(source: Path, cache_dir: Path) -> Path:
-    key = hashlib.sha1(f"compact-v2:{source.resolve()}:{source.stat().st_mtime_ns}".encode()).hexdigest()
+def cached_review_image(source: Path, cache_dir: Path, quality: int = 72) -> Path:
+    key = hashlib.sha1(f"compact-v2:q{quality}:{source.resolve()}:{source.stat().st_mtime_ns}".encode()).hexdigest()
     target = cache_dir / f"{key}.jpg"
     if target.exists():
         return target
@@ -142,12 +148,22 @@ def cached_review_image(source: Path, cache_dir: Path) -> Path:
     with PILImage.open(source) as opened:
         image = ImageOps.exif_transpose(opened).convert("RGB")
         image.thumbnail((760, 1064), PILImage.Resampling.LANCZOS)
-        image.save(target, format="JPEG", quality=72, optimize=True, progressive=True)
+        image.save(target, format="JPEG", quality=quality, optimize=True, progressive=True)
     return target
 
 
-def draw_fitted_image(pdf: canvas.Canvas, source: Path, cache_dir: Path, x: float, y: float, w: float, h: float) -> None:
-    path = cached_review_image(source, cache_dir)
+def draw_fitted_image(
+    pdf: canvas.Canvas,
+    source: Path,
+    cache_dir: Path,
+    x: float,
+    y: float,
+    w: float,
+    h: float,
+    *,
+    quality: int = 72,
+) -> None:
+    path = cached_review_image(source, cache_dir, quality)
     with PILImage.open(path) as image:
         iw, ih = image.size
     scale = min(w / iw, h / ih)
@@ -247,9 +263,18 @@ def draw_decision_panel(pdf: canvas.Canvas, title: str, detail: str, x: float, y
     pdf.drawString(x + 22, y + 29, "NO NEW IMAGE REQUIRED")
 
 
-def fixture_page(pdf: canvas.Canvas, root: Path, cache_dir: Path, record: dict, page_number: int, total_pages: int) -> None:
+def fixture_page(
+    pdf: canvas.Canvas,
+    root: Path,
+    cache_dir: Path,
+    record: dict,
+    reference: dict,
+    page_number: int,
+    total_pages: int,
+) -> None:
     original = None if record["request_type"] == "new_brand" else original_moodboard(root, record)
     updated = updated_moodboards(root, record)
+    reference_image = root / reference["screenshot_path"]
     visual_change = record.get("implementation_status") == "implemented_v2"
     title, detail, _ = implementation_copy(record)
 
@@ -270,12 +295,13 @@ def fixture_page(pdf: canvas.Canvas, root: Path, cache_dir: Path, record: dict, 
     pdf.drawString(47, PAGE_H - 82, "ELLINA'S FEEDBACK")
     draw_wrapped(pdf, record["reviewer_note"], 146, PAGE_H - 82, PAGE_W - 193, size=8.6, leading=10.5, max_lines=3)
 
-    left_x, right_x = 48, 543
-    image_y, image_w, image_h = 52, 250, 403
+    left_x, middle_x, right_x = 30, 301, 572
+    image_y, image_w, image_h = 70, 240, 385
     pdf.setFillColor(INK)
     pdf.setFont("Helvetica-Bold", 9)
     pdf.drawCentredString(left_x + image_w / 2, 467, "ORIGINAL - V1" if original else "REQUEST - NO V1")
-    pdf.drawCentredString(right_x + image_w / 2, 467, "UPDATED - V2" if visual_change else "IMPLEMENTED CATALOG DECISION")
+    pdf.drawCentredString(middle_x + image_w / 2, 467, "UPDATED - V2" if visual_change else "IMPLEMENTED CATALOG DECISION")
+    pdf.drawCentredString(right_x + image_w / 2, 467, "GOOGLE IMAGES REFERENCE")
 
     if original:
         draw_fitted_image(pdf, original, cache_dir, left_x, image_y, image_w, image_h)
@@ -283,23 +309,26 @@ def fixture_page(pdf: canvas.Canvas, root: Path, cache_dir: Path, record: dict, 
         draw_empty_original_panel(pdf, left_x, image_y, image_w, image_h)
 
     if visual_change:
-        draw_updated_panel(pdf, updated, cache_dir, right_x, image_y, image_w, image_h)
+        draw_updated_panel(pdf, updated, cache_dir, middle_x, image_y, image_w, image_h)
     else:
-        draw_decision_panel(pdf, title, detail, right_x, image_y, image_w, image_h)
+        draw_decision_panel(pdf, title, detail, middle_x, image_y, image_w, image_h)
 
-    pdf.setFillColor(PINK)
-    pdf.circle(PAGE_W / 2, 305, 35, fill=1, stroke=0)
-    pdf.setFillColor(ACCENT)
-    pdf.setFont("Helvetica-Bold", 10)
-    pdf.drawCentredString(PAGE_W / 2, 309, "V2")
-    pdf.setFont("Helvetica", 7.5)
-    pdf.drawCentredString(PAGE_W / 2, 296, "IMPLEMENTED")
+    draw_fitted_image(pdf, reference_image, cache_dir, right_x, image_y, image_w, image_h, quality=45)
+    official_url = clean_text(reference["official_url"])
+    pdf.setFillColor(BLUE)
+    pdf.setFont("Helvetica", 5.8)
+    link_lines = wrap_lines(official_url, "Helvetica", 5.8, image_w)
+    link_y = 56
+    for line in link_lines[:2]:
+        pdf.drawCentredString(right_x + image_w / 2, link_y, line)
+        link_y -= 6.8
+    pdf.linkURL(reference["official_url"], (right_x, 42, right_x + image_w, 62), relative=0)
 
     footer(pdf, page_number, total_pages)
     pdf.showPage()
 
 
-def validate_inputs(root: Path, records: list[dict]) -> None:
+def validate_inputs(root: Path, records: list[dict], references: dict[str, dict]) -> None:
     if len(records) != 360:
         raise RuntimeError(f"Expected 360 fixtures, found {len(records)}")
     missing_originals = [record["review_id"] for record in records if record["request_type"] != "new_brand" and original_moodboard(root, record) is None]
@@ -310,14 +339,24 @@ def validate_inputs(root: Path, records: list[dict]) -> None:
         and (not updated_moodboards(root, record) or not all(path.exists() for path in updated_moodboards(root, record)))
     ]
     unresolved = [record["review_id"] for record in records if not record["implementation_status"].startswith("implemented")]
-    if missing_originals or missing_updates or unresolved:
-        raise RuntimeError(f"PDF inputs invalid: missing originals={missing_originals}, missing updates={missing_updates}, unresolved={unresolved}")
+    missing_references = [
+        record["review_id"]
+        for record in records
+        if record["review_id"] not in references
+        or not (root / references[record["review_id"]]["screenshot_path"]).exists()
+    ]
+    if missing_originals or missing_updates or unresolved or missing_references:
+        raise RuntimeError(
+            f"PDF inputs invalid: missing originals={missing_originals}, missing updates={missing_updates}, "
+            f"unresolved={unresolved}, missing references={missing_references}"
+        )
 
 
 def build(root: Path, output: Path, cache_dir: Path) -> None:
     manifest_path = root / "step_3_moodboards" / "review" / "ellina_correction_manifest.json"
     records = json.loads(manifest_path.read_text(encoding="utf-8"))["records"]
-    validate_inputs(root, records)
+    references = reference_sources(root)
+    validate_inputs(root, records, references)
     output.parent.mkdir(parents=True, exist_ok=True)
     total_pages = len(records)
     pdf = canvas.Canvas(str(output), pagesize=landscape(A4), pageCompression=1)
@@ -332,7 +371,7 @@ def build(root: Path, output: Path, cache_dir: Path) -> None:
             pdf.bookmarkPage(key)
             pdf.addOutlineEntry(f"{clean_text(group[0])} - {group[1].title()}", key, level=0, closed=False)
             last_group = group
-        fixture_page(pdf, root, cache_dir, record, index, total_pages)
+        fixture_page(pdf, root, cache_dir, record, references[record["review_id"]], index, total_pages)
     pdf.save()
     print(f"Created {output} with {total_pages} pages for {len(records)} fixtures.")
 
