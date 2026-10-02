@@ -17,6 +17,14 @@
       "layout": "Angular cropped panels and narrow strips rather than rounded bean shapes.",
       "logo_policy": "One subtle Acne Studios identifier may appear on a garment. No large wordmark."
     },
+    "clothes/carne_bollente": {
+      "must_include": ["six or more visibly different products", "a photographic or airbrushed shirt print", "a small embroidered tee graphic", "a line-drawn shirt or overshirt", "one knit or sweatshirt", "one bottom or outerwear piece", "both male and female styling"],
+      "must_avoid": ["repeating the same red-and-black knitted figures", "multiple colourways of one motif", "an all-knitwear board", "abstract print filler", "generic streetwear graphics"],
+      "context": "Playful Paris studio and street fragments with candid unisex styling; products remain the focus.",
+      "layout": "Lively cut-paper editorial collage with clearly separated garments, varied scales, and no motif appearing more than once.",
+      "duplicate_policy": "Every tile must show a different garment and a different cheeky figurative treatment; no repeated character, pose, print, embroidery, colourway, or detail crop.",
+      "logo_policy": "Recognisability must come from varied cheeky figurative artwork rather than a wordmark. No readable slogans."
+    },
     "clothes/celine": {
       "must_include": ["very slim or deliberately oversized tailoring", "layered styling", "sharp accessories", "current silhouettes"],
       "must_avoid": ["dated occasionwear", "generic romantic dresses", "unbranded knit close-ups"],

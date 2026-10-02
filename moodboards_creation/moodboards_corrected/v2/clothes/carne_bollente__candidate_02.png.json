@@ -1,0 +1,11 @@
+{
+  "review_id": "ER-018",
+  "brand_name": "Carne Bollente",
+  "category": "clothes",
+  "candidate": 2,
+  "model": "OpenAI built-in image_gen",
+  "prompt": "Generate a fresh vertical Carne Bollente fashion moodboard with eight clearly different garments and styling fragments: a photographic camp shirt, an embroidered ecru tee, an illustrated overshirt, a graphic sweatshirt, a distinct textured knit, printed trousers, outerwear, and an accessory. Include fully clothed adult male and female styling. Use photoreal fashion photography, real fabric texture, irregular torn-paper edges, varied tile sizes, playful negative space, and an ecru/navy/pale-blue/denim/chocolate palette with restrained bright accents. Every tile must show a different garment and a different whimsical figurative treatment. No motif, character, pose, print, embroidery, garment, or colourway may appear twice. No readable text, captions, labels, watermarks, accidental logos, nudity, intimate activity, all-knitwear treatment, abstract filler, or rigid grid.",
+  "sha256": "471c099a5f97045d163ecd4d40884d159f05104774632919ca3422c0923dadff",
+  "status": "candidate_generated",
+  "generation_note": "The original brand-language prompt was moderated; this safe rewrite preserved the requested varied figurative fashion direction without explicit wording."
+}

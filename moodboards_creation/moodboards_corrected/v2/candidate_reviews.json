@@ -142,6 +142,13 @@
       "reviewed_at": "2026-09-29T22:59:46.983113+00:00"
     },
     {
+      "review_id": "ER-018",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/carne_bollente__candidate_02.png",
+      "status": "approved",
+      "notes": "Self-review approved: eight visibly distinct product fragments, mixed garment categories and casting, no repeated hero print or colourway, and broader correspondence with the official product range.",
+      "reviewed_at": "2026-10-02T21:59:05.241702+00:00"
+    },
+    {
       "review_id": "ER-019",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/celine__candidate_01.png",
       "status": "rejected",

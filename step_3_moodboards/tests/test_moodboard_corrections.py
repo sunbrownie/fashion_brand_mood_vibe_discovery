@@ -136,6 +136,26 @@ class MoodboardCorrectionTests(unittest.TestCase):
         self.assertIn("Angular cropped panels", prompt)
         self.assertNotIn("one lived-in setting", prompt)
 
+    def test_carne_bollente_override_requires_product_and_motif_variety(self) -> None:
+        row = pd.Series(
+            {
+                "brand_name": "Carne Bollente",
+                "category": "clothes",
+                "aesthetic_keywords": "playful, irreverent, graphic, cheeky",
+                "silhouettes": "embroidered tees, graphic sweats, easy separates",
+                "materials": "organic cotton, jersey",
+                "palette": "ecru, black, brights, print",
+            }
+        )
+        prompt = moodboard_prompt(
+            row,
+            reviewer_note="The brand is less about abstract prints and more about being cheeky.",
+        )
+        self.assertIn("six or more visibly different products", prompt)
+        self.assertIn("photographic or airbrushed shirt print", prompt)
+        self.assertIn("no repeated character, pose, print, embroidery, colourway, or detail crop", prompt)
+        self.assertIn("repeating the same red-and-black knitted figures", prompt)
+
     def test_corrected_file_is_preferred_only_after_approval_name_exists(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
