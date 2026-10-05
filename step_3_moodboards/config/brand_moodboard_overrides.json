@@ -25,6 +25,14 @@
       "duplicate_policy": "Every tile must show a different garment and a different cheeky figurative treatment; no repeated character, pose, print, embroidery, colourway, or detail crop.",
       "logo_policy": "Recognisability must come from varied cheeky figurative artwork rather than a wordmark. No readable slogans."
     },
+    "clothes/chan_luu": {
+      "must_include": ["clean contemporary silhouettes with an eclectic material mix", "one warped plaid or graphic-check silk dress", "one botanical or python-print dress", "one saturated marigold, rose, or translucent-green piece", "one sequin or paillette evening layer", "one techno-taffeta or dupioni separate", "one unexpected feather, mesh, fringe, or shoelace construction detail", "at least one sharp layered look"],
+      "must_avoid": ["bohemian styling", "ethnic-market cues", "turquoise jewellery", "gauzy scarf-led outfits", "all-neutral quiet luxury", "six plain monochrome basics", "generic beige minimalism"],
+      "context": "Contemporary art-space, clean studio, or sharp city fragments with controlled colour and surprising textile detail.",
+      "layout": "Eclectic editorial collage with crisp irregular panels, alternating restrained full looks with close material and print details; colour and texture should move across the page without becoming bohemian.",
+      "duplicate_policy": "Every panel must introduce a different silhouette, material, print, colour family, or styling idea; do not repeat plain shirts, neutral knits, or near-identical minimal looks.",
+      "logo_policy": "No wordmark is needed; recognisability comes from the tension between clean shapes and unusual print, shine, texture, and colour."
+    },
     "clothes/celine": {
       "must_include": ["very slim or deliberately oversized tailoring", "layered styling", "sharp accessories", "current silhouettes"],
       "must_avoid": ["dated occasionwear", "generic romantic dresses", "unbranded knit close-ups"],

@@ -156,6 +156,27 @@ class MoodboardCorrectionTests(unittest.TestCase):
         self.assertIn("no repeated character, pose, print, embroidery, colourway, or detail crop", prompt)
         self.assertIn("repeating the same red-and-black knitted figures", prompt)
 
+    def test_chan_luu_override_is_eclectic_without_boho(self) -> None:
+        row = pd.Series(
+            {
+                "brand_name": "Chan Luu",
+                "category": "clothes",
+                "aesthetic_keywords": "eclectic, minimal, contemporary",
+                "silhouettes": "dresses, tops, trousers, evening layers",
+                "materials": "silk, taffeta, dupioni, mesh, sequins",
+                "palette": "ivory, black, marigold, rose, navy, print",
+            }
+        )
+        prompt = moodboard_prompt(
+            row,
+            reviewer_note="More eclectic and minimal-contemporary; no boho or ethnic styling.",
+        )
+        self.assertIn("warped plaid or graphic-check silk dress", prompt)
+        self.assertIn("sequin or paillette evening layer", prompt)
+        self.assertIn("unexpected feather, mesh, fringe, or shoelace construction detail", prompt)
+        self.assertIn("all-neutral quiet luxury", prompt)
+        self.assertIn("do not repeat plain shirts, neutral knits, or near-identical minimal looks", prompt)
+
     def test_corrected_file_is_preferred_only_after_approval_name_exists(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)

@@ -1,0 +1,11 @@
+{
+  "review_id": "ER-021",
+  "brand_name": "Chan Luu",
+  "category": "clothes",
+  "candidate": 4,
+  "model": "OpenAI built-in image_gen",
+  "prompt": "Create a vertical Chan Luu ready-to-wear moodboard that is eclectic and contemporary, with clean silhouettes animated by unusual print, colour, shine, and textile detail. Show eight distinct clothing fragments: a warped red-and-cream plaid silk shirt dress, primrose botanical dress, python-print tank dress, marigold wrap top, black paillette evening layer, rose techno-taffeta barrel trouser, midnight-navy shirt with shoelace construction detail, and a sharp ivory-and-sculptural-trouser layered look. Use photoreal fashion editorial imagery, crisp silk, taffeta, dupioni, mesh and sequin texture, and irregular torn-paper panels. Clothing only. Avoid bohemian styling, ethnic-market cues, turquoise jewellery, gauzy scarves, quiet-luxury monochrome, repeated plain basics, readable text, logos, labels, and watermarks.",
+  "sha256": "ce3969c025bd590b742448dda9867079eaeab84c22e5c60834a3fc9e84e39cb2",
+  "status": "candidate_generated",
+  "generation_note": "Generated from the updated Chan Luu override and current official ready-to-wear cues; the previous V2 remains preserved as candidate 3."
+}
