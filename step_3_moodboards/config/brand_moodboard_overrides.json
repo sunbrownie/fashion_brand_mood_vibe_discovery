@@ -55,25 +55,25 @@
       "duplicate_policy": "Every garment, graphic, colour, pose, and crop must be unique; use at most two printed hero pieces."
     },
     "clothes/girlfriend_collective": {
-      "must_include": ["saturated coordinated activewear sets", "cobalt or skyline blue", "dragonfruit pink", "kiwi or eucalyptus green", "terrace rust or bright orange", "a legging set", "bike shorts", "unitard or bodysuit", "sport skort or dress", "inclusive body casting"],
-      "must_avoid": ["readable words", "earthy olive and beige dominance", "muted grey-only styling", "generic yoga props", "repeated leggings in near-identical tones"],
-      "context": "Bright clean studio and minimal outdoor movement fragments; colour is the primary brand signal.",
-      "layout": "Energetic colour-block collage with distinct monochrome sets and varied activewear silhouettes.",
-      "duplicate_policy": "Each panel uses a different saturated colour and silhouette; do not repeat the same bra-and-legging pose."
+      "must_include": ["grounded colourful coordinated activewear sets", "muted lake blue", "dusty rose", "eucalyptus green", "warm clay or terracotta", "deep plum", "soft marigold", "a legging set", "bike shorts", "unitard or bodysuit", "sport skort or dress", "inclusive body casting"],
+      "must_avoid": ["readable words", "neon or candy-bright colour", "giant saturated colour-wall backdrops", "earthy brown-and-olive monotony", "muted grey-only styling", "generic yoga props", "repeated leggings in near-identical tones"],
+      "context": "Softly lit studio and natural outdoor movement fragments on warm neutrals; colour remains a brand signal without overwhelming the garments.",
+      "layout": "Calm editorial collage balancing seven distinct grounded colours with cream or black anchors and varied activewear silhouettes.",
+      "duplicate_policy": "Each panel uses a different wearable colour and silhouette; do not repeat the same bra-and-legging pose or saturated backdrop."
     },
     "clothes/hodakova": {
-      "must_include": ["a dress or skirt woven from multiple black leather belts", "visible buckles and belt loops as construction", "a belt-built corset or top", "deconstructed trouser tailoring", "a white shirt reworked with belt straps", "black-and-white upcycled formalwear"],
-      "must_avoid": ["handbag hero images", "plain grey tailoring without reconstruction", "belt-free minimal looks", "repeating the same deconstructed jacket"],
+      "must_include": ["one dress, corset, or skirt woven from repurposed black leather belts", "visible buckles and belt loops as one construction technique", "patchworked brown leather dress", "tailoring reconstructed with faded denim", "deconstructed trouser or skirt panels", "white shirt with one restrained belt detail", "raw-seam grey knit or wool", "black-and-white upcycled formalwear"],
+      "must_avoid": ["handbag hero images", "belts dominating more than two looks", "all-belt dresses", "seven black buckle-heavy outfits", "plain grey tailoring without reconstruction", "repeating the same deconstructed jacket"],
       "context": "Raw Stockholm studio, mannequin, or stark runway fragments that foreground converted materials.",
-      "layout": "Conceptual cut-paper collage with belts visibly functioning as garment structure, not accessories.",
-      "duplicate_policy": "Each panel must show a different reconstruction technique and garment type; no repeated outfit or bag."
+      "layout": "Conceptual cut-paper collage close to the original board's refined patchwork, denim, leather, knit and reconstructed tailoring; belts are one signature technique, not the entire board.",
+      "duplicate_policy": "Each panel must show a different reconstruction technique and garment type; use belt construction in no more than two panels and show no repeated outfit or bag."
     },
     "clothes/homecore": {
-      "must_include": ["relaxed colourful French menswear", "orange or honey knitwear", "green or blue outerwear", "striped or colour-block jersey", "soft work jacket", "easy trousers", "layered shirt and cardigan", "warm tactile everyday styling"],
-      "must_avoid": ["all-beige quiet luxury", "repeated grey sweater", "only two garment types", "formal business tailoring", "anonymous interiors"],
+      "must_include": ["relaxed colourful French unisex styling", "mixed casting with at least as many women as men", "orange or honey knitwear", "green or blue outerwear", "striped or colour-block jersey", "soft work jacket", "easy trousers", "layered shirt and cardigan", "warm tactile everyday styling"],
+      "must_avoid": ["men-only casting", "all-beige quiet luxury", "repeated grey sweater", "only two garment types", "formal business tailoring", "anonymous interiors"],
       "context": "Friendly Paris street, workshop, cafe, or colour-washed studio with natural candid posture.",
-      "layout": "Warm human collage mixing full looks with distinct knit, shirt, jacket, jersey, and trouser details.",
-      "duplicate_policy": "Use at least six different garments and four clearly different colours; no repeated neutral knit."
+      "layout": "Warm human collage mixing women and men in full looks with distinct knit, shirt, jacket, jersey, and trouser details.",
+      "duplicate_policy": "Use at least six different garments, four clearly different colours, and balanced mixed-gender casting; no repeated neutral knit."
     },
     "clothes/house_of_sunny": {
       "must_include": ["playful statement knitwear", "butter cable knit", "colourful checker or graphic cardigan", "cherry or floral knit detail", "flower-applique mesh", "one playful fitted dress", "one textured jacket or coordinated set", "bright green, butter, cherry, blue, and chocolate accents"],

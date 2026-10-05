@@ -394,6 +394,13 @@
       "reviewed_at": "2026-10-05T18:08:37.858801+00:00"
     },
     {
+      "review_id": "ER-043",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/girlfriend_collective__candidate_03.png",
+      "status": "approved",
+      "notes": "Color remains varied but is grounded in eucalyptus, lake blue, plum, clay, dusty rose and soft marigold with calm neutral settings.",
+      "reviewed_at": "2026-10-05T19:20:11.257981+00:00"
+    },
+    {
       "review_id": "ER-044",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gravel_and_gold__candidate_01.png",
       "status": "rejected",
@@ -443,6 +450,13 @@
       "reviewed_at": "2026-10-05T18:08:37.947170+00:00"
     },
     {
+      "review_id": "ER-047",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/hodakova__candidate_04.png",
+      "status": "approved",
+      "notes": "Closer to the original refined deconstruction: leather patchwork, denim-inset tailoring, raw knits and suiting lead, with belt construction limited to one hero and one restrained detail.",
+      "reviewed_at": "2026-10-05T19:20:11.342334+00:00"
+    },
+    {
       "review_id": "ER-048",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/homecore__candidate_01.png",
       "status": "approved",
@@ -455,6 +469,13 @@
       "status": "approved",
       "notes": "Warm colourful relaxed French menswear with varied knits, workwear, shirts and trousers; no neutral monotony.",
       "reviewed_at": "2026-10-05T18:08:38.040883+00:00"
+    },
+    {
+      "review_id": "ER-048",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/homecore__candidate_03.png",
+      "status": "approved",
+      "notes": "Four women and three men now share the same colorful relaxed Paris wardrobe across knitwear, work jackets, stripes, cardigans and easy trousers.",
+      "reviewed_at": "2026-10-05T19:20:11.421663+00:00"
     },
     {
       "review_id": "ER-049",

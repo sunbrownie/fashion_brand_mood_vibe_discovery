@@ -182,9 +182,9 @@ class MoodboardCorrectionTests(unittest.TestCase):
             "Christian Wijnants": ("modern sculptural knitwear", "repeated print fragments"),
             "Destree": ("structured white high-neck poplin blouse", "Loewe-like accessories"),
             "Dime": ("solid-colour hoodie", "multiple colourways of one graphic"),
-            "Girlfriend Collective": ("dragonfruit pink", "readable words"),
-            "Hodakova": ("dress or skirt woven from multiple black leather belts", "belt-free minimal looks"),
-            "Homecore": ("orange or honey knitwear", "all-beige quiet luxury"),
+            "Girlfriend Collective": ("grounded colourful coordinated activewear sets", "neon or candy-bright colour"),
+            "Hodakova": ("patchworked brown leather dress", "belts dominating more than two looks"),
+            "Homecore": ("mixed casting with at least as many women as men", "men-only casting"),
             "House Of Sunny": ("playful statement knitwear", "repeating one swirl or brown-green print"),
             "Jacquemus": ("sculptural Ovalo tailoring", "bottom-only fabric close-ups"),
         }
