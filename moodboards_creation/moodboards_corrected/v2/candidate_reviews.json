@@ -590,6 +590,13 @@
       "reviewed_at": "2026-10-05T19:01:07.883323+00:00"
     },
     {
+      "review_id": "ER-058",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/karoline_vitto__candidate_04.png",
+      "status": "approved",
+      "notes": "Approved after visual QA: exactly one wire-framed look; approved inclusive sculptural palette and silhouette language retained.",
+      "reviewed_at": "2026-10-05T20:55:47.575949+00:00"
+    },
+    {
       "review_id": "ER-059",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/khaite__candidate_01.png",
       "status": "approved",
@@ -1059,6 +1066,13 @@
       "reviewed_at": "2026-10-05T19:01:09.056109+00:00"
     },
     {
+      "review_id": "ER-100",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/obey__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved after visual QA: mixed-gender street/skate casting, varied workwear, denim, graphic and moto looks; not an all-women lineup.",
+      "reviewed_at": "2026-10-05T20:55:47.692702+00:00"
+    },
+    {
       "review_id": "ER-101",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/olivia_rubin__candidate_01.png",
       "status": "rejected",
@@ -1092,6 +1106,13 @@
       "status": "approved",
       "notes": "Sharper Copenhagen styling mixes asymmetry, sport, denim tailoring, ruffle, floral and sculptural volume.",
       "reviewed_at": "2026-10-05T19:01:09.133235+00:00"
+    },
+    {
+      "review_id": "ER-103",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/opera_sport__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved after visual QA: current fluid knit, tailoring, ruffle and floral direction retained in a clean coherent editorial setting.",
+      "reviewed_at": "2026-10-05T20:55:47.792096+00:00"
     },
     {
       "review_id": "ER-104",
