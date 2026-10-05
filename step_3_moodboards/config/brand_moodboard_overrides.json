@@ -89,6 +89,160 @@
       "layout": "Sculptural high-fashion collage balancing black, dark brown, beige, off-white, denim, and one vivid accent.",
       "duplicate_policy": "Each panel must introduce a different silhouette and proportion; no repeated cream dress or fabric crop."
     },
+    "clothes/johnny_was": {
+      "must_include": ["polished printed silk shirt or blouse", "embroidered denim or suede outerwear", "one velvet or mesh evening piece", "one relaxed trouser or matching set", "one rich-print dress", "jewel, tobacco, navy, wine, and cream tones"],
+      "must_avoid": ["sun-drenched resort styling", "multiple floaty maxi dresses", "repeated floral tunics", "boho room interiors", "beach props"],
+      "context": "Polished city, studio, and autumn garden editorial fragments rather than a holiday resort.",
+      "layout": "Rich but controlled silk, embroidery, outerwear, trousers, and evening texture with one distinct print per panel.",
+      "duplicate_policy": "No garment, floral family, model pose, or textile crop may repeat."
+    },
+    "clothes/karoline_vitto": {
+      "must_include": ["visible sculptural metal wire bra or frame construction", "inclusive curve-focused casting", "red or burnt-orange body-skimming dress", "cobalt or electric-blue cut-out piece", "pink frame dress or top", "directional denim or cargo trouser", "fluid draping with asymmetric cut-outs"],
+      "must_avoid": ["all-black palette", "repeated black gowns", "generic bodycon dresses", "metal hardware hidden from view", "thin-body-only casting"],
+      "context": "Clean London studio or runway where body, metal framing, colour, and drape carry the image.",
+      "layout": "Sculptural close and full looks balanced across black, red, orange, cobalt, and pink.",
+      "duplicate_policy": "Every panel must change colour, body silhouette, garment type, and metal-frame placement."
+    },
+    "clothes/kowtow": {
+      "must_include": ["architectural organic-cotton dress", "structured workwear denim", "graphic stripe or checker", "clean poplin shirt", "wide-leg trouser", "one primary-colour accent", "considered unisex layering"],
+      "must_avoid": ["readable words", "anonymous beige basics", "generic yoga minimalism", "only black and cream", "repeated plain tunics"],
+      "context": "Bright modernist Wellington studio, civic architecture, or natural daylight with crisp honest materials.",
+      "layout": "Spare graphic composition with visible garment construction, volume, stripe, denim, and one bright accent.",
+      "duplicate_policy": "Use at least six garment families and no repeated neutral silhouette."
+    },
+    "clothes/laagam": {
+      "must_include": ["ecru polka-dot long-sleeve top", "navy cardigan", "green cropped jacket", "textured taupe knit top", "modern denim jean", "asymmetric midi skirt", "one lilac or blue accent"],
+      "must_avoid": ["nightclub bodycon styling", "multiple metallic mini dresses", "old-fashioned occasionwear", "repeated black cut-out tops", "lingerie-led collage"],
+      "context": "Contemporary Barcelona street and clean product-studio fragments with youthful day-to-night styling.",
+      "layout": "Modern European high-street collage mixing everyday separates, texture, denim, tailoring, and one playful accent.",
+      "duplicate_policy": "Every panel must use a different garment family, texture, colour, and styling purpose."
+    },
+    "clothes/lioness": {
+      "must_include": ["trend-led Australian separates", "horseshoe or baggy denim", "corset or fitted going-out top", "windbreaker or cropped jacket", "plaid or gingham blouse", "midi or mini skirt", "pool blue, lemon, clover, pink, silver, and black accents"],
+      "must_avoid": ["generic black tailoring collage", "repeated red mini dress", "repeated leopard fabric", "building or interior filler", "six near-identical evening looks"],
+      "context": "Clean Sydney street, studio, or nightlife fragments with confident contemporary styling.",
+      "layout": "Trend-forward mix of denim, sporty outerwear, fitted tops, skirts, and one evening look rather than generic glamour.",
+      "duplicate_policy": "No repeated dress, print, pose, or black tailoring silhouette."
+    },
+    "clothes/lisa_says_gah": {
+      "must_include": ["pastoral horse or prairie motif", "cocoa check or restrained paisley", "primary-stripe knit", "retro midi skirt", "bow-check cardigan or zip knit", "brown, navy, tomato, moss, sweet pink, and cream palette", "one modern romantic dress"],
+      "must_avoid": ["neon floral overload", "oversaturated cherry and daisy repetition", "pure 1970s costume styling", "all-cottagecore dresses", "repeated giant flowers"],
+      "context": "Stylish San Francisco apartment, bookshop, or autumn street fragments with witty retro-modern styling.",
+      "layout": "Grounded retro editorial with checks, horses, stripes, knitwear, trousers, and skirts; colour is warm rather than candy-bright.",
+      "duplicate_policy": "Every print and garment type appears once; use no more than one large floral panel."
+    },
+    "clothes/lisou": {
+      "must_include": ["elegant hand-drawn silk print", "tailored printed blazer", "fluid silk trouser", "classic shirt with modern print", "one sophisticated dress", "distinct geometric, botanical, animal, and abstract print families", "emerald, navy, wine, ochre, and cream grounds"],
+      "must_avoid": ["fluorescent rainbow collage", "repeated leopard print", "hot-pink dominance", "generic tropical resort prints", "same print on multiple garments"],
+      "context": "Refined London townhouse, gallery, or studio with crisp silk texture and controlled colour.",
+      "layout": "Stylish print-led collage where each panel shows a different exclusive pattern and tailored silhouette.",
+      "duplicate_policy": "No print family, colour ground, silhouette, or pose may repeat."
+    },
+    "clothes/longchamp": {
+      "must_include": ["architectural Parisian outerwear", "sculptural coat or jacket", "soft textured knitwear", "elegant trouser", "modern dress or skirt", "one bold-colour look", "cognac, forest, navy, cream, cobalt, and red accents"],
+      "must_avoid": ["generic quiet-luxury basics", "all-neutral mannequin display", "handbag hero images", "repeated beige knitwear", "anonymous corporate tailoring"],
+      "context": "Contemporary Paris street and architectural studio with travel-informed polish and confident colour.",
+      "layout": "Everyday elegance through outerwear, knit, dress, skirt, and trouser silhouettes with rich texture and one bold colour.",
+      "duplicate_policy": "Each panel must introduce a distinct silhouette, texture, and colour family."
+    },
+    "clothes/made_by_minga": {
+      "must_include": ["hand-knit alpaca sweater", "natural-fibre oversized knit", "woven scarf", "alpaca beanie or beret", "crocheted bucket hat", "one hand-embroidered cotton piece", "raw white, desert taupe, acorn, terracotta, olive, and soft blue"],
+      "must_avoid": ["candy-bright palette", "repeated strawberry or mushroom motifs", "synthetic-looking novelty knits", "printed T-shirts", "neon craft aesthetic"],
+      "context": "Quiet Andean workshop, adobe wall, natural landscape, and tactile studio fragments focused on handwork.",
+      "layout": "Neutral artisanal knitwear and hats with visible wool, alpaca, crochet, weave, and restrained embroidery textures.",
+      "duplicate_policy": "No motif or knit technique repeats; natural neutrals must dominate with at most two soft accents."
+    },
+    "clothes/mary_katrantzou": {
+      "must_include": ["Mizutama marble print in claret", "Mizutama marble print in emerald", "Kintsugi-inspired azurite motif", "Reticello rainbow or primrose lace", "embroidered or jacquard coat", "printed trouser or skirt", "engineered-print dress with architectural placement"],
+      "must_avoid": ["same kaleidoscope print repeated", "generic rainbow florals", "ethnic-pattern interior filler", "only full-skirt occasion dresses", "duplicate colourways"],
+      "context": "Geometric gallery or Mediterranean domestic-modernist setting with ceramics, glass, and graphic shadow used sparingly.",
+      "layout": "Seven distinct engineered print languages across dress, coat, trouser, skirt, blouse, and lace pieces.",
+      "duplicate_policy": "Every panel must use a visibly different pattern scale, motif family, colour ground, and garment."
+    },
+    "clothes/masscob": {
+      "must_include": ["washed linen tailoring", "soft cotton blouse", "muted floral or paisley dress", "relaxed trouser", "suede or corduroy jacket", "layered knit and shirt", "tobacco, olive, faded blue, ecru, rust, and charcoal"],
+      "must_avoid": ["repeated prairie dress", "boho blanket filler", "all-cream resort styling", "multiple identical floral fabrics", "costume folk styling"],
+      "context": "Quiet Galician town, country house, or textured studio with natural light and understated romantic ease.",
+      "layout": "Refined lived-in European wardrobe balancing tailoring, shirting, trousers, knitwear, outerwear, and one print dress.",
+      "duplicate_policy": "Each panel must change garment family, material, colour, and silhouette."
+    },
+    "clothes/mirror_palais": {
+      "must_include": ["romantic corset or bustier", "sensual lady-length dress", "one sculptural formal gown", "one fitted mini dress", "soft cowl or plunging-back dress", "lace or diamond-dust surface", "pearl, noir, scarlet, butter, champagne, and soft pink"],
+      "must_avoid": ["all-bridal gown collage", "six generic ball gowns", "fantasy couture unrelated to current products", "repeated ivory draping", "only floor-length silhouettes"],
+      "context": "Intimate New York apartment, old-world salon, garden, and clean studio fragments with cinematic romantic light.",
+      "layout": "Balance recognisable corsetry, minis, lady-length dresses, cowl shapes, and no more than two formal gowns.",
+      "duplicate_policy": "Every panel changes length, neckline, colour, fabric, and occasion."
+    },
+    "clothes/miu_miu": {
+      "must_include": ["playful layered tank and T-shirt", "striped polo or rugby knit", "cashmere cardigan", "plaid or gabardine miniskirt", "cropped technical windbreaker", "chino or washed-denim trouser", "retro feminine line mixed with oversized sport", "light blue, red, yellow, brown, grey, and cream"],
+      "must_avoid": ["somber grey school-uniform-only collage", "six identical pleated skirts", "fabric close-ups", "handbag hero images", "adult corporate minimalism"],
+      "context": "Quirky Milan campus, runway, and candid street fragments with deliberate mismatch and youthful confidence.",
+      "layout": "Playful mix-and-match collage contrasting preppy knitwear, technical sport, denim, checks, and feminine minis.",
+      "duplicate_policy": "Every panel changes era cue, garment, colour, proportion, and styling combination."
+    },
+    "clothes/mowalola": {
+      "must_include": ["colourful graffiti bomber", "red or oxblood leather outerwear", "navy or grey track set", "bold blue or green graphic polo", "gold, red, cobalt, green, and black accents", "gender-fluid fitted top", "one provocative cut-out or latex-like piece"],
+      "must_avoid": ["all-black leather collage", "repeated black zip details", "six monochrome outfits", "generic goth tailoring", "shoe-only panels"],
+      "context": "London club, Lagos street, underground music, and flash-lit studio fragments with rebellious energy.",
+      "layout": "Sexy streetwear collision of bomber, track, polo, leather, fitted top, and colour-saturated graphic pieces.",
+      "duplicate_policy": "Black may support but not dominate; every panel must change colour, garment, finish, and attitude."
+    },
+    "clothes/msgm": {
+      "must_include": ["sharp colour-block tailoring", "sporty striped knit", "one bold graphic or abstract print", "technical outerwear", "sculptural skirt", "relaxed trouser", "black, red, cobalt, pink, chartreuse, and white"],
+      "must_avoid": ["all-over floral explosion", "repeated painterly print", "only party dresses", "generic rainbow collage", "multiple versions of one oversized flower"],
+      "context": "Contemporary Milan street, gallery, and runway fragments with graphic Italian energy.",
+      "layout": "Bold but edited collage balancing solid tailoring and sport with at most two distinct print statements.",
+      "duplicate_policy": "Every panel must change silhouette, colour relationship, material, and graphic language."
+    },
+    "clothes/nili_lotan": {
+      "must_include": ["rock-and-roll Americana tailoring", "Japanese denim jean or jacket", "western shirt", "suede jacket", "one restrained leopard piece", "relaxed blazer and trouser", "cashmere knit", "black, tobacco, indigo, army, cream, and rich red"],
+      "must_avoid": ["generic corporate black suits", "plain quiet-luxury collage", "repeated olive blazer", "cowboy costume", "three near-identical white shirts"],
+      "context": "Tribeca street, music studio, ranch-modern interior, and candid editorial fragments with lived-in polish.",
+      "layout": "Effortless 1970s rock, western, denim, suede, and tailoring mix with feminine ease.",
+      "duplicate_policy": "Each panel must show a different wardrobe pillar, fabric, colour, and styling attitude."
+    },
+    "clothes/nude_lucy": {
+      "must_include": ["relaxed-luxe matching set", "sculptural halter top", "Tencel or cupro trouser", "crisp linen dress", "tailored short or skirt", "modern knit top", "earth tones with artichoke, coral, soft blue, and cream accents"],
+      "must_avoid": ["homewear-only mood", "plain black gown collage", "repeated white shirt", "only beige basics", "anonymous fabric close-ups"],
+      "context": "Modern Sydney architecture, coastal city street, and bright studio fragments with practical polished styling.",
+      "layout": "Interesting everyday wardrobe with coordinated separates, drape, tailoring, knit, linen, and soft seasonal colour.",
+      "duplicate_policy": "Every panel changes silhouette, garment family, fabric, and colour."
+    },
+    "clothes/obey": {
+      "must_include": ["solid workwear jacket", "baggy denim", "knit or Cowichan sweater", "one artist-series graphic tee", "one restrained logo or political-art tee", "cropped sweater or moto layer", "black, cream, red, blue, brown, and olive"],
+      "must_avoid": ["same black-and-white graphic repeated", "six printed tees", "repeated patch or logo", "graffiti wall dominating the board", "generic streetwear collage"],
+      "context": "Art-school skate street, record shop, studio, and urban wall fragments with graphic culture kept secondary to clothes.",
+      "layout": "Arthouse skate wardrobe where solids, denim, workwear, and knitwear dominate and only two graphics appear.",
+      "duplicate_policy": "No graphic, logo, patch, print, garment, or pose appears twice."
+    },
+    "clothes/opera_sport": {
+      "must_include": ["asymmetric seamless top", "sporty elegant dress", "denim blazer or skirt", "sculptural ruffle", "lace or floral texture", "fluid trouser or long skirt", "pink, olive, pristine white, black, brown, and blue"],
+      "must_avoid": ["generic quiet-luxury layering", "stacked fabric swatches", "old-fashioned lounge dressing", "only beige and navy", "repeated basic cardigans"],
+      "context": "Hip Copenhagen-Seoul street, gallery, and clean studio fragments mixing urban sport with refined romance.",
+      "layout": "Modern asymmetric collage with seamless cotton, denim, lace, ruffle, tailoring, and sporty-elegant contrast.",
+      "duplicate_policy": "Every panel changes texture, silhouette, colour, and sporty-versus-elegant balance."
+    },
+    "clothes/patou": {
+      "must_include": ["voluminous organic-cotton top", "draped T-shirt silhouette", "sharp short skirt or tailored short", "cocoon or cropped jacket", "crisp blouse", "modern dress or jumpsuit", "Alpine blue, winter blush, white, black, and one rich neutral"],
+      "must_avoid": ["boho floral maxi dresses", "ethnic prints", "1950s ballgown costume", "generic resort florals", "repeated white ruffles"],
+      "context": "Graphic Paris studio and street with youthful couture proportion, clean colour, and witty polish.",
+      "layout": "Fresh modern Patou wardrobe led by volume, crisp cotton, short proportions, tailoring, and restrained colour blocking.",
+      "duplicate_policy": "Each panel must show a distinct proportion, garment family, colour, and construction detail."
+    },
+    "clothes/rich_mnisi": {
+      "must_include": ["sculptural compressed dress", "chestnut or dark tailored blazer", "mocha argyle coat or knit", "voided-heart skirt", "clean coil polo knit", "one modern engineered print", "black, mocha, cream, cobalt, wine, and restrained bright accents"],
+      "must_avoid": ["ethnic-costume styling", "rainbow print overload", "repeated abstract textile crops", "generic heritage tableau", "all-bright resort looks"],
+      "context": "Polished Johannesburg architecture, gallery, and runway fragments with contemporary luxury and strong silhouette.",
+      "layout": "Sophisticated modern fashion collage balancing sculptural solids, tailoring, knitwear, and only two engineered prints.",
+      "duplicate_policy": "Every panel changes print or solid treatment, silhouette, colour, and garment type."
+    },
+    "clothes/rotate_birger_christensen": {
+      "must_include": ["sharp oversized knit", "lace camisole with tailoring", "peplum leather top", "dark-red slit maxi dress", "leopard bow or scarf-detail top", "rounded or puffy sleeve", "relaxed trouser or oversized jacket", "black, dark red, brown, white, and muted blue"],
+      "must_avoid": ["all-party mini dresses", "sequin-dominated collage", "generic nightclub glamour", "repeated velvet puff sleeves", "six bodycon looks"],
+      "context": "Hip Copenhagen street, design hotel, and clean studio fragments with Scandi-glam attitude that works beyond parties.",
+      "layout": "Stylish day-to-night mix of knit, lace, leather, tailoring, one leopard accent, and no more than one sequin piece.",
+      "duplicate_policy": "Each panel must change occasion, silhouette, material, colour, and proportion."
+    },
     "clothes/celine": {
       "must_include": ["very slim or deliberately oversized tailoring", "layered styling", "sharp accessories", "current silhouettes"],
       "must_avoid": ["dated occasionwear", "generic romantic dresses", "unbranded knit close-ups"],

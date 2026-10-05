@@ -527,6 +527,13 @@
       "reviewed_at": "2026-09-29T19:15:56.954232+00:00"
     },
     {
+      "review_id": "ER-055",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/johnny_was__candidate_02.png",
+      "status": "approved",
+      "notes": "Less resort-led; varied embroidered, silk, denim, suede and velvet pieces now match the current brand range.",
+      "reviewed_at": "2026-10-05T19:01:07.802146+00:00"
+    },
+    {
       "review_id": "ER-056",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jonathan_simkhai__candidate_01.png",
       "status": "approved",
@@ -555,6 +562,13 @@
       "reviewed_at": "2026-09-30T08:35:38.984363+00:00"
     },
     {
+      "review_id": "ER-058",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/karoline_vitto__candidate_03.png",
+      "status": "approved",
+      "notes": "Adds the requested vivid color and visible metal wire bra/frame language with distinct inclusive looks.",
+      "reviewed_at": "2026-10-05T19:01:07.883323+00:00"
+    },
+    {
       "review_id": "ER-059",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/khaite__candidate_01.png",
       "status": "approved",
@@ -569,11 +583,25 @@
       "reviewed_at": "2026-09-29T19:24:13.031786+00:00"
     },
     {
+      "review_id": "ER-060",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/kowtow__candidate_02.png",
+      "status": "approved",
+      "notes": "Architectural organic-cotton volume, denim and considered color replace the generic board.",
+      "reviewed_at": "2026-10-05T19:01:07.957909+00:00"
+    },
+    {
       "review_id": "ER-061",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/laagam__candidate_01.png",
       "status": "approved",
       "notes": "The safe candidate removes the repeated image and replaces the old-fashioned collage with contemporary asymmetric partywear, tailoring, metallics and denim.",
       "reviewed_at": "2026-09-29T22:48:23.861300+00:00"
+    },
+    {
+      "review_id": "ER-061",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/laagam__candidate_02.png",
+      "status": "approved",
+      "notes": "Seven distinct modern separates align with the current assortment; rejected draft repetition is removed.",
+      "reviewed_at": "2026-10-05T19:01:08.030903+00:00"
     },
     {
       "review_id": "ER-063",
@@ -604,11 +632,25 @@
       "reviewed_at": "2026-09-29T22:48:23.992378+00:00"
     },
     {
+      "review_id": "ER-065",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lioness__candidate_02.png",
+      "status": "approved",
+      "notes": "Trend-driven denim, outerwear, plaid and fitted silhouettes restore the current Lioness energy.",
+      "reviewed_at": "2026-10-05T19:01:08.103620+00:00"
+    },
+    {
       "review_id": "ER-066",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lisa_says_gah__candidate_01.png",
       "status": "approved",
       "notes": "Romantic cottage-core shapes, florals, checks, and playful knits replace repeated retro-only imagery.",
       "reviewed_at": "2026-09-29T20:28:41.957413+00:00"
+    },
+    {
+      "review_id": "ER-066",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lisa_says_gah__candidate_02.png",
+      "status": "approved",
+      "notes": "More grounded retro styling with horse used once and varied checks, stripes, paisley and knitwear.",
+      "reviewed_at": "2026-10-05T19:01:08.175483+00:00"
     },
     {
       "review_id": "ER-067",
@@ -623,6 +665,13 @@
       "status": "approved",
       "notes": "Animal, celestial, floral, tropical, and abstract prints provide clear variation without repeated photos.",
       "reviewed_at": "2026-09-29T20:28:42.212780+00:00"
+    },
+    {
+      "review_id": "ER-068",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lisou__candidate_02.png",
+      "status": "approved",
+      "notes": "Refined silk cuts and distinct hand-drawn prints replace the overly bright treatment.",
+      "reviewed_at": "2026-10-05T19:01:08.247588+00:00"
     },
     {
       "review_id": "ER-069",
@@ -660,6 +709,13 @@
       "reviewed_at": "2026-10-02T08:35:12.274636+00:00"
     },
     {
+      "review_id": "ER-070",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/longchamp__candidate_03.png",
+      "status": "approved",
+      "notes": "Architectural Paris ready-to-wear, tactile outerwear and confident color replace generic neutral styling.",
+      "reviewed_at": "2026-10-05T19:01:08.318728+00:00"
+    },
+    {
       "review_id": "ER-071",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lucy_and_yak__candidate_01.png",
       "status": "approved",
@@ -686,6 +742,13 @@
       "status": "approved",
       "notes": "Handmade crochet sweaters, cardigan, skirt, and hats replace generic printed T-shirts.",
       "reviewed_at": "2026-09-29T20:38:38.165086+00:00"
+    },
+    {
+      "review_id": "ER-074",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/made_by_minga__candidate_02.png",
+      "status": "approved",
+      "notes": "Natural alpaca and wool textures return in a mostly neutral handmade palette.",
+      "reviewed_at": "2026-10-05T19:01:08.390914+00:00"
     },
     {
       "review_id": "ER-075",
@@ -765,11 +828,25 @@
       "reviewed_at": "2026-09-29T20:48:15.625389+00:00"
     },
     {
+      "review_id": "ER-083",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mary_katrantzou__candidate_02.png",
+      "status": "approved",
+      "notes": "Seven genuinely different engineered print and couture techniques remove the repetitive pattern problem.",
+      "reviewed_at": "2026-10-05T19:01:08.464259+00:00"
+    },
+    {
       "review_id": "ER-084",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/masscob__candidate_01.png",
       "status": "approved",
       "notes": "Distinct dress, blouse, trousers, top, and knitwear remove the repeated item groups.",
       "reviewed_at": "2026-09-29T20:48:15.747590+00:00"
+    },
+    {
+      "review_id": "ER-084",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/masscob__candidate_02.png",
+      "status": "approved",
+      "notes": "Washed tailoring, soft blouses and restrained romantic texture match the understated brand language.",
+      "reviewed_at": "2026-10-05T19:01:08.537984+00:00"
     },
     {
       "review_id": "ER-086",
@@ -793,6 +870,13 @@
       "reviewed_at": "2026-09-29T22:59:47.352641+00:00"
     },
     {
+      "review_id": "ER-087",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mirror_palais__candidate_02.png",
+      "status": "approved",
+      "notes": "Current corsets, day and mini dresses, cowl-back satin, lace and trousers balance the single evening gown.",
+      "reviewed_at": "2026-10-05T19:01:08.610694+00:00"
+    },
+    {
       "review_id": "ER-088",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/miu_miu__candidate_01.png",
       "status": "rejected",
@@ -805,6 +889,13 @@
       "status": "approved",
       "notes": "Youthful preppy tailoring, pleats, cropped jackets and soft texture; the off-brand brown handbag is removed.",
       "reviewed_at": "2026-10-02T08:35:12.602358+00:00"
+    },
+    {
+      "review_id": "ER-088",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/miu_miu__candidate_03.png",
+      "status": "approved",
+      "notes": "Playful layered color, technical pieces, chinos, denim and retro-preppy contrasts restore representative breadth.",
+      "reviewed_at": "2026-10-05T19:01:08.683955+00:00"
     },
     {
       "review_id": "ER-089",
@@ -842,11 +933,25 @@
       "reviewed_at": "2026-09-29T22:59:47.487643+00:00"
     },
     {
+      "review_id": "ER-092",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mowalola__candidate_02.png",
+      "status": "approved",
+      "notes": "Oxblood, red, cobalt, green and track references correct the previous black-heavy board.",
+      "reviewed_at": "2026-10-05T19:01:08.756100+00:00"
+    },
+    {
       "review_id": "ER-093",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/msgm__candidate_01.png",
       "status": "approved",
       "notes": "Distinct tailoring, dress, knit, skirt, and graphic pieces remove the repeated source photo.",
       "reviewed_at": "2026-09-29T20:56:47.756135+00:00"
+    },
+    {
+      "review_id": "ER-093",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/msgm__candidate_02.png",
+      "status": "approved",
+      "notes": "Edited Milanese color blocking, stripes, technical outerwear and limited pattern now express the brand.",
+      "reviewed_at": "2026-10-05T19:01:08.827421+00:00"
     },
     {
       "review_id": "ER-094",
@@ -868,6 +973,13 @@
       "status": "approved",
       "notes": "Tailoring, western hat, horse context, utility layers, and distinct garments answer the requested cowboy-tailoring mix.",
       "reviewed_at": "2026-09-29T20:56:47.944285+00:00"
+    },
+    {
+      "review_id": "ER-095",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/nili_lotan__candidate_02.png",
+      "status": "approved",
+      "notes": "Denim, suede, leopard, utility, tailoring and deep red now capture the 1970s rock-Americana range.",
+      "reviewed_at": "2026-10-05T19:01:08.899715+00:00"
     },
     {
       "review_id": "ER-096",
@@ -905,11 +1017,25 @@
       "reviewed_at": "2026-10-02T08:40:01.467000+00:00"
     },
     {
+      "review_id": "ER-099",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/nude_lucy__candidate_03.png",
+      "status": "approved",
+      "notes": "More directional halter, fluid set, cupro, linen, skirt, knit and denim looks retain wearable ease.",
+      "reviewed_at": "2026-10-05T19:01:08.979488+00:00"
+    },
+    {
       "review_id": "ER-100",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/obey__candidate_01.png",
       "status": "approved",
       "notes": "Obey-style graffiti, skate context, workwear, graphic knits, and tees deliver the requested arthouse-skater energy.",
       "reviewed_at": "2026-09-29T21:05:57.747160+00:00"
+    },
+    {
+      "review_id": "ER-100",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/obey__candidate_02.png",
+      "status": "approved",
+      "notes": "Rejected duplicate graphic was removed; one art tee now sits within varied workwear, denim, knit and moto looks.",
+      "reviewed_at": "2026-10-05T19:01:09.056109+00:00"
     },
     {
       "review_id": "ER-101",
@@ -938,6 +1064,13 @@
       "status": "approved",
       "notes": "Asymmetric shirting, sporty trousers, tailoring, knitwear, and elegant layers correct the off-vibe board.",
       "reviewed_at": "2026-09-29T21:05:57.931514+00:00"
+    },
+    {
+      "review_id": "ER-103",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/opera_sport__candidate_02.png",
+      "status": "approved",
+      "notes": "Sharper Copenhagen styling mixes asymmetry, sport, denim tailoring, ruffle, floral and sculptural volume.",
+      "reviewed_at": "2026-10-05T19:01:09.133235+00:00"
     },
     {
       "review_id": "ER-104",
@@ -973,6 +1106,13 @@
       "status": "approved",
       "notes": "Clean French tailoring, bright pink, floral print, and structured silhouettes replace the off-brand boho direction.",
       "reviewed_at": "2026-09-29T21:15:38.878749+00:00"
+    },
+    {
+      "review_id": "ER-109",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/patou__candidate_02.png",
+      "status": "approved",
+      "notes": "Crisp volume, Alpine blue, winter blush and graphic modern tailoring replace the incorrect romantic board.",
+      "reviewed_at": "2026-10-05T19:01:09.211211+00:00"
     },
     {
       "review_id": "ER-110",
@@ -1052,11 +1192,25 @@
       "reviewed_at": "2026-09-29T21:25:48.891198+00:00"
     },
     {
+      "review_id": "ER-118",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/rich_mnisi__candidate_02.png",
+      "status": "approved",
+      "notes": "Sculptural dress, precise tailoring, argyle, heart skirt and coil knit read as sophisticated modern luxury.",
+      "reviewed_at": "2026-10-05T19:01:09.285894+00:00"
+    },
+    {
       "review_id": "ER-119",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/rotate_birger_christensen__candidate_01.png",
       "status": "approved",
       "notes": "Passes Ellina correction: the board is more confident and party-focused, with short shorts under an oversized jacket, rounded statement sleeves, distinct evening silhouettes, saturated jewel colours and no product repetition.",
       "reviewed_at": "2026-09-30T22:16:54.801785+00:00"
+    },
+    {
+      "review_id": "ER-119",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/rotate_birger_christensen__candidate_02.png",
+      "status": "approved",
+      "notes": "Day-to-night Scandinavian tailoring, knit, leather, leopard and one red dress replace the party-only impression.",
+      "reviewed_at": "2026-10-05T19:01:09.365214+00:00"
     },
     {
       "review_id": "ER-120",

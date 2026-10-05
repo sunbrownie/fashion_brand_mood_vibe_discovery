@@ -204,6 +204,47 @@ class MoodboardCorrectionTests(unittest.TestCase):
                 self.assertIn(must_include, prompt)
                 self.assertIn(must_avoid, prompt)
 
+    def test_third_pass_clothes_overrides_encode_requested_signatures(self) -> None:
+        required_cues = {
+            "Johnny Was": ("embroidered denim or suede outerwear", "sun-drenched resort styling"),
+            "Karoline Vitto": ("visible sculptural metal wire bra or frame construction", "all-black palette"),
+            "Kowtow": ("architectural organic-cotton dress", "anonymous beige basics"),
+            "Laagam": ("green cropped jacket", "old-fashioned occasionwear"),
+            "Lioness": ("horseshoe or baggy denim", "generic black tailoring collage"),
+            "Lisa Says Gah": ("pastoral horse or prairie motif", "neon floral overload"),
+            "Lisou": ("elegant hand-drawn silk print", "fluorescent rainbow collage"),
+            "Longchamp": ("architectural Parisian outerwear", "handbag hero images"),
+            "Made By Minga": ("hand-knit alpaca sweater", "candy-bright palette"),
+            "Mary Katrantzou": ("Kintsugi-inspired azurite motif", "same kaleidoscope print repeated"),
+            "Masscob": ("washed linen tailoring", "repeated prairie dress"),
+            "Mirror Palais": ("romantic corset or bustier", "all-bridal gown collage"),
+            "Miu Miu": ("playful layered tank and T-shirt", "somber grey school-uniform-only collage"),
+            "MOWALOLA": ("colourful graffiti bomber", "all-black leather collage"),
+            "MSGM": ("sharp colour-block tailoring", "all-over floral explosion"),
+            "NILI LOTAN": ("rock-and-roll Americana tailoring", "generic corporate black suits"),
+            "Nude Lucy": ("sculptural halter top", "homewear-only mood"),
+            "Obey": ("solid workwear jacket", "same black-and-white graphic repeated"),
+            "Opera Sport": ("asymmetric seamless top", "generic quiet-luxury layering"),
+            "Patou": ("voluminous organic-cotton top", "boho floral maxi dresses"),
+            "Rich Mnisi": ("sculptural compressed dress", "ethnic-costume styling"),
+            "ROTATE Birger Christensen": ("peplum leather top", "all-party mini dresses"),
+        }
+        for brand_name, (must_include, must_avoid) in required_cues.items():
+            with self.subTest(brand_name=brand_name):
+                row = pd.Series(
+                    {
+                        "brand_name": brand_name,
+                        "category": "clothes",
+                        "aesthetic_keywords": "current brand direction",
+                        "silhouettes": "tops, trousers, dresses, outerwear",
+                        "materials": "brand-signature materials",
+                        "palette": "brand-signature palette",
+                    }
+                )
+                prompt = moodboard_prompt(row, reviewer_note="Rebuild the moodboard to match the current brand.")
+                self.assertIn(must_include, prompt)
+                self.assertIn(must_avoid, prompt)
+
     def test_corrected_file_is_preferred_only_after_approval_name_exists(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
