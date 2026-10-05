@@ -2354,6 +2354,13 @@
       "reviewed_at": "2026-10-01T21:55:28.905522+00:00"
     },
     {
+      "review_id": "ER-219",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/thomas_sabo__candidate_03.png",
+      "status": "approved",
+      "notes": "Corrected brand range and composition.",
+      "reviewed_at": "2026-10-05T21:47:42.321240+00:00"
+    },
+    {
       "review_id": "ER-221",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/tory_burch__candidate_02.png",
       "status": "approved",
@@ -2375,6 +2382,13 @@
       "reviewed_at": "2026-10-01T22:15:14.189826+00:00"
     },
     {
+      "review_id": "ER-222",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/toteme__candidate_03.png",
+      "status": "approved",
+      "notes": "Merged approved original and updated elements.",
+      "reviewed_at": "2026-10-05T21:47:42.420807+00:00"
+    },
+    {
       "review_id": "ER-223",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/valentino__candidate_01.png",
       "status": "rejected",
@@ -2387,6 +2401,13 @@
       "status": "approved",
       "notes": "Restrained VLogo, Coeur Royal and Rockstud mix with wearable scale, controlled red, no oversized opulence and no repeated item.",
       "reviewed_at": "2026-10-01T22:15:14.552028+00:00"
+    },
+    {
+      "review_id": "ER-223",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/valentino__candidate_03.png",
+      "status": "approved",
+      "notes": "Preserved vibe in a full-height layout.",
+      "reviewed_at": "2026-10-05T21:47:42.520985+00:00"
     },
     {
       "review_id": "ER-224",
@@ -2403,6 +2424,13 @@
       "reviewed_at": "2026-10-01T22:15:15.347570+00:00"
     },
     {
+      "review_id": "ER-224",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/vera_wang__candidate_03.png",
+      "status": "approved",
+      "notes": "Preserved vibe in a full-height layout.",
+      "reviewed_at": "2026-10-05T21:47:42.624985+00:00"
+    },
+    {
       "review_id": "ER-225",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/veronica_beard__candidate_01.png",
       "status": "rejected",
@@ -2417,6 +2445,13 @@
       "reviewed_at": "2026-10-01T22:15:16.060264+00:00"
     },
     {
+      "review_id": "ER-225",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/veronica_beard__candidate_03.png",
+      "status": "approved",
+      "notes": "Merged original and updated elements full-height.",
+      "reviewed_at": "2026-10-05T21:47:42.727877+00:00"
+    },
+    {
       "review_id": "ER-228",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yumi_kim__candidate_01.png",
       "status": "rejected",
@@ -2429,6 +2464,13 @@
       "status": "approved",
       "notes": "Six distinct colourful pieces with a large charm necklace and stacked bangles balancing smaller earrings, hoops and ring.",
       "reviewed_at": "2026-10-01T22:45:32.331236+00:00"
+    },
+    {
+      "review_id": "ER-228",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yumi_kim__candidate_03.png",
+      "status": "approved",
+      "notes": "Merged original and updated selections.",
+      "reviewed_at": "2026-10-05T21:47:42.828389+00:00"
     },
     {
       "review_id": "ER-231",
@@ -2487,11 +2529,25 @@
       "reviewed_at": "2026-10-01T22:59:45.811099+00:00"
     },
     {
+      "review_id": "ER-235",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/anya_hindmarch__candidate_03.png",
+      "status": "approved",
+      "notes": "Expanded beyond the eyes motif.",
+      "reviewed_at": "2026-10-05T21:47:42.926467+00:00"
+    },
+    {
       "review_id": "ER-236",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/arizona_love__candidate_01.png",
       "status": "approved",
       "notes": "Bandana construction and desert-western cues replace generic straw styling.",
       "reviewed_at": "2026-09-29T18:29:11.575445+00:00"
+    },
+    {
+      "review_id": "ER-236",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/arizona_love__candidate_02.png",
+      "status": "approved",
+      "notes": "Corrected to textile-rich bohemian bag language.",
+      "reviewed_at": "2026-10-05T21:47:43.031614+00:00"
     },
     {
       "review_id": "ER-237",
@@ -2506,6 +2562,13 @@
       "status": "approved",
       "notes": "Six distinct complete quiet-luxury bags in woven leather, suede and grained leather; no straw, canvas or duplicate detail views.",
       "reviewed_at": "2026-10-01T22:59:45.921542+00:00"
+    },
+    {
+      "review_id": "ER-237",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/brunello_cucinelli__candidate_03.png",
+      "status": "approved",
+      "notes": "Corrected to quiet-luxury material language.",
+      "reviewed_at": "2026-10-05T21:47:43.133731+00:00"
     },
     {
       "review_id": "ER-238",
@@ -2550,6 +2613,13 @@
       "reviewed_at": "2026-10-01T23:16:04.577527+00:00"
     },
     {
+      "review_id": "ER-240",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chan_luu__candidate_03.png",
+      "status": "approved",
+      "notes": "Corrected to artisan woven and beaded language.",
+      "reviewed_at": "2026-10-05T21:47:43.235523+00:00"
+    },
+    {
       "review_id": "ER-241",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chanel__candidate_01.png",
       "status": "rejected",
@@ -2562,6 +2632,13 @@
       "status": "approved",
       "notes": "Six distinct Chanel bag archetypes with black, red, tweed, teal, and pink variety; rejected brown suede removed and no repeated detail crops.",
       "reviewed_at": "2026-10-01T23:16:04.653246+00:00"
+    },
+    {
+      "review_id": "ER-241",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chanel__candidate_03.png",
+      "status": "approved",
+      "notes": "Preserved approved vibe in a full-height layout.",
+      "reviewed_at": "2026-10-05T21:47:43.338266+00:00"
     },
     {
       "review_id": "ER-242",
@@ -2578,6 +2655,13 @@
       "reviewed_at": "2026-10-01T23:16:04.725060+00:00"
     },
     {
+      "review_id": "ER-242",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chopova_lowena__candidate_03.png",
+      "status": "approved",
+      "notes": "Corrected punk-folk vibe and full-height layout.",
+      "reviewed_at": "2026-10-05T21:47:43.444504+00:00"
+    },
+    {
       "review_id": "ER-243",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chrome_hearts__candidate_01.png",
       "status": "rejected",
@@ -2590,6 +2674,13 @@
       "status": "approved",
       "notes": "Six distinct black-leather bag silhouettes with controlled silver gothic hardware; no repeated tote/messenger/detail views.",
       "reviewed_at": "2026-10-01T23:16:04.801482+00:00"
+    },
+    {
+      "review_id": "ER-243",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chrome_hearts__candidate_03.png",
+      "status": "approved",
+      "notes": "Preserved approved vibe in full-height layout.",
+      "reviewed_at": "2026-10-05T21:47:43.547527+00:00"
     },
     {
       "review_id": "ER-244",
@@ -2606,11 +2697,25 @@
       "reviewed_at": "2026-10-02T04:20:32.089353+00:00"
     },
     {
+      "review_id": "ER-245",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/comme_des_garcons__candidate_02.png",
+      "status": "approved",
+      "notes": "Corrected avant-garde vibe and vertical composition.",
+      "reviewed_at": "2026-10-05T21:47:43.651251+00:00"
+    },
+    {
       "review_id": "ER-246",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/coperni__candidate_01.png",
       "status": "approved",
       "notes": "Six distinct futuristic Coperni icons including Swipe, Heart, transparent, Origami and Air directions; no generic duplicate tote.",
       "reviewed_at": "2026-10-02T04:20:32.163748+00:00"
+    },
+    {
+      "review_id": "ER-246",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/coperni__candidate_02.png",
+      "status": "approved",
+      "notes": "Broadened forms and corrected vertical composition.",
+      "reviewed_at": "2026-10-05T21:47:43.752016+00:00"
     },
     {
       "review_id": "ER-247",
@@ -2620,6 +2725,13 @@
       "reviewed_at": "2026-10-02T04:20:32.235528+00:00"
     },
     {
+      "review_id": "ER-247",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/cult_gaia__candidate_02.png",
+      "status": "approved",
+      "notes": "Removed duplicate and improved range.",
+      "reviewed_at": "2026-10-05T21:47:43.850671+00:00"
+    },
+    {
       "review_id": "ER-248",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/cuyana__candidate_01.png",
       "status": "approved",
@@ -2627,11 +2739,25 @@
       "reviewed_at": "2026-10-02T04:20:32.307635+00:00"
     },
     {
+      "review_id": "ER-248",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/cuyana__candidate_02.png",
+      "status": "approved",
+      "notes": "Preserved vibe and corrected full-height layout.",
+      "reviewed_at": "2026-10-05T21:47:43.948472+00:00"
+    },
+    {
       "review_id": "ER-249",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/demellier__candidate_01.png",
       "status": "approved",
       "notes": "Chic silhouette range with restrained hardware and only two prominent clasps; no repeated clasp-heavy flap treatment.",
       "reviewed_at": "2026-10-02T04:20:32.377772+00:00"
+    },
+    {
+      "review_id": "ER-249",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/demellier__candidate_02.png",
+      "status": "approved",
+      "notes": "Preserved vibe and corrected full-height layout.",
+      "reviewed_at": "2026-10-05T21:47:44.050658+00:00"
     },
     {
       "review_id": "ER-250",
@@ -2648,11 +2774,25 @@
       "reviewed_at": "2026-10-02T07:22:54.317650+00:00"
     },
     {
+      "review_id": "ER-251",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/dkny__candidate_02.png",
+      "status": "approved",
+      "notes": "Corrected current urban bag language.",
+      "reviewed_at": "2026-10-05T21:47:44.147841+00:00"
+    },
+    {
       "review_id": "ER-252",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/filippa_k__candidate_01.png",
       "status": "approved",
       "notes": "Six distinct restrained Scandinavian bags on neutral studio backgrounds; duplicated chairs and all furniture removed.",
       "reviewed_at": "2026-10-02T07:22:54.399869+00:00"
+    },
+    {
+      "review_id": "ER-252",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/filippa_k__candidate_02.png",
+      "status": "approved",
+      "notes": "Preserved minimal vibe and corrected full height.",
+      "reviewed_at": "2026-10-05T21:47:44.243961+00:00"
     },
     {
       "review_id": "ER-255",
@@ -2662,11 +2802,25 @@
       "reviewed_at": "2026-10-02T07:22:54.489281+00:00"
     },
     {
+      "review_id": "ER-255",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/gabriela_hearst__candidate_02.png",
+      "status": "approved",
+      "notes": "Corrected sculptural range and full-height layout.",
+      "reviewed_at": "2026-10-05T21:47:44.340125+00:00"
+    },
+    {
       "review_id": "ER-256",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/ganni__candidate_01.png",
       "status": "approved",
       "notes": "Cool-girl Copenhagen casting and six distinct colorful bags, with exactly one leopard piece and no beige minimalism.",
       "reviewed_at": "2026-10-02T07:22:54.578098+00:00"
+    },
+    {
+      "review_id": "ER-256",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/ganni__candidate_02.png",
+      "status": "approved",
+      "notes": "Corrected current playful range and full height.",
+      "reviewed_at": "2026-10-05T21:47:44.438203+00:00"
     },
     {
       "review_id": "ER-257",
@@ -2676,6 +2830,13 @@
       "reviewed_at": "2026-10-02T07:22:54.679661+00:00"
     },
     {
+      "review_id": "ER-257",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/gimaguas__candidate_02.png",
+      "status": "approved",
+      "notes": "Rebuilt around current tactile Barcelona styling.",
+      "reviewed_at": "2026-10-05T21:47:44.540241+00:00"
+    },
+    {
       "review_id": "ER-258",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/j_crew__candidate_01.png",
       "status": "approved",
@@ -2683,11 +2844,25 @@
       "reviewed_at": "2026-10-02T07:22:54.771347+00:00"
     },
     {
+      "review_id": "ER-258",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/j_crew__candidate_02.png",
+      "status": "approved",
+      "notes": "Rebuilt around current refined American accessories.",
+      "reviewed_at": "2026-10-05T21:47:44.645891+00:00"
+    },
+    {
       "review_id": "ER-259",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/j_w_anderson__candidate_01.png",
       "status": "approved",
       "notes": "Pigeon and frog novelty clutches restored alongside four distinct leather/metal silhouettes; no paired duplicates.",
       "reviewed_at": "2026-10-02T07:38:53.811086+00:00"
+    },
+    {
+      "review_id": "ER-259",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/j_w_anderson__candidate_02.png",
+      "status": "approved",
+      "notes": "Preserved strong forms in a full-height layout.",
+      "reviewed_at": "2026-10-05T21:47:44.744439+00:00"
     },
     {
       "review_id": "ER-260",
@@ -2704,11 +2879,25 @@
       "reviewed_at": "2026-10-02T07:58:25.641330+00:00"
     },
     {
+      "review_id": "ER-260",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jacquemus__candidate_03.png",
+      "status": "approved",
+      "notes": "Removed beach bias and corrected form variety.",
+      "reviewed_at": "2026-10-05T21:47:44.840163+00:00"
+    },
+    {
       "review_id": "ER-261",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jil_sander__candidate_01.png",
       "status": "approved",
       "notes": "Six quiet modernist signatures including bamboo handle, Tangle, folded geometry and frame clutch; generic tote removed.",
       "reviewed_at": "2026-10-02T07:38:53.972908+00:00"
+    },
+    {
+      "review_id": "ER-261",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jil_sander__candidate_02.png",
+      "status": "approved",
+      "notes": "Refined current minimal forms and full-height layout.",
+      "reviewed_at": "2026-10-05T21:47:44.941171+00:00"
     },
     {
       "review_id": "ER-262",
@@ -2718,11 +2907,25 @@
       "reviewed_at": "2026-10-02T07:38:54.061681+00:00"
     },
     {
+      "review_id": "ER-262",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jonathan_simkhai__candidate_02.png",
+      "status": "approved",
+      "notes": "Rebuilt around architectural modern evening forms.",
+      "reviewed_at": "2026-10-05T21:47:45.042170+00:00"
+    },
+    {
       "review_id": "ER-263",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jw_pei__candidate_01.png",
       "status": "approved",
       "notes": "Six popular silhouettes are shown once each with distinct colors and constructions; previous paired-image duplicates removed.",
       "reviewed_at": "2026-10-02T07:38:54.148918+00:00"
+    },
+    {
+      "review_id": "ER-263",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jw_pei__candidate_02.png",
+      "status": "approved",
+      "notes": "Rebuilt around playful sculptural vegan forms.",
+      "reviewed_at": "2026-10-05T21:47:45.138266+00:00"
     },
     {
       "review_id": "ER-265",
@@ -2732,11 +2935,25 @@
       "reviewed_at": "2026-10-02T07:38:54.235505+00:00"
     },
     {
+      "review_id": "ER-265",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/lindsay_nicholas_new_york__candidate_02.png",
+      "status": "approved",
+      "notes": "Rebuilt around understated New York utility.",
+      "reviewed_at": "2026-10-05T21:47:45.235334+00:00"
+    },
+    {
       "review_id": "ER-266",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/maison_kitsune__candidate_01.png",
       "status": "approved",
       "notes": "Signature fox appears clearly across six distinct Paris-Tokyo bag types without duplicate product views.",
       "reviewed_at": "2026-10-02T07:58:25.722884+00:00"
+    },
+    {
+      "review_id": "ER-266",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/maison_kitsune__candidate_02.png",
+      "status": "approved",
+      "notes": "Refined Paris-Tokyo casual range with controlled fox cues.",
+      "reviewed_at": "2026-10-05T21:47:45.333344+00:00"
     },
     {
       "review_id": "ER-267",
@@ -2746,11 +2963,25 @@
       "reviewed_at": "2026-10-02T07:58:25.804981+00:00"
     },
     {
+      "review_id": "ER-267",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/maje__candidate_02.png",
+      "status": "approved",
+      "notes": "Centered the popular Miss M family and full-height layout.",
+      "reviewed_at": "2026-10-05T21:47:45.432231+00:00"
+    },
+    {
       "review_id": "ER-268",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/mar_y_sol__candidate_01.png",
       "status": "approved",
       "notes": "Colorful raffia range adds turquoise, coral, yellow, cobalt and pink-orange while retaining one natural straw piece.",
       "reviewed_at": "2026-10-02T07:58:25.880274+00:00"
+    },
+    {
+      "review_id": "ER-268",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/mar_y_sol__candidate_02.png",
+      "status": "approved",
+      "notes": "Corrected refined natural-fiber artisan range.",
+      "reviewed_at": "2026-10-05T21:47:45.535286+00:00"
     },
     {
       "review_id": "ER-269",
@@ -2760,11 +2991,25 @@
       "reviewed_at": "2026-10-02T07:58:25.956897+00:00"
     },
     {
+      "review_id": "ER-269",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/marc_jacobs__candidate_02.png",
+      "status": "approved",
+      "notes": "Corrected current urban family variety.",
+      "reviewed_at": "2026-10-05T21:47:45.635932+00:00"
+    },
+    {
       "review_id": "ER-270",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/marge_sherwood__candidate_01.png",
       "status": "approved",
       "notes": "Six hip colorful Seoul silhouettes with controlled charm use and no generic luxury-flap repetition.",
       "reviewed_at": "2026-10-02T07:58:26.030223+00:00"
+    },
+    {
+      "review_id": "ER-270",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/marge_sherwood__candidate_02.png",
+      "status": "approved",
+      "notes": "Preserved strong vibe in a full-height layout.",
+      "reviewed_at": "2026-10-05T21:47:45.733080+00:00"
     },
     {
       "review_id": "ER-271",
@@ -2774,6 +3019,13 @@
       "reviewed_at": "2026-10-02T08:18:23.664910+00:00"
     },
     {
+      "review_id": "ER-271",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/marine_serre__candidate_02.png",
+      "status": "approved",
+      "notes": "Preserved strong vibe in a full-height layout.",
+      "reviewed_at": "2026-10-05T21:47:45.830264+00:00"
+    },
+    {
       "review_id": "ER-273",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/marni__candidate_01.png",
       "status": "approved",
@@ -2781,11 +3033,25 @@
       "reviewed_at": "2026-10-02T08:18:23.746973+00:00"
     },
     {
+      "review_id": "ER-273",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/marni__candidate_02.png",
+      "status": "approved",
+      "notes": "Rebuilt around current playful sculptural forms.",
+      "reviewed_at": "2026-10-05T21:47:45.927027+00:00"
+    },
+    {
       "review_id": "ER-274",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/miu_miu__candidate_01.png",
       "status": "approved",
       "notes": "Perforated and matelass\u00e9 leather, bright color and clean visible branding restore Miu Miu identity; paisley, velvet and key chains removed.",
       "reviewed_at": "2026-10-02T08:18:23.825378+00:00"
+    },
+    {
+      "review_id": "ER-274",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/miu_miu__candidate_02.png",
+      "status": "approved",
+      "notes": "Preserved strong playful vibe in full-height layout.",
+      "reviewed_at": "2026-10-05T21:47:46.026810+00:00"
     },
     {
       "review_id": "ER-275",
