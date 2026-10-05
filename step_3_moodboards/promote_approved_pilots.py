@@ -122,13 +122,13 @@ def main() -> None:
                 (
                     "comme_des_garcons",
                     "Comme des Garçons",
-                    CORRECTED_ROOT / "shoes" / "comme_des_garcons_avant_garde__candidate_01.png",
+                    CORRECTED_ROOT / "shoes" / "comme_des_garcons_avant_garde__candidate_02.png",
                     "avant_garde",
                 ),
                 (
                     "comme_des_garcons_play",
                     "Comme des Garçons PLAY",
-                    CORRECTED_ROOT / "shoes" / "comme_des_garcons_play__candidate_01.png",
+                    CORRECTED_ROOT / "shoes" / "comme_des_garcons_play__candidate_02.png",
                     "play",
                 ),
             ]

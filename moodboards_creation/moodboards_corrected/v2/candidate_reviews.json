@@ -1248,6 +1248,13 @@
       "reviewed_at": "2026-09-29T21:25:49.079128+00:00"
     },
     {
+      "review_id": "ER-121",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/samantha_pleet__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: darker celestial tailoring, velvet and controlled botanical pieces are more stylish and far less over-romantic.",
+      "reviewed_at": "2026-10-05T20:22:12.993501+00:00"
+    },
+    {
       "review_id": "ER-122",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sancia__candidate_01.png",
       "status": "approved",
@@ -1269,6 +1276,13 @@
       "reviewed_at": "2026-10-02T08:44:35.901664+00:00"
     },
     {
+      "review_id": "ER-123",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sandro__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved: distinct embellished, knit, denim and tailored Parisian looks restore personality without accessory leakage.",
+      "reviewed_at": "2026-10-05T20:22:13.154889+00:00"
+    },
+    {
       "review_id": "ER-124",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sandy_liang__candidate_01.png",
       "status": "rejected",
@@ -1283,11 +1297,25 @@
       "reviewed_at": "2026-10-02T08:44:35.980373+00:00"
     },
     {
+      "review_id": "ER-124",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sandy_liang__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved: high-fashion downtown girlishness combines satin, quilting, tailoring, bows and sporty contrast.",
+      "reviewed_at": "2026-10-05T20:22:13.296383+00:00"
+    },
+    {
       "review_id": "ER-125",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/shangri_la_heritage__candidate_01.png",
       "status": "approved",
       "notes": "Strong motorcycle-meets-ethnic-mountain direction with varied garments and no repeated image.",
       "reviewed_at": "2026-09-29T21:36:21.037524+00:00"
+    },
+    {
+      "review_id": "ER-125",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/shangri_la_heritage__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: leather motorcycle outerwear, shearling and patina now lead the board with varied jacket forms.",
+      "reviewed_at": "2026-10-05T20:22:13.487485+00:00"
     },
     {
       "review_id": "ER-126",
@@ -1311,11 +1339,25 @@
       "reviewed_at": "2026-09-30T23:18:28.136826+00:00"
     },
     {
+      "review_id": "ER-128",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/siedres__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: directional mesh, velvet, drape, leather, checks and sequins replace generic resort-print repetition.",
+      "reviewed_at": "2026-10-05T20:22:13.597357+00:00"
+    },
+    {
       "review_id": "ER-129",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/significant_other__candidate_01.png",
       "status": "approved",
       "notes": "No accidental words remain; the board keeps the close elegant draped-and-tailored vibe with varied looks.",
       "reviewed_at": "2026-09-29T21:36:21.349504+00:00"
+    },
+    {
+      "review_id": "ER-129",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/significant_other__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: returns to the original restrained polished occasionwear vibe with current berry, tailoring and drape.",
+      "reviewed_at": "2026-10-05T20:22:13.716023+00:00"
     },
     {
       "review_id": "ER-130",
@@ -1332,6 +1374,13 @@
       "reviewed_at": "2026-10-02T08:44:36.058350+00:00"
     },
     {
+      "review_id": "ER-130",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sister_jane__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved: all existing approved elements are preserved; only the floral dress is upgraded to dimensional appliqu\u00e9.",
+      "reviewed_at": "2026-10-05T20:22:13.829410+00:00"
+    },
+    {
       "review_id": "ER-131",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/slowear__candidate_01.png",
       "status": "approved",
@@ -1344,6 +1393,13 @@
       "status": "approved",
       "notes": "The three-image item repetition is removed; the board now uses distinct dress, knit, blouse, skirt, and wardrobe views.",
       "reviewed_at": "2026-09-29T21:47:21.680236+00:00"
+    },
+    {
+      "review_id": "ER-132",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/soaked_in_luxury__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: contemporary Scandinavian tailoring, cobalt suiting, leather and satin replace cottage styling.",
+      "reviewed_at": "2026-10-05T20:22:13.936375+00:00"
     },
     {
       "review_id": "ER-133",
@@ -1374,6 +1430,13 @@
       "reviewed_at": "2026-10-02T08:44:36.133928+00:00"
     },
     {
+      "review_id": "ER-135",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/st_agni__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved: architectural leather, asymmetric drape and elongated proportions make the board directional rather than basic.",
+      "reviewed_at": "2026-10-05T20:22:14.055585+00:00"
+    },
+    {
       "review_id": "ER-137",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/stussy__candidate_01.png",
       "status": "rejected",
@@ -1395,6 +1458,13 @@
       "reviewed_at": "2026-10-01T16:11:15.872552+00:00"
     },
     {
+      "review_id": "ER-138",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sugarlips__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: playful commercial color, dots, checks, bows and jacquard accurately replace muted generic styling.",
+      "reviewed_at": "2026-10-05T20:22:14.165116+00:00"
+    },
+    {
       "review_id": "ER-139",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/supreme__candidate_01.png",
       "status": "rejected",
@@ -1414,6 +1484,13 @@
       "status": "approved",
       "notes": "Passes Ellina correction: stronger evening glamour, fitted dresses, sharp oversized tailoring and shoulders replace the off-brand interior and jumper closeup; all hero garments are distinct and footwear remains incidental.",
       "reviewed_at": "2026-10-01T19:04:44.252138+00:00"
+    },
+    {
+      "review_id": "ER-141",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/the_attico__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: strong shoulders, cargo denim, metallics, leather and street-glamour layers capture the brand range.",
+      "reviewed_at": "2026-10-05T20:22:14.279667+00:00"
     },
     {
       "review_id": "ER-142",
@@ -1456,6 +1533,13 @@
       "status": "approved",
       "notes": "The board replaces the repeated three-item loop with genuinely distinct tailoring, dress, vest, and sculptural garment silhouettes.",
       "reviewed_at": "2026-09-29T21:56:24.612894+00:00"
+    },
+    {
+      "review_id": "ER-145",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/thebe_magugu__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: precise modern tailoring, knit, crochet and controlled cultural reference feel stylish rather than costume-led.",
+      "reviewed_at": "2026-10-05T20:22:14.383233+00:00"
     },
     {
       "review_id": "ER-146",
@@ -1549,6 +1633,13 @@
       "reviewed_at": "2026-09-29T22:05:06.829703+00:00"
     },
     {
+      "review_id": "ER-154",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/weekday__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: varied bomber, wool, print, cargo, mohair and puffer looks reduce denim to one panel.",
+      "reviewed_at": "2026-10-05T20:22:14.486000+00:00"
+    },
+    {
       "review_id": "ER-155",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/whistles__candidate_01.png",
       "status": "approved",
@@ -1626,6 +1717,13 @@
       "reviewed_at": "2026-10-01T20:02:57.815421+00:00"
     },
     {
+      "review_id": "ER-160",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/ami_paris__candidate_05.png",
+      "status": "approved",
+      "notes": "Approved: relaxed runner, derby, loafers, boot and cylinder-heel pump now represent AMI shoe forms.",
+      "reviewed_at": "2026-10-05T20:22:14.586836+00:00"
+    },
+    {
       "review_id": "ER-161",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/amina_muaddi__candidate_01.png",
       "status": "rejected",
@@ -1652,6 +1750,13 @@
       "status": "approved",
       "notes": "Passes Ellina correction: the board is now unmistakably eclectic, with beads, fringe, embroidered and bandana-like fabric treatments across distinct sandals, loafers, flats, boots and trainers.",
       "reviewed_at": "2026-10-01T19:13:55.937308+00:00"
+    },
+    {
+      "review_id": "ER-162",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/arizona_love__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: combines iconic Trekky embellishment with western boots, clog, loafer and ballet-flat range.",
+      "reviewed_at": "2026-10-05T20:22:14.685025+00:00"
     },
     {
       "review_id": "ER-163",
@@ -1689,6 +1794,13 @@
       "reviewed_at": "2026-10-01T19:59:55.176941+00:00"
     },
     {
+      "review_id": "ER-164",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/atp_atelier__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved: refined Italian leather boots, pumps, slingback, mule, sandal and woven loafer align with ATP Atelier.",
+      "reviewed_at": "2026-10-05T20:22:14.789095+00:00"
+    },
+    {
       "review_id": "ER-165",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/base_london__candidate_01.png",
       "status": "rejected",
@@ -1715,6 +1827,13 @@
       "status": "approved",
       "notes": "Passes Ellina correction: eight unique trend-led heels, boots, mules, slingbacks and platforms replace the repeated pairs; there are no detail crops or alternate views.",
       "reviewed_at": "2026-10-01T19:59:55.335233+00:00"
+    },
+    {
+      "review_id": "ER-166",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/billini__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved: zebra, mesh, metallic, burgundy and party-shoe forms create the correct trend-driven BILLINI identity.",
+      "reviewed_at": "2026-10-05T20:22:14.889046+00:00"
     },
     {
       "review_id": "ER-167",
@@ -1801,6 +1920,13 @@
       "reviewed_at": "2026-10-01T20:18:22.696294+00:00"
     },
     {
+      "review_id": "ER-177",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/chrome_hearts__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved: silver-cross identity remains while shearling, white, denim and brown reduce excessive gothic black.",
+      "reviewed_at": "2026-10-05T20:22:14.989210+00:00"
+    },
+    {
       "review_id": "ER-178",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/claris_virot__candidate_01.png",
       "status": "approved",
@@ -1808,11 +1934,32 @@
       "reviewed_at": "2026-10-01T20:14:11.741548+00:00"
     },
     {
+      "review_id": "ER-178",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/claris_virot__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: eyelets, studs, denim, bandana and restrained python express the handmade eclectic footwear range.",
+      "reviewed_at": "2026-10-05T20:22:15.086861+00:00"
+    },
+    {
+      "review_id": "ER-180",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/comme_des_garcons_avant_garde__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: two independent portrait boards now cover avant-garde sculptural footwear and PLAY heart sneakers clearly on mobile.",
+      "reviewed_at": "2026-10-05T20:22:15.226927+00:00"
+    },
+    {
       "review_id": "ER-180",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/comme_des_garcons_split__candidate_01.png",
       "status": "approved",
       "notes": "Implemented Ellina's requested catalogue split: separate PLAY heart-Converse board and main-line avant-garde footwear board, both preserved as independent V2 assets; original unified board remains available as V1 fallback.",
       "reviewed_at": "2026-10-02T08:21:07.137057+00:00"
+    },
+    {
+      "review_id": "ER-180",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/comme_des_garcons_split__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved split package: two independent 1024x1536 portrait boards cover avant-garde sculptural footwear and PLAY heart sneakers; combined file is audit-only.",
+      "reviewed_at": "2026-10-05T20:23:55.481636+00:00"
     },
     {
       "review_id": "ER-181",
@@ -1827,6 +1974,13 @@
       "status": "approved",
       "notes": "Passes Ellina correction: eight distinct sculptural fashion shoes use arched, hollow, flared and metallic forms; athletic trainers and hiking footwear are completely absent.",
       "reviewed_at": "2026-10-01T20:56:41.108048+00:00"
+    },
+    {
+      "review_id": "ER-181",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/coperni__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved: aerodynamic cutouts, curved wedge, chrome, clear and hybrid forms deliver Coperni futurism.",
+      "reviewed_at": "2026-10-05T20:22:15.326556+00:00"
     },
     {
       "review_id": "ER-182",
@@ -1850,6 +2004,13 @@
       "reviewed_at": "2026-10-01T20:56:41.190312+00:00"
     },
     {
+      "review_id": "ER-183",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/cult_gaia__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved: six existing shoes and layout are preserved exactly; only the woven slide becomes a sculptural flower heel.",
+      "reviewed_at": "2026-10-05T20:22:15.428142+00:00"
+    },
+    {
       "review_id": "ER-184",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/cydwoq__candidate_01.png",
       "status": "rejected",
@@ -1871,11 +2032,25 @@
       "reviewed_at": "2026-10-01T20:48:26.375887+00:00"
     },
     {
+      "review_id": "ER-185",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/davi__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: modern bridal slingback, block heel, comfort pump, sneaker, blue heel, flat and platform accurately broaden the range.",
+      "reviewed_at": "2026-10-05T20:22:15.528260+00:00"
+    },
+    {
       "review_id": "ER-186",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/gabriela_hearst__candidate_01.png",
       "status": "approved",
       "notes": "Passes Ellina correction: six unique refined leather loafers, flats, boots and sandals eliminate both repeated image pairs and retain the understated luxury direction.",
       "reviewed_at": "2026-10-01T20:48:26.457529+00:00"
+    },
+    {
+      "review_id": "ER-186",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/gabriela_hearst__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: suede, nappa, denim, corduroy, painted leather, loafer and cork craft replace generic flats.",
+      "reviewed_at": "2026-10-05T20:22:15.628845+00:00"
     },
     {
       "review_id": "ER-187",
@@ -1911,6 +2086,13 @@
       "status": "approved",
       "notes": "Passes Ellina correction: eight distinct sculptural silhouettes lead, while print is limited to two accent shoes; shapes, soles and volumes now carry the board.",
       "reviewed_at": "2026-10-01T21:18:19.939140+00:00"
+    },
+    {
+      "review_id": "ER-189",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/henrik_vibskov__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved: functional experimental footwear now anchors the board with only one sculptural platform.",
+      "reviewed_at": "2026-10-05T20:22:15.728873+00:00"
     },
     {
       "review_id": "ER-191",
@@ -1962,6 +2144,13 @@
       "reviewed_at": "2026-10-01T21:18:20.182480+00:00"
     },
     {
+      "review_id": "ER-195",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/jacquemus__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved: curved heel, mule, espadrilles, sandal, ballet-sneaker, tennis shoe and soft boot restore playful range.",
+      "reviewed_at": "2026-10-05T20:22:15.830694+00:00"
+    },
+    {
       "review_id": "ER-197",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/jeffrey_campbell__candidate_01.png",
       "status": "approved",
@@ -1983,11 +2172,25 @@
       "reviewed_at": "2026-10-01T21:18:20.257252+00:00"
     },
     {
+      "review_id": "ER-198",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/jil_sander__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved: soft Wallabee, square Oxford, slipper, color accents, technical lace-up, boot and slingback capture architectural minimalism.",
+      "reviewed_at": "2026-10-05T20:22:15.930723+00:00"
+    },
+    {
       "review_id": "ER-203",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/sandy_liang__candidate_01.png",
       "status": "approved",
       "notes": "Distinct bow, heart, flower, pearl, and charm pieces; no repeated image and the youthful Sandy Liang styling is coherent.",
       "reviewed_at": "2026-10-01T21:30:21.808124+00:00"
+    },
+    {
+      "review_id": "ER-203",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/sandy_liang__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: specific gummy-heart, star, puppy, pearl, bunny, ballerina, USB and heart motifs replace generic floral gold jewellery.",
+      "reviewed_at": "2026-10-05T20:22:16.038554+00:00"
     },
     {
       "review_id": "ER-205",
