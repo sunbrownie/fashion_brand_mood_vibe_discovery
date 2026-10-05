@@ -1,0 +1,11 @@
+{
+  "review_id": "ER-032",
+  "brand_name": "Destree",
+  "category": "clothes",
+  "candidate": 3,
+  "model": "OpenAI built-in image_gen",
+  "prompt": "Vertical DESTREE ready-to-wear moodboard with geometric Parisian tailoring, high-neck white poplin, camel checker, brown velvet-detail tailoring, burgundy and cobalt sculptural pieces, asymmetric pleating, and no bags, hats, repeats, text, or logos.",
+  "sha256": "bac887349492bd0a18c21990077bb488961092cebb02da9e7ad7b4e7ff2bca45",
+  "status": "candidate_generated",
+  "generation_note": "Generated against the saved current-brand reference; earlier V2 candidates remain preserved."
+}

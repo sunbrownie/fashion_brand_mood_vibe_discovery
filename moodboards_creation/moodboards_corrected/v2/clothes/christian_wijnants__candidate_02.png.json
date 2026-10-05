@@ -1,0 +1,11 @@
+{
+  "review_id": "ER-024",
+  "brand_name": "Christian Wijnants",
+  "category": "clothes",
+  "candidate": 2,
+  "model": "OpenAI built-in image_gen",
+  "prompt": "Vertical contemporary Christian Wijnants fashion moodboard with sculptural knitwear, robe-like outerwear, cape tailoring, fluid trousers, a batwing dress, one atmospheric print, and a Klein-blue, plum, moss, rust, seafoam and sand palette; no repeats, text, logos, or dated bohemian styling.",
+  "sha256": "3c3af4563d0dcb3df6d66fac174e530862907bd69b24eac6be10fbfc0a0515e0",
+  "status": "candidate_generated",
+  "generation_note": "Generated against the saved current-brand reference; the previous V2 remains preserved as candidate 1."
+}

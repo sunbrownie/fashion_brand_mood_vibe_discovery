@@ -1,0 +1,11 @@
+{
+  "review_id": "ER-050",
+  "brand_name": "House Of Sunny",
+  "category": "clothes",
+  "candidate": 3,
+  "model": "OpenAI built-in image_gen",
+  "prompt": "Vertical House of Sunny moodboard led by varied playful knits: butter cable, colourful checker, cherry motif, floral-applique mesh, a fitted dress, textured jacket and coordinated set; no repeated swirl print, neutral dominance, detail-only crops, text, or logos.",
+  "sha256": "91fd39d459f954d5239987c1b172db28477b22455c33bf059149cfa462b310ce",
+  "status": "candidate_generated",
+  "generation_note": "Generated against the saved current-brand reference and fitted without cropping into the app's 1024 x 1536 delivery frame; earlier V2 candidates remain preserved."
+}

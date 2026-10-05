@@ -219,6 +219,13 @@
       "reviewed_at": "2026-09-29T18:29:09.269306+00:00"
     },
     {
+      "review_id": "ER-024",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/christian_wijnants__candidate_02.png",
+      "status": "approved",
+      "notes": "Modern sculptural silhouettes, expressive colour and one abstract print; no repeated garment or readable text.",
+      "reviewed_at": "2026-10-05T18:08:37.558265+00:00"
+    },
+    {
       "review_id": "ER-025",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/chrome_hearts__candidate_01.png",
       "status": "approved",
@@ -275,6 +282,13 @@
       "reviewed_at": "2026-09-29T22:38:22.439864+00:00"
     },
     {
+      "review_id": "ER-032",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/destree__candidate_03.png",
+      "status": "approved",
+      "notes": "Geometric tailoring, checker, high-neck poplin and controlled colour read distinctly DESTREE; bag contamination removed.",
+      "reviewed_at": "2026-10-05T18:08:37.668736+00:00"
+    },
+    {
       "review_id": "ER-033",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/dickies__candidate_01.png",
       "status": "approved",
@@ -287,6 +301,13 @@
       "status": "approved",
       "notes": "Solid streetwear, hoodies, and printed tees now carry the board.",
       "reviewed_at": "2026-09-29T18:29:10.425630+00:00"
+    },
+    {
+      "review_id": "ER-034",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/dime__candidate_02.png",
+      "status": "approved",
+      "notes": "Solid skate staples dominate, garments are varied, and the previous repeated graphic problem is removed.",
+      "reviewed_at": "2026-10-05T18:08:37.768905+00:00"
     },
     {
       "review_id": "ER-035",
@@ -366,6 +387,13 @@
       "reviewed_at": "2026-09-29T18:40:04.664463+00:00"
     },
     {
+      "review_id": "ER-043",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/girlfriend_collective__candidate_02.png",
+      "status": "approved",
+      "notes": "Inclusive activewear uses stronger saturated colour and varied silhouettes with no words.",
+      "reviewed_at": "2026-10-05T18:08:37.858801+00:00"
+    },
+    {
       "review_id": "ER-044",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gravel_and_gold__candidate_01.png",
       "status": "rejected",
@@ -408,11 +436,25 @@
       "reviewed_at": "2026-10-02T08:30:43.106269+00:00"
     },
     {
+      "review_id": "ER-047",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/hodakova__candidate_03.png",
+      "status": "approved",
+      "notes": "Belts and buckles visibly function as garment construction across varied upcycled silhouettes.",
+      "reviewed_at": "2026-10-05T18:08:37.947170+00:00"
+    },
+    {
       "review_id": "ER-048",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/homecore__candidate_01.png",
       "status": "approved",
       "notes": "Distinct shirts, knitwear, trousers, and tailoring replace the two-item repetition.",
       "reviewed_at": "2026-09-29T18:40:05.325182+00:00"
+    },
+    {
+      "review_id": "ER-048",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/homecore__candidate_02.png",
+      "status": "approved",
+      "notes": "Warm colourful relaxed French menswear with varied knits, workwear, shirts and trousers; no neutral monotony.",
+      "reviewed_at": "2026-10-05T18:08:38.040883+00:00"
     },
     {
       "review_id": "ER-049",
@@ -436,6 +478,13 @@
       "reviewed_at": "2026-10-02T08:30:43.197040+00:00"
     },
     {
+      "review_id": "ER-050",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/house_of_sunny__candidate_03.png",
+      "status": "approved",
+      "notes": "Playful knitwear, cherry and floral details now lead, with no repeated signature print.",
+      "reviewed_at": "2026-10-05T18:08:38.122988+00:00"
+    },
+    {
       "review_id": "ER-051",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/iris_von_arnim__candidate_01.png",
       "status": "approved",
@@ -455,6 +504,13 @@
       "status": "approved",
       "notes": "Garment-only asymmetric linen tailoring and relaxed South-of-France dressing; handbag leakage removed.",
       "reviewed_at": "2026-10-02T08:30:43.288742+00:00"
+    },
+    {
+      "review_id": "ER-052",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jacquemus__candidate_03.png",
+      "status": "approved",
+      "notes": "Sculptural current tailoring, black knit, denim and a vivid accent replace the previous beige detail-heavy collage.",
+      "reviewed_at": "2026-10-05T18:08:38.205643+00:00"
     },
     {
       "review_id": "ER-053",

@@ -1,0 +1,11 @@
+{
+  "review_id": "ER-047",
+  "brand_name": "Hodakova",
+  "category": "clothes",
+  "candidate": 3,
+  "model": "OpenAI built-in image_gen",
+  "prompt": "Vertical HODAKOVA moodboard foregrounding belt-built dresses, corsets, white shirting, trouser reconstruction and converted formal tailoring, with visible buckles and loops as garment structure; no bags, plain minimal looks, text, logos, or repeats.",
+  "sha256": "6341fa653af20f9a9b49ab50e942e724c5e72e66ee8abc8ba8869eaa40e5461b",
+  "status": "candidate_generated",
+  "generation_note": "Generated against the saved current-brand reference; earlier V2 candidates remain preserved."
+}

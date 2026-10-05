@@ -1,0 +1,11 @@
+{
+  "review_id": "ER-048",
+  "brand_name": "Homecore",
+  "category": "clothes",
+  "candidate": 2,
+  "model": "OpenAI built-in image_gen",
+  "prompt": "Vertical HOMECORE Paris menswear moodboard with relaxed orange, honey, green and blue knitwear, work jackets, stripes, overshirts and easy trousers in warm candid street and workshop settings; no beige-only styling, formal tailoring, text, logos, or repeats.",
+  "sha256": "8cb7f7f5306e82622390a5b9d18c5309398ff139d1ebd0d2d3e4570612b09d72",
+  "status": "candidate_generated",
+  "generation_note": "Generated against the saved current-brand reference; the neutral previous V2 remains preserved as candidate 1."
+}

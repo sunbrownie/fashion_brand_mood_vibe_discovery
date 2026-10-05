@@ -1,0 +1,11 @@
+{
+  "review_id": "ER-043",
+  "brand_name": "Girlfriend Collective",
+  "category": "clothes",
+  "candidate": 2,
+  "model": "OpenAI built-in image_gen",
+  "prompt": "Vertical inclusive Girlfriend Collective activewear moodboard with varied silhouettes in saturated skyline blue, dragonfruit pink, vivid orange, eucalyptus green and plum; no words, logos, earthy-neutral dominance, or repeated poses.",
+  "sha256": "cf33877aa02430c6bce84604888df89c2dad853a8d39dc9aca99babf44b201db",
+  "status": "candidate_generated",
+  "generation_note": "Generated against the saved current-brand reference; the muted previous V2 remains preserved as candidate 1."
+}

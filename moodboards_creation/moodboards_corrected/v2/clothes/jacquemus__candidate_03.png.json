@@ -1,0 +1,11 @@
+{
+  "review_id": "ER-052",
+  "brand_name": "Jacquemus",
+  "category": "clothes",
+  "candidate": 3,
+  "model": "OpenAI built-in image_gen",
+  "prompt": "Vertical current Jacquemus ready-to-wear moodboard with sculptural rounded tailoring, cropped jacket, sharp coat, black architectural knit dress, curved denim, exaggerated trousers and one vivid accent under Mediterranean architectural light; no bags, fabric-only crops, beige repetition, text, or logos.",
+  "sha256": "dc831faf741d5e96ab5e3f5a1c75b3ebec318bf0ad9124e312fa1bdbc988a158",
+  "status": "candidate_generated",
+  "generation_note": "Generated against the saved current-brand reference; earlier V2 candidates remain preserved."
+}

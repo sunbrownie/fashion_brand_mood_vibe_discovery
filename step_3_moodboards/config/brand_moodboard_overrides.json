@@ -33,6 +33,62 @@
       "duplicate_policy": "Every panel must introduce a different silhouette, material, print, colour family, or styling idea; do not repeat plain shirts, neutral knits, or near-identical minimal looks.",
       "logo_policy": "No wordmark is needed; recognisability comes from the tension between clean shapes and unusual print, shine, texture, and colour."
     },
+    "clothes/christian_wijnants": {
+      "must_include": ["modern sculptural knitwear", "one atmospheric abstract or photographic print", "robe-like collarless outerwear", "a cropped or cape-layered tailored piece", "fluid trousers or a batwing dress", "Klein blue, plum, moss, rust, seafoam, or sand accents"],
+      "must_avoid": ["repeated print fragments", "dated floral maxi styling", "generic bohemian layering", "multiple views of the same knit"],
+      "context": "Contemporary Antwerp studio or architectural gallery fragments with expressive colour and restrained texture.",
+      "layout": "Modern asymmetric editorial collage alternating sculptural silhouettes, tactile knits, strong colour, and one expressive print.",
+      "duplicate_policy": "Every panel must show a different garment family, silhouette, colour, and print or knit treatment."
+    },
+    "clothes/destree": {
+      "must_include": ["geometric Parisian tailoring", "a structured white high-neck poplin blouse", "a camel checker top or trouser", "a brown jacket with dark velvet detail", "one burgundy or royal-blue sculptural piece", "asymmetric pleating or corset geometry"],
+      "must_avoid": ["handbags", "Loewe-like accessories", "oversized hats", "generic black-and-beige minimalism", "soft romantic draping"],
+      "context": "Crisp gallery or Paris studio with graphic shadows and restrained architectural props.",
+      "layout": "Sharp geometric panels with controlled black, white, camel, burgundy, and cobalt colour blocking.",
+      "duplicate_policy": "Show six to eight distinct clothing silhouettes; no repeated black coat or neutral close-up."
+    },
+    "clothes/dime": {
+      "must_include": ["solid-colour hoodie", "solid crewneck", "one printed tee", "one small-logo tee", "a bomber, work jacket, or technical fleece", "baggy denim or cargo trousers", "one knit or beanie", "Montreal skate styling"],
+      "must_avoid": ["repeating the same star, planet, or cartoon print", "multiple colourways of one graphic", "fantasy landscape filler", "only printed sweatshirts"],
+      "context": "Montreal skate spot, concrete plaza, or clean street-product studio fragments.",
+      "layout": "Loose skate-editorial collage with solids doing most of the work and no graphic appearing twice.",
+      "duplicate_policy": "Every garment, graphic, colour, pose, and crop must be unique; use at most two printed hero pieces."
+    },
+    "clothes/girlfriend_collective": {
+      "must_include": ["saturated coordinated activewear sets", "cobalt or skyline blue", "dragonfruit pink", "kiwi or eucalyptus green", "terrace rust or bright orange", "a legging set", "bike shorts", "unitard or bodysuit", "sport skort or dress", "inclusive body casting"],
+      "must_avoid": ["readable words", "earthy olive and beige dominance", "muted grey-only styling", "generic yoga props", "repeated leggings in near-identical tones"],
+      "context": "Bright clean studio and minimal outdoor movement fragments; colour is the primary brand signal.",
+      "layout": "Energetic colour-block collage with distinct monochrome sets and varied activewear silhouettes.",
+      "duplicate_policy": "Each panel uses a different saturated colour and silhouette; do not repeat the same bra-and-legging pose."
+    },
+    "clothes/hodakova": {
+      "must_include": ["a dress or skirt woven from multiple black leather belts", "visible buckles and belt loops as construction", "a belt-built corset or top", "deconstructed trouser tailoring", "a white shirt reworked with belt straps", "black-and-white upcycled formalwear"],
+      "must_avoid": ["handbag hero images", "plain grey tailoring without reconstruction", "belt-free minimal looks", "repeating the same deconstructed jacket"],
+      "context": "Raw Stockholm studio, mannequin, or stark runway fragments that foreground converted materials.",
+      "layout": "Conceptual cut-paper collage with belts visibly functioning as garment structure, not accessories.",
+      "duplicate_policy": "Each panel must show a different reconstruction technique and garment type; no repeated outfit or bag."
+    },
+    "clothes/homecore": {
+      "must_include": ["relaxed colourful French menswear", "orange or honey knitwear", "green or blue outerwear", "striped or colour-block jersey", "soft work jacket", "easy trousers", "layered shirt and cardigan", "warm tactile everyday styling"],
+      "must_avoid": ["all-beige quiet luxury", "repeated grey sweater", "only two garment types", "formal business tailoring", "anonymous interiors"],
+      "context": "Friendly Paris street, workshop, cafe, or colour-washed studio with natural candid posture.",
+      "layout": "Warm human collage mixing full looks with distinct knit, shirt, jacket, jersey, and trouser details.",
+      "duplicate_policy": "Use at least six different garments and four clearly different colours; no repeated neutral knit."
+    },
+    "clothes/house_of_sunny": {
+      "must_include": ["playful statement knitwear", "butter cable knit", "colourful checker or graphic cardigan", "cherry or floral knit detail", "flower-applique mesh", "one playful fitted dress", "one textured jacket or coordinated set", "bright green, butter, cherry, blue, and chocolate accents"],
+      "must_avoid": ["repeating one swirl or brown-green print", "zip and button close-ups", "plain cream knit dominance", "generic neutral minimalism"],
+      "context": "Playful London studio and sunny street fragments with quirky styling and crafted texture.",
+      "layout": "Colourful sticker-like collage led by six distinct knit and surface languages, not repeated detail crops.",
+      "duplicate_policy": "Every knit, print, colour, silhouette, and model pose must be visibly different."
+    },
+    "clothes/jacquemus": {
+      "must_include": ["sculptural Ovalo tailoring", "cropped Paloma-style jacket", "sharp Cubano trench or peacoat", "one black architectural knit dress", "one confetti, stripe, mint, pink, or red accent", "curved denim or exaggerated trouser", "Mediterranean sensuality through proportion and light"],
+      "must_avoid": ["all-cream linen mood", "generic resort minimalism", "bottom-only fabric close-ups", "handbag hero images", "six near-identical beige draped looks"],
+      "context": "Sun-cut architectural studio, Paris runway, or South-of-France exterior with strong graphic shadow.",
+      "layout": "Sculptural high-fashion collage balancing black, dark brown, beige, off-white, denim, and one vivid accent.",
+      "duplicate_policy": "Each panel must introduce a different silhouette and proportion; no repeated cream dress or fabric crop."
+    },
     "clothes/celine": {
       "must_include": ["very slim or deliberately oversized tailoring", "layered styling", "sharp accessories", "current silhouettes"],
       "must_avoid": ["dated occasionwear", "generic romantic dresses", "unbranded knit close-ups"],

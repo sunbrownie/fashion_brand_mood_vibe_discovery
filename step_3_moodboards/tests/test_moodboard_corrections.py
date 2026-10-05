@@ -177,6 +177,33 @@ class MoodboardCorrectionTests(unittest.TestCase):
         self.assertIn("all-neutral quiet luxury", prompt)
         self.assertIn("do not repeat plain shirts, neutral knits, or near-identical minimal looks", prompt)
 
+    def test_second_pass_clothes_overrides_encode_requested_signatures(self) -> None:
+        required_cues = {
+            "Christian Wijnants": ("modern sculptural knitwear", "repeated print fragments"),
+            "Destree": ("structured white high-neck poplin blouse", "Loewe-like accessories"),
+            "Dime": ("solid-colour hoodie", "multiple colourways of one graphic"),
+            "Girlfriend Collective": ("dragonfruit pink", "readable words"),
+            "Hodakova": ("dress or skirt woven from multiple black leather belts", "belt-free minimal looks"),
+            "Homecore": ("orange or honey knitwear", "all-beige quiet luxury"),
+            "House Of Sunny": ("playful statement knitwear", "repeating one swirl or brown-green print"),
+            "Jacquemus": ("sculptural Ovalo tailoring", "bottom-only fabric close-ups"),
+        }
+        for brand_name, (must_include, must_avoid) in required_cues.items():
+            with self.subTest(brand_name=brand_name):
+                row = pd.Series(
+                    {
+                        "brand_name": brand_name,
+                        "category": "clothes",
+                        "aesthetic_keywords": "current brand direction",
+                        "silhouettes": "tops, trousers, dresses, outerwear",
+                        "materials": "brand-signature materials",
+                        "palette": "brand-signature palette",
+                    }
+                )
+                prompt = moodboard_prompt(row, reviewer_note="Rebuild the moodboard to match the current brand.")
+                self.assertIn(must_include, prompt)
+                self.assertIn(must_avoid, prompt)
+
     def test_corrected_file_is_preferred_only_after_approval_name_exists(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)

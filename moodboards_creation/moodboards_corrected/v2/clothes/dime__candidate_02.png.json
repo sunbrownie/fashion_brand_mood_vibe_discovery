@@ -1,0 +1,11 @@
+{
+  "review_id": "ER-034",
+  "brand_name": "Dime",
+  "category": "clothes",
+  "candidate": 2,
+  "model": "OpenAI built-in image_gen",
+  "prompt": "Vertical Dime Montreal skate moodboard led by solid hoodies, crewnecks, workwear, fleece, baggy denim and cargo trousers, with at most one abstract printed tee and no repeated graphic, garment, text, logo, or fantasy filler.",
+  "sha256": "ad4a04d458014cc4a9b746031d119a2740919a69a00eb9bd5df09f8c7fc8f0c8",
+  "status": "candidate_generated",
+  "generation_note": "Generated against the saved current-brand reference; the previous print-heavy V2 remains preserved as candidate 1."
+}
