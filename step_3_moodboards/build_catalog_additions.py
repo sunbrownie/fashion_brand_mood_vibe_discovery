@@ -52,6 +52,10 @@ WEBSITES = {
     "William Welstead": "https://williamwelstead.com", "YVMIN": "https://yvmin.com", "Yellow Swallow": "https://yellowswallow.com",
 }
 
+CATEGORY_WEBSITES = {
+    ("Burton", "shoes"): "https://www.burton.co.uk/categories/mens-shoes",
+}
+
 
 PROXIES = {
     "A Bathing Ape": "Kith", "Abercrombie & Fitch": "Aritzia", "Adidas": "Kappa", "Arket": "Another Aspect",
@@ -68,7 +72,7 @@ PROXIES = {
     "Moncler": "Mackage", "Moschino": "Saint Laurent", "Mugler": "Coperni", "Napapijri": "Arc Teryx",
     "Needles": "Adsum", "Never Fully Dressed": "Farm Rio", "Neighbourhood": "Kith", "New Balance": "Kappa",
     "Nike": "Kappa", "New Balance|shoes": "Salomon", "Nike|shoes": "Kappa", "Puma|shoes": "Kappa",
-    "Burton|shoes": "Salomon", "No Problemo": "A-COLD-WALL*", "Oner Active": "ADANOLA", "Open YY": "Andersson Bell",
+    "Burton|shoes": "Base London", "No Problemo": "A-COLD-WALL*", "Oner Active": "ADANOLA", "Open YY": "Andersson Bell",
     "Palm Angels": "Kith", "Paul Smith": "Margaret Howell", "Polo Ralph Lauren": "J.Crew", "Puma": "Kappa",
     "P.E Nation": "ADANOLA", "Pull & Bear": "& Other Stories", "ABRA": "MIISTA", "Air Jordan": "Filling Pieces",
     "Asics": "Salomon", "Adidas|shoes": "Salomon", "Golden Goose": "Common Projects", "Birkenstock": "Arizona Love",
@@ -94,6 +98,7 @@ UPPER = {
 }
 FEMALE_ONLY = {"Good American", "Missguided", "Never Fully Dressed", "Oner Active", "ABRA", "Gia Borghini", "Carvela",
                "Roxanne Assoulin", "Roxanne First", "Sonia Petroff", "Zoe Mohm", "William Welstead", "Yellow Swallow"}
+MALE_ONLY_CATEGORY = {("Burton", "shoes")}
 
 
 def normalized(value: str) -> str:
@@ -131,7 +136,7 @@ def main() -> None:
         proxy = PROXIES.get(f"{name}|{category}", PROXIES.get(name))
         if not proxy or (category, normalized(proxy)) not in cluster_keys:
             raise RuntimeError(f"Invalid {category} taste proxy for {review_id}: {proxy!r}")
-        website = WEBSITES.get(name)
+        website = CATEGORY_WEBSITES.get((name, category), WEBSITES.get(name))
         if not website:
             raise RuntimeError(f"Missing official website for {review_id}: {name}")
         price = "luxury" if name in LUXURY else "affordable" if name in AFFORDABLE else "upper price point" if name in UPPER else "mid price point"
@@ -141,7 +146,7 @@ def main() -> None:
             "category": category,
             "official_website": website,
             "male": name not in FEMALE_ONLY,
-            "female": True,
+            "female": (name, category) not in MALE_ONLY_CATEGORY,
             "price": price,
             "popularity": 1,
             "moodboard_asset_name": f"v2__{category}__{slugify(name)}.jpg",

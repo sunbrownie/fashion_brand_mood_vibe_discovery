@@ -2912,9 +2912,10 @@
       "review_id": "ER-364",
       "brand_name": "Burton",
       "category": "shoes",
-      "official_url": "https://www.burton.com",
-      "google_images_url": "https://www.google.com/search?udm=2&q=Burton+official+shoes",
-      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__burton.jpg"
+      "official_url": "https://www.burton.co.uk/categories/mens-shoes",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Burton+Menswear+London+shoes+loafers+brogues",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__burton.jpg",
+      "reference_label": "GOOGLE IMAGES - BURTON MENSWEAR"
     }
   ]
 }

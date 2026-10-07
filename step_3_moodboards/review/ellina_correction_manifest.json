@@ -8473,21 +8473,25 @@
       "priority": "P1",
       "approval_status": "self_review_approved",
       "issue_tags": [
-        "requested_category_expansion"
+        "requested_category_expansion",
+        "wrong_brand_identity",
+        "wrong_product_type"
       ],
-      "reviewer_note": "Add a separate shoe moodboard because footwear is a core, visually distinct part of this brand's current assortment.",
+      "reviewer_note": "Burton is not snowboard footwear here. Re-check the intended brand and replace the snow boots with Burton Menswear London's loafers, brogues, formal shoes, boots and smart-casual trainers.",
+      "feedback_label": "LATEST REVIEW FEEDBACK",
       "source_pdf": "Category coverage audit",
       "source_page": 1,
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/burton__candidate_01.png",
+      "previous_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/burton__candidate_01.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/burton__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__burton.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
-      "taste_proxy_brand_name": "Salomon",
-      "self_review_note": "Approved category expansion: eight distinct snowboard boots with varied closure, cuff, sole and color construction."
+      "taste_proxy_brand_name": "Base London",
+      "self_review_note": "Approved correction: Burton Menswear London footwear with six distinct polished formal, smart-casual, boot and trainer directions; no snow-sport products."
     }
   ]
 }

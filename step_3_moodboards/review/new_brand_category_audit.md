@@ -7,7 +7,7 @@
 | New Balance | clothes | shoes | Footwear is the primary, most recognizable product family. |
 | Nike | clothes | shoes | Footwear is a core category with materially different visual language from apparel. |
 | Puma | clothes | shoes | Footwear is a core category spanning motorsport, terrace, lifestyle and performance. |
-| Burton | clothes | shoes | Snowboard boots are a core technical category and require their own product-led board. |
+| Burton | clothes | shoes | Burton Menswear London has a visually distinct shoe assortment spanning loafers, brogues, formal shoes, boots and trainers. |
 
 ## Keep as currently scoped
 

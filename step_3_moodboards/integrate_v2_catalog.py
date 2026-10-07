@@ -41,8 +41,8 @@ EXPANSION_PROMPTS = {
         "performance running and football boots."
     ),
     ("shoes", "Burton"): (
-        "Burton snowboard boots combine high-support technical cuffs, BOA and traditional-lace closures, Step On "
-        "compatibility, grippy soles and expressive snow-sport colour."
+        "Burton Menswear London footwear combines polished leather loafers, brogues and Derby shoes with refined "
+        "Chelsea and desert boots plus clean smart-casual trainers."
     ),
 }
 
@@ -58,7 +58,6 @@ CLUSTER_OVERRIDES = {
     ("shoes", "new balance"): 7,
     ("shoes", "nike"): 7,
     ("shoes", "puma"): 7,
-    ("shoes", "burton"): 11,
 }
 
 # Centroid similarity is useful for surfacing candidates, but some mixed-product
@@ -76,6 +75,7 @@ CLUSTER_REVIEW_OVERRIDES = {
     ("clothes", "weekday"): 13,
     ("shoes", "coperni"): 2,
     ("shoes", "jacquemus"): 2,
+    ("shoes", "burton"): 16,
 }
 
 NEW_CLUSTER_ASSIGNMENT_KEYS = {
@@ -266,10 +266,10 @@ DESCRIPTION_OVERRIDES = {
         "palette": "red, forest green, black, silver, neon yellow and white",
     },
     ("shoes", "Burton"): {
-        "aesthetic_keywords": "technical snow sport, rugged, performance, high-support, expressive",
-        "silhouettes": "BOA snowboard boots, lace-up snowboard boots, Step On boots and high-cuff all-mountain boots",
-        "materials": "waterproof technical textile, reinforced synthetic leather, rubber, foam and metal closures",
-        "palette": "black, white, cobalt, rust, forest green and neon accents",
+        "aesthetic_keywords": "polished, classic, smart-casual, accessible, British menswear",
+        "silhouettes": "penny and tassel loafers, brogues, Derby and Oxford shoes, Chelsea and desert boots, clean low-top trainers",
+        "materials": "smooth and textured leather, suede, rubber soles and discreet metal hardware",
+        "palette": "black, espresso brown, tan, cognac, oxblood, cream and subtle navy",
     },
     ("bags", "Anya Hindmarch"): {
         "aesthetic_keywords": "witty, playful, refined, inventive, characterful",
@@ -470,6 +470,10 @@ def build_catalog() -> tuple[pd.DataFrame, pd.DataFrame]:
         existing.add(key)
     host = pd.concat([host, pd.DataFrame(additions)], ignore_index=True, sort=False)
     override_lookup = normalised_description_overrides()
+    overlay_lookup = {
+        (entry["category"], normalised(entry["brand_name"])): entry
+        for entry in overlay
+    }
 
     play_key = ("shoes", normalised("Comme des Garçons PLAY"))
     host_keys = {(row.category, normalised(row.brand_name)) for row in host.itertuples()}
@@ -491,6 +495,13 @@ def build_catalog() -> tuple[pd.DataFrame, pd.DataFrame]:
         key = (str(row["category"]), normalised(row["brand_name"]))
         if key in synced_v2_paths:
             host.at[index, "moodboard_path"] = synced_v2_paths[key]
+        if key in overlay_lookup:
+            entry = overlay_lookup[key]
+            host.at[index, "official_website"] = entry["official_website"]
+            host.at[index, "male"] = float(entry["male"])
+            host.at[index, "female"] = float(entry["female"])
+            host.at[index, "price"] = entry["price"]
+            host.at[index, "popularity"] = int(entry["popularity"])
         if key in override_lookup:
             for column, value in override_lookup[key].items():
                 host.at[index, column] = value

@@ -284,10 +284,8 @@ def fixture_page(
     page_number: int,
     total_pages: int,
 ) -> None:
-    if record["request_type"] == "new_brand":
+    if record["request_type"] in {"new_brand", "new_brand_category"}:
         original = previous_candidate_moodboard(root, record)
-    elif record["request_type"] == "new_brand_category":
-        original = None
     else:
         original = original_moodboard(root, record)
     updated = updated_moodboards(root, record)
@@ -327,7 +325,7 @@ def fixture_page(
     image_y, image_w, image_h = 70, 240, 385
     pdf.setFillColor(INK)
     pdf.setFont("Helvetica-Bold", 9)
-    original_label = "ORIGINAL - PREVIOUS" if record["request_type"] == "new_brand" and original else "ORIGINAL - V1"
+    original_label = "ORIGINAL - PREVIOUS" if record["request_type"] in {"new_brand", "new_brand_category"} and original else "ORIGINAL - V1"
     pdf.drawCentredString(left_x + image_w / 2, 467, original_label if original else "REQUEST - NO PRIOR BOARD")
     pdf.drawCentredString(middle_x + image_w / 2, 467, "UPDATED - V2" if visual_change else "IMPLEMENTED CATALOG DECISION")
     pdf.drawCentredString(
