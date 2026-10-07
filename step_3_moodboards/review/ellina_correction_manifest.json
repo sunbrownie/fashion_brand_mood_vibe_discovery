@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_on": "2026-09-29",
+  "generated_on": "2026-10-07",
   "reviewer": "Ellina",
   "source_directory": "/Users/katjazilorina/Downloads/ellina_review",
   "policy": {
@@ -6473,19 +6473,19 @@
       "issue_tags": [
         "requested_addition"
       ],
-      "reviewer_note": "Add this brand and create a category-appropriate moodboard.",
+      "reviewer_note": "The moodboard feels off-vibe compared with current Google and official imagery; correct the styling and palette.",
       "source_pdf": "Ellina add lists",
       "source_page": 1,
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/bimba_y_lola__candidate_01.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/bimba_y_lola__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__bimba_y_lola.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "Ganni",
-      "self_review_note": "Six distinct colourful Bimba y Lola apparel directions with puffer, print dress, knit, sculptural denim, tailoring and mesh layering."
+      "self_review_note": "Approved: current Madrid eclectic palette and silhouette range; full-bleed, text-free, no duplicated looks."
     },
     {
       "review_id": "ER-285",
@@ -6498,19 +6498,19 @@
       "issue_tags": [
         "requested_addition"
       ],
-      "reviewer_note": "Add this brand and create a category-appropriate moodboard.",
+      "reviewer_note": "The moodboard feels off compared with current Google and official imagery; make the technical snowboard range more representative.",
       "source_pdf": "Ellina add lists",
       "source_page": 1,
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/burton__candidate_01.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/burton__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__burton.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "Arc Teryx",
-      "self_review_note": "Six distinct snowboard-apparel functions cover shell, bib, anorak, fleece, base layer and apres hoodie without equipment tiles."
+      "self_review_note": "Approved: varied current technical outerwear with archival color, floral, baggy and performance directions; full-bleed."
     },
     {
       "review_id": "ER-286",
@@ -6673,19 +6673,19 @@
       "issue_tags": [
         "requested_addition"
       ],
-      "reviewer_note": "Add this brand and create a category-appropriate moodboard.",
+      "reviewer_note": "The moodboard feels off-vibe compared with current imagery; show a broader, more eclectic and crafted range.",
       "source_pdf": "Ellina add lists",
       "source_page": 1,
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/conner_ives__candidate_01.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/conner_ives__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__conner_ives.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "Marine Serre",
-      "self_review_note": "Six distinct upcycled-glamour looks clearly cover shirred jersey, bias dress, shell paillettes, sequinned polo, scarf construction and reconstructed baseball styling without visible text."
+      "self_review_note": "Approved retry: text-free eclectic craft range with jersey, equine chiffon, tailoring, sequins, shell belt, leather and shawl references."
     },
     {
       "review_id": "ER-293",
@@ -6698,19 +6698,19 @@
       "issue_tags": [
         "requested_addition"
       ],
-      "reviewer_note": "Add this brand and create a category-appropriate moodboard.",
+      "reviewer_note": "The moodboard is too denim-only; include the broader current clothing range and correct the vibe.",
       "source_pdf": "Ellina add lists",
       "source_page": 1,
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/diesel__candidate_01.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/diesel__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__diesel.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "AG Jeans",
-      "self_review_note": "Six distinct denim innovations cover extra-wide and barrel shapes, cropped trucker, devore dress, cable-knit-effect jacket and black moto styling with no text or accessory leakage."
+      "self_review_note": "Approved: Diesel is no longer denim-only; leather, graphics, knit, chiffon, argyle and tailoring broaden the board."
     },
     {
       "review_id": "ER-294",
@@ -6723,19 +6723,19 @@
       "issue_tags": [
         "requested_addition"
       ],
-      "reviewer_note": "Add this brand and create a category-appropriate moodboard.",
+      "reviewer_note": "The moodboard feels off-vibe; make it closer to the current modern brand styling rather than an older generic bohemian direction.",
       "source_pdf": "Ellina add lists",
       "source_page": 1,
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/desigual__candidate_01.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/desigual__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__desigual.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "Farm Rio",
-      "self_review_note": "Six distinct Barcelona-arty clothing directions clearly cover scrap denim, kaleidoscopic dress, hybrid jacket, tapestry knit, mixed-print trousers and asymmetrical shirtdress without licensed characters or text."
+      "self_review_note": "Approved: modern urban Desigual with controlled color, asymmetric knit, embroidery, denim, faux fur and tulle."
     },
     {
       "review_id": "ER-295",
@@ -7248,19 +7248,19 @@
       "issue_tags": [
         "requested_addition"
       ],
-      "reviewer_note": "Add this brand and create a category-appropriate moodboard.",
+      "reviewer_note": "The moodboard feels off-vibe; represent the current sculptural range beyond only black gothic tailoring.",
       "source_pdf": "Ellina add lists",
       "source_page": 1,
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mcqueen__candidate_01.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mcqueen__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__mcqueen.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "Ann Demeulemeester",
-      "self_review_note": "Six distinct sculptural-tailoring directions cover folded lapel, opaque corset dress, flecked pinstripe, metallic high-low coat, floral evening embroidery and ivory bow blouse with no skull graphics or text."
+      "self_review_note": "Approved: current sculptural house codes span colored tailoring, lace, floral, fringe leather, pinstripe and harness construction."
     },
     {
       "review_id": "ER-316",
@@ -7423,19 +7423,19 @@
       "issue_tags": [
         "requested_addition"
       ],
-      "reviewer_note": "Add this brand and create a category-appropriate moodboard.",
+      "reviewer_note": "The moodboard feels off-vibe compared with current imagery; make it more elevated, versatile and representative.",
       "source_pdf": "Ellina add lists",
       "source_page": 1,
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/never_fully_dressed__candidate_01.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/never_fully_dressed__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__never_fully_dressed.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "Farm Rio",
-      "self_review_note": "Exactly six distinct print-led and tailored looks across varied adult body types; each print and silhouette is unique, with no text/logo leakage, repetition or category drift."
+      "self_review_note": "Approved: elevated versatile styling with grounded chocolate, blush, olive, cobalt and black-gold; inclusive and full-bleed."
     },
     {
       "review_id": "ER-323",
@@ -7448,19 +7448,19 @@
       "issue_tags": [
         "requested_addition"
       ],
-      "reviewer_note": "Add this brand and create a category-appropriate moodboard.",
+      "reviewer_note": "The moodboard may not be fully on-vibe; correct it using current Google and official imagery.",
       "source_pdf": "Ellina add lists",
       "source_page": 1,
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/neighbourhood__candidate_01.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/neighbourhood__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__neighbourhood.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "Kith",
-      "self_review_note": "Exactly six distinct heavy-duty Tokyo streetwear directions spanning souvenir, denim, field, duck, cargo and reflective technical clothing; no text/logo leakage, repeat or accessory-led tile."
+      "self_review_note": "Approved: Tokyo utility, denim, graphics, track, hockey, check, souvenir and motorcycle directions balance the range."
     },
     {
       "review_id": "ER-324",
@@ -7523,19 +7523,19 @@
       "issue_tags": [
         "requested_addition"
       ],
-      "reviewer_note": "Add this brand and create a category-appropriate moodboard.",
+      "reviewer_note": "Include core shirts and sweatshirts carrying the NO PROBLEMO logo as well as the wider streetwear range.",
       "source_pdf": "Ellina add lists",
       "source_page": 1,
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/no_problemo__candidate_01.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/no_problemo__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__no_problemo.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "A-COLD-WALL*",
-      "self_review_note": "Exactly six distinct retro-sci-fi streetwear garments with one restrained alien patch and atmospheric UFO context; no lettering, slogan, category drift or repeated garment."
+      "self_review_note": "Approved: exact NO PROBLEMO mark is restored on core sweatshirt, tee and long-sleeve, supported by practical streetwear."
     },
     {
       "review_id": "ER-327",
@@ -7898,19 +7898,19 @@
       "issue_tags": [
         "requested_addition"
       ],
-      "reviewer_note": "Add this brand and create a category-appropriate moodboard.",
+      "reviewer_note": "The board repeats boots; show a broader set of distinct current footwear forms.",
       "source_pdf": "Ellina add lists",
       "source_page": 1,
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/eytys__candidate_01.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/eytys__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__eytys.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "Acne Studios",
-      "self_review_note": "Six clean product-only panels; six single complete shoes; distinctive slip-on, plimsoll, dress sneaker, technical runner and two differentiated boots; no text, pairs, people or duplicate views."
+      "self_review_note": "Approved: distinct footwear silhouettes with only one boot; no repeated boot forms and full canvas coverage."
     },
     {
       "review_id": "ER-342",
@@ -7923,19 +7923,19 @@
       "issue_tags": [
         "requested_addition"
       ],
-      "reviewer_note": "Add this brand and create a category-appropriate moodboard.",
+      "reviewer_note": "The moodboard feels off-vibe; correct it against current Google and official imagery.",
       "source_pdf": "Ellina add lists",
       "source_page": 1,
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/geox__candidate_01.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/geox__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__geox.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "Camper",
-      "self_review_note": "Six clean product-only panels; breathable technical sneaker, waterproof boot, pump, slip-on, runner and sandal are distinct; no text, pairs, people or duplicate views."
+      "self_review_note": "Approved: coherent urban comfort range across loafers, boots, moccasin, slip-in, runner, pump and sandal."
     },
     {
       "review_id": "ER-343",
@@ -8373,19 +8373,119 @@
       "issue_tags": [
         "requested_addition"
       ],
-      "reviewer_note": "Add this brand and create a category-appropriate moodboard.",
+      "reviewer_note": "The moodboard feels off-vibe compared with current imagery; replace the dark direction with the brand's brighter jewelry language.",
       "source_pdf": "Ellina add lists",
       "source_page": 1,
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yellow_swallow__candidate_01.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yellow_swallow__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__yellow_swallow.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "Anni Lu",
-      "self_review_note": "Six clean panels and six unique constructions; blue crystal bracelet, pearl-flower necklace, black flower brooch, ribbon cuff, lily necklace and dark floral brooch express the intended pearl/crystal/black-metal duality; no repeats, text or extra jewellery."
+      "self_review_note": "Approved: bright whimsical swallow, floral, pearl and pastel jewelry replaces the dark gothic direction."
+    },
+    {
+      "review_id": "ER-361",
+      "category": "shoes",
+      "brand_name": "New Balance",
+      "request_type": "new_brand_category",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_category_expansion"
+      ],
+      "reviewer_note": "Add a separate shoe moodboard because footwear is a core, visually distinct part of this brand's current assortment.",
+      "source_pdf": "Category coverage audit",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/new_balance__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__shoes__new_balance.jpg"
+      ],
+      "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
+      "taste_proxy_brand_name": "Salomon",
+      "self_review_note": "Approved category expansion: distinct heritage, lifestyle, court, racing and trail footwear; full-screen and non-repetitive."
+    },
+    {
+      "review_id": "ER-362",
+      "category": "shoes",
+      "brand_name": "Nike",
+      "request_type": "new_brand_category",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_category_expansion"
+      ],
+      "reviewer_note": "Add a separate shoe moodboard because footwear is a core, visually distinct part of this brand's current assortment.",
+      "source_pdf": "Category coverage audit",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/nike__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__shoes__nike.jpg"
+      ],
+      "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
+      "taste_proxy_brand_name": "Kappa",
+      "self_review_note": "Approved category expansion: distinct lifestyle, running, court, basketball, trail and experimental footwear."
+    },
+    {
+      "review_id": "ER-363",
+      "category": "shoes",
+      "brand_name": "Puma",
+      "request_type": "new_brand_category",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_category_expansion"
+      ],
+      "reviewer_note": "Add a separate shoe moodboard because footwear is a core, visually distinct part of this brand's current assortment.",
+      "source_pdf": "Category coverage audit",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/puma__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__shoes__puma.jpg"
+      ],
+      "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
+      "taste_proxy_brand_name": "Kappa",
+      "self_review_note": "Approved category expansion: motorsport, terrace, suede, sculptural, running, technical and football footwear."
+    },
+    {
+      "review_id": "ER-364",
+      "category": "shoes",
+      "brand_name": "Burton",
+      "request_type": "new_brand_category",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_category_expansion"
+      ],
+      "reviewer_note": "Add a separate shoe moodboard because footwear is a core, visually distinct part of this brand's current assortment.",
+      "source_pdf": "Category coverage audit",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/burton__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__shoes__burton.jpg"
+      ],
+      "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
+      "taste_proxy_brand_name": "Salomon",
+      "self_review_note": "Approved category expansion: eight distinct snowboard boots with varied closure, cuff, sole and color construction."
     }
   ]
 }

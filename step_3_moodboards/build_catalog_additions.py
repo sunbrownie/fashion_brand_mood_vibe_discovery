@@ -67,7 +67,8 @@ PROXIES = {
     "Michael Kors": "J.Crew", "Missguided": "& Other Stories", "McQueen": "Ann Demeulemeester", "MKI MIYUKI ZOKU": "Aime Leon Dore",
     "Moncler": "Mackage", "Moschino": "Saint Laurent", "Mugler": "Coperni", "Napapijri": "Arc Teryx",
     "Needles": "Adsum", "Never Fully Dressed": "Farm Rio", "Neighbourhood": "Kith", "New Balance": "Kappa",
-    "Nike": "Kappa", "No Problemo": "A-COLD-WALL*", "Oner Active": "ADANOLA", "Open YY": "Andersson Bell",
+    "Nike": "Kappa", "New Balance|shoes": "Salomon", "Nike|shoes": "Kappa", "Puma|shoes": "Kappa",
+    "Burton|shoes": "Salomon", "No Problemo": "A-COLD-WALL*", "Oner Active": "ADANOLA", "Open YY": "Andersson Bell",
     "Palm Angels": "Kith", "Paul Smith": "Margaret Howell", "Polo Ralph Lauren": "J.Crew", "Puma": "Kappa",
     "P.E Nation": "ADANOLA", "Pull & Bear": "& Other Stories", "ABRA": "MIISTA", "Air Jordan": "Filling Pieces",
     "Asics": "Salomon", "Adidas|shoes": "Salomon", "Golden Goose": "Common Projects", "Birkenstock": "Arizona Love",
@@ -147,8 +148,8 @@ def main() -> None:
             "taste_proxy_brand_name": proxy,
         })
 
-    if len(entries) != 86:
-        raise RuntimeError(f"Expected 86 catalog additions, found {len(entries)}")
+    if len(entries) != 90:
+        raise RuntimeError(f"Expected 90 catalog additions, found {len(entries)}")
     OUTPUT_PATH.write_text(
         json.dumps({
             "schema_version": 1,

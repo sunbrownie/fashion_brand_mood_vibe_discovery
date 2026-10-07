@@ -2882,6 +2882,38 @@
       "official_url": "https://yellowswallow.com",
       "google_images_url": "https://www.google.com/search?udm=2&q=Yellow+Swallow+official+jewellery",
       "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__yellow_swallow.jpg"
+    },
+    {
+      "review_id": "ER-361",
+      "brand_name": "New Balance",
+      "category": "shoes",
+      "official_url": "https://www.newbalance.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=New+Balance+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__new_balance.jpg"
+    },
+    {
+      "review_id": "ER-362",
+      "brand_name": "Nike",
+      "category": "shoes",
+      "official_url": "https://www.nike.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Nike+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__nike.jpg"
+    },
+    {
+      "review_id": "ER-363",
+      "brand_name": "Puma",
+      "category": "shoes",
+      "official_url": "https://www.puma.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Puma+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__puma.jpg"
+    },
+    {
+      "review_id": "ER-364",
+      "brand_name": "Burton",
+      "category": "shoes",
+      "official_url": "https://www.burton.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Burton+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__burton.jpg"
     }
   ]
 }

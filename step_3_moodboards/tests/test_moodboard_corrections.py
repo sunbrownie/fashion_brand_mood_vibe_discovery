@@ -290,17 +290,17 @@ class MoodboardCorrectionTests(unittest.TestCase):
         records = json.loads(
             (ROOT / "step_3_moodboards" / "review" / "ellina_correction_manifest.json").read_text(encoding="utf-8")
         )["records"]
-        self.assertEqual(len(records), 360)
-        self.assertEqual(sum(r["implementation_status"] == "implemented_v2" for r in records), 318)
+        self.assertEqual(len(records), 364)
+        self.assertEqual(sum(r["implementation_status"] == "implemented_v2" for r in records), 322)
         self.assertEqual(sum(r["implementation_status"] == "implemented_catalog_v2" for r in records), 42)
         self.assertFalse([r["review_id"] for r in records if r["implementation_status"] == "not_started"])
 
     def test_catalog_additions_are_complete_and_taste_enabled(self) -> None:
         asset_root = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder" / "BrandMoodboards"
         entries = json.loads((asset_root / "v2_catalog_additions.json").read_text(encoding="utf-8"))["entries"]
-        self.assertEqual(len(entries), 86)
-        self.assertEqual(len({entry["review_id"] for entry in entries}), 86)
-        self.assertEqual(len({(entry["category"], entry["brand_name"]) for entry in entries}), 86)
+        self.assertEqual(len(entries), 90)
+        self.assertEqual(len({entry["review_id"] for entry in entries}), 90)
+        self.assertEqual(len({(entry["category"], entry["brand_name"]) for entry in entries}), 90)
 
         def normalized(value: str) -> str:
             folded = "".join(
@@ -329,8 +329,8 @@ class MoodboardCorrectionTests(unittest.TestCase):
     def test_v2_manifest_uses_app_compatible_slugs_and_preserves_rollback(self) -> None:
         asset_root = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder" / "BrandMoodboards"
         entries = json.loads((asset_root / "v2_manifest.json").read_text(encoding="utf-8"))["entries"]
-        self.assertEqual(len(entries), 318)
-        self.assertEqual(len({entry["ios_v2_path"] for entry in entries}), 318)
+        self.assertEqual(len(entries), 322)
+        self.assertEqual(len({entry["ios_v2_path"] for entry in entries}), 322)
 
         def slug(value: str) -> str:
             folded = "".join(
@@ -349,10 +349,10 @@ class MoodboardCorrectionTests(unittest.TestCase):
     def test_review_reference_links_and_screenshots_cover_every_fixture(self) -> None:
         payload = json.loads((REVIEW_DIR / "reference_sources.json").read_text(encoding="utf-8"))
         records = payload["records"]
-        self.assertEqual(len(records), 360)
-        self.assertEqual(len({record["review_id"] for record in records}), 360)
+        self.assertEqual(len(records), 364)
+        self.assertEqual(len({record["review_id"] for record in records}), 364)
         unique_screenshots = {record["screenshot_path"] for record in records}
-        self.assertEqual(len(unique_screenshots), 359)
+        self.assertEqual(len(unique_screenshots), 363)
         for record in records:
             self.assertTrue(record["official_url"].startswith("https://"), record["review_id"])
             self.assertIn("google.com/search?", record["google_images_url"], record["review_id"])

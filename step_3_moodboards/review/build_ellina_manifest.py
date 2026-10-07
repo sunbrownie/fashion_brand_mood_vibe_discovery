@@ -55,6 +55,30 @@ ADDITIONS = {
     ],
 }
 
+# Category coverage additions requested after the original 360-fixture review.
+# These are appended after the original records so ER-001 through ER-360 remain stable.
+CATEGORY_EXPANSIONS = [
+    ("shoes", "New Balance"),
+    ("shoes", "Nike"),
+    ("shoes", "Puma"),
+    ("shoes", "Burton"),
+]
+
+ADDITION_FEEDBACK_OVERRIDES = {
+    ("clothes", "Bimba Y Lola"): "The moodboard feels off-vibe compared with current Google and official imagery; correct the styling and palette.",
+    ("clothes", "Burton"): "The moodboard feels off compared with current Google and official imagery; make the technical snowboard range more representative.",
+    ("clothes", "Conner Ives"): "The moodboard feels off-vibe compared with current imagery; show a broader, more eclectic and crafted range.",
+    ("clothes", "Diesel"): "The moodboard is too denim-only; include the broader current clothing range and correct the vibe.",
+    ("clothes", "Desigual"): "The moodboard feels off-vibe; make it closer to the current modern brand styling rather than an older generic bohemian direction.",
+    ("clothes", "McQueen"): "The moodboard feels off-vibe; represent the current sculptural range beyond only black gothic tailoring.",
+    ("clothes", "Never Fully Dressed"): "The moodboard feels off-vibe compared with current imagery; make it more elevated, versatile and representative.",
+    ("clothes", "Neighbourhood"): "The moodboard may not be fully on-vibe; correct it using current Google and official imagery.",
+    ("clothes", "No Problemo"): "Include core shirts and sweatshirts carrying the NO PROBLEMO logo as well as the wider streetwear range.",
+    ("shoes", "EYTYS"): "The board repeats boots; show a broader set of distinct current footwear forms.",
+    ("shoes", "Geox"): "The moodboard feels off-vibe; correct it against current Google and official imagery.",
+    ("jewellery", "Yellow Swallow"): "The moodboard feels off-vibe compared with current imagery; replace the dark direction with the brand's brighter jewelry language.",
+}
+
 HEADER_OVERRIDES = {
     "garcons": ("Comme des Garcons", 2),
     "q": ("Cydwoq", 2),
@@ -377,13 +401,37 @@ def build_manifest(root: Path, review_dir: Path) -> dict:
                 "priority": "P1",
                 "approval_status": "needs_scope_and_catalog_verification",
                 "issue_tags": ["requested_addition"],
-                "reviewer_note": "Add this brand and create a category-appropriate moodboard.",
+                "reviewer_note": ADDITION_FEEDBACK_OVERRIDES.get(
+                    (category, brand),
+                    "Add this brand and create a category-appropriate moodboard.",
+                ),
                 "source_pdf": "Ellina add lists",
                 "source_page": 1,
                 "implementation_status": "not_started",
                 "asset_version": "v2",
             })
             record_id += 1
+
+    for category, brand in CATEGORY_EXPANSIONS:
+        records.append({
+            "review_id": f"ER-{record_id:03d}",
+            "category": category,
+            "brand_name": brand,
+            "request_type": "new_brand_category",
+            "recommended_action": "catalog_add_and_generate",
+            "priority": "P1",
+            "approval_status": "needs_scope_and_catalog_verification",
+            "issue_tags": ["requested_category_expansion"],
+            "reviewer_note": (
+                "Add a separate shoe moodboard because footwear is a core, visually distinct "
+                "part of this brand's current assortment."
+            ),
+            "source_pdf": "Category coverage audit",
+            "source_page": 1,
+            "implementation_status": "not_started",
+            "asset_version": "v2",
+        })
+        record_id += 1
 
     return {
         "schema_version": 1,

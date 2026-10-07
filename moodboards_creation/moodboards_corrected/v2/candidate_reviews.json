@@ -3131,11 +3131,25 @@
       "reviewed_at": "2026-10-02T09:53:41.076041+00:00"
     },
     {
+      "review_id": "ER-284",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/bimba_y_lola__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: current Madrid eclectic palette and silhouette range; full-bleed, text-free, no duplicated looks.",
+      "reviewed_at": "2026-10-05T22:33:13.802929+00:00"
+    },
+    {
       "review_id": "ER-285",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/burton__candidate_01.png",
       "status": "approved",
       "notes": "Six distinct snowboard-apparel functions cover shell, bib, anorak, fleece, base layer and apres hoodie without equipment tiles.",
       "reviewed_at": "2026-10-02T09:53:41.297980+00:00"
+    },
+    {
+      "review_id": "ER-285",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/burton__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: varied current technical outerwear with archival color, floral, baggy and performance directions; full-bleed.",
+      "reviewed_at": "2026-10-05T22:33:13.928608+00:00"
     },
     {
       "review_id": "ER-286",
@@ -3194,6 +3208,13 @@
       "reviewed_at": "2026-10-02T10:04:25.353244+00:00"
     },
     {
+      "review_id": "ER-292",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/conner_ives__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved retry: text-free eclectic craft range with jersey, equine chiffon, tailoring, sequins, shell belt, leather and shawl references.",
+      "reviewed_at": "2026-10-05T22:33:14.070843+00:00"
+    },
+    {
       "review_id": "ER-293",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/diesel__candidate_01.png",
       "status": "approved",
@@ -3201,11 +3222,25 @@
       "reviewed_at": "2026-10-02T10:09:37.626208+00:00"
     },
     {
+      "review_id": "ER-293",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/diesel__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: Diesel is no longer denim-only; leather, graphics, knit, chiffon, argyle and tailoring broaden the board.",
+      "reviewed_at": "2026-10-05T22:33:14.206840+00:00"
+    },
+    {
       "review_id": "ER-294",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/desigual__candidate_01.png",
       "status": "approved",
       "notes": "Six distinct Barcelona-arty clothing directions clearly cover scrap denim, kaleidoscopic dress, hybrid jacket, tapestry knit, mixed-print trousers and asymmetrical shirtdress without licensed characters or text.",
       "reviewed_at": "2026-10-02T10:09:37.706495+00:00"
+    },
+    {
+      "review_id": "ER-294",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/desigual__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: modern urban Desigual with controlled color, asymmetric knit, embroidery, denim, faux fur and tulle.",
+      "reviewed_at": "2026-10-05T22:33:14.347110+00:00"
     },
     {
       "review_id": "ER-295",
@@ -3362,6 +3397,13 @@
       "reviewed_at": "2026-10-02T10:35:16.393489+00:00"
     },
     {
+      "review_id": "ER-315",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mcqueen__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: current sculptural house codes span colored tailoring, lace, floral, fringe leather, pinstripe and harness construction.",
+      "reviewed_at": "2026-10-05T22:33:14.484244+00:00"
+    },
+    {
       "review_id": "ER-316",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mki_miyuki_zoku__candidate_01.png",
       "status": "approved",
@@ -3411,11 +3453,25 @@
       "reviewed_at": "2026-10-02T10:43:39.538897+00:00"
     },
     {
+      "review_id": "ER-322",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/never_fully_dressed__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: elevated versatile styling with grounded chocolate, blush, olive, cobalt and black-gold; inclusive and full-bleed.",
+      "reviewed_at": "2026-10-05T22:33:14.620077+00:00"
+    },
+    {
       "review_id": "ER-323",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/neighbourhood__candidate_01.png",
       "status": "approved",
       "notes": "Exactly six distinct heavy-duty Tokyo streetwear directions spanning souvenir, denim, field, duck, cargo and reflective technical clothing; no text/logo leakage, repeat or accessory-led tile.",
       "reviewed_at": "2026-10-02T10:47:34.827448+00:00"
+    },
+    {
+      "review_id": "ER-323",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/neighbourhood__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: Tokyo utility, denim, graphics, track, hockey, check, souvenir and motorcycle directions balance the range.",
+      "reviewed_at": "2026-10-05T22:33:14.751877+00:00"
     },
     {
       "review_id": "ER-324",
@@ -3451,6 +3507,13 @@
       "status": "approved",
       "notes": "Exactly six distinct retro-sci-fi streetwear garments with one restrained alien patch and atmospheric UFO context; no lettering, slogan, category drift or repeated garment.",
       "reviewed_at": "2026-10-02T10:51:49.054221+00:00"
+    },
+    {
+      "review_id": "ER-326",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/no_problemo__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: exact NO PROBLEMO mark is restored on core sweatshirt, tee and long-sleeve, supported by practical streetwear.",
+      "reviewed_at": "2026-10-05T22:33:14.885862+00:00"
     },
     {
       "review_id": "ER-327",
@@ -3600,11 +3663,25 @@
       "reviewed_at": "2026-10-02T13:47:13.618237+00:00"
     },
     {
+      "review_id": "ER-341",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/eytys__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: distinct footwear silhouettes with only one boot; no repeated boot forms and full canvas coverage.",
+      "reviewed_at": "2026-10-05T22:33:15.048339+00:00"
+    },
+    {
       "review_id": "ER-342",
       "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/geox__candidate_01.png",
       "status": "approved",
       "notes": "Six clean product-only panels; breathable technical sneaker, waterproof boot, pump, slip-on, runner and sandal are distinct; no text, pairs, people or duplicate views.",
       "reviewed_at": "2026-10-02T13:47:13.696417+00:00"
+    },
+    {
+      "review_id": "ER-342",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/geox__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: coherent urban comfort range across loafers, boots, moccasin, slip-in, runner, pump and sandal.",
+      "reviewed_at": "2026-10-05T22:33:15.182299+00:00"
     },
     {
       "review_id": "ER-343",
@@ -3745,6 +3822,41 @@
       "status": "approved",
       "notes": "Six clean panels and six unique constructions; blue crystal bracelet, pearl-flower necklace, black flower brooch, ribbon cuff, lily necklace and dark floral brooch express the intended pearl/crystal/black-metal duality; no repeats, text or extra jewellery.",
       "reviewed_at": "2026-10-02T14:27:21.610091+00:00"
+    },
+    {
+      "review_id": "ER-360",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yellow_swallow__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved: bright whimsical swallow, floral, pearl and pastel jewelry replaces the dark gothic direction.",
+      "reviewed_at": "2026-10-05T22:33:15.311437+00:00"
+    },
+    {
+      "review_id": "ER-361",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/new_balance__candidate_01.png",
+      "status": "approved",
+      "notes": "Approved category expansion: distinct heritage, lifestyle, court, racing and trail footwear; full-screen and non-repetitive.",
+      "reviewed_at": "2026-10-05T22:33:15.444406+00:00"
+    },
+    {
+      "review_id": "ER-362",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/nike__candidate_01.png",
+      "status": "approved",
+      "notes": "Approved category expansion: distinct lifestyle, running, court, basketball, trail and experimental footwear.",
+      "reviewed_at": "2026-10-05T22:33:15.581563+00:00"
+    },
+    {
+      "review_id": "ER-363",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/puma__candidate_01.png",
+      "status": "approved",
+      "notes": "Approved category expansion: motorsport, terrace, suede, sculptural, running, technical and football footwear.",
+      "reviewed_at": "2026-10-05T22:33:15.717445+00:00"
+    },
+    {
+      "review_id": "ER-364",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/burton__candidate_01.png",
+      "status": "approved",
+      "notes": "Approved category expansion: eight distinct snowboard boots with varied closure, cuff, sole and color construction.",
+      "reviewed_at": "2026-10-05T22:33:15.846928+00:00"
     }
   ]
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the complete 360-fixture Ellina V2 review PDF."""
+"""Build the complete Ellina V2 review PDF plus approved category expansions."""
 
 from __future__ import annotations
 
@@ -86,6 +86,14 @@ def original_moodboard(root: Path, record: dict) -> Path | None:
 def updated_moodboards(root: Path, record: dict) -> list[Path]:
     ios_root = root / "ios" / "BrandMoodboardFinder"
     return [ios_root / value for value in record.get("ios_v2_paths", [])]
+
+
+def previous_candidate_moodboard(root: Path, record: dict) -> Path | None:
+    approved = record.get("approved_candidate_path")
+    if not approved or "__candidate_02" not in approved:
+        return None
+    previous = root / approved.replace("__candidate_02", "__candidate_01")
+    return previous if previous.exists() else None
 
 
 def reference_sources(root: Path) -> dict[str, dict]:
@@ -272,7 +280,12 @@ def fixture_page(
     page_number: int,
     total_pages: int,
 ) -> None:
-    original = None if record["request_type"] == "new_brand" else original_moodboard(root, record)
+    if record["request_type"] == "new_brand":
+        original = previous_candidate_moodboard(root, record)
+    elif record["request_type"] == "new_brand_category":
+        original = None
+    else:
+        original = original_moodboard(root, record)
     updated = updated_moodboards(root, record)
     reference_image = root / reference["screenshot_path"]
     visual_change = record.get("implementation_status") == "implemented_v2"
@@ -299,7 +312,8 @@ def fixture_page(
     image_y, image_w, image_h = 70, 240, 385
     pdf.setFillColor(INK)
     pdf.setFont("Helvetica-Bold", 9)
-    pdf.drawCentredString(left_x + image_w / 2, 467, "ORIGINAL - V1" if original else "REQUEST - NO V1")
+    original_label = "ORIGINAL - PREVIOUS" if record["request_type"] == "new_brand" and original else "ORIGINAL - V1"
+    pdf.drawCentredString(left_x + image_w / 2, 467, original_label if original else "REQUEST - NO PRIOR BOARD")
     pdf.drawCentredString(middle_x + image_w / 2, 467, "UPDATED - V2" if visual_change else "IMPLEMENTED CATALOG DECISION")
     pdf.drawCentredString(right_x + image_w / 2, 467, "GOOGLE IMAGES REFERENCE")
 
@@ -329,9 +343,9 @@ def fixture_page(
 
 
 def validate_inputs(root: Path, records: list[dict], references: dict[str, dict]) -> None:
-    if len(records) != 360:
-        raise RuntimeError(f"Expected 360 fixtures, found {len(records)}")
-    missing_originals = [record["review_id"] for record in records if record["request_type"] != "new_brand" and original_moodboard(root, record) is None]
+    if len(records) != 364:
+        raise RuntimeError(f"Expected 364 fixtures, found {len(records)}")
+    missing_originals = [record["review_id"] for record in records if record["request_type"] not in {"new_brand", "new_brand_category"} and original_moodboard(root, record) is None]
     missing_updates = [
         record["review_id"]
         for record in records
@@ -362,7 +376,7 @@ def build(root: Path, output: Path, cache_dir: Path) -> None:
     pdf = canvas.Canvas(str(output), pagesize=landscape(A4), pageCompression=1)
     pdf.setTitle("Ellina Moodboard Corrections - Complete V2 Review")
     pdf.setAuthor("Brand Vibe project")
-    pdf.setSubject("All 360 review fixtures with original feedback and implemented outcomes")
+    pdf.setSubject("All 360 review fixtures plus four approved category expansions with implemented outcomes")
     last_group = None
     for index, record in enumerate(records, start=1):
         group = (record["source_pdf"], record["category"])
