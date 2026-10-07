@@ -1020,11 +1020,12 @@ SPECIAL_PROMPT_OVERRIDES = {
     ),
     ("jewellery", "Yellow Swallow"): (
         "Create a vertical six-panel Yellow Swallow jewellery moodboard with exactly one different hero piece per panel: "
-        "blue Aqua Bloom crystal bracelet, Cherry Blossoms pearl necklace, black-diamond flower brooch, pink Ribbon crystal "
-        "cuff, black-nickel Lily metal necklace and dark crystal Maman floral brooch. Express the Korean brand's balance of "
-        "girlhood and maturity through classic pearls and crystals darkened by cold metal, black nickel and rough floral "
-        "forms. Mix still lifes with at most two worn crops on fully clothed adult models. No repeated flowers, duplicate "
-        "products, words, letters, labels, watermarks, unrelated logos or extra jewellery."
+        "black leather buckle choker layered with pearls and an oxidised chain, blackened rose or bat-bone charm pendants, "
+        "smoky crystal cross, delicate spider brooch, sharp crystal star or insect hair clip and one sculptural blackened-metal "
+        "floral piece. Express the Korean brand's current edgy sad-girl aesthetic through phone-flash intimacy, distressed "
+        "white ruffles, black leather, washed tailoring, gunmetal and muted mauve crystal. Mix three worn fashion crops with "
+        "three precise detail still lifes. No bright gold swallow motifs, pastel garden romance, duplicate products, repeated "
+        "crosses or flowers, words, labels, watermarks, unrelated logos or extra jewellery."
     ),
 }
 

@@ -8373,19 +8373,21 @@
       "issue_tags": [
         "requested_addition"
       ],
-      "reviewer_note": "The moodboard feels off-vibe compared with current imagery; replace the dark direction with the brand's brighter jewelry language.",
+      "reviewer_note": "The current Instagram has a very different, edgier vibe: sad-girl styling, blackened silver, crosses, bats, spiders, chokers, crystal hair ornaments, leather and distressed white ruffles. Replace the pastel romantic board.",
+      "feedback_label": "LATEST REVIEW FEEDBACK",
       "source_pdf": "Ellina add lists",
       "source_page": 1,
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yellow_swallow__candidate_02.png",
+      "previous_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yellow_swallow__candidate_02.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yellow_swallow__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__yellow_swallow.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "Anni Lu",
-      "self_review_note": "Approved: bright whimsical swallow, floral, pearl and pastel jewelry replaces the dark gothic direction."
+      "self_review_note": "Approved revision: the pastel romantic direction is replaced by an Instagram-faithful edgy sad-girl board with leather-and-pearl choker styling, blackened charm chains, smoky cross, spider brooch, sharp crystal hair piece and sculptural dark floral jewellery."
     },
     {
       "review_id": "ER-361",

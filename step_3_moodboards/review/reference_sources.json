@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_csv": "step_2_text_embeddings/brand_metadata_today.csv",
-  "capture_policy": "Official URL from catalog; visual reference captured from one focused Google Images query per brand/category.",
+  "capture_policy": "Official/catalog URL or user-specified live brand source; visual reference captured from one focused Google Images query unless a more authoritative source was supplied.",
   "records": [
     {
       "review_id": "ER-001",
@@ -2879,9 +2879,10 @@
       "review_id": "ER-360",
       "brand_name": "Yellow Swallow",
       "category": "jewellery",
-      "official_url": "https://yellowswallow.com",
+      "official_url": "https://www.instagram.com/yellowswallow_official/",
       "google_images_url": "https://www.google.com/search?udm=2&q=Yellow+Swallow+official+jewellery",
-      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__yellow_swallow.jpg"
+      "reference_label": "INSTAGRAM REFERENCE",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__yellow_swallow_instagram.jpg"
     },
     {
       "review_id": "ER-361",

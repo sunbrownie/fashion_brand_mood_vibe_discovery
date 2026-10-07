@@ -89,6 +89,10 @@ def updated_moodboards(root: Path, record: dict) -> list[Path]:
 
 
 def previous_candidate_moodboard(root: Path, record: dict) -> Path | None:
+    explicit_previous = record.get("previous_candidate_path")
+    if explicit_previous:
+        previous = root / explicit_previous
+        return previous if previous.exists() else None
     approved = record.get("approved_candidate_path")
     if not approved or "__candidate_02" not in approved:
         return None
@@ -305,8 +309,19 @@ def fixture_page(
     pdf.roundRect(34, PAGE_H - 112, PAGE_W - 68, 50, 9, fill=1, stroke=0)
     pdf.setFillColor(ACCENT)
     pdf.setFont("Helvetica-Bold", 8)
-    pdf.drawString(47, PAGE_H - 82, "ELLINA'S FEEDBACK")
-    draw_wrapped(pdf, record["reviewer_note"], 146, PAGE_H - 82, PAGE_W - 193, size=8.6, leading=10.5, max_lines=3)
+    feedback_label = clean_text(record.get("feedback_label", "ELLINA'S FEEDBACK"))
+    pdf.drawString(47, PAGE_H - 82, feedback_label)
+    feedback_x = max(146, 47 + stringWidth(feedback_label, "Helvetica-Bold", 8) + 16)
+    draw_wrapped(
+        pdf,
+        record["reviewer_note"],
+        feedback_x,
+        PAGE_H - 82,
+        PAGE_W - feedback_x - 47,
+        size=8.6,
+        leading=10.5,
+        max_lines=3,
+    )
 
     left_x, middle_x, right_x = 30, 301, 572
     image_y, image_w, image_h = 70, 240, 385
@@ -315,7 +330,11 @@ def fixture_page(
     original_label = "ORIGINAL - PREVIOUS" if record["request_type"] == "new_brand" and original else "ORIGINAL - V1"
     pdf.drawCentredString(left_x + image_w / 2, 467, original_label if original else "REQUEST - NO PRIOR BOARD")
     pdf.drawCentredString(middle_x + image_w / 2, 467, "UPDATED - V2" if visual_change else "IMPLEMENTED CATALOG DECISION")
-    pdf.drawCentredString(right_x + image_w / 2, 467, "GOOGLE IMAGES REFERENCE")
+    pdf.drawCentredString(
+        right_x + image_w / 2,
+        467,
+        clean_text(reference.get("reference_label", "GOOGLE IMAGES REFERENCE")),
+    )
 
     if original:
         draw_fitted_image(pdf, original, cache_dir, left_x, image_y, image_w, image_h)

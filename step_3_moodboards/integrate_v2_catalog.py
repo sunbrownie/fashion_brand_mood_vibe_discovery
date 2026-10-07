@@ -121,6 +121,12 @@ DESCRIPTION_OVERRIDES = {
         "materials": "resin, enamel, raffia, beads and gold-tone findings",
         "palette": "emerald green, orange, yellow, natural raffia, black and gold",
     },
+    ("jewellery", "Yellow Swallow"): {
+        "aesthetic_keywords": "edgy, gothic, sad-girl, subcultural, Korean indie",
+        "silhouettes": "leather-and-pearl chokers, oxidised chain pendants, crystal crosses, spider brooches, sharp hair clips and blackened floral jewellery",
+        "materials": "oxidised silver, gunmetal, black nickel, smoky crystals, pearls, black leather and distressed cotton",
+        "palette": "black, gunmetal, dirty white, smoky crystal, muted mauve and burgundy",
+    },
     ("bags", "CASABLANCA"): {
         "aesthetic_keywords": "sport-luxe, sunny, witty, retro, graphic",
         "silhouettes": "tennis-racket crossbodies, orange-shaped top handles, travel pouches, circular sport bags and bowling bags",
