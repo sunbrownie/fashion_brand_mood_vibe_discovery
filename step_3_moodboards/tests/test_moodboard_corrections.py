@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import csv
+import hashlib
 import re
 import sys
 import tempfile
@@ -343,7 +344,20 @@ class MoodboardCorrectionTests(unittest.TestCase):
         for entry in entries:
             expected_name = f"v2__{entry['category']}__{slug(entry['brand_name'])}.jpg"
             self.assertEqual(Path(entry["ios_v2_path"]).name, expected_name, entry["review_id"])
-            self.assertTrue((ROOT / "ios" / "BrandMoodboardFinder" / entry["ios_v2_path"]).exists())
+            ios_path = ROOT / "ios" / "BrandMoodboardFinder" / entry["ios_v2_path"]
+            self.assertTrue(ios_path.exists())
+            with Image.open(ios_path) as image:
+                self.assertEqual(image.size, (1024, 1536), entry["review_id"])
+            self.assertEqual(
+                hashlib.sha256(ios_path.read_bytes()).hexdigest(),
+                entry["ios_sha256"],
+                entry["review_id"],
+            )
+            hosted_path = (
+                ROOT / "recommender" / "hosting_bundle" / "data" / "moodboards"
+                / entry["category"] / f"{entry['slug']}.jpg"
+            )
+            self.assertEqual(hosted_path.read_bytes(), ios_path.read_bytes(), entry["review_id"])
             self.assertIn("V1 asset is unchanged", entry["rollback"])
 
     def test_review_reference_links_and_screenshots_cover_every_fixture(self) -> None:

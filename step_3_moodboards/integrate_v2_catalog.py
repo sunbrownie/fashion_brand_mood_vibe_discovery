@@ -23,6 +23,7 @@ HOST = ROOT / "recommender" / "hosting_bundle"
 DATA = HOST / "data"
 APP_ASSETS = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder" / "BrandMoodboards"
 OVERLAY = APP_ASSETS / "v2_catalog_additions.json"
+V2_MANIFEST = APP_ASSETS / "v2_manifest.json"
 MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
 CATEGORY_ORDER = {name: index for index, name in enumerate(("clothes", "shoes", "bags", "jewellery", "swimwear_lingerie"))}
 
@@ -60,6 +61,27 @@ CLUSTER_OVERRIDES = {
     ("shoes", "burton"): 11,
 }
 
+# Centroid similarity is useful for surfacing candidates, but some mixed-product
+# boards need a final visual judgement.  These assignments were reviewed against
+# the accepted V2 image and the stable cluster vocabulary after the descriptions
+# below were rewritten.
+CLUSTER_REVIEW_OVERRIDES = {
+    ("bags", "casablanca"): 4,
+    ("bags", "chopova lowena"): 1,
+    ("bags", "cult gaia"): 4,
+    ("clothes", "girlfriend collective"): 13,
+    ("clothes", "house of sunny"): 1,
+    ("clothes", "karoline vitto"): 2,
+    ("clothes", "rotate birger christensen"): 8,
+    ("clothes", "weekday"): 13,
+    ("shoes", "coperni"): 2,
+    ("shoes", "jacquemus"): 2,
+}
+
+NEW_CLUSTER_ASSIGNMENT_KEYS = {
+    ("shoes", "comme des garcons play"),
+}
+
 INVALID_TASTE_ROWS = {
     ("clothes", name)
     for name in {
@@ -70,6 +92,275 @@ INVALID_TASTE_ROWS = {
         "montce", "natori", "only hearts", "orlebar brown", "peony swimwear", "saxx", "skims",
         "solid and striped", "suboo", "wild lovers",
     }
+}
+
+# Human-reviewed metadata corrections for accepted V2 boards whose original text
+# card no longer described the regenerated image accurately enough.
+DESCRIPTION_OVERRIDES = {
+    ("shoes", "Comme des Garçons PLAY"): {
+        "aesthetic_keywords": "playful, graphic, logo-led, casual, pop-art",
+        "silhouettes": "low-top canvas sneakers, high-top canvas sneakers, retro rubber-toe trainers",
+        "materials": "cotton canvas, rubber foxing, embroidery and printed heart appliqué",
+        "palette": "black, white, cream, navy and signature red",
+    },
+    ("bags", "Chopova Lowena"): {
+        "aesthetic_keywords": "punk, folkloric, grunge, handcrafted, hardware-heavy",
+        "silhouettes": "tartan totes, grommet bucket bags, asymmetric shoulder bags, chain-handle mini bags",
+        "materials": "tartan wool, black leather, mesh, silver chains, studs and charms",
+        "palette": "red, cobalt, forest green, black and silver",
+    },
+    ("clothes", "Made By Minga"): {
+        "aesthetic_keywords": "artisanal, hand-knit, soft, natural, relaxed",
+        "silhouettes": "chunky sweaters, balloon-sleeve cardigans, crochet hats, scarves and embroidered lounge sets",
+        "materials": "alpaca and wool knits, crochet, soft cotton and hand embroidery",
+        "palette": "oatmeal, cream, camel, chocolate brown and dusty blue",
+    },
+    ("jewellery", "Simon Miller"): {
+        "aesthetic_keywords": "playful, resort, novelty, colourful, handcrafted",
+        "silhouettes": "oversized palm-tree drops, fruit earrings, starfish earrings and raffia statement drops",
+        "materials": "resin, enamel, raffia, beads and gold-tone findings",
+        "palette": "emerald green, orange, yellow, natural raffia, black and gold",
+    },
+    ("bags", "CASABLANCA"): {
+        "aesthetic_keywords": "sport-luxe, sunny, witty, retro, graphic",
+        "silhouettes": "tennis-racket crossbodies, orange-shaped top handles, travel pouches, circular sport bags and bowling bags",
+        "materials": "smooth leather, coated canvas, enamel details and polished hardware",
+        "palette": "tennis green, orange, sky blue, white and black",
+    },
+    ("clothes", "Conner Ives"): {
+        "aesthetic_keywords": "upcycled glamour, eclectic Americana, romantic, theatrical, crafted",
+        "silhouettes": "reconstructed slip dresses, printed chiffon gowns, tuxedo shirting, sequinned evening dresses and embellished skirts",
+        "materials": "reclaimed jersey, chiffon, lace, sequins, velvet and leather",
+        "palette": "cream, black, oxblood, antique gold and vintage mixed prints",
+    },
+    ("clothes", "Weekday"): {
+        "aesthetic_keywords": "urban, utilitarian, oversized, grungy, youthful",
+        "silhouettes": "cropped bombers, oversized knitwear, printed mesh tops, cargo skirts, wide trousers and relaxed denim",
+        "materials": "washed denim, technical nylon, wool knit, mesh and cotton twill",
+        "palette": "charcoal, black, olive, stone, washed grey and muted purple",
+    },
+    ("clothes", "Bimba Y Lola"): {
+        "aesthetic_keywords": "polished, eclectic, feminine, modern, softly sculptural",
+        "silhouettes": "leather tailoring, crisp shirts, draped midi dresses, lace skirts, wide trousers and soft knitwear",
+        "materials": "leather, silk-like satin, lace, wool knit and tailored twill",
+        "palette": "chocolate, cream, olive, burgundy, navy, powder blue and blush",
+    },
+    ("shoes", "Coperni"): {
+        "aesthetic_keywords": "futuristic, sleek, sculptural, sensual, high-shine",
+        "silhouettes": "cut-out slingbacks, wedge ankle boots, metallic pumps, transparent wedges, spiral sandals and aerodynamic flats",
+        "materials": "smooth leather, patent leather, mirrored metallic leather, transparent vinyl and technical mesh",
+        "palette": "black, white, silver, transparent crystal and signal red",
+    },
+    ("clothes", "Desigual"): {
+        "aesthetic_keywords": "modern eclectic, artful, colourful, urban, patchworked",
+        "silhouettes": "asymmetric knit dresses, liquid tops, embroidered jackets, patchwork wide jeans, floral cardigans and printed tailoring",
+        "materials": "knit, coated jersey, embroidered wool, denim, faux fur and printed satin",
+        "palette": "black, red, cobalt, burgundy, denim blue and multicolour florals",
+    },
+    ("clothes", "Shangri-la Heritage"): {
+        "aesthetic_keywords": "motorcycle, heritage, rugged, handcrafted, mountain-inspired",
+        "silhouettes": "leather motorcycle jackets, shearling flight jackets, western layers and sturdy workwear",
+        "materials": "aged leather, shearling, waxed cotton, denim and metal hardware",
+        "palette": "tobacco, chocolate brown, black, cream and faded indigo",
+    },
+    ("shoes", "Geox"): {
+        "aesthetic_keywords": "practical, breathable, polished, versatile, comfort-led",
+        "silhouettes": "technical sneakers, waterproof ankle boots, pumps, slip-ons, runners and sport sandals",
+        "materials": "perforated leather, suede, breathable mesh, waterproof technical fabric and rubber soles",
+        "palette": "silver, navy, burgundy, cream, teal and coral",
+    },
+    ("clothes", "No Problemo"): {
+        "aesthetic_keywords": "graphic streetwear, retro sci-fi, skate, playful, utilitarian",
+        "silhouettes": "logo sweatshirts, slogan T-shirts, striped long sleeves, puffers, plaid overshirts and nylon sets",
+        "materials": "cotton fleece, jersey, ripstop nylon, brushed flannel and quilted technical fabric",
+        "palette": "black, forest green, silver, rust, cream and fluorescent yellow",
+    },
+    ("bags", "Marine Serre"): {
+        "aesthetic_keywords": "futuristic, crescent-moon, polished, graphic, upcycled-luxe",
+        "silhouettes": "crescent hobos, moon-print totes, quilted chain bags, metallic shoulder bags and cylindrical top handles",
+        "materials": "smooth leather, moon-print coated canvas, quilted leather, metallic leather and silver hardware",
+        "palette": "black, red, tan, silver and cobalt blue",
+    },
+    ("bags", "Cult Gaia"): {
+        "aesthetic_keywords": "sculptural, resort, surreal, statement, architectural",
+        "silhouettes": "bamboo ark bags, marbled acrylic clutches, pearl sphere bags, shell clutches, curved hobos and crystal pouches",
+        "materials": "bamboo, marbled acrylic, pearlescent resin, gold-tone metal and crystals",
+        "palette": "natural bamboo, emerald, pearl, gold, ivory and crystal",
+    },
+    ("bags", "ALO YOGA"): {
+        "aesthetic_keywords": "quiet luxury, wellness-luxe, refined, minimal, polished",
+        "silhouettes": "leather duffles, drawstring shoulder bags, perforated totes, bowling bags and bucket bags",
+        "materials": "smooth leather, perforated leather, suede, gold hardware and crystal-like charms",
+        "palette": "espresso, cream, black, chocolate brown and warm gold",
+    },
+    ("bags", "Miu Miu"): {
+        "aesthetic_keywords": "playful luxury, colourful, youthful, polished, tactile",
+        "silhouettes": "perforated hobos, compact top handles, matelassé shoulder bags, chain bags and gathered clutches",
+        "materials": "perforated leather, smooth leather, matelassé leather and gold hardware",
+        "palette": "red, cobalt, pink, forest green, yellow and black",
+    },
+    ("bags", "Maje"): {
+        "aesthetic_keywords": "Parisian, feminine, bohemian, polished, tactile",
+        "silhouettes": "fringed M shoulder bags, compact crossbodies, soft hobos and structured mini bags",
+        "materials": "suede, smooth leather, woven leather, fringe and gold hardware",
+        "palette": "black, cognac, cream, burgundy and muted jewel tones",
+    },
+    ("bags", "Marge Sherwood"): {
+        "aesthetic_keywords": "retro-modern, playful, sleek, youthful, sculptural",
+        "silhouettes": "curved shoulder bags, east-west bags, soft hobos, compact top handles and charm-decorated minis",
+        "materials": "glossy leather, suede, grained leather and silver-tone charms",
+        "palette": "black, chocolate, burgundy, cream and bright seasonal colour",
+    },
+    ("clothes", "Girlfriend Collective"): {
+        "aesthetic_keywords": "inclusive activewear, sustainable, clean, warm, everyday",
+        "silhouettes": "leggings, bike shorts, sports bras, unitards, tennis dresses, track sets and relaxed sweats",
+        "materials": "recycled performance knit, stretch jersey, fleece and ribbed technical fabric",
+        "palette": "earthy sage, slate blue, plum, mustard, terracotta, cream and black",
+    },
+    ("clothes", "House Of Sunny"): {
+        "aesthetic_keywords": "playful, retro-futurist, colourful, youthful, knit-led",
+        "silhouettes": "graphic cardigans, swirled knit dresses, cropped knits, halter dresses and flared co-ordinates",
+        "materials": "recycled knit, ribbed jersey, crochet and faux leather",
+        "palette": "sage, cobalt, lilac, chocolate, cream and vivid multicolour patterns",
+    },
+    ("clothes", "Karoline Vitto"): {
+        "aesthetic_keywords": "body-positive, sculptural, sensual, precise, metal-accented",
+        "silhouettes": "cut-out dresses, one wire-frame bra look, curved metal-frame tops and fitted skirts",
+        "materials": "stretch jersey, polished metal wire, lycra and soft tailoring fabric",
+        "palette": "black, espresso, oxblood, silver and one saturated colour accent",
+    },
+    ("clothes", "Obey"): {
+        "aesthetic_keywords": "streetwear, skate, graphic, political, mixed-gender",
+        "silhouettes": "logo T-shirts, graphic sweatshirts, work jackets, loose trousers, caps and casual layers",
+        "materials": "cotton jersey, fleece, canvas, twill and washed denim",
+        "palette": "black, ecru, olive, red, navy and graphic colour",
+    },
+    ("clothes", "Opera Sport"): {
+        "aesthetic_keywords": "Copenhagen cool, sporty, feminine, minimal, contemporary",
+        "silhouettes": "track jackets, drawstring trousers, sleek dresses, striped knits and relaxed tailored layers",
+        "materials": "recycled technical fabric, cotton, wool knit and soft jersey",
+        "palette": "black, cream, navy, burgundy and clear primary accents",
+    },
+    ("shoes", "New Balance"): {
+        "aesthetic_keywords": "technical running, heritage sport, understated, performance, lifestyle",
+        "silhouettes": "grey heritage runners, silver mesh sneakers, sculptural lifestyle trainers, retro court shoes, racing shoes and trail shoes",
+        "materials": "suede, technical mesh, synthetic overlays, rubber and reflective details",
+        "palette": "grey, silver, cream, navy, cobalt and bright racing accents",
+    },
+    ("shoes", "Nike"): {
+        "aesthetic_keywords": "performance, iconic, experimental, street-sport, technical",
+        "silhouettes": "visible-air sneakers, road runners, retro court shoes, basketball shoes, ACG trail shoes and experimental trainers",
+        "materials": "engineered mesh, leather, suede, foam, rubber and technical synthetics",
+        "palette": "black, white, silver, volt, orange and bold team colour",
+    },
+    ("shoes", "Puma"): {
+        "aesthetic_keywords": "motorsport, terrace, retro sport, performance, fashion-forward",
+        "silhouettes": "driving shoes, suede terrace sneakers, retro court shoes, sculptural fashion trainers, runners and football boots",
+        "materials": "suede, leather, technical mesh, synthetic overlays and rubber",
+        "palette": "red, forest green, black, silver, neon yellow and white",
+    },
+    ("shoes", "Burton"): {
+        "aesthetic_keywords": "technical snow sport, rugged, performance, high-support, expressive",
+        "silhouettes": "BOA snowboard boots, lace-up snowboard boots, Step On boots and high-cuff all-mountain boots",
+        "materials": "waterproof technical textile, reinforced synthetic leather, rubber, foam and metal closures",
+        "palette": "black, white, cobalt, rust, forest green and neon accents",
+    },
+    ("bags", "Anya Hindmarch"): {
+        "aesthetic_keywords": "witty, playful, refined, inventive, characterful",
+        "silhouettes": "eyes totes, cereal-box clutches, woven shoppers, structured top handles and embellished evening bags",
+        "materials": "smooth leather, recycled nylon, woven fibres, sequins and appliqué",
+        "palette": "black, red, cobalt, natural straw, metallics and bright novelty colour",
+    },
+    ("shoes", "Arizona Love"): {
+        "aesthetic_keywords": "eclectic, bohemian, handcrafted, colourful, festival",
+        "silhouettes": "bandana sandals, beaded platform sandals, fringed boots, embellished clogs and wrapped slides",
+        "materials": "bandana cotton, suede, leather, beads, embroidery and fringe",
+        "palette": "turquoise, red, tan, black, cream and multicolour textile print",
+    },
+    ("jewellery", "Valentino"): {
+        "aesthetic_keywords": "romantic, polished, logo-led, modern, feminine",
+        "silhouettes": "VLogo earrings, slim cuffs, chain bracelets, heart charms and restrained pendant necklaces",
+        "materials": "gold-tone metal, enamel, crystals and leather details",
+        "palette": "gold, black, red, ivory and pale pink",
+    },
+    ("clothes", "Carne Bollente"): {
+        "aesthetic_keywords": "cheeky, sex-positive, graphic, playful, street-casual",
+        "silhouettes": "embroidered T-shirts, graphic sweatshirts, easy shirts, casual knits and relaxed separates",
+        "materials": "organic cotton jersey, fleece, knit and embroidery",
+        "palette": "ecru, black, red, teal, sky blue and small bright accents",
+    },
+    ("clothes", "Lisa Says Gah"): {
+        "aesthetic_keywords": "retro-romantic, playful, cottage-inspired, trend-led, feminine",
+        "silhouettes": "printed midi dresses, romantic blouses, cardigans, flowing skirts and wide trousers",
+        "materials": "cotton poplin, soft knit, satin, lace and printed viscose",
+        "palette": "earthy neutrals, soft pastels, red, forest green and vintage multicolour print",
+    },
+    ("shoes", "Chopova Lowena"): {
+        "aesthetic_keywords": "punk, rugged, folkloric, eclectic, hardware-heavy",
+        "silhouettes": "tartan platform boots, studded motorcycle boots, trail shoes, clogs and hybrid lace-ups",
+        "materials": "tartan wool, leather, suede, rubber, studs and carabiner hardware",
+        "palette": "brown, black, forest green, red tartan and silver",
+    },
+    ("bags", "Coperni"): {
+        "aesthetic_keywords": "futuristic, architectural, sleek, iconic, minimal",
+        "silhouettes": "Swipe bags, glass-effect bags, compact top handles, curved shoulder bags and sculptural totes",
+        "materials": "smooth leather, metallic leather, transparent acrylic and polished metal hardware",
+        "palette": "black, white, silver, transparent and saturated accent colour",
+    },
+    ("shoes", "Jacquemus"): {
+        "aesthetic_keywords": "sculptural, sensual, playful, Mediterranean, fashion-forward",
+        "silhouettes": "asymmetric sandals, sculptural mules, curved heels, platform shoes and statement boots",
+        "materials": "smooth leather, suede, raffia, transparent vinyl and polished metal",
+        "palette": "cream, black, tan, yellow, red and bright seasonal colour",
+    },
+    ("bags", "JW Pei"): {
+        "aesthetic_keywords": "modern, sculptural, colourful, accessible, playful",
+        "silhouettes": "curved shoulder bags, top-handle minis, geometric totes, woven pouches and bowling bags",
+        "materials": "vegan leather, recycled plastic, woven synthetic material and silver hardware",
+        "palette": "orange, cobalt, lime, silver, black and cream",
+    },
+    ("clothes", "Sandy Liang"): {
+        "aesthetic_keywords": "high-fashion girly, downtown, playful, nostalgic, polished",
+        "silhouettes": "bow dresses, pleated skirts, fitted cardigans, cropped jackets and feminine tailoring",
+        "materials": "satin, wool, cotton, lace, tweed and ribbon details",
+        "palette": "black, navy, cream, ballet pink, red and pale blue",
+    },
+    ("clothes", "Patou"): {
+        "aesthetic_keywords": "Parisian, playful, polished, feminine, modern",
+        "silhouettes": "crisp shirts, voluminous skirts, tailored separates, bow details and clean day dresses",
+        "materials": "cotton poplin, wool, technical taffeta, knit and smooth leather",
+        "palette": "navy, white, black, red and soft pastel accents",
+    },
+    ("clothes", "The Attico"): {
+        "aesthetic_keywords": "sensual, nightlife, sharp, glamorous, street-luxe",
+        "silhouettes": "body-conscious dresses, oversized jackets, cut-out tops, cargo trousers and statement tailoring",
+        "materials": "satin, leather, denim, sequins and technical nylon",
+        "palette": "black, silver, red, acid brights and jewel tones",
+    },
+    ("shoes", "ATP Atelier"): {
+        "aesthetic_keywords": "minimal, refined, Italian, practical, year-round",
+        "silhouettes": "ankle boots, knee boots, loafers, sculptural sandals, mules and clean flats",
+        "materials": "vegetable-tanned leather, suede, rubber and polished metal hardware",
+        "palette": "black, cognac, cream, chocolate and muted seasonal colour",
+    },
+    ("clothes", "Kowtow"): {
+        "aesthetic_keywords": "ethical, organic, architectural, relaxed, modern",
+        "silhouettes": "sculptural dresses, boxy shirts, wide trousers, layered knitwear and utilitarian outerwear",
+        "materials": "organic cotton, denim, wool knit and low-impact natural fibres",
+        "palette": "navy, cobalt, black, cream and grounded seasonal colour",
+    },
+    ("clothes", "McQueen"): {
+        "aesthetic_keywords": "sculptural, romantic, sharp, dramatic, modern",
+        "silhouettes": "precise tailoring, draped dresses, corseted shapes, statement knitwear and engineered outerwear",
+        "materials": "wool, leather, silk, lace, denim and polished metal details",
+        "palette": "black, ivory, oxblood, cobalt, silver and vivid seasonal colour",
+    },
+    ("clothes", "ROTATE Birger Christensen"): {
+        "aesthetic_keywords": "Copenhagen cool, sexy, sharp, playful, fashion-forward",
+        "silhouettes": "oversized jackets with short shorts, rounded-sleeve tops, sleek dresses, wide trousers and modern separates",
+        "materials": "tailored wool, satin, leather, jersey and restrained sequins",
+        "palette": "black, chocolate, burgundy, silver and selective bright accents",
+    },
 }
 
 
@@ -113,9 +404,34 @@ def descriptors(entry: dict) -> dict[str, str]:
     }
 
 
+def normalised_description_overrides() -> dict[tuple[str, str], dict[str, str]]:
+    return {
+        (category, normalised(brand_name)): values
+        for (category, brand_name), values in DESCRIPTION_OVERRIDES.items()
+    }
+
+
+def sync_v2_moodboards_to_host() -> dict[tuple[str, str], str]:
+    """Copy every accepted V2 asset, not only new catalog additions, into the HF bundle."""
+    synced: dict[tuple[str, str], str] = {}
+    entries = json.loads(V2_MANIFEST.read_text(encoding="utf-8"))["entries"]
+    for entry in entries:
+        source = APP_ASSETS / Path(entry["ios_v2_path"]).name
+        if not source.is_file():
+            raise FileNotFoundError(source)
+        slug = entry["slug"]
+        category = entry["category"]
+        target = DATA / "moodboards" / category / f"{slug}.jpg"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, target)
+        synced[(category, normalised(entry["brand_name"]))] = f"moodboards/{category}/{slug}.jpg"
+    return synced
+
+
 def build_catalog() -> tuple[pd.DataFrame, pd.DataFrame]:
     host_path = DATA / "brand_metadata.csv"
     host = pd.read_csv(host_path)
+    synced_v2_paths = sync_v2_moodboards_to_host()
     overlay = json.loads(OVERLAY.read_text(encoding="utf-8"))["entries"]
     existing = {(row.category, normalised(row.brand_name)) for row in host.itertuples()}
     additions = []
@@ -147,6 +463,31 @@ def build_catalog() -> tuple[pd.DataFrame, pd.DataFrame]:
         })
         existing.add(key)
     host = pd.concat([host, pd.DataFrame(additions)], ignore_index=True, sort=False)
+    override_lookup = normalised_description_overrides()
+
+    play_key = ("shoes", normalised("Comme des Garçons PLAY"))
+    host_keys = {(row.category, normalised(row.brand_name)) for row in host.itertuples()}
+    if play_key not in host_keys:
+        source = host[
+            host["category"].eq("shoes")
+            & host["brand_name"].map(normalised).eq(normalised("Comme des Garçons"))
+        ].iloc[0]
+        play_row = source.to_dict()
+        play_row.update({
+            "brand_name": "Comme des Garçons PLAY",
+            "moodboard_path": synced_v2_paths[play_key],
+            "slug": "comme_des_garcons_play",
+            **override_lookup[play_key],
+        })
+        host = pd.concat([host, pd.DataFrame([play_row])], ignore_index=True, sort=False)
+
+    for index, row in host.iterrows():
+        key = (str(row["category"]), normalised(row["brand_name"]))
+        if key in synced_v2_paths:
+            host.at[index, "moodboard_path"] = synced_v2_paths[key]
+        if key in override_lookup:
+            for column, value in override_lookup[key].items():
+                host.at[index, column] = value
     host["_category_order"] = host["category"].map(CATEGORY_ORDER)
     host["_brand_order"] = host["brand_name"].astype(str).str.casefold()
     host = host.sort_values(["_category_order", "_brand_order"]).drop(columns=["_category_order", "_brand_order"])
@@ -184,12 +525,23 @@ def update_source_csvs(host: pd.DataFrame) -> None:
     }
     overlay = json.loads(OVERLAY.read_text(encoding="utf-8"))["entries"]
     overlay_keys = {(entry["category"], normalised(entry["brand_name"])) for entry in overlay}
+    override_keys = set(normalised_description_overrides())
+    managed_keys = overlay_keys | override_keys
     host_lookup = {(row.category, normalised(row.brand_name)): row for row in host.itertuples()}
     for category, path in file_map.items():
         frame = pd.read_csv(path)
         existing = {normalised(value) for value in frame["brand_name"]}
+        for index, source_row in frame.iterrows():
+            brand_key = normalised(source_row["brand_name"])
+            key = (category, brand_key)
+            if key not in managed_keys or key not in host_lookup:
+                continue
+            host_row = host_lookup[key]
+            for column in ("official_website", "aesthetic_keywords", "silhouettes", "materials", "palette"):
+                if column in frame.columns:
+                    frame.at[index, column] = getattr(host_row, column)
         rows = []
-        for overlay_category, brand_key in sorted(overlay_keys):
+        for overlay_category, brand_key in sorted(managed_keys):
             if overlay_category != category or brand_key in existing:
                 continue
             row = host_lookup[(category, brand_key)]
@@ -250,13 +602,35 @@ def update_projection_and_clusters(host: pd.DataFrame, embeddings: np.ndarray) -
     host = host.loc[taste_mask].reset_index(drop=True)
     embeddings = embeddings[taste_mask.to_numpy()]
 
-    old_assignments = pd.read_csv(DATA / "ios_brand_cluster_assignments.csv")
+    old_assignments = pd.read_csv(
+        ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder"
+        / "ClusterData" / "ios_brand_cluster_assignments.csv"
+    )
     summary = pd.read_csv(DATA / "ios_cluster_summary.csv")
     metadata_lookup = key_frame(host)
     old_lookup = {
         (str(row.category), normalised(row.brand_name)): int(row.cluster)
         for row in old_assignments.itertuples()
     }
+    # Preserve the original pre-reassessment assignments across reproducible
+    # reruns.  The first completed run writes this audit before the iOS exports
+    # are refreshed, so it is the stable baseline for later manual review.
+    reassessment_path = (
+        ROOT / "step_3_moodboards" / "review" / "v2_cluster_reassessment.csv"
+    )
+    if reassessment_path.exists():
+        baseline = pd.read_csv(reassessment_path)
+        for baseline_row in baseline.itertuples():
+            baseline_key = (
+                str(baseline_row.category),
+                normalised(str(baseline_row.brand_name)),
+            )
+            if pd.isna(baseline_row.old_cluster):
+                old_lookup.pop(baseline_key, None)
+                continue
+            old_lookup[baseline_key] = int(baseline_row.old_cluster)
+    for new_key in NEW_CLUSTER_ASSIGNMENT_KEYS:
+        old_lookup.pop(new_key, None)
     summary_lookup = {
         (str(row.category), int(row.cluster)): row
         for row in summary.itertuples()
@@ -278,13 +652,54 @@ def update_projection_and_clusters(host: pd.DataFrame, embeddings: np.ndarray) -
 
     assignments = []
     assignment_values: dict[tuple[str, str], int] = {}
+    reassess_keys = set(normalised_description_overrides())
+    reassessment_rows = []
     for row_index, row in host.iterrows():
         key = (row["category"], normalised(row["brand_name"]))
-        cluster = CLUSTER_OVERRIDES.get(key, old_lookup.get(key))
-        if cluster is None:
-            candidates = [(cid, centroid) for (category, cid), centroid in centroids.items() if category == row["category"]]
-            scores = [(cid, float(embeddings[row_index] @ centroid)) for cid, centroid in candidates]
-            cluster = max(scores, key=lambda item: item[1])[0]
+        old_cluster = old_lookup.get(key)
+        candidates = [(cid, centroid) for (category, cid), centroid in centroids.items() if category == row["category"]]
+        scores = sorted(
+            [(cid, float(embeddings[row_index] @ centroid)) for cid, centroid in candidates],
+            key=lambda item: item[1],
+            reverse=True,
+        )
+        best_cluster, best_score = scores[0]
+        old_score = next((score for cid, score in scores if cid == old_cluster), np.nan)
+        margin = best_score - old_score if old_cluster is not None else np.nan
+
+        if key in reassess_keys:
+            if old_cluster is None or (best_cluster != old_cluster and margin >= 0.025):
+                cluster = best_cluster
+                decision = "moved_to_better_centroid" if old_cluster is not None else "new_assignment"
+            else:
+                cluster = old_cluster
+                decision = "kept_existing_cluster"
+            if key in CLUSTER_REVIEW_OVERRIDES:
+                reviewed_cluster = CLUSTER_REVIEW_OVERRIDES[key]
+                if reviewed_cluster != cluster:
+                    cluster = reviewed_cluster
+                    decision = "manual_visual_review_override"
+            reassessment_rows.append({
+                "brand_name": row["brand_name"],
+                "category": row["category"],
+                "old_cluster": old_cluster,
+                "old_cluster_title": (
+                    summary_lookup[(row["category"], old_cluster)].cluster_title
+                    if old_cluster is not None else ""
+                ),
+                "best_cluster": best_cluster,
+                "best_cluster_title": summary_lookup[(row["category"], best_cluster)].cluster_title,
+                "old_centroid_similarity": old_score,
+                "best_centroid_similarity": best_score,
+                "similarity_margin": margin,
+                "adopted_cluster": cluster,
+                "adopted_cluster_title": summary_lookup[(row["category"], cluster)].cluster_title,
+                "decision": decision,
+            })
+        else:
+            cluster = CLUSTER_OVERRIDES.get(key, old_cluster)
+            if cluster is None:
+                cluster = best_cluster
         assignment_values[key] = cluster
         info = summary_lookup[(row["category"], cluster)]
         assignments.append({
@@ -307,6 +722,13 @@ def update_projection_and_clusters(host: pd.DataFrame, embeddings: np.ndarray) -
     assignment_frame = pd.DataFrame(assignments)
     assignment_frame.to_csv(DATA / "ios_brand_cluster_assignments.csv", index=False)
     assignment_frame.to_csv(DATA / "ios_brand_cluster_assignments.tsv", index=False, sep="\t")
+    pd.DataFrame(reassessment_rows).sort_values(
+        ["decision", "similarity_margin"], ascending=[True, False]
+    ).to_csv(
+        reassessment_path,
+        index=False,
+        float_format="%.6f",
+    )
 
     pca_values = PCA(n_components=48, random_state=42).fit_transform(embeddings)
     pca_frame = host[["brand_name", "category"]].copy()

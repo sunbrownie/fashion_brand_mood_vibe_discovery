@@ -31,18 +31,16 @@ DERIVED_ARTIFACTS = (
 
 
 def moodboard_paths() -> list[str]:
-    additions_path = IOS_ROOT / "BrandMoodboards" / "v2_catalog_additions.json"
-    entries = json.loads(additions_path.read_text(encoding="utf-8"))["entries"]
-    if len(entries) != 90:
-        raise ValueError(f"Expected 90 reviewed additions, found {len(entries)}")
+    manifest_path = IOS_ROOT / "BrandMoodboards" / "v2_manifest.json"
+    entries = json.loads(manifest_path.read_text(encoding="utf-8"))["entries"]
+    if len(entries) != 322:
+        raise ValueError(f"Expected 322 accepted V2 moodboards, found {len(entries)}")
 
-    paths: list[str] = []
+    paths: set[str] = set()
     for entry in entries:
         category = entry["category"]
-        asset_name = entry["moodboard_asset_name"]
-        filename = asset_name.split("__", 2)[-1]
-        paths.append(f"data/moodboards/{category}/{filename}")
-    return paths
+        paths.add(f"data/moodboards/{category}/{entry['slug']}.jpg")
+    return sorted(paths)
 
 
 def main() -> None:
@@ -61,10 +59,10 @@ def main() -> None:
         operations=operations,
         commit_message="Integrate reviewed V2 moodboards, catalog and embeddings",
         commit_description=(
-            "Adds 90 reviewed V2 moodboards including New Balance, Nike, Puma and "
-            "Burton shoes; refreshes metadata, text embeddings, clusters, PCA and "
-            "UMAP; and adds separate CLIP moodboard-image embeddings with "
-            "checksummed metadata."
+            "Publishes all 322 accepted V2 moodboards, including corrected existing "
+            "brands and new catalog entries; refreshes reviewed descriptions, text "
+            "embeddings, clusters, PCA and UMAP; and rebuilds separate CLIP "
+            "moodboard-image embeddings with checksummed metadata."
         ),
     )
     print(result.commit_url)

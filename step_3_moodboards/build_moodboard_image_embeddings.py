@@ -52,6 +52,11 @@ def main() -> None:
                     images.append(ImageOps.exif_transpose(opened).convert("RGB"))
             inputs = processor(images=images, return_tensors="pt")
             features = model.get_image_features(**inputs)
+            # transformers 5.x returns the vision-model output here rather than
+            # the tensor returned by 4.x; its pooler_output is already the
+            # projected 512-D CLIP image feature.
+            if not isinstance(features, torch.Tensor):
+                features = features.pooler_output
             features = features / features.norm(dim=1, keepdim=True).clamp_min(1e-12)
             batches.append(features.cpu().numpy().astype("float32"))
             completed = min(start + args.batch_size, len(paths))

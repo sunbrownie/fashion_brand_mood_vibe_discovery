@@ -8,7 +8,7 @@ import json
 import shutil
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageFilter, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,6 +19,7 @@ IOS_PROJECT_ROOT = ROOT / "ios" / "BrandMoodboardFinder"
 IOS_ASSET_ROOT = IOS_PROJECT_ROOT / "BrandMoodboardFinder" / "BrandMoodboards"
 IMAGE_ACTIONS = {"targeted_regenerate", "full_regenerate", "catalog_add_and_generate"}
 CATALOG_VERIFY_REGENERATE_IDS = {"ER-046", "ER-244"}
+IOS_V2_SIZE = (1024, 1536)
 
 
 def sha256(path: Path) -> str:
@@ -52,7 +53,29 @@ def promote_image(source: Path, analysis_path: Path, ios_path: Path) -> None:
     ios_path.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(source, analysis_path)
     with Image.open(source) as image:
-        image.convert("RGB").save(ios_path, format="JPEG", quality=92, optimize=True)
+        rgb = ImageOps.exif_transpose(image).convert("RGB")
+        if rgb.size == IOS_V2_SIZE:
+            exported = rgb
+        else:
+            # Preserve the whole approved collage while exporting a true phone-
+            # portrait asset. A blurred edge-to-edge extension avoids white bars
+            # and keeps every approved product tile visible and undistorted.
+            exported = ImageOps.fit(
+                rgb,
+                IOS_V2_SIZE,
+                method=Image.Resampling.LANCZOS,
+            ).filter(ImageFilter.GaussianBlur(radius=32))
+            foreground = ImageOps.contain(
+                rgb,
+                IOS_V2_SIZE,
+                method=Image.Resampling.LANCZOS,
+            )
+            offset = (
+                (IOS_V2_SIZE[0] - foreground.width) // 2,
+                (IOS_V2_SIZE[1] - foreground.height) // 2,
+            )
+            exported.paste(foreground, offset)
+        exported.save(ios_path, format="JPEG", quality=92, optimize=True)
 
 
 def entry_for(
