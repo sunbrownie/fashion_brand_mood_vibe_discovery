@@ -171,9 +171,9 @@ DESCRIPTION_OVERRIDES = {
     },
     ("clothes", "No Problemo"): {
         "aesthetic_keywords": "graphic streetwear, retro sci-fi, skate, playful, utilitarian",
-        "silhouettes": "logo sweatshirts, slogan T-shirts, striped long sleeves, puffers, plaid overshirts and nylon sets",
-        "materials": "cotton fleece, jersey, ripstop nylon, brushed flannel and quilted technical fabric",
-        "palette": "black, forest green, silver, rust, cream and fluorescent yellow",
+        "silhouettes": "logo short-sleeve T-shirts, logo crewneck sweatshirts, striped long sleeves, ripstop workwear, technical shells, fleece jackets and silver puffers",
+        "materials": "cotton jersey, brushed fleece, ripstop cotton, sherpa fleece and quilted technical fabric",
+        "palette": "black, washed grey, forest green, cream, silver and fluorescent yellow accents",
     },
     ("bags", "Marine Serre"): {
         "aesthetic_keywords": "futuristic, crescent-moon, polished, graphic, upcycled-luxe",

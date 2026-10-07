@@ -7529,13 +7529,13 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/no_problemo__candidate_02.png",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/no_problemo__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__no_problemo.jpg"
       ],
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "A-COLD-WALL*",
-      "self_review_note": "Approved: exact NO PROBLEMO mark is restored on core sweatshirt, tee and long-sleeve, supported by practical streetwear."
+      "self_review_note": "Approved revision: the short-sleeve NO PROBLEMO logo T-shirt is now a large, fully visible hero product alongside the logo sweatshirt, striped long sleeve, green workwear, technical outerwear and silver puffer."
     },
     {
       "review_id": "ER-327",

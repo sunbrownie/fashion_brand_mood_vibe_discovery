@@ -1,17 +1,17 @@
 brand_name,category,old_cluster,old_cluster_title,best_cluster,best_cluster_title,old_centroid_similarity,best_centroid_similarity,similarity_margin,adopted_cluster,adopted_cluster_title,decision
-ATP Atelier,shoes,9.000000,Artisanal Refined Flats,12,Woven Summer Sandals,0.886646,0.907280,0.020635,9,Artisanal Refined Flats,kept_existing_cluster
-Opera Sport,clothes,7.000000,Everyday Soft Tailoring,13,Skate & Sport Streetwear,0.800231,0.820307,0.020076,7,Everyday Soft Tailoring,kept_existing_cluster
+No Problemo,clothes,14.000000,Graphic Tee Streetwear,13,Skate & Sport Streetwear,0.907780,0.932691,0.024911,14,Graphic Tee Streetwear,kept_existing_cluster
+ATP Atelier,shoes,9.000000,Artisanal Refined Flats,12,Woven Summer Sandals,0.886645,0.907280,0.020635,9,Artisanal Refined Flats,kept_existing_cluster
+Opera Sport,clothes,7.000000,Everyday Soft Tailoring,13,Skate & Sport Streetwear,0.800230,0.820306,0.020076,7,Everyday Soft Tailoring,kept_existing_cluster
 Chopova Lowena,shoes,12.000000,Woven Summer Sandals,11,Rugged Outdoor Boots,0.836771,0.856615,0.019844,12,Woven Summer Sandals,kept_existing_cluster
-Marge Sherwood,bags,5.000000,Refined Sculptural Handbags,11,Playful Soft Shoulder Bags,0.926734,0.945009,0.018276,5,Refined Sculptural Handbags,kept_existing_cluster
+Marge Sherwood,bags,5.000000,Refined Sculptural Handbags,11,Playful Soft Shoulder Bags,0.926733,0.945009,0.018276,5,Refined Sculptural Handbags,kept_existing_cluster
 McQueen,clothes,7.000000,Everyday Soft Tailoring,8,Soft Contemporary Dressing,0.939837,0.952378,0.012540,7,Everyday Soft Tailoring,kept_existing_cluster
 Geox,shoes,11.000000,Rugged Outdoor Boots,13,Sport Sandals and Trail,0.931870,0.938711,0.006841,11,Rugged Outdoor Boots,kept_existing_cluster
 Valentino,jewellery,14.000000,Crystal Occasion Jewellery,2,Bold Sculptural Hoops,0.948946,0.954467,0.005521,14,Crystal Occasion Jewellery,kept_existing_cluster
-Carne Bollente,clothes,14.000000,Graphic Tee Streetwear,14,Graphic Tee Streetwear,0.967440,0.967440,0.000000,14,Graphic Tee Streetwear,kept_existing_cluster
-Desigual,clothes,14.000000,Graphic Tee Streetwear,14,Graphic Tee Streetwear,0.955105,0.955105,0.000000,14,Graphic Tee Streetwear,kept_existing_cluster
+Carne Bollente,clothes,14.000000,Graphic Tee Streetwear,14,Graphic Tee Streetwear,0.967554,0.967554,0.000000,14,Graphic Tee Streetwear,kept_existing_cluster
+Desigual,clothes,14.000000,Graphic Tee Streetwear,14,Graphic Tee Streetwear,0.955177,0.955177,0.000000,14,Graphic Tee Streetwear,kept_existing_cluster
 Kowtow,clothes,16.000000,Quiet Minimalism,16,Quiet Minimalism,0.970064,0.970064,0.000000,16,Quiet Minimalism,kept_existing_cluster
 Lisa Says Gah,clothes,1.000000,Romantic Daywear,1,Romantic Daywear,0.940381,0.940381,0.000000,1,Romantic Daywear,kept_existing_cluster
-No Problemo,clothes,14.000000,Graphic Tee Streetwear,14,Graphic Tee Streetwear,0.943168,0.943168,0.000000,14,Graphic Tee Streetwear,kept_existing_cluster
-Obey,clothes,14.000000,Graphic Tee Streetwear,14,Graphic Tee Streetwear,0.951469,0.951469,0.000000,14,Graphic Tee Streetwear,kept_existing_cluster
+Obey,clothes,14.000000,Graphic Tee Streetwear,14,Graphic Tee Streetwear,0.951452,0.951452,0.000000,14,Graphic Tee Streetwear,kept_existing_cluster
 Shangri-la Heritage,clothes,3.000000,Western Casual Denim,3,Western Casual Denim,0.890346,0.890346,0.000000,3,Western Casual Denim,kept_existing_cluster
 The Attico,clothes,1.000000,Romantic Daywear,1,Romantic Daywear,0.941837,0.941837,0.000000,1,Romantic Daywear,kept_existing_cluster
 Arizona Love,shoes,12.000000,Woven Summer Sandals,12,Woven Summer Sandals,0.926409,0.926409,0.000000,12,Woven Summer Sandals,kept_existing_cluster
@@ -23,23 +23,23 @@ Anya Hindmarch,bags,4.000000,Experimental Sculptural Bags,4,Experimental Sculptu
 Coperni,bags,1.000000,Graphic Urban Crossbodies,1,Graphic Urban Crossbodies,0.916134,0.916134,0.000000,1,Graphic Urban Crossbodies,kept_existing_cluster
 JW Pei,bags,13.000000,Minimal Vegan Bags,13,Minimal Vegan Bags,0.932479,0.932479,0.000000,13,Minimal Vegan Bags,kept_existing_cluster
 CASABLANCA,bags,9.000000,Occasion Crystal Pouches,6,Sport Utility Backpacks,0.758236,0.794086,0.035850,4,Experimental Sculptural Bags,manual_visual_review_override
-ROTATE Birger Christensen,clothes,1.000000,Romantic Daywear,14,Graphic Tee Streetwear,0.749910,0.785480,0.035571,8,Soft Contemporary Dressing,manual_visual_review_override
+ROTATE Birger Christensen,clothes,1.000000,Romantic Daywear,14,Graphic Tee Streetwear,0.749910,0.785617,0.035707,8,Soft Contemporary Dressing,manual_visual_review_override
 Jacquemus,shoes,8.000000,Quiet Practical Flats,12,Woven Summer Sandals,0.932538,0.960193,0.027655,2,Sculptural Refined Heels,manual_visual_review_override
-Weekday,clothes,11.000000,Denim Jeans,14,Graphic Tee Streetwear,0.929699,0.948822,0.019122,13,Skate & Sport Streetwear,manual_visual_review_override
+Weekday,clothes,11.000000,Denim Jeans,14,Graphic Tee Streetwear,0.929699,0.948724,0.019024,13,Skate & Sport Streetwear,manual_visual_review_override
 Chopova Lowena,bags,8.000000,Woven Natural Bags,1,Graphic Urban Crossbodies,0.899825,0.917091,0.017266,1,Graphic Urban Crossbodies,manual_visual_review_override
-Karoline Vitto,clothes,14.000000,Graphic Tee Streetwear,2,Polished Leather Tailoring,0.877381,0.892536,0.015155,2,Polished Leather Tailoring,manual_visual_review_override
-Girlfriend Collective,clothes,16.000000,Quiet Minimalism,13,Skate & Sport Streetwear,0.914006,0.917110,0.003104,13,Skate & Sport Streetwear,manual_visual_review_override
-House Of Sunny,clothes,14.000000,Graphic Tee Streetwear,14,Graphic Tee Streetwear,0.941821,0.941821,0.000000,1,Romantic Daywear,manual_visual_review_override
+Karoline Vitto,clothes,14.000000,Graphic Tee Streetwear,2,Polished Leather Tailoring,0.877865,0.892536,0.014671,2,Polished Leather Tailoring,manual_visual_review_override
+Girlfriend Collective,clothes,16.000000,Quiet Minimalism,13,Skate & Sport Streetwear,0.914006,0.917110,0.003103,13,Skate & Sport Streetwear,manual_visual_review_override
+House Of Sunny,clothes,14.000000,Graphic Tee Streetwear,14,Graphic Tee Streetwear,0.941779,0.941779,0.000000,1,Romantic Daywear,manual_visual_review_override
 Coperni,shoes,13.000000,Sport Sandals and Trail,13,Sport Sandals and Trail,0.892439,0.892439,0.000000,2,Sculptural Refined Heels,manual_visual_review_override
 Cult Gaia,bags,8.000000,Woven Natural Bags,8,Woven Natural Bags,0.893534,0.893534,0.000000,4,Experimental Sculptural Bags,manual_visual_review_override
 Sandy Liang,clothes,0.000000,Relaxed Basics,1,Romantic Daywear,0.875802,0.942942,0.067141,1,Romantic Daywear,moved_to_better_centroid
 ALO YOGA,bags,6.000000,Sport Utility Backpacks,12,Polished Structured Totes,0.889346,0.945355,0.056009,12,Polished Structured Totes,moved_to_better_centroid
-Simon Miller,jewellery,6.000000,Minimal Sculptural Jewellery,4,Bohemian Beaded Jewellery,0.837742,0.882490,0.044747,4,Bohemian Beaded Jewellery,moved_to_better_centroid
+Simon Miller,jewellery,6.000000,Minimal Sculptural Jewellery,4,Bohemian Beaded Jewellery,0.837743,0.882490,0.044747,4,Bohemian Beaded Jewellery,moved_to_better_centroid
 Patou,clothes,16.000000,Quiet Minimalism,1,Romantic Daywear,0.903904,0.945945,0.042041,1,Romantic Daywear,moved_to_better_centroid
-Made By Minga,clothes,14.000000,Graphic Tee Streetwear,6,Soft Knitwear,0.880148,0.921389,0.041242,6,Soft Knitwear,moved_to_better_centroid
-Conner Ives,clothes,14.000000,Graphic Tee Streetwear,1,Romantic Daywear,0.870162,0.906874,0.036712,1,Romantic Daywear,moved_to_better_centroid
+Made By Minga,clothes,14.000000,Graphic Tee Streetwear,6,Soft Knitwear,0.880283,0.921389,0.041106,6,Soft Knitwear,moved_to_better_centroid
+Conner Ives,clothes,14.000000,Graphic Tee Streetwear,1,Romantic Daywear,0.869988,0.906873,0.036885,1,Romantic Daywear,moved_to_better_centroid
 Bimba Y Lola,clothes,10.000000,Bohemian Craft,2,Polished Leather Tailoring,0.928534,0.960577,0.032043,2,Polished Leather Tailoring,moved_to_better_centroid
 Miu Miu,bags,9.000000,Occasion Crystal Pouches,12,Polished Structured Totes,0.884890,0.914220,0.029331,12,Polished Structured Totes,moved_to_better_centroid
-Marine Serre,bags,6.000000,Sport Utility Backpacks,1,Graphic Urban Crossbodies,0.844701,0.873173,0.028472,1,Graphic Urban Crossbodies,moved_to_better_centroid
-Maje,bags,8.000000,Woven Natural Bags,14,Feminine Structured Shoulder Bags,0.928926,0.955878,0.026951,14,Feminine Structured Shoulder Bags,moved_to_better_centroid
+Marine Serre,bags,6.000000,Sport Utility Backpacks,1,Graphic Urban Crossbodies,0.844701,0.873172,0.028472,1,Graphic Urban Crossbodies,moved_to_better_centroid
+Maje,bags,8.000000,Woven Natural Bags,14,Feminine Structured Shoulder Bags,0.928927,0.955878,0.026951,14,Feminine Structured Shoulder Bags,moved_to_better_centroid
 Comme des Garçons PLAY,shoes,,,5,Graphic Chunky Footwear,,0.932973,,5,Graphic Chunky Footwear,new_assignment

@@ -3857,6 +3857,13 @@
       "status": "approved",
       "notes": "Approved category expansion: eight distinct snowboard boots with varied closure, cuff, sole and color construction.",
       "reviewed_at": "2026-10-05T22:33:15.846928+00:00"
+    },
+    {
+      "review_id": "ER-326",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/no_problemo__candidate_03.png",
+      "status": "approved",
+      "notes": "Approved revision: the short-sleeve NO PROBLEMO logo T-shirt is now a large, fully visible hero product alongside the logo sweatshirt, striped long sleeve, green workwear, technical outerwear and silver puffer.",
+      "reviewed_at": "2026-10-07T10:20:40+00:00"
     }
   ]
 }

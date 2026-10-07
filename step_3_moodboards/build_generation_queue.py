@@ -407,11 +407,11 @@ SPECIAL_PROMPT_OVERRIDES = {
     ),
     ("clothes", "No Problemo"): (
         "Create a vertical six-panel No Problemo clothing moodboard with playful London streetwear and retro sci-fi "
-        "outsider energy. Show six distinct fully clothed adult looks or garments: black brushed-fleece sweatshirt, "
-        "striped long-sleeve tee, forest ripstop work-pant look, silver down puffer, plaid overshirt and an olive nylon "
-        "jacket with matching trousers. Use black, forest green, silver, rust, cream and fluorescent yellow with one "
-        "small abstract alien motif only. Do not attempt the brand slogan or any generated lettering. No hats, shoes, "
-        "bags, props, repeated sweats, text, logos, repeated model or alternate view."
+        "outsider energy. Make a full short-sleeve T-shirt a prominent hero product, shown clearly from neckline to hem, "
+        "with the exact readable NO PROBLEMO chest mark. Also show a distinct black NO PROBLEMO crewneck sweatshirt, "
+        "striped long-sleeve tee, forest ripstop workwear, technical outerwear and a silver down puffer. Use black, "
+        "washed grey, forest green, cream, silver and restrained fluorescent yellow. No hats, shoes, bags, repeated "
+        "garments, repeated people, alternate crops or lettering beyond the exact NO PROBLEMO product mark."
     ),
     ("clothes", "Oner Active"): (
         "Create a vertical six-panel Oner Active womenswear moodboard focused on confident strength training and "
