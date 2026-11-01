@@ -31,8 +31,8 @@ DERIVED_ARTIFACTS = (
 def moodboard_paths() -> list[str]:
     manifest_path = IOS_ROOT / "BrandMoodboards" / "v2_manifest.json"
     entries = json.loads(manifest_path.read_text(encoding="utf-8"))["entries"]
-    if len(entries) != 359:
-        raise ValueError(f"Expected 359 accepted V2 moodboards, found {len(entries)}")
+    if len(entries) != 370:
+        raise ValueError(f"Expected 370 accepted V2 moodboards, found {len(entries)}")
 
     paths: set[str] = set()
     for entry in entries:
@@ -55,10 +55,10 @@ def main() -> None:
         repo_id=REPO_ID,
         repo_type="space",
         operations=operations,
-        commit_message="Integrate reviewed V2 moodboards, catalog and embeddings",
+        commit_message="Add requested shoe boards and latest refinements",
         commit_description=(
-            "Publishes all 359 accepted V2 moodboards, including corrected existing "
-            "brands and new catalog entries; refreshes reviewed descriptions, text "
+            "Publishes all 370 accepted V2 moodboards, including the requested shoe "
+            "brands and latest refinements; refreshes reviewed descriptions, text "
             "embeddings, clusters, PCA and UMAP. Moodboards remain illustrative and "
             "the runtime recommendation path remains text-embedding based."
         ),
