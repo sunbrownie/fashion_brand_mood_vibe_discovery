@@ -1,0 +1,12 @@
+{
+  "review_id": "ER-403",
+  "brand_name": "Ulla Johnson",
+  "category": "bags",
+  "candidate": 2,
+  "model": "built-in image_gen",
+  "prompt": "Use case: product-mockup. Asset type: portrait handbag moodboard for the Bags N-Z review and iOS app. Create a polished vertical 2:3 editorial product moodboard accurately capturing the current Ulla Johnson range: artisanal New York luxury, sculptural handwork, rich colour and natural texture with refined Italian construction. Show six distinct products: a Sierra-brown leather Adria-style tote with hand-shaped wave panels; a Dove-grey suede wave shoulder bag; an olive handwoven Italian-leather Charlotte-style shoulder bag with antique brass; an embossed chestnut or leopard Paloma-style flap bag with long tassels; a natural raffia scalloped drawstring pouchette; and a small orchid, rose or gold leather wave crossbody. Add only woven-leather and brass-tassel detail crops. Use a warm ivory studio collage with ochre, olive, claret, orchid and sea-glass accents, no people. Show Adria wave construction, structured and soft forms, and rich colour variation. No typography, logos, labels, captions or watermark. Avoid six brown bucket bags, generic macrame blobs, an all-tan palette, beach-only styling, repeated silhouettes and duplicate colourways.",
+  "sha256": "7af9ded04f344651140510ff676ee5ed5741db124209772b5b6626ee8ac85f3e",
+  "status": "candidate_generated",
+  "refinement_pass": "2026-11-01 current official collection audit",
+  "refinement_notes": "Replaced the generic all-brown bohemian set with Adria wave construction, Charlotte woven leather, Paloma tassels, raffia, brass, and a broader current colour range."
+}

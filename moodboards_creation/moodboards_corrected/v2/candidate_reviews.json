@@ -4144,6 +4144,27 @@
       "status": "approved",
       "notes": "Approved refined Bags N-Z board after Google-reference visual audit; stronger brand-specific silhouettes and reduced generic filler.",
       "reviewed_at": "2026-11-01T17:52:45.132085+00:00"
+    },
+    {
+      "review_id": "ER-377",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/the_attico__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved after current official-collection audit: the asymmetric La Passeggiata day-bag family, inverted seams, tubular handles, varied sizes and city colour replace generic nightlife minis.",
+      "reviewed_at": "2026-11-01T19:41:16+00:00"
+    },
+    {
+      "review_id": "ER-382",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/alexander_wang__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved after current official-collection audit: one Rocco, studded Ricco flap, Siren shoulder, crystal mesh, nylon utility and soft tote create a distinct current range without duplicates or text.",
+      "reviewed_at": "2026-11-01T19:41:16+00:00"
+    },
+    {
+      "review_id": "ER-403",
+      "candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/ulla_johnson__candidate_02.png",
+      "status": "approved",
+      "notes": "Approved after current official-collection audit: Adria wave panels, Charlotte woven leather, Paloma tassels, raffia and varied colour replace the generic all-brown bohemian treatment.",
+      "reviewed_at": "2026-11-01T19:41:16+00:00"
     }
   ]
 }

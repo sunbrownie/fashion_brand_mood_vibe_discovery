@@ -1,0 +1,12 @@
+{
+  "review_id": "ER-382",
+  "brand_name": "Alexander Wang",
+  "category": "bags",
+  "candidate": 2,
+  "model": "built-in image_gen",
+  "prompt": "Use case: product-mockup. Asset type: portrait handbag moodboard for the Bags N-Z review and iOS app. Create a polished vertical 2:3 editorial product moodboard accurately capturing the current Alexander Wang identity: downtown New York edge, industrial hardware, compact utility and after-dark polish anchored in trap-stud construction. Show six distinct products: one black pebbled-leather Rocco-style mini duffle with a trap-stud base; one compact black Ricco-style flap crossbody densely covered in geometric trap studs; one elongated curved Siren-style shoulder bag in oxblood; one soft silver crystal-mesh Heiress-style pouch; one washed-black nylon utility crossbody with webbing and buckles; and one cocoa or charcoal sculpted soft tote. Add only trap-stud-base and industrial zipper-buckle detail crops. Use concrete-grey, brushed-steel and black studio paper, no people. Every bag must be distinct. No typography, logos, labels, captions or watermark. Avoid repeating the Rocco, generic quilting, anonymous metallic crackle baguettes, rhinestone kiss-lock clutches, repeated products and duplicate colourways.",
+  "sha256": "6cb0ad4362375967a8f1b7a5e6779fce4cbf2a1df74c1adcac9334b97c9d9eeb",
+  "status": "candidate_generated",
+  "refinement_pass": "2026-11-01 current official collection audit",
+  "refinement_notes": "Replaced repeated Rocco and generic quilted/metallic bags with one Rocco, a studded Ricco flap, Siren shoulder, crystal mesh, nylon utility, and sculpted tote."
+}
