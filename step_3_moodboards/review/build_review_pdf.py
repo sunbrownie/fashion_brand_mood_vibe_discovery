@@ -88,18 +88,6 @@ def updated_moodboards(root: Path, record: dict) -> list[Path]:
     return [ios_root / value for value in record.get("ios_v2_paths", [])]
 
 
-def previous_candidate_moodboard(root: Path, record: dict) -> Path | None:
-    explicit_previous = record.get("previous_candidate_path")
-    if explicit_previous:
-        previous = root / explicit_previous
-        return previous if previous.exists() else None
-    approved = record.get("approved_candidate_path")
-    if not approved or "__candidate_02" not in approved:
-        return None
-    previous = root / approved.replace("__candidate_02", "__candidate_01")
-    return previous if previous.exists() else None
-
-
 def reference_sources(root: Path) -> dict[str, dict]:
     path = root / "step_3_moodboards" / "review" / "reference_sources.json"
     records = json.loads(path.read_text(encoding="utf-8"))["records"]
@@ -286,7 +274,7 @@ def fixture_page(
     footer_label: str,
 ) -> None:
     if record["request_type"] in {"new_brand", "new_brand_category"}:
-        original = previous_candidate_moodboard(root, record)
+        original = None
     else:
         original = original_moodboard(root, record)
     updated = updated_moodboards(root, record)

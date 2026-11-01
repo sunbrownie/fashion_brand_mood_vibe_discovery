@@ -250,16 +250,14 @@ class MoodboardCorrectionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
             original = root / "moodboards" / "clothes" / "acne_studios.jpg"
-            candidate = root / "moodboards_corrected" / "v2" / "clothes" / "acne_studios__candidate_01.png"
             approved = root / "moodboards_corrected" / "v2" / "clothes" / "acne_studios.png"
-            for path in (original, candidate):
-                path.parent.mkdir(parents=True, exist_ok=True)
-                path.write_bytes(b"candidate" if "candidate" in path.name else b"original")
+            original.parent.mkdir(parents=True, exist_ok=True)
+            original.write_bytes(b"original")
             self.assertEqual(find_moodboard_file(root / "moodboards", "clothes", "Acne Studios"), original)
             approved.write_bytes(b"approved")
             self.assertEqual(find_moodboard_file(root / "moodboards", "clothes", "Acne Studios"), approved)
 
-    def test_corrected_candidate_write_is_non_destructive(self) -> None:
+    def test_corrected_write_replaces_canonical_latest(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
             path = save_corrected_moodboard(
@@ -273,19 +271,19 @@ class MoodboardCorrectionTests(unittest.TestCase):
                 root=root,
             )
             self.assertTrue(path.exists())
-            sidecar = json.loads(path.with_suffix(".png.json").read_text(encoding="utf-8"))
-            self.assertEqual(sidecar["status"], "candidate_generated")
-            with self.assertRaises(FileExistsError):
-                save_corrected_moodboard(
-                    b"new-bytes",
-                    "image/png",
-                    "bags",
-                    "AMI Paris",
-                    candidate=1,
-                    prompt="test prompt",
-                    review_id="ER-test",
-                    root=root,
-                )
+            self.assertEqual(path.name, "ami_paris.png")
+            replacement = save_corrected_moodboard(
+                b"new-bytes",
+                "image/png",
+                "bags",
+                "AMI Paris",
+                candidate=2,
+                prompt="test prompt",
+                review_id="ER-test",
+                root=root,
+            )
+            self.assertEqual(replacement, path)
+            self.assertEqual(path.read_bytes(), b"new-bytes")
 
     def test_all_ellina_fixtures_are_resolved(self) -> None:
         records = json.loads(

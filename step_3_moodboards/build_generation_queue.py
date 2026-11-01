@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a deterministic, resumable image-generation queue from Ellina's manifest."""
+"""Build a deterministic latest-only image-generation plan from Ellina's manifest."""
 
 from __future__ import annotations
 
@@ -19,8 +19,7 @@ from moodboard_helpers import brands_df, moodboard_prompt, slugify  # noqa: E402
 
 
 DEFAULT_MANIFEST = ROOT / "step_3_moodboards" / "review" / "ellina_correction_manifest.json"
-DEFAULT_OUTPUT = ROOT / "moodboards_creation" / "moodboards_corrected" / "v2" / "generation_queue.json"
-DEFAULT_REVIEWS = ROOT / "moodboards_creation" / "moodboards_corrected" / "v2" / "candidate_reviews.json"
+DEFAULT_OUTPUT = ROOT / "tmp" / "moodboard_generation_plan.json"
 IMAGE_ACTIONS = {"full_regenerate", "targeted_regenerate", "catalog_add_and_generate"}
 CATALOG_VERIFY_REGENERATE_IDS = {"ER-046", "ER-244"}
 
@@ -1256,17 +1255,6 @@ def model_safe_prompt(brand_name: str, category: str, reviewer_note: str) -> str
     )
 
 
-def latest_reviews(path: Path) -> dict[str, dict]:
-    if not path.exists():
-        return {}
-    payload = json.loads(path.read_text(encoding="utf-8"))
-    reviews = payload.get("reviews", payload if isinstance(payload, list) else [])
-    latest = {}
-    for review in reviews:
-        latest[review["review_id"]] = review
-    return latest
-
-
 def apply_brand_direction(
     prompt: str,
     category: str,
@@ -1328,14 +1316,8 @@ def retry_prompt(
     return prompt + " " + " ".join(additions)
 
 
-def next_candidate_path(root: Path, category: str, brand_name: str) -> Path:
-    folder = root / category
-    slug = slugify(brand_name)
-    for number in range(1, 100):
-        stem = folder / f"{slug}__candidate_{number:02d}"
-        if not any(stem.with_suffix(ext).exists() for ext in (".png", ".jpg", ".jpeg", ".webp")):
-            return stem.with_suffix(".png")
-    raise RuntimeError(f"No candidate slot available for {category}/{slug}")
+def canonical_output_path(root: Path, category: str, brand_name: str) -> Path:
+    return root / category / f"{slugify(brand_name)}.png"
 
 
 def needs_generation(record: dict) -> bool:
@@ -1351,15 +1333,11 @@ def main() -> None:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--category", choices=["clothes", "shoes", "bags", "jewellery"])
     parser.add_argument("--request-type", choices=["existing_board", "new_brand"])
-    parser.add_argument("--include-existing-candidates", action="store_true")
-    parser.add_argument("--reviews", type=Path, default=DEFAULT_REVIEWS)
-    parser.add_argument("--retry-rejected", action="store_true")
     parser.add_argument("--safe-output", action="store_true")
     parser.add_argument("--review-id", action="append", default=[])
     args = parser.parse_args()
 
     payload = json.loads(args.manifest.read_text(encoding="utf-8"))
-    reviews = latest_reviews(args.reviews)
     corrected_root = ROOT / "moodboards_creation" / "moodboards_corrected" / "v2"
     queue = []
     for record in payload["records"]:
@@ -1373,16 +1351,11 @@ def main() -> None:
             continue
         if args.review_id and record["review_id"] not in set(args.review_id):
             continue
-        review = reviews.get(record["review_id"])
-        if args.retry_rejected and (not review or review.get("status") != "rejected"):
-            continue
-        candidate_path = next_candidate_path(
+        output_path = canonical_output_path(
             corrected_root,
             record["category"],
             record["brand_name"],
         )
-        if not args.include_existing_candidates and candidate_path.stem.endswith("_02"):
-            continue
         row = existing_row(record["category"], record["brand_name"])
         special_prompt = SPECIAL_PROMPT_OVERRIDES.get((record["category"], record["brand_name"]))
         if args.safe_output:
@@ -1404,7 +1377,7 @@ def main() -> None:
         prompt = retry_prompt(
             moderation_safe_prompt(base_prompt),
             record["category"],
-            review,
+            None,
             args.safe_output,
             record["reviewer_note"],
         )
@@ -1417,13 +1390,13 @@ def main() -> None:
                 "recommended_action": record["recommended_action"],
                 "reviewer_note": record["reviewer_note"],
                 "prompt": prompt,
-                "candidate_path": str(candidate_path.relative_to(ROOT)),
+                "output_path": str(output_path.relative_to(ROOT)),
             }
         )
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps({"schema_version": 1, "queue": queue}, indent=2) + "\n", encoding="utf-8")
-    print(f"Wrote {len(queue)} queued generations to {args.output}")
+    print(f"Wrote {len(queue)} latest-only generation plans to {args.output}")
 
 
 if __name__ == "__main__":

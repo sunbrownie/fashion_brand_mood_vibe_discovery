@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "source_review_pdf": "/Users/katjazilorina/Downloads/done ellina_complete_v2_review.pdf",
+  "selection_rule": "Regenerate every page that did not receive a green approval highlight. Green pages remain unchanged.",
+  "records": [
+    {
+      "review_id": "ER-005", "source_page": 5, "brand_name": "AMY LYNN", "category": "clothes", "variant": null,
+      "round2_feedback": "2 repeated images", "review_status": "pink comment",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/clothes/amy_lynn.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/clothes/amy_lynn.png", "reference_path": "step_3_moodboards/review/reference_screenshots/clothes__amy_lynn.jpg", "official_url": "https://www.amylynn.co.uk/collections/all-products",
+      "generation_prompt": "2:3 product moodboard; eight distinct Amy Lynn garments; youthful hip London party-to-day styling; polka dots, gingham, silver, ribbons, heart detail, balloon trousers, lace and sequins; no people, text, logos or repeats."
+    },
+    {
+      "review_id": "ER-052", "source_page": 52, "brand_name": "Jacquemus", "category": "clothes", "variant": null,
+      "round2_feedback": "all images have the same silhouette", "review_status": "pink comment",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/clothes/jacquemus.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/clothes/jacquemus.png", "reference_path": "step_3_moodboards/review/reference_screenshots/clothes__jacquemus.jpg", "official_url": "https://www.jacquemus.com/en_us/ready-to-wear-all-women",
+      "generation_prompt": "2:3 product moodboard; varied Jacquemus dresses, cardigan, polo, flannel set, bustier, denim and oversized coat; Mediterranean palette; explicitly avoid repeating one tailored-trouser silhouette."
+    },
+    {
+      "review_id": "ER-058", "source_page": 58, "brand_name": "Karoline Vitto", "category": "clothes", "variant": null,
+      "round2_feedback": "left bottom image - weird proportion", "review_status": "pink comment",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/clothes/karoline_vitto.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/clothes/karoline_vitto.png", "reference_path": "step_3_moodboards/review/reference_screenshots/clothes__karoline_vitto.jpg", "official_url": "https://karolinevitto.com/collections/dresses",
+      "generation_prompt": "2:3 product moodboard; distinct sculpting jersey dresses in black, pink, red, cobalt, cream and plum with polished metal hardware; natural garment construction and proportions; no distortion."
+    },
+    {
+      "review_id": "ER-091", "source_page": 91, "brand_name": "Montane", "category": "clothes", "variant": null,
+      "round2_feedback": "pants in the right bottom corner - redo", "review_status": "pink comment",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/clothes/montane.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/clothes/montane.png", "reference_path": "step_3_moodboards/review/reference_screenshots/clothes__montane.jpg", "official_url": "https://montane.com/collections/hiking-jackets",
+      "generation_prompt": "2:3 technical product moodboard; distinct authentic mountain shells, insulation, technical trousers, seam/zip detail and packable jacket; no generic fashion outfit or repeats."
+    },
+    {
+      "review_id": "ER-137", "source_page": 137, "brand_name": "Stussy", "category": "clothes", "variant": null,
+      "round2_feedback": "still off vibe", "review_status": "pink comment",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/clothes/stussy.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/clothes/stussy.png", "reference_path": "step_3_moodboards/review/reference_screenshots/clothes__stussy.jpg", "official_url": "https://www.stussy.com/blogs/news/stussy-spring-26-collection",
+      "generation_prompt": "2:3 product moodboard; authentic California surf-skate workwear: graphic tee, wave hoodie, canvas work jacket, denim shirt, quilted jacket, baseball jersey, track pant and leather garage jacket; no floral or preppy pieces."
+    },
+    {
+      "review_id": "ER-139", "source_page": 139, "brand_name": "Supreme", "category": "clothes", "variant": null,
+      "round2_feedback": "add supreme logo to the hoodie", "review_status": "pink comment",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/clothes/supreme.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/clothes/supreme.png", "reference_path": "step_3_moodboards/review/reference_screenshots/clothes__supreme.jpg", "official_url": "https://supreme.com",
+      "generation_prompt": "2:3 product moodboard; authentic New York skate-shop drop with eight distinct pieces; exact white Supreme word inside one red box logo on one red hoodie only; no other text or repeats."
+    },
+    {
+      "review_id": "ER-169", "source_page": 169, "brand_name": "Celine", "category": "shoes", "variant": null,
+      "round2_feedback": "No green approval in re-review.", "review_status": "unmarked / not approved",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/shoes/celine.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/shoes/celine.png", "reference_path": "step_3_moodboards/review/reference_screenshots/shoes__celine.jpg", "official_url": "https://www.celine.com/en-gb/women/shoes/sneakers/",
+      "generation_prompt": "2:3 luxury footwear moodboard; trainer-dominant Celine direction with nine distinct current low, flat, racer, runner and high-top sneakers; no loafers, sandals, pumps or boots."
+    },
+    {
+      "review_id": "ER-180", "source_page": 180, "brand_name": "Comme des Garçons", "category": "shoes", "variant": "mainline / avant-garde",
+      "round2_feedback": "make into 2 boards. one for PLAY", "review_status": "pink comment",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/shoes/comme_des_garcons.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/shoes/comme_des_garcons.png", "reference_path": "step_3_moodboards/review/reference_screenshots/shoes__comme_des_garcons.jpg", "official_url": "https://www.comme-des-garcons.com/",
+      "generation_prompt": "2:3 mainline-only avant-garde footwear moodboard; eight distinct radical sculptural platforms, asymmetric boots, split toes, deconstruction and oversized volumes; no PLAY hearts or canvas sneakers."
+    },
+    {
+      "review_id": "ER-180", "source_page": 180, "brand_name": "Comme des Garçons PLAY", "category": "shoes", "variant": "PLAY",
+      "round2_feedback": "make into 2 boards. one for PLAY", "review_status": "pink comment",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/shoes/comme_des_garcons_play.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/shoes/comme_des_garcons_play.png", "reference_path": "step_3_moodboards/review/reference_screenshots/shoes__comme_des_garcons.jpg", "official_url": "https://www.comme-des-garcons.com/",
+      "generation_prompt": "2:3 PLAY-only footwear moodboard; eight distinct classic canvas low/high sneakers in black, white, red, natural, polka dots and stripes; consistent red heart-with-eyes emblem; no avant-garde platforms."
+    },
+    {
+      "review_id": "ER-187", "source_page": 187, "brand_name": "Ganni", "category": "shoes", "variant": null,
+      "round2_feedback": "same comment as before", "review_status": "pink comment",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/shoes/ganni.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/shoes/ganni.png", "reference_path": "step_3_moodboards/review/reference_screenshots/shoes__ganni.jpg", "official_url": "https://www.ganni.com/us/shoes/",
+      "generation_prompt": "2:3 product moodboard; distinct Ganni red buckle ballerina, olive lace-up flat, western boots, cleated Chelsea, studded clog, sporty ballerina and court sneaker; no other-brand text."
+    },
+    {
+      "review_id": "ER-231", "source_page": 231, "brand_name": "Acne Studios", "category": "bags", "variant": null,
+      "round2_feedback": "Not approved in re-review (non-green).", "review_status": "yellow / not approved",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/bags/acne_studios.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/bags/acne_studios.png", "reference_path": "step_3_moodboards/review/reference_screenshots/bags__acne_studios.jpg", "official_url": "https://www.acnestudios.com/emea/ae/en/bags/",
+      "generation_prompt": "2:3 product moodboard; current Acne Camero, Multipocket and Musubi families in black, burgundy, blue patchwork, mustard, cognac, berry and silver; avoid anonymous beige/brown bags."
+    },
+    {
+      "review_id": "ER-238", "source_page": 238, "brand_name": "Casablanca", "category": "bags", "variant": null,
+      "round2_feedback": "Not approved in re-review (non-green).", "review_status": "yellow / not approved",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/bags/casablanca.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/bags/casablanca.png", "reference_path": "step_3_moodboards/review/reference_screenshots/bags__casablanca.jpg", "official_url": "https://casablancaparis.com/en-fr/collections/accessories-womens",
+      "generation_prompt": "2:3 product moodboard; current Casablanca monogram, biker, raver, banana novelty and striped crochet bags; modern sporty resort wit; no sparkly boho styling."
+    },
+    {
+      "review_id": "ER-240", "source_page": 240, "brand_name": "Chan Luu", "category": "bags", "variant": null,
+      "round2_feedback": "off vibe completely", "review_status": "pink comment",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/bags/chan_luu.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/bags/chan_luu.png", "reference_path": "step_3_moodboards/review/reference_screenshots/bags__chan_luu.jpg", "official_url": "https://chanluu.com/collections/bags",
+      "generation_prompt": "2:3 product moodboard; exact handcrafted Chan Luu fishscale sequin, mirror lantern, fisherman-knit lantern, recycled market and mesh-net bags; cool-girl artisan energy, not generic boho."
+    },
+    {
+      "review_id": "ER-243", "source_page": 243, "brand_name": "Chrome Hearts", "category": "bags", "variant": null,
+      "round2_feedback": "Not approved in re-review (non-green).", "review_status": "yellow / not approved",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/bags/chrome_hearts.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/bags/chrome_hearts.png", "reference_path": "step_3_moodboards/review/reference_screenshots/bags__chrome_hearts.jpg", "official_url": "https://www.chromehearts.com/",
+      "generation_prompt": "2:3 product moodboard; eight distinct black leather bags with unmistakable sterling gothic crosses, dagger clasps and zipper pulls, scrollwork and hand tooling; no anonymous all-black forms."
+    },
+    {
+      "review_id": "ER-256", "source_page": 256, "brand_name": "Ganni", "category": "bags", "variant": null,
+      "round2_feedback": "Not approved in re-review (non-green).", "review_status": "yellow / not approved",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/bags/ganni.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/bags/ganni.png", "reference_path": "step_3_moodboards/review/reference_screenshots/bags__ganni.jpg", "official_url": "https://www.ganni.com/en/bou-bag/",
+      "generation_prompt": "2:3 product moodboard; signature Ganni Bou/Very Bou family with sculptural hexagonal forms, twisted handles and butterfly hardware in black, burgundy, leopard, red, green, brown croc and silver."
+    },
+    {
+      "review_id": "ER-299", "source_page": 299, "brand_name": "Good American", "category": "clothes", "variant": null,
+      "round2_feedback": "too plus size??", "review_status": "yellow comment",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/clothes/good_american.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/clothes/good_american.png", "reference_path": "step_3_moodboards/review/reference_screenshots/clothes__good_american.jpg", "official_url": "https://www.goodamerican.com/collections/clothing",
+      "generation_prompt": "2:3 inclusive campaign moodboard; adult models across petite, mid-size and plus-size ranges in distinct jeans, denim dress, tailoring, leather, layered tank and satin dress; equal representation, not all plus-size."
+    },
+    {
+      "review_id": "ER-327", "source_page": 327, "brand_name": "Oner Active", "category": "clothes", "variant": null,
+      "round2_feedback": "Not approved in re-review (non-green).", "review_status": "yellow / not approved",
+      "round1_path": "tmp/pdfs/round2_inputs/round1/clothes/oner_active.png", "updated_path": "moodboards_creation/moodboards_corrected/v2/clothes/oner_active.png", "reference_path": "step_3_moodboards/review/reference_screenshots/clothes__oner_active.jpg", "official_url": "https://www.oneractive.com/products/",
+      "generation_prompt": "2:3 product moodboard; distinct Oner Active seamless leggings, sports bra, zip jacket, cycling shorts, long-sleeve top, wide sweats, cropped hoodie and ribbed fabric detail in current muted tonal palette."
+    }
+  ]
+}

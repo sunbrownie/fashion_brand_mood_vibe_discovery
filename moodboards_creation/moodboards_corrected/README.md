@@ -4,13 +4,11 @@ This folder keeps patched moodboards separate from the original generated set.
 
 ## V2 review workflow
 
-- Candidate files live under `v2/<category>/<slug>__candidate_XX.png` and are never loaded by the app or analysis pipeline.
-- Automated checks are written to `v2/qc_report.json`. They screen dimensions, aspect ratio, possible repeated regions, and OCR when an OCR executable is available.
-- Human review remains mandatory for brand vibe, category accuracy, product authenticity, duplicate products, and accidental text.
-- Only an approved file renamed to `v2/<category>/<slug>.png` or `.jpg` is eligible for the corrected-first resolver in `helpers/source_helpers.py`.
-- Hosted and iOS-bundled copies must be updated together after approval. Candidate files must never be copied directly into deployment folders.
-
-Current pilot candidates are listed in `v2/pilot_candidates.json`. They are not deployed.
+- The current tree stores one canonical latest board at `v2/<category>/<slug>.png`.
+- Automated checks may screen dimensions, aspect ratio, possible repeated regions, and OCR, but human review remains mandatory for brand vibe, category accuracy, product authenticity, duplicate products, and accidental text.
+- A reviewed replacement overwrites the canonical V2 file; the prior committed version remains recoverable from Git history.
+- Hosted and iOS-bundled copies must be regenerated together from the canonical file after approval.
+- Candidate-numbered files, candidate sidecars, queues, and candidate-review logs are not retained in the repository.
 
 ## APPARIS
 

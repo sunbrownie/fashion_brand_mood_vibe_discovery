@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_on": "2026-10-07",
+  "generated_on": "2026-11-01",
   "reviewer": "Ellina",
   "source_directory": "/Users/katjazilorina/Downloads/ellina_review",
   "policy": {
@@ -14,7 +14,9 @@
       "Vary collage devices to suit the brand. Do not default every board to bean shapes.",
       "Use interiors, streets, landscapes, and props only when they support the brand.",
       "Remove accidental words and labels unless a distinctive brand mark is explicitly approved."
-    ]
+    ],
+    "latest_only_current_tree": true,
+    "prior_versions_recoverable_from_git_history": true
   },
   "records": [
     {
@@ -35,7 +37,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/acne_studios__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__acne_studios.jpg"
       ],
@@ -58,7 +59,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/alo_yoga__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__alo_yoga.jpg"
       ],
@@ -81,7 +81,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/altuzarra__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__altuzarra.jpg"
       ],
@@ -104,7 +103,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/amazuin__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__amazuin.jpg"
       ],
@@ -127,7 +125,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/amy_lynn__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__amy_lynn.jpg"
       ],
@@ -150,7 +147,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/arizona_love__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__arizona_love.jpg"
       ],
@@ -173,7 +169,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/atlein__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__atlein.jpg"
       ],
@@ -219,7 +214,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/baukjen__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__baukjen.jpg"
       ],
@@ -242,7 +236,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/blank_nyc__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__blank_nyc.jpg"
       ],
@@ -265,7 +258,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/blaze_milano__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__blaze_milano.jpg"
       ],
@@ -288,7 +280,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/bottega_veneta__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__bottega_veneta.jpg"
       ],
@@ -311,7 +302,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/brandon_maxwell__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__brandon_maxwell.jpg"
       ],
@@ -334,7 +324,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/brixton__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__brixton.jpg"
       ],
@@ -357,7 +346,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/c_p_company__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__c_p_company.jpg"
       ],
@@ -399,7 +387,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/camiel_fortgens__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__camiel_fortgens.jpg"
       ],
@@ -422,7 +409,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/carne_bollente__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__carne_bollente.jpg"
       ],
@@ -445,7 +431,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/celine__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__celine.jpg"
       ],
@@ -487,7 +472,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/chan_luu__candidate_04.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__chan_luu.jpg"
       ],
@@ -510,7 +494,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/chanel__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__chanel.jpg"
       ],
@@ -534,7 +517,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/chopova_lowena__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__chopova_lowena.jpg"
       ],
@@ -558,7 +540,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/christian_wijnants__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__christian_wijnants.jpg"
       ],
@@ -581,7 +562,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/chrome_hearts__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__chrome_hearts.jpg"
       ],
@@ -623,7 +603,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/cordera__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__cordera.jpg"
       ],
@@ -647,7 +626,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/day_birger_et_mikkelsen__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__day_birger_et_mikkelsen.jpg"
       ],
@@ -670,7 +648,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/deiji_studios__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__deiji_studios.jpg"
       ],
@@ -694,7 +671,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/demylee__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__demylee.jpg"
       ],
@@ -717,7 +693,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/derek_lam__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__derek_lam.jpg"
       ],
@@ -740,7 +715,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/destree__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__destree.jpg"
       ],
@@ -763,7 +737,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/dickies__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__dickies.jpg"
       ],
@@ -786,7 +759,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/dime__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__dime.jpg"
       ],
@@ -809,7 +781,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/djerf_avenue__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__djerf_avenue.jpg"
       ],
@@ -832,7 +803,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/everlane__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__everlane.jpg"
       ],
@@ -855,7 +825,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/farah__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__farah.jpg"
       ],
@@ -878,7 +847,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/ferragamo__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__ferragamo.jpg"
       ],
@@ -901,7 +869,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/french_connection__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__french_connection.jpg"
       ],
@@ -924,7 +891,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gabriela_hearst__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__gabriela_hearst.jpg"
       ],
@@ -947,7 +913,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/ganni__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__ganni.jpg"
       ],
@@ -970,7 +935,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gestuz__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__gestuz.jpg"
       ],
@@ -994,7 +958,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/girlfriend_collective__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__girlfriend_collective.jpg"
       ],
@@ -1036,7 +999,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/hermes__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__hermes.jpg"
       ],
@@ -1064,7 +1026,6 @@
         "https://herschel.eu/collections/apparel"
       ],
       "verified_at": "2026-10-02",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/herschel__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__herschel.jpg"
       ],
@@ -1087,7 +1048,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/hodakova__candidate_04.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__hodakova.jpg"
       ],
@@ -1110,7 +1070,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/homecore__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__homecore.jpg"
       ],
@@ -1133,7 +1092,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/hope_stockholm__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__hope_stockholm.jpg"
       ],
@@ -1157,7 +1115,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/house_of_sunny__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__house_of_sunny.jpg"
       ],
@@ -1180,7 +1137,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/iris_von_arnim__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__iris_von_arnim.jpg"
       ],
@@ -1203,7 +1159,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jacquemus__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__jacquemus.jpg"
       ],
@@ -1226,7 +1181,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jil_sander__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__jil_sander.jpg"
       ],
@@ -1269,7 +1223,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/johnny_was__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__johnny_was.jpg"
       ],
@@ -1293,7 +1246,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jonathan_simkhai__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__jonathan_simkhai.jpg"
       ],
@@ -1316,7 +1268,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jude_connally__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__jude_connally.jpg"
       ],
@@ -1339,7 +1290,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/karoline_vitto__candidate_04.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__karoline_vitto.jpg"
       ],
@@ -1362,7 +1312,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/khaite__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__khaite.jpg"
       ],
@@ -1385,7 +1334,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/kowtow__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__kowtow.jpg"
       ],
@@ -1409,7 +1357,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/laagam__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__laagam.jpg"
       ],
@@ -1451,7 +1398,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/le_bon_shoppe__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__le_bon_shoppe.jpg"
       ],
@@ -1474,7 +1420,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/liberowe__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__liberowe.jpg"
       ],
@@ -1498,7 +1443,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lioness__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__lioness.jpg"
       ],
@@ -1521,7 +1465,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lisa_says_gah__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__lisa_says_gah.jpg"
       ],
@@ -1544,7 +1487,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/derek_lam__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__derek_lam.jpg"
       ],
@@ -1568,7 +1510,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lisou__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__lisou.jpg"
       ],
@@ -1591,7 +1532,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/loci__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__loci.jpg"
       ],
@@ -1614,7 +1554,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/longchamp__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__longchamp.jpg"
       ],
@@ -1637,7 +1576,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lucy_and_yak__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__lucy_and_yak.jpg"
       ],
@@ -1661,7 +1599,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lutz_huelle__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__lutz_huelle.jpg"
       ],
@@ -1684,7 +1621,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mackage__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__mackage.jpg"
       ],
@@ -1707,7 +1643,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/made_by_minga__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__made_by_minga.jpg"
       ],
@@ -1731,7 +1666,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/madeworn__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__madeworn.jpg"
       ],
@@ -1754,7 +1688,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/maison_margiela__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__maison_margiela.jpg"
       ],
@@ -1777,7 +1710,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/maje__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__maje.jpg"
       ],
@@ -1800,7 +1732,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/margaret_howell__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__margaret_howell.jpg"
       ],
@@ -1823,7 +1754,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/maria_cher__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__maria_cher.jpg"
       ],
@@ -1846,7 +1776,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/maria_de_la_orden__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__maria_de_la_orden.jpg"
       ],
@@ -1869,7 +1798,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/marine_layer__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__marine_layer.jpg"
       ],
@@ -1892,7 +1820,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/marine_serre__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__marine_serre.jpg"
       ],
@@ -1916,7 +1843,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mary_katrantzou__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__mary_katrantzou.jpg"
       ],
@@ -1939,7 +1865,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/masscob__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__masscob.jpg"
       ],
@@ -1981,7 +1906,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/miaou__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__miaou.jpg"
       ],
@@ -2004,7 +1928,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mirror_palais__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__mirror_palais.jpg"
       ],
@@ -2027,7 +1950,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/miu_miu__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__miu_miu.jpg"
       ],
@@ -2051,7 +1973,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/molly_goddard__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__molly_goddard.jpg"
       ],
@@ -2074,7 +1995,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/monki__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__monki.jpg"
       ],
@@ -2097,7 +2017,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/montane__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__montane.jpg"
       ],
@@ -2120,7 +2039,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mowalola__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__mowalola.jpg"
       ],
@@ -2143,7 +2061,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/msgm__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__msgm.jpg"
       ],
@@ -2166,7 +2083,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/natasha_zinko__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__natasha_zinko.jpg"
       ],
@@ -2190,7 +2106,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/nili_lotan__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__nili_lotan.jpg"
       ],
@@ -2213,7 +2128,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/norma_kamali__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__norma_kamali.jpg"
       ],
@@ -2236,7 +2150,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/norse_projects__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__norse_projects.jpg"
       ],
@@ -2259,7 +2172,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/nour_hammour__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__nour_hammour.jpg"
       ],
@@ -2282,7 +2194,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/nude_lucy__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__nude_lucy.jpg"
       ],
@@ -2306,7 +2217,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/obey__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__obey.jpg"
       ],
@@ -2329,7 +2239,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/olivia_rubin__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__olivia_rubin.jpg"
       ],
@@ -2353,7 +2262,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/olivia_von_halle__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__olivia_von_halle.jpg"
       ],
@@ -2376,7 +2284,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/opera_sport__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__opera_sport.jpg"
       ],
@@ -2399,7 +2306,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/organic_basics__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__organic_basics.jpg"
       ],
@@ -2423,7 +2329,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/oscar_de_la_renta__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__oscar_de_la_renta.jpg"
       ],
@@ -2465,7 +2370,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/ovna_ovich__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__ovna_ovich.jpg"
       ],
@@ -2488,7 +2392,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/pangaia__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__pangaia.jpg"
       ],
@@ -2511,7 +2414,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/patou__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__patou.jpg"
       ],
@@ -2534,7 +2436,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/patta__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__patta.jpg"
       ],
@@ -2557,7 +2458,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/pendleton__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__pendleton.jpg"
       ],
@@ -2580,7 +2480,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/perle_by_lola__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__perle_by_lola.jpg"
       ],
@@ -2603,7 +2502,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/pleasures__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__pleasures.jpg"
       ],
@@ -2626,7 +2524,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/prada__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__prada.jpg"
       ],
@@ -2649,7 +2546,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/praying__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__praying.jpg"
       ],
@@ -2672,7 +2568,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/pucci__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__pucci.jpg"
       ],
@@ -2695,7 +2590,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/rag_and_bone__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__rag_and_bone.jpg"
       ],
@@ -2718,7 +2612,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/rich_mnisi__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__rich_mnisi.jpg"
       ],
@@ -2741,7 +2634,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/rotate_birger_christensen__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__rotate_birger_christensen.jpg"
       ],
@@ -2764,7 +2656,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/saman_amel__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__saman_amel.jpg"
       ],
@@ -2787,7 +2678,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/samantha_pleet__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__samantha_pleet.jpg"
       ],
@@ -2810,7 +2700,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sancia__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__sancia.jpg"
       ],
@@ -2833,7 +2722,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sandro__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__sandro.jpg"
       ],
@@ -2857,7 +2745,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sandy_liang__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__sandy_liang.jpg"
       ],
@@ -2880,7 +2767,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/shangri_la_heritage__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__shangri_la_heritage.jpg"
       ],
@@ -2903,7 +2789,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/shoshanna__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__shoshanna.jpg"
       ],
@@ -2926,7 +2811,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/shrimps__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__shrimps.jpg"
       ],
@@ -2949,7 +2833,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/siedres__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__siedres.jpg"
       ],
@@ -2972,7 +2855,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/significant_other__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__significant_other.jpg"
       ],
@@ -2995,7 +2877,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sister_jane__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__sister_jane.jpg"
       ],
@@ -3018,7 +2899,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/slowear__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__slowear.jpg"
       ],
@@ -3041,7 +2921,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/soaked_in_luxury__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__soaked_in_luxury.jpg"
       ],
@@ -3064,7 +2943,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/soia_and_kyo__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__soia_and_kyo.jpg"
       ],
@@ -3087,7 +2965,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/spiritual_gangster__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__spiritual_gangster.jpg"
       ],
@@ -3111,7 +2988,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/st_agni__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__st_agni.jpg"
       ],
@@ -3153,7 +3029,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/stussy__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__stussy.jpg"
       ],
@@ -3176,7 +3051,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/sugarlips__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__sugarlips.jpg"
       ],
@@ -3200,7 +3074,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/supreme__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__supreme.jpg"
       ],
@@ -3243,7 +3116,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/the_attico__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__the_attico.jpg"
       ],
@@ -3267,7 +3139,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/the_couture_club__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__the_couture_club.jpg"
       ],
@@ -3290,7 +3161,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/the_frankie_shop__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__the_frankie_shop.jpg"
       ],
@@ -3313,7 +3183,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/the_kooples__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__the_kooples.jpg"
       ],
@@ -3336,7 +3205,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/thebe_magugu__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__thebe_magugu.jpg"
       ],
@@ -3359,7 +3227,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/third_form__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__third_form.jpg"
       ],
@@ -3382,7 +3249,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/tkees__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__tkees.jpg"
       ],
@@ -3405,7 +3271,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/tory_burch__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__tory_burch.jpg"
       ],
@@ -3428,7 +3293,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/toteme__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__toteme.jpg"
       ],
@@ -3451,7 +3315,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/twinset__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__twinset.jpg"
       ],
@@ -3474,7 +3337,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/universal_works__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__universal_works.jpg"
       ],
@@ -3498,7 +3360,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/veronica_beard__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__veronica_beard.jpg"
       ],
@@ -3521,7 +3382,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/wales_bonner__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__wales_bonner.jpg"
       ],
@@ -3544,7 +3404,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/weekday__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__weekday.jpg"
       ],
@@ -3567,7 +3426,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/whistles__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__whistles.jpg"
       ],
@@ -3590,7 +3448,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/yigal_azrouel__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__yigal_azrouel.jpg"
       ],
@@ -3613,7 +3470,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/yohji_yamamoto__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__yohji_yamamoto.jpg"
       ],
@@ -3636,7 +3492,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/acne_studios__candidate_04.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__acne_studios.jpg"
       ],
@@ -3679,7 +3534,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/ami_paris__candidate_05.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__ami_paris.jpg"
       ],
@@ -3702,7 +3556,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/amina_muaddi__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__amina_muaddi.jpg"
       ],
@@ -3725,7 +3578,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/arizona_love__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__arizona_love.jpg"
       ],
@@ -3750,7 +3602,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/atoms__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__atoms.jpg"
       ],
@@ -3773,7 +3624,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/atp_atelier__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__atp_atelier.jpg"
       ],
@@ -3796,7 +3646,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/base_london__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__base_london.jpg"
       ],
@@ -3819,7 +3668,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/billini__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__billini.jpg"
       ],
@@ -3843,7 +3691,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/birdies__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__birdies.jpg"
       ],
@@ -3866,7 +3713,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/cariuma__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__cariuma.jpg"
       ],
@@ -3889,7 +3735,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/celine__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__celine.jpg"
       ],
@@ -3932,7 +3777,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/chaco__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__chaco.jpg"
       ],
@@ -3976,7 +3820,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/chanel__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__chanel.jpg"
       ],
@@ -3999,7 +3842,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/charles_and_keith__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__charles_and_keith.jpg"
       ],
@@ -4046,7 +3888,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/chopova_lowena__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__chopova_lowena.jpg"
       ],
@@ -4069,7 +3910,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/chrome_hearts__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__chrome_hearts.jpg"
       ],
@@ -4092,7 +3932,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/claris_virot__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__claris_virot.jpg"
       ],
@@ -4134,7 +3973,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/comme_des_garcons_split__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__comme_des_garcons.jpg",
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__comme_des_garcons_play.jpg"
@@ -4158,7 +3996,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/coperni__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__coperni.jpg"
       ],
@@ -4181,7 +4018,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/cordani__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__cordani.jpg"
       ],
@@ -4204,7 +4040,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/cult_gaia__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__cult_gaia.jpg"
       ],
@@ -4227,7 +4062,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/cydwoq__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__cydwoq.jpg"
       ],
@@ -4250,7 +4084,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/davi__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__davi.jpg"
       ],
@@ -4273,7 +4106,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/gabriela_hearst__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__gabriela_hearst.jpg"
       ],
@@ -4296,7 +4128,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/ganni__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__ganni.jpg"
       ],
@@ -4319,7 +4150,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/gray_matters__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__gray_matters.jpg"
       ],
@@ -4342,7 +4172,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/henrik_vibskov__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__henrik_vibskov.jpg"
       ],
@@ -4384,7 +4213,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/twinset__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__twinset.jpg"
       ],
@@ -4426,7 +4254,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/ines_de_la_fressange__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__ines_de_la_fressange.jpg"
       ],
@@ -4449,7 +4276,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/j_w_anderson__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__j_w_anderson.jpg"
       ],
@@ -4472,7 +4298,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/jacquemus__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__jacquemus.jpg"
       ],
@@ -4515,7 +4340,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/jeffrey_campbell__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__jeffrey_campbell.jpg"
       ],
@@ -4538,7 +4362,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/jil_sander__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__jil_sander.jpg"
       ],
@@ -4637,7 +4460,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/sandy_liang__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__sandy_liang.jpg"
       ],
@@ -4680,7 +4502,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/shrimps__candidate_04.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__shrimps.jpg"
       ],
@@ -4703,7 +4524,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/simon_miller__candidate_04.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__simon_miller.jpg"
       ],
@@ -4726,7 +4546,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/sofie_schnoor__candidate_04.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__sofie_schnoor.jpg"
       ],
@@ -4825,7 +4644,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/suzanne_kalan__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__suzanne_kalan.jpg"
       ],
@@ -4848,7 +4666,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/tabayer__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__tabayer.jpg"
       ],
@@ -4871,7 +4688,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/tecovas__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__tecovas.jpg"
       ],
@@ -4970,7 +4786,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/thomas_sabo__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__thomas_sabo.jpg"
       ],
@@ -5013,7 +4828,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/tory_burch__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__tory_burch.jpg"
       ],
@@ -5036,7 +4850,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/toteme__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__toteme.jpg"
       ],
@@ -5061,7 +4874,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/valentino__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__valentino.jpg"
       ],
@@ -5084,7 +4896,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/vera_wang__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__vera_wang.jpg"
       ],
@@ -5107,7 +4918,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/veronica_beard__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__veronica_beard.jpg"
       ],
@@ -5168,7 +4978,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yumi_kim__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__yumi_kim.jpg"
       ],
@@ -5230,7 +5039,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/acne_studios__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__acne_studios.jpg"
       ],
@@ -5253,7 +5061,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/alo_yoga__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__alo_yoga.jpg"
       ],
@@ -5277,7 +5084,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/ami_paris__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__ami_paris.jpg"
       ],
@@ -5323,7 +5129,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/anya_hindmarch__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__anya_hindmarch.jpg"
       ],
@@ -5347,7 +5152,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/arizona_love__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__arizona_love.jpg"
       ],
@@ -5370,7 +5174,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/brunello_cucinelli__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__brunello_cucinelli.jpg"
       ],
@@ -5393,7 +5196,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/casablanca__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__casablanca.jpg"
       ],
@@ -5416,7 +5218,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/celine__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__celine.jpg"
       ],
@@ -5439,7 +5240,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chan_luu__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__chan_luu.jpg"
       ],
@@ -5462,7 +5262,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chanel__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__chanel.jpg"
       ],
@@ -5485,7 +5284,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chopova_lowena__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__chopova_lowena.jpg"
       ],
@@ -5508,7 +5306,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chrome_hearts__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__chrome_hearts.jpg"
       ],
@@ -5536,7 +5333,6 @@
         "https://collinastrada.com/collections/bags"
       ],
       "verified_at": "2026-10-02",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/collina_strada__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__collina_strada.jpg"
       ],
@@ -5559,7 +5355,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/comme_des_garcons__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__comme_des_garcons.jpg"
       ],
@@ -5582,7 +5377,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/coperni__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__coperni.jpg"
       ],
@@ -5605,7 +5399,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/cult_gaia__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__cult_gaia.jpg"
       ],
@@ -5629,7 +5422,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/cuyana__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__cuyana.jpg"
       ],
@@ -5652,7 +5444,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/demellier__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__demellier.jpg"
       ],
@@ -5675,7 +5466,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/deux_mains__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__deux_mains.jpg"
       ],
@@ -5698,7 +5488,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/dkny__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__dkny.jpg"
       ],
@@ -5721,7 +5510,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/filippa_k__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__filippa_k.jpg"
       ],
@@ -5790,7 +5578,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/gabriela_hearst__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__gabriela_hearst.jpg"
       ],
@@ -5813,7 +5600,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/ganni__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__ganni.jpg"
       ],
@@ -5836,7 +5622,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/gimaguas__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__gimaguas.jpg"
       ],
@@ -5859,7 +5644,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/j_crew__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__j_crew.jpg"
       ],
@@ -5882,7 +5666,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/j_w_anderson__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__j_w_anderson.jpg"
       ],
@@ -5906,7 +5689,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jacquemus__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__jacquemus.jpg"
       ],
@@ -5929,7 +5711,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jil_sander__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__jil_sander.jpg"
       ],
@@ -5952,7 +5733,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jonathan_simkhai__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__jonathan_simkhai.jpg"
       ],
@@ -5976,7 +5756,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/jw_pei__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__jw_pei.jpg"
       ],
@@ -6022,7 +5801,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/lindsay_nicholas_new_york__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__lindsay_nicholas_new_york.jpg"
       ],
@@ -6045,7 +5823,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/maison_kitsune__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__maison_kitsune.jpg"
       ],
@@ -6068,7 +5845,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/maje__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__maje.jpg"
       ],
@@ -6091,7 +5867,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/mar_y_sol__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__mar_y_sol.jpg"
       ],
@@ -6114,7 +5889,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/marc_jacobs__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__marc_jacobs.jpg"
       ],
@@ -6137,7 +5911,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/marge_sherwood__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__marge_sherwood.jpg"
       ],
@@ -6160,7 +5933,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/marine_serre__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__marine_serre.jpg"
       ],
@@ -6207,7 +5979,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/marni__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__marni.jpg"
       ],
@@ -6231,7 +6002,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/miu_miu__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__miu_miu.jpg"
       ],
@@ -6254,7 +6024,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/a_bathing_ape__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__a_bathing_ape.jpg"
       ],
@@ -6279,7 +6048,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/abercrombie_and_fitch__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__abercrombie_and_fitch.jpg"
       ],
@@ -6304,7 +6072,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/adidas__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__adidas.jpg"
       ],
@@ -6329,7 +6096,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/arket__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__arket.jpg"
       ],
@@ -6354,7 +6120,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/avavav__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__avavav.jpg"
       ],
@@ -6379,7 +6144,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/barbour__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__barbour.jpg"
       ],
@@ -6404,7 +6168,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/balmain__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__balmain.jpg"
       ],
@@ -6429,7 +6192,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/bandit_running__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__bandit_running.jpg"
       ],
@@ -6454,7 +6216,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/billabong__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__billabong.jpg"
       ],
@@ -6479,7 +6240,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/bimba_y_lola__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__bimba_y_lola.jpg"
       ],
@@ -6504,7 +6264,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/burton__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__burton.jpg"
       ],
@@ -6529,7 +6288,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/burberry__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__burberry.jpg"
       ],
@@ -6554,7 +6312,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/calvin_klein_calvin_klein_jeans__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__calvin_klein_calvin_klein_jeans.jpg"
       ],
@@ -6579,7 +6336,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/canada_goose__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__canada_goose.jpg"
       ],
@@ -6604,7 +6360,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/carhartt_wip__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__carhartt_wip.jpg"
       ],
@@ -6629,7 +6384,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/charles_jeffrey_loverboy__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__charles_jeffrey_loverboy.jpg"
       ],
@@ -6654,7 +6408,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/comme_des_garcons_play__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__comme_des_garcons_play.jpg"
       ],
@@ -6679,7 +6432,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/conner_ives__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__conner_ives.jpg"
       ],
@@ -6704,7 +6456,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/diesel__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__diesel.jpg"
       ],
@@ -6729,7 +6480,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/desigual__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__desigual.jpg"
       ],
@@ -6754,7 +6504,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/duran_lantink__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__duran_lantink.jpg"
       ],
@@ -6779,7 +6528,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/erdem__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__erdem.jpg"
       ],
@@ -6804,7 +6552,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gap__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__gap.jpg"
       ],
@@ -6829,7 +6576,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gant__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__gant.jpg"
       ],
@@ -6854,7 +6600,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/good_american__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__good_american.jpg"
       ],
@@ -6879,7 +6624,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gymshark__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__gymshark.jpg"
       ],
@@ -6904,7 +6648,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/gucci__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__gucci.jpg"
       ],
@@ -6929,7 +6672,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/hollister__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__hollister.jpg"
       ],
@@ -6954,7 +6696,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jaded_london__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__jaded_london.jpg"
       ],
@@ -6979,7 +6720,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/jean_paul_gaultier__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__jean_paul_gaultier.jpg"
       ],
@@ -7004,7 +6744,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/karl_lagerfeld__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__karl_lagerfeld.jpg"
       ],
@@ -7029,7 +6768,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lacoste__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__lacoste.jpg"
       ],
@@ -7054,7 +6792,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/levi_s__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__levi_s.jpg"
       ],
@@ -7079,7 +6816,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/loro_piana__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__loro_piana.jpg"
       ],
@@ -7104,7 +6840,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/lululemon__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__lululemon.jpg"
       ],
@@ -7129,7 +6864,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mango__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__mango.jpg"
       ],
@@ -7154,7 +6888,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/martine_rose__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__martine_rose.jpg"
       ],
@@ -7179,7 +6912,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/missoni__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__missoni.jpg"
       ],
@@ -7204,7 +6936,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/michael_kors__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__michael_kors.jpg"
       ],
@@ -7229,7 +6960,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/missguided__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__missguided.jpg"
       ],
@@ -7254,7 +6984,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mcqueen__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__mcqueen.jpg"
       ],
@@ -7279,7 +7008,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mki_miyuki_zoku__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__mki_miyuki_zoku.jpg"
       ],
@@ -7304,7 +7032,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/moncler__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__moncler.jpg"
       ],
@@ -7329,7 +7056,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/moschino__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__moschino.jpg"
       ],
@@ -7354,7 +7080,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/mugler__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__mugler.jpg"
       ],
@@ -7379,7 +7104,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/napapijri__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__napapijri.jpg"
       ],
@@ -7404,7 +7128,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/needles__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__needles.jpg"
       ],
@@ -7429,7 +7152,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/never_fully_dressed__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__never_fully_dressed.jpg"
       ],
@@ -7454,7 +7176,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/neighbourhood__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__neighbourhood.jpg"
       ],
@@ -7479,7 +7200,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/new_balance__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__new_balance.jpg"
       ],
@@ -7504,7 +7224,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/nike__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__nike.jpg"
       ],
@@ -7529,7 +7248,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/no_problemo__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__no_problemo.jpg"
       ],
@@ -7554,7 +7272,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/oner_active__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__oner_active.jpg"
       ],
@@ -7579,7 +7296,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/open_yy__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__open_yy.jpg"
       ],
@@ -7604,7 +7320,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/palm_angels__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__palm_angels.jpg"
       ],
@@ -7629,7 +7344,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/paul_smith__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__paul_smith.jpg"
       ],
@@ -7654,7 +7368,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/polo_ralph_lauren__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__polo_ralph_lauren.jpg"
       ],
@@ -7679,7 +7392,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/puma__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__puma.jpg"
       ],
@@ -7704,7 +7416,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/p_e_nation__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__p_e_nation.jpg"
       ],
@@ -7729,7 +7440,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/clothes/pull_bear__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__clothes__pull_and_bear.jpg"
       ],
@@ -7754,7 +7464,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/abra__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__abra.jpg"
       ],
@@ -7779,7 +7488,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/air_jordan__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__air_jordan.jpg"
       ],
@@ -7804,7 +7512,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/asics__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__asics.jpg"
       ],
@@ -7829,7 +7536,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/adidas__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__adidas.jpg"
       ],
@@ -7854,7 +7560,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/golden_goose__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__golden_goose.jpg"
       ],
@@ -7879,7 +7584,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/birkenstock__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__birkenstock.jpg"
       ],
@@ -7904,7 +7608,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/eytys__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__eytys.jpg"
       ],
@@ -7929,7 +7632,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/geox__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__geox.jpg"
       ],
@@ -7954,7 +7656,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/gia_borghini__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__gia_borghini.jpg"
       ],
@@ -7979,7 +7680,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/churchs__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__church_s.jpg"
       ],
@@ -8004,7 +7704,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/gucci__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__gucci.jpg"
       ],
@@ -8029,7 +7728,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/crocs__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__crocs.jpg"
       ],
@@ -8054,7 +7752,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/clarks__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__clarks.jpg"
       ],
@@ -8079,7 +7776,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/ecco__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__ecco.jpg"
       ],
@@ -8104,7 +7800,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/converse__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__converse.jpg"
       ],
@@ -8129,7 +7824,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/carvela__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__carvela.jpg"
       ],
@@ -8154,7 +7848,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/diemme__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__diemme.jpg"
       ],
@@ -8179,7 +7872,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/hunter__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__hunter.jpg"
       ],
@@ -8204,7 +7896,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/vivienne_westwood__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__vivienne_westwood.jpg"
       ],
@@ -8229,7 +7920,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/roxanne_assoulin__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__roxanne_assoulin.jpg"
       ],
@@ -8254,7 +7944,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/roxanne_first__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__roxanne_first.jpg"
       ],
@@ -8279,7 +7968,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/sonia_petroff__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__sonia_petroff.jpg"
       ],
@@ -8304,7 +7992,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/zoe_mohm__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__zoe_mohm.jpg"
       ],
@@ -8329,7 +8016,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/william_welstead__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__william_welstead.jpg"
       ],
@@ -8354,7 +8040,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yvmin__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__yvmin.jpg"
       ],
@@ -8380,8 +8065,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "previous_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yellow_swallow__candidate_02.png",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/jewellery/yellow_swallow__candidate_03.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__jewellery__yellow_swallow.jpg"
       ],
@@ -8406,7 +8089,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/new_balance__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__new_balance.jpg"
       ],
@@ -8431,7 +8113,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/nike__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__nike.jpg"
       ],
@@ -8456,7 +8137,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/puma__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__puma.jpg"
       ],
@@ -8484,8 +8164,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "previous_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/burton__candidate_01.png",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/shoes/burton__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__shoes__burton.jpg"
       ],
@@ -8510,7 +8188,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/off_white__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__off_white.jpg"
       ],
@@ -8533,7 +8210,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/ora_leathergoods__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__ora_leathergoods.jpg"
       ],
@@ -8556,7 +8232,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/patou__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__patou.jpg"
       ],
@@ -8579,7 +8254,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/polene__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__polene.jpg"
       ],
@@ -8602,7 +8276,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/pucci__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__pucci.jpg"
       ],
@@ -8625,7 +8298,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/sacai__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__sacai.jpg"
       ],
@@ -8666,7 +8338,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/sandy_liang__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__sandy_liang.jpg"
       ],
@@ -8689,7 +8360,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/sensi_studio__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__sensi_studio.jpg"
       ],
@@ -8713,7 +8383,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/shrimps__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__shrimps.jpg"
       ],
@@ -8736,7 +8405,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/staud__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__staud.jpg"
       ],
@@ -8759,7 +8427,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/susmie_s__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__susmie_s.jpg"
       ],
@@ -8782,7 +8449,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/the_attico__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__the_attico.jpg"
       ],
@@ -8825,7 +8491,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/vivienne_westwood__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__vivienne_westwood.jpg"
       ],
@@ -8849,7 +8514,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "regenerated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/yohji_yamamoto__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__yohji_yamamoto.jpg"
       ],
@@ -8872,7 +8536,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/alaia__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__alaia.jpg"
       ],
@@ -8895,7 +8558,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/alexander_wang__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__alexander_wang.jpg"
       ],
@@ -8918,7 +8580,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/balenciaga__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__balenciaga.jpg"
       ],
@@ -8941,7 +8602,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/by_far__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__by_far.jpg"
       ],
@@ -8964,7 +8624,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/coach__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__coach.jpg"
       ],
@@ -8987,7 +8646,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/dior__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__dior.jpg"
       ],
@@ -9010,7 +8668,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/diesel__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__diesel.jpg"
       ],
@@ -9033,7 +8690,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/eastpak__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__eastpak.jpg"
       ],
@@ -9056,7 +8712,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/junya_watanabe__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__junya_watanabe.jpg"
       ],
@@ -9079,7 +8734,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/loewe__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__loewe.jpg"
       ],
@@ -9102,7 +8756,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chloe__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__chloe.jpg"
       ],
@@ -9125,7 +8778,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/dolce_and_gabbana__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__dolce_and_gabbana.jpg"
       ],
@@ -9148,7 +8800,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/gucci__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__gucci.jpg"
       ],
@@ -9171,7 +8822,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/isabel_marant__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__isabel_marant.jpg"
       ],
@@ -9194,7 +8844,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/lemaire__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__lemaire.jpg"
       ],
@@ -9217,7 +8866,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/mcqueen__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__mcqueen.jpg"
       ],
@@ -9240,7 +8888,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/osoi__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__osoi.jpg"
       ],
@@ -9263,7 +8910,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/stella_mccartney__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__stella_mccartney.jpg"
       ],
@@ -9286,7 +8932,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/tom_ford__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__tom_ford.jpg"
       ],
@@ -9309,7 +8954,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/samsonite__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__samsonite.jpg"
       ],
@@ -9332,7 +8976,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/tumi__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__tumi.jpg"
       ],
@@ -9355,7 +8998,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/zadig_and_voltaire__candidate_01.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__zadig_and_voltaire.jpg"
       ],
@@ -9378,7 +9020,6 @@
       "implementation_status": "implemented_v2",
       "asset_version": "v2",
       "resolved_action": "catalog_added_and_generated",
-      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/ulla_johnson__candidate_02.png",
       "ios_v2_paths": [
         "BrandMoodboardFinder/BrandMoodboards/v2__bags__ulla_johnson.jpg"
       ],

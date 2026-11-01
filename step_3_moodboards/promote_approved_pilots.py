@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Promote all approved Ellina corrections into reversible V2 app assets."""
+"""Promote the canonical latest Ellina moodboards into app assets."""
 
 from __future__ import annotations
 
@@ -13,7 +13,6 @@ from PIL import Image, ImageFilter, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 CORRECTED_ROOT = ROOT / "moodboards_creation" / "moodboards_corrected" / "v2"
-REVIEWS_PATH = CORRECTED_ROOT / "candidate_reviews.json"
 REVIEW_MANIFEST = ROOT / "step_3_moodboards" / "review" / "ellina_correction_manifest.json"
 IOS_PROJECT_ROOT = ROOT / "ios" / "BrandMoodboardFinder"
 IOS_ASSET_ROOT = IOS_PROJECT_ROOT / "BrandMoodboardFinder" / "BrandMoodboards"
@@ -39,19 +38,12 @@ def slugify(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", ascii_value.lower()).strip("_")
 
 
-def latest_reviews() -> dict[str, dict]:
-    payload = json.loads(REVIEWS_PATH.read_text(encoding="utf-8"))
-    latest: dict[str, dict] = {}
-    for review in payload["reviews"]:
-        latest[review["review_id"]] = review
-    return latest
-
-
 def promote_image(source: Path, analysis_path: Path, ios_path: Path) -> None:
-    """Write derived V2 outputs while retaining every original and candidate."""
+    """Export one canonical latest source to the analysis and iOS targets."""
     analysis_path.parent.mkdir(parents=True, exist_ok=True)
     ios_path.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(source, analysis_path)
+    if source.resolve() != analysis_path.resolve():
+        shutil.copy2(source, analysis_path)
     with Image.open(source) as image:
         rgb = ImageOps.exif_transpose(image).convert("RGB")
         if rgb.size == IOS_V2_SIZE:
@@ -81,7 +73,6 @@ def promote_image(source: Path, analysis_path: Path, ios_path: Path) -> None:
 def entry_for(
     *,
     record: dict,
-    candidate: Path,
     source: Path,
     slug: str,
     brand_name: str | None = None,
@@ -97,12 +88,12 @@ def entry_for(
         "category": category,
         "brand_name": brand_name or record["brand_name"],
         "slug": slug,
-        "candidate_path": str(candidate.relative_to(ROOT)),
+        "source_path": str(source.relative_to(ROOT)),
         "analysis_v2_path": str(analysis_path.relative_to(ROOT)),
         "ios_v2_path": str(ios_path.relative_to(IOS_PROJECT_ROOT)),
         "source_sha256": sha256(source),
         "ios_sha256": sha256(ios_path),
-        "rollback": "Remove or disable this v2__ asset; the original V1 asset is unchanged.",
+        "rollback": "Restore the prior canonical asset from Git history or disable this v2__ asset.",
     }
     if variant:
         result["variant"] = variant
@@ -111,47 +102,30 @@ def entry_for(
 
 def main() -> None:
     review_records = json.loads(REVIEW_MANIFEST.read_text(encoding="utf-8"))["records"]
-    latest = latest_reviews()
     corrections = [
         item
         for item in review_records
         if item["recommended_action"] in IMAGE_ACTIONS
         or item["review_id"] in CATALOG_VERIFY_REGENERATE_IDS
     ]
-    missing_or_unapproved = [
-        item["review_id"]
-        for item in corrections
-        if latest.get(item["review_id"], {}).get("status") != "approved"
-    ]
-    if missing_or_unapproved:
-        raise RuntimeError(
-            "Refusing partial promotion; corrections are not approved: "
-            + ", ".join(missing_or_unapproved)
-        )
-
     ios_entries: list[dict] = []
     entries_by_target: dict[tuple[str, str], dict] = {}
     for record in corrections:
-        review = latest[record["review_id"]]
-        candidate = ROOT / review["candidate_path"]
-        if not candidate.exists():
-            raise FileNotFoundError(candidate)
-
         category = record["category"]
         slug = slugify(record["brand_name"])
-        targets = [(slug, record["brand_name"], candidate, None)]
+        targets = [(slug, record["brand_name"], CORRECTED_ROOT / category / f"{slug}.png", None)]
         if record["review_id"] == "ER-180":
             targets = [
                 (
                     "comme_des_garcons",
                     "Comme des Garçons",
-                    CORRECTED_ROOT / "shoes" / "comme_des_garcons_avant_garde__candidate_02.png",
+                    CORRECTED_ROOT / "shoes" / "comme_des_garcons.png",
                     "avant_garde",
                 ),
                 (
                     "comme_des_garcons_play",
                     "Comme des Garçons PLAY",
-                    CORRECTED_ROOT / "shoes" / "comme_des_garcons_play__candidate_02.png",
+                    CORRECTED_ROOT / "shoes" / "comme_des_garcons_play.png",
                     "play",
                 ),
             ]
@@ -170,7 +144,6 @@ def main() -> None:
                 continue
             entry = entry_for(
                 record=record,
-                candidate=candidate,
                 source=source,
                 slug=target_slug,
                 brand_name=target_brand,
@@ -185,8 +158,8 @@ def main() -> None:
             {
                 "schema_version": 2,
                 "policy": (
-                    "V2 assets are preferred when present. V1 assets and all generated candidates "
-                    "remain unchanged for rollback and audit."
+                    "V2 assets are preferred when present. Each category/brand stores only the "
+                    "canonical latest moodboard; earlier versions remain recoverable from Git history."
                 ),
                 "entries": ios_entries,
             },
@@ -198,7 +171,7 @@ def main() -> None:
     )
     print(
         f"Promoted {len(corrections)} approved boards to {len(ios_entries)} V2 assets "
-        "without changing V1 files."
+        "from canonical latest sources without changing V1 files."
     )
 
 

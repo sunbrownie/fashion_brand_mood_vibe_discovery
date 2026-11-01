@@ -380,37 +380,16 @@ def save_corrected_moodboard(
     category: str,
     brand_name: str,
     *,
-    candidate: int,
+    candidate: int | None = None,
     prompt: str,
     review_id: str,
     root: Path = CORRECTED_OUTPUT_DIR,
 ) -> Path:
-    """Save a non-destructive correction candidate plus its provenance sidecar."""
+    """Replace the canonical latest correction; Git history retains the prior version."""
     ext = _MIME_TO_EXT.get(mime_type, '.png')
-    stem = f'{slugify(brand_name)}__candidate_{candidate:02d}'
-    path = root / category / f'{stem}{ext}'
-    if path.exists():
-        raise FileExistsError(f'Correction candidate already exists: {path}')
+    path = root / category / f'{slugify(brand_name)}{ext}'
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(raw_bytes)
-    sidecar = path.with_suffix(path.suffix + '.json')
-    sidecar.write_text(
-        json.dumps(
-            {
-                'review_id': review_id,
-                'brand_name': brand_name,
-                'category': category,
-                'candidate': candidate,
-                'model': GEMINI_IMAGE_MODEL,
-                'prompt': prompt,
-                'sha256': hashlib.sha256(raw_bytes).hexdigest(),
-                'status': 'candidate_generated',
-            },
-            ensure_ascii=False,
-            indent=2,
-        ) + '\n',
-        encoding='utf-8',
-    )
     return path
 
 
