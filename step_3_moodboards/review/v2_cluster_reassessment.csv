@@ -1,46 +1,57 @@
 brand_name,category,old_cluster,old_cluster_title,best_cluster,best_cluster_title,old_centroid_similarity,best_centroid_similarity,similarity_margin,adopted_cluster,adopted_cluster_title,decision
-No Problemo,clothes,14.000000,Graphic Tee Streetwear,13,Skate & Sport Streetwear,0.907780,0.932691,0.024911,14,Graphic Tee Streetwear,kept_existing_cluster
-ATP Atelier,shoes,9.000000,Artisanal Refined Flats,12,Woven Summer Sandals,0.886645,0.907280,0.020635,9,Artisanal Refined Flats,kept_existing_cluster
-Opera Sport,clothes,7.000000,Everyday Soft Tailoring,13,Skate & Sport Streetwear,0.800230,0.820306,0.020076,7,Everyday Soft Tailoring,kept_existing_cluster
-Chopova Lowena,shoes,12.000000,Woven Summer Sandals,11,Rugged Outdoor Boots,0.836771,0.856626,0.019855,12,Woven Summer Sandals,kept_existing_cluster
-Marge Sherwood,bags,5.000000,Refined Sculptural Handbags,11,Playful Soft Shoulder Bags,0.926733,0.945009,0.018276,5,Refined Sculptural Handbags,kept_existing_cluster
-McQueen,clothes,7.000000,Everyday Soft Tailoring,8,Soft Contemporary Dressing,0.939837,0.952378,0.012540,7,Everyday Soft Tailoring,kept_existing_cluster
-Geox,shoes,11.000000,Rugged Outdoor Boots,13,Sport Sandals and Trail,0.933114,0.938711,0.005597,11,Rugged Outdoor Boots,kept_existing_cluster
-Valentino,jewellery,14.000000,Crystal Occasion Jewellery,2,Bold Sculptural Hoops,0.948946,0.954467,0.005521,14,Crystal Occasion Jewellery,kept_existing_cluster
-Carne Bollente,clothes,14.000000,Graphic Tee Streetwear,14,Graphic Tee Streetwear,0.967554,0.967554,0.000000,14,Graphic Tee Streetwear,kept_existing_cluster
-Desigual,clothes,14.000000,Graphic Tee Streetwear,14,Graphic Tee Streetwear,0.955177,0.955177,0.000000,14,Graphic Tee Streetwear,kept_existing_cluster
-Kowtow,clothes,16.000000,Quiet Minimalism,16,Quiet Minimalism,0.970064,0.970064,0.000000,16,Quiet Minimalism,kept_existing_cluster
-Lisa Says Gah,clothes,1.000000,Romantic Daywear,1,Romantic Daywear,0.940381,0.940381,0.000000,1,Romantic Daywear,kept_existing_cluster
-Obey,clothes,14.000000,Graphic Tee Streetwear,14,Graphic Tee Streetwear,0.951452,0.951452,0.000000,14,Graphic Tee Streetwear,kept_existing_cluster
-Shangri-la Heritage,clothes,3.000000,Western Casual Denim,3,Western Casual Denim,0.890346,0.890346,0.000000,3,Western Casual Denim,kept_existing_cluster
-The Attico,clothes,1.000000,Romantic Daywear,1,Romantic Daywear,0.941837,0.941837,0.000000,1,Romantic Daywear,kept_existing_cluster
-Arizona Love,shoes,12.000000,Woven Summer Sandals,12,Woven Summer Sandals,0.926409,0.926409,0.000000,12,Woven Summer Sandals,kept_existing_cluster
-New Balance,shoes,7.000000,Technical Running Shoes,7,Technical Running Shoes,0.953472,0.953472,0.000000,7,Technical Running Shoes,kept_existing_cluster
-Nike,shoes,7.000000,Technical Running Shoes,7,Technical Running Shoes,0.933433,0.933433,0.000000,7,Technical Running Shoes,kept_existing_cluster
-Puma,shoes,7.000000,Technical Running Shoes,7,Technical Running Shoes,0.922690,0.922690,0.000000,7,Technical Running Shoes,kept_existing_cluster
-Anya Hindmarch,bags,4.000000,Experimental Sculptural Bags,4,Experimental Sculptural Bags,0.953747,0.953747,0.000000,4,Experimental Sculptural Bags,kept_existing_cluster
-Coperni,bags,1.000000,Graphic Urban Crossbodies,1,Graphic Urban Crossbodies,0.916134,0.916134,0.000000,1,Graphic Urban Crossbodies,kept_existing_cluster
-JW Pei,bags,13.000000,Minimal Vegan Bags,13,Minimal Vegan Bags,0.932479,0.932479,0.000000,13,Minimal Vegan Bags,kept_existing_cluster
-CASABLANCA,bags,9.000000,Occasion Crystal Pouches,6,Sport Utility Backpacks,0.758236,0.794086,0.035850,4,Experimental Sculptural Bags,manual_visual_review_override
-ROTATE Birger Christensen,clothes,1.000000,Romantic Daywear,14,Graphic Tee Streetwear,0.749910,0.785617,0.035707,8,Soft Contemporary Dressing,manual_visual_review_override
-Jacquemus,shoes,8.000000,Quiet Practical Flats,12,Woven Summer Sandals,0.932538,0.960193,0.027655,2,Sculptural Refined Heels,manual_visual_review_override
-Burton,shoes,11.000000,Rugged Outdoor Boots,16,Formal Leather Loafers,0.842492,0.865538,0.023046,16,Formal Leather Loafers,manual_visual_review_override
-Weekday,clothes,11.000000,Denim Jeans,14,Graphic Tee Streetwear,0.929699,0.948724,0.019024,13,Skate & Sport Streetwear,manual_visual_review_override
-Chopova Lowena,bags,8.000000,Woven Natural Bags,1,Graphic Urban Crossbodies,0.899825,0.917091,0.017266,1,Graphic Urban Crossbodies,manual_visual_review_override
-Karoline Vitto,clothes,14.000000,Graphic Tee Streetwear,2,Polished Leather Tailoring,0.877865,0.892536,0.014671,2,Polished Leather Tailoring,manual_visual_review_override
-Girlfriend Collective,clothes,16.000000,Quiet Minimalism,13,Skate & Sport Streetwear,0.914006,0.917110,0.003103,13,Skate & Sport Streetwear,manual_visual_review_override
-House Of Sunny,clothes,14.000000,Graphic Tee Streetwear,14,Graphic Tee Streetwear,0.941779,0.941779,0.000000,1,Romantic Daywear,manual_visual_review_override
-Coperni,shoes,13.000000,Sport Sandals and Trail,13,Sport Sandals and Trail,0.892439,0.892439,0.000000,2,Sculptural Refined Heels,manual_visual_review_override
-Cult Gaia,bags,8.000000,Woven Natural Bags,8,Woven Natural Bags,0.893534,0.893534,0.000000,4,Experimental Sculptural Bags,manual_visual_review_override
-Sandy Liang,clothes,0.000000,Relaxed Basics,1,Romantic Daywear,0.875802,0.942942,0.067141,1,Romantic Daywear,moved_to_better_centroid
-ALO YOGA,bags,6.000000,Sport Utility Backpacks,12,Polished Structured Totes,0.889346,0.945355,0.056009,12,Polished Structured Totes,moved_to_better_centroid
-Simon Miller,jewellery,6.000000,Minimal Sculptural Jewellery,4,Bohemian Beaded Jewellery,0.837743,0.882281,0.044538,4,Bohemian Beaded Jewellery,moved_to_better_centroid
-Patou,clothes,16.000000,Quiet Minimalism,1,Romantic Daywear,0.903904,0.945945,0.042041,1,Romantic Daywear,moved_to_better_centroid
-Yellow Swallow,jewellery,4.000000,Bohemian Beaded Jewellery,2,Bold Sculptural Hoops,0.867609,0.909035,0.041426,2,Bold Sculptural Hoops,moved_to_better_centroid
-Made By Minga,clothes,14.000000,Graphic Tee Streetwear,6,Soft Knitwear,0.880283,0.921389,0.041106,6,Soft Knitwear,moved_to_better_centroid
-Conner Ives,clothes,14.000000,Graphic Tee Streetwear,1,Romantic Daywear,0.869988,0.906873,0.036885,1,Romantic Daywear,moved_to_better_centroid
-Bimba Y Lola,clothes,10.000000,Bohemian Craft,2,Polished Leather Tailoring,0.928534,0.960577,0.032043,2,Polished Leather Tailoring,moved_to_better_centroid
-Miu Miu,bags,9.000000,Occasion Crystal Pouches,12,Polished Structured Totes,0.884890,0.914220,0.029331,12,Polished Structured Totes,moved_to_better_centroid
-Marine Serre,bags,6.000000,Sport Utility Backpacks,1,Graphic Urban Crossbodies,0.844701,0.873172,0.028472,1,Graphic Urban Crossbodies,moved_to_better_centroid
-Maje,bags,8.000000,Woven Natural Bags,14,Feminine Structured Shoulder Bags,0.928927,0.955878,0.026951,14,Feminine Structured Shoulder Bags,moved_to_better_centroid
-Comme des Garçons PLAY,shoes,,,5,Graphic Chunky Footwear,,0.932973,,5,Graphic Chunky Footwear,new_assignment
+No Problemo,clothes,14.000000,The Underground,13,The Underground,0.907780,0.932691,0.024911,14,The Underground,kept_existing_cluster
+ATP Atelier,shoes,9.000000,The Atelier,12,Sun Bleached,0.886646,0.907280,0.020635,9,The Atelier,kept_existing_cluster
+Opera Sport,clothes,7.000000,The Dresser,13,The Underground,0.800231,0.820307,0.020076,7,The Dresser,kept_existing_cluster
+Chopova Lowena,shoes,12.000000,Sun Bleached,11,The Trailhead,0.836771,0.856626,0.019855,12,Sun Bleached,kept_existing_cluster
+Marge Sherwood,bags,5.000000,The Sculptor,11,The Magpie,0.926733,0.944816,0.018083,5,The Sculptor,kept_existing_cluster
+McQueen,clothes,7.000000,The Dresser,8,The Modern Muse,0.939837,0.952378,0.012540,7,The Dresser,kept_existing_cluster
+Geox,shoes,11.000000,The Trailhead,13,The Expedition,0.933114,0.938711,0.005597,11,The Trailhead,kept_existing_cluster
+Valentino,jewellery,14.000000,After Midnight,2,The Statement,0.948946,0.954467,0.005521,14,After Midnight,kept_existing_cluster
+Carne Bollente,clothes,14.000000,The Underground,14,The Underground,0.967554,0.967554,0.000000,14,The Underground,kept_existing_cluster
+Desigual,clothes,14.000000,The Underground,14,The Underground,0.955177,0.955177,0.000000,14,The Underground,kept_existing_cluster
+Kowtow,clothes,16.000000,The Understated,16,The Understated,0.970064,0.970064,0.000000,16,The Understated,kept_existing_cluster
+Lisa Says Gah,clothes,1.000000,The Daydreamer,1,The Daydreamer,0.940381,0.940381,0.000000,1,The Daydreamer,kept_existing_cluster
+Obey,clothes,14.000000,The Underground,14,The Underground,0.951452,0.951452,0.000000,14,The Underground,kept_existing_cluster
+Shangri-la Heritage,clothes,3.000000,The Outrider,3,The Outrider,0.890346,0.890346,0.000000,3,The Outrider,kept_existing_cluster
+The Attico,clothes,1.000000,The Daydreamer,1,The Daydreamer,0.941837,0.941837,0.000000,1,The Daydreamer,kept_existing_cluster
+Aldo,shoes,15.000000,The New Guard,15,The New Guard,0.953497,0.953497,0.000000,15,The New Guard,kept_existing_cluster
+Arizona Love,shoes,12.000000,Sun Bleached,12,Sun Bleached,0.926409,0.926409,0.000000,12,Sun Bleached,kept_existing_cluster
+New Balance,shoes,7.000000,The Pace,7,The Pace,0.953472,0.953472,0.000000,7,The Pace,kept_existing_cluster
+Nike,shoes,7.000000,The Pace,7,The Pace,0.933433,0.933433,0.000000,7,The Pace,kept_existing_cluster
+Puma,shoes,7.000000,The Pace,7,The Pace,0.922690,0.922690,0.000000,7,The Pace,kept_existing_cluster
+Anya Hindmarch,bags,4.000000,The Disruptor,4,The Disruptor,0.953747,0.953747,0.000000,4,The Disruptor,kept_existing_cluster
+Coperni,bags,1.000000,The Underground,1,The Underground,0.916134,0.916134,0.000000,1,The Underground,kept_existing_cluster
+JW Pei,bags,13.000000,The New Classic,13,The New Classic,0.935325,0.935325,0.000000,13,The New Classic,kept_existing_cluster
+CASABLANCA,bags,9.000000,After Midnight,12,The Dresser,0.758236,0.797170,0.038934,4,The Disruptor,manual_visual_review_override
+ROTATE Birger Christensen,clothes,1.000000,The Daydreamer,14,The Underground,0.749910,0.785617,0.035707,8,The Modern Muse,manual_visual_review_override
+Jacquemus,shoes,8.000000,The Understated,12,Sun Bleached,0.932538,0.960193,0.027655,2,The Sculptor,manual_visual_review_override
+Burton,shoes,11.000000,The Trailhead,16,The Club Room,0.842492,0.865538,0.023046,16,The Club Room,manual_visual_review_override
+Weekday,clothes,11.000000,Blue Hours,14,The Underground,0.929699,0.948724,0.019024,13,The Underground,manual_visual_review_override
+Chopova Lowena,bags,8.000000,Sun Bleached,1,The Underground,0.899875,0.917091,0.017216,1,The Underground,manual_visual_review_override
+Karoline Vitto,clothes,14.000000,The Underground,2,The Power Move,0.877865,0.892536,0.014671,2,The Power Move,manual_visual_review_override
+Girlfriend Collective,clothes,16.000000,The Understated,13,The Underground,0.914006,0.917109,0.003103,13,The Underground,manual_visual_review_override
+House Of Sunny,clothes,14.000000,The Underground,14,The Underground,0.941779,0.941779,0.000000,1,The Daydreamer,manual_visual_review_override
+Coperni,shoes,13.000000,The Expedition,13,The Expedition,0.892439,0.892439,0.000000,2,The Sculptor,manual_visual_review_override
+Cult Gaia,bags,8.000000,Sun Bleached,8,Sun Bleached,0.896301,0.896301,0.000000,4,The Disruptor,manual_visual_review_override
+Sandy Liang,clothes,0.000000,Off Duty,1,The Daydreamer,0.875802,0.942942,0.067141,1,The Daydreamer,moved_to_better_centroid
+ALO YOGA,bags,6.000000,The Field Manual,12,The Dresser,0.889346,0.950816,0.061470,12,The Dresser,moved_to_better_centroid
+Simon Miller,jewellery,6.000000,The Understated,4,The Wanderer,0.837743,0.882281,0.044538,4,The Wanderer,moved_to_better_centroid
+Patou,clothes,16.000000,The Understated,1,The Daydreamer,0.903904,0.945945,0.042041,1,The Daydreamer,moved_to_better_centroid
+Yellow Swallow,jewellery,4.000000,The Wanderer,2,The Statement,0.867609,0.909035,0.041426,2,The Statement,moved_to_better_centroid
+Made By Minga,clothes,14.000000,The Underground,6,The Cashmere Club,0.880283,0.921389,0.041106,6,The Cashmere Club,moved_to_better_centroid
+Conner Ives,clothes,14.000000,The Underground,1,The Daydreamer,0.869988,0.906874,0.036885,1,The Daydreamer,moved_to_better_centroid
+Miu Miu,bags,9.000000,After Midnight,12,The Dresser,0.884890,0.918055,0.033165,12,The Dresser,moved_to_better_centroid
+Bimba Y Lola,clothes,10.000000,The Wanderer,2,The Power Move,0.928534,0.960577,0.032043,2,The Power Move,moved_to_better_centroid
+Marine Serre,bags,6.000000,The Field Manual,12,The Dresser,0.844701,0.874230,0.029529,12,The Dresser,moved_to_better_centroid
+Maje,bags,8.000000,Sun Bleached,14,The Socialite,0.930323,0.955878,0.025554,14,The Socialite,moved_to_better_centroid
+Alohas,shoes,,,16,The Club Room,,0.834644,,16,The Club Room,new_assignment
+Comme des Garçons PLAY,shoes,,,5,The Underground,,0.932973,,5,The Underground,new_assignment
+Melissa,shoes,,,12,Sun Bleached,,0.891802,,12,Sun Bleached,new_assignment
+On Running,shoes,,,7,The Pace,,0.943514,,7,The Pace,new_assignment
+Onitsuka Tiger,shoes,,,7,The Pace,,0.892105,,7,The Pace,new_assignment
+Sam Edelman,shoes,,,1,The Staple,,0.950116,,1,The Staple,new_assignment
+Saucony,shoes,,,7,The Pace,,0.953724,,7,The Pace,new_assignment
+Timberland,shoes,,,11,The Trailhead,,0.926475,,11,The Trailhead,new_assignment
+UGG,shoes,,,11,The Trailhead,,0.904237,,11,The Trailhead,new_assignment
+Vans,shoes,,,4,The Underground,,0.948755,,4,The Underground,new_assignment
+Vibram,shoes,,,7,The Pace,,0.877336,,7,The Pace,new_assignment

@@ -86,7 +86,7 @@ def build(root: Path, manifest_path: Path, output: Path) -> None:
     cache_dir = root / "tmp" / "pdfs" / "round2_preview_cache"
     output.parent.mkdir(parents=True, exist_ok=True)
     pdf = canvas.Canvas(str(output), pagesize=landscape(A4), pageCompression=1)
-    pdf.setTitle("Ellina Moodboard Re-review - Round 2")
+    pdf.setTitle("Ellina Moodboard Re-review - Latest")
     pdf.setAuthor("Brand Vibe Moodboard Review")
 
     margin = 32
@@ -106,13 +106,14 @@ def build(root: Path, manifest_path: Path, output: Path) -> None:
         pdf.drawString(margin, PAGE_H - 42, title)
         pdf.setFillColor(MUTED)
         pdf.setFont("Helvetica", 8)
-        pdf.drawRightString(PAGE_W - margin, PAGE_H - 39, f"{record['review_id']} · {record['category'].upper()} · SOURCE PAGE {record['source_page']}")
+        source_note = f" · SOURCE PAGE {record['source_page']}" if record.get("source_page") else ""
+        pdf.drawRightString(PAGE_W - margin, PAGE_H - 39, f"{record['review_id']} · {record['category'].upper()}{source_note}")
 
         pdf.setFillColor(PINK)
         pdf.roundRect(margin, PAGE_H - 100, PAGE_W - 2 * margin, 39, 8, fill=1, stroke=0)
         pdf.setFillColor(ACCENT)
         pdf.setFont("Helvetica-Bold", 8)
-        pdf.drawString(margin + 12, PAGE_H - 76, "NEW ROUND 2 COMMENT")
+        pdf.drawString(margin + 12, PAGE_H - 76, record.get("comment_label", "NEW ROUND 2 COMMENT"))
         lines = wrap(record["round2_feedback"], PAGE_W - 2 * margin - 170, "Helvetica-Bold", 11)
         pdf.setFillColor(INK)
         pdf.setFont("Helvetica-Bold", 11)
@@ -130,7 +131,10 @@ def build(root: Path, manifest_path: Path, output: Path) -> None:
         missing = [str(path) for path in sources if not path.exists()]
         if missing:
             raise FileNotFoundError("Missing PDF inputs: " + ", ".join(missing))
-        labels = ["ROUND 1 UPDATED", "ROUND 2 UPDATED", "GOOGLE IMAGES REFERENCE"]
+        labels = record.get(
+            "panel_labels",
+            ["ROUND 1 UPDATED", "ROUND 2 UPDATED", "GOOGLE IMAGES REFERENCE"],
+        )
         for index, (source, label) in enumerate(zip(sources, labels)):
             panel(pdf, source, cache_dir, margin + index * (panel_w + gap), panel_y, panel_w, panel_h, label)
 

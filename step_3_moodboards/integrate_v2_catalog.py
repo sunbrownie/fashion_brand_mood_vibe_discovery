@@ -367,6 +367,72 @@ DESCRIPTION_OVERRIDES = {
         "materials": "tailored wool, satin, leather, jersey and restrained sequins",
         "palette": "black, chocolate, burgundy, silver and selective bright accents",
     },
+    ("shoes", "Alohas"): {
+        "aesthetic_keywords": "Barcelona modern, elevated, responsible, fashion-forward, refined",
+        "silhouettes": "vintage-effect ballet flats, leather loafers, low-profile retro sneakers, ankle boots and minimal heeled sandals",
+        "materials": "certified leather, suede, crochet, rubber and polished metal hardware",
+        "palette": "espresso brown, burgundy, cream, black, tan and muted seasonal colour",
+    },
+    ("shoes", "Aldo"): {
+        "aesthetic_keywords": "approachable, trend-led, polished, versatile, everyday",
+        "silhouettes": "kitten-heel slingbacks, pointed pumps, ballet flats, loafers, clean sneakers, ankle boots and strappy heels",
+        "materials": "smooth leather, suede, metallic leather, synthetic materials and rubber",
+        "palette": "black, ivory, silver, brown, tan, white and bright red",
+    },
+    ("shoes", "Melissa"): {
+        "aesthetic_keywords": "playful, Brazilian, colourful, futuristic, jelly-shoe",
+        "silhouettes": "translucent fisherman sandals, glossy Mary Janes, platform sandals, ballet flats, sculptural mules and rain boots",
+        "materials": "glossy and translucent moulded PVC, EVA and recyclable plastic",
+        "palette": "clear crystal, red, black, bubblegum pink, cobalt and iridescent colour",
+    },
+    ("shoes", "On Running"): {
+        "aesthetic_keywords": "Swiss-engineered, technical, performance, clean, movement-led",
+        "silhouettes": "segmented-sole lifestyle shoes, waterproof city runners, cushioned road shoes, race-day shoes, trail runners and tennis-inspired sneakers",
+        "materials": "engineered mesh, technical synthetics, foam, rubber and speedboard construction",
+        "palette": "white, black, grey, cobalt blue, olive and cream",
+    },
+    ("shoes", "Sam Edelman"): {
+        "aesthetic_keywords": "polished, trend-aware, feminine, wearable, American",
+        "silhouettes": "pointed slingbacks, evening sandals, penny loafers, western ankle boots, Mary Janes, ballet flats and retro sneakers",
+        "materials": "smooth leather, suede, metallic leather, calf-hair effect and rubber",
+        "palette": "black, gold, brown, cream, red, leopard print and white",
+    },
+    ("shoes", "Vibram"): {
+        "aesthetic_keywords": "barefoot, technical, rugged, functional, experimental",
+        "silhouettes": "FiveFingers running shoes, trail toe shoes, water shoes, minimalist trainers, approach shoes and recovery slip-ons",
+        "materials": "technical mesh, stretch knit, durable synthetics and high-grip rubber",
+        "palette": "black, olive, cobalt, grey, brown and signature yellow sole accents",
+    },
+    ("shoes", "Onitsuka Tiger"): {
+        "aesthetic_keywords": "Japanese heritage sport, retro, graphic, refined, street-ready",
+        "silhouettes": "low-profile retro runners, Mexico 66-inspired sneakers, suede court shoes, tennis shoes, futuristic trainers and fashion high-tops",
+        "materials": "smooth leather, suede, mesh, rubber and metallic technical fabric",
+        "palette": "yellow, cream, red, blue, brown, green, silver and black",
+    },
+    ("shoes", "Saucony"): {
+        "aesthetic_keywords": "technical running, retro sport, cushioned, energetic, trail-ready",
+        "silhouettes": "heritage mesh runners, retro lifestyle sneakers, racing shoes, high-cushion road shoes, trail runners and performance trainers",
+        "materials": "engineered mesh, suede, synthetic overlays, responsive foam and grippy rubber",
+        "palette": "silver grey, cream, burgundy, lime, cobalt, olive and coral",
+    },
+    ("shoes", "Timberland"): {
+        "aesthetic_keywords": "rugged, heritage, outdoor, utilitarian, durable",
+        "silhouettes": "six-inch work boots, leather field boots, waterproof hiking boots, trail sneakers, boat shoes and winter lug boots",
+        "materials": "nubuck, full-grain leather, technical mesh, metal eyelets and lugged rubber",
+        "palette": "wheat, dark brown, black, olive, tan and cream",
+    },
+    ("shoes", "Vans"): {
+        "aesthetic_keywords": "skate, heritage, graphic, youthful, streetwear",
+        "silhouettes": "Old Skool-inspired low tops, checkerboard slip-ons, canvas deck shoes, high-top skate shoes, chunky suede sneakers and technical trail shoes",
+        "materials": "canvas, suede, leather, technical mesh and waffle rubber soles",
+        "palette": "black, white, navy, red, grey and checkerboard",
+    },
+    ("shoes", "UGG"): {
+        "aesthetic_keywords": "cosy, Californian, tactile, relaxed, winter-ready",
+        "silhouettes": "Classic Ultra Mini boots, Tasman-style clogs, platform minis, plush slippers, relaxed sneakers and tall suede boots",
+        "materials": "suede, sheepskin, plush fleece, leather and lugged rubber",
+        "palette": "chestnut, sand, cream, chocolate brown and black",
+    },
 }
 
 
@@ -392,6 +458,9 @@ def sentence_matching(prompt: str, prefix: str) -> str:
 
 def descriptors(entry: dict) -> dict[str, str]:
     key = (entry["category"], entry["brand_name"])
+    for (category, brand_name), values in DESCRIPTION_OVERRIDES.items():
+        if category == entry["category"] and normalised(brand_name) == normalised(entry["brand_name"]):
+            return values.copy()
     prompt = EXPANSION_PROMPTS.get(key) or SPECIAL_PROMPT_OVERRIDES.get(key)
     if not prompt:
         raise RuntimeError(f"Missing integration description for {key}")
