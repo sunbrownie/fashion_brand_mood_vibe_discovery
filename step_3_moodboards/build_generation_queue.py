@@ -835,6 +835,75 @@ SPECIAL_PROMPT_OVERRIDES = {
         "bright color and tactile perforated or matelassé leather. No paisley, velvet, key chains, boho motifs, repeated "
         "products, people, detail crops or accidental text."
     ),
+    ("bags", "Alaïa"): (
+        "Create a vertical six-panel product-only Alaïa bag moodboard with six distinct complete silhouettes: an elongated Le Teckel shoulder bag, a heart-shaped Le Coeur bag, a laser-cut Vienne tote, a studded Demi-Lune, a compact top handle and a sculptural clutch. Use black, deep red, chestnut, white and one vivid accent with precise leather craft. No people, repeated shapes, alternate views, text or invented logos."
+    ),
+    ("bags", "Alexander Wang"): (
+        "Create a vertical six-panel product-only Alexander Wang bag moodboard with six distinct urban icons: a studded black Ricco-style shoulder bag, a crystal mesh evening pouch, a slouchy leather hobo, a compact top handle, a metallic mini bag and a soft oversized tote. Use downtown black, gunmetal, silver, oxblood and white. No people, repeated bags, generic quiet luxury, text or invented logos."
+    ),
+    ("bags", "Balenciaga"): (
+        "Create a vertical six-panel product-only Balenciaga bag moodboard with six visibly different signatures: a distressed Le City, an angular Rodeo top handle, an Hourglass shoulder bag, a soft Le Cagole, an oversized Arena tote and one sculptural evening bag. Use worn black, lipstick red, cobalt, silver and one acid accent. No people, repeated studs, duplicate silhouettes, text or malformed logos."
+    ),
+    ("bags", "BY FAR"): (
+        "Create a vertical six-panel product-only BY FAR bag moodboard with six different late-1990s and early-2000s silhouettes: a Rachel baguette, an Amber top handle, a Cush shoulder bag, a mini bowling bag, a metallic evening pouch and a curved hobo. Use patent black, red, pistachio, baby blue, silver and cream. No people, duplicate baguettes, text, labels or invented logos."
+    ),
+    ("bags", "Coach"): (
+        "Create a vertical six-panel product-only Coach bag moodboard with six distinct New York leather icons: a quilted Tabby shoulder bag, a soft Brooklyn hobo, a structured Rogue top handle, an Empire carryall, a compact Swinger baguette and a playful charm-covered mini bag. Use oxblood, tan, black, forest green, red and one pastel. No people, repeated monogram bags, text or invented logos."
+    ),
+    ("bags", "Dior"): (
+        "Create a vertical six-panel product-only Dior bag moodboard with six distinct complete icons: Lady Dior, Saddle, Book Tote, Dior Toujours hobo, 30 Montaigne flap and a compact Dior Bow evening bag. Balance Cannage leather, Dior Oblique textile and one embroidered surface in black, latte, blue, red and blush. No people, repeat silhouettes, detail-only crops, text or malformed logos."
+    ),
+    ("bags", "Diesel"): (
+        "Create a vertical six-panel product-only Diesel bag moodboard with six different rebellious silhouettes: a red 1DR shoulder bag, a distressed denim mini bag, a metallic silver hobo, a black industrial top handle, a vivid utility crossbody and a soft oversized tote. Use denim, cracked leather, metal hardware and red, black, blue and silver. No people, repeated oval plaques, text or invented logos."
+    ),
+    ("bags", "Eastpak"): (
+        "Create a vertical six-panel product-only Eastpak bag moodboard with six genuinely different functional styles: a classic Pak'r backpack, a laptop daypack, a messenger bag, a duffel, a tote and a convertible travel pack. Use durable nylon and canvas in black, navy, burgundy, forest green and one bright colour. No people, duplicate backpacks, luggage-only board, text or invented logos."
+    ),
+    ("bags", "Junya Watanabe"): (
+        "Create a vertical six-panel product-only Junya Watanabe bag moodboard with six experimental utilitarian forms: a reconstructed leather tote, a technical nylon backpack, a patchworked messenger, a harness-like shoulder bag, a folded geometric handbag and a punk-hardware mini bag. Use black, charcoal, khaki, white and restrained red with visible deconstruction. No people, repeated totes, readable text or unrelated logos."
+    ),
+    ("bags", "Loewe"): (
+        "Create a vertical six-panel product-only Loewe bag moodboard with six different crafted icons: Puzzle, Flamenco, Squeeze, Hammock, Pebble bucket and Amazona top handle. Make each silhouette unmistakably different using supple leather, ruched construction and precise colour in tan, black, burgundy, olive, cobalt and one bright accent. No people, duplicate bags, text or malformed logos."
+    ),
+    ("bags", "Chloé"): (
+        "Create a vertical six-panel product-only Chloé bag moodboard with six distinct feminine icons: a slouchy Paddington with padlock, Marcie saddle bag, Woody tote, curved hobo, polished top handle and soft suede crossbody. Use caramel, dark brown, black, cream, muted teal and burgundy. No people, straw dominance, repeated saddle bags, text or invented logos."
+    ),
+    ("bags", "Dolce & Gabbana"): (
+        "Create a vertical six-panel product-only Dolce & Gabbana bag moodboard with six different Italian glamour signatures: Sicily top handle, softer My Sicily, Devotion heart-clasp bag, Dolce box bag, leopard leather shoulder bag and a jewel-toned evening mini. Use black, red, gold, leopard, emerald and cream. No people, repeated Sicily colourways, text or invented logos."
+    ),
+    ("bags", "Gucci"): (
+        "Create a vertical six-panel product-only Gucci bag moodboard with six distinct house icons: Bamboo 1947 top handle, Jackie 1961 hobo, Horsebit 1955 shoulder bag, Dionysus flap, GG Marmont and an Ophidia tote. Balance leather, GG canvas, bamboo and horsebit hardware in brown, black, red, green and ivory. No people, repeated monogram shapes, text or malformed logos."
+    ),
+    ("bags", "Isabel Marant"): (
+        "Create a vertical six-panel product-only Isabel Marant bag moodboard with six relaxed Paris-bohemian forms: an Oskan studded hobo, soft suede shoulder bag, fringed crossbody, compact bucket, slouchy tote and metallic evening pouch. Use black, tobacco, scarlet, cream, silver and faded denim blue. No people, beach straw, duplicate hobos, text or invented logos."
+    ),
+    ("bags", "Lemaire"): (
+        "Create a vertical six-panel product-only Lemaire bag moodboard with six distinct quiet sculptural forms: large Croissant, compact Fortune Croissant, Quiver Clip, Soft Game, Gear bag and a molded leather mini bag. Use soft nappa, grained leather and canvas in dark chocolate, black, clay, olive, cream and muted red. No people, six near-identical crescents, text or logos."
+    ),
+    ("bags", "McQueen"): (
+        "Create a vertical six-panel product-only McQueen bag moodboard with six different dark romantic silhouettes: a skull-clasp evening clutch, a structured T-Bar top handle, a curved shoulder bag, a harness-detailed crossbody, a red sculptural mini and a black oversized tote. Use black, bone, oxblood, silver and one jewel tone. No people, repeated skull boxes, text or invented logos."
+    ),
+    ("bags", "Osoi"): (
+        "Create a vertical six-panel product-only OSOI bag moodboard with six distinct Seoul-minimal silhouettes: Pecan Brot in suede, Toni Mini, a structured boat-shaped shoulder bag, a curved hobo, a compact cylinder bag and a clean top handle. Use butter suede, black, chocolate, ivory, burgundy and muted green with unusual closures. No people, repeated crescents, text or logos."
+    ),
+    ("bags", "Stella McCartney"): (
+        "Create a vertical six-panel product-only Stella McCartney bag moodboard with six distinct animal-free icons: Falabella chain tote, Ryder shoulder bag, Appaloosa crossbody, Logo tote, sculptural vegan-leather hobo and a metallic evening mini. Use black, cream, leopard jacquard, burgundy, silver and cobalt. No people, repeated chain totes, real fur or leather cues, text or invented logos."
+    ),
+    ("bags", "Tom Ford"): (
+        "Create a vertical six-panel product-only Tom Ford bag moodboard with six sleek sensual silhouettes: a printed-croc Arc shoulder bag, sharp top handle, polished leather tote, metallic evening clutch, compact crossbody and a soft suede hobo. Use black, chocolate, oxblood, gold, ivory and one deep green. No people, repeated T hardware, text or malformed logos."
+    ),
+    ("bags", "Samsonite"): (
+        "Create a vertical six-panel product-only Samsonite bag moodboard focused on bags rather than suitcases: a 2-in-1 travel backpack, commuter tech backpack, compact shoulder bag, weekender, business brief and lightweight tote. Use durable technical fabric in black, slate blue, chocolate mauve, navy, red and olive. No people, wheeled luggage as a hero, duplicate backpacks, text or invented logos."
+    ),
+    ("bags", "Tumi"): (
+        "Create a vertical six-panel product-only TUMI bag moodboard with six distinct premium travel and work forms: Alpha briefcase, Voyageur backpack, leather tote, compact crossbody, weekend duffel and utility sling. Use ballistic nylon and leather in black, navy, brown, red and muted green with precise hardware. No people, suitcases, duplicate backpacks, text or invented logos."
+    ),
+    ("bags", "Zadig & Voltaire"): (
+        "Create a vertical six-panel product-only Zadig & Voltaire bag moodboard with six different rock-chic forms: Rock chain clutch with subtle wing hardware, studded Sunny bag, Rocky II shoulder bag, soft Jack suede bag, Jim western bag and a Z Shopper. Use black, silver, oxblood, suede brown, cream and metallic gold. No people, duplicate clutches, readable text or invented logos."
+    ),
+    ("bags", "Ulla Johnson"): (
+        "Create a vertical six-panel product-only Ulla Johnson bag moodboard with six distinct artisanal city-bohemian forms: woven leather shoulder bag, sculptural Wave-style hobo, braided top handle, soft suede bucket, colourful beaded evening pouch and polished leather tote. Use tobacco, black, cream, terracotta, ocean blue and moss. No people, beach-straw dominance, repeated weaving, text or logos."
+    ),
     ("shoes", "ABRA"): (
         "Create a vertical six-panel product-only ABRA Paris footwear moodboard with one complete single shoe per "
         "panel: black Baby Boot, tall red Baby Boot, silver Kitten Spike Ballerina, brown Duck Loafer, leopard Sneaker "

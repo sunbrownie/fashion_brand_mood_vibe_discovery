@@ -1,0 +1,12 @@
+{
+  "review_id": "ER-396",
+  "brand_name": "McQueen",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only McQueen bag moodboard with six different dark romantic silhouettes: a skull-clasp evening clutch, a structured T-Bar top handle, a curved shoulder bag, a harness-detailed crossbody, a red sculptural mini and a black oversized tote. Use black, bone, oxblood, silver and one jewel tone. No people, repeated skull boxes, text or invented logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "40159c432caa5a5f44ad477f917a8bb453222e9b2b8a1d8ebd89d2eb3070021b",
+  "status": "candidate_generated",
+  "refinement_pass": "2026-11-01 post-Google-reference audit",
+  "refinement_notes": "Regenerated with stronger brand-specific silhouettes, product-only composition, and removal of generic filler identified in the PDF audit."
+}

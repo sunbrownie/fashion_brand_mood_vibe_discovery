@@ -1,0 +1,10 @@
+{
+  "review_id": "ER-387",
+  "brand_name": "Diesel",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only Diesel bag moodboard with six different rebellious silhouettes: a red 1DR shoulder bag, a distressed denim mini bag, a metallic silver hobo, a black industrial top handle, a vivid utility crossbody and a soft oversized tote. Use denim, cracked leather, metal hardware and red, black, blue and silver. No people, repeated oval plaques, text or invented logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "2fa854cdcd5f4ef70c4d65fa2b34074cfd8b38f5b534a5392ddfb5a2ef784d32",
+  "status": "candidate_generated"
+}

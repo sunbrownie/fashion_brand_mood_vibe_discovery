@@ -1,0 +1,12 @@
+{
+  "review_id": "ER-389",
+  "brand_name": "Junya Watanabe",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only Junya Watanabe bag moodboard with six experimental utilitarian forms: a reconstructed leather tote, a technical nylon backpack, a patchworked messenger, a harness-like shoulder bag, a folded geometric handbag and a punk-hardware mini bag. Use black, charcoal, khaki, white and restrained red with visible deconstruction. No people, repeated totes, readable text or unrelated logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "50ffca9b55a5c7e1853452dd154300b1d2b21be69de38515eb94e695b2e57ae6",
+  "status": "candidate_generated",
+  "refinement_pass": "2026-11-01 post-Google-reference audit",
+  "refinement_notes": "Regenerated with stronger brand-specific silhouettes, product-only composition, and removal of generic filler identified in the PDF audit."
+}

@@ -1,0 +1,10 @@
+{
+  "review_id": "ER-393",
+  "brand_name": "Gucci",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only Gucci bag moodboard with six distinct house icons: Bamboo 1947 top handle, Jackie 1961 hobo, Horsebit 1955 shoulder bag, Dionysus flap, GG Marmont and an Ophidia tote. Balance leather, GG canvas, bamboo and horsebit hardware in brown, black, red, green and ivory. No people, repeated monogram shapes, text or malformed logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "1f4f0c182ffcceb26e6789a29e4ab1f7efff31e35711e2b1574c6734423c7e34",
+  "status": "candidate_generated"
+}

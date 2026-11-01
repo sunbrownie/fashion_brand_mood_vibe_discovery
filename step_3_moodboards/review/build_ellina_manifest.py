@@ -64,6 +64,35 @@ CATEGORY_EXPANSIONS = [
     ("shoes", "Burton"),
 ]
 
+# Ellina's second bag review arrived after ER-001 through ER-364 were already
+# integrated. Keep this hand-checked transcription separate so those stable IDs
+# never shift when the complete manifest is rebuilt.
+BAGS_N_Z_EXISTING = [
+    ("Off-White", "Medium vibe. Needs the arrows, stripes and asymmetry."),
+    ("Ora Leathergoods", "Not that many bags, but use softer silhouettes."),
+    ("Patou", "Off vibe. Use fewer chains and straw pieces, more totes and small geometric bags, and include the brand name only where it is an authentic product mark."),
+    ("Polène", "Medium vibe. It is a bit boring with repeating close-ups; show a more diverse range."),
+    ("Pucci", "Medium vibe. Needs more signature print and bright colours."),
+    ("SACAI", "Close vibe, but two pairs of images repeat. Use more tote styles and feminine bags."),
+    ("SAMMY + NAT", "Primarily a kids brand. Drop from bags or make the board explicitly kids; the current board has a child but the bags are not kids bags."),
+    ("Sandy Liang", "Medium vibe. Straw is not on vibe; use black, pink and bows."),
+    ("Sensi Studio", "Medium vibe. Too beige."),
+    ("Shrimps", "Off vibe. Lacks the signature pearl bag."),
+    ("Staud", "Off vibe. Too many beaded bags with straw, which is not on brand."),
+    ("Susmie's", "Off vibe. Use less canvas and beach styling and show the current prints."),
+    ("The Attico", "Off vibe and includes the wrong bag - a Jacquemus one. Make it more colourful and city-focused."),
+    ("Tkees", "Mostly footwear and clothes, with barely any bags. Verify whether it is worth keeping in bags."),
+    ("Vivienne Westwood", "Medium vibe. Add more signature orb logo and remove the two repeated images."),
+    ("Yohji Yamamoto", "The board has words. Use more asymmetric black imagery and remove accidental text."),
+]
+
+BAGS_N_Z_ADDITIONS = [
+    "Alaïa", "Alexander Wang", "Balenciaga", "BY FAR", "Coach", "Dior", "Diesel",
+    "Eastpak", "Junya Watanabe", "Loewe", "Chloé", "Dolce & Gabbana", "Gucci",
+    "Isabel Marant", "Lemaire", "McQueen", "Osoi", "Stella McCartney", "Tom Ford",
+    "Samsonite", "Tumi", "Zadig & Voltaire", "Ulla Johnson",
+]
+
 ADDITION_FEEDBACK_OVERRIDES = {
     ("clothes", "Bimba Y Lola"): "The moodboard feels off-vibe compared with current Google and official imagery; correct the styling and palette.",
     ("clothes", "Burton"): "The moodboard feels off compared with current Google and official imagery; make the technical snowboard range more representative.",
@@ -271,6 +300,8 @@ def classify(note: str) -> tuple[str, str, str]:
     catalog_verify_signals = (
         "worthkeeping",
         "worthremoving",
+        "dropfrombags",
+        "primarilyakidsbrand",
         "couldnotverify",
         "cantfind",
         "hardtofind",
@@ -427,6 +458,47 @@ def build_manifest(root: Path, review_dir: Path) -> dict:
                 "part of this brand's current assortment."
             ),
             "source_pdf": "Category coverage audit",
+            "source_page": 1,
+            "implementation_status": (
+                "needs_catalog_verification" if action == "catalog_verify" else "not_started"
+            ),
+            "asset_version": "v2",
+        })
+        record_id += 1
+
+    # Append the later Bags N-Z review only after the original 364 fixtures so
+    # every existing review ID remains stable.
+    for brand, note in BAGS_N_Z_EXISTING:
+        action, priority, approval = classify(note)
+        records.append({
+            "review_id": f"ER-{record_id:03d}",
+            "category": "bags",
+            "brand_name": brand,
+            "request_type": "existing_board",
+            "recommended_action": action,
+            "priority": priority,
+            "approval_status": approval,
+            "issue_tags": issue_tags(note),
+            "reviewer_note": note,
+            "source_pdf": "Bags N-Z.pdf",
+            "source_page": 1,
+            "implementation_status": "not_started",
+            "asset_version": "v2",
+        })
+        record_id += 1
+
+    for brand in BAGS_N_Z_ADDITIONS:
+        records.append({
+            "review_id": f"ER-{record_id:03d}",
+            "category": "bags",
+            "brand_name": brand,
+            "request_type": "new_brand",
+            "recommended_action": "catalog_add_and_generate",
+            "priority": "P1",
+            "approval_status": "needs_scope_and_catalog_verification",
+            "issue_tags": ["requested_addition"],
+            "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+            "source_pdf": "Bags N-Z.pdf",
             "source_page": 1,
             "implementation_status": "not_started",
             "asset_version": "v2",

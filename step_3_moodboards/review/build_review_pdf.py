@@ -203,10 +203,10 @@ def draw_updated_panel(pdf: canvas.Canvas, paths: list[Path], cache_dir: Path, x
         pdf.drawCentredString(cell_x + cell_w / 2, y + h - 16, label)
 
 
-def footer(pdf: canvas.Canvas, page_number: int, total_pages: int) -> None:
+def footer(pdf: canvas.Canvas, page_number: int, total_pages: int, label: str) -> None:
     pdf.setFillColor(MUTED)
     pdf.setFont("Helvetica", 7.5)
-    pdf.drawString(34, 18, "Ellina review - complete V2 implementation pack")
+    pdf.drawString(34, 18, clean_text(label))
     pdf.drawRightString(PAGE_W - 34, 18, f"Page {page_number} of {total_pages}")
 
 
@@ -283,6 +283,7 @@ def fixture_page(
     reference: dict,
     page_number: int,
     total_pages: int,
+    footer_label: str,
 ) -> None:
     if record["request_type"] in {"new_brand", "new_brand_category"}:
         original = previous_candidate_moodboard(root, record)
@@ -355,13 +356,13 @@ def fixture_page(
         link_y -= 6.8
     pdf.linkURL(reference["official_url"], (right_x, 42, right_x + image_w, 62), relative=0)
 
-    footer(pdf, page_number, total_pages)
+    footer(pdf, page_number, total_pages, footer_label)
     pdf.showPage()
 
 
 def validate_inputs(root: Path, records: list[dict], references: dict[str, dict]) -> None:
-    if len(records) != 364:
-        raise RuntimeError(f"Expected 364 fixtures, found {len(records)}")
+    if len(records) != 403:
+        raise RuntimeError(f"Expected 403 fixtures, found {len(records)}")
     missing_originals = [record["review_id"] for record in records if record["request_type"] not in {"new_brand", "new_brand_category"} and original_moodboard(root, record) is None]
     missing_updates = [
         record["review_id"]
@@ -369,7 +370,13 @@ def validate_inputs(root: Path, records: list[dict], references: dict[str, dict]
         if record.get("implementation_status") == "implemented_v2"
         and (not updated_moodboards(root, record) or not all(path.exists() for path in updated_moodboards(root, record)))
     ]
-    unresolved = [record["review_id"] for record in records if not record["implementation_status"].startswith("implemented")]
+    allowed_pending = {"needs_catalog_verification"}
+    unresolved = [
+        record["review_id"]
+        for record in records
+        if not record["implementation_status"].startswith("implemented")
+        and record["implementation_status"] not in allowed_pending
+    ]
     missing_references = [
         record["review_id"]
         for record in records
@@ -383,17 +390,27 @@ def validate_inputs(root: Path, records: list[dict], references: dict[str, dict]
         )
 
 
-def build(root: Path, output: Path, cache_dir: Path) -> None:
+def build(root: Path, output: Path, cache_dir: Path, source_pdf: str | None = None) -> None:
     manifest_path = root / "step_3_moodboards" / "review" / "ellina_correction_manifest.json"
-    records = json.loads(manifest_path.read_text(encoding="utf-8"))["records"]
+    all_records = json.loads(manifest_path.read_text(encoding="utf-8"))["records"]
     references = reference_sources(root)
-    validate_inputs(root, records, references)
+    validate_inputs(root, all_records, references)
+    records = [record for record in all_records if not source_pdf or record["source_pdf"] == source_pdf]
+    if not records:
+        raise RuntimeError(f"No review fixtures found for source PDF: {source_pdf}")
     output.parent.mkdir(parents=True, exist_ok=True)
     total_pages = len(records)
+    title = "Ellina Moodboard Corrections - Complete V2 Review"
+    subject = "All 403 Ellina review fixtures with implemented outcomes and pending catalog-verification items"
+    footer_label = "Ellina review - complete V2 implementation pack"
+    if source_pdf:
+        title = f"Ellina Moodboard Corrections - {source_pdf.removesuffix('.pdf')} V2 Review"
+        subject = f"Comparison review for all {total_pages} fixtures from {source_pdf}"
+        footer_label = f"Ellina review - {source_pdf.removesuffix('.pdf')} V2 implementation pack"
     pdf = canvas.Canvas(str(output), pagesize=landscape(A4), pageCompression=1)
-    pdf.setTitle("Ellina Moodboard Corrections - Complete V2 Review")
+    pdf.setTitle(title)
     pdf.setAuthor("Brand Vibe project")
-    pdf.setSubject("All 360 review fixtures plus four approved category expansions with implemented outcomes")
+    pdf.setSubject(subject)
     last_group = None
     for index, record in enumerate(records, start=1):
         group = (record["source_pdf"], record["category"])
@@ -402,7 +419,16 @@ def build(root: Path, output: Path, cache_dir: Path) -> None:
             pdf.bookmarkPage(key)
             pdf.addOutlineEntry(f"{clean_text(group[0])} - {group[1].title()}", key, level=0, closed=False)
             last_group = group
-        fixture_page(pdf, root, cache_dir, record, references[record["review_id"]], index, total_pages)
+        fixture_page(
+            pdf,
+            root,
+            cache_dir,
+            record,
+            references[record["review_id"]],
+            index,
+            total_pages,
+            footer_label,
+        )
     pdf.save()
     print(f"Created {output} with {total_pages} pages for {len(records)} fixtures.")
 
@@ -412,8 +438,9 @@ def main() -> None:
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[2])
     parser.add_argument("--output", type=Path, default=Path("output/pdf/ellina_complete_v2_review.pdf"))
     parser.add_argument("--cache-dir", type=Path, default=Path("tmp/pdfs/ellina_review_images"))
+    parser.add_argument("--source-pdf", help="Only include fixtures imported from this source PDF")
     args = parser.parse_args()
-    build(args.root.resolve(), args.output.resolve(), args.cache_dir.resolve())
+    build(args.root.resolve(), args.output.resolve(), args.cache_dir.resolve(), args.source_pdf)
 
 
 if __name__ == "__main__":

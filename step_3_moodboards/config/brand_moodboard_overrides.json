@@ -288,6 +288,94 @@
       "layout": "Small polished panels, perforation-inspired dots, and one strong on-body image.",
       "logo_policy": "One authentic product logo detail is allowed; no repeated wordmarks."
     },
+    "bags/off_white": {
+      "must_include": ["arrow hardware or diagonal-arrow motif", "industrial strap or zip-tie cue", "graphic black-and-white stripes", "asymmetric shoulder and tote silhouettes"],
+      "must_avoid": ["generic black luxury bags", "soft romantic styling", "repeated box bags"],
+      "context": "Concrete city, industrial studio, and sharp monochrome fashion fragments.",
+      "layout": "Asymmetric angular panels with diagonal striping and strong black-white contrast.",
+      "logo_policy": "Use authentic arrow hardware as a product detail; no generated wordmark."
+    },
+    "bags/ora_leathergoods": {
+      "must_include": ["softly folded leather tote", "relaxed shoulder bag", "supple bucket form", "rounded clutch", "warm tactile leather grain"],
+      "must_avoid": ["rigid briefcases", "hard geometric boxes", "straw", "generic nylon backpacks"],
+      "context": "Warm minimal studio with folded leather and soft natural shadow.",
+      "layout": "Rounded but varied cut-paper panels that emphasize drape and softness."
+    },
+    "bags/patou": {
+      "must_include": ["small geometric top-handle bag", "clean modern tote", "compact bucket or trapeze form", "one authentic Patou product mark", "fresh black, white, red and bright accent colour"],
+      "must_avoid": ["straw-led resort styling", "heavy chain bags", "bohemian beach props", "repeated round bags"],
+      "context": "Graphic Paris studio and city fragments with youthful couture polish.",
+      "layout": "Crisp geometric blocks and lively colour accents with every silhouette different.",
+      "logo_policy": "One authentic product wordmark is allowed; no extra generated lettering."
+    },
+    "bags/polene": {
+      "must_include": ["Numéro Un structured top handle", "Numéro Dix crescent", "Cyme sculptural tote", "Béri folded mini bag", "Nodde curved shoulder bag", "distinct leather colours and proportions"],
+      "must_avoid": ["repeated close-ups", "six similar tan shoulder bags", "anonymous beige luxury", "detail-only tiles"],
+      "context": "Sculptural Paris architecture and clean leather studio fragments.",
+      "layout": "Six clearly different complete silhouettes with only one supporting leather detail crop."
+    },
+    "bags/pucci": {
+      "must_include": ["signature swirling Pucci print", "bright pink, orange, turquoise and violet", "printed shoulder bag", "colourful tote", "graphic mini bag", "one clean solid-colour contrast bag"],
+      "must_avoid": ["muted beige palette", "generic straw resort bags", "same print repeated", "all-neutral leather"],
+      "context": "Colour-saturated Italian resort-modernist fragments with print-led energy.",
+      "layout": "Dynamic curved and angular cutouts using a different print scale in each printed panel."
+    },
+    "bags/sacai": {
+      "must_include": ["hybrid tote construction", "feminine structured handbag", "technical fabric and leather combination", "pleated or layered detail", "distinct black, cream and colour-accent bags"],
+      "must_avoid": ["repeated product pairs", "six backpacks", "generic utilitarian luggage", "duplicate colourways"],
+      "context": "Tokyo runway and modern studio fragments with engineered layering.",
+      "layout": "Layered asymmetric panels led by totes and feminine hybrid silhouettes."
+    },
+    "bags/sandy_liang": {
+      "must_include": ["black bow bag", "pink satin or leather mini bag", "girlish shoulder bag", "ribbon and rosette details", "one polished city tote"],
+      "must_avoid": ["straw", "raffia", "beach styling", "earthy bohemian palette"],
+      "context": "Downtown New York street, ballet studio, and playful dressing-room fragments.",
+      "layout": "Small bow-like and ribbon-edged panels balanced with clean rectangular city crops."
+    },
+    "bags/sensi_studio": {
+      "must_include": ["woven statement tote", "colour-block basket bag", "embroidered or striped weave", "black or deep colour contrast", "bright coral, cobalt or green accent"],
+      "must_avoid": ["all-beige board", "six natural-straw baskets", "washed-out resort palette"],
+      "context": "Graphic warm-weather architecture and clean product-studio colour fields.",
+      "layout": "Bold colour-blocked panels with one natural raffia anchor and varied woven shapes."
+    },
+    "bags/shrimps": {
+      "must_include": ["signature pearl-beaded Antonia-style bag", "faux-pearl handle", "colourful beaded mini bag", "romantic top-handle form", "one black-and-white pearl statement"],
+      "must_avoid": ["generic straw baskets", "anonymous leather totes", "pearl detail hidden from view", "repeated pearl box shape"],
+      "context": "Playful London salon and clean pastel studio fragments.",
+      "layout": "Jewel-box cutouts with one unmistakable pearl hero and five distinct companion silhouettes."
+    },
+    "bags/staud": {
+      "must_include": ["Moon crescent bag", "Tommy beaded shoulder bag", "Mini Shirley transparent tote", "structured top-handle bag", "colourful city-ready shoulder bag", "clean leather and beaded variety"],
+      "must_avoid": ["straw-dominated board", "six beaded pouches", "beach-only styling", "repeated bucket silhouettes"],
+      "context": "Colourful Los Angeles city architecture, gallery, and polished studio fragments.",
+      "layout": "Graphic modern panels with only one beaded hero and no straw filler."
+    },
+    "bags/susmie_s": {
+      "must_include": ["current bold printed shoulder bag", "colourful patterned tote", "graphic mini bag", "contrasting dark city bag", "distinct contemporary prints"],
+      "must_avoid": ["canvas-dominated board", "beach props", "nautical resort mood", "washed-out neutrals"],
+      "context": "Current colourful city street and clean print studio fragments.",
+      "layout": "Print-led angular collage with every pattern and silhouette visibly different."
+    },
+    "bags/the_attico": {
+      "must_include": ["colourful La Passeggiata-style top handle", "sharp city shoulder bag", "metallic evening bag", "vivid red or lime mini bag", "glamorous urban styling"],
+      "must_avoid": ["Jacquemus silhouettes", "wrong-brand bags", "beige resort styling", "straw", "repeated half-moon bags"],
+      "context": "Milan nightlife, chrome studio, taxi-yellow street, and saturated city fragments.",
+      "layout": "Confident high-colour shards and polished night-time crops with no borrowed brand codes."
+    },
+    "bags/vivienne_westwood": {
+      "must_include": ["orb-logo bag", "tartan shoulder bag", "punk hardware", "structured top handle", "heart or asymmetric silhouette", "black, red, tartan and metallic accents"],
+      "must_avoid": ["repeated product images", "generic logo-free totes", "quiet beige luxury"],
+      "context": "London punk salon, tartan textile, and rebellious city fragments.",
+      "layout": "Asymmetric punk collage with six distinct silhouettes and no repeated crop.",
+      "logo_policy": "Authentic orb hardware is required on one or two products only."
+    },
+    "bags/yohji_yamamoto": {
+      "must_include": ["asymmetric black leather tote", "deconstructed shoulder bag", "soft oversized carryall", "architectural folded bag", "black-on-black texture variation"],
+      "must_avoid": ["readable words", "captions", "white product labels", "symmetrical generic handbags", "bright commercial styling"],
+      "context": "Shadowy Tokyo studio, draped black fabric, and stark concrete fragments.",
+      "layout": "Strong asymmetric negative space with irregular black panels and distinct sculptural silhouettes.",
+      "text_policy": "Absolutely no words, labels, captions, or decorative lettering."
+    },
     "shoes/atoms": {
       "must_include": ["signature textile lace-up shoe", "knit upper detail", "comfort-led minimal profile", "multiple genuinely different views"],
       "must_avoid": ["shoes from other brands", "fashion pumps", "sandals"],

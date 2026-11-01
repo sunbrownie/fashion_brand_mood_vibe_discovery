@@ -1,0 +1,12 @@
+{
+  "review_id": "ER-383",
+  "brand_name": "Balenciaga",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only Balenciaga bag moodboard with six visibly different signatures: a distressed Le City, an angular Rodeo top handle, an Hourglass shoulder bag, a soft Le Cagole, an oversized Arena tote and one sculptural evening bag. Use worn black, lipstick red, cobalt, silver and one acid accent. No people, repeated studs, duplicate silhouettes, text or malformed logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "606a6625f97e23e300880a46812706d599a6f8de72a7d716ec7f788607a821e0",
+  "status": "candidate_generated",
+  "refinement_pass": "2026-11-01 post-Google-reference audit",
+  "refinement_notes": "Regenerated with stronger brand-specific silhouettes, product-only composition, and removal of generic filler identified in the PDF audit."
+}

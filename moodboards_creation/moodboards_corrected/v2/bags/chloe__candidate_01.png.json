@@ -1,0 +1,10 @@
+{
+  "review_id": "ER-391",
+  "brand_name": "Chloé",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only Chloé bag moodboard with six distinct feminine icons: a slouchy Paddington with padlock, Marcie saddle bag, Woody tote, curved hobo, polished top handle and soft suede crossbody. Use caramel, dark brown, black, cream, muted teal and burgundy. No people, straw dominance, repeated saddle bags, text or invented logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "9a580538abcdc32b0fd0ea6feea86790c17eb4ee2dacdd28af3a64ba75462cfe",
+  "status": "candidate_generated"
+}

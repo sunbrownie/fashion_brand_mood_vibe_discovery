@@ -1,0 +1,10 @@
+{
+  "review_id": "ER-388",
+  "brand_name": "Eastpak",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only Eastpak bag moodboard with six genuinely different functional styles: a classic Pak'r backpack, a laptop daypack, a messenger bag, a duffel, a tote and a convertible travel pack. Use durable nylon and canvas in black, navy, burgundy, forest green and one bright colour. No people, duplicate backpacks, luggage-only board, text or invented logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "c76c5866c124d91a525cf47028d478b9fc46f5635eeac60c42265bed3822194d",
+  "status": "candidate_generated"
+}

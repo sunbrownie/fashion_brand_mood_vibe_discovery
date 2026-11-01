@@ -1,0 +1,10 @@
+{
+  "review_id": "ER-381",
+  "brand_name": "Alaïa",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only Alaïa bag moodboard with six distinct complete silhouettes: an elongated Le Teckel shoulder bag, a heart-shaped Le Coeur bag, a laser-cut Vienne tote, a studded Demi-Lune, a compact top handle and a sculptural clutch. Use black, deep red, chestnut, white and one vivid accent with precise leather craft. No people, repeated shapes, alternate views, text or invented logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "b5a89fbfb9ee0aec9350aa6205634eb2fc222e8dbffddcfd85817312ada8dc9e",
+  "status": "candidate_generated"
+}

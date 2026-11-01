@@ -1,0 +1,10 @@
+{
+  "review_id": "ER-395",
+  "brand_name": "Lemaire",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only Lemaire bag moodboard with six distinct quiet sculptural forms: large Croissant, compact Fortune Croissant, Quiver Clip, Soft Game, Gear bag and a molded leather mini bag. Use soft nappa, grained leather and canvas in dark chocolate, black, clay, olive, cream and muted red. No people, six near-identical crescents, text or logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "284d4e80eefa158d2e83e90260d0447706c721170df860bb70949c98bea663eb",
+  "status": "candidate_generated"
+}

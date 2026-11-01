@@ -1,0 +1,12 @@
+{
+  "review_id": "ER-398",
+  "brand_name": "Stella McCartney",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only Stella McCartney bag moodboard with six distinct animal-free icons: Falabella chain tote, Ryder shoulder bag, Appaloosa crossbody, Logo tote, sculptural vegan-leather hobo and a metallic evening mini. Use black, cream, leopard jacquard, burgundy, silver and cobalt. No people, repeated chain totes, real fur or leather cues, text or invented logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "1d17e6ac38e795c4b7352ba62a8c9012bece80804b765a1209b3b6ac765b6bc5",
+  "status": "candidate_generated",
+  "refinement_pass": "2026-11-01 post-Google-reference audit",
+  "refinement_notes": "Regenerated with stronger brand-specific silhouettes, product-only composition, and removal of generic filler identified in the PDF audit."
+}

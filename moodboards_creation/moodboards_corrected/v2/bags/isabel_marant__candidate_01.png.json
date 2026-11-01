@@ -1,0 +1,10 @@
+{
+  "review_id": "ER-394",
+  "brand_name": "Isabel Marant",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only Isabel Marant bag moodboard with six relaxed Paris-bohemian forms: an Oskan studded hobo, soft suede shoulder bag, fringed crossbody, compact bucket, slouchy tote and metallic evening pouch. Use black, tobacco, scarlet, cream, silver and faded denim blue. No people, beach straw, duplicate hobos, text or invented logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "c38fd47caa965f848692656dbeeb10e217b6ab1875431a872fb23dfa3a03f14f",
+  "status": "candidate_generated"
+}

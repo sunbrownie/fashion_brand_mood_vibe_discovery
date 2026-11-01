@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_csv": "step_2_text_embeddings/brand_metadata_today.csv",
-  "capture_policy": "Official/catalog URL or user-specified live brand source; visual reference captured from one focused Google Images query unless a more authoritative source was supplied.",
+  "capture_policy": "Official URL from catalog; visual reference captured from one focused Google Images query per brand/category.",
   "records": [
     {
       "review_id": "ER-001",
@@ -2879,10 +2879,9 @@
       "review_id": "ER-360",
       "brand_name": "Yellow Swallow",
       "category": "jewellery",
-      "official_url": "https://www.instagram.com/yellowswallow_official/",
+      "official_url": "https://yellowswallow.com",
       "google_images_url": "https://www.google.com/search?udm=2&q=Yellow+Swallow+official+jewellery",
-      "reference_label": "INSTAGRAM REFERENCE",
-      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__yellow_swallow_instagram.jpg"
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/jewellery__yellow_swallow.jpg"
     },
     {
       "review_id": "ER-361",
@@ -2913,9 +2912,320 @@
       "brand_name": "Burton",
       "category": "shoes",
       "official_url": "https://www.burton.co.uk/categories/mens-shoes",
-      "google_images_url": "https://www.google.com/search?udm=2&q=Burton+Menswear+London+shoes+loafers+brogues",
-      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__burton.jpg",
-      "reference_label": "GOOGLE IMAGES - BURTON MENSWEAR"
+      "google_images_url": "https://www.google.com/search?udm=2&q=Burton+official+shoes",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/shoes__burton.jpg"
+    },
+    {
+      "review_id": "ER-365",
+      "brand_name": "Off-White",
+      "category": "bags",
+      "official_url": "https://off---white.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Off-White+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__off_white.jpg"
+    },
+    {
+      "review_id": "ER-366",
+      "brand_name": "Ora Leathergoods",
+      "category": "bags",
+      "official_url": "https://oraleathergoods.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Ora+Leathergoods+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__ora_leathergoods.jpg"
+    },
+    {
+      "review_id": "ER-367",
+      "brand_name": "Patou",
+      "category": "bags",
+      "official_url": "https://patou.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Patou+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__patou.jpg"
+    },
+    {
+      "review_id": "ER-368",
+      "brand_name": "Polène",
+      "category": "bags",
+      "official_url": "https://polene-paris.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Pol%C3%A8ne+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__polene.jpg"
+    },
+    {
+      "review_id": "ER-369",
+      "brand_name": "Pucci",
+      "category": "bags",
+      "official_url": "https://pucci.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Pucci+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__pucci.jpg"
+    },
+    {
+      "review_id": "ER-370",
+      "brand_name": "SACAI",
+      "category": "bags",
+      "official_url": "https://sacai.jp",
+      "google_images_url": "https://www.google.com/search?udm=2&q=SACAI+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__sacai.jpg"
+    },
+    {
+      "review_id": "ER-371",
+      "brand_name": "SAMMY + NAT",
+      "category": "bags",
+      "official_url": "https://sammyandnat.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=SAMMY+%2B+NAT+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__sammy_nat.jpg"
+    },
+    {
+      "review_id": "ER-372",
+      "brand_name": "Sandy Liang",
+      "category": "bags",
+      "official_url": "https://sandyliang.info",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Sandy+Liang+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__sandy_liang.jpg"
+    },
+    {
+      "review_id": "ER-373",
+      "brand_name": "Sensi Studio",
+      "category": "bags",
+      "official_url": "https://sensistudio.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Sensi+Studio+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__sensi_studio.jpg"
+    },
+    {
+      "review_id": "ER-374",
+      "brand_name": "Shrimps",
+      "category": "bags",
+      "official_url": "https://shrimps.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Shrimps+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__shrimps.jpg"
+    },
+    {
+      "review_id": "ER-375",
+      "brand_name": "Staud",
+      "category": "bags",
+      "official_url": "https://staud.clothing",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Staud+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__staud.jpg"
+    },
+    {
+      "review_id": "ER-376",
+      "brand_name": "Susmie's",
+      "category": "bags",
+      "official_url": "https://susmies.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Susmie%27s+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__susmie_s.jpg"
+    },
+    {
+      "review_id": "ER-377",
+      "brand_name": "The Attico",
+      "category": "bags",
+      "official_url": "https://theattico.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=The+Attico+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__the_attico.jpg"
+    },
+    {
+      "review_id": "ER-378",
+      "brand_name": "Tkees",
+      "category": "bags",
+      "official_url": "https://tkees.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Tkees+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__tkees.jpg"
+    },
+    {
+      "review_id": "ER-379",
+      "brand_name": "Vivienne Westwood",
+      "category": "bags",
+      "official_url": "https://viviennewestwood.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Vivienne+Westwood+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__vivienne_westwood.jpg"
+    },
+    {
+      "review_id": "ER-380",
+      "brand_name": "Yohji Yamamoto",
+      "category": "bags",
+      "official_url": "https://www.yohjiyamamoto.co.jp",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Yohji+Yamamoto+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__yohji_yamamoto.jpg"
+    },
+    {
+      "review_id": "ER-381",
+      "brand_name": "Alaïa",
+      "category": "bags",
+      "official_url": "https://www.maison-alaia.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Ala%C3%AFa+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__alaia.jpg"
+    },
+    {
+      "review_id": "ER-382",
+      "brand_name": "Alexander Wang",
+      "category": "bags",
+      "official_url": "https://www.alexanderwang.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Alexander+Wang+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__alexander_wang.jpg"
+    },
+    {
+      "review_id": "ER-383",
+      "brand_name": "Balenciaga",
+      "category": "bags",
+      "official_url": "https://www.balenciaga.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Balenciaga+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__balenciaga.jpg"
+    },
+    {
+      "review_id": "ER-384",
+      "brand_name": "BY FAR",
+      "category": "bags",
+      "official_url": "https://www.byfar.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=BY+FAR+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__by_far.jpg"
+    },
+    {
+      "review_id": "ER-385",
+      "brand_name": "Coach",
+      "category": "bags",
+      "official_url": "https://www.coach.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Coach+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__coach.jpg"
+    },
+    {
+      "review_id": "ER-386",
+      "brand_name": "Dior",
+      "category": "bags",
+      "official_url": "https://www.dior.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Dior+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__dior.jpg"
+    },
+    {
+      "review_id": "ER-387",
+      "brand_name": "Diesel",
+      "category": "bags",
+      "official_url": "https://www.diesel.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Diesel+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__diesel.jpg"
+    },
+    {
+      "review_id": "ER-388",
+      "brand_name": "Eastpak",
+      "category": "bags",
+      "official_url": "https://www.eastpak.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Eastpak+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__eastpak.jpg"
+    },
+    {
+      "review_id": "ER-389",
+      "brand_name": "Junya Watanabe",
+      "category": "bags",
+      "official_url": "https://junyawatanabe.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Junya+Watanabe+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__junya_watanabe.jpg"
+    },
+    {
+      "review_id": "ER-390",
+      "brand_name": "Loewe",
+      "category": "bags",
+      "official_url": "https://www.loewe.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Loewe+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__loewe.jpg"
+    },
+    {
+      "review_id": "ER-391",
+      "brand_name": "Chloé",
+      "category": "bags",
+      "official_url": "https://www.chloe.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Chlo%C3%A9+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__chloe.jpg"
+    },
+    {
+      "review_id": "ER-392",
+      "brand_name": "Dolce & Gabbana",
+      "category": "bags",
+      "official_url": "https://www.dolcegabbana.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Dolce+%26+Gabbana+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__dolce_and_gabbana.jpg"
+    },
+    {
+      "review_id": "ER-393",
+      "brand_name": "Gucci",
+      "category": "bags",
+      "official_url": "https://www.gucci.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Gucci+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__gucci.jpg"
+    },
+    {
+      "review_id": "ER-394",
+      "brand_name": "Isabel Marant",
+      "category": "bags",
+      "official_url": "https://www.isabelmarant.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Isabel+Marant+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__isabel_marant.jpg"
+    },
+    {
+      "review_id": "ER-395",
+      "brand_name": "Lemaire",
+      "category": "bags",
+      "official_url": "https://www.lemaire.fr",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Lemaire+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__lemaire.jpg"
+    },
+    {
+      "review_id": "ER-396",
+      "brand_name": "McQueen",
+      "category": "bags",
+      "official_url": "https://www.alexandermcqueen.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=McQueen+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__mcqueen.jpg"
+    },
+    {
+      "review_id": "ER-397",
+      "brand_name": "Osoi",
+      "category": "bags",
+      "official_url": "https://en.osoi.co.kr",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Osoi+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__osoi.jpg"
+    },
+    {
+      "review_id": "ER-398",
+      "brand_name": "Stella McCartney",
+      "category": "bags",
+      "official_url": "https://www.stellamccartney.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Stella+McCartney+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__stella_mccartney.jpg"
+    },
+    {
+      "review_id": "ER-399",
+      "brand_name": "Tom Ford",
+      "category": "bags",
+      "official_url": "https://www.tomfordfashion.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Tom+Ford+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__tom_ford.jpg"
+    },
+    {
+      "review_id": "ER-400",
+      "brand_name": "Samsonite",
+      "category": "bags",
+      "official_url": "https://www.samsonite.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Samsonite+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__samsonite.jpg"
+    },
+    {
+      "review_id": "ER-401",
+      "brand_name": "Tumi",
+      "category": "bags",
+      "official_url": "https://www.tumi.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Tumi+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__tumi.jpg"
+    },
+    {
+      "review_id": "ER-402",
+      "brand_name": "Zadig & Voltaire",
+      "category": "bags",
+      "official_url": "https://zadig-et-voltaire.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Zadig+%26+Voltaire+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__zadig_and_voltaire.jpg"
+    },
+    {
+      "review_id": "ER-403",
+      "brand_name": "Ulla Johnson",
+      "category": "bags",
+      "official_url": "https://ullajohnson.com",
+      "google_images_url": "https://www.google.com/search?udm=2&q=Ulla+Johnson+official+bags",
+      "screenshot_path": "step_3_moodboards/review/reference_screenshots/bags__ulla_johnson.jpg"
     }
   ]
 }

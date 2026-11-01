@@ -1,0 +1,12 @@
+{
+  "review_id": "ER-399",
+  "brand_name": "Tom Ford",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only Tom Ford bag moodboard with six sleek elegant and body-aware silhouettes: a printed-croc Arc shoulder bag, sharp top handle, polished leather tote, metallic evening clutch, compact crossbody and a soft suede hobo. Use black, chocolate, oxblood, gold, ivory and one deep green. No people, repeated T hardware, text or malformed logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "e6160133c4452323302bec836d62cb5aac941f6520f5f206c12d96b913f00d40",
+  "status": "candidate_generated",
+  "refinement_pass": "2026-11-01 post-Google-reference audit",
+  "refinement_notes": "Regenerated with stronger brand-specific silhouettes, product-only composition, and removal of generic filler identified in the PDF audit."
+}

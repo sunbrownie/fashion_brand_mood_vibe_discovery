@@ -1,0 +1,12 @@
+{
+  "review_id": "ER-390",
+  "brand_name": "Loewe",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only Loewe bag moodboard with six different crafted icons: Puzzle, Flamenco, Squeeze, Hammock, Pebble bucket and Amazona top handle. Make each silhouette unmistakably different using supple leather, ruched construction and precise colour in tan, black, burgundy, olive, cobalt and one bright accent. No people, duplicate bags, text or malformed logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "6630b834d273606ed36ac1b56394e884436456eb80482022ce08d6eed6a0753f",
+  "status": "candidate_generated",
+  "refinement_pass": "2026-11-01 post-Google-reference audit",
+  "refinement_notes": "Regenerated with stronger brand-specific silhouettes, product-only composition, and removal of generic filler identified in the PDF audit."
+}

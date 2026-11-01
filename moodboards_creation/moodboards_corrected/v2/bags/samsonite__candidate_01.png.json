@@ -1,0 +1,12 @@
+{
+  "review_id": "ER-400",
+  "brand_name": "Samsonite",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only Samsonite bag moodboard focused on bags rather than suitcases: a 2-in-1 travel backpack, commuter tech backpack, compact shoulder bag, weekender, business brief and lightweight tote. Use durable technical fabric in black, slate blue, chocolate mauve, navy, red and olive. No people, wheeled luggage as a hero, duplicate backpacks, text or invented logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "0e40669727043f99032caf5c94c187626d00163164852e20c2b8be21ada52bc2",
+  "status": "candidate_generated",
+  "refinement_pass": "2026-11-01 post-Google-reference audit",
+  "refinement_notes": "Regenerated with stronger brand-specific silhouettes, product-only composition, and removal of generic filler identified in the PDF audit."
+}

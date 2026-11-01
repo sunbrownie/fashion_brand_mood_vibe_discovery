@@ -25,16 +25,14 @@ DERIVED_ARTIFACTS = (
     "data/ios_brand_umap.csv",
     "data/ios_brand_umap.tsv",
     "data/ios_cluster_summary.csv",
-    "data/moodboard_image_embeddings_clip_vit_b32.npz",
-    "data/moodboard_image_embeddings_metadata.csv",
 )
 
 
 def moodboard_paths() -> list[str]:
     manifest_path = IOS_ROOT / "BrandMoodboards" / "v2_manifest.json"
     entries = json.loads(manifest_path.read_text(encoding="utf-8"))["entries"]
-    if len(entries) != 322:
-        raise ValueError(f"Expected 322 accepted V2 moodboards, found {len(entries)}")
+    if len(entries) != 359:
+        raise ValueError(f"Expected 359 accepted V2 moodboards, found {len(entries)}")
 
     paths: set[str] = set()
     for entry in entries:
@@ -59,10 +57,10 @@ def main() -> None:
         operations=operations,
         commit_message="Integrate reviewed V2 moodboards, catalog and embeddings",
         commit_description=(
-            "Publishes all 322 accepted V2 moodboards, including corrected existing "
+            "Publishes all 359 accepted V2 moodboards, including corrected existing "
             "brands and new catalog entries; refreshes reviewed descriptions, text "
-            "embeddings, clusters, PCA and UMAP; and rebuilds separate CLIP "
-            "moodboard-image embeddings with checksummed metadata."
+            "embeddings, clusters, PCA and UMAP. Moodboards remain illustrative and "
+            "the runtime recommendation path remains text-embedding based."
         ),
     )
     print(result.commit_url)

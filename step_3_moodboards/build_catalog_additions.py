@@ -50,6 +50,17 @@ WEBSITES = {
     "Roxanne Assoulin": "https://roxanneassoulin.com", "Roxanne First": "https://roxannefirst.com",
     "Sonia Petroff": "https://soniapetroff.com", "Zoe Mohm": "https://zoemohm.com",
     "William Welstead": "https://williamwelstead.com", "YVMIN": "https://yvmin.com", "Yellow Swallow": "https://yellowswallow.com",
+    "Alaïa": "https://www.maison-alaia.com", "Alexander Wang": "https://www.alexanderwang.com",
+    "Balenciaga": "https://www.balenciaga.com", "BY FAR": "https://www.byfar.com",
+    "Coach": "https://www.coach.com", "Dior": "https://www.dior.com", "Diesel": "https://www.diesel.com",
+    "Eastpak": "https://www.eastpak.com", "Junya Watanabe": "https://junyawatanabe.com",
+    "Loewe": "https://www.loewe.com", "Chloé": "https://www.chloe.com",
+    "Dolce & Gabbana": "https://www.dolcegabbana.com", "Gucci": "https://www.gucci.com",
+    "Isabel Marant": "https://www.isabelmarant.com", "Lemaire": "https://www.lemaire.fr",
+    "McQueen": "https://www.alexandermcqueen.com", "Osoi": "https://en.osoi.co.kr",
+    "Stella McCartney": "https://www.stellamccartney.com", "Tom Ford": "https://www.tomfordfashion.com",
+    "Samsonite": "https://www.samsonite.com", "Tumi": "https://www.tumi.com",
+    "Zadig & Voltaire": "https://zadig-et-voltaire.com", "Ulla Johnson": "https://ullajohnson.com",
 }
 
 CATEGORY_WEBSITES = {
@@ -82,22 +93,33 @@ PROXIES = {
     "Vivienne Westwood": "Ambush", "Roxanne Assoulin": "Bea Bongiasca", "Roxanne First": "Anita Ko",
     "Sonia Petroff": "Aurelie Bidermann", "Zoe Mohm": "Alighieri", "William Welstead": "Celine Daoust",
     "YVMIN": "Ambush", "Yellow Swallow": "Anni Lu",
+    "Alaïa": "Akris", "Alexander Wang": "Acne Studios", "Balenciaga": "Bottega Veneta",
+    "BY FAR": "Staud", "Coach": "Marc Jacobs", "Dior": "Chanel", "Diesel|bags": "MOWALOLA",
+    "Eastpak": "Herschel", "Junya Watanabe": "Comme des Garçons", "Loewe": "Bottega Veneta",
+    "Chloé": "Celine", "Dolce & Gabbana": "Valentino", "Gucci|bags": "Bottega Veneta",
+    "Isabel Marant": "Clare V", "Lemaire": "Jil Sander", "McQueen|bags": "Rick Owens",
+    "Osoi": "Marge Sherwood", "Stella McCartney": "Cuyana", "Tom Ford": "Saint Laurent",
+    "Samsonite": "Horizn Studios", "Tumi": "MONTBLANC", "Zadig & Voltaire": "All Saints",
+    "Ulla Johnson": "Chan Luu",
 }
 
 
 LUXURY = {
     "Balmain", "Burberry", "Erdem", "Gucci", "Jean Paul Gaultier", "Loro Piana", "McQueen", "Moncler",
     "Moschino", "Mugler", "Golden Goose", "Gia Borghini", "Church's", "Vivienne Westwood", "Roxanne First",
-    "Sonia Petroff", "William Welstead",
+    "Sonia Petroff", "William Welstead", "Alaïa", "Balenciaga", "Dior", "Loewe", "Chloé",
+    "Dolce & Gabbana", "Gucci", "Lemaire", "McQueen", "Stella McCartney", "Tom Ford",
 }
 AFFORDABLE = {"GAP", "Hollister", "Mango", "Missguided", "Pull & Bear", "Crocs"}
 UPPER = {
     "AVAVAV", "Barbour", "Bimba Y Lola", "Canada Goose", "Charles Jeffrey Loverboy", "Conner Ives", "Duran Lantink",
     "Karl Lagerfeld", "Martine Rose", "Missoni", "Michael Kors", "Needles", "Palm Angels", "Paul Smith",
     "Polo Ralph Lauren", "ABRA", "Air Jordan", "EYTYS", "Diemme", "Hunter", "Roxanne Assoulin", "Zoe Mohm", "YVMIN",
+    "Alexander Wang", "BY FAR", "Coach", "Diesel", "Isabel Marant", "Osoi", "Tumi", "Zadig & Voltaire", "Ulla Johnson",
 }
 FEMALE_ONLY = {"Good American", "Missguided", "Never Fully Dressed", "Oner Active", "ABRA", "Gia Borghini", "Carvela",
-               "Roxanne Assoulin", "Roxanne First", "Sonia Petroff", "Zoe Mohm", "William Welstead", "Yellow Swallow"}
+               "Roxanne Assoulin", "Roxanne First", "Sonia Petroff", "Zoe Mohm", "William Welstead", "Yellow Swallow",
+               "Alaïa", "BY FAR", "Chloé", "Isabel Marant", "Osoi", "Ulla Johnson"}
 MALE_ONLY_CATEGORY = {("Burton", "shoes")}
 
 
@@ -153,8 +175,8 @@ def main() -> None:
             "taste_proxy_brand_name": proxy,
         })
 
-    if len(entries) != 90:
-        raise RuntimeError(f"Expected 90 catalog additions, found {len(entries)}")
+    if len(entries) != 113:
+        raise RuntimeError(f"Expected 113 catalog additions, found {len(entries)}")
     OUTPUT_PATH.write_text(
         json.dumps({
             "schema_version": 1,

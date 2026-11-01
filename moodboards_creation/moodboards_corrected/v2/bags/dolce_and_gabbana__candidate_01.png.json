@@ -1,0 +1,10 @@
+{
+  "review_id": "ER-392",
+  "brand_name": "Dolce & Gabbana",
+  "category": "bags",
+  "candidate": 1,
+  "model": "built-in image_gen",
+  "prompt": "Create a vertical six-panel product-only Dolce & Gabbana bag moodboard with six different Italian glamour signatures: Sicily top handle, softer My Sicily, Devotion heart-clasp bag, Dolce box bag, leopard leather shoulder bag and a jewel-toned evening mini. Use black, red, gold, leopard, emerald and cream. No people, repeated Sicily colourways, text or invented logos. If people are shown, they must be adult fashion models. Absolutely no typography anywhere in the image: do not write the brand name, initials, slogans, captions, labels or decorative letters. This is a bags-only board. Do not include dedicated shoe, jewellery or clothing product tiles.",
+  "sha256": "6fe5fc01cc6c54543401407181a074d935e2a8ba0e9851b2d1455f2bbb2e91a2",
+  "status": "candidate_generated"
+}

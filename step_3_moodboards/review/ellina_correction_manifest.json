@@ -8492,6 +8492,897 @@
       "catalog_overlay_path": "ios/BrandMoodboardFinder/BrandMoodboardFinder/BrandMoodboards/v2_catalog_additions.json",
       "taste_proxy_brand_name": "Base London",
       "self_review_note": "Approved correction: Burton Menswear London footwear with six distinct polished formal, smart-casual, boot and trainer directions; no snow-sport products."
+    },
+    {
+      "review_id": "ER-365",
+      "category": "bags",
+      "brand_name": "Off-White",
+      "request_type": "existing_board",
+      "recommended_action": "targeted_regenerate",
+      "priority": "P2",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "art_direction"
+      ],
+      "reviewer_note": "Medium vibe. Needs the arrows, stripes and asymmetry.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "regenerated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/off_white__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__off_white.jpg"
+      ],
+      "self_review_note": "Self-review approved: correction follows Ellina's Bags N-Z note, shows distinct category-correct bags, and contains no visible accidental text."
+    },
+    {
+      "review_id": "ER-366",
+      "category": "bags",
+      "brand_name": "Ora Leathergoods",
+      "request_type": "existing_board",
+      "recommended_action": "targeted_regenerate",
+      "priority": "P2",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "art_direction"
+      ],
+      "reviewer_note": "Not that many bags, but use softer silhouettes.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "regenerated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/ora_leathergoods__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__ora_leathergoods.jpg"
+      ],
+      "self_review_note": "Self-review approved: correction follows Ellina's Bags N-Z note, shows distinct category-correct bags, and contains no visible accidental text."
+    },
+    {
+      "review_id": "ER-367",
+      "category": "bags",
+      "brand_name": "Patou",
+      "request_type": "existing_board",
+      "recommended_action": "full_regenerate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "off_brand"
+      ],
+      "reviewer_note": "Off vibe. Use fewer chains and straw pieces, more totes and small geometric bags, and include the brand name only where it is an authentic product mark.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "regenerated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/patou__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__patou.jpg"
+      ],
+      "self_review_note": "Self-review approved: correction follows Ellina's Bags N-Z note, shows distinct category-correct bags, and contains no visible accidental text."
+    },
+    {
+      "review_id": "ER-368",
+      "category": "bags",
+      "brand_name": "Polène",
+      "request_type": "existing_board",
+      "recommended_action": "targeted_regenerate",
+      "priority": "P2",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "duplicate_assets"
+      ],
+      "reviewer_note": "Medium vibe. It is a bit boring with repeating close-ups; show a more diverse range.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "regenerated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/polene__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__polene.jpg"
+      ],
+      "self_review_note": "Self-review approved: correction follows Ellina's Bags N-Z note, shows distinct category-correct bags, and contains no visible accidental text."
+    },
+    {
+      "review_id": "ER-369",
+      "category": "bags",
+      "brand_name": "Pucci",
+      "request_type": "existing_board",
+      "recommended_action": "targeted_regenerate",
+      "priority": "P2",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "missing_signature"
+      ],
+      "reviewer_note": "Medium vibe. Needs more signature print and bright colours.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "regenerated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/pucci__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__pucci.jpg"
+      ],
+      "self_review_note": "Self-review approved: correction follows Ellina's Bags N-Z note, shows distinct category-correct bags, and contains no visible accidental text."
+    },
+    {
+      "review_id": "ER-370",
+      "category": "bags",
+      "brand_name": "SACAI",
+      "request_type": "existing_board",
+      "recommended_action": "targeted_regenerate",
+      "priority": "P2",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "duplicate_assets"
+      ],
+      "reviewer_note": "Close vibe, but two pairs of images repeat. Use more tote styles and feminine bags.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "regenerated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/sacai__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__sacai.jpg"
+      ],
+      "self_review_note": "Self-review approved: correction follows Ellina's Bags N-Z note, shows distinct category-correct bags, and contains no visible accidental text."
+    },
+    {
+      "review_id": "ER-371",
+      "category": "bags",
+      "brand_name": "SAMMY + NAT",
+      "request_type": "existing_board",
+      "recommended_action": "catalog_verify",
+      "priority": "P0",
+      "approval_status": "needs_catalog_verification",
+      "issue_tags": [
+        "art_direction"
+      ],
+      "reviewer_note": "Primarily a kids brand. Drop from bags or make the board explicitly kids; the current board has a child but the bags are not kids bags.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "needs_catalog_verification",
+      "asset_version": "v2",
+      "resolved_action": "pending_catalog_decision"
+    },
+    {
+      "review_id": "ER-372",
+      "category": "bags",
+      "brand_name": "Sandy Liang",
+      "request_type": "existing_board",
+      "recommended_action": "targeted_regenerate",
+      "priority": "P2",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "art_direction"
+      ],
+      "reviewer_note": "Medium vibe. Straw is not on vibe; use black, pink and bows.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "regenerated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/sandy_liang__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__sandy_liang.jpg"
+      ],
+      "self_review_note": "Self-review approved: correction follows Ellina's Bags N-Z note, shows distinct category-correct bags, and contains no visible accidental text."
+    },
+    {
+      "review_id": "ER-373",
+      "category": "bags",
+      "brand_name": "Sensi Studio",
+      "request_type": "existing_board",
+      "recommended_action": "targeted_regenerate",
+      "priority": "P2",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "art_direction"
+      ],
+      "reviewer_note": "Medium vibe. Too beige.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "regenerated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/sensi_studio__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__sensi_studio.jpg"
+      ],
+      "self_review_note": "Self-review approved: correction follows Ellina's Bags N-Z note, shows distinct category-correct bags, and contains no visible accidental text."
+    },
+    {
+      "review_id": "ER-374",
+      "category": "bags",
+      "brand_name": "Shrimps",
+      "request_type": "existing_board",
+      "recommended_action": "full_regenerate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "off_brand",
+        "missing_signature"
+      ],
+      "reviewer_note": "Off vibe. Lacks the signature pearl bag.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "regenerated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/shrimps__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__shrimps.jpg"
+      ],
+      "self_review_note": "Self-review approved: correction follows Ellina's Bags N-Z note, shows distinct category-correct bags, and contains no visible accidental text."
+    },
+    {
+      "review_id": "ER-375",
+      "category": "bags",
+      "brand_name": "Staud",
+      "request_type": "existing_board",
+      "recommended_action": "full_regenerate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "off_brand"
+      ],
+      "reviewer_note": "Off vibe. Too many beaded bags with straw, which is not on brand.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "regenerated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/staud__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__staud.jpg"
+      ],
+      "self_review_note": "Self-review approved: correction follows Ellina's Bags N-Z note, shows distinct category-correct bags, and contains no visible accidental text."
+    },
+    {
+      "review_id": "ER-376",
+      "category": "bags",
+      "brand_name": "Susmie's",
+      "request_type": "existing_board",
+      "recommended_action": "full_regenerate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "off_brand"
+      ],
+      "reviewer_note": "Off vibe. Use less canvas and beach styling and show the current prints.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "regenerated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/susmie_s__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__susmie_s.jpg"
+      ],
+      "self_review_note": "Self-review approved: correction follows Ellina's Bags N-Z note, shows distinct category-correct bags, and contains no visible accidental text."
+    },
+    {
+      "review_id": "ER-377",
+      "category": "bags",
+      "brand_name": "The Attico",
+      "request_type": "existing_board",
+      "recommended_action": "full_regenerate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "off_brand"
+      ],
+      "reviewer_note": "Off vibe and includes the wrong bag - a Jacquemus one. Make it more colourful and city-focused.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "regenerated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/the_attico__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__the_attico.jpg"
+      ],
+      "self_review_note": "Self-review approved: correction follows Ellina's Bags N-Z note, shows distinct category-correct bags, and contains no visible accidental text."
+    },
+    {
+      "review_id": "ER-378",
+      "category": "bags",
+      "brand_name": "Tkees",
+      "request_type": "existing_board",
+      "recommended_action": "catalog_verify",
+      "priority": "P0",
+      "approval_status": "needs_catalog_verification",
+      "issue_tags": [
+        "unverified_brand_or_category"
+      ],
+      "reviewer_note": "Mostly footwear and clothes, with barely any bags. Verify whether it is worth keeping in bags.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "needs_catalog_verification",
+      "asset_version": "v2",
+      "resolved_action": "pending_catalog_decision"
+    },
+    {
+      "review_id": "ER-379",
+      "category": "bags",
+      "brand_name": "Vivienne Westwood",
+      "request_type": "existing_board",
+      "recommended_action": "targeted_regenerate",
+      "priority": "P2",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "duplicate_assets",
+        "wrong_category",
+        "missing_signature"
+      ],
+      "reviewer_note": "Medium vibe. Add more signature orb logo and remove the two repeated images.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "regenerated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/vivienne_westwood__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__vivienne_westwood.jpg"
+      ],
+      "self_review_note": "Self-review approved: correction follows Ellina's Bags N-Z note, shows distinct category-correct bags, and contains no visible accidental text."
+    },
+    {
+      "review_id": "ER-380",
+      "category": "bags",
+      "brand_name": "Yohji Yamamoto",
+      "request_type": "existing_board",
+      "recommended_action": "targeted_regenerate",
+      "priority": "P2",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "embedded_text",
+        "wrong_category"
+      ],
+      "reviewer_note": "The board has words. Use more asymmetric black imagery and remove accidental text.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "regenerated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/yohji_yamamoto__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__yohji_yamamoto.jpg"
+      ],
+      "self_review_note": "Self-review approved: correction follows Ellina's Bags N-Z note, shows distinct category-correct bags, and contains no visible accidental text."
+    },
+    {
+      "review_id": "ER-381",
+      "category": "bags",
+      "brand_name": "Alaïa",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/alaia__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__alaia.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-382",
+      "category": "bags",
+      "brand_name": "Alexander Wang",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/alexander_wang__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__alexander_wang.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-383",
+      "category": "bags",
+      "brand_name": "Balenciaga",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/balenciaga__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__balenciaga.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-384",
+      "category": "bags",
+      "brand_name": "BY FAR",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/by_far__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__by_far.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-385",
+      "category": "bags",
+      "brand_name": "Coach",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/coach__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__coach.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-386",
+      "category": "bags",
+      "brand_name": "Dior",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/dior__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__dior.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-387",
+      "category": "bags",
+      "brand_name": "Diesel",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/diesel__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__diesel.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-388",
+      "category": "bags",
+      "brand_name": "Eastpak",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/eastpak__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__eastpak.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-389",
+      "category": "bags",
+      "brand_name": "Junya Watanabe",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/junya_watanabe__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__junya_watanabe.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-390",
+      "category": "bags",
+      "brand_name": "Loewe",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/loewe__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__loewe.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-391",
+      "category": "bags",
+      "brand_name": "Chloé",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/chloe__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__chloe.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-392",
+      "category": "bags",
+      "brand_name": "Dolce & Gabbana",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/dolce_and_gabbana__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__dolce_and_gabbana.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-393",
+      "category": "bags",
+      "brand_name": "Gucci",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/gucci__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__gucci.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-394",
+      "category": "bags",
+      "brand_name": "Isabel Marant",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/isabel_marant__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__isabel_marant.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-395",
+      "category": "bags",
+      "brand_name": "Lemaire",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/lemaire__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__lemaire.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-396",
+      "category": "bags",
+      "brand_name": "McQueen",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/mcqueen__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__mcqueen.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-397",
+      "category": "bags",
+      "brand_name": "Osoi",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/osoi__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__osoi.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-398",
+      "category": "bags",
+      "brand_name": "Stella McCartney",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/stella_mccartney__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__stella_mccartney.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-399",
+      "category": "bags",
+      "brand_name": "Tom Ford",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/tom_ford__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__tom_ford.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-400",
+      "category": "bags",
+      "brand_name": "Samsonite",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/samsonite__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__samsonite.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-401",
+      "category": "bags",
+      "brand_name": "Tumi",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/tumi__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__tumi.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-402",
+      "category": "bags",
+      "brand_name": "Zadig & Voltaire",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/zadig_and_voltaire__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__zadig_and_voltaire.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
+    },
+    {
+      "review_id": "ER-403",
+      "category": "bags",
+      "brand_name": "Ulla Johnson",
+      "request_type": "new_brand",
+      "recommended_action": "catalog_add_and_generate",
+      "priority": "P1",
+      "approval_status": "self_review_approved",
+      "issue_tags": [
+        "requested_addition"
+      ],
+      "reviewer_note": "Add this brand and create a category-appropriate bag moodboard.",
+      "source_pdf": "Bags N-Z.pdf",
+      "source_page": 1,
+      "implementation_status": "implemented_v2",
+      "asset_version": "v2",
+      "resolved_action": "catalog_added_and_generated",
+      "approved_candidate_path": "moodboards_creation/moodboards_corrected/v2/bags/ulla_johnson__candidate_01.png",
+      "ios_v2_paths": [
+        "BrandMoodboardFinder/BrandMoodboards/v2__bags__ulla_johnson.jpg"
+      ],
+      "self_review_note": "Self-review approved: six distinct category-correct bag silhouettes establish a clear brand-specific addition without visible accidental text."
     }
   ]
 }
