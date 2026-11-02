@@ -15,6 +15,9 @@ APP_ASSETS = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder" / "B
 MANIFEST = APP_ASSETS / "v2_manifest.json"
 
 UPDATES = [
+    ("shoes", "Celine", "celine", "ER-169"),
+    ("shoes", "Comme des Garçons", "comme_des_garcons", "ER-180"),
+    ("bags", "Chan Luu", "chan_luu", "ER-240"),
     ("bags", "Sandy Liang", "sandy_liang", "R3-BAG-SANDY-LIANG"),
     ("clothes", "Jacquemus", "jacquemus", "R3-GHOST-JACQUEMUS"),
     ("clothes", "Karoline Vitto", "karoline_vitto", "R3-GHOST-KAROLINE-VITTO"),

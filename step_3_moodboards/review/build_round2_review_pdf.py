@@ -133,7 +133,7 @@ def build(root: Path, manifest_path: Path, output: Path) -> None:
             raise FileNotFoundError("Missing PDF inputs: " + ", ".join(missing))
         labels = record.get(
             "panel_labels",
-            ["ROUND 1 UPDATED", "ROUND 2 UPDATED", "GOOGLE IMAGES REFERENCE"],
+            ["ELLINA-REVIEWED BOARD", "LATEST FINAL BOARD", "GOOGLE IMAGES REFERENCE"],
         )
         for index, (source, label) in enumerate(zip(sources, labels)):
             panel(pdf, source, cache_dir, margin + index * (panel_w + gap), panel_y, panel_w, panel_h, label)

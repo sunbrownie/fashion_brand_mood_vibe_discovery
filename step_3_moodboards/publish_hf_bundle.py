@@ -55,12 +55,12 @@ def main() -> None:
         repo_id=REPO_ID,
         repo_type="space",
         operations=operations,
-        commit_message="Add requested shoe boards and latest refinements",
+        commit_message="Refine Celine CDG Chan Luu and Alohas boards",
         commit_description=(
-            "Publishes all 370 accepted V2 moodboards, including the requested shoe "
-            "brands and latest refinements; refreshes reviewed descriptions, text "
-            "embeddings, clusters, PCA and UMAP. Moodboards remain illustrative and "
-            "the runtime recommendation path remains text-embedding based."
+            "Publishes all 370 accepted V2 moodboards with Celine shoes restored to "
+            "round one and product-grounded refinements for Comme des Garcons shoes, "
+            "Chan Luu bags and Alohas shoes. Text embeddings, clusters, PCA and UMAP "
+            "are unchanged; the runtime recommendation path remains text-embedding based."
         ),
     )
     print(result.commit_url)
