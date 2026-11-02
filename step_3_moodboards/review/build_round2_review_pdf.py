@@ -109,19 +109,36 @@ def build(root: Path, manifest_path: Path, output: Path) -> None:
         source_note = f" · SOURCE PAGE {record['source_page']}" if record.get("source_page") else ""
         pdf.drawRightString(PAGE_W - margin, PAGE_H - 39, f"{record['review_id']} · {record['category'].upper()}{source_note}")
 
+        comment_text = record.get("ellina_comment", record["round2_feedback"])
+        latest_decision = record.get("latest_decision")
+        comment_label = record.get(
+            "comment_label",
+            "ELLINA'S LATEST COMMENT" if record.get("ellina_comment") else "LATEST REVIEW STATUS",
+        )
         pdf.setFillColor(PINK)
-        pdf.roundRect(margin, PAGE_H - 100, PAGE_W - 2 * margin, 39, 8, fill=1, stroke=0)
+        pdf.roundRect(margin, PAGE_H - 116, PAGE_W - 2 * margin, 55, 8, fill=1, stroke=0)
         pdf.setFillColor(ACCENT)
         pdf.setFont("Helvetica-Bold", 8)
-        pdf.drawString(margin + 12, PAGE_H - 76, record.get("comment_label", "NEW ROUND 2 COMMENT"))
-        lines = wrap(record["round2_feedback"], PAGE_W - 2 * margin - 170, "Helvetica-Bold", 11)
+        pdf.drawString(margin + 12, PAGE_H - 76, comment_label)
+        lines = wrap(comment_text, PAGE_W - 2 * margin - 170, "Helvetica-Bold", 10.5)
         pdf.setFillColor(INK)
-        pdf.setFont("Helvetica-Bold", 11)
+        pdf.setFont("Helvetica-Bold", 10.5)
         text_x = margin + 150
         text_y = PAGE_H - 77
         for line in lines[:2]:
             pdf.drawString(text_x, text_y, line)
             text_y -= 12
+        if latest_decision:
+            pdf.setFillColor(ACCENT)
+            pdf.setFont("Helvetica-Bold", 8)
+            pdf.drawString(margin + 12, PAGE_H - 101, "LATEST ACTION")
+            decision_lines = wrap(latest_decision, PAGE_W - 2 * margin - 170, "Helvetica-Bold", 9.5)
+            pdf.setFillColor(INK)
+            pdf.setFont("Helvetica-Bold", 9.5)
+            decision_y = PAGE_H - 101
+            for line in decision_lines[:2]:
+                pdf.drawString(text_x, decision_y, line)
+                decision_y -= 10.5
 
         sources = [
             root / record["round1_path"],
