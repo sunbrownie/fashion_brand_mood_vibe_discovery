@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Build the deterministic all-category technical-cluster review PDF.
+"""Build the deterministic all-category customer-facing archetype review PDF.
 
 The report reads the current iOS assignment export, joins each brand to the
 canonical moodboard recorded in ``brand_metadata.csv``, and groups brands by
-category and technical cluster.  A cluster may span any number of pages; every
-brand is rendered exactly once.  Missing images are deliberately visible.
+category, customer-facing archetype and underlying cluster.  A cluster may
+span any number of pages; every brand is rendered exactly once.  Missing
+images are deliberately visible.
 
 Examples
 --------
@@ -60,11 +61,11 @@ CATEGORY_LABELS = {
 PAGE_W, PAGE_H = landscape(A4)
 MARGIN_X = 30
 FOOTER_H = 26
-HEADER_BOTTOM = 440
-GRID_TOP = 426
+HEADER_BOTTOM = 458
+GRID_TOP = 445
 GRID_BOTTOM = 39
-GRID_COLS = 2
-GRID_ROWS = 2
+GRID_COLS = 4
+GRID_ROWS = 1
 CARDS_PER_PAGE = GRID_COLS * GRID_ROWS
 GAP_X = 9
 GAP_Y = 9
@@ -79,6 +80,42 @@ GREEN = HexColor("#82A68B")
 PALE_GREEN = HexColor("#E8F0E9")
 PALE_PINK = HexColor("#FBE9ED")
 LINE = HexColor("#D9D1C6")
+
+PUBLIC_ARCHETYPE_ORDER = (
+    "The Expedition",
+    "The Understated",
+    "The Disruptor",
+    "The Dreamer",
+    "The Underground",
+    "Modern Minimalist",
+    "After Midnight",
+    "The Trove",
+    "Sun Bleached",
+    "The Workshop",
+    "The Dresser",
+    "Endorphin",
+    "The Wanderer",
+    "The Alumni",
+    "Riviera",
+)
+
+ARCHETYPE_COLORS = {
+    "The Expedition": HexColor("#4F766A"),
+    "The Understated": HexColor("#7B756D"),
+    "The Disruptor": HexColor("#A34958"),
+    "The Dreamer": HexColor("#B27FA1"),
+    "The Underground": HexColor("#4D5269"),
+    "Modern Minimalist": HexColor("#728899"),
+    "After Midnight": HexColor("#3E3C55"),
+    "The Trove": HexColor("#B8734D"),
+    "Sun Bleached": HexColor("#C69A63"),
+    "The Workshop": HexColor("#7B624C"),
+    "The Dresser": HexColor("#A76478"),
+    "Endorphin": HexColor("#4A8E8A"),
+    "The Wanderer": HexColor("#8A7654"),
+    "The Alumni": HexColor("#526B83"),
+    "Riviera": HexColor("#3E8FA0"),
+}
 
 
 @dataclass(frozen=True)
@@ -106,6 +143,8 @@ class ClusterPage:
     rows: tuple[dict[str, str], ...]
     part: int
     parts: int
+    archetype_cluster_index: int
+    archetype_cluster_count: int
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -150,6 +189,21 @@ def modal(rows: Sequence[dict[str, str]], field: str) -> str:
     return sorted(counts, key=lambda item: (-counts[item], item.casefold(), item))[0]
 
 
+def archetype_sort_key(name: str) -> tuple[int, str]:
+    try:
+        return (PUBLIC_ARCHETYPE_ORDER.index(name), name.casefold())
+    except ValueError:
+        return (len(PUBLIC_ARCHETYPE_ORDER), name.casefold())
+
+
+def archetype_color(name: str):
+    return ARCHETYPE_COLORS.get(name, GREEN)
+
+
+def count_label(count: int, singular: str) -> str:
+    return f"{count} {singular if count == 1 else singular + 's'}"
+
+
 def metadata_index(rows: Iterable[dict[str, str]]) -> dict[tuple[str, str], dict[str, str]]:
     result: dict[tuple[str, str], dict[str, str]] = {}
     for row in rows:
@@ -172,7 +226,7 @@ def build_blocks(
     assignments: list[dict[str, str]],
     summaries: dict[tuple[str, int], dict[str, str]],
 ) -> list[ClusterBlock]:
-    grouped: dict[tuple[str, int], list[dict[str, str]]] = defaultdict(list)
+    grouped: dict[tuple[str, str, int], list[dict[str, str]]] = defaultdict(list)
     seen_brand_keys: set[tuple[str, int, str]] = set()
     for row in assignments:
         category = key_text(row.get("category"))
@@ -182,28 +236,34 @@ def build_blocks(
         if key in seen_brand_keys:
             raise ValueError(f"Duplicate assignment row: {category} cluster {cluster}, {brand}")
         seen_brand_keys.add(key)
-        grouped[(category, cluster)].append(row)
+        public_name = clean(row.get("public_display_name")) or clean(row.get("public_cluster_name"))
+        if not public_name:
+            summary = summaries.get((category, cluster), {})
+            public_name = clean(summary.get("dominant_public_display_name")) or clean(
+                summary.get("dominant_public_cluster_name")
+            ) or "Unmapped public archetype"
+        grouped[(category, public_name, cluster)].append(row)
 
     order = {category: index for index, category in enumerate(CATEGORY_ORDER)}
     blocks: list[ClusterBlock] = []
-    for category, cluster in sorted(
+    for category, public_name, cluster in sorted(
         grouped,
-        key=lambda key: (order.get(key[0], len(order)), key[0], key[1]),
+        key=lambda key: (
+            order.get(key[0], len(order)),
+            key[0],
+            archetype_sort_key(key[1]),
+            key[2],
+        ),
     ):
-        rows = tuple(sorted(grouped[(category, cluster)], key=stable_brand_sort))
+        rows = tuple(sorted(grouped[(category, public_name, cluster)], key=stable_brand_sort))
         summary = summaries.get((category, cluster), {})
-        dominant_name = clean(summary.get("dominant_public_display_name")) or clean(
-            summary.get("dominant_public_cluster_name")
-        ) or modal(
-            rows, "public_display_name"
-        ) or modal(
-            rows, "public_cluster_name"
+        public_description = modal(rows, "public_display_description") or modal(
+            rows, "public_cluster_description"
         )
-        dominant_description = clean(
-            summary.get("dominant_public_display_description")
-        ) or clean(
-            summary.get("dominant_public_cluster_description")
-        ) or modal(rows, "public_display_description") or modal(rows, "public_cluster_description")
+        if not public_description:
+            public_description = clean(summary.get("dominant_public_display_description")) or clean(
+                summary.get("dominant_public_cluster_description")
+            )
         blocks.append(
             ClusterBlock(
                 category=category,
@@ -213,8 +273,8 @@ def build_blocks(
                 or modal(rows, "top_aesthetic_terms"),
                 supporting_terms=clean(summary.get("supporting_terms"))
                 or modal(rows, "supporting_terms"),
-                dominant_public_name=dominant_name or "Unmapped public archetype",
-                dominant_public_description=dominant_description or "No public description is currently assigned.",
+                dominant_public_name=public_name,
+                dominant_public_description=public_description or "No public description is currently assigned.",
                 rows=rows,
             )
         )
@@ -392,12 +452,13 @@ def draw_cover(
     pdf.setFont("Helvetica-Bold", 31)
     pdf.drawString(52, PAGE_H - 120, "All-category cluster review")
     pdf.setFont("Helvetica", 13)
-    pdf.drawString(54, PAGE_H - 151, "Technical clusters, public archetypes and canonical moodboards")
+    pdf.drawString(54, PAGE_H - 151, "Customer-facing archetypes and latest canonical moodboards")
     pdf.setFillColor(CREAM)
     pdf.setFont("Helvetica", 10)
-    pdf.drawString(54, PAGE_H - 194, f"{len(blocks)} technical clusters  •  {sum(len(b.rows) for b in blocks)} brands")
+    archetype_count = len({(block.category, block.dominant_public_name) for block in blocks})
+    pdf.drawString(54, PAGE_H - 194, f"{archetype_count} category archetype groups  •  {sum(len(b.rows) for b in blocks)} brands")
     pdf.drawString(54, PAGE_H - 213, f"{len({b.category for b in blocks})} categories  •  {total_pages} pages")
-    pdf.drawString(54, PAGE_H - 232, "Four latest canonical moodboards per review page")
+    pdf.drawString(54, PAGE_H - 232, "Four large portrait moodboards in one row per review page")
     pdf.setFillColor(WHITE)
     pdf.setFont("Helvetica-Bold", 9)
     y = PAGE_H - 285
@@ -408,7 +469,8 @@ def draw_cover(
         label = CATEGORY_LABELS.get(category, category.replace("_", " ").title())
         pdf.drawString(55, y, label)
         pdf.setFont("Helvetica", 9)
-        pdf.drawString(205, y, f"{len(category_blocks)} clusters  •  {sum(len(b.rows) for b in category_blocks)} brands")
+        public_names = {block.dominant_public_name for block in category_blocks}
+        pdf.drawString(205, y, f"{len(public_names)} archetypes  •  {sum(len(b.rows) for b in category_blocks)} brands")
         pdf.setFont("Helvetica-Bold", 9)
         y -= 25
     pdf.setFillColor(CREAM)
@@ -430,74 +492,101 @@ def draw_category_divider(pdf: canvas.Canvas, category: str, blocks: Sequence[Cl
     pdf.drawString(
         54,
         PAGE_H - 200,
-        f"{len(blocks)} technical clusters  •  {sum(len(block.rows) for block in blocks)} assigned brands",
+        f"{len({block.dominant_public_name for block in blocks})} public archetypes  •  {sum(len(block.rows) for block in blocks)} assigned brands",
     )
-    # Two columns keep even the largest current category (22 clusters) fully
-    # visible on its divider page without shrinking the cluster labels.
-    split = math.ceil(len(blocks) / 2)
+    archetype_groups = []
+    for name in sorted({block.dominant_public_name for block in blocks}, key=archetype_sort_key):
+        grouped_blocks = [block for block in blocks if block.dominant_public_name == name]
+        archetype_groups.append((name, grouped_blocks))
+    split = math.ceil(len(archetype_groups) / 2)
     column_w = (PAGE_W - 126) / 2
-    for index, block in enumerate(blocks):
+    for index, (name, grouped_blocks) in enumerate(archetype_groups):
         column = index // split
         row = index % split
         x = 57 + column * column_w
-        y = PAGE_H - 260 - row * 21
-        text = f"{block.cluster:02d}  {block.title}  →  {block.dominant_public_name}"
+        y = PAGE_H - 260 - row * 29
+        pdf.setFillColor(archetype_color(name))
+        pdf.roundRect(x, y - 4, 10, 10, 5, fill=1, stroke=0)
         pdf.setFillColor(INK)
-        pdf.setFont("Helvetica", 7.5)
-        line = wrap_lines(text, "Helvetica", 7.5, column_w - 78, 1)[0]
-        pdf.drawString(x, y, line)
+        pdf.setFont("Helvetica-Bold", 8.3)
+        line = wrap_lines(name, "Helvetica-Bold", 8.3, column_w - 92, 1)[0]
+        pdf.drawString(x + 18, y, line)
         pdf.setFillColor(MUTED)
         pdf.setFont("Helvetica", 7.2)
-        pdf.drawRightString(x + column_w - 12, y, f"{len(block.rows)} brands")
+        brand_count = sum(len(block.rows) for block in grouped_blocks)
+        pdf.drawRightString(
+            x + column_w - 12,
+            y,
+            f"{count_label(len(grouped_blocks), 'group')}  •  {count_label(brand_count, 'brand')}",
+        )
+
+
+def draw_archetype_divider(
+    pdf: canvas.Canvas,
+    category: str,
+    public_name: str,
+    blocks: Sequence[ClusterBlock],
+) -> None:
+    label = CATEGORY_LABELS.get(category, category.replace("_", " ").title())
+    accent = archetype_color(public_name)
+    description = blocks[0].dominant_public_description if blocks else ""
+    pdf.setFillColor(PAPER)
+    pdf.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
+    pdf.setFillColor(accent)
+    pdf.rect(0, 0, 22, PAGE_H, fill=1, stroke=0)
+    pdf.circle(PAGE_W - 104, PAGE_H - 100, 58, fill=1, stroke=0)
+    pdf.setFillColor(INK)
+    pdf.setFont("Helvetica-Bold", 9)
+    pdf.drawString(54, PAGE_H - 78, label.upper())
+    pdf.setFont("Helvetica-Bold", 34)
+    pdf.drawString(52, PAGE_H - 137, public_name)
+    draw_wrapped(
+        pdf,
+        description,
+        54,
+        PAGE_H - 190,
+        550,
+        "Helvetica",
+        13,
+        18,
+        6,
+        INK,
+    )
+    pdf.setFillColor(accent)
+    pdf.roundRect(54, 83, 300, 34, 17, fill=1, stroke=0)
+    pdf.setFillColor(WHITE)
+    pdf.setFont("Helvetica-Bold", 10)
+    pdf.drawCentredString(
+        204,
+        95,
+        f"{count_label(len(blocks), 'cluster group')}  •  {count_label(sum(len(block.rows) for block in blocks), 'brand')}",
+    )
 
 
 def draw_cluster_header(pdf: canvas.Canvas, page: ClusterPage) -> None:
     block = page.block
     label = CATEGORY_LABELS.get(block.category, block.category.replace("_", " ").title())
+    accent = archetype_color(block.dominant_public_name)
     pdf.setFillColor(PAPER)
     pdf.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
-    pdf.setFillColor(GREEN)
-    pdf.roundRect(MARGIN_X, PAGE_H - 36, 110, 18, 8, fill=1, stroke=0)
+    pdf.setFillColor(accent)
+    pdf.rect(0, PAGE_H - 103, PAGE_W, 103, fill=1, stroke=0)
     pdf.setFillColor(WHITE)
-    pdf.setFont("Helvetica-Bold", 7.8)
-    pdf.drawCentredString(MARGIN_X + 55, PAGE_H - 30, label.upper())
-    pdf.setFillColor(INK)
-    pdf.setFont("Helvetica-Bold", 18)
-    pdf.drawString(MARGIN_X, PAGE_H - 68, f"Technical cluster {block.cluster}: {block.title}")
-    pdf.setFillColor(MUTED)
+    pdf.setFont("Helvetica-Bold", 8.2)
+    pdf.drawString(MARGIN_X, PAGE_H - 29, label.upper())
+    pdf.setFont("Helvetica-Bold", 24)
+    pdf.drawString(MARGIN_X, PAGE_H - 63, block.dominant_public_name)
     pdf.setFont("Helvetica", 8.2)
+    pdf.drawString(
+        MARGIN_X,
+        PAGE_H - 84,
+        f"Cluster group {page.archetype_cluster_index} of {page.archetype_cluster_count}",
+    )
     pdf.drawRightString(
         PAGE_W - MARGIN_X,
-        PAGE_H - 67,
-        f"{len(block.rows)} brands  •  cluster page {page.part}/{page.parts}",
+        PAGE_H - 84,
+        f"{count_label(len(block.rows), 'brand')}  •  page {page.part}/{page.parts}",
     )
-
-    pdf.setFillColor(WHITE)
-    pdf.roundRect(MARGIN_X, PAGE_H - 133, PAGE_W - 2 * MARGIN_X, 48, 8, fill=1, stroke=0)
-    pdf.setFillColor(PINK)
-    pdf.setFont("Helvetica-Bold", 7.2)
-    pdf.drawString(MARGIN_X + 12, PAGE_H - 101, "PUBLIC ARCHETYPE")
-    pdf.setFillColor(INK)
-    pdf.setFont("Helvetica-Bold", 12)
-    pdf.drawString(MARGIN_X + 12, PAGE_H - 117, block.dominant_public_name)
-    draw_wrapped(
-        pdf,
-        block.dominant_public_description,
-        MARGIN_X + 185,
-        PAGE_H - 101,
-        PAGE_W - MARGIN_X - (MARGIN_X + 197),
-        "Helvetica",
-        7.5,
-        9,
-        3,
-        MUTED,
-    )
-
-    pdf.setFillColor(INK)
-    pdf.setFont("Helvetica-Bold", 7.2)
-    pdf.drawString(MARGIN_X, PAGE_H - 151, "CENTROID")
-    terms = " · ".join(part for part in (block.top_terms, block.supporting_terms) if part)
-    draw_wrapped(pdf, terms, MARGIN_X + 56, PAGE_H - 151, PAGE_W - 2 * MARGIN_X - 56, "Helvetica", 7.2, 8.5, 2, MUTED)
 
 
 def draw_missing(pdf: canvas.Canvas, x: float, y: float, width: float, height: float, attempted: str) -> None:
@@ -522,7 +611,6 @@ def draw_brand_card(
     pdf: canvas.Canvas,
     row: dict[str, str],
     image_ref: ImageRef,
-    dominant_public_name: str,
     cache_dir: Path,
     x: float,
     y: float,
@@ -531,8 +619,8 @@ def draw_brand_card(
 ) -> bool:
     pdf.setFillColor(WHITE)
     pdf.roundRect(x, y, width, height, 7, fill=1, stroke=0)
-    image_x, image_y = x + 6, y + 43
-    image_w, image_h = width - 12, height - 49
+    image_x, image_y = x + 6, y + 30
+    image_w, image_h = width - 12, height - 36
     missing = image_ref.path is None
     if missing:
         draw_missing(pdf, image_x, image_y, image_w, image_h, image_ref.attempted)
@@ -554,16 +642,7 @@ def draw_brand_card(
             draw_missing(pdf, image_x, image_y, image_w, image_h, image_ref.path.name)
 
     brand = clean(row.get("brand_name")) or "Unnamed brand"
-    draw_wrapped(pdf, brand, x + 7, y + 31, width - 14, "Helvetica-Bold", 8.3, 9.2, 2, INK)
-    assigned_public = clean(row.get("public_display_name")) or clean(row.get("public_cluster_name"))
-    if assigned_public and key_text(assigned_public) != key_text(dominant_public_name):
-        pdf.setFillColor(PALE_GREEN)
-        pdf.roundRect(x + 6, y + 5, width - 12, 12, 5, fill=1, stroke=0)
-        draw_wrapped(pdf, f"Override: {assigned_public}", x + 10, y + 8, width - 20, "Helvetica-Bold", 5.8, 6.2, 1, GREEN)
-    else:
-        pdf.setFillColor(MUTED)
-        pdf.setFont("Helvetica", 5.8)
-        pdf.drawString(x + 7, y + 8, image_ref.source.replace("-", " "))
+    draw_wrapped(pdf, brand, x + 7, y + 18, width - 14, "Helvetica-Bold", 8.3, 9.2, 2, INK)
     return missing
 
 
@@ -594,32 +673,42 @@ def build_pdf(
     selected_categories.extend(
         sorted({b.category for b in blocks} - set(selected_categories))
     )
-    cluster_pages: list[ClusterPage] = []
-    for block in blocks:
-        parts = math.ceil(len(block.rows) / CARDS_PER_PAGE)
-        for part in range(parts):
-            start = part * CARDS_PER_PAGE
-            cluster_pages.append(
-                ClusterPage(
-                    block=block,
-                    rows=block.rows[start : start + CARDS_PER_PAGE],
-                    part=part + 1,
-                    parts=parts,
-                )
-            )
-
     page_specs: list[tuple[str, object]] = [("cover", None)]
-    pages_by_category: dict[str, list[ClusterPage]] = defaultdict(list)
-    for page in cluster_pages:
-        pages_by_category[page.block.category].append(page)
     for category in selected_categories:
+        category_blocks = [block for block in blocks if block.category == category]
         page_specs.append(("category", category))
-        page_specs.extend(("cluster", page) for page in pages_by_category[category])
+        public_names = sorted(
+            {block.dominant_public_name for block in category_blocks},
+            key=archetype_sort_key,
+        )
+        for public_name in public_names:
+            archetype_blocks = sorted(
+                [block for block in category_blocks if block.dominant_public_name == public_name],
+                key=lambda block: block.cluster,
+            )
+            page_specs.append(("archetype", (category, public_name, archetype_blocks)))
+            for cluster_index, block in enumerate(archetype_blocks, start=1):
+                parts = math.ceil(len(block.rows) / CARDS_PER_PAGE)
+                for part in range(parts):
+                    start = part * CARDS_PER_PAGE
+                    page_specs.append(
+                        (
+                            "cluster",
+                            ClusterPage(
+                                block=block,
+                                rows=block.rows[start : start + CARDS_PER_PAGE],
+                                part=part + 1,
+                                parts=parts,
+                                archetype_cluster_index=cluster_index,
+                                archetype_cluster_count=len(archetype_blocks),
+                            ),
+                        )
+                    )
 
     output.parent.mkdir(parents=True, exist_ok=True)
     snapshot = snapshot_id((assignments_path, summary_path, metadata_path))
     pdf = canvas.Canvas(str(output), pagesize=(PAGE_W, PAGE_H), invariant=1, pageCompression=1)
-    pdf.setTitle("ModeNova all-category technical cluster review")
+    pdf.setTitle("ModeNova all-category public archetype review")
     pdf.setAuthor("ModeNova")
     total_pages = len(page_specs)
     missing_count = 0
@@ -634,6 +723,10 @@ def build_pdf(
         elif kind == "category":
             category = str(payload)
             draw_category_divider(pdf, category, [b for b in blocks if b.category == category])
+            draw_footer(pdf, page_number, total_pages, snapshot)
+        elif kind == "archetype":
+            category, public_name, archetype_blocks = payload
+            draw_archetype_divider(pdf, category, public_name, archetype_blocks)
             draw_footer(pdf, page_number, total_pages, snapshot)
         else:
             page = payload
@@ -650,7 +743,6 @@ def build_pdf(
                         pdf,
                         row,
                         image_ref,
-                        page.block.dominant_public_name,
                         cache_dir,
                         x,
                         y,

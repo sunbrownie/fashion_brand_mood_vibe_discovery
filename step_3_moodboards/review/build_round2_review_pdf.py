@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+from typing import Sequence
 
 from PIL import Image, ImageOps
 from reportlab.lib.colors import HexColor
@@ -80,9 +81,24 @@ def panel(pdf: canvas.Canvas, source: Path, cache_dir: Path, x: float, y: float,
     pdf.roundRect(x, y, w, h, 8, fill=0, stroke=1)
 
 
-def build(root: Path, manifest_path: Path, output: Path) -> None:
+def build(
+    root: Path,
+    manifest_path: Path,
+    output: Path,
+    review_ids: Sequence[str] = (),
+) -> None:
     payload = json.loads(manifest_path.read_text(encoding="utf-8"))
     records = payload["records"]
+    if review_ids:
+        requested = list(dict.fromkeys(review_ids))
+        matching = {
+            review_id: [record for record in records if record["review_id"] == review_id]
+            for review_id in requested
+        }
+        missing_ids = [review_id for review_id, matches in matching.items() if not matches]
+        if missing_ids:
+            raise ValueError("Unknown review IDs: " + ", ".join(missing_ids))
+        records = [record for review_id in requested for record in matching[review_id]]
     cache_dir = root / "tmp" / "pdfs" / "round2_preview_cache"
     output.parent.mkdir(parents=True, exist_ok=True)
     pdf = canvas.Canvas(str(output), pagesize=landscape(A4), pageCompression=1)
@@ -174,9 +190,15 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", default="step_3_moodboards/review/round2_re_review_manifest.json")
     parser.add_argument("--output", default="output/pdf/ellina_moodboards_round2_review.pdf")
+    parser.add_argument(
+        "--review-id",
+        action="append",
+        default=[],
+        help="Include only this review ID, preserving argument order; repeatable.",
+    )
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[2]
-    build(root, root / args.manifest, root / args.output)
+    build(root, root / args.manifest, root / args.output, args.review_id)
 
 
 if __name__ == "__main__":

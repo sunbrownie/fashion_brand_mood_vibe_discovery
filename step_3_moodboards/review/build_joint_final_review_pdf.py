@@ -42,11 +42,11 @@ def build_cover(path: Path, counts: tuple[int, int, int]) -> None:
     pdf.setFont("Helvetica-Bold", 31)
     pdf.drawString(52, PAGE_H - 110, "Final moodboard and cluster review")
     pdf.setFont("Helvetica", 13)
-    pdf.drawString(54, PAGE_H - 143, "Latest boards only - Ellina feedback, swimwear/lingerie and all categories")
+    pdf.drawString(54, PAGE_H - 143, "Latest boards only - new Ellina decisions, swimwear/lingerie and public archetypes")
     pdf.setFillColor(PAPER)
     pdf.setFont("Helvetica-Bold", 12)
     labels = (
-        ("1", "Latest Ellina round-two decisions", counts[0]),
+        ("1", "Three latest Ellina decisions", counts[0]),
         ("2", "Swimwear & lingerie corrections", counts[1]),
         ("3", "Category-grouped cluster atlas", counts[2]),
     )
@@ -66,7 +66,7 @@ def build_cover(path: Path, counts: tuple[int, int, int]) -> None:
         y -= 56
     pdf.setFillColor(PAPER)
     pdf.setFont("Helvetica", 9)
-    pdf.drawString(54, 48, "Cluster pages are ordered Clothes, Shoes, Bags, Jewellery, then Swimwear & Lingerie, with four canonical boards per page.")
+    pdf.drawString(54, 48, "Ordered by category, then public archetype, then cluster group - four large portrait boards in one row.")
     pdf.showPage()
     pdf.save()
 
@@ -100,7 +100,7 @@ def main() -> None:
     for source in sources:
         starts.append(len(writer.pages))
         append_pdf(writer, source)
-    writer.add_outline_item("Latest Ellina round-two decisions", starts[0])
+    writer.add_outline_item("Three latest Ellina decisions", starts[0])
     writer.add_outline_item("Swimwear and lingerie corrections", starts[1])
     writer.add_outline_item("Category-grouped cluster atlas", starts[2])
     writer.add_metadata({"/Title": "ModeNova final moodboard and cluster review", "/Author": "ModeNova"})

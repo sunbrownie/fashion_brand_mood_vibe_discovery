@@ -186,7 +186,7 @@ def main() -> None:
         key = item.brand.casefold()
         if key in assigned:
             row = assigned[key]
-            cluster_line = f"Cluster: {row.cluster_title}  ·  Customer-facing: {row.public_display_name}"
+            cluster_line = f"Archetype: {row.public_display_name}"
             draw_wrapped(c, cluster_line, 48, y - 2, 118, 12, size=8.5, color=MUTED)
         elif item.action == "REMOVED":
             draw_wrapped(c, "No active embedding or cluster assignment remains for this category.", 48, y - 2, 118, 12, size=8.5, color=MUTED)
