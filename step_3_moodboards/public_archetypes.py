@@ -46,10 +46,10 @@ ARCHETYPE_BY_NAME = {
 # Dominant customer-facing label for every current numeric category cluster.
 # These are display mappings only; the numeric cluster assignments are stable.
 CLUSTER_PUBLIC_NAMES = {
-    "bags": ("The Workshop", "The Underground", "The Understated", "The Expedition", "The Disruptor", "Modern Minimalist", "The Expedition", "The Wanderer", "Sun Bleached", "After Midnight", "Riviera", "The Trove", "The Dresser", "Modern Minimalist", "The Dresser", "The Wanderer", "The Dresser"),
+    "bags": ("The Workshop", "The Underground", "The Understated", "The Expedition", "The Disruptor", "Modern Minimalist", "The Expedition", "The Wanderer", "Sun Bleached", "The Dresser", "Riviera", "The Trove", "The Dresser", "Modern Minimalist", "The Dresser", "The Wanderer", "Modern Minimalist"),
     "clothes": ("Sun Bleached", "The Dreamer", "The Dresser", "The Workshop", "Riviera", "The Dresser", "Modern Minimalist", "Modern Minimalist", "Modern Minimalist", "The Expedition", "The Wanderer", "The Alumni", "The Disruptor", "The Underground", "The Underground", "The Expedition", "Modern Minimalist"),
-    "jewellery": ("The Understated", "The Understated", "The Underground", "The Dresser", "The Wanderer", "The Wanderer", "The Understated", "The Alumni", "The Expedition", "The Trove", "The Disruptor", "Modern Minimalist", "The Dresser", "Riviera", "After Midnight", "The Trove"),
-    "shoes": ("Modern Minimalist", "The Dresser", "The Dresser", "The Dreamer", "The Underground", "The Underground", "The Alumni", "Endorphin", "The Understated", "Modern Minimalist", "The Disruptor", "The Expedition", "Sun Bleached", "The Expedition", "The Workshop", "The Dresser", "The Dresser", "Riviera", "The Dreamer", "The Alumni", "The Alumni", "After Midnight"),
+    "jewellery": ("The Understated", "The Understated", "The Underground", "The Dresser", "The Wanderer", "The Wanderer", "The Understated", "The Alumni", "The Expedition", "The Trove", "The Disruptor", "Modern Minimalist", "The Dresser", "Riviera", "The Dresser", "The Trove"),
+    "shoes": ("Modern Minimalist", "The Dresser", "The Dresser", "The Dreamer", "The Underground", "The Underground", "The Alumni", "Endorphin", "The Understated", "Modern Minimalist", "The Disruptor", "The Expedition", "Sun Bleached", "The Expedition", "The Workshop", "The Dresser", "The Dresser", "Riviera", "The Dreamer", "The Alumni", "The Alumni", "The Dresser"),
     "swimwear_lingerie": ("The Wanderer", "After Midnight", "Riviera", "Modern Minimalist", "Riviera"),
 }
 
@@ -66,7 +66,8 @@ def _names(*values: str) -> set[str]:
 
 # Brand-level decisions for the mixed live clothes clusters.  Brands not listed
 # inherit the documented dominant label in CLUSTER_PUBLIC_NAMES.
-CLOTHES_PUBLIC_OVERRIDES = {
+CATEGORY_PUBLIC_OVERRIDES = {
+    "clothes": {
     0: {
         "Endorphin": _names("ALO YOGA", "Beyond Yoga", "Deiji Studios", "Gymshark", "NAGNATA", "Sweaty Betty", "Varley", "Vuori"),
     },
@@ -103,7 +104,99 @@ CLOTHES_PUBLIC_OVERRIDES = {
         "Sun Bleached": _names("Aiayu", "Alex Crane", "Bite Studios", "Black Crane", "HHPLIFT", "Knowledge Cotton", "knowledge cotton apparel", "Mate the Label", "Ninety Percent", "Nobody's Child", "Outerknown", "Tentree", "Thought Clothing", "Tradlands", "World of Crow"),
         "The Wanderer": _names("Caralarga", "Doodlage", "Story Mfg"),
     },
+    },
+    "bags": {
+        1: {
+            "After Midnight": _names("Ann Demeulemeester", "Chrome Hearts", "Rick Owens"),
+            "The Disruptor": _names("Coperni"),
+            "The Workshop": _names("Belstaff"),
+            "The Alumni": _names("Maison Kitsuné", "NOAH"),
+            "Modern Minimalist": _names("Acne Studios"),
+        },
+        2: {
+            "Modern Minimalist": _names("Courreges", "Reiss"),
+            "The Workshop": _names("Livid"),
+            "The Expedition": _names("Stutterheim"),
+        },
+        3: {"The Disruptor": _names("zero+maria cornejo"), "Sun Bleached": _names("HHPLIFT")},
+        4: {"The Dreamer": _names("Maradji"), "The Trove": _names("Messina Hembry")},
+        5: {
+            "The Understated": _names("Cuyana", "DeMellier", "Harber London", "Mansur Gavriel", "Smythson", "Strathberry", "The Row", "Valextra"),
+            "The Trove": _names("Okhtein"),
+        },
+        6: {
+            "Endorphin": _names("Kappa", "Karhu", "LOCI", "MALBON", "Mizuno", "Northwave", "So iLL", "WAHTS"),
+            "The Underground": _names("Filling Pieces", "Kith"),
+            "The Disruptor": _names("Mihara Yasuhiro", "SACAI", "MOWALOLA"),
+            "Modern Minimalist": _names("Naghedi"),
+            "The Dresser": _names("DKNY", "The Fold"),
+        },
+        7: {"The Disruptor": _names("Junya Watanabe")},
+        8: {
+            "The Trove": _names("Anna Sui"),
+            "The Understated": _names("Anonymous Ism", "Brunello Cucinelli", "Lemaire"),
+            "The Wanderer": _names("Chan Luu", "Guadalupe Design", "Isabel Marant", "Ulla Johnson"),
+            "The Disruptor": _names("Loewe"),
+            "The Dresser": _names("Maje"),
+        },
+        9: {"The Trove": _names("Pucci"), "The Dreamer": _names("Simone Rocha")},
+        11: {"The Dreamer": _names("Childs", "Chloé", "Chloe", "Patou", "Reformation", "Sandy Liang", "Sessun")},
+        12: {
+            "The Workshop": _names("Alex Mill", "American Trench", "Fortela", "Lucchese", "Tecovas"),
+            "The Understated": _names("Bally", "Celine", "Hermès", "Hermes", "Max Mara", "Tod's", "Tods"),
+            "The Underground": _names("Diesel", "Zadig & Voltaire"),
+            "The Disruptor": _names("Balenciaga", "Marine Serre"),
+            "The Trove": _names("Ganni", "Gucci", "Miu Miu", "Ted Baker"),
+            "Modern Minimalist": _names("BY FAR", "Osoi", "Proenza Schouler"),
+            "After Midnight": _names("Alexander McQueen", "McQueen"),
+        },
+        14: {
+            "The Alumni": _names("J.Crew", "Thom Browne"),
+            "The Trove": _names("Frances Valentine"),
+            "The Dreamer": _names("Sezane", "Sézane", "Twinset", "Vanessa Bruno"),
+        },
+        15: {"Riviera": _names("Jacquemus", "Nicobar", "Pachute", "Pied Nu", "Summer Away", "Susmie's")},
+    },
+    "jewellery": {
+        0: {"The Dreamer": _names("Simone Rocha", "Perle by Lola")},
+        1: {"The Wanderer": _names("Aurelie Bidermann"), "The Underground": _names("Maria Tash"), "The Trove": _names("Yvonne Léon", "Yvonne Leon")},
+        2: {"The Disruptor": _names("Ambush", "Ann Demeulemeester", "Maison Margiela", "MOWALOLA", "Panconesi", "Rick Owens", "SACAI", "Coperni")},
+        4: {"The Trove": _names("Anna Sui", "Cult Gaia", "Frances Valentine"), "The Disruptor": _names("Chopova Lowena"), "The Understated": _names("Brunello Cucinelli"), "Modern Minimalist": _names("Agmes")},
+        7: {"The Dreamer": _names("Lelet NY")},
+        11: {"The Disruptor": _names("Completedworks", "Khiry"), "The Underground": _names("Martine Ali"), "The Trove": _names("Alexis Bittar", "Lizzie Fortunato")},
+        14: {"After Midnight": _names("The Attico", "Miu Miu", "Joomi Lim", "Luv AJ"), "The Trove": _names("Pucci", "CASABLANCA")},
+    },
+    "shoes": {
+        1: {"The Disruptor": _names("ABRA")},
+        11: {"The Disruptor": _names("Chopova Lowena"), "The Dresser": _names("Gucci", "Carvela"), "The Underground": _names("Golden Goose")},
+        12: {
+            "The Understated": _names("Bottega Veneta", "Brunello Cucinelli"),
+            "The Trove": _names("Anna Sui", "Cult Gaia", "Frances Valentine"),
+            "The Wanderer": _names("Chan Luu", "Global Mamas", "Guadalupe Design", "Okhai"),
+            "The Disruptor": _names("Maison Margiela"),
+            "The Dresser": _names("Maje"),
+        },
+        13: {
+            "Endorphin": _names("Adidas", "Air Jordan", "Kappa"),
+            "The Underground": _names("Kith"),
+            "The Disruptor": _names("Marine Serre", "MOWALOLA", "SACAI", "zero+maria cornejo"),
+            "The Dresser": _names("DKNY", "The Fold"),
+        },
+        16: {"The Underground": _names("Filling Pieces"), "The Dreamer": _names("Drogheria Crivellini")},
+    },
+    "swimwear_lingerie": {
+        0: {"Riviera": _names("Adriana Degreas")},
+        1: {
+            "The Dreamer": _names("Carine Gilson", "Davi", "For Love & Lemons", "Le Petit Trou", "Only Hearts", "Wild Lovers"),
+            "The Dresser": _names("Intimissimi", "Natori", "Victoria's Secret"),
+        },
+        3: {"The Dreamer": _names("Cou Cou Intimates", "Fruity Booty", "Hanky Panky"), "Endorphin": _names("Saxx")},
+        4: {"Modern Minimalist": _names("Baserange", "SKIMS", "Curvy Kate"), "The Dreamer": _names("Boux Avenue"), "Endorphin": _names("Left On Friday")},
+    },
 }
+
+# Backwards-compatible alias used by existing tests and review tools.
+CLOTHES_PUBLIC_OVERRIDES = CATEGORY_PUBLIC_OVERRIDES["clothes"]
 
 GLOBAL_PUBLIC_OVERRIDES = {
     ("clothes", normalise("The Attico")): "After Midnight",
@@ -129,7 +222,95 @@ GLOBAL_PUBLIC_OVERRIDES = {
     ("swimwear_lingerie", normalise("SKIMS")): "Modern Minimalist",
     ("swimwear_lingerie", normalise("Von Dutch")): "The Underground",
     ("clothes", normalise("Melie Bianco")): "The Understated",
+    ("clothes", normalise("Duran Lantink")): "The Disruptor",
+    ("clothes", normalise("Chrome Hearts")): "After Midnight",
+    ("clothes", normalise("Tory Burch")): "The Alumni",
 }
+
+
+CATEGORY_PUBLIC_DESCRIPTIONS = {
+    "bags": {
+        "The Expedition": "You choose bags that can take a beating and still look considered — technical fabrics, useful pockets and practical shapes built for movement.",
+        "The Understated": "You prefer beautifully made bags with discreet hardware, excellent leather and no need for a visible logo.",
+        "The Disruptor": "Your bag is the part of the outfit that starts the conversation: sculptural, unexpected and deliberately hard to ignore.",
+        "The Dreamer": "You reach for soft shapes, pretty details, bows, pearls and romantic colour — a bag can be practical and still feel charming.",
+        "The Underground": "Your bags borrow from street, skate and subculture: graphic, relaxed and a little rough around the edges.",
+        "Modern Minimalist": "You want clean bags that work with everything: edited shapes, simple colour and easy day-to-night function.",
+        "After Midnight": "You are drawn to dark, sensual bags with sharp shapes, unusual hardware and an after-hours edge.",
+        "The Trove": "Your bags collect colour, print, texture and charms. More is more, and every piece has something to discover.",
+        "Sun Bleached": "You like bags that feel sun-worn and easy — woven fibres, washed canvas and relaxed coastal texture.",
+        "The Workshop": "You value bags that are built to last: sturdy leather, honest construction and hardware that gets better with age.",
+        "The Dresser": "You choose polished bags on purpose — structured shapes, refined finishes and the right piece for an occasion.",
+        "Endorphin": "Your bags keep pace with an active day: streamlined, sporty and ready for the gym, commute or weekend.",
+        "The Wanderer": "You collect bags with craft and place in them — weaving, embroidery, beadwork and hands-on tradition.",
+        "The Alumni": "You like a dependable signature bag: classic, neat and easy to carry from work to coffee to the weekend.",
+        "Riviera": "You want your bag to feel ready for somewhere warm — light materials, bright colour and effortless resort polish.",
+    },
+    "shoes": {
+        "The Expedition": "You choose footwear made for weather, distance and uneven ground — even when the route is mostly city pavement.",
+        "The Understated": "You prefer quietly excellent shoes: beautiful materials, restrained shapes and quality that speaks without a logo.",
+        "The Disruptor": "Your shoes challenge the rest of the outfit — sculptural soles, odd proportions and conceptual construction are the point.",
+        "The Dreamer": "You like shoes with softness and charm: delicate straps, ballet shapes, colour and romantic detail.",
+        "The Underground": "Your footwear comes from skate, street and subculture — worn-in, graphic and never too polished.",
+        "Modern Minimalist": "You want clean, versatile shoes that simplify getting dressed and work across most of your wardrobe.",
+        "After Midnight": "You gravitate to dark, sensual footwear: sharp boots, severe heels and silhouettes with an after-hours pull.",
+        "The Trove": "Your shoe rack is a collection of colour, print, texture and unexpected finds. Restraint is not the objective.",
+        "Sun Bleached": "You like easy shoes with a holiday feel — natural texture, faded colour and relaxed warm-weather shapes.",
+        "The Workshop": "You value footwear with honest construction: sturdy leather, workwear roots and soles made to last.",
+        "The Dresser": "You enjoy polished footwear and a proper finishing touch — loafers, heels and occasion shoes chosen deliberately.",
+        "Endorphin": "You like footwear engineered for movement, from technical runners to training shoes that still look good off-duty.",
+        "The Wanderer": "You are drawn to shoes shaped by craft and culture — woven, embroidered, handmade and rich with story.",
+        "The Alumni": "You return to uniform favourites: court shoes, loafers and familiar classics that make every day easier.",
+        "Riviera": "You like shoes made for warm weather — sandals, woven textures, colour and a polished holiday ease.",
+    },
+    "jewellery": {
+        "The Expedition": "You like jewellery with engineered hardware, functional fastenings and a tough, utilitarian edge.",
+        "The Understated": "You choose discreet, beautifully made jewellery — refined metal, quiet stones and pieces that reward a closer look.",
+        "The Disruptor": "Your jewellery behaves like wearable sculpture: conceptual, unexpected and designed to provoke a second look.",
+        "The Dreamer": "You reach for pearls, ribbons, flowers and delicate sparkle — romantic details that soften everything around them.",
+        "The Underground": "Your jewellery carries subculture attitude: chains, piercings, oxidised metal and pieces that feel discovered early.",
+        "Modern Minimalist": "You want jewellery that layers easily and works every day — clean lines, simple metal and considered proportion.",
+        "After Midnight": "You prefer dark, sensual jewellery with sharp metal, dramatic scale and an intriguing after-hours mood.",
+        "The Trove": "You collect colour, charms, stones and texture. Your jewellery box should feel like an excellent vintage market.",
+        "Sun Bleached": "You like jewellery with a coastal softness — shells, weathered metal, pale stones and easy natural texture.",
+        "The Workshop": "You value visible craft: hammered metal, hand-finished surfaces and pieces made to become personal over time.",
+        "The Dresser": "You enjoy jewellery that completes an occasion — polished, intentional and just formal enough to feel special.",
+        "Endorphin": "You prefer light, practical jewellery that moves with you and never gets in the way of an active day.",
+        "The Wanderer": "You collect jewellery rooted in place and handwork — beads, carving, weaving and cultural craft traditions.",
+        "The Alumni": "You return to reliable signatures: hoops, signets, chains and classic pieces worn like a personal uniform.",
+        "Riviera": "You like sunlit jewellery — warm gold, bright stones and playful pieces that belong near the sea.",
+    },
+    "swimwear_lingerie": {
+        "The Expedition": "You choose swim and base layers for performance: technical fabrics, secure construction and pieces ready for real activity.",
+        "The Understated": "You prefer impeccable, discreet foundations — refined fabric, quiet colour and quality that is felt rather than announced.",
+        "The Disruptor": "You are drawn to swim and lingerie that plays with construction, cut-outs and proportion in unexpected ways.",
+        "The Dreamer": "You like soft colour, delicate lace, tiny prints and romantic details that make everyday pieces feel special.",
+        "The Underground": "Your swim and intimates have a subcultural edge — graphic, nostalgic and a little rebellious.",
+        "Modern Minimalist": "You want clean, comfortable pieces that layer and combine easily: simple colour, precise fit and no fuss.",
+        "After Midnight": "You prefer dark, directional lingerie and swim with strong lines, sheer detail and an unmistakably nocturnal mood.",
+        "The Trove": "You collect colour, pattern and texture across swim and lingerie. Matching is optional; personality is not.",
+        "Sun Bleached": "You like soft, sun-faded swim and easy natural layers that feel as relaxed as a long morning by the water.",
+        "The Workshop": "You value construction you can trust: supportive seams, durable fabric and pieces designed to be worn repeatedly.",
+        "The Dresser": "You choose polished lingerie and swim deliberately — refined sets, elegant nightwear and pieces that feel occasion-ready.",
+        "Endorphin": "You want swim and bodywear that performs: secure fits, active shapes and colour built for movement.",
+        "The Wanderer": "You are drawn to crochet, handwork, print and swim pieces that carry a sense of travel and craft.",
+        "The Alumni": "You rely on signature staples: classic cuts, familiar colours and dependable pieces that form an everyday uniform.",
+        "Riviera": "You dress for somewhere warm — polished swim, light cover-ups, colour and an easy Mediterranean confidence.",
+    },
+}
+
+CATEGORY_PUBLIC_DISPLAY_NAMES = {
+    ("jewellery", "The Expedition"): "The Hardware",
+}
+
+
+def public_display_copy(category: str, public_name: str) -> tuple[str, str]:
+    display_name = CATEGORY_PUBLIC_DISPLAY_NAMES.get((category, public_name), public_name)
+    description = CATEGORY_PUBLIC_DESCRIPTIONS.get(category, {}).get(
+        public_name,
+        ARCHETYPE_BY_NAME[public_name]["public_cluster_description"],
+    )
+    return display_name, description
 
 
 def public_name_for_brand(category: str, cluster: int, brand_name: str) -> tuple[str, str]:
@@ -141,12 +322,14 @@ def public_name_for_brand(category: str, cluster: int, brand_name: str) -> tuple
     reviewed_override = GLOBAL_PUBLIC_OVERRIDES.get((category, normalized))
     if reviewed_override:
         return reviewed_override, "reviewed_brand_override"
-    if category != "clothes":
-        return default_name, "cluster_mapping"
-    for public_name, brands in CLOTHES_PUBLIC_OVERRIDES.get(cluster, {}).items():
+    for public_name, brands in CATEGORY_PUBLIC_OVERRIDES.get(category, {}).get(cluster, {}).items():
         if normalized in brands:
             return public_name, "reviewed_brand_override"
-    method = "dominant_cluster_default" if cluster in CLOTHES_PUBLIC_OVERRIDES else "direct_cluster_mapping"
+    method = (
+        "dominant_cluster_default"
+        if cluster in CATEGORY_PUBLIC_OVERRIDES.get(category, {})
+        else "direct_cluster_mapping"
+    )
     return default_name, method
 
 
@@ -159,14 +342,25 @@ def enrich_public_archetypes(data_dir: Path) -> None:
     for row in assignments.itertuples(index=False):
         public_name, method = public_name_for_brand(str(row.category), int(row.cluster), str(row.brand_name))
         public = ARCHETYPE_BY_NAME[public_name]
-        public_rows.append({**public, "public_mapping_method": method})
+        display_name, display_description = public_display_copy(str(row.category), public_name)
+        public_rows.append({
+            **public,
+            "public_display_name": display_name,
+            "public_display_description": display_description,
+            "public_mapping_method": method,
+        })
     public_frame = pd.DataFrame(public_rows, index=assignments.index)
     for column in public_frame.columns:
         assignments[column] = public_frame[column]
 
     if not original_identity.equals(assignments[["brand_name", "category", "cluster", "cluster_id"]]):
         raise RuntimeError("Public archetype enrichment changed technical cluster identity")
-    if assignments["public_cluster_name"].eq("").any() or assignments["public_cluster_description"].eq("").any():
+    if (
+        assignments["public_cluster_name"].eq("").any()
+        or assignments["public_cluster_description"].eq("").any()
+        or assignments["public_display_name"].eq("").any()
+        or assignments["public_display_description"].eq("").any()
+    ):
         raise RuntimeError("Public archetype enrichment left blank customer-facing copy")
 
     assignments.to_csv(assignments_path, index=False)
@@ -175,6 +369,7 @@ def enrich_public_archetypes(data_dir: Path) -> None:
     public_assignments = assignments[[
         "brand_name", "category", "cluster", "cluster_id", "public_cluster_id",
         "public_cluster_number", "public_cluster_name", "public_cluster_description",
+        "public_display_name", "public_display_description",
         "public_mapping_method",
     ]].copy()
     public_assignments.to_csv(data_dir / "brand_public_cluster_assignments.csv", index=False)
@@ -182,6 +377,7 @@ def enrich_public_archetypes(data_dir: Path) -> None:
     join_columns = [
         "brand_name", "category", "public_cluster_id", "public_cluster_number",
         "public_cluster_name", "public_cluster_description", "public_mapping_method",
+        "public_display_name", "public_display_description",
     ]
     public_join = assignments[join_columns].copy()
     umap_path = data_dir / "ios_brand_umap.csv"
@@ -198,17 +394,32 @@ def enrich_public_archetypes(data_dir: Path) -> None:
 
     summary_path = data_dir / "ios_cluster_summary.csv"
     summary = pd.read_csv(summary_path)
-    dominant_ids, dominant_names, dominant_descriptions, statuses = [], [], [], []
+    dominant_ids, dominant_names, dominant_descriptions = [], [], []
+    dominant_display_names, dominant_display_descriptions, statuses = [], [], []
     for row in summary.itertuples(index=False):
-        name = CLUSTER_PUBLIC_NAMES[str(row.category)][int(row.cluster)]
+        category = str(row.category)
+        cluster = int(row.cluster)
+        name = CLUSTER_PUBLIC_NAMES[category][cluster]
         public = ARCHETYPE_BY_NAME[name]
+        display_name, display_description = public_display_copy(category, name)
         dominant_ids.append(public["public_cluster_id"])
         dominant_names.append(name)
         dominant_descriptions.append(public["public_cluster_description"])
-        statuses.append("split_with_brand_overrides" if str(row.category) == "clothes" and int(row.cluster) in CLOTHES_PUBLIC_OVERRIDES else "cluster_mapping")
+        dominant_display_names.append(display_name)
+        dominant_display_descriptions.append(display_description)
+        members = assignments[
+            assignments["category"].eq(category) & assignments["cluster"].eq(cluster)
+        ]
+        statuses.append(
+            "split_with_brand_overrides"
+            if members["public_cluster_id"].nunique() > 1
+            else "cluster_mapping"
+        )
     summary["dominant_public_cluster_id"] = dominant_ids
     summary["dominant_public_cluster_name"] = dominant_names
     summary["dominant_public_cluster_description"] = dominant_descriptions
+    summary["dominant_public_display_name"] = dominant_display_names
+    summary["dominant_public_display_description"] = dominant_display_descriptions
     summary["public_mapping_status"] = statuses
     summary.to_csv(summary_path, index=False)
 
@@ -237,6 +448,8 @@ def enrich_public_archetypes(data_dir: Path) -> None:
             "public_cluster_number": int(first["public_cluster_number"]),
             "public_cluster_name": first["public_cluster_name"],
             "public_cluster_description": first["public_cluster_description"],
+            "public_display_name": first["public_display_name"],
+            "public_display_description": first["public_display_description"],
             "n_brands": len(group),
             "source_cluster_ids": ", ".join(source_cluster_ids),
             "example_brands": ", ".join(group["brand_name"].astype(str).head(8)),

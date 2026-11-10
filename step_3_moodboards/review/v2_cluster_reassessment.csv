@@ -2,6 +2,7 @@ brand_name,category,old_cluster,old_cluster_title,best_cluster,best_cluster_titl
 Junya Watanabe,bags,7.000000,The Artisan,1,The Underground,0.904439,0.929117,0.024678,7,The Artisan,kept_existing_cluster
 No Problemo,clothes,14.000000,The Underground,13,The Underground,0.909084,0.933431,0.024347,14,The Underground,kept_existing_cluster
 Gabriela Hearst,shoes,8.000000,The Understated,1,The Staple,0.923779,0.947127,0.023348,8,The Understated,kept_existing_cluster
+Acacia,swimwear_lingerie,0.000000,The Wanderer,4,The Provocateur,0.918978,0.940699,0.021721,0,The Wanderer,kept_existing_cluster
 DKNY,bags,6.000000,The Field Manual,1,The Underground,0.928967,0.950212,0.021244,6,The Field Manual,kept_existing_cluster
 Marge Sherwood,bags,5.000000,The Sculptor,11,The Magpie,0.926733,0.947866,0.021132,5,The Sculptor,kept_existing_cluster
 Isabel Marant,bags,8.000000,Sun Bleached,12,The Dresser,0.915525,0.936062,0.020536,8,Sun Bleached,kept_existing_cluster
@@ -74,6 +75,13 @@ Roxanne Assoulin,jewellery,4.000000,The Wanderer,4,The Wanderer,0.907105,0.90710
 Sonia Petroff,jewellery,12.000000,The Heirloom,12,The Heirloom,0.924648,0.924648,0.000000,12,The Heirloom,kept_existing_cluster
 Vivienne Westwood,jewellery,2.000000,The Statement,2,The Statement,0.875553,0.875553,0.000000,2,The Statement,kept_existing_cluster
 William Welstead,jewellery,12.000000,The Heirloom,12,The Heirloom,0.919402,0.919402,0.000000,12,The Heirloom,kept_existing_cluster
+Araks,swimwear_lingerie,3.000000,Second Skin,3,Second Skin,0.944724,0.944724,0.000000,3,Second Skin,kept_existing_cluster
+Baserange,swimwear_lingerie,4.000000,The Provocateur,4,The Provocateur,0.940461,0.940461,0.000000,4,The Provocateur,kept_existing_cluster
+Intimissimi,swimwear_lingerie,1.000000,The Romantic,1,The Romantic,0.943973,0.943973,0.000000,1,The Romantic,kept_existing_cluster
+Left On Friday,swimwear_lingerie,4.000000,The Provocateur,4,The Provocateur,0.951739,0.951739,0.000000,4,The Provocateur,kept_existing_cluster
+Natori,swimwear_lingerie,1.000000,The Romantic,1,The Romantic,0.903829,0.903829,0.000000,1,The Romantic,kept_existing_cluster
+Only Hearts,swimwear_lingerie,1.000000,The Romantic,1,The Romantic,0.965949,0.965949,0.000000,1,The Romantic,kept_existing_cluster
+Fruity Booty,swimwear_lingerie,3.000000,Second Skin,4,The Provocateur,0.900442,0.946021,0.045579,3,Second Skin,manual_visual_review_override
 ROTATE Birger Christensen,clothes,1.000000,The Daydreamer,14,The Underground,0.753562,0.786202,0.032640,8,The Modern Muse,manual_visual_review_override
 CASABLANCA,bags,9.000000,After Midnight,12,The Dresser,0.774568,0.800383,0.025815,4,The Disruptor,manual_visual_review_override
 Jacquemus,shoes,8.000000,The Understated,12,Sun Bleached,0.934710,0.960325,0.025615,2,The Sculptor,manual_visual_review_override
@@ -85,6 +93,9 @@ Girlfriend Collective,clothes,16.000000,The Understated,13,The Underground,0.914
 House Of Sunny,clothes,14.000000,The Underground,14,The Underground,0.942129,0.942129,0.000000,1,The Daydreamer,manual_visual_review_override
 Coperni,shoes,13.000000,The Expedition,13,The Expedition,0.894144,0.894144,0.000000,2,The Sculptor,manual_visual_review_override
 Cult Gaia,bags,8.000000,Sun Bleached,8,Sun Bleached,0.898595,0.898595,0.000000,4,The Disruptor,manual_visual_review_override
+Calvin Klein,swimwear_lingerie,,,4,The Provocateur,,0.944347,,3,Second Skin,manual_visual_review_override
+Calzedonia,swimwear_lingerie,,,4,The Provocateur,,0.929886,,2,Riviera,manual_visual_review_override
+Roxy,swimwear_lingerie,,,4,The Provocateur,,0.952207,,2,Riviera,manual_visual_review_override
 Tory Burch,clothes,1.000000,The Daydreamer,7,The Dresser,0.812693,0.899440,0.086747,7,The Dresser,moved_to_better_centroid
 Sandy Liang,clothes,0.000000,Off Duty,1,The Daydreamer,0.875802,0.943717,0.067915,1,The Daydreamer,moved_to_better_centroid
 ALO YOGA,bags,6.000000,The Field Manual,12,The Dresser,0.893962,0.952176,0.058214,12,The Dresser,moved_to_better_centroid
@@ -117,3 +128,6 @@ Timberland,shoes,,,11,The Trailhead,,0.935937,,11,The Trailhead,new_assignment
 UGG,shoes,,,11,The Trailhead,,0.919111,,11,The Trailhead,new_assignment
 Vans,shoes,,,4,The Underground,,0.961119,,4,The Underground,new_assignment
 Vibram,shoes,,,7,The Pace,,0.877336,,7,The Pace,new_assignment
+Billabong,swimwear_lingerie,,,2,Riviera,,0.954471,,2,Riviera,new_assignment
+La Perla,swimwear_lingerie,,,1,The Romantic,,0.887063,,1,The Romantic,new_assignment
+Wolford,swimwear_lingerie,,,3,Second Skin,,0.937271,,3,Second Skin,new_assignment

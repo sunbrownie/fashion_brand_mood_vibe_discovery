@@ -29,7 +29,7 @@ class PublicArchetypeArtifactTests(unittest.TestCase):
     def test_every_taste_assignment_has_consistent_public_archetype(self):
         archetypes = {row["public_cluster_id"]: row for row in rows("public_cluster_archetypes.csv")}
         assignments = rows("ios_brand_cluster_assignments.csv")
-        self.assertEqual(len(assignments), 1828)
+        self.assertEqual(len(assignments), 1830)
         self.assertEqual(
             len({(row["brand_name"], row["category"]) for row in assignments}),
             len(assignments),
@@ -38,6 +38,8 @@ class PublicArchetypeArtifactTests(unittest.TestCase):
             canonical = archetypes[row["public_cluster_id"]]
             self.assertEqual(row["public_cluster_name"], canonical["public_cluster_name"])
             self.assertEqual(row["public_cluster_description"], canonical["public_cluster_description"])
+            self.assertTrue(row["public_display_name"].strip())
+            self.assertTrue(row["public_display_description"].strip())
             self.assertTrue(row["cluster_id"].startswith(f"{row['category']}-"))
 
     def test_reviewed_split_cluster_anchors(self):
@@ -69,6 +71,8 @@ class PublicArchetypeArtifactTests(unittest.TestCase):
             self.assertEqual(row["cluster_id"], assignment["cluster_id"])
             self.assertEqual(row["public_cluster_id"], assignment["public_cluster_id"])
             self.assertEqual(row["public_cluster_name"], assignment["public_cluster_name"])
+            self.assertEqual(row["public_display_name"], assignment["public_display_name"])
+            self.assertEqual(row["public_display_description"], assignment["public_display_description"])
 
     def test_public_summary_reconciles_to_assignments(self):
         assignments = rows("ios_brand_cluster_assignments.csv")

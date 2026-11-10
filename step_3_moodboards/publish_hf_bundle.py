@@ -6,13 +6,19 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from huggingface_hub import CommitOperationAdd, HfApi
+from huggingface_hub import CommitOperationAdd, CommitOperationDelete, HfApi
 
 
 ROOT = Path(__file__).resolve().parents[1]
 IOS_ROOT = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder"
 HF_ROOT = ROOT / "recommender" / "hosting_bundle"
 REPO_ID = "Zilorina/brand-moodboard-recommender"
+REMOVED_REMOTE_PATHS = (
+    "data/moodboards/swimwear_lingerie/perle_by_lola.jpg",
+    "data/moodboards/swimwear_lingerie/von_dutch.jpg",
+    "data/moodboards/shoes/montce.jpg",
+    "data/moodboards/jewellery/montce.jpg",
+)
 
 DERIVED_ARTIFACTS = (
     "README.md",
@@ -34,8 +40,8 @@ DERIVED_ARTIFACTS = (
 def moodboard_paths() -> list[str]:
     manifest_path = IOS_ROOT / "BrandMoodboards" / "v2_manifest.json"
     entries = json.loads(manifest_path.read_text(encoding="utf-8"))["entries"]
-    if len(entries) != 370:
-        raise ValueError(f"Expected 370 accepted V2 moodboards, found {len(entries)}")
+    if len(entries) != 384:
+        raise ValueError(f"Expected 384 accepted V2 moodboards, found {len(entries)}")
 
     paths: set[str] = set()
     for entry in entries:
@@ -54,15 +60,16 @@ def main() -> None:
         CommitOperationAdd(path_in_repo=path, path_or_fileobj=HF_ROOT / path)
         for path in relative_paths
     ]
+    operations.extend(CommitOperationDelete(path_in_repo=path) for path in REMOVED_REMOTE_PATHS)
     result = HfApi().create_commit(
         repo_id=REPO_ID,
         repo_type="space",
         operations=operations,
-        commit_message="Add customer-facing taste archetypes",
+        commit_message="Update swimwear review and category archetypes",
         commit_description=(
-            "Adds Ellina's 15 customer-facing taste archetype names and descriptions, "
-            "including reviewed brand-level routing for split clothes clusters. Numeric "
-            "cluster IDs, text embeddings, PCA values and UMAP coordinates are unchanged."
+            "Publishes Ellina's swimwear and lingerie corrections, six new brands, four "
+            "reviewed category removals, refreshed MPNet text embeddings and technical "
+            "assignments, plus category-appropriate customer-facing archetype copy."
         ),
     )
     print(result.commit_url)

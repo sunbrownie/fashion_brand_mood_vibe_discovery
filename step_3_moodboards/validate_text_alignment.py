@@ -21,6 +21,10 @@ IOS = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder"
 REVIEW = ROOT / "step_3_moodboards" / "review"
 MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
 VIBE_COLUMNS = ("aesthetic_keywords", "silhouettes", "materials", "palette")
+EXPECTED_CATALOG_ROWS = 1866
+EXPECTED_TASTE_ROWS = 1830
+EXPECTED_OVERRIDE_ROWS = 77
+EXPECTED_V2_MANIFEST_ROWS = 384
 
 
 def normalised(value: object) -> str:
@@ -46,8 +50,8 @@ def main() -> None:
     metadata_today = pd.read_csv(STEP2 / "brand_metadata_today.csv").fillna("")
     host_keys = [key(row) for row in host.itertuples(index=False)]
     metadata_keys = [key(row) for row in metadata.itertuples(index=False)]
-    if len(host) != 1864 or len(set(host_keys)) != 1864:
-        raise RuntimeError("Host metadata must contain 1,864 unique category-brand rows")
+    if len(host) != EXPECTED_CATALOG_ROWS or len(set(host_keys)) != EXPECTED_CATALOG_ROWS:
+        raise RuntimeError(f"Host metadata must contain {EXPECTED_CATALOG_ROWS:,} unique category-brand rows")
     if host_keys != metadata_keys:
         raise RuntimeError("Host and embedding metadata row order differs")
     if not metadata.equals(metadata_today):
@@ -67,7 +71,7 @@ def main() -> None:
     if set(archive.files) != {"embeddings", "model_name"}:
         raise RuntimeError(f"Unexpected NPZ keys: {archive.files}")
     embeddings = archive["embeddings"]
-    if embeddings.shape != (1864, 768) or embeddings.dtype != np.float32:
+    if embeddings.shape != (EXPECTED_CATALOG_ROWS, 768) or embeddings.dtype != np.float32:
         raise RuntimeError(f"Unexpected embedding matrix: {embeddings.shape} {embeddings.dtype}")
     if not np.allclose(np.linalg.norm(embeddings, axis=1), 1.0, atol=1e-5):
         raise RuntimeError("Text embeddings are not L2-normalized")
@@ -77,8 +81,8 @@ def main() -> None:
         raise RuntimeError("Step-2 and hosting embedding archives differ")
 
     override_rows = list(csv.DictReader((REVIEW / "v2_text_alignment_overrides.csv").open()))
-    if len(override_rows) != 63:
-        raise RuntimeError(f"Expected 63 reviewed overrides, found {len(override_rows)}")
+    if len(override_rows) != EXPECTED_OVERRIDE_ROWS:
+        raise RuntimeError(f"Expected {EXPECTED_OVERRIDE_ROWS} reviewed overrides, found {len(override_rows)}")
     host_lookup = {key(row): row for row in host.itertuples(index=False)}
     for row in override_rows:
         row_key = (row["category"], normalised(row["brand_name"]))
@@ -91,8 +95,8 @@ def main() -> None:
 
     manifest = json.loads((IOS / "BrandMoodboards" / "v2_manifest.json").read_text())["entries"]
     manifest_keys = {(entry["category"], normalised(entry["brand_name"])) for entry in manifest}
-    if len(manifest) != 370 or not manifest_keys.issubset(set(host_keys)):
-        raise RuntimeError("The 370-board V2 manifest is not fully represented in metadata")
+    if len(manifest) != EXPECTED_V2_MANIFEST_ROWS or not manifest_keys.issubset(set(host_keys)):
+        raise RuntimeError("The V2 manifest is not fully represented in metadata")
     review = pd.read_csv(REVIEW / "v2_text_alignment_review.csv")
     if len(review) != 370 or int(review["text_review_status"].eq("updated_to_match_v2").sum()) != 63:
         raise RuntimeError("The complete V2 text-review register is inconsistent")
@@ -109,6 +113,7 @@ def main() -> None:
         "shoes": "brands_shoes.csv",
         "bags": "brands_bags.csv",
         "jewellery": "brands_jewellery.csv",
+        "swimwear_lingerie": "brands_swimwear_lingerie.csv",
     }
     source_lookup = {}
     for category, filename in category_files.items():
@@ -136,16 +141,20 @@ def main() -> None:
         if sha256(DATA / filename) != sha256(IOS / "ClusterData" / filename):
             raise RuntimeError(f"Hosting and iOS exports differ: {filename}")
     for filename in ("ios_brand_cluster_assignments.csv", "ios_brand_embeddings_pca48.csv", "ios_brand_umap.csv"):
-        if len(pd.read_csv(DATA / filename)) != 1828:
+        if len(pd.read_csv(DATA / filename)) != EXPECTED_TASTE_ROWS:
             raise RuntimeError(f"Unexpected taste-space row count: {filename}")
-    if int(pd.read_csv(DATA / "ios_cluster_summary.csv")["n_brands"].sum()) != 1828:
+    if int(pd.read_csv(DATA / "ios_cluster_summary.csv")["n_brands"].sum()) != EXPECTED_TASTE_ROWS:
         raise RuntimeError("Cluster summary does not reconcile to the taste-space rows")
     public_assignments = pd.read_csv(DATA / "ios_brand_cluster_assignments.csv")
-    if public_assignments["public_cluster_id"].isna().any() or public_assignments["public_cluster_description"].isna().any():
+    required_public = [
+        "public_cluster_id", "public_cluster_description",
+        "public_display_name", "public_display_description",
+    ]
+    if public_assignments[required_public].isna().any().any():
         raise RuntimeError("Customer-facing public archetype copy is incomplete")
     if len(pd.read_csv(DATA / "public_cluster_archetypes.csv")) != 15:
         raise RuntimeError("Expected exactly 15 customer-facing archetypes")
-    if int(pd.read_csv(DATA / "ios_public_cluster_summary.csv")["n_brands"].sum()) != 1828:
+    if int(pd.read_csv(DATA / "ios_public_cluster_summary.csv")["n_brands"].sum()) != EXPECTED_TASTE_ROWS:
         raise RuntimeError("Public archetype summary does not reconcile to the taste-space rows")
 
     assignments = (IOS / "ClusterData" / "ios_brand_cluster_assignments.csv").read_text().rstrip("\n")
@@ -155,8 +164,8 @@ def main() -> None:
         raise RuntimeError("The compiled Swift fallback is stale")
 
     print(
-        "Validated 370 reviewed moodboards, 63 text corrections, 1,864 normalized "
-        "MPNet vectors and 1,828 synchronized iOS taste-space rows."
+        f"Validated {EXPECTED_V2_MANIFEST_ROWS} reviewed moodboards, {EXPECTED_OVERRIDE_ROWS} text corrections, "
+        f"{EXPECTED_CATALOG_ROWS:,} normalized MPNet vectors and {EXPECTED_TASTE_ROWS:,} synchronized iOS taste-space rows."
     )
 
 

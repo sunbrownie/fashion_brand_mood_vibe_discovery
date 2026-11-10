@@ -83,6 +83,20 @@ CLUSTER_REVIEW_OVERRIDES = {
     ("shoes", "coperni"): 2,
     ("shoes", "jacquemus"): 2,
     ("shoes", "burton"): 16,
+    ("swimwear_lingerie", "acacia"): 0,
+    ("swimwear_lingerie", "araks"): 3,
+    ("swimwear_lingerie", "baserange"): 4,
+    ("swimwear_lingerie", "fruity booty"): 3,
+    ("swimwear_lingerie", "intimissimi"): 1,
+    ("swimwear_lingerie", "left on friday"): 4,
+    ("swimwear_lingerie", "natori"): 1,
+    ("swimwear_lingerie", "only hearts"): 1,
+    ("swimwear_lingerie", "calvin klein"): 3,
+    ("swimwear_lingerie", "la perla"): 1,
+    ("swimwear_lingerie", "calzedonia"): 2,
+    ("swimwear_lingerie", "billabong"): 2,
+    ("swimwear_lingerie", "roxy"): 2,
+    ("swimwear_lingerie", "wolford"): 3,
 }
 
 NEW_CLUSTER_ASSIGNMENT_KEYS = {
@@ -99,6 +113,28 @@ INVALID_TASTE_ROWS = {
         "montce", "natori", "only hearts", "orlebar brown", "peony swimwear", "saxx", "skims",
         "solid and striped", "suboo", "wild lovers",
     }
+}
+
+# Ellina review removals and definite category contamination. These keys are
+# removed from the active catalog before embeddings or assignments are built.
+CATALOG_REMOVALS = {
+    ("swimwear_lingerie", "perle by lola"),
+    ("swimwear_lingerie", "von dutch"),
+    ("shoes", "montce"),
+    ("jewellery", "montce"),
+}
+
+SWIM_LINGERIE_FLAGS = {
+    "calvin klein": (1, 1),
+    "la perla": (1, 1),
+    "calzedonia": (1, 0),
+    "billabong": (1, 0),
+    "roxy": (1, 0),
+    "wolford": (0, 1),
+}
+
+DISPLAY_NAME_OVERRIDES = {
+    ("swimwear_lingerie", "natori"): "Natori",
 }
 
 # Human-reviewed metadata corrections for accepted V2 boards whose original text
@@ -556,6 +592,14 @@ def sync_v2_moodboards_to_host() -> dict[tuple[str, str], str]:
 def build_catalog() -> tuple[pd.DataFrame, pd.DataFrame]:
     host_path = DATA / "brand_metadata.csv"
     host = pd.read_csv(host_path)
+    removal_mask = pd.Series(
+        [
+            (str(row.category), normalised(row.brand_name)) in CATALOG_REMOVALS
+            for row in host.itertuples()
+        ],
+        index=host.index,
+    )
+    host = host.loc[~removal_mask].reset_index(drop=True)
     synced_v2_paths = sync_v2_moodboards_to_host()
     overlay = json.loads(OVERLAY.read_text(encoding="utf-8"))["entries"]
     existing = {(row.category, normalised(row.brand_name)) for row in host.itertuples()}
@@ -619,6 +663,8 @@ def build_catalog() -> tuple[pd.DataFrame, pd.DataFrame]:
 
     for index, row in host.iterrows():
         key = (str(row["category"]), normalised(row["brand_name"]))
+        if key in DISPLAY_NAME_OVERRIDES:
+            host.at[index, "brand_name"] = DISPLAY_NAME_OVERRIDES[key]
         if key in synced_v2_paths:
             host.at[index, "moodboard_path"] = synced_v2_paths[key]
         if key in overlay_lookup:
@@ -666,14 +712,20 @@ def update_source_csvs(host: pd.DataFrame) -> None:
         "shoes": ROOT / "final_dataset" / "brands_shoes.csv",
         "bags": ROOT / "final_dataset" / "brands_bags.csv",
         "jewellery": ROOT / "final_dataset" / "brands_jewellery.csv",
+        "swimwear_lingerie": ROOT / "final_dataset" / "brands_swimwear_lingerie.csv",
     }
     overlay = json.loads(OVERLAY.read_text(encoding="utf-8"))["entries"]
     overlay_keys = {(entry["category"], normalised(entry["brand_name"])) for entry in overlay}
     override_keys = set(normalised_description_overrides())
-    managed_keys = overlay_keys | override_keys
+    managed_keys = overlay_keys | override_keys | CATALOG_REMOVALS
     host_lookup = {(row.category, normalised(row.brand_name)): row for row in host.itertuples()}
     for category, path in file_map.items():
         frame = pd.read_csv(path)
+        frame = frame.loc[
+            ~frame["brand_name"].map(
+                lambda value: (category, normalised(value)) in CATALOG_REMOVALS
+            )
+        ].copy()
         existing = {normalised(value) for value in frame["brand_name"]}
         for index, source_row in frame.iterrows():
             brand_key = normalised(source_row["brand_name"])
@@ -681,12 +733,17 @@ def update_source_csvs(host: pd.DataFrame) -> None:
             if key not in managed_keys or key not in host_lookup:
                 continue
             host_row = host_lookup[key]
+            frame.at[index, "brand_name"] = host_row.brand_name
             for column in ("official_website", "aesthetic_keywords", "silhouettes", "materials", "palette"):
                 if column in frame.columns:
                     frame.at[index, column] = getattr(host_row, column)
         rows = []
         for overlay_category, brand_key in sorted(managed_keys):
-            if overlay_category != category or brand_key in existing:
+            if (
+                overlay_category != category
+                or brand_key in existing
+                or (category, brand_key) not in host_lookup
+            ):
                 continue
             row = host_lookup[(category, brand_key)]
             values = {
@@ -700,8 +757,8 @@ def update_source_csvs(host: pd.DataFrame) -> None:
                 "male": int(row.male),
                 "female": int(row.female),
                 "price": row.price,
-                "swimwear": 0,
-                "lingerie": 0,
+                "swimwear": SWIM_LINGERIE_FLAGS.get(brand_key, (0, 0))[0],
+                "lingerie": SWIM_LINGERIE_FLAGS.get(brand_key, (0, 0))[1],
                 "children": 0,
                 "popularity": int(row.popularity),
             }
@@ -779,6 +836,18 @@ def update_projection_and_clusters(host: pd.DataFrame, embeddings: np.ndarray) -
             old_lookup[baseline_key] = int(baseline_row.old_cluster)
     for new_key in NEW_CLUSTER_ASSIGNMENT_KEYS:
         old_lookup.pop(new_key, None)
+    populated_cluster_keys = {
+        (category, cluster)
+        for key, cluster in old_lookup.items()
+        if key in metadata_lookup
+        for category in (key[0],)
+    }
+    summary = summary.loc[
+        [
+            (str(row.category), int(row.cluster)) in populated_cluster_keys
+            for row in summary.itertuples()
+        ]
+    ].reset_index(drop=True)
     summary_lookup = {
         (str(row.category), int(row.cluster)): row
         for row in summary.itertuples()
