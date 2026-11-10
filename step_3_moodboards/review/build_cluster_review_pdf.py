@@ -63,7 +63,7 @@ FOOTER_H = 26
 HEADER_BOTTOM = 440
 GRID_TOP = 426
 GRID_BOTTOM = 39
-GRID_COLS = 4
+GRID_COLS = 2
 GRID_ROWS = 2
 CARDS_PER_PAGE = GRID_COLS * GRID_ROWS
 GAP_X = 9
@@ -397,6 +397,7 @@ def draw_cover(
     pdf.setFont("Helvetica", 10)
     pdf.drawString(54, PAGE_H - 194, f"{len(blocks)} technical clusters  •  {sum(len(b.rows) for b in blocks)} brands")
     pdf.drawString(54, PAGE_H - 213, f"{len({b.category for b in blocks})} categories  •  {total_pages} pages")
+    pdf.drawString(54, PAGE_H - 232, "Four latest canonical moodboards per review page")
     pdf.setFillColor(WHITE)
     pdf.setFont("Helvetica-Bold", 9)
     y = PAGE_H - 285

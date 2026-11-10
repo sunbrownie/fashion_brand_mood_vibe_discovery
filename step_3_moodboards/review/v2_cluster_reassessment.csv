@@ -16,9 +16,9 @@ Dolce & Gabbana,bags,12.000000,The Dresser,9,After Midnight,0.832699,0.847856,0.
 YVMIN,jewellery,12.000000,The Heirloom,3,The Socialite,0.904999,0.919310,0.014311,12,The Heirloom,kept_existing_cluster
 McQueen,clothes,7.000000,The Dresser,8,The Modern Muse,0.940161,0.952378,0.012216,7,The Dresser,kept_existing_cluster
 Tumi,bags,3.000000,The Expedition,6,The Field Manual,0.930853,0.938289,0.007436,3,The Expedition,kept_existing_cluster
-Comme des Garçons,shoes,5.000000,The Underground,13,The Expedition,0.928998,0.936238,0.007239,5,The Underground,kept_existing_cluster
 Valentino,jewellery,14.000000,After Midnight,2,The Statement,0.948946,0.953928,0.004982,14,After Midnight,kept_existing_cluster
 Dior,bags,12.000000,The Dresser,9,After Midnight,0.856210,0.861174,0.004963,12,The Dresser,kept_existing_cluster
+Comme des Garçons,shoes,5.000000,The Underground,9,The Atelier,0.920938,0.924759,0.003822,5,The Underground,kept_existing_cluster
 BY FAR,bags,12.000000,The Dresser,14,The Socialite,0.862454,0.865188,0.002734,12,The Dresser,kept_existing_cluster
 Opera Sport,clothes,7.000000,The Dresser,14,The Underground,0.841234,0.842999,0.001766,7,The Dresser,kept_existing_cluster
 Adidas,clothes,13.000000,The Underground,13,The Underground,0.920753,0.920753,0.000000,13,The Underground,kept_existing_cluster
@@ -90,8 +90,8 @@ Karoline Vitto,clothes,14.000000,The Underground,2,The Power Move,0.877539,0.892
 Chopova Lowena,bags,8.000000,Sun Bleached,1,The Underground,0.907305,0.919086,0.011782,1,The Underground,manual_visual_review_override
 Burton,shoes,11.000000,The Trailhead,16,The Club Room,0.860235,0.865538,0.005303,16,The Club Room,manual_visual_review_override
 Girlfriend Collective,clothes,16.000000,The Understated,13,The Underground,0.914006,0.916804,0.002798,13,The Underground,manual_visual_review_override
+Coperni,shoes,13.000000,The Expedition,5,The Underground,0.894144,0.894850,0.000706,2,The Sculptor,manual_visual_review_override
 House Of Sunny,clothes,14.000000,The Underground,14,The Underground,0.942129,0.942129,0.000000,1,The Daydreamer,manual_visual_review_override
-Coperni,shoes,13.000000,The Expedition,13,The Expedition,0.894144,0.894144,0.000000,2,The Sculptor,manual_visual_review_override
 Cult Gaia,bags,8.000000,Sun Bleached,8,Sun Bleached,0.898595,0.898595,0.000000,4,The Disruptor,manual_visual_review_override
 Calvin Klein,swimwear_lingerie,,,4,The Provocateur,,0.944347,,3,Second Skin,manual_visual_review_override
 Calzedonia,swimwear_lingerie,,,4,The Provocateur,,0.929886,,2,Riviera,manual_visual_review_override
@@ -118,7 +118,7 @@ The Couture Club,clothes,14.000000,The Underground,7,The Dresser,0.918817,0.9476
 Miu Miu,bags,9.000000,After Midnight,12,The Dresser,0.899244,0.927404,0.028160,12,The Dresser,moved_to_better_centroid
 Gucci,shoes,1.000000,The Staple,11,The Trailhead,0.894886,0.921885,0.026999,11,The Trailhead,moved_to_better_centroid
 Alohas,shoes,,,16,The Club Room,,0.834644,,16,The Club Room,new_assignment
-Comme des Garçons PLAY,shoes,,,5,The Underground,,0.933173,,5,The Underground,new_assignment
+Comme des Garçons PLAY,shoes,,,5,The Underground,,0.933491,,5,The Underground,new_assignment
 Melissa,shoes,,,12,Sun Bleached,,0.892021,,12,Sun Bleached,new_assignment
 On Running,shoes,,,7,The Pace,,0.943514,,7,The Pace,new_assignment
 Onitsuka Tiger,shoes,,,7,The Pace,,0.892105,,7,The Pace,new_assignment

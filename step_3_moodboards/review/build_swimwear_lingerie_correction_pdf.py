@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Ellina swimwear/lingerie correction review PDF with old/new evidence."""
+"""Build Ellina swimwear/lingerie correction review PDF with old/new/Google evidence."""
 
 from __future__ import annotations
 
@@ -20,6 +20,7 @@ from reportlab.pdfgen import canvas
 ROOT = Path(__file__).resolve().parents[2]
 OLD = ROOT / "tmp" / "swimwear_lingerie_old"
 NEW = ROOT / "moodboards_creation" / "moodboards" / "swimwear_lingerie"
+REFERENCES = ROOT / "step_3_moodboards" / "review" / "reference_screenshots" / "swimwear_lingerie"
 DATA = ROOT / "recommender" / "hosting_bundle" / "data"
 DEFAULT_OUTPUT = ROOT / "output" / "pdf" / "swimwear_lingerie_review_round.pdf"
 
@@ -123,11 +124,11 @@ def main() -> None:
     c.drawString(46, PAGE_H - 90, "Swimwear & Lingerie")
     c.setFillColor(PINK)
     c.setFont("Helvetica-Bold", 24)
-    c.drawString(46, PAGE_H - 126, "Ellina review — corrected old vs new")
+    c.drawString(46, PAGE_H - 126, "Ellina review — old, final and Google reference")
     c.setFillColor(MUTED)
     c.setFont("Helvetica", 12)
     c.drawString(46, PAGE_H - 164, f"Generated {date.today().isoformat()} · 8 updated · 2 removed · 6 added")
-    draw_wrapped(c, "Each page preserves Ellina’s latest comment, shows the previous and current state, and records the text/cluster result used by the iOS and Hugging Face builds.", 46, PAGE_H - 204, 92, 17, size=12, color=INK)
+    draw_wrapped(c, "Each page preserves Ellina’s latest comment, shows the previous and current state beside a Google Images reference, and records the text/cluster result used by the iOS and Hugging Face builds.", 46, PAGE_H - 204, 92, 17, size=12, color=INK)
     c.setFillColor(PALE_GREEN)
     c.roundRect(46, 66, PAGE_W - 92, 110, 14, fill=1, stroke=0)
     c.setFillColor(GREEN)
@@ -162,9 +163,10 @@ def main() -> None:
         c.drawString(48, PAGE_H - 101, f'“{item.comment}”')
 
         image_y, image_h = 126, 322
-        image_w = (PAGE_W - 86) / 2
+        image_w = (PAGE_W - 104) / 3
         old_path = OLD / f"{item.slug}.jpg"
         new_path = NEW / f"{item.slug}.jpg"
+        reference_path = REFERENCES / f"{item.slug}.png"
         if item.action == "ADDED":
             old_path = ROOT / "tmp" / "pdfs" / "not_present.jpg"
         if item.action == "REMOVED":
@@ -173,8 +175,10 @@ def main() -> None:
         c.setFont("Helvetica-Bold", 10)
         c.drawString(34, image_y + image_h + 10, "PREVIOUS")
         c.drawString(52 + image_w, image_y + image_h + 10, "CURRENT / FINAL")
+        c.drawString(70 + 2 * image_w, image_y + image_h + 10, "GOOGLE IMAGES REFERENCE")
         draw_fitted_image(c, old_path, 34, image_y, image_w, image_h)
         draw_fitted_image(c, new_path, 52 + image_w, image_y, image_w, image_h)
+        draw_fitted_image(c, reference_path, 70 + 2 * image_w, image_y, image_w, image_h)
 
         c.setFillColor(WHITE)
         c.roundRect(34, 36, PAGE_W - 68, 76, 9, fill=1, stroke=0)

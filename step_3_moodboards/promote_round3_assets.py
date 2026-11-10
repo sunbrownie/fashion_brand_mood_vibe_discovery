@@ -17,6 +17,8 @@ MANIFEST = APP_ASSETS / "v2_manifest.json"
 UPDATES = [
     ("shoes", "Celine", "celine", "ER-169"),
     ("shoes", "Comme des Garçons", "comme_des_garcons", "ER-180"),
+    ("shoes", "Comme des Garçons PLAY", "comme_des_garcons_play", "ER-180-PLAY"),
+    ("bags", "CASABLANCA", "casablanca", "ER-238"),
     ("bags", "Chan Luu", "chan_luu", "ER-240"),
     ("bags", "Sandy Liang", "sandy_liang", "R3-BAG-SANDY-LIANG"),
     ("clothes", "Jacquemus", "jacquemus", "R3-GHOST-JACQUEMUS"),

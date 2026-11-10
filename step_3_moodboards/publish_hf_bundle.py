@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import csv
 import json
 from pathlib import Path
 
@@ -13,11 +14,9 @@ ROOT = Path(__file__).resolve().parents[1]
 IOS_ROOT = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder"
 HF_ROOT = ROOT / "recommender" / "hosting_bundle"
 REPO_ID = "Zilorina/brand-moodboard-recommender"
-REMOVED_REMOTE_PATHS = (
-    "data/moodboards/swimwear_lingerie/perle_by_lola.jpg",
-    "data/moodboards/swimwear_lingerie/von_dutch.jpg",
-    "data/moodboards/shoes/montce.jpg",
-    "data/moodboards/jewellery/montce.jpg",
+OBSOLETE_NON_MOODBOARD_PATHS = (
+    "data/moodboard_image_embeddings_clip_vit_b32.npz",
+    "data/moodboard_image_embeddings_metadata.csv",
 )
 
 DERIVED_ARTIFACTS = (
@@ -50,28 +49,69 @@ def moodboard_paths() -> list[str]:
     return sorted(paths)
 
 
+def expected_catalog_moodboard_paths() -> set[str]:
+    metadata_path = HF_ROOT / "data" / "brand_metadata.csv"
+    with metadata_path.open(newline="", encoding="utf-8") as handle:
+        rows = list(csv.DictReader(handle))
+    paths = {f"data/{row['moodboard_path']}" for row in rows if row.get("moodboard_path")}
+    if len(rows) != 1866 or len(paths) != 1866:
+        raise ValueError(
+            f"Expected 1,866 catalog rows and unique moodboards, found {len(rows)} rows and {len(paths)} paths"
+        )
+    return paths
+
+
+def clean_local_stale_moodboards(expected_paths: set[str]) -> list[str]:
+    expected_files = {(HF_ROOT / path).resolve() for path in expected_paths}
+    local_files = set((HF_ROOT / "data" / "moodboards").rglob("*.jpg"))
+    stale_files = sorted(path for path in local_files if path.resolve() not in expected_files)
+    for path in stale_files:
+        path.unlink()
+    for relative_path in OBSOLETE_NON_MOODBOARD_PATHS:
+        path = HF_ROOT / relative_path
+        if path.exists():
+            path.unlink()
+    return [path.relative_to(HF_ROOT).as_posix() for path in stale_files]
+
+
 def main() -> None:
+    expected_paths = expected_catalog_moodboard_paths()
+    removed_local = clean_local_stale_moodboards(expected_paths)
     relative_paths = [*DERIVED_ARTIFACTS, *moodboard_paths()]
     missing = [path for path in relative_paths if not (HF_ROOT / path).is_file()]
     if missing:
         raise FileNotFoundError(f"Missing publish inputs: {missing}")
 
+    api = HfApi()
+    existing_remote = set(api.list_repo_files(repo_id=REPO_ID, repo_type="space"))
+    stale_remote = sorted(
+        path
+        for path in existing_remote
+        if path.startswith("data/moodboards/") and path.endswith(".jpg") and path not in expected_paths
+    )
+    obsolete_remote = sorted(path for path in OBSOLETE_NON_MOODBOARD_PATHS if path in existing_remote)
+
     operations = [
         CommitOperationAdd(path_in_repo=path, path_or_fileobj=HF_ROOT / path)
         for path in relative_paths
     ]
-    operations.extend(CommitOperationDelete(path_in_repo=path) for path in REMOVED_REMOTE_PATHS)
-    result = HfApi().create_commit(
+    operations.extend(
+        CommitOperationDelete(path_in_repo=path)
+        for path in [*stale_remote, *obsolete_remote]
+    )
+    result = api.create_commit(
         repo_id=REPO_ID,
         repo_type="space",
         operations=operations,
-        commit_message="Update swimwear review and category archetypes",
+        commit_message="Publish final reviewed moodboards and refreshed text clusters",
         commit_description=(
-            "Publishes Ellina's swimwear and lingerie corrections, six new brands, four "
-            "reviewed category removals, refreshed MPNet text embeddings and technical "
-            "assignments, plus category-appropriate customer-facing archetype copy."
+            "Publishes Ellina's latest CDG, CDG PLAY and Casablanca decisions, the completed "
+            "swimwear and lingerie review, refreshed MPNet text embeddings and technical "
+            "assignments, and customer-facing category archetypes. Removes superseded "
+            "moodboard aliases and unused CLIP artifacts so the Space keeps one current board per row."
         ),
     )
+    print(f"Removed {len(removed_local)} stale local moodboards and {len(stale_remote)} stale remote moodboards.")
     print(result.commit_url)
 
 

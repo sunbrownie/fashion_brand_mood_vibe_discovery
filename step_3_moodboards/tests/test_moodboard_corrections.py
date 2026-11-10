@@ -298,9 +298,9 @@ class MoodboardCorrectionTests(unittest.TestCase):
     def test_catalog_additions_are_complete_and_taste_enabled(self) -> None:
         asset_root = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder" / "BrandMoodboards"
         entries = json.loads((asset_root / "v2_catalog_additions.json").read_text(encoding="utf-8"))["entries"]
-        self.assertEqual(len(entries), 123)
-        self.assertEqual(len({entry["review_id"] for entry in entries}), 123)
-        self.assertEqual(len({(entry["category"], entry["brand_name"]) for entry in entries}), 123)
+        self.assertEqual(len(entries), 129)
+        self.assertEqual(len({entry["review_id"] for entry in entries}), 129)
+        self.assertEqual(len({(entry["category"], entry["brand_name"]) for entry in entries}), 129)
 
         def normalized(value: str) -> str:
             folded = "".join(
@@ -329,8 +329,8 @@ class MoodboardCorrectionTests(unittest.TestCase):
     def test_v2_manifest_uses_app_compatible_slugs_and_preserves_rollback(self) -> None:
         asset_root = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder" / "BrandMoodboards"
         entries = json.loads((asset_root / "v2_manifest.json").read_text(encoding="utf-8"))["entries"]
-        self.assertEqual(len(entries), 370)
-        self.assertEqual(len({entry["ios_v2_path"] for entry in entries}), 370)
+        self.assertEqual(len(entries), 384)
+        self.assertEqual(len({entry["ios_v2_path"] for entry in entries}), 384)
 
         def slug(value: str) -> str:
             folded = "".join(
