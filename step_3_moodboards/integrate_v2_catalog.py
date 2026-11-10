@@ -24,8 +24,14 @@ DATA = HOST / "data"
 APP_ASSETS = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder" / "BrandMoodboards"
 OVERLAY = APP_ASSETS / "v2_catalog_additions.json"
 V2_MANIFEST = APP_ASSETS / "v2_manifest.json"
+TEXT_ALIGNMENT_OVERRIDES = ROOT / "step_3_moodboards" / "review" / "v2_text_alignment_overrides.csv"
 MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
 CATEGORY_ORDER = {name: index for index, name in enumerate(("clothes", "shoes", "bags", "jewellery", "swimwear_lingerie"))}
+VIBE_COLUMNS = ("aesthetic_keywords", "silhouettes", "materials", "palette")
+GENERATION_CONTROL_PATTERN = re.compile(
+    r"product-only|fully clothed|\bmoodboard\b|one complete single",
+    flags=re.I,
+)
 
 EXPANSION_PROMPTS = {
     ("shoes", "New Balance"): (
@@ -458,9 +464,10 @@ def sentence_matching(prompt: str, prefix: str) -> str:
 
 def descriptors(entry: dict) -> dict[str, str]:
     key = (entry["category"], entry["brand_name"])
-    for (category, brand_name), values in DESCRIPTION_OVERRIDES.items():
-        if category == entry["category"] and normalised(brand_name) == normalised(entry["brand_name"]):
-            return values.copy()
+    reviewed = normalised_description_overrides()
+    reviewed_key = (entry["category"], normalised(entry["brand_name"]))
+    if reviewed_key in reviewed:
+        return reviewed[reviewed_key].copy()
     prompt = EXPANSION_PROMPTS.get(key) or SPECIAL_PROMPT_OVERRIDES.get(key)
     if not prompt:
         raise RuntimeError(f"Missing integration description for {key}")
@@ -480,10 +487,52 @@ def descriptors(entry: dict) -> dict[str, str]:
 
 
 def normalised_description_overrides() -> dict[tuple[str, str], dict[str, str]]:
-    return {
+    overrides = {
         (category, normalised(brand_name)): values
         for (category, brand_name), values in DESCRIPTION_OVERRIDES.items()
     }
+    reviewed = pd.read_csv(TEXT_ALIGNMENT_OVERRIDES).fillna("")
+    required = {"category", "brand_name", *VIBE_COLUMNS}
+    missing_columns = required - set(reviewed.columns)
+    if missing_columns:
+        raise RuntimeError(
+            f"Missing text-alignment columns: {sorted(missing_columns)}"
+        )
+    seen: set[tuple[str, str]] = set()
+    for row in reviewed.itertuples(index=False):
+        key = (str(row.category), normalised(row.brand_name))
+        if key in seen:
+            raise RuntimeError(f"Duplicate text-alignment override: {key}")
+        seen.add(key)
+        values = {column: str(getattr(row, column)).strip() for column in VIBE_COLUMNS}
+        if any(not value for value in values.values()):
+            raise RuntimeError(f"Empty text-alignment field: {key}")
+        if normalised(values["aesthetic_keywords"]) == normalised(values["silhouettes"]):
+            raise RuntimeError(f"Aesthetic and silhouettes are duplicated: {key}")
+        invalid = [
+            column for column, value in values.items()
+            if GENERATION_CONTROL_PATTERN.search(value)
+        ]
+        if invalid:
+            raise RuntimeError(f"Generation instructions remain in {key}: {invalid}")
+        overrides[key] = values
+    return overrides
+
+
+def validate_embedding_text(host: pd.DataFrame) -> None:
+    problems = []
+    for row in host.itertuples(index=False):
+        key = (str(row.category), normalised(row.brand_name))
+        values = {column: str(getattr(row, column)).strip() for column in VIBE_COLUMNS}
+        if any(not value or value.lower() == "nan" for value in values.values()):
+            problems.append((key, "empty field"))
+        if normalised(values["aesthetic_keywords"]) == normalised(values["silhouettes"]):
+            problems.append((key, "duplicated aesthetic/silhouettes"))
+        if GENERATION_CONTROL_PATTERN.search(values["aesthetic_keywords"]):
+            problems.append((key, "generation-control text in aesthetic keywords"))
+    if problems:
+        preview = ", ".join(f"{key}: {issue}" for key, issue in problems[:12])
+        raise RuntimeError(f"Embedding-text validation failed ({len(problems)} rows): {preview}")
 
 
 def sync_v2_moodboards_to_host() -> dict[tuple[str, str], str]:
@@ -560,6 +609,13 @@ def build_catalog() -> tuple[pd.DataFrame, pd.DataFrame]:
         })
         host = pd.concat([host, pd.DataFrame([play_row])], ignore_index=True, sort=False)
 
+    host_keys = {(row.category, normalised(row.brand_name)) for row in host.itertuples()}
+    missing_override_keys = set(override_lookup) - host_keys
+    if missing_override_keys:
+        raise RuntimeError(
+            f"Text-alignment overrides do not match the catalog: {sorted(missing_override_keys)}"
+        )
+
     for index, row in host.iterrows():
         key = (str(row["category"]), normalised(row["brand_name"]))
         if key in synced_v2_paths:
@@ -574,6 +630,7 @@ def build_catalog() -> tuple[pd.DataFrame, pd.DataFrame]:
         if key in override_lookup:
             for column, value in override_lookup[key].items():
                 host.at[index, column] = value
+    validate_embedding_text(host)
     host["_category_order"] = host["category"].map(CATEGORY_ORDER)
     host["_brand_order"] = host["brand_name"].astype(str).str.casefold()
     host = host.sort_values(["_category_order", "_brand_order"]).drop(columns=["_category_order", "_brand_order"])
@@ -656,7 +713,7 @@ def update_source_csvs(host: pd.DataFrame) -> None:
 
 
 def encode_text(metadata: pd.DataFrame) -> np.ndarray:
-    model = SentenceTransformer(MODEL_NAME)
+    model = SentenceTransformer(MODEL_NAME, local_files_only=True)
     embeddings = model.encode(
         metadata["prompt"].tolist(),
         batch_size=32,
@@ -665,7 +722,11 @@ def encode_text(metadata: pd.DataFrame) -> np.ndarray:
         normalize_embeddings=True,
     ).astype("float32")
     target = ROOT / "step_2_text_embeddings" / "brand_embeddings.npz"
-    np.savez_compressed(target, embeddings=embeddings)
+    np.savez_compressed(
+        target,
+        embeddings=embeddings,
+        model_name=np.array([MODEL_NAME]),
+    )
     shutil.copy2(target, DATA / "brand_embeddings.npz")
     return embeddings
 
@@ -873,6 +934,30 @@ def copy_cluster_exports_to_ios() -> None:
         shutil.copy2(DATA / name, target / name)
 
 
+def update_ios_builtin_assignments() -> None:
+    csv_path = (
+        ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder"
+        / "ClusterData" / "ios_brand_cluster_assignments.csv"
+    )
+    csv_text = csv_path.read_text(encoding="utf-8").rstrip("\n")
+    if '"""#' in csv_text:
+        raise RuntimeError("Cluster CSV contains the Swift raw-string terminator")
+    swift = (
+        "// Generated from ClusterData/ios_brand_cluster_assignments.csv. Do not edit by hand.\n"
+        "import Foundation\n\n"
+        "enum BuiltInTasteClusterAssignmentText {\n"
+        "    static let csv = #\"\"\"\n"
+        f"{csv_text}\n"
+        "\"\"\"#\n"
+        "}\n"
+    )
+    target = (
+        ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder"
+        / "BuiltInTasteClusterAssignments.generated.swift"
+    )
+    target.write_text(swift, encoding="utf-8")
+
+
 def validate(host: pd.DataFrame, embeddings: np.ndarray) -> None:
     full_expected = len(host)
     expected = sum(
@@ -916,6 +1001,7 @@ def main() -> None:
         embeddings = encode_text(embedding_metadata)
     update_projection_and_clusters(host, embeddings)
     copy_cluster_exports_to_ios()
+    update_ios_builtin_assignments()
     validate(host, embeddings)
     taste_rows = len(pd.read_csv(DATA / "ios_brand_cluster_assignments.csv"))
     print(

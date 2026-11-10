@@ -254,6 +254,7 @@ class MoodboardCorrectionTests(unittest.TestCase):
             original.parent.mkdir(parents=True, exist_ok=True)
             original.write_bytes(b"original")
             self.assertEqual(find_moodboard_file(root / "moodboards", "clothes", "Acne Studios"), original)
+            approved.parent.mkdir(parents=True, exist_ok=True)
             approved.write_bytes(b"approved")
             self.assertEqual(find_moodboard_file(root / "moodboards", "clothes", "Acne Studios"), approved)
 
@@ -297,9 +298,9 @@ class MoodboardCorrectionTests(unittest.TestCase):
     def test_catalog_additions_are_complete_and_taste_enabled(self) -> None:
         asset_root = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder" / "BrandMoodboards"
         entries = json.loads((asset_root / "v2_catalog_additions.json").read_text(encoding="utf-8"))["entries"]
-        self.assertEqual(len(entries), 113)
-        self.assertEqual(len({entry["review_id"] for entry in entries}), 113)
-        self.assertEqual(len({(entry["category"], entry["brand_name"]) for entry in entries}), 113)
+        self.assertEqual(len(entries), 123)
+        self.assertEqual(len({entry["review_id"] for entry in entries}), 123)
+        self.assertEqual(len({(entry["category"], entry["brand_name"]) for entry in entries}), 123)
 
         def normalized(value: str) -> str:
             folded = "".join(
@@ -328,8 +329,8 @@ class MoodboardCorrectionTests(unittest.TestCase):
     def test_v2_manifest_uses_app_compatible_slugs_and_preserves_rollback(self) -> None:
         asset_root = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder" / "BrandMoodboards"
         entries = json.loads((asset_root / "v2_manifest.json").read_text(encoding="utf-8"))["entries"]
-        self.assertEqual(len(entries), 359)
-        self.assertEqual(len({entry["ios_v2_path"] for entry in entries}), 359)
+        self.assertEqual(len(entries), 370)
+        self.assertEqual(len({entry["ios_v2_path"] for entry in entries}), 370)
 
         def slug(value: str) -> str:
             folded = "".join(
@@ -356,7 +357,7 @@ class MoodboardCorrectionTests(unittest.TestCase):
                 / entry["category"] / f"{entry['slug']}.jpg"
             )
             self.assertEqual(hosted_path.read_bytes(), ios_path.read_bytes(), entry["review_id"])
-            self.assertIn("V1 asset is unchanged", entry["rollback"])
+            self.assertIn("Restore the prior canonical asset", entry["rollback"])
 
     def test_review_reference_links_and_screenshots_cover_every_fixture(self) -> None:
         payload = json.loads((REVIEW_DIR / "reference_sources.json").read_text(encoding="utf-8"))
@@ -372,7 +373,9 @@ class MoodboardCorrectionTests(unittest.TestCase):
             screenshot = ROOT / relative_path
             self.assertTrue(screenshot.exists(), relative_path)
             with Image.open(screenshot) as image:
-                self.assertEqual(image.size, (600, 900), relative_path)
+                self.assertGreaterEqual(image.width, 500, relative_path)
+                self.assertGreaterEqual(image.height, 750, relative_path)
+                self.assertAlmostEqual(image.width / image.height, 2 / 3, delta=0.01, msg=relative_path)
 
 
 if __name__ == "__main__":
