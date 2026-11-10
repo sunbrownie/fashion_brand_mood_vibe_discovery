@@ -16,6 +16,7 @@ from sentence_transformers import SentenceTransformer
 from sklearn.decomposition import PCA
 
 from build_generation_queue import SPECIAL_PROMPT_OVERRIDES
+from public_archetypes import enrich_public_archetypes
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -924,12 +925,15 @@ def copy_cluster_exports_to_ios() -> None:
     target = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder" / "ClusterData"
     target.mkdir(parents=True, exist_ok=True)
     for name in (
+        "brand_public_cluster_assignments.csv",
         "ios_brand_cluster_assignments.csv",
         "ios_brand_cluster_assignments.tsv",
         "ios_brand_embeddings_pca48.csv",
+        "ios_public_cluster_summary.csv",
         "ios_brand_umap.csv",
         "ios_brand_umap.tsv",
         "ios_cluster_summary.csv",
+        "public_cluster_archetypes.csv",
     ):
         shutil.copy2(DATA / name, target / name)
 
@@ -977,6 +981,13 @@ def validate(host: pd.DataFrame, embeddings: np.ndarray) -> None:
             raise RuntimeError(f"{label} has {rows} rows; expected {expected}")
     if int(pd.read_csv(DATA / "ios_cluster_summary.csv")["n_brands"].sum()) != expected:
         raise RuntimeError("Cluster summary counts do not match the integrated catalog")
+    public_assignments = pd.read_csv(DATA / "ios_brand_cluster_assignments.csv")
+    if public_assignments["public_cluster_id"].isna().any() or public_assignments["public_cluster_description"].isna().any():
+        raise RuntimeError("Customer-facing public archetype copy is incomplete")
+    if len(pd.read_csv(DATA / "public_cluster_archetypes.csv")) != 15:
+        raise RuntimeError("Expected exactly 15 customer-facing archetypes")
+    if int(pd.read_csv(DATA / "ios_public_cluster_summary.csv")["n_brands"].sum()) != expected:
+        raise RuntimeError("Public archetype summary counts do not match the integrated catalog")
     overlay = json.loads(OVERLAY.read_text(encoding="utf-8"))["entries"]
     keys = {(row.category, normalised(row.brand_name)) for row in host.itertuples()}
     missing = [entry["review_id"] for entry in overlay if (entry["category"], normalised(entry["brand_name"])) not in keys]
@@ -1000,6 +1011,7 @@ def main() -> None:
     else:
         embeddings = encode_text(embedding_metadata)
     update_projection_and_clusters(host, embeddings)
+    enrich_public_archetypes(DATA)
     copy_cluster_exports_to_ios()
     update_ios_builtin_assignments()
     validate(host, embeddings)

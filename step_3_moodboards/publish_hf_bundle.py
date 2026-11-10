@@ -19,12 +19,15 @@ DERIVED_ARTIFACTS = (
     "app.py",
     "data/brand_metadata.csv",
     "data/brand_embeddings.npz",
+    "data/brand_public_cluster_assignments.csv",
     "data/ios_brand_cluster_assignments.csv",
     "data/ios_brand_cluster_assignments.tsv",
     "data/ios_brand_embeddings_pca48.csv",
+    "data/ios_public_cluster_summary.csv",
     "data/ios_brand_umap.csv",
     "data/ios_brand_umap.tsv",
     "data/ios_cluster_summary.csv",
+    "data/public_cluster_archetypes.csv",
 )
 
 
@@ -55,12 +58,11 @@ def main() -> None:
         repo_id=REPO_ID,
         repo_type="space",
         operations=operations,
-        commit_message="Refine Celine CDG Chan Luu and Alohas boards",
+        commit_message="Add customer-facing taste archetypes",
         commit_description=(
-            "Publishes all 370 accepted V2 moodboards with Celine shoes restored to "
-            "round one and product-grounded refinements for Comme des Garcons shoes, "
-            "Chan Luu bags and Alohas shoes. Text embeddings, clusters, PCA and UMAP "
-            "are unchanged; the runtime recommendation path remains text-embedding based."
+            "Adds Ellina's 15 customer-facing taste archetype names and descriptions, "
+            "including reviewed brand-level routing for split clothes clusters. Numeric "
+            "cluster IDs, text embeddings, PCA values and UMAP coordinates are unchanged."
         ),
     )
     print(result.commit_url)

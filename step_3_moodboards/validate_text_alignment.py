@@ -122,12 +122,15 @@ def main() -> None:
                 raise RuntimeError(f"Source CSV was not updated: {row_key} {column}")
 
     exports = (
+        "brand_public_cluster_assignments.csv",
         "ios_brand_cluster_assignments.csv",
         "ios_brand_cluster_assignments.tsv",
         "ios_brand_embeddings_pca48.csv",
+        "ios_public_cluster_summary.csv",
         "ios_brand_umap.csv",
         "ios_brand_umap.tsv",
         "ios_cluster_summary.csv",
+        "public_cluster_archetypes.csv",
     )
     for filename in exports:
         if sha256(DATA / filename) != sha256(IOS / "ClusterData" / filename):
@@ -137,6 +140,13 @@ def main() -> None:
             raise RuntimeError(f"Unexpected taste-space row count: {filename}")
     if int(pd.read_csv(DATA / "ios_cluster_summary.csv")["n_brands"].sum()) != 1828:
         raise RuntimeError("Cluster summary does not reconcile to the taste-space rows")
+    public_assignments = pd.read_csv(DATA / "ios_brand_cluster_assignments.csv")
+    if public_assignments["public_cluster_id"].isna().any() or public_assignments["public_cluster_description"].isna().any():
+        raise RuntimeError("Customer-facing public archetype copy is incomplete")
+    if len(pd.read_csv(DATA / "public_cluster_archetypes.csv")) != 15:
+        raise RuntimeError("Expected exactly 15 customer-facing archetypes")
+    if int(pd.read_csv(DATA / "ios_public_cluster_summary.csv")["n_brands"].sum()) != 1828:
+        raise RuntimeError("Public archetype summary does not reconcile to the taste-space rows")
 
     assignments = (IOS / "ClusterData" / "ios_brand_cluster_assignments.csv").read_text().rstrip("\n")
     generated = (IOS / "BuiltInTasteClusterAssignments.generated.swift").read_text()
