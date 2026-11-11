@@ -329,8 +329,8 @@ class MoodboardCorrectionTests(unittest.TestCase):
     def test_v2_manifest_uses_app_compatible_slugs_and_preserves_rollback(self) -> None:
         asset_root = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder" / "BrandMoodboards"
         entries = json.loads((asset_root / "v2_manifest.json").read_text(encoding="utf-8"))["entries"]
-        self.assertEqual(len(entries), 384)
-        self.assertEqual(len({entry["ios_v2_path"] for entry in entries}), 384)
+        self.assertEqual(len(entries), 383)
+        self.assertEqual(len({entry["ios_v2_path"] for entry in entries}), 383)
 
         def slug(value: str) -> str:
             folded = "".join(

@@ -1,26 +1,26 @@
 brand_name,category,old_cluster,old_cluster_title,best_cluster,best_cluster_title,old_centroid_similarity,best_centroid_similarity,similarity_margin,adopted_cluster,adopted_cluster_title,decision
-Junya Watanabe,bags,7.000000,The Artisan,1,The Underground,0.904439,0.929117,0.024678,7,The Artisan,kept_existing_cluster
+Gabriela Hearst,shoes,8.000000,The Understated,1,The Staple,0.922509,0.947127,0.024619,8,The Understated,kept_existing_cluster
 No Problemo,clothes,14.000000,The Underground,13,The Underground,0.909084,0.933431,0.024347,14,The Underground,kept_existing_cluster
-Gabriela Hearst,shoes,8.000000,The Understated,1,The Staple,0.923779,0.947127,0.023348,8,The Understated,kept_existing_cluster
+ATP Atelier,shoes,9.000000,The Atelier,12,Sun Bleached,0.886646,0.908814,0.022168,9,The Atelier,kept_existing_cluster
 Acacia,swimwear_lingerie,0.000000,The Wanderer,4,The Provocateur,0.918978,0.940699,0.021721,0,The Wanderer,kept_existing_cluster
-DKNY,bags,6.000000,The Field Manual,1,The Underground,0.928967,0.950212,0.021244,6,The Field Manual,kept_existing_cluster
 Marge Sherwood,bags,5.000000,The Sculptor,11,The Magpie,0.926733,0.947866,0.021132,5,The Sculptor,kept_existing_cluster
-Isabel Marant,bags,8.000000,Sun Bleached,12,The Dresser,0.915525,0.936062,0.020536,8,Sun Bleached,kept_existing_cluster
 Adidas,shoes,13.000000,The Expedition,11,The Trailhead,0.847674,0.867542,0.019868,13,The Expedition,kept_existing_cluster
 ABRA,shoes,1.000000,The Staple,3,The Ballet,0.892133,0.911913,0.019780,1,The Staple,kept_existing_cluster
-Diesel,bags,12.000000,The Dresser,1,The Underground,0.907132,0.926353,0.019221,12,The Dresser,kept_existing_cluster
-ATP Atelier,shoes,9.000000,The Atelier,12,Sun Bleached,0.886646,0.905610,0.018964,9,The Atelier,kept_existing_cluster
-Maje,bags,8.000000,Sun Bleached,14,The Socialite,0.939136,0.955878,0.016742,8,Sun Bleached,kept_existing_cluster
+Isabel Marant,bags,8.000000,Sun Bleached,12,The Dresser,0.916672,0.936278,0.019605,8,Sun Bleached,kept_existing_cluster
+DKNY,bags,6.000000,The Field Manual,1,The Underground,0.928824,0.948261,0.019437,6,The Field Manual,kept_existing_cluster
+Diesel,bags,12.000000,The Dresser,1,The Underground,0.907339,0.926048,0.018709,12,The Dresser,kept_existing_cluster
 Pucci,bags,9.000000,After Midnight,11,The Magpie,0.922888,0.939461,0.016573,9,After Midnight,kept_existing_cluster
-Dolce & Gabbana,bags,12.000000,The Dresser,9,After Midnight,0.832699,0.847856,0.015157,12,The Dresser,kept_existing_cluster
+Maje,bags,8.000000,Sun Bleached,14,The Socialite,0.939757,0.955878,0.016120,8,Sun Bleached,kept_existing_cluster
+Dolce & Gabbana,bags,12.000000,The Dresser,9,After Midnight,0.832478,0.847856,0.015378,12,The Dresser,kept_existing_cluster
 YVMIN,jewellery,12.000000,The Heirloom,3,The Socialite,0.904999,0.919310,0.014311,12,The Heirloom,kept_existing_cluster
 McQueen,clothes,7.000000,The Dresser,8,The Modern Muse,0.940161,0.952378,0.012216,7,The Dresser,kept_existing_cluster
-Tumi,bags,3.000000,The Expedition,6,The Field Manual,0.930853,0.938289,0.007436,3,The Expedition,kept_existing_cluster
-Valentino,jewellery,14.000000,After Midnight,2,The Statement,0.948946,0.953928,0.004982,14,After Midnight,kept_existing_cluster
-Dior,bags,12.000000,The Dresser,9,After Midnight,0.856210,0.861174,0.004963,12,The Dresser,kept_existing_cluster
+Tumi,bags,3.000000,The Expedition,6,The Field Manual,0.930853,0.938254,0.007401,3,The Expedition,kept_existing_cluster
+Dior,bags,12.000000,The Dresser,9,After Midnight,0.856366,0.861174,0.004807,12,The Dresser,kept_existing_cluster
+Valentino,jewellery,14.000000,After Midnight,2,The Statement,0.948946,0.953744,0.004798,14,After Midnight,kept_existing_cluster
 Comme des Garçons,shoes,5.000000,The Underground,9,The Atelier,0.920938,0.924759,0.003822,5,The Underground,kept_existing_cluster
-BY FAR,bags,12.000000,The Dresser,14,The Socialite,0.862454,0.865188,0.002734,12,The Dresser,kept_existing_cluster
-Opera Sport,clothes,7.000000,The Dresser,14,The Underground,0.841234,0.842999,0.001766,7,The Dresser,kept_existing_cluster
+BY FAR,bags,12.000000,The Dresser,14,The Socialite,0.862909,0.865188,0.002280,12,The Dresser,kept_existing_cluster
+Opera Sport,clothes,7.000000,The Dresser,14,The Underground,0.841234,0.842999,0.001765,7,The Dresser,kept_existing_cluster
+Tom Ford,bags,12.000000,The Dresser,9,After Midnight,0.916573,0.916636,0.000063,12,The Dresser,kept_existing_cluster
 Adidas,clothes,13.000000,The Underground,13,The Underground,0.920753,0.920753,0.000000,13,The Underground,kept_existing_cluster
 Carne Bollente,clothes,14.000000,The Underground,14,The Underground,0.968122,0.968122,0.000000,14,The Underground,kept_existing_cluster
 Desigual,clothes,14.000000,The Underground,14,The Underground,0.955850,0.955850,0.000000,14,The Underground,kept_existing_cluster
@@ -33,7 +33,7 @@ Shangri-la Heritage,clothes,3.000000,The Outrider,3,The Outrider,0.890912,0.8909
 The Attico,clothes,1.000000,The Daydreamer,1,The Daydreamer,0.942012,0.942012,0.000000,1,The Daydreamer,kept_existing_cluster
 Air Jordan,shoes,13.000000,The Expedition,13,The Expedition,0.768417,0.768417,0.000000,13,The Expedition,kept_existing_cluster
 Aldo,shoes,15.000000,The New Guard,15,The New Guard,0.953497,0.953497,0.000000,15,The New Guard,kept_existing_cluster
-Arizona Love,shoes,12.000000,Sun Bleached,12,Sun Bleached,0.925681,0.925681,0.000000,12,Sun Bleached,kept_existing_cluster
+Arizona Love,shoes,12.000000,Sun Bleached,12,Sun Bleached,0.924720,0.924720,0.000000,12,Sun Bleached,kept_existing_cluster
 Birkenstock,shoes,11.000000,The Trailhead,11,The Trailhead,0.939458,0.939458,0.000000,11,The Trailhead,kept_existing_cluster
 Carvela,shoes,11.000000,The Trailhead,11,The Trailhead,0.934325,0.934325,0.000000,11,The Trailhead,kept_existing_cluster
 Celine,shoes,1.000000,The Staple,1,The Staple,0.956353,0.956353,0.000000,1,The Staple,kept_existing_cluster
@@ -45,35 +45,36 @@ Diemme,shoes,11.000000,The Trailhead,11,The Trailhead,0.849857,0.849857,0.000000
 Ecco,shoes,11.000000,The Trailhead,11,The Trailhead,0.879240,0.879240,0.000000,11,The Trailhead,kept_existing_cluster
 EYTYS,shoes,11.000000,The Trailhead,11,The Trailhead,0.921204,0.921204,0.000000,11,The Trailhead,kept_existing_cluster
 Geox,shoes,11.000000,The Trailhead,11,The Trailhead,0.938013,0.938013,0.000000,11,The Trailhead,kept_existing_cluster
-Gia Borghini,shoes,12.000000,Sun Bleached,12,Sun Bleached,0.902617,0.902617,0.000000,12,Sun Bleached,kept_existing_cluster
+Gia Borghini,shoes,12.000000,Sun Bleached,12,Sun Bleached,0.906277,0.906277,0.000000,12,Sun Bleached,kept_existing_cluster
 Golden Goose,shoes,11.000000,The Trailhead,11,The Trailhead,0.906414,0.906414,0.000000,11,The Trailhead,kept_existing_cluster
 Hunter,shoes,11.000000,The Trailhead,11,The Trailhead,0.893045,0.893045,0.000000,11,The Trailhead,kept_existing_cluster
 New Balance,shoes,7.000000,The Pace,7,The Pace,0.953472,0.953472,0.000000,7,The Pace,kept_existing_cluster
 Nike,shoes,7.000000,The Pace,7,The Pace,0.933433,0.933433,0.000000,7,The Pace,kept_existing_cluster
 Puma,shoes,7.000000,The Pace,7,The Pace,0.922690,0.922690,0.000000,7,The Pace,kept_existing_cluster
-Alaïa,bags,12.000000,The Dresser,12,The Dresser,0.917548,0.917548,0.000000,12,The Dresser,kept_existing_cluster
-Alexander Wang,bags,12.000000,The Dresser,12,The Dresser,0.943511,0.943511,0.000000,12,The Dresser,kept_existing_cluster
+Alaïa,bags,12.000000,The Dresser,12,The Dresser,0.917076,0.917076,0.000000,12,The Dresser,kept_existing_cluster
+Alexander Wang,bags,12.000000,The Dresser,12,The Dresser,0.943235,0.943235,0.000000,12,The Dresser,kept_existing_cluster
 Anya Hindmarch,bags,4.000000,The Disruptor,4,The Disruptor,0.953747,0.953747,0.000000,4,The Disruptor,kept_existing_cluster
-Balenciaga,bags,12.000000,The Dresser,12,The Dresser,0.904109,0.904109,0.000000,12,The Dresser,kept_existing_cluster
-Chan Luu,bags,8.000000,Sun Bleached,8,Sun Bleached,0.955879,0.955879,0.000000,8,Sun Bleached,kept_existing_cluster
+Balenciaga,bags,12.000000,The Dresser,12,The Dresser,0.904098,0.904098,0.000000,12,The Dresser,kept_existing_cluster
+Chan Luu,bags,8.000000,Sun Bleached,8,Sun Bleached,0.956555,0.956555,0.000000,8,Sun Bleached,kept_existing_cluster
 Chloé,bags,11.000000,The Magpie,11,The Magpie,0.884421,0.884421,0.000000,11,The Magpie,kept_existing_cluster
-Coach,bags,12.000000,The Dresser,12,The Dresser,0.906107,0.906107,0.000000,12,The Dresser,kept_existing_cluster
-Coperni,bags,1.000000,The Underground,1,The Underground,0.917648,0.917648,0.000000,1,The Underground,kept_existing_cluster
+Coach,bags,12.000000,The Dresser,12,The Dresser,0.905817,0.905817,0.000000,12,The Dresser,kept_existing_cluster
+Coperni,bags,1.000000,The Underground,1,The Underground,0.916838,0.916838,0.000000,1,The Underground,kept_existing_cluster
 Eastpak,bags,3.000000,The Expedition,3,The Expedition,0.899300,0.899300,0.000000,3,The Expedition,kept_existing_cluster
-Gucci,bags,12.000000,The Dresser,12,The Dresser,0.892854,0.892854,0.000000,12,The Dresser,kept_existing_cluster
-JW Pei,bags,13.000000,The New Classic,13,The New Classic,0.938671,0.938671,0.000000,13,The New Classic,kept_existing_cluster
-Lemaire,bags,8.000000,Sun Bleached,8,Sun Bleached,0.844237,0.844237,0.000000,8,Sun Bleached,kept_existing_cluster
-Loewe,bags,8.000000,Sun Bleached,8,Sun Bleached,0.908661,0.908661,0.000000,8,Sun Bleached,kept_existing_cluster
-McQueen,bags,12.000000,The Dresser,12,The Dresser,0.903959,0.903959,0.000000,12,The Dresser,kept_existing_cluster
-Osoi,bags,12.000000,The Dresser,12,The Dresser,0.886732,0.886732,0.000000,12,The Dresser,kept_existing_cluster
+Gucci,bags,12.000000,The Dresser,12,The Dresser,0.892552,0.892552,0.000000,12,The Dresser,kept_existing_cluster
+JW Pei,bags,13.000000,The New Classic,13,The New Classic,0.942445,0.942445,0.000000,13,The New Classic,kept_existing_cluster
+Lemaire,bags,8.000000,Sun Bleached,8,Sun Bleached,0.845536,0.845536,0.000000,8,Sun Bleached,kept_existing_cluster
+Loewe,bags,8.000000,Sun Bleached,8,Sun Bleached,0.910368,0.910368,0.000000,8,Sun Bleached,kept_existing_cluster
+McQueen,bags,12.000000,The Dresser,12,The Dresser,0.904064,0.904064,0.000000,12,The Dresser,kept_existing_cluster
+Melie Bianco,bags,13.000000,The New Classic,13,The New Classic,0.974618,0.974618,0.000000,13,The New Classic,kept_existing_cluster
+Osoi,bags,12.000000,The Dresser,12,The Dresser,0.886384,0.886384,0.000000,12,The Dresser,kept_existing_cluster
 Sandy Liang,bags,11.000000,The Magpie,11,The Magpie,0.910462,0.910462,0.000000,11,The Magpie,kept_existing_cluster
-Stella McCartney,bags,13.000000,The New Classic,13,The New Classic,0.930312,0.930312,0.000000,13,The New Classic,kept_existing_cluster
-Tom Ford,bags,12.000000,The Dresser,12,The Dresser,0.916973,0.916973,0.000000,12,The Dresser,kept_existing_cluster
-Ulla Johnson,bags,8.000000,Sun Bleached,8,Sun Bleached,0.958009,0.958009,0.000000,8,Sun Bleached,kept_existing_cluster
-Zadig & Voltaire,bags,12.000000,The Dresser,12,The Dresser,0.917533,0.917533,0.000000,12,The Dresser,kept_existing_cluster
-Roxanne Assoulin,jewellery,4.000000,The Wanderer,4,The Wanderer,0.907105,0.907105,0.000000,4,The Wanderer,kept_existing_cluster
+Stella McCartney,bags,13.000000,The New Classic,13,The New Classic,0.933815,0.933815,0.000000,13,The New Classic,kept_existing_cluster
+Ulla Johnson,bags,8.000000,Sun Bleached,8,Sun Bleached,0.959029,0.959029,0.000000,8,Sun Bleached,kept_existing_cluster
+Zadig & Voltaire,bags,12.000000,The Dresser,12,The Dresser,0.917726,0.917726,0.000000,12,The Dresser,kept_existing_cluster
+Cernucci,jewellery,2.000000,The Statement,2,The Statement,0.942311,0.942311,0.000000,2,The Statement,kept_existing_cluster
+Roxanne Assoulin,jewellery,4.000000,The Wanderer,4,The Wanderer,0.908127,0.908127,0.000000,4,The Wanderer,kept_existing_cluster
 Sonia Petroff,jewellery,12.000000,The Heirloom,12,The Heirloom,0.924648,0.924648,0.000000,12,The Heirloom,kept_existing_cluster
-Vivienne Westwood,jewellery,2.000000,The Statement,2,The Statement,0.875553,0.875553,0.000000,2,The Statement,kept_existing_cluster
+Vivienne Westwood,jewellery,2.000000,The Statement,2,The Statement,0.876326,0.876326,0.000000,2,The Statement,kept_existing_cluster
 William Welstead,jewellery,12.000000,The Heirloom,12,The Heirloom,0.919402,0.919402,0.000000,12,The Heirloom,kept_existing_cluster
 Araks,swimwear_lingerie,3.000000,Second Skin,3,Second Skin,0.944724,0.944724,0.000000,3,Second Skin,kept_existing_cluster
 Baserange,swimwear_lingerie,4.000000,The Provocateur,4,The Provocateur,0.940461,0.940461,0.000000,4,The Provocateur,kept_existing_cluster
@@ -81,45 +82,54 @@ Intimissimi,swimwear_lingerie,1.000000,The Romantic,1,The Romantic,0.943973,0.94
 Left On Friday,swimwear_lingerie,4.000000,The Provocateur,4,The Provocateur,0.951739,0.951739,0.000000,4,The Provocateur,kept_existing_cluster
 Natori,swimwear_lingerie,1.000000,The Romantic,1,The Romantic,0.903829,0.903829,0.000000,1,The Romantic,kept_existing_cluster
 Only Hearts,swimwear_lingerie,1.000000,The Romantic,1,The Romantic,0.965949,0.965949,0.000000,1,The Romantic,kept_existing_cluster
+Apparis,clothes,15.000000,The Field Manual,2,The Power Move,0.783695,0.837196,0.053502,1,The Daydreamer,manual_visual_review_override
 Fruity Booty,swimwear_lingerie,3.000000,Second Skin,4,The Provocateur,0.900442,0.946021,0.045579,3,Second Skin,manual_visual_review_override
+SPANX,clothes,12.000000,The Disruptor,14,The Underground,0.861840,0.897373,0.035533,0,Off Duty,manual_visual_review_override
 ROTATE Birger Christensen,clothes,1.000000,The Daydreamer,14,The Underground,0.753562,0.786202,0.032640,8,The Modern Muse,manual_visual_review_override
-CASABLANCA,bags,9.000000,After Midnight,12,The Dresser,0.774568,0.800383,0.025815,4,The Disruptor,manual_visual_review_override
-Jacquemus,shoes,8.000000,The Understated,12,Sun Bleached,0.934710,0.960325,0.025615,2,The Sculptor,manual_visual_review_override
+Jacquemus,shoes,8.000000,The Understated,12,Sun Bleached,0.934703,0.961064,0.026361,2,The Sculptor,manual_visual_review_override
+CASABLANCA,bags,9.000000,After Midnight,12,The Dresser,0.774568,0.800276,0.025708,4,The Disruptor,manual_visual_review_override
 Weekday,clothes,11.000000,Blue Hours,14,The Underground,0.929699,0.949433,0.019733,13,The Underground,manual_visual_review_override
-Karoline Vitto,clothes,14.000000,The Underground,2,The Power Move,0.877539,0.892536,0.014997,2,The Power Move,manual_visual_review_override
-Chopova Lowena,bags,8.000000,Sun Bleached,1,The Underground,0.907305,0.919086,0.011782,1,The Underground,manual_visual_review_override
-Burton,shoes,11.000000,The Trailhead,16,The Club Room,0.860235,0.865538,0.005303,16,The Club Room,manual_visual_review_override
+Labante London,shoes,12.000000,Sun Bleached,6,The Throwback,0.820772,0.840276,0.019504,0,The Everyday,manual_visual_review_override
+Karoline Vitto,clothes,14.000000,The Underground,2,The Power Move,0.877539,0.895576,0.018037,2,The Power Move,manual_visual_review_override
+Cernucci,clothes,2.000000,The Power Move,14,The Underground,0.869810,0.884162,0.014351,14,The Underground,manual_visual_review_override
+Belstaff,clothes,2.000000,The Power Move,3,The Outrider,0.852988,0.866506,0.013518,3,The Outrider,manual_visual_review_override
+Chopova Lowena,bags,8.000000,Sun Bleached,1,The Underground,0.908067,0.919002,0.010934,1,The Underground,manual_visual_review_override
+Burton,shoes,11.000000,The Trailhead,16,The Club Room,0.860235,0.866534,0.006299,16,The Club Room,manual_visual_review_override
 Girlfriend Collective,clothes,16.000000,The Understated,13,The Underground,0.914006,0.916804,0.002798,13,The Underground,manual_visual_review_override
 Coperni,shoes,13.000000,The Expedition,5,The Underground,0.894144,0.894850,0.000706,2,The Sculptor,manual_visual_review_override
+Barneys Originals,clothes,2.000000,The Power Move,3,The Outrider,0.937136,0.937551,0.000414,3,The Outrider,manual_visual_review_override
 House Of Sunny,clothes,14.000000,The Underground,14,The Underground,0.942129,0.942129,0.000000,1,The Daydreamer,manual_visual_review_override
-Cult Gaia,bags,8.000000,Sun Bleached,8,Sun Bleached,0.898595,0.898595,0.000000,4,The Disruptor,manual_visual_review_override
+Cult Gaia,bags,8.000000,Sun Bleached,8,Sun Bleached,0.899319,0.899319,0.000000,4,The Disruptor,manual_visual_review_override
 Calvin Klein,swimwear_lingerie,,,4,The Provocateur,,0.944347,,3,Second Skin,manual_visual_review_override
 Calzedonia,swimwear_lingerie,,,4,The Provocateur,,0.929886,,2,Riviera,manual_visual_review_override
 Roxy,swimwear_lingerie,,,4,The Provocateur,,0.952207,,2,Riviera,manual_visual_review_override
+Gravel & Gold,clothes,5.000000,The Dreamer,3,The Outrider,0.741296,0.877574,0.136279,3,The Outrider,moved_to_better_centroid
 Tory Burch,clothes,1.000000,The Daydreamer,7,The Dresser,0.812693,0.899440,0.086747,7,The Dresser,moved_to_better_centroid
 Sandy Liang,clothes,0.000000,Off Duty,1,The Daydreamer,0.875802,0.943717,0.067915,1,The Daydreamer,moved_to_better_centroid
-ALO YOGA,bags,6.000000,The Field Manual,12,The Dresser,0.893962,0.952176,0.058214,12,The Dresser,moved_to_better_centroid
-The Attico,bags,9.000000,After Midnight,12,The Dresser,0.886314,0.943153,0.056839,12,The Dresser,moved_to_better_centroid
+The Attico,bags,9.000000,After Midnight,12,The Dresser,0.886314,0.943272,0.056958,12,The Dresser,moved_to_better_centroid
+ALO YOGA,bags,6.000000,The Field Manual,12,The Dresser,0.894864,0.951399,0.056534,12,The Dresser,moved_to_better_centroid
 Asics,shoes,4.000000,The Underground,7,The Pace,0.844555,0.899083,0.054529,7,The Pace,moved_to_better_centroid
+Samsonite,bags,12.000000,The Dresser,3,The Expedition,0.895824,0.947091,0.051267,3,The Expedition,moved_to_better_centroid
 Zoe Mohm,jewellery,12.000000,The Heirloom,5,The Talisman,0.865373,0.916620,0.051247,5,The Talisman,moved_to_better_centroid
-Samsonite,bags,12.000000,The Dresser,3,The Expedition,0.895964,0.947091,0.051127,3,The Expedition,moved_to_better_centroid
-Laagam,clothes,1.000000,The Daydreamer,7,The Dresser,0.810212,0.859550,0.049338,7,The Dresser,moved_to_better_centroid
-Simon Miller,jewellery,6.000000,The Understated,4,The Wanderer,0.837743,0.883058,0.045316,4,The Wanderer,moved_to_better_centroid
+Laagam,clothes,1.000000,The Daydreamer,2,The Power Move,0.810212,0.861061,0.050850,2,The Power Move,moved_to_better_centroid
+Simon Miller,jewellery,6.000000,The Understated,4,The Wanderer,0.837743,0.884400,0.046657,4,The Wanderer,moved_to_better_centroid
 Patou,clothes,16.000000,The Understated,1,The Daydreamer,0.903904,0.948285,0.044381,1,The Daydreamer,moved_to_better_centroid
-Perle by Lola,clothes,5.000000,The Dreamer,10,The Wanderer,0.928226,0.970465,0.042239,10,The Wanderer,moved_to_better_centroid
-Yellow Swallow,jewellery,4.000000,The Wanderer,2,The Statement,0.868405,0.910330,0.041925,2,The Statement,moved_to_better_centroid
+Yellow Swallow,jewellery,4.000000,The Wanderer,2,The Statement,0.869514,0.910379,0.040865,2,The Statement,moved_to_better_centroid
 Made By Minga,clothes,14.000000,The Underground,6,The Cashmere Club,0.882131,0.921389,0.039258,6,The Cashmere Club,moved_to_better_centroid
-Ganni,bags,1.000000,The Underground,12,The Dresser,0.891195,0.929638,0.038443,12,The Dresser,moved_to_better_centroid
-Conner Ives,clothes,14.000000,The Underground,1,The Daydreamer,0.869777,0.907782,0.038005,1,The Daydreamer,moved_to_better_centroid
-Marine Serre,bags,6.000000,The Field Manual,12,The Dresser,0.848949,0.886241,0.037292,12,The Dresser,moved_to_better_centroid
-Bimba Y Lola,clothes,10.000000,The Wanderer,2,The Power Move,0.928534,0.960577,0.032043,2,The Power Move,moved_to_better_centroid
-Chopova Lowena,shoes,12.000000,Sun Bleached,11,The Trailhead,0.837250,0.868017,0.030767,11,The Trailhead,moved_to_better_centroid
+Ganni,bags,1.000000,The Underground,12,The Dresser,0.890157,0.929343,0.039187,12,The Dresser,moved_to_better_centroid
+Perle by Lola,clothes,5.000000,The Dreamer,10,The Wanderer,0.932048,0.970465,0.038417,10,The Wanderer,moved_to_better_centroid
+Conner Ives,clothes,14.000000,The Underground,5,The Dreamer,0.869777,0.907821,0.038044,5,The Dreamer,moved_to_better_centroid
+Bimba Y Lola,clothes,10.000000,The Wanderer,2,The Power Move,0.928534,0.964640,0.036106,2,The Power Move,moved_to_better_centroid
+Marine Serre,bags,6.000000,The Field Manual,12,The Dresser,0.849772,0.885864,0.036092,12,The Dresser,moved_to_better_centroid
+Taiga Takahashi,clothes,12.000000,The Disruptor,3,The Outrider,0.823587,0.854735,0.031148,3,The Outrider,moved_to_better_centroid
+Chopova Lowena,shoes,12.000000,Sun Bleached,11,The Trailhead,0.838635,0.868017,0.029382,11,The Trailhead,moved_to_better_centroid
 The Couture Club,clothes,14.000000,The Underground,7,The Dresser,0.918817,0.947620,0.028803,7,The Dresser,moved_to_better_centroid
-Miu Miu,bags,9.000000,After Midnight,12,The Dresser,0.899244,0.927404,0.028160,12,The Dresser,moved_to_better_centroid
+Miu Miu,bags,9.000000,After Midnight,12,The Dresser,0.899244,0.926952,0.027708,12,The Dresser,moved_to_better_centroid
 Gucci,shoes,1.000000,The Staple,11,The Trailhead,0.894886,0.921885,0.026999,11,The Trailhead,moved_to_better_centroid
-Alohas,shoes,,,16,The Club Room,,0.834644,,16,The Club Room,new_assignment
+Junya Watanabe,bags,7.000000,The Artisan,1,The Underground,0.904439,0.930509,0.026070,1,The Underground,moved_to_better_centroid
+Alohas,shoes,,,12,Sun Bleached,,0.834377,,12,Sun Bleached,new_assignment
 Comme des Garçons PLAY,shoes,,,5,The Underground,,0.933491,,5,The Underground,new_assignment
-Melissa,shoes,,,12,Sun Bleached,,0.892021,,12,Sun Bleached,new_assignment
+Melissa,shoes,,,12,Sun Bleached,,0.897266,,12,Sun Bleached,new_assignment
 On Running,shoes,,,7,The Pace,,0.943514,,7,The Pace,new_assignment
 Onitsuka Tiger,shoes,,,7,The Pace,,0.892105,,7,The Pace,new_assignment
 Sam Edelman,shoes,,,1,The Staple,,0.951753,,1,The Staple,new_assignment

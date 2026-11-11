@@ -29,7 +29,7 @@ class PublicArchetypeArtifactTests(unittest.TestCase):
     def test_every_taste_assignment_has_consistent_public_archetype(self):
         archetypes = {row["public_cluster_id"]: row for row in rows("public_cluster_archetypes.csv")}
         assignments = rows("ios_brand_cluster_assignments.csv")
-        self.assertEqual(len(assignments), 1830)
+        self.assertEqual(len(assignments), 1798)
         self.assertEqual(
             len({(row["brand_name"], row["category"]) for row in assignments}),
             len(assignments),

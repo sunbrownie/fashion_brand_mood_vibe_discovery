@@ -35,12 +35,19 @@ DERIVED_ARTIFACTS = (
     "data/public_cluster_archetypes.csv",
 )
 
+CORRECTED_NON_V2_MOODBOARDS = (
+    "data/moodboards/clothes/cernucci.jpg",
+    "data/moodboards/jewellery/cernucci.jpg",
+    "data/moodboards/shoes/labante_london.jpg",
+    "data/moodboards/bags/melie_bianco.jpg",
+)
+
 
 def moodboard_paths() -> list[str]:
     manifest_path = IOS_ROOT / "BrandMoodboards" / "v2_manifest.json"
     entries = json.loads(manifest_path.read_text(encoding="utf-8"))["entries"]
-    if len(entries) != 384:
-        raise ValueError(f"Expected 384 accepted V2 moodboards, found {len(entries)}")
+    if len(entries) != 383:
+        raise ValueError(f"Expected 383 accepted V2 moodboards, found {len(entries)}")
 
     paths: set[str] = set()
     for entry in entries:
@@ -54,9 +61,9 @@ def expected_catalog_moodboard_paths() -> set[str]:
     with metadata_path.open(newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))
     paths = {f"data/{row['moodboard_path']}" for row in rows if row.get("moodboard_path")}
-    if len(rows) != 1866 or len(paths) != 1866:
+    if len(rows) != 1798 or len(paths) != 1798:
         raise ValueError(
-            f"Expected 1,866 catalog rows and unique moodboards, found {len(rows)} rows and {len(paths)} paths"
+            f"Expected 1,798 catalog rows and unique moodboards, found {len(rows)} rows and {len(paths)} paths"
         )
     return paths
 
@@ -77,7 +84,14 @@ def clean_local_stale_moodboards(expected_paths: set[str]) -> list[str]:
 def main() -> None:
     expected_paths = expected_catalog_moodboard_paths()
     removed_local = clean_local_stale_moodboards(expected_paths)
-    relative_paths = [*DERIVED_ARTIFACTS, *moodboard_paths()]
+    # Publish the reviewed V2 set plus explicitly corrected non-V2 boards.
+    # Uploading the complete 1.36 GB catalogue exceeds the Space's 1 GB commit
+    # limit even though almost all existing moodboards are byte-identical.
+    relative_paths = [
+        *DERIVED_ARTIFACTS,
+        *moodboard_paths(),
+        *CORRECTED_NON_V2_MOODBOARDS,
+    ]
     missing = [path for path in relative_paths if not (HF_ROOT / path).is_file()]
     if missing:
         raise FileNotFoundError(f"Missing publish inputs: {missing}")
@@ -105,10 +119,10 @@ def main() -> None:
         operations=operations,
         commit_message="Publish final reviewed moodboards and refreshed text clusters",
         commit_description=(
-            "Publishes Ellina's latest CDG, CDG PLAY and Casablanca decisions, the completed "
-            "swimwear and lingerie review, refreshed MPNet text embeddings and technical "
-            "assignments, and customer-facing category archetypes. Removes superseded "
-            "moodboard aliases and unused CLIP artifacts so the Space keeps one current board per row."
+            "Publishes the final category-truth review, corrected canonical moodboards, refreshed "
+            "MPNet text embeddings and technical assignments, and customer-facing category "
+            "archetypes. Removes unsupported category extensions, superseded moodboards and "
+            "unused CLIP artifacts so the Space keeps one current board per active row."
         ),
     )
     print(f"Removed {len(removed_local)} stale local moodboards and {len(stale_remote)} stale remote moodboards.")

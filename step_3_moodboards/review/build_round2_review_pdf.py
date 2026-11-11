@@ -116,7 +116,7 @@ def build(
         pdf.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
         title = record["brand_name"]
         if record.get("variant"):
-            title = f"{title} — {record['variant']}"
+            title = f"{title}: {record['variant']}"
         pdf.setFillColor(INK)
         pdf.setFont("Helvetica-Bold", 20)
         pdf.drawString(margin, PAGE_H - 42, title)

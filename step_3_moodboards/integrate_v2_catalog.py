@@ -72,6 +72,13 @@ CLUSTER_OVERRIDES = {
 # the accepted V2 image and the stable cluster vocabulary after the descriptions
 # below were rewritten.
 CLUSTER_REVIEW_OVERRIDES = {
+    ("clothes", "apparis"): 1,
+    ("clothes", "barneys originals"): 3,
+    ("clothes", "belstaff"): 3,
+    ("clothes", "cernucci"): 14,
+    ("clothes", "gravel and gold"): 3,
+    ("clothes", "spanx"): 0,
+    ("clothes", "taiga takahashi"): 3,
     ("bags", "casablanca"): 4,
     ("bags", "chopova lowena"): 1,
     ("bags", "cult gaia"): 4,
@@ -82,6 +89,7 @@ CLUSTER_REVIEW_OVERRIDES = {
     ("clothes", "weekday"): 13,
     ("shoes", "coperni"): 2,
     ("shoes", "jacquemus"): 2,
+    ("shoes", "labante london"): 0,
     ("shoes", "burton"): 16,
     ("swimwear_lingerie", "acacia"): 0,
     ("swimwear_lingerie", "araks"): 3,
@@ -97,6 +105,7 @@ CLUSTER_REVIEW_OVERRIDES = {
     ("swimwear_lingerie", "billabong"): 2,
     ("swimwear_lingerie", "roxy"): 2,
     ("swimwear_lingerie", "wolford"): 3,
+    ("bags", "melie bianco"): 13,
 }
 
 NEW_CLUSTER_ASSIGNMENT_KEYS = {
@@ -122,7 +131,48 @@ CATALOG_REMOVALS = {
     ("swimwear_lingerie", "von dutch"),
     ("shoes", "montce"),
     ("jewellery", "montce"),
+    ("shoes", "cernucci"),
+    ("bags", "cernucci"),
+    ("clothes", "melie bianco"),
+    ("shoes", "melie bianco"),
+    ("bags", "tkees"),
+    ("clothes", "barc london"),
+    ("clothes", "calleen cordero"),
+    ("clothes", "claris virot"),
+    ("clothes", "labante london"),
+    ("clothes", "jimmy choo"),
+    ("bags", "misho"),
+    ("shoes", "misho"),
+    ("jewellery", "anonymous ism"),
+    # Independent category-truth review: these rows represented unsupported
+    # product extensions and their text/boards were templated inventions.
+    ("shoes", "claris virot"),
+    ("bags", "caron callahan"),
+    ("jewellery", "caron callahan"),
+    ("bags", "mackage"),
+    ("jewellery", "mackage"),
+    ("shoes", "herschel"),
+    ("jewellery", "herschel"),
+    ("shoes", "outland"),
+    ("bags", "outland"),
+    ("jewellery", "outland"),
+    ("jewellery", "belstaff"),
+    ("jewellery", "c.p. company"),
+    ("jewellery", "fusalp"),
+    ("jewellery", "k way"),
+    ("jewellery", "kappa"),
+    ("jewellery", "kavu"),
+    ("jewellery", "l.l.bean"),
+    ("jewellery", "mizuno"),
+    ("jewellery", "salewa"),
+    ("jewellery", "stutterheim"),
+    ("jewellery", "oliver spencer"),
 }
+
+# These were legacy swimwear/lingerie brands duplicated into the clothes
+# catalogue. Keeping them out only at iOS runtime made the two apps disagree,
+# so remove them from the canonical catalogue and every derived artifact.
+CATALOG_REMOVALS |= INVALID_TASTE_ROWS
 
 SWIM_LINGERIE_FLAGS = {
     "calvin klein": (1, 1),
@@ -140,6 +190,66 @@ DISPLAY_NAME_OVERRIDES = {
 # Human-reviewed metadata corrections for accepted V2 boards whose original text
 # card no longer described the regenerated image accurately enough.
 DESCRIPTION_OVERRIDES = {
+    ("clothes", "Apparis"): {
+        "aesthetic_keywords": "playful, tactile, colourful, plush, conscious",
+        "silhouettes": "voluminous faux-fur coats, cropped faux-fur jackets, plush vests, statement bombers and soft knit layers",
+        "materials": "recycled faux fur, plush pile, vegan leather alternatives, soft knit and technical lining",
+        "palette": "black, camel, ivory, chocolate, lipstick red, pink and leopard print",
+    },
+    ("clothes", "Barneys Originals"): {
+        "aesthetic_keywords": "heritage leather, rugged, approachable, durable, casual",
+        "silhouettes": "leather biker jackets, suede trucker jackets, café-racer jackets, relaxed bombers and practical outerwear",
+        "materials": "leather, suede, shearling, cotton twill and aged metal hardware",
+        "palette": "black, tobacco, tan, chocolate brown, washed charcoal and cream",
+    },
+    ("clothes", "Belstaff"): {
+        "aesthetic_keywords": "moto heritage, rugged, protective, utilitarian, enduring",
+        "silhouettes": "waxed field jackets, belted Trialmaster jackets, leather motorcycle jackets, quilted outerwear and sturdy knit layers",
+        "materials": "waxed cotton, leather, wool knit, quilted technical fabric and aged brass hardware",
+        "palette": "black, dark brown, antique olive, charcoal, sand and weathered cream",
+    },
+    ("clothes", "SPANX"): {
+        "aesthetic_keywords": "sculpting, performance, sleek, supportive, movement-led",
+        "silhouettes": "compression leggings, active trousers, supportive bodysuits, smoothing base layers and studio-to-street separates",
+        "materials": "sculpting stretch knit, technical jersey, ponte, breathable mesh and bonded elastic",
+        "palette": "black, navy, graphite, soft nude, espresso and white",
+    },
+    ("clothes", "Taiga Takahashi"): {
+        "aesthetic_keywords": "archival workwear, Japanese craft, heritage, considered, enduring",
+        "silhouettes": "vintage-cut denim jackets, chore coats, softly tailored shirts, high-rise work trousers and relaxed knit layers",
+        "materials": "natural-dyed cotton, selvedge denim, linen, wool and traditional woven cloth",
+        "palette": "indigo, ecru, tobacco, faded khaki, charcoal and washed earth tones",
+    },
+    ("clothes", "Cernucci"): {
+        "aesthetic_keywords": "London streetwear, urban, logo-led, sporty, confident",
+        "silhouettes": "funnel-neck puffers, PU moto jackets, oversized cable-knit hoodies, cropped waffle-knit tracksuits, trench coats and cargo sets",
+        "materials": "technical nylon, PU leather, cotton fleece, waffle knit, cable knit and twill",
+        "palette": "black, charcoal, chocolate, beige, oatmeal, navy and white",
+    },
+    ("jewellery", "Cernucci"): {
+        "aesthetic_keywords": "iced-out, urban, bold, hip-hop, statement",
+        "silhouettes": "Cuban chains, tennis chains, cross and motif pendants, iced bracelets, geometric stud earrings and bold signet rings",
+        "materials": "stainless steel, gold plating, cubic zirconia, sterling silver and enamel",
+        "palette": "yellow gold, polished silver, white stones, black, emerald and cobalt accents",
+    },
+    ("clothes", "Gravel & Gold"): {
+        "aesthetic_keywords": "California-made, workwear, crafted, practical, joyful",
+        "silhouettes": "cotton-twill shop jackets, roomy anoraks, painter pants, wide-leg pull-on trousers, corduroy jeans and boxy printed shirts",
+        "materials": "sturdy cotton twill, Cone Mills denim, corduroy, garment-dyed cotton, organic terry and wool knit",
+        "palette": "natural canvas, walnut, mahogany, rust, faded indigo, ruby, moss and cream",
+    },
+    ("shoes", "LaBante London"): {
+        "aesthetic_keywords": "sustainable, clean, minimal, conscious, versatile",
+        "silhouettes": "white, nude and black low-top apple-leather trainers with clean cup soles and understated panels",
+        "materials": "Italian apple leather, recycled-plastic laces and plant-based rubber soles",
+        "palette": "white, nude, black, warm grey, pale sage and restrained apple red",
+    },
+    ("bags", "Melie Bianco"): {
+        "aesthetic_keywords": "vegan, polished, playful, trend-aware, conscious",
+        "silhouettes": "pleated shoulder bags, structured top handles, woven-panel totes, compact crossbodies and charm-decorated mini bags",
+        "materials": "recycled vegan leather, vegan suede, velvet, rhinestones and polished hardware",
+        "palette": "ivory, black, mushroom, espresso, olive, burgundy, metallic rose and seasonal brights",
+    },
     ("shoes", "Comme des Garçons PLAY"): {
         "aesthetic_keywords": "playful, graphic, logo-led, casual, pop-art",
         "silhouettes": "low-top canvas sneakers, high-top canvas sneakers, retro rubber-toe trainers",
@@ -927,9 +1037,9 @@ def update_projection_and_clusters(host: pd.DataFrame, embeddings: np.ndarray) -
             "cluster_title": info.cluster_title,
             "top_aesthetic_terms": info.top_aesthetic_terms,
             "supporting_terms": info.supporting_terms,
-            "example_brands": info.example_brands,
-            "representative_brand_name": str(info.example_brands).split(",")[0].strip(),
-            "representative_moodboard_path": f"moodboards/{row['category']}/{slugify(str(info.example_brands).split(',')[0].strip())}.jpg",
+            "example_brands": "",
+            "representative_brand_name": "",
+            "representative_moodboard_path": "",
             "selected_k": (
                 int(info.selected_k)
                 if pd.notna(info.selected_k)
@@ -937,6 +1047,33 @@ def update_projection_and_clusters(host: pd.DataFrame, embeddings: np.ndarray) -
             ),
         })
     assignment_frame = pd.DataFrame(assignments)
+
+    # Rebuild examples and representatives from the retained catalogue. The
+    # previous summary could point at a removed brand or at a guessed slug that
+    # did not match the canonical moodboard path.
+    host_examples = host[["brand_name", "category", "moodboard_path", "popularity"]].copy()
+    host_examples["_brand_order"] = host_examples["brand_name"].astype(str).str.casefold()
+    host_examples["_popularity"] = pd.to_numeric(
+        host_examples["popularity"], errors="coerce"
+    ).fillna(0)
+    for (category, cluster), member_indices in assignment_frame.groupby(
+        ["category", "cluster"], sort=False
+    ).groups.items():
+        member_indices = list(member_indices)
+        members = host_examples.loc[member_indices].sort_values(
+            ["_popularity", "_brand_order"], ascending=[False, True]
+        )
+        examples = members.head(5)
+        representative = examples.iloc[0]
+        assignment_frame.loc[member_indices, "example_brands"] = ", ".join(
+            examples["brand_name"].astype(str)
+        )
+        assignment_frame.loc[member_indices, "representative_brand_name"] = str(
+            representative["brand_name"]
+        )
+        assignment_frame.loc[member_indices, "representative_moodboard_path"] = str(
+            representative["moodboard_path"]
+        )
     assignment_frame.to_csv(DATA / "ios_brand_cluster_assignments.csv", index=False)
     assignment_frame.to_csv(DATA / "ios_brand_cluster_assignments.tsv", index=False, sep="\t")
     pd.DataFrame(reassessment_rows).sort_values(
@@ -980,12 +1117,19 @@ def update_projection_and_clusters(host: pd.DataFrame, embeddings: np.ndarray) -
     umap_frame.to_csv(DATA / "ios_brand_umap.tsv", index=False, sep="\t", float_format="%.8f")
 
     updated_summary = summary.copy()
+    for column in ("representative_brand_name", "representative_moodboard_path"):
+        if column not in updated_summary.columns:
+            updated_summary[column] = ""
     for index, row in updated_summary.iterrows():
         members = assignment_frame[
             assignment_frame["category"].eq(row["category"])
             & assignment_frame["cluster"].eq(int(row["cluster"]))
         ]
         updated_summary.at[index, "n_brands"] = len(members)
+        if not members.empty:
+            updated_summary.at[index, "example_brands"] = members.iloc[0]["example_brands"]
+            updated_summary.at[index, "representative_brand_name"] = members.iloc[0]["representative_brand_name"]
+            updated_summary.at[index, "representative_moodboard_path"] = members.iloc[0]["representative_moodboard_path"]
     updated_summary["n_brands"] = updated_summary["n_brands"].astype(int)
     updated_summary.to_csv(DATA / "ios_cluster_summary.csv", index=False)
 

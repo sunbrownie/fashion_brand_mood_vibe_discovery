@@ -114,7 +114,7 @@ def main() -> None:
     }
 
     c = canvas.Canvas(str(args.output), pagesize=landscape(A4), pageCompression=1)
-    c.setTitle("Swimwear & Lingerie — Ellina Review Corrections")
+    c.setTitle("Swimwear & Lingerie: Ellina Review Corrections")
     c.setAuthor("ModeNova")
 
     c.setFillColor(PAPER)
@@ -124,7 +124,7 @@ def main() -> None:
     c.drawString(46, PAGE_H - 90, "Swimwear & Lingerie")
     c.setFillColor(PINK)
     c.setFont("Helvetica-Bold", 24)
-    c.drawString(46, PAGE_H - 126, "Ellina review — old, final and Google reference")
+    c.drawString(46, PAGE_H - 126, "Ellina review: old, final and Google reference")
     c.setFillColor(MUTED)
     c.setFont("Helvetica", 12)
     c.drawString(46, PAGE_H - 164, f"Generated {date.today().isoformat()} · 8 updated · 2 removed · 6 added")
