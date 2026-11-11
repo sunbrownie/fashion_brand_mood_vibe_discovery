@@ -298,9 +298,9 @@ class MoodboardCorrectionTests(unittest.TestCase):
     def test_catalog_additions_are_complete_and_taste_enabled(self) -> None:
         asset_root = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder" / "BrandMoodboards"
         entries = json.loads((asset_root / "v2_catalog_additions.json").read_text(encoding="utf-8"))["entries"]
-        self.assertEqual(len(entries), 129)
-        self.assertEqual(len({entry["review_id"] for entry in entries}), 129)
-        self.assertEqual(len({(entry["category"], entry["brand_name"]) for entry in entries}), 129)
+        self.assertEqual(len(entries), 130)
+        self.assertEqual(len({entry["review_id"] for entry in entries}), 130)
+        self.assertEqual(len({(entry["category"], entry["brand_name"]) for entry in entries}), 130)
 
         def normalized(value: str) -> str:
             folded = "".join(

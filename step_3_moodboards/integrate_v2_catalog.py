@@ -65,6 +65,12 @@ CLUSTER_OVERRIDES = {
     ("shoes", "new balance"): 7,
     ("shoes", "nike"): 7,
     ("shoes", "puma"): 7,
+    # Small-cluster audit: dissolve semantic singletons and weak micro-clusters.
+    ("shoes", "havaianas"): 12,
+    ("shoes", "tkees"): 8,
+    ("shoes", "soludos"): 12,
+    ("bags", "montce"): 15,
+    ("swimwear_lingerie", "adriana degreas"): 2,
 }
 
 # Centroid similarity is useful for surfacing candidates, but some mixed-product
@@ -72,6 +78,13 @@ CLUSTER_OVERRIDES = {
 # the accepted V2 image and the stable cluster vocabulary after the descriptions
 # below were rewritten.
 CLUSTER_REVIEW_OVERRIDES = {
+    ("clothes", "loewe"): 12,
+    ("clothes", "miu miu"): 7,
+    ("clothes", "allison wonderland"): 1,
+    ("clothes", "norma kamali"): 2,
+    ("clothes", "glassworks london"): 14,
+    ("clothes", "aligne"): 7,
+    ("shoes", "tkees"): 8,
     ("clothes", "apparis"): 1,
     ("clothes", "barneys originals"): 3,
     ("clothes", "belstaff"): 3,
@@ -190,6 +203,48 @@ DISPLAY_NAME_OVERRIDES = {
 # Human-reviewed metadata corrections for accepted V2 boards whose original text
 # card no longer described the regenerated image accurately enough.
 DESCRIPTION_OVERRIDES = {
+    ("clothes", "Loewe"): {
+        "aesthetic_keywords": "sculptural, artful, playful, craft-led, experimental",
+        "silhouettes": "sculpted tailoring, architectural dresses, tactile outerwear and playful knitwear",
+        "materials": "fringed and embroidered leather, sculpted shearling, wool, silk and technical fabric",
+        "palette": "elemental brights, ecru, tan, black and jewel colour",
+    },
+    ("clothes", "Miu Miu"): {
+        "aesthetic_keywords": "subversive prep, girlish, vintage, sensual, refined",
+        "silhouettes": "washed miniskirts, narrow cardigans, striped polos, gingham separates and relaxed tailoring",
+        "materials": "washed cotton poplin, cashmere, linen, jersey and embroidered tulle",
+        "palette": "washed neutrals, powder blue, burgundy, red, brown and black",
+    },
+    ("clothes", "Allison Wonderland"): {
+        "aesthetic_keywords": "playful, feminine, 1970s-inspired, effortless, everyday",
+        "silhouettes": "printed dresses, blouses, boleros, fitted jackets, wide trousers and skirts",
+        "materials": "cotton poplin, linen, wool knit and viscose crepe",
+        "palette": "floral print, raisin, mulberry, plum, navy and black",
+    },
+    ("clothes", "Norma Kamali"): {
+        "aesthetic_keywords": "innovative, sculptural, sensual, body-conscious, timeless",
+        "silhouettes": "draped jersey gowns, all-in-one dresses, sleeping-bag coats, cut-out dresses and parachute-inspired pieces",
+        "materials": "easy-care jersey, technical fabric, quilted outerwear and stretch fabric",
+        "palette": "black, ivory, red, metallic and graphic print",
+    },
+    ("clothes", "Glassworks London"): {
+        "aesthetic_keywords": "colourful, playful, trend-led, eclectic, everyday",
+        "silhouettes": "striped rugby shirts, gingham dresses, lace-trim skirts, draped tops, relaxed checked trousers and sporty windbreakers",
+        "materials": "cotton, ribbed jersey, linen blend, fuzzy knit, satin and denim",
+        "palette": "cobalt, pop pink, green, red, lilac, ivory, rainbow stripes and checks",
+    },
+    ("clothes", "ALIGNE"): {
+        "aesthetic_keywords": "confident, contemporary, tailored, polished, considered",
+        "silhouettes": "waisted blazers, sharp tailoring, barrel-leg jeans, denim dresses and soft dresses",
+        "materials": "wool blend, ponte, organic cotton denim, satin and leather",
+        "palette": "black, navy, oxblood, lime, cobalt, red and grey",
+    },
+    ("shoes", "Tkees"): {
+        "aesthetic_keywords": "minimal, resort, sandal-led, barely-there, understated",
+        "silhouettes": "slim leather flip-flops, barely-there sandals and simple slides",
+        "materials": "smooth leather, suede and rubber",
+        "palette": "skin-tone neutrals, black, white and soft metallic",
+    },
     ("clothes", "Apparis"): {
         "aesthetic_keywords": "playful, tactile, colourful, plush, conscious",
         "silhouettes": "voluminous faux-fur coats, cropped faux-fur jackets, plush vests, statement bombers and soft knit layers",
@@ -1012,7 +1067,7 @@ def update_projection_and_clusters(host: pd.DataFrame, embeddings: np.ndarray) -
                 "old_cluster": old_cluster,
                 "old_cluster_title": (
                     summary_lookup[(row["category"], old_cluster)].cluster_title
-                    if old_cluster is not None else ""
+                    if (row["category"], old_cluster) in summary_lookup else ""
                 ),
                 "best_cluster": best_cluster,
                 "best_cluster_title": summary_lookup[(row["category"], best_cluster)].cluster_title,
@@ -1131,6 +1186,41 @@ def update_projection_and_clusters(host: pd.DataFrame, embeddings: np.ndarray) -
             updated_summary.at[index, "representative_brand_name"] = members.iloc[0]["representative_brand_name"]
             updated_summary.at[index, "representative_moodboard_path"] = members.iloc[0]["representative_moodboard_path"]
     updated_summary["n_brands"] = updated_summary["n_brands"].astype(int)
+    # Empty technical clusters are retired after reviewed micro-cluster merges.
+    updated_summary = updated_summary.loc[updated_summary["n_brands"].gt(0)].reset_index(drop=True)
+
+    # Recompute cluster-neighbour statistics from the current text embeddings.
+    # The previous implementation preserved stale similarity values after text
+    # and membership corrections, making the audit CSV disagree with the app.
+    final_centroids: dict[tuple[str, int], np.ndarray] = {}
+    for (category, cluster), member_indices in assignment_frame.groupby(
+        ["category", "cluster"], sort=False
+    ).groups.items():
+        centroid = embeddings[np.asarray(list(member_indices), dtype=int)].mean(axis=0)
+        final_centroids[(str(category), int(cluster))] = centroid / max(
+            np.linalg.norm(centroid), 1e-12
+        )
+    for index, row in updated_summary.iterrows():
+        category = str(row["category"])
+        cluster = int(row["cluster"])
+        centroid = final_centroids[(category, cluster)]
+        neighbours = sorted(
+            (
+                (other_cluster, float(centroid @ other_centroid))
+                for (other_category, other_cluster), other_centroid in final_centroids.items()
+                if other_category == category and other_cluster != cluster
+            ),
+            key=lambda item: item[1],
+            reverse=True,
+        )
+        first = neighbours[0] if neighbours else (cluster, 1.0)
+        second = neighbours[1] if len(neighbours) > 1 else first
+        updated_summary.at[index, "nearest_cluster"] = int(first[0])
+        updated_summary.at[index, "nearest_similarity"] = first[1]
+        updated_summary.at[index, "second_nearest_cluster"] = int(second[0])
+        updated_summary.at[index, "second_nearest_similarity"] = second[1]
+    for category, indices in updated_summary.groupby("category").groups.items():
+        updated_summary.loc[list(indices), "selected_k"] = len(indices)
     updated_summary.to_csv(DATA / "ios_cluster_summary.csv", index=False)
 
 

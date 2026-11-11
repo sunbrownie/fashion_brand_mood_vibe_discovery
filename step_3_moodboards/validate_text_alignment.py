@@ -21,8 +21,8 @@ IOS = ROOT / "ios" / "BrandMoodboardFinder" / "BrandMoodboardFinder"
 REVIEW = ROOT / "step_3_moodboards" / "review"
 MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
 VIBE_COLUMNS = ("aesthetic_keywords", "silhouettes", "materials", "palette")
-EXPECTED_CATALOG_ROWS = 1798
-EXPECTED_TASTE_ROWS = 1798
+EXPECTED_CATALOG_ROWS = 1799
+EXPECTED_TASTE_ROWS = 1799
 EXPECTED_OVERRIDE_ROWS = 77
 EXPECTED_V2_MANIFEST_ROWS = 383
 

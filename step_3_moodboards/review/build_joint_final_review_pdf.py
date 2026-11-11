@@ -66,7 +66,7 @@ def build_cover(path: Path, counts: tuple[int, int, int]) -> None:
         y -= 56
     pdf.setFillColor(PAPER)
     pdf.setFont("Helvetica", 9)
-    pdf.drawString(54, 48, "Ordered by category, then public archetype, then cluster group - four large portrait boards in one row.")
+    pdf.drawString(54, 48, "Ordered by category and public archetype - four large portrait boards in one row.")
     pdf.showPage()
     pdf.save()
 

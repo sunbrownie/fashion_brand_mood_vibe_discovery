@@ -3,9 +3,10 @@
 
 The report reads the current iOS assignment export, joins each brand to the
 canonical moodboard recorded in ``brand_metadata.csv``, and groups brands by
-category, customer-facing archetype and underlying cluster.  A cluster may
-span any number of pages; every brand is rendered exactly once.  Missing
-images are deliberately visible.
+category and customer-facing archetype.  Technical clusters remain available
+for filtering and app logic but are deliberately not exposed as separate PDF
+subgroups.  Every brand is rendered exactly once and missing images are
+deliberately visible.
 
 Examples
 --------
@@ -312,6 +313,46 @@ def select_blocks(
     return selected
 
 
+def merge_public_archetype_blocks(blocks: Sequence[ClusterBlock]) -> list[ClusterBlock]:
+    """Combine technical-source fragments into one visible public archetype."""
+    grouped: dict[tuple[str, str], list[ClusterBlock]] = defaultdict(list)
+    for block in blocks:
+        grouped[(block.category, block.dominant_public_name)].append(block)
+    order = {category: index for index, category in enumerate(CATEGORY_ORDER)}
+    merged: list[ClusterBlock] = []
+    for (category, public_name), source_blocks in sorted(
+        grouped.items(),
+        key=lambda item: (
+            order.get(item[0][0], len(order)),
+            item[0][0],
+            archetype_sort_key(item[0][1]),
+        ),
+    ):
+        rows = tuple(
+            sorted(
+                (row for block in source_blocks for row in block.rows),
+                key=stable_brand_sort,
+            )
+        )
+        merged.append(
+            ClusterBlock(
+                category=category,
+                cluster=-1,
+                title=public_name,
+                top_terms="",
+                supporting_terms="",
+                dominant_public_name=public_name,
+                dominant_public_description=(
+                    modal(rows, "public_display_description")
+                    or modal(rows, "public_cluster_description")
+                    or "No public description is currently assigned."
+                ),
+                rows=rows,
+            )
+        )
+    return merged
+
+
 def resolve_moodboard(
     row: dict[str, str],
     metadata: dict[tuple[str, str], dict[str, str]],
@@ -517,7 +558,7 @@ def draw_category_divider(pdf: canvas.Canvas, category: str, blocks: Sequence[Cl
         pdf.drawRightString(
             x + column_w - 12,
             y,
-            f"{count_label(len(grouped_blocks), 'group')}  •  {count_label(brand_count, 'brand')}",
+            count_label(brand_count, "brand"),
         )
 
 
@@ -559,7 +600,7 @@ def draw_archetype_divider(
     pdf.drawCentredString(
         204,
         95,
-        f"{count_label(len(blocks), 'cluster group')}  •  {count_label(sum(len(block.rows) for block in blocks), 'brand')}",
+        count_label(sum(len(block.rows) for block in blocks), "brand"),
     )
 
 
@@ -580,12 +621,12 @@ def draw_cluster_header(pdf: canvas.Canvas, page: ClusterPage) -> None:
     pdf.drawString(
         MARGIN_X,
         PAGE_H - 84,
-        f"Cluster group {page.archetype_cluster_index} of {page.archetype_cluster_count}",
+        f"Latest canonical moodboards  •  page {page.part} of {page.parts}",
     )
     pdf.drawRightString(
         PAGE_W - MARGIN_X,
         PAGE_H - 84,
-        f"{count_label(len(block.rows), 'brand')}  •  page {page.part}/{page.parts}",
+        count_label(len(block.rows), "brand"),
     )
 
 
@@ -667,7 +708,10 @@ def build_pdf(
     assignments = read_csv(assignments_path)
     summaries = summary_index(read_csv(summary_path))
     metadata = metadata_index(read_csv(metadata_path))
-    blocks = select_blocks(build_blocks(assignments, summaries), categories, clusters, max_clusters)
+    technical_blocks = select_blocks(
+        build_blocks(assignments, summaries), categories, clusters, max_clusters
+    )
+    blocks = merge_public_archetype_blocks(technical_blocks)
 
     selected_categories = [category for category in CATEGORY_ORDER if any(b.category == category for b in blocks)]
     selected_categories.extend(
@@ -682,10 +726,9 @@ def build_pdf(
             key=archetype_sort_key,
         )
         for public_name in public_names:
-            archetype_blocks = sorted(
-                [block for block in category_blocks if block.dominant_public_name == public_name],
-                key=lambda block: block.cluster,
-            )
+            archetype_blocks = [
+                block for block in category_blocks if block.dominant_public_name == public_name
+            ]
             page_specs.append(("archetype", (category, public_name, archetype_blocks)))
             for cluster_index, block in enumerate(archetype_blocks, start=1):
                 parts = math.ceil(len(block.rows) / CARDS_PER_PAGE)
@@ -751,14 +794,18 @@ def build_pdf(
                     )
                 )
                 rendered_brand_keys.append(
-                    (page.block.category, page.block.cluster, key_text(row.get("brand_name")))
+                    (
+                        page.block.category,
+                        cluster_number(row.get("cluster")),
+                        key_text(row.get("brand_name")),
+                    )
                 )
             draw_footer(pdf, page_number, total_pages, snapshot)
         pdf.showPage()
     pdf.save()
 
     expected_keys = [
-        (block.category, block.cluster, key_text(row.get("brand_name")))
+        (block.category, cluster_number(row.get("cluster")), key_text(row.get("brand_name")))
         for block in blocks
         for row in block.rows
     ]

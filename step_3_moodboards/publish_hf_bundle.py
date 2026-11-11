@@ -40,6 +40,10 @@ CORRECTED_NON_V2_MOODBOARDS = (
     "data/moodboards/jewellery/cernucci.jpg",
     "data/moodboards/shoes/labante_london.jpg",
     "data/moodboards/bags/melie_bianco.jpg",
+    "data/moodboards/clothes/glassworks_london.jpg",
+    "data/moodboards/clothes/loewe.jpg",
+    "data/moodboards/clothes/allison_wonderland.jpg",
+    "data/moodboards/clothes/aligne.jpg",
 )
 
 
@@ -61,9 +65,9 @@ def expected_catalog_moodboard_paths() -> set[str]:
     with metadata_path.open(newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))
     paths = {f"data/{row['moodboard_path']}" for row in rows if row.get("moodboard_path")}
-    if len(rows) != 1798 or len(paths) != 1798:
+    if len(rows) != 1799 or len(paths) != 1799:
         raise ValueError(
-            f"Expected 1,798 catalog rows and unique moodboards, found {len(rows)} rows and {len(paths)} paths"
+            f"Expected 1,799 catalog rows and unique moodboards, found {len(rows)} rows and {len(paths)} paths"
         )
     return paths
 
