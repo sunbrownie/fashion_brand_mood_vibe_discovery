@@ -84,6 +84,23 @@ CLUSTER_REVIEW_OVERRIDES = {
     ("clothes", "norma kamali"): 2,
     ("clothes", "glassworks london"): 14,
     ("clothes", "aligne"): 7,
+    ("clothes", "avavav"): 12,
+    ("clothes", "camiel fortgens"): 12,
+    ("clothes", "coperni"): 12,
+    ("clothes", "courreges"): 12,
+    ("clothes", "fashion brand company"): 12,
+    ("clothes", "fear of god"): 7,
+    ("clothes", "jean paul gaultier"): 12,
+    ("clothes", "jungmaven"): 16,
+    ("clothes", "loci"): 0,
+    ("clothes", "marine serre"): 12,
+    ("clothes", "missguided"): 2,
+    ("clothes", "natasha zinko"): 12,
+    ("clothes", "olow"): 16,
+    ("clothes", "open yy"): 12,
+    ("clothes", "superdry"): 13,
+    ("shoes", "belstaff"): 14,
+    ("shoes", "casablanca"): 12,
     ("shoes", "tkees"): 8,
     ("clothes", "apparis"): 1,
     ("clothes", "barneys originals"): 3,
@@ -203,6 +220,54 @@ DISPLAY_NAME_OVERRIDES = {
 # Human-reviewed metadata corrections for accepted V2 boards whose original text
 # card no longer described the regenerated image accurately enough.
 DESCRIPTION_OVERRIDES = {
+    ("clothes", "Wales Bonner"): {
+        "aesthetic_keywords": "cultural luxury, Afro-Atlantic, research-led, soulful, tailored",
+        "silhouettes": "precise suits, crochet-trim track jackets, knit polos, slim trousers, fluid evening tailoring and handworked sportswear",
+        "materials": "fine wool, crochet, suede, silk, technical jersey and handwoven textiles",
+        "palette": "tobacco, oxblood, cream, black, deep navy, muted gold and red accents",
+    },
+    ("clothes", "AVAVAV"): {
+        "aesthetic_keywords": "satirical, deconstructed, exaggerated, irreverent, conceptual",
+        "silhouettes": "distorted tailoring, exaggerated shoulders, trompe-l'oeil dresses, crumpled suiting, sculptural puffers and asymmetric knits",
+        "materials": "wool suiting, distressed jersey, technical nylon, denim, knit and faux leather",
+        "palette": "black, concrete grey, white, acid green and vivid red accents",
+    },
+    ("clothes", "Jean Paul Gaultier"): {
+        "aesthetic_keywords": "irreverent, theatrical, sculptural, sensual, punk-couture",
+        "silhouettes": "cone tailoring, Breton knits, tattoo-mesh layers, corseted dresses, kilt suiting and sharply sliced trenches",
+        "materials": "striped cotton, stretch mesh, wool suiting, satin, leather and corsetry hardware",
+        "palette": "navy, white, black, red, nude illusion and metallic silver",
+    },
+    ("clothes", "Open YY"): {
+        "aesthetic_keywords": "experimental, deconstructed, sculptural, Seoul, contemporary",
+        "silhouettes": "asymmetric shirting, off-centre tailoring, layered skirts, sculptural dresses, cargo jackets and reconstructed knitwear",
+        "materials": "cotton poplin, wool suiting, technical twill, pointelle knit, jersey and washed denim",
+        "palette": "brown, khaki, ivory, charcoal, powder blue and signal red",
+    },
+    ("clothes", "Missguided"): {
+        "aesthetic_keywords": "polished, confident, party-ready, trend-led, high-street",
+        "silhouettes": "fitted party dresses, sharp blazers, tailored trousers, satin slip dresses, sculpted corset tops and polished co-ords",
+        "materials": "satin, crepe, stretch jersey, sequins, faux leather, tailored suiting and mesh accents",
+        "palette": "black, cream, chocolate, lipstick red, blush, metallic silver and jewel tones",
+    },
+    ("shoes", "CASABLANCA"): {
+        "aesthetic_keywords": "sunny sport-luxe, retro, resort-polished, graphic, playful",
+        "silhouettes": "leather loafers, retro tennis sneakers, pool slides, sculptural heels, platform sandals and streamlined trainers",
+        "materials": "smooth leather, suede, technical mesh, rubber, satin and polished metal hardware",
+        "palette": "white, tennis green, orange, sky blue, cream and warm gold",
+    },
+    ("shoes", "Ann Demeulemeester"): {
+        "aesthetic_keywords": "dark romantic, poetic, gothic, sharp, sensual",
+        "silhouettes": "riding boots, engineer boots, pointed ankle boots, buckle derbies, lace-up sandals and vulcanised sneakers",
+        "materials": "fine leather, suede, washed canvas, rubber and aged silver hardware",
+        "palette": "black, off-white, tobacco brown, charcoal and oxidised silver",
+    },
+    ("shoes", "Belstaff"): {
+        "aesthetic_keywords": "moto heritage, rugged, protective, handcrafted, enduring",
+        "silhouettes": "hand-waxed biker boots, suede slip-ons, classic lace-up boots, sturdy chukkas and understated leather sneakers",
+        "materials": "hand-waxed leather, suede, rubber, canvas and aged metal hardware",
+        "palette": "black, dark brown, tobacco, antique olive and weathered tan",
+    },
     ("clothes", "Loewe"): {
         "aesthetic_keywords": "sculptural, artful, playful, craft-led, experimental",
         "silhouettes": "sculpted tailoring, architectural dresses, tactile outerwear and playful knitwear",
@@ -1056,11 +1121,23 @@ def update_projection_and_clusters(host: pd.DataFrame, embeddings: np.ndarray) -
             else:
                 cluster = old_cluster
                 decision = "kept_existing_cluster"
-            if key in CLUSTER_REVIEW_OVERRIDES:
-                reviewed_cluster = CLUSTER_REVIEW_OVERRIDES[key]
-                if reviewed_cluster != cluster:
-                    cluster = reviewed_cluster
+        else:
+            cluster = CLUSTER_OVERRIDES.get(key, old_cluster)
+            if cluster is None:
+                cluster = best_cluster
+
+        # Reviewed visual/semantic decisions apply whether or not a text card
+        # was rewritten in this run. This keeps reruns stable for brands whose
+        # existing text was already correct but whose inherited technical
+        # cluster was visibly wrong.
+        if key in CLUSTER_REVIEW_OVERRIDES:
+            reviewed_cluster = CLUSTER_REVIEW_OVERRIDES[key]
+            if reviewed_cluster != cluster:
+                cluster = reviewed_cluster
+                if key in reassess_keys:
                     decision = "manual_visual_review_override"
+
+        if key in reassess_keys:
             reassessment_rows.append({
                 "brand_name": row["brand_name"],
                 "category": row["category"],
@@ -1078,10 +1155,6 @@ def update_projection_and_clusters(host: pd.DataFrame, embeddings: np.ndarray) -
                 "adopted_cluster_title": summary_lookup[(row["category"], cluster)].cluster_title,
                 "decision": decision,
             })
-        else:
-            cluster = CLUSTER_OVERRIDES.get(key, old_cluster)
-            if cluster is None:
-                cluster = best_cluster
         assignment_values[key] = cluster
         info = summary_lookup[(row["category"], cluster)]
         assignments.append({
